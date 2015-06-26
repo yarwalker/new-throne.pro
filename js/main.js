@@ -75,6 +75,65 @@
             $('#fake_tabs').position().left = $('#tabs').position().left;
         }*/
 
+        if( $('.jcarousel').length ) {
+            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+            $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil($('.jcarousel').height() / 2 - 15)});
+
+            // определим высоту блока отзывов
+
+            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+            $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil(( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15)});
+
+            // отзывы
+            $('.jcarousel').jcarousel({
+                // Configuration goes here
+                /*animation: {
+                 duration: 400,
+                 easing:   'linear',
+                 complete: function() {
+                 }
+                 },*/
+                transitions: Modernizr.csstransitions ? {
+                    transforms:   Modernizr.csstransforms,
+                    transforms3d: Modernizr.csstransforms3d,
+                    easing:       'linear'
+                } : false,
+                wrap: 'circular'
+            })
+                .jcarouselAutoscroll({
+                    interval: 10000,
+                    target: '+=1',
+                    autostart: true
+                });
+
+            $('.jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+
+            $('.jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+            $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( $('.jcarousel').height() / 2 - 15 ) });
+
+            // определим высоту блока отзывов
+
+            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+            $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( ( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15 ) });
+
+        }
+
 
         // удаляем атрибуты элементов анимации
         $animation_bcg.removeAttr('data--' + $animation_frame_height + '-bottom-top');
@@ -297,6 +356,15 @@
 
    // enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >  Math.floor($(this).height() / 4 * 3 ) ) {
+            $('.callback_fix_btn').fadeIn(500);
+        } else {
+            $('.callback_fix_btn').fadeOut(500);
+        }
+
+        //$('.navbar-custom .nav li a:focus').blur();
+    });
 
 
 
@@ -325,6 +393,10 @@
 
         frameResize();
         adjustWindow();
+
+        fotoramaResize();
+
+        //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 
         /*var s = skrollr.init({
             render: function(data) {
@@ -389,7 +461,9 @@
     $('#integr_table .table_cell').on('mouseenter', function(){
         if( $(this).height() > $(this).find('.integr_description').first().height() ) {
             $(this)
-                .find('.integr_description').first().height($(this).height());
+                .find('.integr_description')
+                .first()
+                .height($(this).height());
         }
     });
 
@@ -485,28 +559,29 @@
 
     }
 
-    if( location.pathname == '/about.html' ) {
+    /*if( location.pathname == '/about.html' ) {
         googleMap("map_canvas", 57.590141,39.900717);
-    }
+    } */
 
     // скрываем сообщение об ошибке
     function removeError(){
         $('#error').text('');
+        $('#ios-error').text('');
         $('.alert').fadeOut(250);
     }
 
     // прячем сообщение об ошибке при изменениях полей формы
-    $('#inputPhone').on('keypress', function(){
+    $('#inputPhone, #inputEmail').on('keypress', function(){
         removeError();
     });
 
-    $('#myModal').on('hide.bs.modal', function (e) {
+    $('#myModal, #myAppStoreModal').on('hide.bs.modal', function (e) {
         $('#inputPhone').val('');
-        //$('#inputEmail').val('').closest('div.form-group').removeClass('has-error').removeClass('has-success');
+        $('#inputEmail').val('').closest('div.form-group').removeClass('has-error').removeClass('has-success');
         removeError();
     });
 
-   /* $('#inputEmail').on('blur', function(){
+    $('#inputEmail').on('blur', function(){
         var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
         if($(this).val() != '' ) {
             if (pattern.test($(this).val())) {
@@ -517,7 +592,26 @@
                 $(this).closest('div.form-group').addClass('has-error');
             }
         }
-    }); */
+    });
+
+   /* $('#inputEmail').on('change', function(){
+        var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
+        if($(this).val() != '' ) {
+            if (pattern.test($(this).val())) {
+                //Верно
+                $(this).closest('div.form-group').removeClass('has-error').addClass('has-success');
+            } else {
+                //Не верно
+                $(this).closest('div.form-group').addClass('has-error');
+            }
+        }
+    });*/
+
+    $('#myModal .callback_form').on('submit', function(ev){
+        ev.preventDefault();
+
+        $('.send-btn').click();
+    });
 
     $('.send-btn').on('click', function(){
         console.log('click');
@@ -546,7 +640,7 @@
                     var $str = '<div class="result">Ошибка отправки письма</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash;Спасибо<br/>Свяжемся с вами в течение часа</div>';
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
                     }
 
                     $($modalID).modal('hide');
@@ -562,6 +656,343 @@
             }*/
 
         }
+    });
+
+    $('#myAppStoreModal .ios_form').on('submit', function(ev){
+        ev.preventDefault();
+
+        $('.send-ios-btn').click();
+    });
+
+    $('.send-ios-btn').on('click', function(){
+        console.log('click');
+
+        console.log($(this).closest('.modal.fade').attr('id'));
+        var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
+
+        if( $($modalID + ' #inputEmail').val() == '' ) {
+            $($modalID + ' #ios-error').text('Вы не заполнили поле "Email"');
+            $($modalID + ' .alert').fadeIn(250);
+        } else {
+            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
+
+
+            if (pattern.test($($modalID + ' #inputEmail').val())) {
+                //Верно
+                $($modalID + ' #inputEmail').closest('div.form-group').removeClass('has-error').addClass('has-success');
+
+                //console.log($($modalID + ' .ios_form').serialize());
+
+                $.post('send_email.php', $($modalID + ' .ios_form').serialize(), function (data) {
+
+                    var $str = '<div class="result">Ошибка отправки письма</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash;– Спасибо! Как только выйдет версия для iOS, мы пришлём вам письмо. </div>';
+                    }
+
+                   // console.log(data);
+
+                    $($modalID).modal('hide');
+                    $('#send_result').html($str);
+                    $('#mySuccessModal').modal('show');
+                }, 'json');
+            } else {
+                //Не верно
+                $(this).closest('div.form-group').addClass('has-error');
+                $($modalID + ' #ios-error').text('Похоже, вы ввели некорректный адрес email. Пожалуйста, проверьте.');
+                $($modalID + ' .alert').fadeIn(250);
+            }
+
+
+
+
+        }
+    });
+
+    // bootstrap youtube popup init
+    if( $(".youtube").length ) {
+        $(".youtube").YouTubeModal({autoplay:0, width: 980, height: 640});
+    }
+
+    // accordions on index page
+   // $('.collapse').collapse('toggle');
+    $('#know_more_tabs li a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+
+    /*$('.youtube').on('click', function(){
+        $('#YouTubeModalDialog').css({'margin-top': Math.floor( ($window.height() - 600) / 2)});
+    }); */
+
+
+    // галерея проектов
+    // Init magnific popup
+    if( $('.parent-container').length ) {
+        $('.parent-container').magnificPopup({
+            delegate: 'a', // child items selector, by clicking on it popup will open
+            type: 'image',
+            // other options
+            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+            zoom: {
+                enabled: true, // By default it's false, so don't forget to enable it
+
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function
+
+                // The "opener" function should return the element from which popup will be zoomed in
+                // and to which popup will be scaled down
+                // By defailt it looks for an image tag:
+                opener: function (openerElement) {
+                    // openerElement is the element on which popup was initialized, in this case its <a> tag
+                    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }
+            },
+            image: {
+                markup: '<div class="mfp-figure">' +
+                '<div class="mfp-close"></div>' +
+                '<div class="mfp-img"></div>' +
+                '<div class="mfp-bottom-bar">' +
+                '<div class="mfp-title"></div>' +
+                '<div class="mfp-counter"></div>' +
+                '</div>' +
+                '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+                cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+                titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
+                // Or the function that should return the title. For example:
+                // titleSrc: function(item) {
+                //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                // }
+
+                verticalFit: true, // Fits image in area vertically
+
+                tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+            }
+        });
+    }
+    // Init scroll pane
+    /*$('.scroll_pane').scrollbar({
+     "type": "simple" //,
+     //"autoScrollSize": true,
+     //"scrolly": $('.external-scroll_y')
+     });*/
+    if( $('.scrollbar-outer').length ) {
+        $('.scrollbar-outer').scrollbar();
+    }
+
+    // show project list
+    $('#project_title').on('click', function(){
+        $('#project_list').fadeToggle();
+    });
+
+    // hide project list
+    $('#proj_list_close').on('click', function(){
+        // $('#project_list').animate({'opacity': 0}, 250).css({'left': '-5000px'});
+        $('#project_list').fadeOut();
+    });
+
+    var $projects_cnt = $('#project_list li').length;
+    var $project_gallery = $('.project_gallery');
+    $project_gallery.width($('.project_gallery .gallery_container.active').innerWidth());
+    //$project_gallery.width($('#slide-6 .header + div').width());
+    var $gallery_width = $project_gallery.width();
+
+    function projectsInit()
+    {
+        var $rand_project = Math.floor((Math.random() * $projects_cnt));
+
+        $('#project_list ul')
+            .find('li')
+            .eq($rand_project)
+            .addClass('active');
+
+        $('#project_title').text($('#project_list ul li.active a').text());
+        $('.gallery_container')
+            .eq($rand_project)
+            .addClass('active');
+
+        fotoramaResize();
+    }
+
+    projectsInit();
+
+    function fotoramaResize()
+    {
+        var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
+        $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
+        $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
+            $fotorama.resize({'width': $gallery_width + 'px' });
+        
+        console.log('width: ' + $gallery_width);
+    }
+
+    // change active project in gallery
+    function changePojectGallery(el)
+    {
+        //$('.project_gallery .carousel.active').removeClass('active').closest('.gallery_container').removeClass('active');
+        $('.gallery_container.active').removeClass('active');
+        $( el.attr('href')).addClass('active').closest('.gallery_container').addClass('active');
+
+        fotoramaResize();
+
+    }
+
+    // make project counter string
+    function makeProjectCounterString()
+    {
+        var $cur_index = $('#project_list li.active').index() + 1,
+            $str = '';
+
+        /*if(location.href.search('/en') != -1)
+            $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
+        else if (location.href.search('/ru') != -1 || location.pathname.length == 1) */
+            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+
+        $('#proj_counter').text($str);
+    }
+
+    makeProjectCounterString();
+
+    function sliderResize()
+    {
+        var $img_width = 885, $img_height = 550;
+
+        $gallery_width = $('.navbar > div.container').width() - 60; //$project_gallery.width();
+        $project_gallery.width($gallery_width);
+
+        var $koeff = ($img_width / $img_height).toFixed(1),
+            $inner_diff = $gallery_width - $('.gallery_container.active .car-caption').innerWidth();
+
+        $('.project_gallery .carousel').width($inner_diff);
+
+        $fw_height = Math.floor($inner_diff / $koeff);
+
+        var $new_height = $fw_height; //( $fh_height < $fw_height ) ? Math.floor($fh_height) : Math.floor($fw_height);
+
+        $('.project_gallery .carousel-inner > .item, .project_gallery .carousel-inner > .item > img').height( $new_height ); //Math.floor(mywindow.height() * 0.55 ));
+
+        $('.project_gallery .carousel-inner').width(Math.floor($new_height * $koeff)); //$('.carousel-inner > .item.active > img').width());
+        $('.project_gallery .carousel').width(Math.floor($new_height * $koeff));
+
+        $project_gallery.width($gallery_width);
+
+        // позиционируем стрелки управления
+        $('.project_gallery .carousel-control').css({ 'padding-top': Math.floor($new_height/2) - 19 });
+    }
+    /*
+    $('.project_gallery .carousel').hover(function(){
+        var $caption_top = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner').height() //$('.carousel div.active .carousel-caption').offset().top;
+
+        $('.project_gallery .carousel.active .carousel-control').css({'display': 'block'});
+    }, function(){
+        $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
+    });
+
+    $('.project_gallery').on('mousemove', function(ev){
+        var $carousel_inner_left = $('.project_gallery .carousel.active .carousel-inner').offset().left; //$('.carousel div.active .carousel-caption').offset().top;
+        var $carousel_inner_right = $('.project_gallery .carousel.active .carousel-inner').offset().left + $('.project_gallery .carousel.active .carousel-inner').innerWidth();
+        var $carousel_inner_top = $('.carousel.active .carousel-inner').offset().top;
+        var $carousel_inner_bottom = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner .item.active').height();
+        var $carousel_inner_center = $carousel_inner_left + Math.floor($('.project_gallery .carousel.active .carousel-inner .item.active').width() / 2);
+
+        mouseX = ev.pageX;
+        mouseY = ev.pageY;
+
+        if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
+
+            if( $carousel_inner_left < mouseX && mouseX < $carousel_inner_right &&
+                $carousel_inner_top < mouseY && mouseY < $carousel_inner_bottom
+            )
+            {
+                if( mouseX  <= $carousel_inner_center )
+                {
+                    $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'block'});  //.animate({ 'width': '60px'}, 1000);
+                    $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'none'});
+                }
+                else if ( mouseX > $carousel_inner_center )
+                {
+                    $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'block'});
+                    $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'none'});
+                }
+            }
+            else
+            {
+                $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
+            }
+    });
+*/
+    $('#project_list a').on('click', function(ev){
+        ev.preventDefault(); //console.log('prevent click 5');
+
+        $('#project_list li.active').removeClass('active');
+        $('#project_title').text($(this).text());
+        $(this).closest('li').addClass('active');
+
+        $('#proj_list_close').click();
+        changePojectGallery($(this));
+        makeProjectCounterString();
+    });
+
+    /*$window.on('resize', function(){
+        sliderResize(); // resize project gallery
+    });*/
+
+    // show previous project of gallery
+    $('#proj_prev').on('click',function(ev){
+        var $cur_proj_index = $('#project_list li.active').index(),
+            $new_proj_index = -1,
+            $new_active_proj;
+
+        ev.preventDefault(); //console.log('prevent click 8');
+
+        if( $cur_proj_index == 0)
+            $new_proj_index = $projects_cnt - 1;
+        else
+            $new_proj_index = $cur_proj_index - 1;
+
+        $new_active_proj = $('#project_list li').eq( $new_proj_index );
+
+        $('#project_list li.active').removeClass('active');
+        $new_active_proj.addClass('active');
+        $('#project_title').text( $new_active_proj.text() );
+
+        $('#proj_list_close').click();
+
+        changePojectGallery($new_active_proj.children('a'));
+
+        makeProjectCounterString();
+
+    });
+
+    // show next project of gallery
+    $('#proj_next').on('click',function(ev){
+        var $cur_proj_index = $('#project_list li.active').index(),
+            $new_proj_index = -1,
+            $new_active_proj;
+
+        ev.preventDefault(); //console.log('prevent click 9');
+
+        if( $cur_proj_index == ($projects_cnt - 1))
+            $new_proj_index = 0;
+        else
+            $new_proj_index = $cur_proj_index + 1;
+
+        $new_active_proj = $('#project_list li').eq( $new_proj_index );
+
+        $('#project_list li.active').removeClass('active');
+        $new_active_proj.addClass('active');
+        $('#project_title').text( $new_active_proj.text() );
+
+        $('#proj_list_close').click();
+
+        changePojectGallery($new_active_proj.children('a'));
+
+        makeProjectCounterString();
     });
 
 } )( jQuery );
