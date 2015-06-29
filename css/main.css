@@ -2968,6 +2968,18 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 
+@media (max-width: 1366px) {
+    /* уменьшаем размеры блоков анимации для экранов с разрешением менее 1280х720 */
+    #floor, #floor_back, #floor_shadow, #top_buttons, #top_buttons_shadows,
+    #light_panel_shadows, #light_panel, #light_zones, #climate_panel,
+    #climate_panel_shadows, #climate_zones, #alarm_panel, #alarm_cameras,
+    #alarm_panel_shadows, #alarm_windows, #slide2-ipad {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+}
+
 @media (max-width: 1180px) {
     #langs {
         font-size: 14px;

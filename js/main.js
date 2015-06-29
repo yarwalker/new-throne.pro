@@ -136,7 +136,19 @@
 
 
         // удаляем атрибуты элементов анимации
-        $animation_bcg.removeAttr('data--' + $animation_frame_height + '-bottom-top');
+
+        $('#slide-3 .bcg, .skrollr_el').each( function(index, el){
+            $.each(el.attributes, function() {
+                if (this.name.indexOf('data-') === 0) {
+                    $(el).removeAttr(this.name);
+                    $(el).attr('data-anchor-target', '#slide-3');
+                }
+            });
+        });
+        $('#slide-3 .bcg').attr('data-bottom-top', "position: relative;  bottom: 0px;");
+        $('#slide-3 .bcg').attr('data--52-bottom', "position: absolute;  bottom: 0px;");
+
+  /*      $animation_bcg.removeAttr('data--' + $animation_frame_height + '-bottom-top');
 
         // показываем этаж и кнопки с тенями
         $('#floor, #floor_back, #top_buttons').attr('data--' + $animation_frame_height + '-bottom-top');
@@ -188,14 +200,14 @@
         $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
         $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
         $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-
+*/
 
 
 
         // заново инициализируем атрибуты элементов анимации
 
 
-        $animation_frame_height = $animation_bcg.height();
+        $animation_frame_height = $animation_bcg.height(); console.log('$animation_frame_height: ' + $animation_frame_height);
         $('#slide-3').height( $animation_frame_height * 2 );
 
         $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
