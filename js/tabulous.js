@@ -84,17 +84,7 @@
 
 
                 firstdiv.css('height',thisdivheight+'px');
-
-
-
-
             });
-
-
-
-
-
-
         },
 
         yourOtherFunction: function(el, options) {

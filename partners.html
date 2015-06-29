@@ -11,12 +11,63 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook Pixel Code -->
+    <!--script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1651187625124904');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1651187625124904&ev=PageView&noscript=1"
+            /></noscript-->
+    <!-- Facebook Conversion Code for Leads - Throne.pro 1 -->
+    <script>(function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6026367573705', {'value':'0.00','currency':'USD'}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026367573705&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
+<img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
     <div class="frame">
         <div id="head">
-            <div id="langs">
+            <div id="langs" style="visibility: hidden">
                 <span class="active">Ru</span>
                 <span><a href="/en">En</a></span>
             </div>
@@ -24,14 +75,14 @@
             <a id="logo" href="/" >THRONE Project</a>
 
             <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal">Заказать обратный звонок</span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
                 <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
             </div>
 
             <ul id="top_menu_ext">
-                <li><a href="installation.html" title="Установка">Установка</a></li>
+                <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                 <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-                <li class="active">Партнерам</li>
+                <li class="active">Партнерство</li>
                 <li><a href="about.html" title="О компании">О компании</a></li>
             </ul>
         </div>
@@ -177,7 +228,7 @@
         <div class="right">
             <span class="phone800">+7 (495) 255-0-777</span>
             <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal">Заказать обратный звонок</span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
                 <span class="callback_contacts">Менеджеры помогут<br/>и ответят на все вопросы<br>с 10:00 до 22:00</span>
             </div>
         </div>
@@ -189,17 +240,18 @@
     &copy; 2015 <span id="brand">THRONE Project</span>
     <ul id="bottom_menu">
         <li><a href="/" title="Главная">Главная</a></li>
-        <li><a href="installation.html" title="Установка">Установка</a></li>
+        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-        <li class="active">Партнерам</li>
+        <li class="active">Партнерство</li>
         <li><a href="about.html" title="О компании">О компании</a></li>
     </ul>
     <div id="footer_socials">
-        <a href="#" id="soc_twitter"></a>
-        <a href="#" id="soc_facebook"></a>
-        <a href="#" id="soc_googleplus"></a>
-        <a href="#" id="soc_instagram"></a>
-        <a href="#" id="soc_youtube"></a>
+        <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+        <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+        <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+        <!--a href="#" id="soc_instagram"></a-->
+        <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+        <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
     </div>
 </footer>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -276,6 +328,44 @@
 
 
 <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-35863800-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter30996876 = new Ya.Metrika({id:30996876,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
