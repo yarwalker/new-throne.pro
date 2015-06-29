@@ -1007,5 +1007,7 @@
         makeProjectCounterString();
     });
 
+    $('#inputPhone').mask("+7 (000) 000-0000");
+
 } )( jQuery );
 
