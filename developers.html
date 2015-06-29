@@ -64,7 +64,7 @@
 </head>
 
 <body>
-<img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
+<img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('callback click'); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head">
         <div id="langs" style="visibility: hidden">
@@ -75,7 +75,7 @@
         <a id="logo" href="/" >THRONE Project</a>
 
         <div class="callback">
-            <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+            <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('callback click'); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
         </div>
 
@@ -224,7 +224,7 @@
                     Клиент заранее узнает как работает <span class="capital">ТРОН</span> и&nbsp;за&nbsp;что он платит.</p>
             </div>
             <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('callback click'); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
                 <!--span class="callback_contacts">Менеджеры помогут<br/>и ответят на все вопросы<br>с 10:00 до 22:00</span-->
             </div>
         </div>
@@ -353,6 +353,41 @@
     ga('send', 'pageview');
 
 </script>
+
+<!-- Google Code for Throne.pro callback click Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 986593225;
+        w.google_conversion_label = "YhJSCOPJ8V0Qye-41gM";
+        w.google_remarketing_only = false;
+    }
+    // DO NOT CHANGE THE CODE BELOW.
+    goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        window.google_is_call = true;
+        var opt = new Object();
+        opt.onload_callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        }
+        var conv_handler = window['google_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+            conv_handler(opt);
+        }
+    }
+    /* ]]> */
+</script>
+<script type="text/javascript"
+        src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
