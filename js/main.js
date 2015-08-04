@@ -4,37 +4,45 @@
     $window = $(window);
     $slide = $('.homeSlide');
     $frame = $('.frame');
+    $animation = $('.animation');
     $slideTall = $('.homeSlideTall');
     $slideTall2 = $('.homeSlideTall2');
     $body = $('body');
+
+    $video = $('#screendemo');
+    $interior_ipad = $('#interior_ipad');
+    $video_h_koeff = 0.7975 / 720; // 0.7975 - отношение частного ширины и высоты картинки планшета к частному ширины и высоты видео, 720 высота видео
+    $video_w_koeff = 0.7975 / 1280;
+    
+
     $animation_frame_height = 0;
     $animation_bcg = $('#slide-3 .bcg'),
-    $tabs_container = $('#tabs_container');
+        $tabs_container = $('#tabs_container');
     $first_tab = $tabs_container.find('div').first(),
-    $tabs_container_height = 0,
-    htmlbody = $('html,body');
+        $tabs_container_height = 0,
+        htmlbody = $('html,body');
 
-   /* console.log($first_tab);*/
+    /* console.log($first_tab);*/
 
     // smooth scrolling
     var scrollTime = 3.5;
     var scrollDistance = 450;
 
-  /*  $window.on("mousewheel DOMMouseScroll", function(event){
+    /*  $window.on("mousewheel DOMMouseScroll", function(event){
 
-        event.preventDefault();
+     event.preventDefault();
 
-        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-        var scrollTop = $window.scrollTop();
-        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+     var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+     var scrollTop = $window.scrollTop();
+     var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 
-        TweenMax.to($window, scrollTime, {
-            scrollTo : { y: finalScroll, autoKill:true },
-            ease: Power1.easeOut,
-            overwrite: 5
-        });
+     TweenMax.to($window, scrollTime, {
+     scrollTo : { y: finalScroll, autoKill:true },
+     ease: Power1.easeOut,
+     overwrite: 5
+     });
 
-    });*/
+     });*/
 
 //FadeIn all sections
     $body.imagesLoaded( function() {
@@ -64,283 +72,81 @@
             winH = 550;
         }
 
+
+
         // Resize our slides
         $slide.height(winH);
 
         $slideTall.height(winH*2);
         $slideTall2.height(winH*3);
 
+        $animation.height(winH * 2);
+
         /*if( $('#fake_tabs').length ) {
-            $('#fake_tabs').width($('#tabs').width());
-            $('#fake_tabs').position().left = $('#tabs').position().left;
-        }*/
-
-        if( $('.jcarousel').length ) {
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
-
-            $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil($('.jcarousel').height() / 2 - 15)});
-
-            // определим высоту блока отзывов
-
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
-
-            $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil(( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15)});
-
-            // отзывы
-            $('.jcarousel').jcarousel({
-                // Configuration goes here
-                /*animation: {
-                 duration: 400,
-                 easing:   'linear',
-                 complete: function() {
-                 }
-                 },*/
-                transitions: Modernizr.csstransitions ? {
-                    transforms:   Modernizr.csstransforms,
-                    transforms3d: Modernizr.csstransforms3d,
-                    easing:       'linear'
-                } : false,
-                wrap: 'circular'
-            })
-                .jcarouselAutoscroll({
-                    interval: 10000,
-                    target: '+=1',
-                    autostart: true
-                });
-
-            $('.jcarousel-control-prev')
-                .jcarouselControl({
-                    target: '-=1'
-                });
-
-            $('.jcarousel-control-next')
-                .jcarouselControl({
-                    target: '+=1'
-                });
-
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
-
-            $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( $('.jcarousel').height() / 2 - 15 ) });
-
-            // определим высоту блока отзывов
-
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
-
-            $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( ( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15 ) });
-
-        }
-
-
-        // удаляем атрибуты элементов анимации
-
-        $('#slide-3 .bcg, .skrollr_el').each( function(index, el){
-            $.each(el.attributes, function() {
-                if (this.name.indexOf('data-') === 0) {
-                    $(el).removeAttr(this.name);
-                    $(el).attr('data-anchor-target', '#slide-3');
-                }
-            });
-        });
-        $('#slide-3 .bcg').attr('data-bottom-top', "position: relative;  bottom: 0px;");
-        $('#slide-3 .bcg').attr('data--52-bottom', "position: absolute;  bottom: 0px;");
-
-  /*      $animation_bcg.removeAttr('data--' + $animation_frame_height + '-bottom-top');
-
-        // показываем этаж и кнопки с тенями
-        $('#floor, #floor_back, #top_buttons').attr('data--' + $animation_frame_height + '-bottom-top');
-        $('#top_buttons_shadows').attr( 'data--' + $animation_frame_height + '-bottom-top');
-        $('#floor_shadow').attr( 'data--' + $animation_frame_height + '-bottom-top');
-
-
-        // заканчивается изменение этажа, кнопок с тенями
-        $('#floor, #floor_back').attr('data--' + Math.floor( $animation_frame_height * 1.25 ) + '-bottom-top');
-        $('#top_buttons').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top');
-        $('#top_buttons_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top');
-        $('#floor_shadow').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top');
-
-        // показываем панель управления светом с тенью и световые зоны
-        $('#light_panel_shadows').attr( 'data--' + Math.floor($animation_frame_height * 1.35) + '-bottom-top');
-        $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top');
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top');
-
-        // заканчивается изменение панели управления светом с тенью и световых зон
-        $('#light_panel_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.5) + '-bottom-top');
-        $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top');
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top');
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.7) + '-bottom-top');
-
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.95) + '-bottom-top');
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-
-
-
-        // показываем панель управления климатом с тенью и зоны
-        $('#climate_panel_shadows').attr( 'data--' + Math.floor($animation_frame_height * 1.6) + '-bottom-top');
-        $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top');
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top');
-
-        // заканчивается изменение панели управления климатом с тенью и зон
-        $('#climate_panel_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.75) + '-bottom-top');
-        $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top');
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top');
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.9) + '-bottom-top');
-
-        // показываем панель управления сигнализацией и контур окон
-        $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top');
-        $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top');
-        $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.8) + '-bottom-top');
-        $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top');
-
-        // заканчивается изменение панели управления сигнализацией и контура окон
-        $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-        $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-        $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-        $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top');
-*/
-
-
-
-        // заново инициализируем атрибуты элементов анимации
-
-
-        $animation_frame_height = $animation_bcg.height(); console.log('$animation_frame_height: ' + $animation_frame_height);
-        $('#slide-3').height( $animation_frame_height * 2 );
-
-        $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
-
-
-        $('#fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
-        //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
-        $('#fake_tabs ul').attr('data--' + $('#fake_tabs').height() +  '-bottom', "visibility: hidden");
-
-        $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top',"bottom: 0px; opacity: 0;");
-        $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 0; opacity: 1;");
-
-        $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 0px; opacity: 0;");
-        $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 0; opacity: 1;");
-
-        $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 0px; opacity: 0;");
-        $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top',"bottom: 0; opacity: 1;");
-
-        // показываем этаж и кнопки с тенями
-        $('#floor, #floor_back, #top_buttons').attr(
-            'data--' + $animation_frame_height + '-bottom-top',
-            "bottom: " + Math.floor($animation_frame_height / 5) + "px; opacity: 0.3;");
-        $('#top_buttons_shadows').attr( 'data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
-        $('#floor_shadow').attr( 'data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
-
-
-        // заканчивается изменение этажа, кнопок с тенями
-        $('#floor, #floor_back').attr('data--' + Math.floor( $animation_frame_height * 1.25 ) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#top_buttons').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#top_buttons_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top',"opacity: 0.4;");
-        $('#floor_shadow').attr('data--' + Math.floor( $animation_frame_height * 1.25  + 50) + '-bottom-top',"opacity: 1;");
-
-        // показываем панель управления светом с тенью и световые зоны
-        $('#light_panel_shadows').attr( 'data--' + Math.floor($animation_frame_height * 1.35) + '-bottom-top', "opacity: 0; bottom: 0;");
-        $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top',"bottom: 450px; opacity: 0;");
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top',"bottom: 450px; opacity: 0;");
-
-        // заканчивается изменение панели управления светом с тенью и световых зон
-        $('#light_panel_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.5) + '-bottom-top',"opacity: 1;");
-        $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.7) + '-bottom-top',"bottom: 0; opacity: 0;");
-
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.95) + '-bottom-top',"bottom: 0; opacity: 0;");
-        $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top',"bottom: 0; opacity: 1;");
-
-
-        // показываем панель управления климатом с тенью и зоны
-        $('#climate_panel_shadows').attr( 'data--' + Math.floor($animation_frame_height * 1.6) + '-bottom-top', "opacity: 0; bottom: 0;");
-        $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 450px; opacity: 0;");
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top',"bottom: 450px; opacity: 0;");
-
-        // заканчивается изменение панели управления климатом с тенью и зон
-        $('#climate_panel_shadows').attr('data--' + Math.floor( $animation_frame_height * 1.75) + '-bottom-top',"opacity: 1;");
-        $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.9) + '-bottom-top',"opacity: 0;");
-
-        // показываем панель управления сигнализацией и контур окон
-        $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 450px; opacity: 0;");
-        $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 450px; opacity: 0;");
-        $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.8) + '-bottom-top',"bottom: 0; opacity: 0;");
-        $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top',"bottom: 0; opacity: 0;");
-
-        // заканчивается изменение панели управления сигнализацией и контура окон
-        $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top',"bottom: 0; opacity: 1;");
-        $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top',"opacity: 1;");
-        $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top',"opacity: 1;");
-
-
-
-      /*  // Init Skrollr
-        var s = skrollr.init({
-            render: function(data) {
-                //Debugging - Log the current scroll position.
-                console.log(data.curTop);
-            },
-            smoothScrolling: true,
-            smoothScrollingDuration: 200,
-            mobileDeceleration: 0.005,
-            edgeStrategy: 'set',
-            easing: {
-                WTF: Math.random,
-                inverted: function(p) {
-                    return 1-p;
-                }
-            },
-            forceHeight: false
-
-        });
-
-        // Refresh Skrollr after resizing our sections
-        s.refresh($('.frame')); */
-
-        // Init Skrollr for 768 and up
-        if( winW >= 768) {
-            // Init Skrollr
-            var s = skrollr.init({
-                render: function(data) {
-                    //Debugging - Log the current scroll position.
-                   // console.log(data.curTop);
-                },
-                smoothScrolling: true,
-                smoothScrollingDuration: 200,
-               /* mobileDeceleration: 0.005,
-                edgeStrategy: 'set',
-                easing: {
-                    WTF: Math.random,
-                    inverted: function(p) {
-                        return 1-p;
-                    }
-                },*/
-                forceHeight: false
-            });
-
-            // Resize our slides
-            $slide.height(winH);
-
-            s.refresh($('.frame'));
-
-        } else {
-            // destroy skrollr elements
-            $('#slide-3').height( $animation_frame_height );
-            $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
-
-            // Init Skrollr
-            var s = skrollr.init();
-            s.destroy();
-
-        }
-
+         $('#fake_tabs').width($('#tabs').width());
+         $('#fake_tabs').position().left = $('#tabs').position().left;
+         }*/
+
+         if( $('.jcarousel').length ) {
+         $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+         $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
+         $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil($('.jcarousel').height() / 2 - 15)});
+
+         // определим высоту блока отзывов
+
+         $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+         $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
+         $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil(( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15)});
+
+         // отзывы
+         $('.jcarousel').jcarousel({
+         // Configuration goes here
+         //animation: {
+         //duration: 400,
+         //easing:   'linear',
+         //complete: function() {
+         //}
+         //},
+         transitions: Modernizr.csstransitions ? {
+         transforms:   Modernizr.csstransforms,
+         transforms3d: Modernizr.csstransforms3d,
+         easing:       'linear'
+         } : false,
+         wrap: 'circular'
+         })
+         .jcarouselAutoscroll({
+         interval: 10000,
+         target: '+=1',
+         autostart: true
+         });
+
+         $('.jcarousel-control-prev')
+         .jcarouselControl({
+         target: '-=1'
+         });
+
+         $('.jcarousel-control-next')
+         .jcarouselControl({
+         target: '+=1'
+         });
+
+         $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+         $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
+         $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( $('.jcarousel').height() / 2 - 15 ) });
+
+         // определим высоту блока отзывов
+
+         $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+         $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
+         $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( ( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15 ) });
+
+         }
+
+        $animation_frame_height = $animation_bcg.height();
         // Check for touch
         if(Modernizr.touch) {
             // destroy skrollr elements
@@ -349,24 +155,224 @@
             $('.skrollr_el').remove();
             $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
 
+            if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
+                console.log('visible');
+
+                if( $window.scrollTop() >= $('#slide-1').offset().top ) {
+                    $('.visible-tablet #slogan').css({ position: 'fixed', top: 0, left: '10%' });
+                    $('.visible-tablet #slogan + div').css({ position: 'fixed', bottom: 0, 'margin-left': '5%' });
+                } else {
+                    $('.visible-tablet #slogan').css({ position: 'relative', top: 0, left: 0 });
+                    $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: 0, 'margin-left': '5%' });
+                }
+
+                if( $window.scrollTop() >= $('#ipad_wrap').offset().top ) {
+                    $('.visible-tablet #slogan').css({ position: 'absolute',
+                        top: ( $('#ipad_wrap').offset().top - $('#slide-1').offset().top ), left: '10%' });
+                    $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: ( $(window).height() - $("#slide-1").height()  ), 'margin-left': '5%' });
+                }
+            }
+
             // Init Skrollr
-            var s = skrollr.init();
-            s.destroy();
+            //var s = skrollr.init();
+            //s.destroy();
+        } else {
+            // удаляем атрибуты элементов анимации
+
+            $video.each(function (index, el) {
+                $.each(el.attributes, function () {
+                    if (this.name.indexOf('data-') === 0) {
+                        $(el).removeAttr(this.name);
+                        $(el).attr('data-anchor-target', '#slide-1');
+                    }
+                });
+            });
+            //$video.attr( 'data-top', "transform: scale(" + ( $('#interior_ipad').height() * $video_koeff ) + "); opacity: 1 ");
+          /*  if( ( $interior_ipad.height() * $video_h_koeff ) <= ( $interior_ipad.height() * 1.4178 * $video_h_koeff ) ) {
+                $scale = $interior_ipad.height() * $video_h_koeff;
+            } else {
+                $scale = $interior_ipad.height() * 1.4178 * $video_h_koeff;
+            }
+            $video.attr( 'data-top', "transform: scale(" + $scale + "); opacity: 1 ");
+
+            console.log($interior_ipad.width() + 'x' + $interior_ipad.height());
+            console.log('width scale: ' + ($interior_ipad.height() * 1.4178 * $video_h_koeff)) ;
+            console.log('height scale: ' + ($interior_ipad.height() * $video_h_koeff)) ;
+            console.log('video_scale: ' + $scale );*/
+
+            if( winW <= 1024 ) {
+                $video.attr( 'data-top', "transform: scale(0.85); opacity: 1 ");
+            } else if( winW <= 1280 ) {
+                $video.attr( 'data-top', "transform: scale(0.69); opacity: 1 ");
+            } else if( winW <= 1366 ) {
+                $video.attr( 'data-top', "transform: scale(0.69); opacity: 1 ");
+            } else {
+                $video.attr( 'data-top', "transform: scale(0.75); opacity: 1 ");
+            }
+
+
+            $('#slide-3 .bcg, .skrollr_el').each(function (index, el) {
+                $.each(el.attributes, function () {
+                    if (this.name.indexOf('data-') === 0) {
+                        $(el).removeAttr(this.name);
+                        $(el).attr('data-anchor-target', '#slide-3');
+                    }
+                });
+            });
+            $('#slide-3 .bcg').attr('data-bottom-top', "position: relative;  bottom: 0px;");
+            $('#slide-3 .bcg').attr('data--52-bottom', "position: absolute;  bottom: 0px;");
+
+            // заново инициализируем атрибуты элементов анимации
+
+            console.log('$animation_frame_height: ' + $animation_frame_height);
+            $('#slide-3').height($animation_frame_height * 2);
+
+            $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
+
+
+            $('#fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
+            //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
+            $('#fake_tabs ul').attr('data--' + $('#fake_tabs').height() + '-bottom', "visibility: hidden");
+
+            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+            // показываем этаж и кнопки с тенями
+            $('#floor, #floor_back, #top_buttons').attr(
+                'data--' + $animation_frame_height + '-bottom-top',
+                "bottom: " + Math.floor($animation_frame_height / 5) + "px; opacity: 0.3;");
+            $('#top_buttons_shadows').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
+            $('#floor_shadow').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
+
+
+            // заканчивается изменение этажа, кнопок с тенями
+            $('#floor, #floor_back').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#top_buttons').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#top_buttons_shadows').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "opacity: 0.4;");
+            $('#floor_shadow').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "opacity: 1;");
+
+            // показываем панель управления светом с тенью и световые зоны
+            $('#light_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.35) + '-bottom-top', "opacity: 0; bottom: 0;");
+            $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 450px; opacity: 0;");
+            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 450px; opacity: 0;");
+
+            // заканчивается изменение панели управления светом с тенью и световых зон
+            $('#light_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "opacity: 1;");
+            $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.7) + '-bottom-top', "bottom: 0; opacity: 0;");
+
+            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.95) + '-bottom-top', "bottom: 0; opacity: 0;");
+            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+
+            // показываем панель управления климатом с тенью и зоны
+            $('#climate_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.6) + '-bottom-top', "opacity: 0; bottom: 0;");
+            $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 450px; opacity: 0;");
+            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 450px; opacity: 0;");
+
+            // заканчивается изменение панели управления климатом с тенью и зон
+            $('#climate_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "opacity: 1;");
+            $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.9) + '-bottom-top', "opacity: 0;");
+
+            // показываем панель управления сигнализацией и контур окон
+            $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 450px; opacity: 0;");
+            $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 450px; opacity: 0;");
+            $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.8) + '-bottom-top', "bottom: 0; opacity: 0;");
+            $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 0;");
+
+            // заканчивается изменение панели управления сигнализацией и контура окон
+            $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "opacity: 1;");
+            $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "opacity: 1;");
+
+
+            /*  // Init Skrollr
+             var s = skrollr.init({
+             render: function(data) {
+             //Debugging - Log the current scroll position.
+             console.log(data.curTop);
+             },
+             smoothScrolling: true,
+             smoothScrollingDuration: 200,
+             mobileDeceleration: 0.005,
+             edgeStrategy: 'set',
+             easing: {
+             WTF: Math.random,
+             inverted: function(p) {
+             return 1-p;
+             }
+             },
+             forceHeight: false
+
+             });
+
+             // Refresh Skrollr after resizing our sections
+             s.refresh($('.frame')); */
+
+            // Init Skrollr for 768 and up
+            if (winW >= 768) {
+                // Init Skrollr
+                var s = skrollr.init({
+                    render: function (data) {
+                        //Debugging - Log the current scroll position.
+                        // console.log(data.curTop);
+                    },
+                    smoothScrolling: true,
+                    smoothScrollingDuration: 200,
+                    /* mobileDeceleration: 0.005,
+                     edgeStrategy: 'set',
+                     easing: {
+                     WTF: Math.random,
+                     inverted: function(p) {
+                     return 1-p;
+                     }
+                     },*/
+                    forceHeight: false
+                });
+
+                // Resize our slides
+                $slide.height(winH);
+
+                s.refresh($('#screendemo'));
+                s.refresh($('.frame'));
+
+            } else {
+                // destroy skrollr elements
+                $('#slide-3').height($animation_frame_height);
+                $('.skrollr_el').remove();
+                $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
+
+                // Init Skrollr
+                var s = skrollr.init();
+                s.destroy();
+
+            }
         }
+
     }
 
-   /* function initAdjustWindow() {
-        return {
-            match : function() {
-                adjustWindow();
-            },
-            unmatch : function() {
-                adjustWindow();
-            }
-        };
-    }*/
+    /* function initAdjustWindow() {
+     return {
+     match : function() {
+     adjustWindow();
+     },
+     unmatch : function() {
+     adjustWindow();
+     }
+     };
+     }*/
 
-   // enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+    // enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
     $(window).scroll(function() {
         if ($(this).scrollTop() >  Math.floor($(this).height() / 4 * 3 ) ) {
@@ -376,6 +382,24 @@
         }
 
         //$('.navbar-custom .nav li a:focus').blur();
+
+        if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
+            console.log('visible');
+
+            if( $window.scrollTop() >= $('#slide-1').offset().top ) {
+                $('.visible-tablet #slogan').css({ position: 'fixed', top: 0, left: '10%' });
+                $('.visible-tablet #slogan + div').css({ position: 'fixed', bottom: 0, 'margin-left': '5%' });
+            } else {
+                $('.visible-tablet #slogan').css({ position: 'relative', top: 0, left: 0 });
+                $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: 0, 'margin-left': '5%' });
+            }
+
+            if( $window.scrollTop() >= $('#ipad_wrap').offset().top ) {
+                $('.visible-tablet #slogan').css({ position: 'absolute',
+                    top: ( $('#ipad_wrap').offset().top - $('#slide-1').offset().top ), left: '10%' });
+                $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: ( $(window).height() - $("#slide-1").height()  ), 'margin-left': '5%' });
+            }
+        }
     });
 
 
@@ -383,14 +407,14 @@
     function init()
     {
         /*var s = skrollr.init({
-            render: function(data) {
-                //Debugging - Log the current scroll position.
-                console.log(data.curTop);
-            }
-        });*/
+         render: function(data) {
+         //Debugging - Log the current scroll position.
+         console.log(data.curTop);
+         }
+         });*/
 
-      //  adjustWindow();
-       // frameResize();
+        //  adjustWindow();
+        // frameResize();
 
 
     }
@@ -408,14 +432,16 @@
 
         fotoramaResize();
 
+        console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
+
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 
         /*var s = skrollr.init({
-            render: function(data) {
-                //Debugging - Log the current scroll position.
-                console.log(data.curTop);
-            }
-        });*/
+         render: function(data) {
+         //Debugging - Log the current scroll position.
+         console.log(data.curTop);
+         }
+         });*/
 
 
         // Refresh Skrollr after resizing our sections
@@ -448,7 +474,7 @@
     function goToByScroll(dataslide)
     {
         htmlbody.animate({
-            scrollTop: $('.frame[data-slide=' + dataslide + ']').offset().top
+            scrollTop: ( dataslide != 4 ? $('.frame[data-slide=' + dataslide + ']').offset().top : $('.frame[data-slide=' + dataslide + ']').offset().top - 30 )
         }, 1000);
     }
 
@@ -572,8 +598,8 @@
     }
 
     /*if( location.pathname == '/about.html' ) {
-        googleMap("map_canvas", 57.590141,39.900717);
-    } */
+     googleMap("map_canvas", 57.590141,39.900717);
+     } */
 
     // скрываем сообщение об ошибке
     function removeError(){
@@ -606,18 +632,18 @@
         }
     });
 
-   /* $('#inputEmail').on('change', function(){
-        var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
-        if($(this).val() != '' ) {
-            if (pattern.test($(this).val())) {
-                //Верно
-                $(this).closest('div.form-group').removeClass('has-error').addClass('has-success');
-            } else {
-                //Не верно
-                $(this).closest('div.form-group').addClass('has-error');
-            }
-        }
-    });*/
+    /* $('#inputEmail').on('change', function(){
+     var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
+     if($(this).val() != '' ) {
+     if (pattern.test($(this).val())) {
+     //Верно
+     $(this).closest('div.form-group').removeClass('has-error').addClass('has-success');
+     } else {
+     //Не верно
+     $(this).closest('div.form-group').addClass('has-error');
+     }
+     }
+     });*/
 
     $('#myModal .callback_form').on('submit', function(ev){
         ev.preventDefault();
@@ -640,7 +666,7 @@
             if( $($modalID + ' #inputPhone').val() != '' ) {
 
                 //Верно
-               // $($modalID + ' #inputEmail').closest('div.form-group').removeClass('has-error').addClass('has-success');
+                // $($modalID + ' #inputEmail').closest('div.form-group').removeClass('has-error').addClass('has-success');
 
                 // отправляем письмо
                 //$($modalID + ' #inputCheck').val($('body').data('check'));
@@ -661,11 +687,11 @@
                 }, 'json');
             }
             /*else {
-                //Не верно
-                $($modalID + ' #inputEmail').closest('div.form-group').addClass('has-error');
-                $($modalID + ' #error').text('Неверный e-mail адрес!');
-                $($modalID + ' .alert').fadeIn(250);
-            }*/
+             //Не верно
+             $($modalID + ' #inputEmail').closest('div.form-group').addClass('has-error');
+             $($modalID + ' #error').text('Неверный e-mail адрес!');
+             $($modalID + ' .alert').fadeIn(250);
+             }*/
 
         }
     });
@@ -703,7 +729,7 @@
                         $str = '<div class="result">&mdash;– Спасибо! Как только выйдет версия для iOS, мы пришлём вам письмо. </div>';
                     }
 
-                   // console.log(data);
+                    // console.log(data);
 
                     $($modalID).modal('hide');
                     $('#send_result').html($str);
@@ -728,15 +754,15 @@
     }
 
     // accordions on index page
-   // $('.collapse').collapse('toggle');
+    // $('.collapse').collapse('toggle');
     $('#know_more_tabs li a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
     })
 
     /*$('.youtube').on('click', function(){
-        $('#YouTubeModalDialog').css({'margin-top': Math.floor( ($window.height() - 600) / 2)});
-    }); */
+     $('#YouTubeModalDialog').css({'margin-top': Math.floor( ($window.height() - 600) / 2)});
+     }); */
 
 
     // галерея проектов
@@ -838,8 +864,8 @@
         var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
         $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
-            $fotorama.resize({'width': $gallery_width + 'px' });
-        
+        $fotorama.resize({'width': $gallery_width + 'px' });
+
         console.log('width: ' + $gallery_width);
     }
 
@@ -861,9 +887,9 @@
             $str = '';
 
         /*if(location.href.search('/en') != -1)
-            $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
-        else if (location.href.search('/ru') != -1 || location.pathname.length == 1) */
-            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+         $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
+         else if (location.href.search('/ru') != -1 || location.pathname.length == 1) */
+        $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
 
         $('#proj_counter').text($str);
     }
@@ -897,47 +923,47 @@
         $('.project_gallery .carousel-control').css({ 'padding-top': Math.floor($new_height/2) - 19 });
     }
     /*
-    $('.project_gallery .carousel').hover(function(){
-        var $caption_top = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner').height() //$('.carousel div.active .carousel-caption').offset().top;
+     $('.project_gallery .carousel').hover(function(){
+     var $caption_top = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner').height() //$('.carousel div.active .carousel-caption').offset().top;
 
-        $('.project_gallery .carousel.active .carousel-control').css({'display': 'block'});
-    }, function(){
-        $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
-    });
+     $('.project_gallery .carousel.active .carousel-control').css({'display': 'block'});
+     }, function(){
+     $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
+     });
 
-    $('.project_gallery').on('mousemove', function(ev){
-        var $carousel_inner_left = $('.project_gallery .carousel.active .carousel-inner').offset().left; //$('.carousel div.active .carousel-caption').offset().top;
-        var $carousel_inner_right = $('.project_gallery .carousel.active .carousel-inner').offset().left + $('.project_gallery .carousel.active .carousel-inner').innerWidth();
-        var $carousel_inner_top = $('.carousel.active .carousel-inner').offset().top;
-        var $carousel_inner_bottom = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner .item.active').height();
-        var $carousel_inner_center = $carousel_inner_left + Math.floor($('.project_gallery .carousel.active .carousel-inner .item.active').width() / 2);
+     $('.project_gallery').on('mousemove', function(ev){
+     var $carousel_inner_left = $('.project_gallery .carousel.active .carousel-inner').offset().left; //$('.carousel div.active .carousel-caption').offset().top;
+     var $carousel_inner_right = $('.project_gallery .carousel.active .carousel-inner').offset().left + $('.project_gallery .carousel.active .carousel-inner').innerWidth();
+     var $carousel_inner_top = $('.carousel.active .carousel-inner').offset().top;
+     var $carousel_inner_bottom = $('.project_gallery .carousel.active .carousel-inner').offset().top + $('.project_gallery .carousel.active .carousel-inner .item.active').height();
+     var $carousel_inner_center = $carousel_inner_left + Math.floor($('.project_gallery .carousel.active .carousel-inner .item.active').width() / 2);
 
-        mouseX = ev.pageX;
-        mouseY = ev.pageY;
+     mouseX = ev.pageX;
+     mouseY = ev.pageY;
 
-        if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
+     if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
 
-            if( $carousel_inner_left < mouseX && mouseX < $carousel_inner_right &&
-                $carousel_inner_top < mouseY && mouseY < $carousel_inner_bottom
-            )
-            {
-                if( mouseX  <= $carousel_inner_center )
-                {
-                    $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'block'});  //.animate({ 'width': '60px'}, 1000);
-                    $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'none'});
-                }
-                else if ( mouseX > $carousel_inner_center )
-                {
-                    $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'block'});
-                    $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'none'});
-                }
-            }
-            else
-            {
-                $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
-            }
-    });
-*/
+     if( $carousel_inner_left < mouseX && mouseX < $carousel_inner_right &&
+     $carousel_inner_top < mouseY && mouseY < $carousel_inner_bottom
+     )
+     {
+     if( mouseX  <= $carousel_inner_center )
+     {
+     $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'block'});  //.animate({ 'width': '60px'}, 1000);
+     $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'none'});
+     }
+     else if ( mouseX > $carousel_inner_center )
+     {
+     $('.project_gallery .carousel.active .carousel-control.right').css({'display': 'block'});
+     $('.project_gallery .carousel.active .carousel-control.left').css({'display': 'none'});
+     }
+     }
+     else
+     {
+     $('.project_gallery .carousel.active .carousel-control').css({'display': 'none'});
+     }
+     });
+     */
     $('#project_list a').on('click', function(ev){
         ev.preventDefault(); //console.log('prevent click 5');
 
@@ -951,8 +977,8 @@
     });
 
     /*$window.on('resize', function(){
-        sliderResize(); // resize project gallery
-    });*/
+     sliderResize(); // resize project gallery
+     });*/
 
     // show previous project of gallery
     $('#proj_prev').on('click',function(ev){
@@ -1009,5 +1035,38 @@
 
     $('#inputPhone').mask("+7 (000) 000-0000");
 
+    $('#play_demo, #play_demo_text').on('click', function(){
+        var $play_demo = $('#play_demo');
+
+	if($('#slide-1 .bcg.visible-tablet').is(':visible')) {
+        	var api = flowplayer();
+
+	        api.toggle();
+
+        	if( api.paused == true ) {   // play the file, and display pause symbol
+        	    $str = $play_demo.css('background-image');
+        	    $play_demo.css( { 'background-image' : $str.replace('play-button', 'pause-button') } );
+        	} else if( api.playing == true ) {              // pause the file, and display play symbol
+        	    $str = $play_demo.css('background-image');
+	            $play_demo.css( { 'background-image' : $str.replace('pause-button', 'play-button') } );
+	        }
+	} else {
+		if ($video[0].paused == true) {   // play the file, and display pause symbol
+        	    $video[0].play();
+        	    //$(this).attr('src', $(this).attr('src').replace('play-button', 'pause-button'));
+        	    $str = $play_demo.css('background-image');
+        	    $play_demo.css( { 'background-image' : $str.replace('play-button', 'pause-button') } );
+        	} else {              // pause the file, and display play symbol
+        	    $video[0].pause();
+        	    //$(this).attr('src', $(this).attr('src').replace('pause-button', 'play-button'));
+        	    $str = $play_demo.css('background-image');
+        	    $play_demo.css( { 'background-image' : $str.replace('pause-button', 'play-button') } );
+        	}
+	}
+    });
+
 } )( jQuery );
 
+/**
+ * Created by shabashov on 02.07.15.
+ */

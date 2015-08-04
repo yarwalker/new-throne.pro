@@ -2,13 +2,19 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=0.3, maximum-scale=1, user-scalable=yes" />
+    <meta name="HandheldFriendly" content="True"/>
+
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
 
     <title>Партнерам</title>
     <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
@@ -65,7 +71,7 @@
 </head>
 
 <body>
-<img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('#');  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
+<img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
     <div class="frame">
         <div id="head">
             <div id="langs" style="visibility: hidden">
@@ -76,7 +82,7 @@
             <a id="logo" href="/" >THRONE Project</a>
 
             <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('#');  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
                 <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
             </div>
 
@@ -229,7 +235,7 @@
         <div class="right">
             <span class="phone800">+7 (495) 255-0-777</span>
             <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion('#');  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
                 <span class="callback_contacts">Менеджеры помогут<br/>и ответят на все вопросы<br>с 10:00 до 22:00</span>
             </div>
         </div>
@@ -258,29 +264,35 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
+                    <!--span aria-hidden="true">&times;</span-->
+                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                </button>
+            </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-sm-8 col-xs-8">
-                        <form action="" class="form-horizontal callback_form">
+                    <div class="col-sm-7 col-xs-7">
+                        <form action="" class=" callback_form">
                             <div class="form-group">
-                                <label for="inputPhone" class="col-sm-4 col-xs-4 control-label">Телефон</label>
-                                <div class="col-sm-8 col-xs-8 ">
+                                <label for="inputName" class="control-label">Имя</label>
+                                <div class=" ">
+                                    <input type="text" class="form-control" id="inputName" name="inputNamee">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPhone" class="control-label">Телефон<sup>&#42;</sup></label>
+                                <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                 </div>
                             </div>
-                            <!--div class="form-group">
-                                <label for="inputEmail" class="col-sm-4 col-xs-4 control-label">или почта</label>
-                                <div class="col-sm-8 col-xs-8">
-                                    <input type="email" class="form-control" id="inputEmail" name="inputEmail">
-                                </div>
-                            </div-->
                             <div class="form-group">
-                                <div class="col-sm-offset-4 col-xs-offset-4 col-sm-8 col-xs-8">
+                                <div class="">
                                     <button type="button" class="send-btn">Отправить</button>
-                                    <div class="footnote">Перезвоним в течение часа</div>
+                                    <div class="footnote">Мы перезвоним<br>в течение часа</div>
                                 </div>
                             </div>
-                            <!--input type="hidden" name="inputCheck" id="inputCheck" value=""-->
+                            <input type="hidden" name="inputTheme" value="Обратный звонок"/>
                         </form>
                         <div class="alert alert-danger" role="alert">
                             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -288,19 +300,38 @@
                             <span id="error"></span>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-4 col-sm-offset-1  cb_form_right">
-                        <img src="../images/phone_tube.png" alt="">
-                        <div>Звоним бесплатно<br>в любую точку мира</div>
+                    <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
+                        <img src="images/phone_tube.png" alt="">
+                        <div>Смелее! Это вас ни к&nbsp;чему не обязывает.</div>
+                        <div id="padlock">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                            <span>Мы никому не передадим ваш номер!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="footnote">
+                            Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами!
+                            Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.
+                        </div>
                     </div>
                 </div>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+    </div>
+</div>
+
 
 <div class="modal fade" id="mySuccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
+                    <!--span aria-hidden="true">&times;</span-->
+                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                </button>
+            </div>
             <div class="modal-body">
                 <div class="row" id="send_result">
                 </div>
