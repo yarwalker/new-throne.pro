@@ -246,7 +246,7 @@
             // показываем этаж и кнопки с тенями
             $('#floor, #floor_back, #top_buttons').attr(
                 'data--' + $animation_frame_height + '-bottom-top',
-                "bottom: " + Math.floor($animation_frame_height / 5) + "px; opacity: 0.3;");
+                "bottom: " + Math.floor($animation_frame_height / 6) + "px; opacity: 0.3;");
             $('#top_buttons_shadows').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
             $('#floor_shadow').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
 
@@ -478,7 +478,7 @@
         }, 1000);
     }
 
-    $('#tabs a, #fake_tabs ul li a').on('click', function(ev){
+    $('a.inner_anchor, #tabs a, #fake_tabs ul li a').on('click', function(ev){
         ev.preventDefault();
 
         $('#tabs a, #fake_tabs a').removeClass('tabulous_active');

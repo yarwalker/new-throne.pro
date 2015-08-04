@@ -61,12 +61,14 @@ p, span { -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; }
     -o-transition: color 0.5s ease, border-bottom 0.5s ease;
     outline: 0;
 }
-a:hover { border-bottom-color: #be0005; color: #be0005; transition: none;
+a:hover, a.inner_anchor:hover { border-bottom-color: #be0005; color: #be0005; transition: none;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     outline: 0;
 }
+
+a.inner_anchor { color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
 
 .clear { clear: both }
 
