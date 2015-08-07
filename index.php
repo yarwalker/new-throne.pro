@@ -601,7 +601,7 @@ $detect = new Mobile_Detect();
     </div>
 
     <h2 class="text-center">Оборудование для системы<br>"Умный дом ТРОН"</h2>
-    <div class="table" id="equipment">
+    <div class="table hidden-xs" id="equipment" >
         <div class="table_row">
             <div class="table_cell">
                 <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
@@ -615,6 +615,14 @@ $detect = new Mobile_Detect();
         </div>
     </div>
 
+    <div class="table visible-xs" id="equipment" >
+        <div><img src="images/equipment.jpg" class="img-responsive" /></div>
+        <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
+            400 производителей оборудования, каждый из&nbsp;которых проходит строгую сертификацию.
+            Поэтому наши клиенты всегда получают предложение, оптимально сбалансированное по&nbsp;таким показателям как Цена / Дизайн / Надежность.</p>
+        <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
+    </div>
+
     <div class="text-center">
         <!--a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a>
         <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a-->
@@ -623,7 +631,7 @@ $detect = new Mobile_Detect();
     </div>
 
     <h2 class="text-center" id="know_more_title">Хотите узнать больше?</h2>
-    <div id="know_more_tabs">
+    <div id="know_more_tabs" class="hidden-xs">
         <ul class="nav nav-pills nav-justified">
             <li role="presentation" class="active"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
             <li role="presentation"><a href="#how_works">Как мы работаем</a></li>
@@ -658,76 +666,76 @@ $detect = new Mobile_Detect();
             </div>
         </div>
     </div>
-    <!--div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        О компании "ТРОН Проект"
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
-                    офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Как мы работаем
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.</p>
-                    <p>Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.</p>
-                    <p>Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
-                    <a href="installation.html">Подробнее</a>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Стоимость "умного дома"
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
-                        Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
-                    <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
-                    <p><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Давайте всё обсудим!
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
-                    <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
-                    <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
-                    <p><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
-                </div>
-            </div>
-        </div>
-    </div-->
 
-
-
+    <div class="visible-xs">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            О компании "ТРОН Проект"
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
+                        офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Как мы работаем
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.</p>
+                        <p>Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.</p>
+                        <p>Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
+                        <a href="installation.html">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Стоимость "умного дома"
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
+                            Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
+                        <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
+                        <p><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Давайте всё обсудим!
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
+                        <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
+                        <p><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
