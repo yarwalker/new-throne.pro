@@ -13,8 +13,8 @@ $detect = new Mobile_Detect();
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=0.3, maximum-scale=1, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
     <meta name="description" content="THRONE 3D умный дом " />
@@ -31,8 +31,11 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
     <link rel="stylesheet" href="js/flowplay/skin/functional.css">
-
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <? if ( !$detect->isMobile() ): ?>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <? else: ?>
+        <link href="css/main_mobile.css" rel="stylesheet" type="text/css" />
+    <? endif; ?>
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -90,7 +93,7 @@ $detect = new Mobile_Detect();
 <img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
-    <div id="head">
+    <div id="head" class=" hidden-xs">
         <div id="langs" style="visibility: hidden">
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
@@ -98,7 +101,7 @@ $detect = new Mobile_Detect();
 
         <a id="logo" href="/" >THRONE Project</a>
 
-        <div class="callback">
+        <div class="callback visible-lg visible-md">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
@@ -110,11 +113,44 @@ $detect = new Mobile_Detect();
             <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="О компании">О компании</a></li>
         </ul>
+
+    </div>
+
+    <div id="head" class=" visible-xs" >
+        <nav class="navbar" id="top_menu_ext" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="logo" href="/" >THRONE Project</a>
+                    <!--a class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="top_menu_ext">
+                        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+                        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+
+                        <li><a href="about.html" title="О компании">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>
 
 <div id="slide-1" data-slide="1" class="frame animation" >
-    <? if(!$detect->isMobile()): ?>
+    <? //if(!$detect->isMobile()): ?>
         <div class="bcg "
                 >
 
@@ -222,9 +258,9 @@ $detect = new Mobile_Detect();
 
         </div>
 
-    <? else: ?>
+    <? //else: ?>
 
-        <div class="bcg visible-tablet">
+        <!--div class="bcg visible-tablet">
             <div id="interier" class="homeSlide">
                 <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
                 <div class="text-center">
@@ -240,13 +276,10 @@ $detect = new Mobile_Detect();
 
             <div id="ipad_wrap" class="homeSlide">
                 <div id="interior_ipad">
-                    <!--iframe data-anchor-target="#slide-1" src="https://player.vimeo.com/video/129051743" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe-->
-                    <!--div id="red_square" ></div-->
-                    <!--img id="screendemo"  src="images/ezgif.com-crop.gif" alt=""/-->
                     <div class="flowplayer " id="screendemo" data-swf="flowplayer.swf" >
                         <video>
                             <source type="video/webm" src="/uploads/videos/costa.webm">
-                            <!--source type="video/mp4" src="https://stream.flowplayer.org/bauhaus.mp4"-->
+                            <source type="video/mp4" src="https://stream.flowplayer.org/bauhaus.mp4">
                         </video>
                     </div>
                 </div>
@@ -261,8 +294,8 @@ $detect = new Mobile_Detect();
                     интерфейса!
                 </div>
             </div>
-        </div>
-    <? endif; ?>
+        </div-->
+    <? //endif; ?>
 
 
 </div>
@@ -700,7 +733,7 @@ $detect = new Mobile_Detect();
 
 
 
-<footer>
+<footer class="hidden-xs">
     &copy; 2015 <span id="brand">THRONE Project</span>
     <ul id="bottom_menu">
         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
@@ -709,6 +742,17 @@ $detect = new Mobile_Detect();
         <li><a href="about.html" title="О компании">О компании</a></li>
     </ul>
 
+</footer>
+
+<footer class="visible-xs">
+    <ul id="bottom_menu">
+        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+        <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+        <li><a href="about.html" title="О компании">О компании</a></li>
+    </ul>
+
+    <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
 
 
@@ -842,7 +886,9 @@ $detect = new Mobile_Detect();
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
+<? if(!$detect->isMobile()): ?>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+<? endif; ?>
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -852,7 +898,13 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
 <script type="text/javascript" src="js/flowplay/flowplayer.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
+<? if ( !$detect->isMobile() ): ?>
+    <script type="text/javascript" src="js/main_mobile.js"></script>
+<? else: ?>
+    <script type="text/javascript" src="js/main.js"></script>
+<? endif; ?>
+
 
 <!--script src="js/jquery-2.1.3.min.js"></script-->
 <!--script src="js/jquery-ui.js"></script-->

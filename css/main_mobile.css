@@ -3505,6 +3505,8 @@ only screen and (min-resolution: 144dpi) {
         padding: 24px 20px 20px 20px;
         float: left;
     }
+    .hidden-xs #langs { padding-bottom: 15px; }
+
     #logo {
         margin: 25px 20px 0 0;
         float: left;
@@ -3531,6 +3533,34 @@ only screen and (min-resolution: 144dpi) {
             height: 23px;
         }
     }
+
+    .visible-sm #logo, .visible-xs #logo {
+        margin: 10px 20px 0 10px;
+        float: left;
+        background-image: url('../images/logo.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        width: 136px;
+        height: 46px;
+        border: none;
+        font-size: 16px;
+        padding-top: 37px;
+        padding-left: 3px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 144dpi) {
+        .visible-sm #logo, .visible-xs #logo {
+            background-image: url('../images/logo@2x.png');
+            background-size: 124px 23px;
+            background-repeat: no-repeat;
+            width: 124px;
+            height: 23px;
+        }
+    }
+
     #top_menu_ext li, #top_menu li, #bottom_menu li {
         display: inline-block;
         padding-top: 30px;
@@ -3543,28 +3573,46 @@ only screen and (min-resolution: 144dpi) {
         margin-left: 225px;
         margin-top: 0;
     }
-    .visible-sm #top_menu_ext {
+    .visible-sm #top_menu_ext, .visible-xs #top_menu_ext {
         list-style: none;
         display: block;
         padding-left: 0;
-        margin-left: 225px;
+        margin-left: 0px;
         margin-top: 0;
-
+    }
+    .visible-sm #top_menu_ext li, .visible-xs #top_menu_ext li,
+    .visible-sm #top_menu li, .visible-xs #top_menu li
+   /* .visible-sm #bottom_menu li, .visible-xs #bottom_menu li*/ {
+        display: block;
     }
 
-    .callback {
+    .visible-sm #bottom_menu li, .visible-xs #bottom_menu li {
+        padding-top: 15px;
+    }
+    .visible-sm #bottom_menu li:first-of-type, .visible-xs #bottom_menu li:first-of-type {
+        padding-top: 0px;
+    }
+
+    /*.visible-sm .navbar-nav > li > a,*/ .visible-xs .navbar-nav > li > a {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .navbar-toggle {
+        border-color: #9A9A9A;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .navbar-toggle .icon-bar { background-color: #9A9A9A; }
+
+
+    .visible-xs .callback, .visible-sm .callback {
         float: right;
         margin-right: 10px;
         padding-top: 23px;
         font-size: 13px;
         text-align: center;
-    }
-    .visible-sm .callback {
-        float: right;
-        margin-right: 10px;
-        padding-top: 23px;
-        font-size: 13px;
-        text-align: center;
+        display: none;
     }
 
     #slogan {
@@ -3641,6 +3689,11 @@ only screen and (min-resolution: 144dpi) {
 
     #bottom_menu {
         margin-left: 40px;
+    }
+    .visible-xs #bottom_menu {
+        margin-left: 0px;
+        margin-bottom: 30px;
+
     }
 
     #partners-slide-1 p {
@@ -3738,4 +3791,9 @@ only screen and (min-resolution: 144dpi) {
 
 }*/
 
+@media (max-width: 479px) {
+    .visible-xs #bottom_menu li {
+        display: block;
+    }
+}
 
