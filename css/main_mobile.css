@@ -1040,11 +1040,10 @@ only screen and (min-resolution: 144dpi) {
     font-family: circe_l;
     text-align: center;
     text-align: center;
-    padding-top: 50px;
     margin-top: 0;
     margin-bottom: 102px;
-    padding-bottom: 0px;
     line-height: 74px;
+    padding: 50px 15px 0;
 }
 
 #advantages {
@@ -1058,9 +1057,14 @@ only screen and (min-resolution: 144dpi) {
 #advantages .table_cell { position: relative; }
 #advantages .table_cell div { margin-bottom: 40px; }
 #advantages .table_cell div:last-of-type { margin-bottom: 0px; }
-#advantages .table_cell img { margin: 0px auto;
-    display: block;
-    width: auto; }
+#advantages .table_cell img {
+    margin: 0px auto;
+    /*display: block;*/
+    width: auto;
+    max-width: 85%;
+
+    /*height: inherit;*/
+}
 #advantages .table_cell .callback_button { margin: 50px auto 0; position: absolute; bottom: 20px; left: 50%; margin-left: -124px;}
 #advantages h4 { font-family: circe_b; margin-bottom: 0; margin-top: 0; }
 #advantages .table_cell p:first-of-type { margin-top: 0px; }
@@ -3647,10 +3651,34 @@ only screen and (min-resolution: 144dpi) {
         position: absolute;
     }
 
+    #slide-2 h1.visible-sm, #slide-2 h1.visible-xs { margin-bottom: 0 }
+
     #advantages {
         width: 95%;
         margin: 30px auto 30px;
         font-size: 18px;
+    }
+
+    #advantages.visible-xs img, #advantages.visible-sm img { margin: 0 auto 20px; }
+    #advantages.visible-xs .app_links_container, #advantages.visible-sm .app_links_container {
+        text-align: center;
+    }
+    #advantages.visible-xs .app_links_container a, #advantages.visible-sm .app_links_container a {
+        margin-right: 20px;
+    }
+    #advantages.visible-xs .app_links_container a:last-of-type, #advantages.visible-sm .app_links_container a:last-of-type {
+        margin-right: 0px;
+    }
+    #advantages.visible-xs .table_cell div, #advantages.visible-sm .table_cell div {
+        margin-bottom: 20px;
+    }
+
+    #advantages.visible-xs .table_cell .callback_button, #advantages.visible-sm .table_cell .callback_button {
+        margin: 50px auto 0;
+        position: relative;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -124px;
     }
 
     #slide-3-left p, #slide-3-right p {

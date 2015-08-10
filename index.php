@@ -121,11 +121,6 @@ $detect = new Mobile_Detect();
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a id="logo" href="/" >THRONE Project</a>
-                    <!--a class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a-->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -133,14 +128,10 @@ $detect = new Mobile_Detect();
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-
-
-
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="top_menu_ext">
                         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-
                         <li><a href="about.html" title="О компании">О компании</a></li>
                     </ul>
                 </div>
@@ -301,10 +292,13 @@ $detect = new Mobile_Detect();
 </div>
 
 <div id="slide-2" data-slide="2" class="frame">
-    <h1>Почему "Умный&nbsp;дом"<br>
+    <h1 class="visible-md visible-lg">Почему "Умный&nbsp;дом"<br>
         <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
     </h1>
-    <div class="table" id="advantages">
+    <h1 class="visible-sm visible-xs">Почему "Умный&nbsp;дом"<br>
+        <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
+    </h1>
+    <div class="table visible-lg visible-md" id="advantages">
         <div class="table_row">
             <div class="table_cell">
                 <div>
@@ -325,7 +319,7 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
             <div class="table_cell">
-                <img src="images/advantages_center.jpg" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
                 <span class="callback_button" data-toggle="modal" data-target="#myModal"
                       onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
             </div>
@@ -352,6 +346,61 @@ $detect = new Mobile_Detect();
 
             </div>
         </div>
+    </div>
+    <div id="advantages" class="visible-sm visible-xs">
+        <div class="table">
+            <div class="table_row">
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                </div>
+            </div>
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p class="app_links_container">
+                            <a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+                    </div>
+
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="bottom_line"></div>
 </div>
@@ -908,9 +957,9 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/flowplay/flowplayer.min.js"></script>
 
 <? if ( !$detect->isMobile() ): ?>
-    <script type="text/javascript" src="js/main_mobile.js"></script>
-<? else: ?>
     <script type="text/javascript" src="js/main.js"></script>
+<? else: ?>
+    <script type="text/javascript" src="js/main_mobile.js"></script>
 <? endif; ?>
 
 
