@@ -296,59 +296,59 @@ $detect = new Mobile_Detect();
         <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
     </h1>
     <h1 class="visible-sm visible-xs">Почему "Умный&nbsp;дом"<br>
-        <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
+        от&nbsp;"<span class="capital">ТРОН</span> Проект" &mdash; лучшее решение?
     </h1>
-    <div class="table visible-lg visible-md" id="advantages">
-        <div class="table_row">
-            <div class="table_cell">
-                <div>
-                    <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
-                    <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
-                    системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
-                    </p>
+    <div  id="advantages">
+        <div class="table visible-lg visible-md">
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Любые масштабы зданий</h4>
-                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
-                        устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
                 </div>
-                <div>
-                    <h4>Послепродажная поддержка</h4>
-                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
-                        Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
-                </div>
-            </div>
-            <div class="table_cell">
-                <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
-                <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
-            </div>
-            <div class="table_cell">
-                <div>
-                    <h4>Уникальная простота и наглядность</h4>
-                    <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
-                        Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
-                    (подходит под&nbsp;любые размеры экрана).</p>
-                    <p>
-                        <a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a><br>
-                        <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
-                    </p>
-                </div>
+                <div class="table_cell">
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p>
+                            <a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a><br>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
 
-                <div>
-                    <h4>Сертифицированная установка</h4>
-                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
-                        Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
-                        <a href="installation.html">Подробнее</a>
-                    </p>
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+
+                    </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <div id="advantages" class="visible-sm visible-xs">
-        <div class="table">
+        <div class="table visible-sm">
             <div class="table_row">
                 <div class="table_cell">
                     <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
@@ -399,9 +399,59 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
         </div>
+        <div class="table visible-xs">
+            <div class="table_row">
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                </div>
+            </div>
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
 
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
 
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p class="app_links_container">
+                            <a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+                    </div>
+
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="bottom_line"></div>
 </div>
 
@@ -430,7 +480,7 @@ $detect = new Mobile_Detect();
         <div class="skrollr_el" id="alarm_panel_shadows" data-anchor-target="#slide-3"></div>
         <div class="skrollr_el" id="alarm_windows" data-anchor-target="#slide-3"></div>
 
-        <div class="hsContainer">
+        <div class="hsContainer visible-lg visible-md">
             <div class="hsContent">
                 <h1>Простое и понятное управление</h1>
                 <p class="text-center" id="descr">
@@ -458,6 +508,52 @@ $detect = new Mobile_Detect();
                         <span class="tabulousclear"></span>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="hsContainer visible-sm">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes">
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                </div>
+
+            </div>
+        </div>
+        <div class="hsContainer visible-xs">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes">
+                    <div><img src="images/interface_icon.png"  class="img-responsive" alt=""/><span id="note1">Понятный и&nbsp;легкий интерфейс</span></div>
+                    <div><img src="images/scale_icon.png"  class="img-responsive" alt=""/><span id="note2">Управление объектами любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" alt=""/><span id="note3">Дистанционное управление с&nbsp;планшета или телефона</span></div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                </div>
+
             </div>
         </div>
     </div>

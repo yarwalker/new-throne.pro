@@ -151,10 +151,10 @@
         if(Modernizr.touch) {
             // destroy skrollr elements
             console.log('win width: ' + winW);
-            $('#slide-3').height( $animation_frame_height );
+            //$('#slide-3').height( $animation_frame_height );
             $('.skrollr_el').remove();
             $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
-
+            /*
             if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
                 console.log('visible');
 
@@ -171,7 +171,7 @@
                         top: ( $('#ipad_wrap').offset().top - $('#slide-1').offset().top ), left: '10%' });
                     $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: ( $(window).height() - $("#slide-1").height()  ), 'margin-left': '5%' });
                 }
-            }
+            } */
 
             // Init Skrollr
             //var s = skrollr.init();
