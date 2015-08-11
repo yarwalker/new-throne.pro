@@ -500,14 +500,14 @@ $detect = new Mobile_Detect();
                 <div id="slide2-ipad">
                     <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
-                <div id="fake_tabs" align="center" width="100%">
+                <!--div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
                         <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
                         <span class="tabulousclear"></span>
                     </ul>
-                </div>
+                </div-->
             </div>
         </div>
         <div class="hsContainer visible-md">
@@ -530,14 +530,14 @@ $detect = new Mobile_Detect();
                 <div id="slide2-ipad">
                     <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
-                <div id="fake_tabs" align="center" width="100%">
+                <!--div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
                         <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
                         <span class="tabulousclear"></span>
                     </ul>
-                </div>
+                </div-->
             </div>
         </div>
         <div class="hsContainer visible-sm">
@@ -599,7 +599,7 @@ $detect = new Mobile_Detect();
 </div>
 
 <div id="slide-4" data-slide="4" class="frame">
-    <div id="tabs">
+    <div id="tabs" class="visible-lg">
         <ul>
             <li><a href="#tabs-1" data-slide="4" title="">Освещение</a></li>
             <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
@@ -737,6 +737,609 @@ $detect = new Mobile_Detect();
                 </table>
             </div>
         </div>
+    </div>
+    <div id="tabs2" class="visible-md">
+        <ul>
+            <li><a href="#tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+        <div id="tabs_container">
+            <div id="tabs-1">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="40%">
+                            <h2>Управление освещением</h2>
+                            <p class="">
+                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                                "ТРОН".</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                        </td>
+                        <td>
+                            <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <span>Плавная регулировка<br>яркости</span>
+                        </td>
+                        <td>
+                            <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                        </td>
+                        <td>
+                            <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                        </td>
+                        <td>
+                            <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <span>Полное или частичное<br>управление</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-2">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td>
+                            <h2>Управление климатом</h2>
+                            <p class="">
+                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <span>Кондиционирование</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <span>Вентиляция</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <span>Отопление</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <span>Теплые полы</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <span>Термостаты</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-3">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td>
+                            <h2>Управление системой безопасности</h2>
+                            <p>
+                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                            </p>
+                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                                проникновении (взломе).</p>
+                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                                с&nbsp;мобильного телефона или планшета.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                        </td>
+                        <td>
+                            <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                        </td>
+                        <td>
+                            <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                        </td>
+                        <td>
+                            <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                        </td>
+                        <td>
+                            <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="tabs3" class="visible-sm">
+        <ul>
+            <li><a href="#sm-tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#sm-tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#sm-tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+        <!--div id="tabs_container"-->
+            <div id="sm-tabs-1">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление освещением</h2>
+                            <img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                            <p class="">
+                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                                "ТРОН".</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img  src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        </td>
+                        <td>
+                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Плавная регулировка<br>яркости</span>
+                        </td>
+                        <td>
+                            <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        </td>
+                        <td>
+                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                        </td>
+                        <td>
+                            <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        </td>
+                        <td>
+                            <span>Полное или частичное<br>управление</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="sm-tabs-2">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление климатом</h2>
+                            <img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                            <p class="">
+                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                        </td>
+                        <td>
+                            <span>Кондиционирование</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Вентиляция</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                        </td>
+                        <td>
+                            <span>Отопление</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Теплые полы</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                        </td>
+                        <td>
+                            <span>Термостаты</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="sm-tabs-3">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление системой безопасности</h2>
+                            <img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                            <p>
+                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                            </p>
+                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                                проникновении (взломе).</p>
+                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                                с&nbsp;мобильного телефона или планшета.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                        </td>
+                        <td>
+                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                        </td>
+                        <td>
+                            <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                        </td>
+                        <td>
+                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                        </td>
+                        <td>
+                            <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                        </td>
+                        <td>
+                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+    </div>
+    <div id="tabs4" class="visible-xs">
+        <ul>
+            <li><a href="#xs-tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#xs-tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#xs-tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+
+        <div id="xs-tabs-1">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление освещением</h2>
+                        <img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                        <p class="">
+                            Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                            нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                        <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                            Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                            "ТРОН".</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                    </td>
+                    <td>
+                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Плавная регулировка<br>яркости</span>
+                    </td>
+                    <td>
+                        <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                    </td>
+                    <td>
+                        <span>Сохранение<br>пользовательских<br>сцен</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                    </td>
+                    <td>
+                        <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                    </td>
+                    <td>
+                        <span>Полное или частичное<br>управление</span>
+                    </td>
+                </tr>
+            </table>
+
+            <!--table>
+                <tr>
+                    <td>
+                        <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                    </td>
+                    <td>
+                        <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        <span>Плавная регулировка<br>яркости</span>
+                    </td>
+                    <td>
+                        <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        <span>Сохранение<br>пользовательских<br>сцен</span>
+                    </td>
+                    <td>
+                        <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                    </td>
+                    <td>
+                        <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        <span>Полное или частичное<br>управление</span>
+                    </td>
+                </tr>
+            </table-->
+        </div>
+        <div id="xs-tabs-2">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление климатом</h2>
+                        <img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                        <p class="">
+                            Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                        <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                            вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                        <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                    </td>
+                    <td>
+                        <span>Кондиционирование</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Вентиляция</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                    </td>
+                    <td>
+                        <span>Отопление</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Теплые полы</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                    </td>
+                    <td>
+                        <span>Термостаты</span>
+                    </td>
+                </tr>
+            </table>
+
+            <!--table>
+                <tr>
+                    <td>
+                        <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                        <span>Кондиционирование</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                        <span>Вентиляция</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                        <span>Отопление</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                        <span>Теплые полы</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                        <span>Термостаты</span>
+                    </td>
+                </tr>
+            </table-->
+        </div>
+        <div id="xs-tabs-3">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление системой безопасности</h2>
+                        <img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                        <p>
+                            "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                            Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                        </p>
+                        <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                            проникновении (взломе).</p>
+                        <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                            с&nbsp;мобильного телефона или планшета.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                    </td>
+                    <td>
+                        <span>Охранная<br>и пожарная<br>сигнализация</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                    </td>
+                    <td>
+                        <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                    </td>
+                    <td>
+                        <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                    </td>
+                    <td>
+                        <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                    </td>
+                    <td>
+                        <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                    </td>
+                </tr>
+            </table>
+
+            <!--table>
+                <tr>
+                    <td>
+                        <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                        <span>Охранная<br>и пожарная<br>сигнализация</span>
+                    </td>
+                    <td>
+                        <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                        <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                    </td>
+                    <td>
+                        <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                        <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                    </td>
+                    <td>
+                        <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                        <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                    </td>
+                    <td>
+                        <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                        <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                    </td>
+                </tr>
+            </table-->
+        </div>
+
     </div>
     <div class="bottom_line"></div>
 </div>
@@ -898,7 +1501,7 @@ $detect = new Mobile_Detect();
                         <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
                             Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
                         <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
-                        <p><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
+                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
                     </div>
                 </div>
             </div>
@@ -914,7 +1517,7 @@ $detect = new Mobile_Detect();
                     <div class="panel-body">
                         <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
                         <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
-                        <p><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
+                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
                     </div>
                 </div>
             </div>

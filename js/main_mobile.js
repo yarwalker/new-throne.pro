@@ -16,11 +16,21 @@
 
 
     $animation_frame_height = 0;
-    $animation_bcg = $('#slide-3 .bcg'),
-        $tabs_container = $('#tabs_container');
+    $animation_bcg = $('#slide-3 .bcg');
+    //$tabs_container = $('#tabs_container');
+    $('#slide-4 div[class ^= visible]').each(function(){
+
+       if( $(this).is(':visible') ) {
+           //console.log($(this));
+           $tabs_container = $(this).find('#tabs_container');
+           //console.log($tabs_container);
+        }
+    });
+
+    console.log($tabs_container);
     $first_tab = $tabs_container.find('div').first(),
-        $tabs_container_height = 0,
-        htmlbody = $('html,body');
+    $tabs_container_height = 0,
+    htmlbody = $('html,body');
 
     /* console.log($first_tab);*/
 
@@ -50,7 +60,7 @@
 
             tabulousInit();
             $tabs_container_height = $first_tab.height() + 20;
-            $('#tabs_container').height($tabs_container_height);
+            $tabs_container.height($tabs_container_height);
 
             // Resize sections
             adjustWindow();
@@ -151,31 +161,10 @@
         if(Modernizr.touch) {
             // destroy skrollr elements
             console.log('win width: ' + winW);
-            //$('#slide-3').height( $animation_frame_height );
+
             $('.skrollr_el').remove();
             $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
-            /*
-            if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
-                console.log('visible');
 
-                if( $window.scrollTop() >= $('#slide-1').offset().top ) {
-                    $('.visible-tablet #slogan').css({ position: 'fixed', top: 0, left: '10%' });
-                    $('.visible-tablet #slogan + div').css({ position: 'fixed', bottom: 0, 'margin-left': '5%' });
-                } else {
-                    $('.visible-tablet #slogan').css({ position: 'relative', top: 0, left: 0 });
-                    $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: 0, 'margin-left': '5%' });
-                }
-
-                if( $window.scrollTop() >= $('#ipad_wrap').offset().top ) {
-                    $('.visible-tablet #slogan').css({ position: 'absolute',
-                        top: ( $('#ipad_wrap').offset().top - $('#slide-1').offset().top ), left: '10%' });
-                    $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: ( $(window).height() - $("#slide-1").height()  ), 'margin-left': '5%' });
-                }
-            } */
-
-            // Init Skrollr
-            //var s = skrollr.init();
-            //s.destroy();
         } else {
             // удаляем атрибуты элементов анимации
 
@@ -187,192 +176,12 @@
                     }
                 });
             });
-            //$video.attr( 'data-top', "transform: scale(" + ( $('#interior_ipad').height() * $video_koeff ) + "); opacity: 1 ");
-            /*  if( ( $interior_ipad.height() * $video_h_koeff ) <= ( $interior_ipad.height() * 1.4178 * $video_h_koeff ) ) {
-             $scale = $interior_ipad.height() * $video_h_koeff;
-             } else {
-             $scale = $interior_ipad.height() * 1.4178 * $video_h_koeff;
-             }
-             $video.attr( 'data-top', "transform: scale(" + $scale + "); opacity: 1 ");
-
-             console.log($interior_ipad.width() + 'x' + $interior_ipad.height());
-             console.log('width scale: ' + ($interior_ipad.height() * 1.4178 * $video_h_koeff)) ;
-             console.log('height scale: ' + ($interior_ipad.height() * $video_h_koeff)) ;
-             console.log('video_scale: ' + $scale );*/
-
-            if( winW <= 1024 ) {
-                $video.attr( 'data-top', "transform: scale(0.85); opacity: 1 ");
-            } else if( winW <= 1280 ) {
-                $video.attr( 'data-top', "transform: scale(0.69); opacity: 1 ");
-            } else if( winW <= 1366 ) {
-                $video.attr( 'data-top', "transform: scale(0.69); opacity: 1 ");
-            } else {
-                $video.attr( 'data-top', "transform: scale(0.75); opacity: 1 ");
-            }
 
 
-            $('#slide-3 .bcg, .skrollr_el').each(function (index, el) {
-                $.each(el.attributes, function () {
-                    if (this.name.indexOf('data-') === 0) {
-                        $(el).removeAttr(this.name);
-                        $(el).attr('data-anchor-target', '#slide-3');
-                    }
-                });
-            });
-            $('#slide-3 .bcg').attr('data-bottom-top', "position: relative;  bottom: 0px;");
-            $('#slide-3 .bcg').attr('data--52-bottom', "position: absolute;  bottom: 0px;");
-
-            // заново инициализируем атрибуты элементов анимации
-
-            console.log('$animation_frame_height: ' + $animation_frame_height);
-            $('#slide-3').height($animation_frame_height * 2);
-
-            $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
-
-
-            $('#fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
-            //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
-            $('#fake_tabs ul').attr('data--' + $('#fake_tabs').height() + '-bottom', "visibility: hidden");
-
-            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
-
-            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
-
-            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
-
-            // показываем этаж и кнопки с тенями
-            $('#floor, #floor_back, #top_buttons').attr(
-                'data--' + $animation_frame_height + '-bottom-top',
-                "bottom: " + Math.floor($animation_frame_height / 6) + "px; opacity: 0.3;");
-            $('#top_buttons_shadows').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
-            $('#floor_shadow').attr('data--' + $animation_frame_height + '-bottom-top', "opacity: 0; bottom: 4px;");
-
-
-            // заканчивается изменение этажа, кнопок с тенями
-            $('#floor, #floor_back').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#top_buttons').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#top_buttons_shadows').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "opacity: 0.4;");
-            $('#floor_shadow').attr('data--' + Math.floor($animation_frame_height * 1.25 + 50) + '-bottom-top', "opacity: 1;");
-
-            // показываем панель управления светом с тенью и световые зоны
-            $('#light_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.35) + '-bottom-top', "opacity: 0; bottom: 0;");
-            $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 450px; opacity: 0;");
-            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 450px; opacity: 0;");
-
-            // заканчивается изменение панели управления светом с тенью и световых зон
-            $('#light_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "opacity: 1;");
-            $('#light_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.7) + '-bottom-top', "bottom: 0; opacity: 0;");
-
-            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 1.95) + '-bottom-top', "bottom: 0; opacity: 0;");
-            $('#light_zones').attr('data--' + Math.floor($animation_frame_height * 2 - 10) + '-bottom-top', "bottom: 0; opacity: 1;");
-
-
-            // показываем панель управления климатом с тенью и зоны
-            $('#climate_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.6) + '-bottom-top', "opacity: 0; bottom: 0;");
-            $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 450px; opacity: 0;");
-            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 450px; opacity: 0;");
-
-            // заканчивается изменение панели управления климатом с тенью и зон
-            $('#climate_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "opacity: 1;");
-            $('#climate_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#climate_zones').attr('data--' + Math.floor($animation_frame_height * 1.9) + '-bottom-top', "opacity: 0;");
-
-            // показываем панель управления сигнализацией и контур окон
-            $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 450px; opacity: 0;");
-            $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 450px; opacity: 0;");
-            $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 1.8) + '-bottom-top', "bottom: 0; opacity: 0;");
-            $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 0;");
-
-            // заканчивается изменение панели управления сигнализацией и контура окон
-            $('#alarm_panel').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#alarm_cameras').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
-            $('#alarm_panel_shadows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "opacity: 1;");
-            $('#alarm_windows').attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "opacity: 1;");
-
-
-            /*  // Init Skrollr
-             var s = skrollr.init({
-             render: function(data) {
-             //Debugging - Log the current scroll position.
-             console.log(data.curTop);
-             },
-             smoothScrolling: true,
-             smoothScrollingDuration: 200,
-             mobileDeceleration: 0.005,
-             edgeStrategy: 'set',
-             easing: {
-             WTF: Math.random,
-             inverted: function(p) {
-             return 1-p;
-             }
-             },
-             forceHeight: false
-
-             });
-
-             // Refresh Skrollr after resizing our sections
-             s.refresh($('.frame')); */
-
-            // Init Skrollr for 768 and up
-            if (winW >= 768) {
-                // Init Skrollr
-                var s = skrollr.init({
-                    render: function (data) {
-                        //Debugging - Log the current scroll position.
-                        // console.log(data.curTop);
-                    },
-                    smoothScrolling: true,
-                    smoothScrollingDuration: 200,
-                    /* mobileDeceleration: 0.005,
-                     edgeStrategy: 'set',
-                     easing: {
-                     WTF: Math.random,
-                     inverted: function(p) {
-                     return 1-p;
-                     }
-                     },*/
-                    forceHeight: false
-                });
-
-                // Resize our slides
-                $slide.height(winH);
-
-                s.refresh($('#screendemo'));
-                s.refresh($('.frame'));
-
-            } else {
-                // destroy skrollr elements
-                $('#slide-3').height($animation_frame_height);
-                $('.skrollr_el').remove();
-                $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
-
-                // Init Skrollr
-                var s = skrollr.init();
-                s.destroy();
-
-            }
         }
 
     }
 
-    /* function initAdjustWindow() {
-     return {
-     match : function() {
-     adjustWindow();
-     },
-     unmatch : function() {
-     adjustWindow();
-     }
-     };
-     }*/
-
-    // enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
     $(window).scroll(function() {
         if ($(this).scrollTop() >  Math.floor($(this).height() / 4 * 3 ) ) {
@@ -436,16 +245,22 @@
 
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 
-        /*var s = skrollr.init({
-         render: function(data) {
-         //Debugging - Log the current scroll position.
-         console.log(data.curTop);
-         }
-         });*/
+        $('#slide-4 div[class ^= visible]').each(function(){
 
+            if( $(this).is(':visible') ) {
+                console.log($(this));
+                $tabs_container = $(this).find('#tabs_container');
+                //console.log($tabs_container);
+            }
+        });
 
-        // Refresh Skrollr after resizing our sections
-        //s.refresh($('.frame'));
+        $first_tab = $tabs_container.find('div').first(),
+        $tabs_container_height = 0;
+
+        console.log('resize');
+        tabulousInit();
+        $tabs_container_height = $first_tab.height() + 20;
+        $tabs_container.height($tabs_container_height);
     });
 
 
@@ -462,12 +277,21 @@
 
     function tabulousInit() {
         var i = getRandomArbitrary(0, tabs_effects.length),
-            effect = tabs_effects[i];
+            effect = tabs_effects[i],
+            $tabs = $tabs_container.parent('div[id ^= tabs]');
 
-        if( $('#tabs').length ) {
-            $('#tabs').tabulous({
+        console.log($tabs_container);
+        console.log($tabs);
+
+        if( $tabs.length && !$tabs.hasClass('activated')) {
+            //$('#tabs').tabulous({
+            $tabs.addClass('activated');
+            $tabs.tabulous({
                 effect: effect
             });
+            //$('#tabs a, #tabs2 a, #tabs3 a,#tabs4 a, #fake_tabs a').removeClass('tabulous_active');
+
+            //$('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
         }
     }
 
@@ -478,12 +302,12 @@
         }, 1000);
     }
 
-    $('a.inner_anchor, #tabs a, #fake_tabs ul li a').on('click', function(ev){
+    $('a.inner_anchor, #tabs a, #tabs2 a, #fake_tabs ul li a').on('click', function(ev){
         ev.preventDefault();
 
-        $('#tabs a, #fake_tabs a').removeClass('tabulous_active');
+        //$('#tabs a, #tabs2 a, #tabs3 a,#tabs4 a, #fake_tabs a').removeClass('tabulous_active');
 
-        $('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
+        //$('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
 
         dataslide = $(this).data('slide');
         goToByScroll(dataslide);
@@ -491,6 +315,14 @@
         if( $(this).closest('div').attr('id') == 'fake_tabs' ) {
             $('#tabs a[href=' + $(this).attr('href') + ']').click();
         }
+    });
+
+    $('#slide-4 .visible-sm li a').on('click', function(ev){
+        ev.preventDefault();
+
+        htmlbody.animate({
+            scrollTop: ( $( $(this).attr('href') ).offset().top  )
+        }, 1000);
     });
 
 
