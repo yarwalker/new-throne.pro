@@ -2115,7 +2115,7 @@ body.modal-open {
     text-align: center;
 }
 
-#notes div { display: inline-block; text-align: left; margin-right: 70px; }
+#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; }
 #notes div:last-of-type { margin-right: 0; }
 #notes div img { margin-right: 15px; vertical-align: top; }
 #notes div span { display: inline-block; }
@@ -3671,7 +3671,7 @@ only screen and (min-resolution: 144dpi) {
         /*margin: 0px auto;*/
         /* display: block; */
         width: auto;
-        max-width: 80%;
+        max-width: 60%;
         /* height: inherit; */
     }
     #advantages .visible-xs .app_links_container, #advantages .visible-sm .app_links_container {
@@ -3714,25 +3714,35 @@ only screen and (min-resolution: 144dpi) {
         margin-left: auto;
     }
 
+    #slide-3 .visible-md #notes div img {
+        margin-right: 15px;
+        vertical-align: top;
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 45px;
+        height: auto;
+    }
+
     #slide-3 .visible-sm #notes div img {
         margin-right: 15px;
         vertical-align: top;
         display: block;
         margin-bottom: 10px;
-        width: auto;
-        max-width: 40%;
-       /* height: auto; */
+        width: 45px;
+        height: auto;
+
+
     }
 
     #slide-3 .visible-xs #notes div img {
         margin-right: 15px;
         vertical-align: top;
-        display: initial;
+        display: block;
         margin-bottom: 10px;
-        float: left;
-        width: auto;
-        max-width: 60%;
-      /*  height: auto; */
+       /* max-width: 40%; */
+        height: auto;
+        width: 45px;
+       /* float: left;*/
     }
 
     #slide-3 .visible-xs #notes div span {
@@ -3749,7 +3759,57 @@ only screen and (min-resolution: 144dpi) {
         /* text-align: left; */
         margin-right: 0;
         margin-bottom: 20px;
-        float: left;
+        /*float: left;*/
+    }
+    #slide-3 .visible-xs #notes div.table_cell { display: table-cell; padding: 10px; }
+    #slide-3 .visible-xs #notes div.table_row { display: table-row; }
+
+    #slide-3 .visible-lg #slide2-ipad, #slide-3 .visible-md #slide2-ipad {
+        display: block;
+        /* max-height: 407px; */
+        /* min-height: 320px; */
+        /* height: 100%; */
+        /* width: 100%; */
+        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        position: relative;
+        margin: 70px auto 0;
+        max-width: 1600px;
+        /* background-size: contain; */
+    }
+
+    #slide-3 .visible-sm #slide2-ipad {
+        display: block;
+        /* max-height: 407px; */
+        /* min-height: 320px; */
+        /* height: 100%; */
+        /* width: 100%; */
+        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        position: relative;
+        margin: 70px auto 0;
+        max-width: 1600px;
+        width: 90%;
+        /* background-size: contain; */
+    }
+
+    #slide-3 .visible-xs #slide2-ipad {
+        display: block;
+        /* max-height: 407px; */
+        /* min-height: 320px; */
+        /* height: 100%; */
+        /* width: 100%; */
+        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        position: relative;
+        margin: 35px auto 0;
+        max-width: 1600px;
+        width: 90%;
+        /* background-size: contain; */
+    }
+    #slide-3 .visible-xs #slide2-ipad img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
     }
 
     #install-slide-1 {
@@ -3898,6 +3958,30 @@ only screen and (min-resolution: 144dpi) {
 @media (max-width: 479px) {
     .visible-xs #bottom_menu li {
         display: block;
+    }
+
+    #advantages .visible-xs .table_cell img {
+        /* margin: 0px auto; */
+        /* display: block; */
+        width: auto;
+        max-width: 80%;
+        /* height: inherit; */
+    }
+
+    #slide-3 .visible-xs #notes {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #slide-3 .visible-xs #notes div img {
+        margin-right: 15px;
+        vertical-align: top;
+        display: block;
+        margin-bottom: 10px;
+        /* max-width: 40%; */
+        height: auto;
+        width: 90px;
+        /* float: left; */
     }
 }
 

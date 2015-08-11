@@ -480,7 +480,7 @@ $detect = new Mobile_Detect();
         <div class="skrollr_el" id="alarm_panel_shadows" data-anchor-target="#slide-3"></div>
         <div class="skrollr_el" id="alarm_windows" data-anchor-target="#slide-3"></div>
 
-        <div class="hsContainer visible-lg visible-md">
+        <div class="hsContainer visible-lg">
             <div class="hsContent">
                 <h1>Простое и понятное управление</h1>
                 <p class="text-center" id="descr">
@@ -493,12 +493,42 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
-                    <div><img src="images/scale_icon.png" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
-                    <div><img src="images/dist_manage_icon.png" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                </div>
+                <div id="fake_tabs" align="center" width="100%">
+                    <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
+                        <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+                        <span class="tabulousclear"></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hsContainer visible-md">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes">
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -523,12 +553,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
                     <div><img src="images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
 
             </div>
@@ -545,13 +575,22 @@ $detect = new Mobile_Detect();
 
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
-                <div id="notes">
-                    <div><img src="images/interface_icon.png"  class="img-responsive" alt=""/><span id="note1">Понятный и&nbsp;легкий интерфейс</span></div>
-                    <div><img src="images/scale_icon.png"  class="img-responsive" alt=""/><span id="note2">Управление объектами любого масштаба</span></div>
-                    <div><img src="images/dist_manage_icon.png" alt=""/><span id="note3">Дистанционное управление с&nbsp;планшета или телефона</span></div>
+                <div id="notes" class="table">
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/interface_icon.png" class="img-responsive"  alt=""/></div>
+                        <div class="table_cell"><span id="note1">Понятный и&nbsp;легкий интерфейс</span></div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/scale_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><span id="note2">Управление объектами любого масштаба</span></div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><span id="note3">Дистанционное управление с&nbsp;планшета или телефона</span></div>
+                    </div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                    <img src="images/ipad_slide2.jpg" class="img-responsive"  alt=""/>
                 </div>
 
             </div>
@@ -929,7 +968,7 @@ $detect = new Mobile_Detect();
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">Телефон<sup>&#42;</sup></label>
+                                <label for="inputPhone" class="control-label">Телефон</label>
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                 </div>
