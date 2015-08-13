@@ -303,7 +303,7 @@ $detect = new Mobile_Detect();
                         Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
                     (подходит под&nbsp;любые размеры экрана).</p>
                     <p>
-                        <a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a><br>
+                        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a><br>
                         <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
                     </p>
                 </div>
