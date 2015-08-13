@@ -68,7 +68,11 @@ a:hover, a.inner_anchor:hover { border-bottom-color: #be0005; color: #be0005; tr
     outline: 0;
 }
 
-a.inner_anchor { color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+a.inner_anchor {
+    /*color: #fff;*/
+    border-bottom: none; /*1px solid rgba(0, 0, 0, 0.8);*/
+}
+a.inner_anchor img { border: none; outline: none; margin-bottom: 10px; }
 
 .clear { clear: both }
 
@@ -181,8 +185,9 @@ only screen and (min-resolution: 144dpi) {
 
 #ipad_wrap {
     top: 0;
-    width: 100%;
+    width: 80%;
     max-width: 1600px;
+    margin: 30px auto 50px;
 }
 .visible-tablet #ipad_wrap {
     position: relative;
@@ -432,6 +437,7 @@ only screen and (min-resolution: 144dpi) {
         /*color: #fff;*/
         position: relative;
         /*overflow: hidden;*/
+        padding: 0 15px;
     }
 }
 
@@ -601,6 +607,15 @@ h1.title {
     font-size: 48px;
     line-height: 55px;
     margin-bottom: 8px;
+}
+
+#first_frame_factoids {
+
+}
+#first_frame_factoids div {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
 }
 
 #ipad {
@@ -3687,6 +3702,60 @@ only screen and (min-resolution: 144dpi) {
         margin: -2% auto 0;
         position: absolute;
     }
+
+    #interior_ipad img { border: none; outline: none; }
+    #interior_ipad {
+        /* width: 10%; */
+        /*background: url("../images/new_ipad.png") center no-repeat;*/
+        background: none;
+        position: relative;
+        /*bottom: -45%;
+        left: 50%;*/
+        width: 80%;
+        height: 100%;
+        display: block;
+        background-size: contain;
+        opacity: 1;
+        margin: 0 auto 50px;
+        border: none;
+        outline: none;
+        /*width: 4%;*/
+        /*margin-left: -2%;*/
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 144dpi) {
+        #interior_ipad {
+            /* width: 10%; */
+           /* background: url("../images/new_ipad@2x.png") center no-repeat;*/
+            position: relative;
+            /*bottom: -45%;
+            left: 50%;*/
+            width: 80%;
+            height: auto;
+            display: block;
+            background-size: contain;
+            opacity: 1;
+            margin: 0 auto 50px;
+            border: none;
+            outline: none;
+
+            /*width: 4%;*/
+            /*margin-left: -2%;*/
+        }
+    }
+
+    .flowplayer .fp-player {
+        /*background-color: #fff;*/
+    }
+    .flowplayer .fp-player + a { opacity: 0; }
+    .flowplayer .fp-player .fp-time, .flowplayer .fp-player .fp-controls { display: none; }
+   /* .flowplayer .fp-logo {
+        display: none;
+
+    } */
 
     #slide-2 h1.visible-sm, #slide-2 h1.visible-xs { margin-bottom: 0 }
 

@@ -90,7 +90,7 @@
         $slideTall.height(winH*2);
         $slideTall2.height(winH*3);
 
-        $animation.height(winH * 2);
+        //$animation.height(winH * 2);
 
         /*if( $('#fake_tabs').length ) {
          $('#fake_tabs').width($('#tabs').width());
@@ -866,6 +866,36 @@
     });
 
     $('#inputPhone').mask("+7 (000) 000-0000");
+
+    $('#interior_ipad').flowplayer({
+        fullscreen: false,
+        brand: false,
+        embed: false,
+        plugins: { controls: false }
+
+    });
+
+
+   /* flowplayer("interior_ipad", "http://new-throne.pro/js/flowplay/flowplayer-3.2.2.swf", {
+        plugins: {
+            // tube buttons (appr. 4kb)
+            tube: {
+                url: "http://releases.flowplayer.org/swf/buttons_tube.swf",
+                type: "classLibrary"
+            },
+
+            // skinless controlbar using tube buttons
+            controls: //{
+               // url: "flowplayer.controls-skinless-3.2.16.swf",
+               // skin: 'tube'
+                null
+            //}
+        },
+        clip: {
+            autoPlay: false
+        }
+
+    }); */
 
     $('#play_demo, #play_demo_text').on('click', function(){
         var $play_demo = $('#play_demo');

@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 
 include 'Mobile_Detect.php';
@@ -31,11 +31,11 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
     <link rel="stylesheet" href="js/flowplay/skin/functional.css">
-    <? if ( !$detect->isMobile() ): ?>
+    <?php if ( !$detect->isMobile() ): ?>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <? else: ?>
+    <?php else: ?>
         <link href="css/main_mobile.css" rel="stylesheet" type="text/css" />
-    <? endif; ?>
+    <?php endif; ?>
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -141,7 +141,7 @@ $detect = new Mobile_Detect();
 </div>
 
 <div id="slide-1" data-slide="1" class="frame animation" >
-    <? //if(!$detect->isMobile()): ?>
+    <?php if(!$detect->isMobile()): ?>
         <div class="bcg "
                 >
 
@@ -249,7 +249,45 @@ $detect = new Mobile_Detect();
 
         </div>
 
-    <? //else: ?>
+    <?php else: ?>
+
+        <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
+        <p class="text-center">
+            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
+                которые действительно нужны в&nbsp;повседневной жизни:
+
+        </p>
+        <div class="text-center" id="first_frame_factoids">
+            <div>
+                <a href="#tabs-1" data-slide="4" class="inner_anchor" title="Управление освещением">
+                <img src="images/light_slide_control.png" alt=""/><br>
+                Управление<br>освещением</a>
+            </div>
+            <div>
+                <a href="#tabs-2" data-slide="4" class="inner_anchor" title="Управление климатом" >
+                <img src="images/climate_condition.jpg" alt=""/><br>
+                Управление<br>климатом</a>
+            </div>
+            <div>
+                <a data-slide="4" href="#tabs-3" class="inner_anchor" title="Управление системой безопасности">
+                <img src="images/security_alarm.jpg" alt=""/><br>
+                Управление<br>системой<br>безопасности</a>
+            </div>
+        </div>
+        <p class="text-center">А также домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
+           и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
+           Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
+        </p>
+        <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
+            style="background-color: transparent; background-image:url('images/new_ipad.png'); background-repeat: no-repeat; background-position: center center;">
+            <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
+            <video id="screendemo" loop="loop"
+              >
+                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+            </video>
+        </div>
+        
 
         <!--div class="bcg visible-tablet">
             <div id="interier" class="homeSlide">
@@ -286,7 +324,7 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
         </div-->
-    <? //endif; ?>
+    <?php endif; ?>
 
 
 </div>
@@ -1681,9 +1719,9 @@ $detect = new Mobile_Detect();
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-<? if(!$detect->isMobile()): ?>
+<?php if(!$detect->isMobile()): ?>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
-<? endif; ?>
+<?php endif; ?>
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -1693,12 +1731,14 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
 <script type="text/javascript" src="js/flowplay/flowplayer.min.js"></script>
+<script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script>
 
-<? if ( !$detect->isMobile() ): ?>
+
+<?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="js/main.js"></script>
-<? else: ?>
+<?php else: ?>
     <script type="text/javascript" src="js/main_mobile.js"></script>
-<? endif; ?>
+<?php endif; ?>
 
 
 <!--script src="js/jquery-2.1.3.min.js"></script-->
