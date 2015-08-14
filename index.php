@@ -260,18 +260,21 @@ $detect = new Mobile_Detect();
         <div class="text-center" id="first_frame_factoids">
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor" title="Управление освещением">
-                <img src="images/light_slide_control.png" alt=""/><br>
-                Управление<br>освещением</a>
+                    система<br>"умного"<br>освещения<br>
+                    <img src="images/light_slide_control.png" alt=""/>
+                </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor" title="Управление климатом" >
-                <img src="images/climate_condition.jpg" alt=""/><br>
-                Управление<br>климатом</a>
+                    управление<br>и автоматизация<br>климата<br>
+                    <img src="images/climate_condition.jpg" alt=""/>
+                </a>
             </div>
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor" title="Управление системой безопасности">
-                <img src="images/security_alarm.jpg" alt=""/><br>
-                Управление<br>системой<br>безопасности</a>
+                    системы<br>безопасности<br>и мониторинга<br>
+                    <img src="images/security_alarm.jpg" alt=""/>
+                </a>
             </div>
         </div>
         <p class="text-center">А также домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
@@ -289,41 +292,7 @@ $detect = new Mobile_Detect();
         </div>
         
 
-        <!--div class="bcg visible-tablet">
-            <div id="interier" class="homeSlide">
-                <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
-                <div class="text-center">
-                    <span>
-                    <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций, которые действительно нужны
-                    в&nbsp;повседневной жизни:
-                    управление освещением вашего жилища, управление климатом, домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
-                    и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
-                    Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
-                        </span>
-                </div>
-            </div>
 
-            <div id="ipad_wrap" class="homeSlide">
-                <div id="interior_ipad">
-                    <div class="flowplayer " id="screendemo" data-swf="flowplayer.swf" >
-                        <video>
-                            <source type="video/webm" src="/uploads/videos/costa.webm">
-                            <source type="video/mp4" src="https://stream.flowplayer.org/bauhaus.mp4">
-                        </video>
-                    </div>
-                </div>
-
-                <div id="play_demo">
-
-                </div>
-                <div id="play_demo_text">
-                    Посмотрите<br>
-                    видео<br>
-                    работы<br>
-                    интерфейса!
-                </div>
-            </div>
-        </div-->
     <?php endif; ?>
 
 
@@ -538,14 +507,14 @@ $detect = new Mobile_Detect();
                 <div id="slide2-ipad">
                     <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
-                <!--div id="fake_tabs" align="center" width="100%">
+                <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
                         <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
                         <span class="tabulousclear"></span>
                     </ul>
-                </div-->
+                </div>
             </div>
         </div>
         <div class="hsContainer visible-md">
@@ -568,14 +537,14 @@ $detect = new Mobile_Detect();
                 <div id="slide2-ipad">
                     <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
-                <!--div id="fake_tabs" align="center" width="100%">
+                <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
                         <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
                         <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
                         <span class="tabulousclear"></span>
                     </ul>
-                </div-->
+                </div>
             </div>
         </div>
         <div class="hsContainer visible-sm">
@@ -1384,13 +1353,13 @@ $detect = new Mobile_Detect();
 
 <div id="slide-5" data-slide="5" class=" frame">
     <h2 class="text-center">Расширение интеграции</h2>
-    <div class="table" id="integr_table">
+    <div class="table hidden-xs" id="integr_table">
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_description">
                     Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
                 </div>
-                <img src="images/integr_open_gates.png" alt=""/>
+                <img src="images/integr_open_gates.png" class="img-responsive" alt=""/>
                 <p>Открытие дверей<br>или&nbsp;ворот</p>
 
             </div>
@@ -1398,29 +1367,83 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
                 </div>
-                <img src="images/integr_weather_stations.png" alt=""/>
+                <img src="images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <p>Погодные<br>станции</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     <p>Управление зональным поливом газона</p>
                 </div>
-                <img src="images/integr_watering_systems.png" alt=""/>
+                <img src="images/integr_watering_systems.png" class="img-responsive" alt=""/>
                 <p>Поливочные<br>системы</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     Управление музыкой для&nbsp;каждой комнаты
                 </div>
-                <img src="images/integr_mediaroom.png" alt=""/>
+                <img src="images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <p>Медиа мультирум</p>
             </div>
             <div class="table_cell ">
                 <div class="integr_description">
                     Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
                 </div>
-                <img src="images/integr_pool.png" alt=""/>
+                <img src="images/integr_pool.png" class="img-responsive" alt=""/>
                 <p>Сауны<br>и&nbsp;бассейны</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="table visible-xs" id="integr_table">
+        <div class="table_row">
+            <div class="table_cell">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_open_gates.png" class="img-responsive" alt=""/>
+                    <p>Открытие дверей<br>или&nbsp;ворот</p>
+                </div>
+            </div>
+            <div class="table_cell">
+                Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
+            </div>
+            <div class="table_cell">
+                <img src="images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <p>Погодные<br>станции</p>
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                    <p>Поливочные<br>системы</p>
+                </div>
+            </div>
+            <div class="table_cell">
+                <p>Управление зональным поливом газона</p>
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                Управление музыкой для&nbsp;каждой комнаты
+            </div>
+            <div class="table_cell">
+                <img src="images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <p>Медиа мультирум</p>
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell ">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_pool.png" class="img-responsive" alt=""/>
+                    <p>Сауны<br>и&nbsp;бассейны</p>
+                </div>
+            </div>
+            <div class="table_cell">
+                Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
             </div>
         </div>
     </div>

@@ -927,6 +927,10 @@
         }
     });
 
+    $('.flowplayer .fp-player + a').on('click', function(ev){
+        ev.preventDefault();
+    });
+
 } )( jQuery );
 
 /**

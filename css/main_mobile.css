@@ -30,6 +30,7 @@ html, body {
     margin: 0 !important;
     font-family: circe;
     font-size: 18px;
+    line-height: 24px;
     color: #000;
     background: #fff;
     /*height: 100%;*/
@@ -72,7 +73,7 @@ a.inner_anchor {
     /*color: #fff;*/
     border-bottom: none; /*1px solid rgba(0, 0, 0, 0.8);*/
 }
-a.inner_anchor img { border: none; outline: none; margin-bottom: 10px; }
+a.inner_anchor img { border: none; outline: none; margin-top: 10px; }
 
 .clear { clear: both }
 
@@ -616,7 +617,9 @@ h1.title {
     display: inline-block;
     margin-right: 50px;
     vertical-align: top;
+    margin-bottom: 0px;
 }
+#first_frame_factoids div:last-of-type { margin-right: 0; margin-bottom: 0; }
 
 #ipad {
     margin-left: -490px;
@@ -1082,7 +1085,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #advantages .table_cell .callback_button { margin: 50px auto 0; position: absolute; bottom: 0px; left: 50%; margin-left: -124px;}
 #advantages h4 { font-family: circe_b; margin-bottom: 0; margin-top: 0; }
-#advantages .table_cell p:first-of-type { margin-top: 0px; }
+#advantages .table_cell p:first-of-type { margin-top: 2px; }
 #advantages .table_cell p { line-height: 24px; }
 
 a.ios_throne_app {
@@ -2170,7 +2173,7 @@ body.modal-open {
     /*position: absolute;
     bottom: 62%;
     left: 75%;*/
-    line-height: 22px;
+    /*line-height: 22px;*/
 }
 /*#note3 {
     position: absolute;
@@ -2752,7 +2755,7 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
 }
 
-#slide-4 p { /*width: 40%;*/ font-size: 18px; line-height: 22px; margin-top: 2px; margin-bottom: 17px; }
+#slide-4 p { /*width: 40%;*/ font-size: 18px; /*line-height: 22px;*/ margin-top: 2px; margin-bottom: 17px; }
 
 #slide-4 .icons {
     position: absolute;
@@ -4068,6 +4071,9 @@ only screen and (min-resolution: 144dpi) {
         margin-top: 10px;
         width: auto;
     }
+
+    #slide-5 #integr_table.table .table_cell img { height: 90px; width: auto; }
+    #slide-5 #equipment.table.visible-xs div:first-of-type img { width: 60%; height: auto; }
 }
 
 /*
@@ -4083,6 +4089,82 @@ only screen and (min-resolution: 144dpi) {
     }
 
 }*/
+
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+    #slide-5 .table .table_cell {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #slogan {
+        padding-top: 30px;
+        text-align: center;
+        font-family: circe_l;
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #slide-2 h1 {
+        font-size: 30px;
+        font-family: circe_l;
+        text-align: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 102px;
+        line-height: 34px;
+        padding: 50px 15px 0;
+    }
+
+    #slide-3 h1 {
+        font-size: 30px;
+        font-family: circe_l;
+        text-align: center;
+        text-align: center;
+        padding-top: 76px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #slide-3 .visible-sm #descr, #slide-3 .visible-xs #descr {
+        /* font-size: 24px; */
+        margin-top: 18px;
+        margin-bottom: 18px;
+        line-height: 24px;
+        width: 80%;
+        /* text-align: justify; */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #slide-5 h2 {
+        font-family: circe_l;
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 45px;
+    }
+    #slide-5 h2:first-of-type {
+        margin-top: 62px;
+        margin-bottom: 15px;
+    }
+
+    #slide-5 .table {
+        width: 90%;
+        margin: 0 auto 50px;
+
+    }
+    #slide-5 .table .table_cell { padding: 20px 0; border-bottom: solid 1px #aaa; }
+    #slide-5 .table .table_cell .integr_block_wrap { float: right; text-align: left; }
+    #slide-5 .table .table_row:last-of-type .table_cell { border-bottom: none; }
+    #slide-5 .table .table_row .table_cell:first-of-type { text-align: right; padding-right: 30px; }
+    #slide-5 .table .table_row .table_cell:last-of-type { padding-left: 30px; }
+
+}
 
 @media (max-width: 479px) {
     .visible-xs #bottom_menu li {
@@ -4126,6 +4208,76 @@ only screen and (min-resolution: 144dpi) {
         height: 80px;
     }
 
+    #slogan {
+        padding-top: 30px;
+        text-align: center;
+        font-family: circe_l;
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   /* #slide-2 h1 {
+        font-size: 42px;
+        font-family: circe_l;
+        text-align: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 102px;
+        line-height: 58px;
+        padding: 50px 15px 0;
+    }
+
+    #slide-3 h1 {
+        font-size: 42px;
+        font-family: circe_l;
+        text-align: center;
+        padding-top: 76px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }*/
+
+    #tabs li a, #tabs2 li a, #tabs3 li a, #tabs4 li a, #tabs5 li a {
+        display: inline-block;
+        padding: 0;
+        /* height: 52px; */
+        background: none;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: dashed 1px #fff;
+        margin-top: 16px;
+        line-height: 18px;
+        font-size: 15px;
+    }
+
+    #slide-5 h2 {
+        font-family: circe_l;
+        font-size: 42px;
+        line-height: 44px;
+        margin-bottom: 45px;
+    }
 
 }
 
+@media (max-width: 479px) and (orientation: portrait) {
+    #slide-4 .visible-sm .factoids tr td:first-of-type, #slide-4 .visible-xs .factoids tr td:first-of-type {
+        /* border-right: solid 1px #999; */
+        text-align: right;
+        padding-right: 15px;
+    }
+    #slide-4 .visible-sm .factoids tr td:last-of-type, #slide-4 .visible-xs .factoids tr td:last-of-type {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    #first_frame_factoids div {
+        display: block;
+        margin-right: 0px;
+        vertical-align: top;
+        margin-bottom: 30px;
+    }
+}
