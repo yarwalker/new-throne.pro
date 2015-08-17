@@ -4146,7 +4146,8 @@ only screen and (min-resolution: 144dpi) {
         font-family: circe_l;
         font-size: 30px;
         line-height: 34px;
-        margin-bottom: 45px;
+        margin: 0 15px 45px;
+
     }
     #slide-5 h2:first-of-type {
         margin-top: 62px;
@@ -4254,12 +4255,12 @@ only screen and (min-resolution: 144dpi) {
         font-size: 15px;
     }
 
-    #slide-5 h2 {
+   /* #slide-5 h2 {
         font-family: circe_l;
         font-size: 42px;
         line-height: 44px;
         margin-bottom: 45px;
-    }
+    }*/
 
 }
 
