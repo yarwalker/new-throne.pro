@@ -727,13 +727,13 @@ $detect = new Mobile_Detect();
                     <div class="col-sm-7 col-xs-7">
                         <form action="" class=" callback_form">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">Имя</label>
+                                <label for="inputName" class="control-label">Ваше имя</label>
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputName" name="inputNamee">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">Телефон</label>
+                                <label for="inputPhone" class="control-label">Номер телефона</label>
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                 </div>
