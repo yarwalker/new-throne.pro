@@ -101,6 +101,7 @@ div.frame {
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;
     overflow: hidden;
+    padding: 0 15px;
 }
 
 div.frame:first-of-type {
@@ -582,6 +583,7 @@ only screen and (min-resolution: 144dpi) {
     width: 85%;
     color: #000;
 }
+#slide-1 p { width: 85%; margin: 1em auto; }
 
 
 #slogan + div {
@@ -4109,6 +4111,8 @@ only screen and (min-resolution: 144dpi) {
         margin-right: auto;
     }
 
+    #slide-1 p { width: 80%; margin: 1em auto; }
+
     #slide-2 h1 {
         font-size: 30px;
         font-family: circe_l;
@@ -4216,9 +4220,21 @@ only screen and (min-resolution: 144dpi) {
         font-size: 30px;
         line-height: 34px;
         margin-bottom: 20px;
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    #slide-1 p { width: 90%; margin: 1em auto; }
+
+    #slide-3 .visible-sm #descr, #slide-3 .visible-xs #descr {
+        /* font-size: 24px; */
+        margin-top: 18px;
+        margin-bottom: 18px;
+        line-height: 24px;
+        width: 90%;
+        /* text-align: justify; */
+        margin-right: auto;
+        margin-left: auto;
     }
 
    /* #slide-2 h1 {
@@ -4282,3 +4298,7 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 30px;
     }
 }
+
+.title-light { border-bottom: dashed 1px #f4a00a; display: inline-block; }
+.title-climate { border-bottom: dashed 1px #425d94; display: inline-block; }
+.title-security { border-bottom: dashed 1px #cf1834; display: inline-block; }
