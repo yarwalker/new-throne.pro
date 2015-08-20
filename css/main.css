@@ -2059,6 +2059,12 @@ body.modal-open {
 .modal-body { padding-top: 0; }
 .control-label sup { font-size: initial; }
 
+#myModal .modal-header {
+    border: inherit;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 .footnote {
     font-size: 0.77em;
     margin-top: 15px;

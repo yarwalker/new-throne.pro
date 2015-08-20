@@ -720,6 +720,7 @@ $detect = new Mobile_Detect();
                     <!--span aria-hidden="true">&times;</span-->
                     <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
                 </button>
+                <h4 class="modal-title">Мы перезвоним в течение часа</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -740,7 +741,7 @@ $detect = new Mobile_Detect();
                             <div class="form-group">
                                 <div class="">
                                     <button type="button" class="send-btn">Отправить</button>
-                                    <div class="footnote">Мы перезвоним<br>в течение часа</div>
+                                    <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                 </div>
                             </div>
                             <input type="hidden" name="inputTheme" value="Обратный звонок"/>
