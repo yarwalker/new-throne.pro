@@ -193,6 +193,7 @@ only screen and (min-resolution: 144dpi) {
     top: 0;
     width: 100%;
     max-width: 1600px;
+    z-index: 100;
 }
 #interior_ipad {
     /* width: 10%; */
