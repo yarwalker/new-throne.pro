@@ -142,7 +142,7 @@ $detect = new Mobile_Detect();
 
 <div id="slide-1" data-slide="1" class="frame animation" >
     <?php if(!$detect->isMobile()): ?>
-        <div class="bcg "
+        <!--div class="bcg "
                 >
 
             <div id="slide1-text"
@@ -184,11 +184,7 @@ $detect = new Mobile_Detect();
                     Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
                         </span>
 
-                    <!--“Умный дом” в исполнении “ТРОН Проект” – это набор совершенно понятных функций, которые действительно нужны в повседневной жизни:
-                    ,управление освещением вашего жилища, управление климатом и системой безопасности, домофония, видеонаблюдение и другие системы.
-                    Просто они сделаны по-современному и управляются через единый 3D-интерфейс со смартфона или планшета.
 
-                    Безопасность, комфорт  и энергосбережение - вот что дает владельцам система “умный дом”. -->
 
 
                 </div>
@@ -207,25 +203,17 @@ $detect = new Mobile_Detect();
                      data--25p-top=""
                      data-bottom="transform: scale(0.5) "
                         >
-                    <!--iframe data-anchor-target="#slide-1" src="https://player.vimeo.com/video/129051743" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe-->
-                    <!--div id="red_square" ></div-->
+
                     <video id="screendemo" loop="loop"
                            data-anchor-target="#slide-1"
                            data-top="transform: scale(0.71); opacity: 1 " >
                         <source src="/uploads/videos/costa.webm" type="video/webm">
-                        <!--source src="/uploads/videos/costa.mp4" type="video/mp4"-->
+
                     </video>
 
                 </div>
 
-                <!--div id="play_demo"
-                     data-anchor-target="#slide-1"
-                     data-top="opacity: 0; transform: translate(-100%, -10%) scale(0)"
-                     data-100-bottom=""
-                     data-50-bottom="opacity: 1;  transform: translate(0, -10%) scale(0.75)"
-                        >
-                    <img src="images/movie_icon.png" style="width: 50%" alt=""/>
-                </div-->
+
                 <div id="play_demo"
                      data-anchor-target="#slide-1"
                      data-top="opacity: 0; transform: translate(-100%, -10%) scale(0)"
@@ -247,31 +235,69 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
 
-        </div>
-
-    <?php else: ?>
-
-        <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
+        </div-->
+                <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
         <p class="text-center">
             <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
-                которые действительно нужны в&nbsp;повседневной жизни:
+                которые действительно нужны в&nbsp;повседневной жизни
 
         </p>
         <div class="text-center" id="first_frame_factoids">
             <div>
-                <a href="#tabs-1" data-slide="4" class="inner_anchor" title="Управление освещением">
+                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
                     система<br>"умного"<br>освещения<br>
                     <img src="images/light_slide_control.png" alt=""/>
                 </a>
             </div>
             <div>
-                <a href="#tabs-2" data-slide="4" class="inner_anchor" title="Управление климатом" >
+                <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
                     управление<br>и автоматизация<br>климата<br>
                     <img src="images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
-                <a data-slide="4" href="#tabs-3" class="inner_anchor" title="Управление системой безопасности">
+                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
+                    системы<br>безопасности<br>и мониторинга<br>
+                    <img src="images/security_alarm.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+        <p class="text-center">А также домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
+           и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
+           Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
+        </p>
+        <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
+            style="background-color: transparent; background-image:url('images/new_ipad.png'); background-repeat: no-repeat; background-position: center center;">
+            <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
+            <video id="screendemo" loop="loop"
+              >
+                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+            </video>
+        </div>
+    <?php else: ?>
+
+        <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
+        <p class="text-center">
+            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
+                которые действительно нужны в&nbsp;повседневной жизни
+
+        </p>
+        <div class="text-center" id="first_frame_factoids">
+            <div>
+                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
+                    система<br>"умного"<br>освещения<br>
+                    <img src="images/light_slide_control.png" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
+                    управление<br>и автоматизация<br>климата<br>
+                    <img src="images/climate_condition.jpg" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
                     системы<br>безопасности<br>и мониторинга<br>
                     <img src="images/security_alarm.jpg" alt=""/>
                 </a>
@@ -1233,30 +1259,7 @@ $detect = new Mobile_Detect();
                 </tr>
             </table>
 
-            <!--table>
-                <tr>
-                    <td>
-                        <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
-                        <span>Кондиционирование</span>
-                    </td>
-                    <td>
-                        <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
-                        <span>Вентиляция</span>
-                    </td>
-                    <td>
-                        <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
-                        <span>Отопление</span>
-                    </td>
-                    <td>
-                        <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
-                        <span>Теплые полы</span>
-                    </td>
-                    <td>
-                        <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
-                        <span>Термостаты</span>
-                    </td>
-                </tr>
-            </table-->
+
         </div>
         <div id="xs-tabs-3">
             <table>
@@ -1321,30 +1324,7 @@ $detect = new Mobile_Detect();
                 </tr>
             </table>
 
-            <!--table>
-                <tr>
-                    <td>
-                        <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
-                        <span>Охранная<br>и пожарная<br>сигнализация</span>
-                    </td>
-                    <td>
-                        <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
-                        <span>Датчики движения,<br>открытия окон<br>и дверей</span>
-                    </td>
-                    <td>
-                        <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
-                        <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
-                    </td>
-                    <td>
-                        <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
-                        <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
-                    </td>
-                    <td>
-                        <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
-                        <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
-                    </td>
-                </tr>
-            </table-->
+
         </div>
 
     </div>
@@ -1399,7 +1379,7 @@ $detect = new Mobile_Detect();
             <div class="table_cell">
                 <div class="integr_block_wrap">
                     <img src="images/integr_open_gates.png" class="img-responsive" alt=""/>
-                    <p>Открытие дверей<br>или&nbsp;ворот</p>
+                    <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
                 </div>
             </div>
             <div class="table_cell">
@@ -1412,14 +1392,14 @@ $detect = new Mobile_Detect();
             </div>
             <div class="table_cell">
                 <img src="images/integr_weather_stations.png" class="img-responsive" alt=""/>
-                <p>Погодные<br>станции</p>
+                <!--p>Погодные<br>станции</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_block_wrap">
                     <img src="images/integr_watering_systems.png" class="img-responsive" alt=""/>
-                    <p>Поливочные<br>системы</p>
+                    <!--p>Поливочные<br>системы</p-->
                 </div>
             </div>
             <div class="table_cell">
@@ -1432,14 +1412,14 @@ $detect = new Mobile_Detect();
             </div>
             <div class="table_cell">
                 <img src="images/integr_mediaroom.png" class="img-responsive" alt=""/>
-                <p>Медиа мультирум</p>
+                <!--p>Медиа мультирум</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell ">
                 <div class="integr_block_wrap">
                     <img src="images/integr_pool.png" class="img-responsive" alt=""/>
-                    <p>Сауны<br>и&nbsp;бассейны</p>
+                    <!--p>Сауны<br>и&nbsp;бассейны</p-->
                 </div>
             </div>
             <div class="table_cell">
@@ -1481,13 +1461,13 @@ $detect = new Mobile_Detect();
     <h2 class="text-center" id="know_more_title">Хотите узнать больше?</h2>
     <div id="know_more_tabs" class="hidden-xs">
         <ul class="nav nav-pills nav-justified">
-            <li role="presentation" class="active"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
+            <li role="presentation"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
             <li role="presentation"><a href="#how_works">Как мы работаем</a></li>
             <li role="presentation"><a href="#price">Стоимость "умного&nbsp;дома"</a></li>
-            <li role="presentation"><a href="#discuss">Давайте всё обсудим!</a></li>
+            <li role="presentation" class="active"><a href="#discuss">Давайте всё обсудим!</a></li>
         </ul>
         <div id="myTabContent" class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="about_tab" aria-labelledby="home-tab">
+            <div role="tabpanel" class="tab-pane fade" id="about_tab" aria-labelledby="home-tab">
                 <p>"ТРОН Проект" - международная инженерная компания.
                     Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
                     офисов и&nbsp;индустриальных зданий.</p>
@@ -1506,7 +1486,7 @@ $detect = new Mobile_Detect();
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
                                         onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить обсчёт</span></p>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="discuss" aria-labelledby="profile-tab">
+            <div role="tabpanel" class="tab-pane fade active in" id="discuss" aria-labelledby="profile-tab">
                 <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.
                     Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -1516,16 +1496,16 @@ $detect = new Mobile_Detect();
     </div>
 
     <div class="visible-xs">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             О компании "ТРОН Проект"
                         </a>
                     </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                         "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
                         офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
@@ -1569,12 +1549,12 @@ $detect = new Mobile_Detect();
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingFour">
                     <h4 class="panel-title">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                             Давайте всё обсудим!
                         </a>
                     </h4>
                 </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
                     <div class="panel-body">
                         <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
                         <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>

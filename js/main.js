@@ -16,8 +16,17 @@
     
 
     $animation_frame_height = 0;
-    $animation_bcg = $('#slide-3 .bcg'),
-        $tabs_container = $('#tabs_container');
+    $animation_bcg = $('#slide-3 .bcg');
+        //$tabs_container = $('#tabs_container');
+    $('#slide-4 div[class ^= visible]').each(function(){
+
+        if( $(this).is(':visible') ) {
+            //console.log($(this));
+            $tabs_container = $(this).find('#tabs_container');
+            //console.log($tabs_container);
+        }
+    });
+    console.log($tabs_container);
     $first_tab = $tabs_container.find('div').first(),
         $tabs_container_height = 0,
         htmlbody = $('html,body');
@@ -50,7 +59,7 @@
 
             tabulousInit();
             $tabs_container_height = $first_tab.height() + 20;
-            $('#tabs_container').height($tabs_container_height);
+            $tabs_container.height($tabs_container_height);
 
             // Resize sections
             adjustWindow();
@@ -80,7 +89,7 @@
         $slideTall.height(winH*2);
         $slideTall2.height(winH*3);
 
-        $animation.height(winH * 2);
+       // $animation.height(winH * 2);
 
         /*if( $('#fake_tabs').length ) {
          $('#fake_tabs').width($('#tabs').width());
@@ -229,19 +238,34 @@
 
             $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
 
-
-            $('#fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
+            // for visible-lg
+            $('.visible-lg #fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
             //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
-            $('#fake_tabs ul').attr('data--' + $('#fake_tabs').height() + '-bottom', "visibility: hidden");
+            $('.visible-lg #fake_tabs ul').attr('data--' + $('.visible-lg #fake_tabs').height() + '-bottom', "visibility: hidden");
 
-            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
 
-            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-lg #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-lg #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
 
-            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('#fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+
+            // for visible-md
+            $('.visible-md #fake_tabs ul').attr('data--' + $animation_frame_height + '-bottom-top', "visibility: visible");
+            //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
+            $('.visible-md #fake_tabs ul').attr('data--' + $('.visible-md #fake_tabs').height() + '-bottom', "visibility: hidden");
+
+            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+            $('.visible-md #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-md #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
+
+            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
 
             // показываем этаж и кнопки с тенями
             $('#floor, #floor_back, #top_buttons').attr(
@@ -446,6 +470,23 @@
 
         // Refresh Skrollr after resizing our sections
         //s.refresh($('.frame'));
+
+        $('#slide-4 div[class ^= visible]').each(function(){
+
+            if( $(this).is(':visible') ) {
+                //console.log($(this));
+                $tabs_container = $(this).find('#tabs_container');
+                //console.log($tabs_container);
+            }
+        });
+
+        $first_tab = $tabs_container.find('div').first(),
+            $tabs_container_height = 0;
+
+        console.log('resize');
+        tabulousInit();
+        $tabs_container_height = $first_tab.height() + 20;
+        $tabs_container.height($tabs_container_height);
     });
 
 
@@ -462,12 +503,21 @@
 
     function tabulousInit() {
         var i = getRandomArbitrary(0, tabs_effects.length),
-            effect = tabs_effects[i];
+            effect = tabs_effects[i],
+            $tabs = $tabs_container.parent('div[id ^= tabs]');
 
-        if( $('#tabs').length ) {
-            $('#tabs').tabulous({
+        console.log($tabs_container);
+        console.log($tabs);
+
+        if( $tabs.length && !$tabs.hasClass('activated')) {
+            //$('#tabs').tabulous({
+            $tabs.addClass('activated');
+            $tabs.tabulous({
                 effect: effect
             });
+            //$('#tabs a, #tabs2 a, #tabs3 a,#tabs4 a, #fake_tabs a').removeClass('tabulous_active');
+
+            //$('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
         }
     }
 
