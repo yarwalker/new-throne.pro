@@ -3781,6 +3781,21 @@ only screen and (min-resolution: 144dpi) {
         line-height: 49px;
     }
 
+    #slide-4 .visible-sm div#sm-tabs-1 h2,
+    #slide-4 .visible-xs div#xs-tabs-1 h2 {
+        border-bottom: 2px solid #f4a00a;
+    }
+
+    #slide-4 .visible-sm div#sm-tabs-2 h2,
+    #slide-4 .visible-xs div#xs-tabs-2 h2 {
+        border-bottom: 2px solid #425d94;
+    }
+
+    #slide-4 .visible-sm div#sm-tabs-3 h2,
+    #slide-4 .visible-xs div#xs-tabs-3 h2 {
+        border-bottom: 2px solid #cf1834;
+    }
+
     #advantages {
         width: 95%;
         margin: 30px auto 30px;
