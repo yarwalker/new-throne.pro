@@ -272,7 +272,7 @@ $detect = new Mobile_Detect();
             <video id="screendemo" loop="loop"
               >
                 <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
-                <source src="/uploads/videos/sequence04.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
     <?php else: ?>
@@ -313,7 +313,7 @@ $detect = new Mobile_Detect();
             <video id="screendemo" loop="loop"
               >
                 <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
-                <source src="/uploads/videos/sequence04.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
         
