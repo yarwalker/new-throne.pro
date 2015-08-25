@@ -13,8 +13,8 @@ $detect = new Mobile_Detect();
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=0.3, maximum-scale=1, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
     <meta name="description" content="THRONE 3D умный дом " />
@@ -31,8 +31,11 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
     <link rel="stylesheet" href="js/flowplay/skin/functional.css">
-
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <?php if ( !$detect->isMobile() ): ?>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <?php else: ?>
+        <link href="css/main_mobile.css" rel="stylesheet" type="text/css" />
+    <?php endif; ?>
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -90,7 +93,7 @@ $detect = new Mobile_Detect();
 <img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
-    <div id="head">
+    <div id="head" class=" hidden-xs">
         <div id="langs" style="visibility: hidden">
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
@@ -98,7 +101,7 @@ $detect = new Mobile_Detect();
 
         <a id="logo" href="/" >THRONE Project</a>
 
-        <div class="callback">
+        <div class="callback visible-lg visible-md">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
@@ -110,12 +113,36 @@ $detect = new Mobile_Detect();
             <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="О компании">О компании</a></li>
         </ul>
+
+    </div>
+
+    <div id="head" class=" visible-xs" >
+        <nav class="navbar" id="top_menu_ext" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="logo" href="/" >THRONE Project</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="top_menu_ext">
+                        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+                        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+                        <li><a href="about.html" title="О компании">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>
 
 <div id="slide-1" data-slide="1" class="frame animation" >
-    <? if(!$detect->isMobile()): ?>
-        <div class="bcg "
+    <?php if(!$detect->isMobile()): ?>
+        <!--div class="bcg "
                 >
 
             <div id="slide1-text"
@@ -157,11 +184,7 @@ $detect = new Mobile_Detect();
                     Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
                         </span>
 
-                    <!--“Умный дом” в исполнении “ТРОН Проект” – это набор совершенно понятных функций, которые действительно нужны в повседневной жизни:
-                    ,управление освещением вашего жилища, управление климатом и системой безопасности, домофония, видеонаблюдение и другие системы.
-                    Просто они сделаны по-современному и управляются через единый 3D-интерфейс со смартфона или планшета.
 
-                    Безопасность, комфорт  и энергосбережение - вот что дает владельцам система “умный дом”. -->
 
 
                 </div>
@@ -180,25 +203,17 @@ $detect = new Mobile_Detect();
                      data--25p-top=""
                      data-bottom="transform: scale(0.5) "
                         >
-                    <!--iframe data-anchor-target="#slide-1" src="https://player.vimeo.com/video/129051743" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe-->
-                    <!--div id="red_square" ></div-->
+
                     <video id="screendemo" loop="loop"
                            data-anchor-target="#slide-1"
                            data-top="transform: scale(0.71); opacity: 1 " >
                         <source src="/uploads/videos/costa.webm" type="video/webm">
-                        <!--source src="/uploads/videos/costa.mp4" type="video/mp4"-->
+
                     </video>
 
                 </div>
 
-                <!--div id="play_demo"
-                     data-anchor-target="#slide-1"
-                     data-top="opacity: 0; transform: translate(-100%, -10%) scale(0)"
-                     data-100-bottom=""
-                     data-50-bottom="opacity: 1;  transform: translate(0, -10%) scale(0.75)"
-                        >
-                    <img src="images/movie_icon.png" style="width: 50%" alt=""/>
-                </div-->
+
                 <div id="play_demo"
                      data-anchor-target="#slide-1"
                      data-top="opacity: 0; transform: translate(-100%, -10%) scale(0)"
@@ -220,106 +235,256 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
 
-        </div>
-
-    <? else: ?>
-
-        <div class="bcg visible-tablet">
-            <div id="interier" class="homeSlide">
+        </div-->
                 <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
-                <div class="text-center">
-                    <span>
-                    <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций, которые действительно нужны
-                    в&nbsp;повседневной жизни:
-                    управление освещением вашего жилища, управление климатом, домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
-                    и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
-                    Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
-                        </span>
-                </div>
+        <p class="text-center">
+            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
+                которые действительно нужны в&nbsp;повседневной жизни
+
+        </p>
+        <div class="text-center" id="first_frame_factoids">
+            <div>
+                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
+                    система<br>"умного"<br>освещения<br>
+                    <img src="images/light_slide_control.png" alt=""/>
+                </a>
             </div>
-
-            <div id="ipad_wrap" class="homeSlide">
-                <div id="interior_ipad">
-                    <!--iframe data-anchor-target="#slide-1" src="https://player.vimeo.com/video/129051743" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe-->
-                    <!--div id="red_square" ></div-->
-                    <!--img id="screendemo"  src="images/ezgif.com-crop.gif" alt=""/-->
-                    <div class="flowplayer " id="screendemo" data-swf="flowplayer.swf" >
-                        <video>
-                            <source type="video/webm" src="/uploads/videos/costa.webm">
-                            <!--source type="video/mp4" src="https://stream.flowplayer.org/bauhaus.mp4"-->
-                        </video>
-                    </div>
-                </div>
-
-                <div id="play_demo">
-
-                </div>
-                <div id="play_demo_text">
-                    Посмотрите<br>
-                    видео<br>
-                    работы<br>
-                    интерфейса!
-                </div>
+            <div>
+                <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
+                    управление<br>и автоматизация<br>климата<br>
+                    <img src="images/climate_condition.jpg" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
+                    системы<br>безопасности<br>и мониторинга<br>
+                    <img src="images/security_alarm.jpg" alt=""/>
+                </a>
             </div>
         </div>
-    <? endif; ?>
+        <p class="text-center">А также домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
+           и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
+           Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
+        </p>
+        <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
+            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
+            <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
+            <video id="screendemo" loop="loop"
+              >
+                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+            </video>
+        </div>
+    <?php else: ?>
+
+        <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
+        <p class="text-center">
+            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
+                которые действительно нужны в&nbsp;повседневной жизни
+
+        </p>
+        <div class="text-center" id="first_frame_factoids">
+            <div>
+                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
+                    система<br>"умного"<br>освещения<br>
+                    <img src="images/light_slide_control.png" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
+                    управление<br>и автоматизация<br>климата<br>
+                    <img src="images/climate_condition.jpg" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
+                    системы<br>безопасности<br>и мониторинга<br>
+                    <img src="images/security_alarm.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+        <p class="text-center">А также домофония, видеонаблюдение и&nbsp;другие системы. Просто они сделаны по-современному
+           и&nbsp;управляются через единый <nobr>3D-интерфейс</nobr> со&nbsp;смартфона или планшета.
+           Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
+        </p>
+        <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
+            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
+            <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
+            <video id="screendemo" loop="loop"
+              >
+                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+
+
+    <?php endif; ?>
 
 
 </div>
 
 <div id="slide-2" data-slide="2" class="frame">
-    <h1>Почему "Умный&nbsp;дом"<br>
+    <h1 class="visible-md visible-lg">Почему "Умный&nbsp;дом"<br>
         <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
     </h1>
-    <div class="table" id="advantages">
-        <div class="table_row">
-            <div class="table_cell">
-                <div>
-                    <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
-                    <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
-                    системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
-                    </p>
+    <h1 class="visible-sm visible-xs">Почему "Умный&nbsp;дом"<br>
+        от&nbsp;"<span class="capital">ТРОН</span> Проект" &mdash; лучшее решение?
+    </h1>
+    <div  id="advantages">
+        <div class="table visible-lg visible-md">
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Любые масштабы зданий</h4>
-                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
-                        устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
                 </div>
-                <div>
-                    <h4>Послепродажная поддержка</h4>
-                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
-                        Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                <div class="table_cell">
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p>
+                            <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a><br>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+
+                    </div>
+
                 </div>
             </div>
-            <div class="table_cell">
-                <img src="images/advantages_center.jpg" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
-                <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
+        </div>
+        <div class="table visible-sm">
+            <div class="table_row">
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
+                </div>
             </div>
-            <div class="table_cell">
-                <div>
-                    <h4>Уникальная простота и наглядность</h4>
-                    <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
-                        Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
-                    (подходит под&nbsp;любые размеры экрана).</p>
-                    <p>
-                        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a><br>
-                        <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
-                    </p>
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p class="app_links_container">
+                            <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+                    </div>
+
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
                 </div>
-
-                <div>
-                    <h4>Сертифицированная установка</h4>
-                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
-                        Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
-                        <a href="installation.html">Подробнее</a>
-                    </p>
-
+            </div>
+        </div>
+        <div class="table visible-xs">
+            <div class="table_row">
+                <div class="table_cell">
+                    <img src="images/advantages_center.jpg" class="img-responsive" alt="Преимущества 'умного дома' с 'ТРОН Проект'" title="Преимущества 'умного дома' с 'ТРОН Проект'"/>
                 </div>
+            </div>
+            <div class="table_row">
+                <div class="table_cell">
+                    <div>
+                        <h4>Революционное решение на&nbsp;основе <nobr>3D-технологии</nobr></h4>
+                        <p>Единый <nobr>3D-интерфейс</nobr> для беспроводного управления освещением и&nbsp;шторами, климатом,
+                        системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".
+                        </p>
+                    </div>
 
+                    <div>
+                        <h4>Любые масштабы зданий</h4>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых
+                            устройств "Умного дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+
+                    <div>
+                        <h4>Послепродажная поддержка</h4>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем.
+                            Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+
+                    <div>
+                        <h4>Уникальная простота и наглядность</h4>
+                        <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок.
+                            Научиться работать с&nbsp;ним занимает 5&nbsp;минут. Попробуйте <nobr>Демо-версию</nobr> THRONE для iOS или Android
+                        (подходит под&nbsp;любые размеры экрана).</p>
+                        <p class="app_links_container">
+                            <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Сертифицированная установка</h4>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ.
+                            Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.<br>
+                            <a href="installation.html">Подробнее</a>
+                        </p>
+                    </div>
+
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Начать проект</span>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="bottom_line"></div>
 </div>
 
@@ -348,7 +513,7 @@ $detect = new Mobile_Detect();
         <div class="skrollr_el" id="alarm_panel_shadows" data-anchor-target="#slide-3"></div>
         <div class="skrollr_el" id="alarm_windows" data-anchor-target="#slide-3"></div>
 
-        <div class="hsContainer">
+        <div class="hsContainer visible-lg">
             <div class="hsContent">
                 <h1>Простое и понятное управление</h1>
                 <p class="text-center" id="descr">
@@ -361,12 +526,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
-                    <div><img src="images/scale_icon.png" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
-                    <div><img src="images/dist_manage_icon.png" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg"  alt=""/>
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -378,11 +543,96 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
         </div>
+        <div class="hsContainer visible-md">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes">
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                </div>
+                <div id="fake_tabs" align="center" width="100%">
+                    <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
+                        <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+                        <span class="tabulousclear"></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hsContainer visible-sm">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes">
+                    <div><img src="images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                </div>
+
+            </div>
+        </div>
+        <div class="hsContainer visible-xs">
+            <div class="hsContent">
+                <h1>Простое и понятное управление</h1>
+                <p class="text-center" id="descr">
+                    Для управления "умным&nbsp;домом" мы предлагаем клиентам интерфейс THRONE 3D Control, не имеющий аналогов в&nbsp;мире.
+                    Он позволяет следить за&nbsp;состоянием всего дома и&nbsp;управлять различными системами с&nbsp;одного или
+                    нескольких смартфонов или планшетов. Вы можете контролировать каждое устройство "умного&nbsp;дома" по&nbsp;отдельности,
+                    либо управлять комнатой, целым этажом или даже всем домом сразу. И&nbsp;это просто и&nbsp;наглядно, как
+                    никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
+
+                </p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <div id="notes" class="table">
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/interface_icon.png" class="img-responsive"  alt=""/></div>
+                        <div class="table_cell"><span id="note1">Понятный и&nbsp;легкий интерфейс</span></div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/scale_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><span id="note2">Управление объектами любого масштаба</span></div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_cell"><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><span id="note3">Дистанционное управление с&nbsp;планшета или телефона</span></div>
+                    </div>
+                </div>
+                <div id="slide2-ipad">
+                    <img src="images/ipad_slide2.jpg" class="img-responsive"  alt=""/>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
 
 <div id="slide-4" data-slide="4" class="frame">
-    <div id="tabs">
+    <div id="tabs" class="visible-lg">
         <ul>
             <li><a href="#tabs-1" data-slide="4" title="">Освещение</a></li>
             <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
@@ -521,18 +771,575 @@ $detect = new Mobile_Detect();
             </div>
         </div>
     </div>
+    <div id="tabs2" class="visible-md">
+        <ul>
+            <li><a href="#tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+        <div id="tabs_container">
+            <div id="tabs-1">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="40%">
+                            <h2>Управление освещением</h2>
+                            <p class="">
+                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                                "ТРОН".</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                        </td>
+                        <td>
+                            <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <span>Плавная регулировка<br>яркости</span>
+                        </td>
+                        <td>
+                            <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                        </td>
+                        <td>
+                            <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                        </td>
+                        <td>
+                            <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <span>Полное или частичное<br>управление</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-2">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td>
+                            <h2>Управление климатом</h2>
+                            <p class="">
+                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <span>Кондиционирование</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <span>Вентиляция</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <span>Отопление</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <span>Теплые полы</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <span>Термостаты</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-3">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td>
+                            <h2>Управление системой безопасности</h2>
+                            <p>
+                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                            </p>
+                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                                проникновении (взломе).</p>
+                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                                с&nbsp;мобильного телефона или планшета.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                        </td>
+                        <td>
+                            <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                        </td>
+                        <td>
+                            <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                        </td>
+                        <td>
+                            <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                        </td>
+                        <td>
+                            <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="tabs3" class="visible-sm">
+        <ul>
+            <li><a href="#sm-tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#sm-tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#sm-tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+        <!--div id="tabs_container"-->
+            <div id="sm-tabs-1">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление освещением</h2>
+                            <img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                            <p class="">
+                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                                "ТРОН".</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img  src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        </td>
+                        <td>
+                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Плавная регулировка<br>яркости</span>
+                        </td>
+                        <td>
+                            <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        </td>
+                        <td>
+                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                        </td>
+                        <td>
+                            <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        </td>
+                        <td>
+                            <span>Полное или частичное<br>управление</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="sm-tabs-2">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление климатом</h2>
+                            <img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                            <p class="">
+                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                        </td>
+                        <td>
+                            <span>Кондиционирование</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Вентиляция</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                        </td>
+                        <td>
+                            <span>Отопление</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Теплые полы</span>
+                        </td>
+                        <td>
+                            <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                        </td>
+                        <td>
+                            <span>Термостаты</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="sm-tabs-3">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h2>Управление системой безопасности</h2>
+                            <img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                            <p>
+                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                            </p>
+                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                                проникновении (взломе).</p>
+                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                                с&nbsp;мобильного телефона или планшета.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="factoids">
+                    <tr>
+                        <td>
+                            <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                        </td>
+                        <td>
+                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                        </td>
+                        <td>
+                            <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                        </td>
+                        <td>
+                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                        </td>
+                        <td>
+                            <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                        </td>
+                        <td>
+                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+    </div>
+    <div id="tabs4" class="visible-xs">
+        <ul>
+            <li><a href="#xs-tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#xs-tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#xs-tabs-3" data-slide="4" title="">Безопасность</a></li>
+        </ul>
+
+        <div id="xs-tabs-1">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление освещением</h2>
+                        <img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                        <p class="">
+                            Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
+                            нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
+                        <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
+                            Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
+                            "ТРОН".</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                    </td>
+                    <td>
+                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Плавная регулировка<br>яркости</span>
+                    </td>
+                    <td>
+                        <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                    </td>
+                    <td>
+                        <span>Сохранение<br>пользовательских<br>сцен</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                    </td>
+                    <td>
+                        <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                    </td>
+                    <td>
+                        <span>Полное или частичное<br>управление</span>
+                    </td>
+                </tr>
+            </table>
+
+            <!--table>
+                <tr>
+                    <td>
+                        <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                    </td>
+                    <td>
+                        <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        <span>Плавная регулировка<br>яркости</span>
+                    </td>
+                    <td>
+                        <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        <span>Сохранение<br>пользовательских<br>сцен</span>
+                    </td>
+                    <td>
+                        <img src="images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                    </td>
+                    <td>
+                        <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        <span>Полное или частичное<br>управление</span>
+                    </td>
+                </tr>
+            </table-->
+        </div>
+        <div id="xs-tabs-2">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление климатом</h2>
+                        <img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                        <p class="">
+                            Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
+                        <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
+                            вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
+                        <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                    </td>
+                    <td>
+                        <span>Кондиционирование</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Вентиляция</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                    </td>
+                    <td>
+                        <span>Отопление</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Теплые полы</span>
+                    </td>
+                    <td>
+                        <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                    </td>
+                    <td>
+                        <span>Термостаты</span>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <div id="xs-tabs-3">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>Управление системой безопасности</h2>
+                        <img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                        <p>
+                            "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
+                            Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                        </p>
+                        <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
+                            проникновении (взломе).</p>
+                        <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
+                            с&nbsp;мобильного телефона или планшета.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="factoids">
+                <tr>
+                    <td>
+                        <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                    </td>
+                    <td>
+                        <span>Охранная<br>и пожарная<br>сигнализация</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                    </td>
+                    <td>
+                        <img src="images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                    </td>
+                    <td>
+                        <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                    </td>
+                    <td>
+                        <img src="images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                    </td>
+                    <td>
+                        <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+    </div>
     <div class="bottom_line"></div>
 </div>
 
 <div id="slide-5" data-slide="5" class=" frame">
     <h2 class="text-center">Расширение интеграции</h2>
-    <div class="table" id="integr_table">
+    <div class="table hidden-xs" id="integr_table">
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_description">
                     Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
                 </div>
-                <img src="images/integr_open_gates.png" alt=""/>
+                <img src="images/integr_open_gates.png" class="img-responsive" alt=""/>
                 <p>Открытие дверей<br>или&nbsp;ворот</p>
 
             </div>
@@ -540,35 +1347,89 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
                 </div>
-                <img src="images/integr_weather_stations.png" alt=""/>
+                <img src="images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <p>Погодные<br>станции</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     <p>Управление зональным поливом газона</p>
                 </div>
-                <img src="images/integr_watering_systems.png" alt=""/>
+                <img src="images/integr_watering_systems.png" class="img-responsive" alt=""/>
                 <p>Поливочные<br>системы</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     Управление музыкой для&nbsp;каждой комнаты
                 </div>
-                <img src="images/integr_mediaroom.png" alt=""/>
+                <img src="images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <p>Медиа мультирум</p>
             </div>
             <div class="table_cell ">
                 <div class="integr_description">
                     Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
                 </div>
-                <img src="images/integr_pool.png" alt=""/>
+                <img src="images/integr_pool.png" class="img-responsive" alt=""/>
                 <p>Сауны<br>и&nbsp;бассейны</p>
             </div>
         </div>
     </div>
 
+    <div class="table visible-xs" id="integr_table">
+        <div class="table_row">
+            <div class="table_cell">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_open_gates.png" class="img-responsive" alt=""/>
+                    <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
+                </div>
+            </div>
+            <div class="table_cell">
+                Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
+            </div>
+            <div class="table_cell">
+                <img src="images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <!--p>Погодные<br>станции</p-->
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                    <!--p>Поливочные<br>системы</p-->
+                </div>
+            </div>
+            <div class="table_cell">
+                <p>Управление зональным поливом газона</p>
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell">
+                Управление музыкой для&nbsp;каждой комнаты
+            </div>
+            <div class="table_cell">
+                <img src="images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <!--p>Медиа мультирум</p-->
+            </div>
+        </div>
+        <div class="table_row">
+            <div class="table_cell ">
+                <div class="integr_block_wrap">
+                    <img src="images/integr_pool.png" class="img-responsive" alt=""/>
+                    <!--p>Сауны<br>и&nbsp;бассейны</p-->
+                </div>
+            </div>
+            <div class="table_cell">
+                Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
+            </div>
+        </div>
+    </div>
+
     <h2 class="text-center">Оборудование для системы<br>"Умный дом ТРОН"</h2>
-    <div class="table" id="equipment">
+    <div class="table hidden-xs" id="equipment" >
         <div class="table_row">
             <div class="table_cell">
                 <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
@@ -582,6 +1443,14 @@ $detect = new Mobile_Detect();
         </div>
     </div>
 
+    <div class="table visible-xs" id="equipment" >
+        <div><img src="images/equipment.jpg" class="img-responsive" /></div>
+        <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
+            400 производителей оборудования, каждый из&nbsp;которых проходит строгую сертификацию.
+            Поэтому наши клиенты всегда получают предложение, оптимально сбалансированное по&nbsp;таким показателям как Цена / Дизайн / Надежность.</p>
+        <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
+    </div>
+
     <div class="text-center">
         <!--a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a>
         <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a-->
@@ -590,15 +1459,15 @@ $detect = new Mobile_Detect();
     </div>
 
     <h2 class="text-center" id="know_more_title">Хотите узнать больше?</h2>
-    <div id="know_more_tabs">
+    <div id="know_more_tabs" class="hidden-xs">
         <ul class="nav nav-pills nav-justified">
-            <li role="presentation" class="active"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
+            <li role="presentation"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
             <li role="presentation"><a href="#how_works">Как мы работаем</a></li>
             <li role="presentation"><a href="#price">Стоимость "умного&nbsp;дома"</a></li>
-            <li role="presentation"><a href="#discuss">Давайте всё обсудим!</a></li>
+            <li role="presentation" class="active"><a href="#discuss">Давайте всё обсудим!</a></li>
         </ul>
         <div id="myTabContent" class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="about_tab" aria-labelledby="home-tab">
+            <div role="tabpanel" class="tab-pane fade" id="about_tab" aria-labelledby="home-tab">
                 <p>"ТРОН Проект" - международная инженерная компания.
                     Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
                     офисов и&nbsp;индустриальных зданий.</p>
@@ -617,7 +1486,7 @@ $detect = new Mobile_Detect();
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
                                         onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить обсчёт</span></p>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="discuss" aria-labelledby="profile-tab">
+            <div role="tabpanel" class="tab-pane fade active in" id="discuss" aria-labelledby="profile-tab">
                 <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.
                     Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -625,82 +1494,82 @@ $detect = new Mobile_Detect();
             </div>
         </div>
     </div>
-    <!--div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        О компании "ТРОН Проект"
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
-                    офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Как мы работаем
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.</p>
-                    <p>Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.</p>
-                    <p>Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
-                    <a href="installation.html">Подробнее</a>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Стоимость "умного дома"
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
-                        Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
-                    <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
-                    <p><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-                <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Давайте всё обсудим!
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
-                    <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
-                    <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
-                    <p><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
-                </div>
-            </div>
-        </div>
-    </div-->
 
-
-
+    <div class="visible-xs">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            О компании "ТРОН Проект"
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
+                        офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Как мы работаем
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.</p>
+                        <p>Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.</p>
+                        <p>Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
+                        <a href="installation.html">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Стоимость "умного дома"
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
+                            Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
+                        <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
+                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Давайте всё обсудим!
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
+                        <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
+                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Заказать звонок</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
 
-<footer>
+<footer class="hidden-xs">
     &copy; 2015 <span id="brand">THRONE Project</span>
     <ul id="bottom_menu">
         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
@@ -709,6 +1578,17 @@ $detect = new Mobile_Detect();
         <li><a href="about.html" title="О компании">О компании</a></li>
     </ul>
 
+</footer>
+
+<footer class="visible-xs">
+    <ul id="bottom_menu">
+        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+        <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+        <li><a href="about.html" title="О компании">О компании</a></li>
+    </ul>
+
+    <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
 
 
@@ -734,6 +1614,7 @@ $detect = new Mobile_Detect();
                             </div>
                             <div class="form-group">
                                 <label for="inputPhone" class="control-label">Номер телефона</label>
+
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                 </div>
@@ -843,7 +1724,9 @@ $detect = new Mobile_Detect();
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
+<?php if(!$detect->isMobile()): ?>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+<?php endif; ?>
 <script type="text/javascript" src="js/retina.min.js"></script>
 <script type="text/javascript" src="js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -852,8 +1735,17 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/bootstrap.youtubepopup.min.js"></script>
 <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
-<script type="text/javascript" src="js/flowplay/flowplayer.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/flowplay/flowplayer.js"></script>
+<!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
+
+
+<?php if ( !$detect->isMobile() ): ?>
+    <script type="text/javascript" src="js/main.js"></script>
+<?php else: ?>
+    <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.13.min.js"></script>
+    <script type="text/javascript" src="js/main_mobile.js"></script>
+<?php endif; ?>
+
 
 <!--script src="js/jquery-2.1.3.min.js"></script-->
 <!--script src="js/jquery-ui.js"></script-->
