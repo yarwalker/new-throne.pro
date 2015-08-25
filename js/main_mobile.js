@@ -27,7 +27,7 @@
         }
     });
 
-    console.log($tabs_container);
+    //console.log($tabs_container);
     $first_tab = $tabs_container.find('div').first(),
     $tabs_container_height = 0,
     htmlbody = $('html,body');
@@ -160,7 +160,7 @@
         // Check for touch
         if(Modernizr.touch) {
             // destroy skrollr elements
-            console.log('win width: ' + winW);
+            //console.log('win width: ' + winW);
 
             $('.skrollr_el').remove();
             $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
@@ -193,7 +193,7 @@
         //$('.navbar-custom .nav li a:focus').blur();
 
         if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
-            console.log('visible');
+           // console.log('visible');
 
             if( $window.scrollTop() >= $('#slide-1').offset().top ) {
                 $('.visible-tablet #slogan').css({ position: 'fixed', top: 0, left: '10%' });
@@ -241,7 +241,7 @@
 
         fotoramaResize();
 
-        console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
+       // console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
 
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 
@@ -257,7 +257,7 @@
         $first_tab = $tabs_container.find('div').first(),
         $tabs_container_height = 0;
 
-        console.log('resize');
+        //console.log('resize');
         tabulousInit();
         $tabs_container_height = $first_tab.height() + 20;
         $tabs_container.height($tabs_container_height);
@@ -280,8 +280,8 @@
             effect = tabs_effects[i],
             $tabs = $tabs_container.parent('div[id ^= tabs]');
 
-        console.log($tabs_container);
-        console.log($tabs);
+       // console.log($tabs_container);
+       // console.log($tabs);
 
         if( $tabs.length && !$tabs.hasClass('activated')) {
             //$('#tabs').tabulous({
@@ -484,9 +484,9 @@
     });
 
     $('.send-btn').on('click', function(){
-        console.log('click');
+        //console.log('click');
 
-        console.log($(this).closest('.modal.fade').attr('id'));
+       // console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
@@ -535,9 +535,9 @@
     });
 
     $('.send-ios-btn').on('click', function(){
-        console.log('click');
+       // console.log('click');
 
-        console.log($(this).closest('.modal.fade').attr('id'));
+       // console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
 
         if( $($modalID + ' #inputEmail').val() == '' ) {
@@ -698,7 +698,7 @@
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
         $fotorama.resize({'width': $gallery_width + 'px' });
 
-        console.log('width: ' + $gallery_width);
+       // console.log('width: ' + $gallery_width);
     }
 
     // change active project in gallery
@@ -867,13 +867,13 @@
 
     $('#inputPhone').mask("+7 (000) 000-0000");
 
-    $('#interior_ipad').flowplayer({
+   /* $('#interior_ipad').flowplayer({
         fullscreen: false,
         brand: false,
         embed: false,
         plugins: { controls: false }
 
-    });
+    }); */
 
 
    /* flowplayer("interior_ipad", "http://new-throne.pro/js/flowplay/flowplayer-3.2.2.swf", {

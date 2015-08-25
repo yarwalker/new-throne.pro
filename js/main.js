@@ -26,7 +26,7 @@
             //console.log($tabs_container);
         }
     });
-    console.log($tabs_container);
+    //console.log($tabs_container);
     $first_tab = $tabs_container.find('div').first(),
         $tabs_container_height = 0,
         htmlbody = $('html,body');
@@ -233,7 +233,7 @@
 
             // заново инициализируем атрибуты элементов анимации
 
-            console.log('$animation_frame_height: ' + $animation_frame_height);
+            //console.log('$animation_frame_height: ' + $animation_frame_height);
             $('#slide-3').height($animation_frame_height * 2);
 
             $animation_bcg.attr('data--' + ($animation_frame_height ) + '-bottom-top', "position: fixed;  bottom: 0px;");
@@ -506,8 +506,8 @@
             effect = tabs_effects[i],
             $tabs = $tabs_container.parent('div[id ^= tabs]');
 
-        console.log($tabs_container);
-        console.log($tabs);
+        //console.log($tabs_container);
+        //console.log($tabs);
 
         if( $tabs.length && !$tabs.hasClass('activated')) {
             //$('#tabs').tabulous({
@@ -916,7 +916,7 @@
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
         $fotorama.resize({'width': $gallery_width + 'px' });
 
-        console.log('width: ' + $gallery_width);
+        //console.log('width: ' + $gallery_width);
     }
 
     // change active project in gallery

@@ -765,12 +765,12 @@ engine = function(player, root) {
            if (!player.conf.nativesubtitles) common.attr(api, 'crossorigin', false);
            reload = api.src === video.src;
          }
-         if (!support.inlineVideo) {
+         /*if (!support.inlineVideo) {
            common.css(api, {
              position: 'absolute',
              top: '-9999em'
            });
-         }
+         } */
          //TODO subtitles support
 
          // IE does not fire delegated timeupdate events
@@ -1613,7 +1613,7 @@ flowplayer(function(api, root) {
 
    if (api.conf.tooltip) {
      var ui = common.find('.fp-ui', root)[0];
-     ui.setAttribute('title', 'Hit ? for help');
+     ui.setAttribute('title', '');
      bean.one(root, "mouseout.tip", '.fp-ui', function() {
        ui.removeAttribute('title');
      });

@@ -210,13 +210,14 @@ only screen and (min-resolution: 144dpi) {
     position: relative;
     /*bottom: -45%;
     left: 50%;*/
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: block;
     background-size: contain;
     opacity: 1;
     /*width: 4%;*/
     /*margin-left: -2%;*/
+    margin-left: 10%;
     margin-top: 50px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -244,8 +245,16 @@ only screen and (min-resolution: 144dpi) {
 .flowplayer .fp-player {
     /*background-color: #fff;*/
 }
-.flowplayer .fp-player + a { opacity: 0; }
-.flowplayer .fp-player .fp-time, .flowplayer .fp-player .fp-controls { display: none; }
+.flowplayer .fp-player + a {
+    opacity: 0;
+    height: 0px !important;
+    width: 0px !important;
+}
+.flowplayer .fp-player .fp-time,
+.flowplayer .fp-player .fp-controls,
+.flowplayer .fp-player .fp-fullscreen,
+.flowplayer .fp-player .fp-embed,
+.flowplayer .fp-context-menu { display: none !important; }
 /* .flowplayer .fp-logo {
      display: none;
 
@@ -1076,9 +1085,9 @@ only screen and (min-resolution: 144dpi) {
     font-family: circe_l;
     text-align: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 76px;
     margin-top: 0;
-    margin-bottom: 102px;
+    margin-bottom: 52px;
     padding-bottom: 0px;
     line-height: 49px;
 }
@@ -3652,6 +3661,18 @@ only screen and (min-resolution: 144dpi) {
         height: 65%;
         margin: -2% auto 0;
         position: absolute;
+    }
+
+    #slide-2 h1 {
+        font-size: 42px;
+        font-family: circe_l;
+        text-align: center;
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 0;
+        margin-bottom: 52px;
+        padding-bottom: 0px;
+        line-height: 49px;
     }
 
     #advantages {

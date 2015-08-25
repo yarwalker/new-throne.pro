@@ -3532,12 +3532,20 @@ only screen and (min-resolution: 144dpi) {
     font-size: 16px;
 }
 
-
 .flowplayer .fp-player {
     /*background-color: #fff;*/
 }
-.flowplayer .fp-player + a { opacity: 0; }
-.flowplayer .fp-player .fp-time, .flowplayer .fp-player .fp-controls { display: none; }
+.flowplayer .fp-player + a {
+    opacity: 0;
+    height: 0px !important;
+    width: 0px !important;
+}
+.flowplayer .fp-player .fp-time,
+.flowplayer .fp-player .fp-controls,
+.flowplayer .fp-player .fp-fullscreen,
+.flowplayer .fp-player .fp-embed,
+.flowplayer .fp-context-menu { display: none !important; }
+/*.fp-player video { top: 0 !important; } */
 /* .flowplayer .fp-logo {
      display: none;
 
@@ -4337,6 +4345,8 @@ only screen and (min-resolution: 144dpi) {
         vertical-align: top;
         margin-bottom: 30px;
     }
+
+    #interior_ipad { margin-bottom: 0; }
 }
 
 .title-light { border-bottom: dashed 1px #f4a00a; display: inline-block; }

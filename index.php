@@ -267,12 +267,12 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-color: transparent; background-image:url('images/new_ipad.png'); background-repeat: no-repeat; background-position: center center;">
+            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
             <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
                 <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
-                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence04.mp4" type="video/mp4">
             </video>
         </div>
     <?php else: ?>
@@ -308,12 +308,12 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-color: transparent; background-image:url('images/new_ipad.png'); background-repeat: no-repeat; background-position: center center;">
+            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
             <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
                 <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
-                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence04.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -1733,13 +1733,14 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/bootstrap.youtubepopup.min.js"></script>
 <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
-<script type="text/javascript" src="js/flowplay/flowplayer.min.js"></script>
-<script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script>
+<script type="text/javascript" src="js/flowplay/flowplayer.js"></script>
+<!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="js/main.js"></script>
 <?php else: ?>
+    <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.13.min.js"></script>
     <script type="text/javascript" src="js/main_mobile.js"></script>
 <?php endif; ?>
 
