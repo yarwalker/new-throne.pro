@@ -22,14 +22,18 @@
 
         if( $(this).is(':visible') ) {
             //console.log($(this));
-            $tabs_container = $(this).find('#tabs_container');
+           $tabs_container = $(this).find('#tabs_container');
             //console.log($tabs_container);
+            //console.log($tabs_container);
+            if( $tabs_container.length ) {
+                $first_tab = $tabs_container.find('div').first();
+            }
         }
     });
-    //console.log($tabs_container);
-    $first_tab = $tabs_container.find('div').first(),
-        $tabs_container_height = 0,
-        htmlbody = $('html,body');
+
+
+    $tabs_container_height = 0,
+    htmlbody = $('html,body');
 
     /* console.log($first_tab);*/
 
@@ -57,9 +61,11 @@
     $body.imagesLoaded( function() {
         setTimeout(function() {
 
-            tabulousInit();
-            $tabs_container_height = $first_tab.height() + 20;
-            $tabs_container.height($tabs_container_height);
+            if( typeof($tabs_container) !== 'undefined' ) {
+                tabulousInit();
+                $tabs_container_height = $first_tab.height() + 20;
+                $tabs_container.height($tabs_container_height);
+            }
 
             // Resize sections
             adjustWindow();
@@ -471,22 +477,24 @@
         // Refresh Skrollr after resizing our sections
         //s.refresh($('.frame'));
 
-        $('#slide-4 div[class ^= visible]').each(function(){
+        if( typeof($tabs_container) !== 'undefined' ) {
+            $('#slide-4 div[class ^= visible]').each(function () {
 
-            if( $(this).is(':visible') ) {
-                //console.log($(this));
-                $tabs_container = $(this).find('#tabs_container');
-                //console.log($tabs_container);
-            }
-        });
+                if ($(this).is(':visible')) {
+                    //console.log($(this));
+                    $tabs_container = $(this).find('#tabs_container');
+                    //console.log($tabs_container);
+                }
+            });
 
-        $first_tab = $tabs_container.find('div').first(),
-            $tabs_container_height = 0;
+            $first_tab = $tabs_container.find('div').first(),
+                $tabs_container_height = 0;
 
-        console.log('resize');
-        tabulousInit();
-        $tabs_container_height = $first_tab.height() + 20;
-        $tabs_container.height($tabs_container_height);
+            console.log('resize');
+            tabulousInit();
+            $tabs_container_height = $first_tab.height() + 20;
+            $tabs_container.height($tabs_container_height);
+        }
     });
 
 
