@@ -452,7 +452,7 @@
     function frameResize()
     {
         var k = 1280 / 620;
-        $('#dev-slide-3').height(Math.floor(window.innerWidth / k));
+       // $('#dev-slide-3').height(Math.floor(window.innerWidth / k));
     }
 
     $window.on('resize', function(){
