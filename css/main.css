@@ -2665,6 +2665,7 @@ only screen and (min-resolution: 144dpi) {
 #three_components span:first-of-type { padding-left: 0; }
 #three_components span:last-of-type { border: none; }
 #three_components span a { color: #fff; border-bottom: dashed 1px #fff; text-decoration: none; padding-bottom: 6px; }
+#three_components span a:hover { border-bottom: dashed 1px transparent; }
 
 #dev-slide-3 #pr_sect4 {
     padding-bottom: 50px;
@@ -2982,8 +2983,8 @@ only screen and (min-resolution: 144dpi) {
 /* /about */
 
 /* developers */
-#dev-slide-4 { /*padding-left: 70px;*/ margin-top: 113px; }
-#dev-slide-4 #best_solution { padding: 0 30px 20px 35px; background: #dee1ed; border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; width: 75%;   margin: 0 auto 50px; }
+#dev-slide-4 { /*padding-left: 70px;*/ padding-top: 113px; background: #dee1ed; }
+#dev-slide-4 #best_solution { padding: 0 30px 20px 35px;  border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; width: 75%;   margin: 0 auto 50px; }
 #dev-slide-4 #best_solution h2 { font-family: circe_b; font-size: 60px; padding-top: 14px; margin-bottom: 0; }
 #dev-slide-4 #best_solution p { line-height: 22px; margin: 12px 0; }
 #dev-slide-4 #best_solution p:first-of-type { margin-top: 13px; }
