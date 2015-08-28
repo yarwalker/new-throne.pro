@@ -408,6 +408,14 @@
 
     // enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
+    $('#three_components a').on('click', function(ev){
+        ev.preventDefault();
+
+        htmlbody.animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1000);
+    });
+
     $(window).scroll(function() {
         if ($(this).scrollTop() >  Math.floor($(this).height() / 4 * 3 ) ) {
             $('.callback_fix_btn').fadeIn(500);
