@@ -73,7 +73,7 @@
 <body>
 <img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
-    <div id="head">
+    <!--div id="head">
         <div id="langs" style="visibility: hidden">
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
@@ -89,34 +89,61 @@
         <ul id="top_menu_ext">
             <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
             <li class="active">Девелоперам</li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+
             <li><a href="about.html" title="О компании">О компании</a></li>
         </ul>
-    </div>
-</div>
-<!--div class="frame">
-    <div id="head">
-        <div id="langs">
+    </div-->
+
+
+    <div id="head" class=" hidden-xs">
+        <div id="langs" style="visibility: hidden">
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
         </div>
 
         <a id="logo" href="/" >THRONE Project</a>
-        <span id="top_slogan">Проектируем и устанавливаем<br>системы 3D-управления для дома или здания</span>
 
-        <div class="callback">
-            <span class="callback_button" data-toggle="modal" data-target="#myModal">Заказать обратный звонок</span>
-            <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
+        <div class="callback visible-lg visible-md">
+            <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+            <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
         </div>
 
         <ul id="top_menu_ext">
-            <li><a href="installation.html" title="Установка">Установка</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
             <li class="active">Девелоперам</li>
-            <li><a href="partners.html" title="Партнерам">Партнерам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="О компании">О компании</a></li>
         </ul>
+
     </div>
-</div-->
+
+    <div id="head" class=" visible-xs" >
+        <nav class="navbar" id="top_menu_ext" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="logo" href="/" >THRONE Project</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="top_menu_ext">
+                        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+                        <li class="active">Девелоперам</li>
+                        <li><a href="about.html" title="О компании">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+</div>
+
 
 <div id="dev-slide-1" class="frame">
     <h1>Девелоперам</h1>
@@ -172,8 +199,7 @@
     <div id="interaction_scheme">
         <div>
             <h4><span class="capital">1</span></h4>
-            <p>Мы <strong>бесплатно</strong> подготовим
-демоприложение "Умный дом <span class="capital">ТРОН</span>" с&nbsp;архитектурой вашего типового объекта и&nbsp;рассчитаем спецификацию проекта.</p>
+            <p>Мы <strong>бесплатно</strong> подготовим демоприложение "Умный дом <span class="capital">ТРОН</span>" с&nbsp;архитектурой вашего типового объекта и&nbsp;рассчитаем спецификацию проекта.</p>
         </div>
         <div id="dev">
             <h4>2</h4>
@@ -182,14 +208,13 @@
         <div>
             <h4>3</h4>
             <p>Получив запрос от&nbsp;покупателя, мы
-составим план производства работ и&nbsp;согласуем его с&nbsp;другими подрядчиками,
-чтобы установка системы "умный&nbsp;дом"
-не&nbsp;увеличивала сроков строительства.</p>
+            составим план производства работ и&nbsp;согласуем его с&nbsp;другими подрядчиками,
+            чтобы установка системы "умный&nbsp;дом"
+            не&nbsp;увеличивала сроков строительства.</p>
         </div>
         <div>
             <h4>4</h4>
-            <p>Клиент въезжает в&nbsp;жилище с&nbsp;уже
-установленной системой "умный&nbsp;дом".</p>
+            <p>Клиент въезжает в&nbsp;жилище с&nbsp;уже установленной системой "умный&nbsp;дом".</p>
         </div>
     </div>
 </div>
