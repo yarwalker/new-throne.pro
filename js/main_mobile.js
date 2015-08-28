@@ -14,6 +14,10 @@
     $video_h_koeff = 0.7975 / 720; // 0.7975 - отношение частного ширины и высоты картинки планшета к частному ширины и высоты видео, 720 высота видео
     $video_w_koeff = 0.7975 / 1280;
 
+    $colorbox_height = ( screen.width >= screen.height ?
+        ( screen.height * 0.9 > 600 ? '600' : screen.height * 0.9 ) :
+        ( Math.round(screen.width * 0.9 * screen.width / screen.height) > 600 ? '600' : Math.round(screen.width * 0.9 * screen.width / screen.height) )
+    );
 
     $animation_frame_height = 0;
     $animation_bcg = $('#slide-3 .bcg');
@@ -264,6 +268,18 @@
             tabulousInit();
             $tabs_container_height = $first_tab.height() + 20;
             $tabs_container.height($tabs_container_height);
+        }
+
+        if( $('.youtube').length ) {
+            $colorbox_height = ( screen.width >= screen.height ?
+                ( screen.height * 0.9 > 600 ? '600' : screen.height * 0.9 ) :
+                ( Math.round(screen.width * 0.9 * screen.width / screen.height) > 600 ? '600' : Math.round(screen.width * 0.9 * screen.width / screen.height) )
+            ); //( screen.width < screen.height ? ( Math.round(screen.width * 0.9 * screen.width / screen.height) + 'px') : '90%' );
+
+            $.colorbox.resize({
+                width: ( Math.round(screen.width * 0.9) > 800 ? 800 : Math.round(screen.width * 0.9) ), //'90%',
+                height: $colorbox_height
+            });
         }
     });
 
@@ -586,8 +602,25 @@
 
     // bootstrap youtube popup init
     if( $(".youtube").length ) {
-        $(".youtube").YouTubeModal({autoplay:0, width: 980, height: 640});
+        //$(".youtube").YouTubeModal({autoplay:0, width: 980, height: 640});
     }
+
+    $('.youtube').on('click', function(){
+        $(this)
+            .colorbox({
+                opacity: 0.6,
+                iframe: true,
+                width: ( Math.round(screen.width * 0.9) > 800 ? 800 : Math.round(screen.width * 0.9) ), //'90%',
+                height: $colorbox_height,
+                transition: 'none',
+                onComplete : function(){
+                    $(this).colorbox.resize({
+                        width: ( Math.round(screen.width * 0.9) > 800 ? 800 : Math.round(screen.width * 0.9) ), //'90%',
+                        height: $colorbox_height
+                    });
+                }
+            });
+    });
 
     // accordions on index page
     // $('.collapse').collapse('toggle');

@@ -30,6 +30,8 @@ $detect = new Mobile_Detect();
     <!--link href="css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
+    <link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="js/flowplay/skin/functional.css">
     <?php if ( !$detect->isMobile() ): ?>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -524,7 +526,7 @@ $detect = new Mobile_Detect();
                     никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
 
                 </p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span></p>
                 <div id="notes">
                     <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
@@ -554,7 +556,7 @@ $detect = new Mobile_Detect();
                     никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
 
                 </p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
                     <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
@@ -584,7 +586,7 @@ $detect = new Mobile_Detect();
                     никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
 
                 </p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
                     <div><img src="images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
@@ -607,7 +609,7 @@ $detect = new Mobile_Detect();
                     никогда, благодаря использованию в&nbsp;системе "<span class="capital">ТРОН</span>" <nobr>3D&dash;модели</nobr> вашего дома.
 
                 </p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/watch?v=P8bqAepnccI" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes" class="table">
                     <div class="table_row">
                         <div class="table_cell"><img src="images/interface_icon.png" class="img-responsive"  alt=""/></div>
@@ -1738,6 +1740,7 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/flowplay/flowplayer.js"></script>
 <!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="js/main.js"></script>
