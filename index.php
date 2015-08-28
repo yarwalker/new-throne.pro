@@ -1568,9 +1568,6 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-
-
-
 <footer class="hidden-xs">
     &copy; 2015 <span id="brand">THRONE Project</span>
     <ul id="bottom_menu">
@@ -1579,7 +1576,6 @@ $detect = new Mobile_Detect();
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
     </ul>
-
 </footer>
 
 <footer class="visible-xs">
@@ -1589,7 +1585,6 @@ $detect = new Mobile_Detect();
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
     </ul>
-
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
 
