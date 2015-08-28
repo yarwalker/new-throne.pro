@@ -240,7 +240,7 @@ $detect = new Mobile_Detect();
         </div-->
                 <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
         <p class="text-center">
-            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
+            <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,<br>
                 которые действительно нужны в&nbsp;повседневной жизни
 
         </p>
