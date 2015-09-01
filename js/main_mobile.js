@@ -732,7 +732,7 @@
     {
         var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
         $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
-        $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
+        $fotorama.width($gallery_width).data('width',$gallery_width); // force resize
         $fotorama.resize({'width': $gallery_width + 'px' });
 
        // console.log('width: ' + $gallery_width);
@@ -780,6 +780,8 @@
         $fw_height = Math.floor($inner_diff / $koeff);
 
         var $new_height = $fw_height; //( $fh_height < $fw_height ) ? Math.floor($fh_height) : Math.floor($fw_height);
+
+        //console.info('$new_height = ' + $new_height);
 
         $('.project_gallery .carousel-inner > .item, .project_gallery .carousel-inner > .item > img').height( $new_height ); //Math.floor(mywindow.height() * 0.55 ));
 
@@ -968,9 +970,58 @@
         ev.preventDefault();
     });
 
+    /* main page top carousel */
+
+    if( $('#slide-1 #carousel').length ) {
+        var $myCarousel = $('#slide-1 #carousel');
+
+        // Initialize carousel
+        $myCarousel.carousel({
+           // interval: 6000
+        });
+
+        // Select the elements to be animated
+        // in the first slide on page load
+        var $firstAnimatingElems = $myCarousel.find('.item:first')
+            .find('[data-animation ^= "animated"]');
+
+        // Apply the animation using our function
+        doAnimations($firstAnimatingElems);
+
+        // Pause the carousel
+        $myCarousel.carousel('pause');
+
+        // Attach our doAnimations() function to the
+        // carousel's slide.bs.carousel event
+        $myCarousel.on('slide.bs.carousel', function (e) {
+            // Select the elements to be animated inside the active slide
+            var $animatingElems = $(e.relatedTarget)
+                .find("[data-animation ^= 'animated']");
+            doAnimations($animatingElems);
+        });
+    }
+
+    function doAnimations(elems) {
+        var animEndEv = 'webkitAnimationEnd animationend';
+
+        elems.each(function () {
+            var $this = $(this),
+                $animationType = $this.data('animation');
+
+            // Add animate.css classes to
+            // the elements to be animated
+            // Remove animate.css classes
+            // once the animation event has ended
+            $this.addClass($animationType).one(animEndEv, function () {
+                $this.removeClass($animationType);
+            });
+        });
+    }
+
+
+
+    /* /main page top carousel */
+
 } )( jQuery );
 
-/**
- * Created by shabashov on 02.07.15.
- */
 
