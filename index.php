@@ -340,12 +340,16 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
+            style="background-image:url('images/new_ipad222.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-color: #fff;">
             <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
-                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
-                <source src="/uploads/videos/ipad1280-720.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
     <?php else: ?>
@@ -381,11 +385,14 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-color: transparent; background-image:url('images/new_ipad111.jpg'); background-repeat: no-repeat; background-position: center center;">
+            style="background-image:url('images/new_ipad222.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: #fff;">
             <!--img src="images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
-                <!--source src="/uploads/videos/costa.webm" type="video/webm"-->
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
                 <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
