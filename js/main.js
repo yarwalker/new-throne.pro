@@ -1171,7 +1171,7 @@
 
         // Initialize carousel
         $myCarousel.carousel({
-            interval: 6000
+           // interval: 6000
         });
 
         // Select the elements to be animated
@@ -1183,7 +1183,7 @@
         doAnimations($firstAnimatingElems);
 
         // Pause the carousel
-        //$myCarousel.carousel('pause');
+        $myCarousel.carousel('pause');
 
         // Attach our doAnimations() function to the
         // carousel's slide.bs.carousel event
