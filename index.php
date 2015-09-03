@@ -32,6 +32,8 @@ $detect = new Mobile_Detect();
 
     <link href="css/colorbox.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="css/flexslider.css">
+
     <link rel="stylesheet" href="js/flowplay/skin/functional.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -241,10 +243,44 @@ $detect = new Mobile_Detect();
 
         </div-->
         <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
-
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                        <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                    </div>
+                </li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic2.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic3.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+  	    		</li>
+            </ul>
+        </div>
         <!-- Carousel -->
-        <div id="carousel" class="carousel slide"> <!-- data-ride="carousel"-->
-              <!-- Indicators -->
+        <!--div id="carousel" class="carousel slide">
               <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
@@ -252,7 +288,6 @@ $detect = new Mobile_Detect();
                 <li data-target="#carousel" data-slide-to="3"></li>
               </ol>
 
-              <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <img src="images/carousel/pic1.jpg" alt="">
@@ -263,17 +298,8 @@ $detect = new Mobile_Detect();
                   </div>
                 </div>
 
-                <!--div class="item">
-                  <img src="images/carousel/pic2.jpg" alt="">
-                  <div class="carousel-caption">
-                    <span class="overlay"></span>
-                    <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
-                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
-                  </div>
-                </div-->
-
                 <div class="item">
-                  <img src="images/carousel/pic5.jpg" alt="">
+                  <img src="images/carousel/pic2.jpg" alt="">
                   <div class="carousel-caption">
                     <span class="overlay"></span>
                     <h2 data-animation="animated pulse">Сертифицированная установка</h2>
@@ -282,18 +308,16 @@ $detect = new Mobile_Detect();
                 </div>
 
                 <div class="item">
-                  <img src="images/carousel/pic4.jpg" alt="">
+                  <img src="images/carousel/pic3.jpg" alt="">
                   <div class="carousel-caption">
                     <span class="overlay"></span>
                     <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
                     <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
-                    <!--h2 data-animation="animated pulse">Уникальная простота и наглядность</h2>
-                    <p>С интерфейсом THRONE 3D Control легко может управиться даже ребенок. Научиться работать с&nbsp;ним занимает 5 минут. Попробуйте Демо-версию THRONE для iOS или Android (подходит под&nbsp;любые размеры экрана).</p-->
                   </div>
                 </div>
 
                 <div class="item">
-                  <img src="images/carousel/pic3.jpg" alt="">
+                  <img src="images/carousel/pic4.jpg" alt="">
                   <div class="carousel-caption">
                     <span class="overlay"></span>
                     <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -302,7 +326,6 @@ $detect = new Mobile_Detect();
                 </div>
               </div>
 
-              <!-- Controls -->
               <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -311,7 +334,7 @@ $detect = new Mobile_Detect();
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
-        </div>
+        </div-->
         <!-- /Carousel -->
 
         <p class="text-center">
@@ -356,13 +379,399 @@ $detect = new Mobile_Detect();
                 <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
+
+
     <?php else: ?>
 
         <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
+
+        <div class="flexslider visible-lg">
+            <ul class="slides">
+                <li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                        <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                    </div>
+                </li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic2.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic3.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+  	    		</li>
+            </ul>
+        </div>
+
+        <div class="flexslider visible-md">
+            <ul class="slides">
+                <li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                        <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                    </div>
+                </li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic2.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic3.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+  	    		</li>
+            </ul>
+        </div>
+
+        <div class="flexslider visible-sm">
+            <ul class="slides">
+                <li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                        <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                    </div>
+                </li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic2.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic3.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+  	    		</li>
+            </ul>
+        </div>
+
+        <div class="flexslider visible-xs">
+            <ul class="slides">
+                <li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                        <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                    </div>
+                </li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic2.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic3.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                        <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                    </div>
+  	    		</li>
+  	    		<li>
+  	    	        <img src="images/carousel/pic1.jpg" />
+                    <div class="flex-caption">
+                        <span class="overlay"></span>
+                        <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                        <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                    </div>
+  	    		</li>
+            </ul>
+        </div>
+        <!--
+        <div id="carousel-lg" class="carousel slide visible-lg">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-lg" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-lg" data-slide-to="1"></li>
+                <li data-target="#carousel-lg" data-slide-to="2"></li>
+                <li data-target="#carousel-lg" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/carousel/pic1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                    <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                  </div>
+                </div>
+
+
+
+                <div class="item">
+                  <img src="images/carousel/pic2.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic3.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic4.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#carousel-lg" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-lg" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+
+
+        <div id="carousel-md" class="carousel slide visible-md">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-md" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-md" data-slide-to="1"></li>
+                <li data-target="#carousel-md" data-slide-to="2"></li>
+                <li data-target="#carousel-md" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/carousel/pic1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                    <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                  </div>
+                </div>
+
+
+
+                <div class="item">
+                  <img src="images/carousel/pic2.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic3.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic4.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#carousel-md" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-md" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+
+        <div id="carousel-sm" class="carousel slide visible-sm">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-sm" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-sm" data-slide-to="1"></li>
+                <li data-target="#carousel-sm" data-slide-to="2"></li>
+                <li data-target="#carousel-sm" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/carousel/pic1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                    <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                  </div>
+                </div>
+
+
+
+                <div class="item">
+                  <img src="images/carousel/pic2.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic3.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic4.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#carousel-sm" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-sm" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+
+        <div id="carousel-xs" class="carousel slide visible-xs">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-xs" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-xs" data-slide-to="1"></li>
+                <li data-target="#carousel-xs" data-slide-to="2"></li>
+                <li data-target="#carousel-xs" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/carousel/pic1.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
+                    <p>Единый 3D-интерфейс для&nbsp;беспроводного управления освещением и&nbsp;шторами, климатом, системами безопасности, мультимедиа и&nbsp;другими системами "умного&nbsp;дома".</p>
+                  </div>
+                </div>
+
+
+
+                <div class="item">
+                  <img src="images/carousel/pic2.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                    <p>Проектные решения, отработанные на&nbsp;десятках объектов. Гарантированное качество проводимых работ. Аудит и&nbsp;шеф-монтаж. Использование правильных материалов и&nbsp;компонентов. Современный проект-менеджемент.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic3.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
+                    <p>Система может управлять небольшой квартирой или целой резиденцией. Количество подключаемых устройств "Умного&nbsp;дома", а&nbsp;также смартфонов и&nbsp;планшетов не&nbsp;ограничено!</p>
+
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/pic4.jpg" alt="">
+                  <div class="carousel-caption">
+                    <span class="overlay"></span>
+                    <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
+                    <p>Возможность дальнейшей модификации и&nbsp;модернизации системы. Пожизненная поддержка производителем. Гарантия на&nbsp;оборудование 3&nbsp;года, гарантия на&nbsp;программное обеспечение THRONE - пожизненно.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#carousel-xs" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-xs" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+        -->
         <p class="text-center">
             <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
                 которые действительно нужны в&nbsp;повседневной жизни
-
         </p>
         <div class="text-center" id="first_frame_factoids">
             <div>
@@ -405,10 +814,14 @@ $detect = new Mobile_Detect();
 
     <?php endif; ?>
 
-
+    <p class="app_links_container">
+        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a>
+        <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+    </p>
+    <div class="bottom_line"></div>
 </div>
 
-<div id="slide-2" data-slide="2" class="frame">
+<!--div id="slide-2" data-slide="2" class="frame">
     <h1 class="visible-md visible-lg">Почему "Умный&nbsp;дом"<br>
         <nobr>от "<span class="capital">ТРОН</span> Проект"</nobr> &mdash; лучшее решение?
     </h1>
@@ -570,7 +983,7 @@ $detect = new Mobile_Detect();
     </div>
 
     <div class="bottom_line"></div>
-</div>
+</div-->
 
 <div id="slide-3" data-slide="3" class=" frame">
 
@@ -1817,12 +2230,15 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/flowplay/flowplayer.js"></script>
 <!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
 <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="js/main.js"></script>
 <?php else: ?>
     <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.13.min.js"></script>
+    <!--script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script-->
     <script type="text/javascript" src="js/main_mobile.js"></script>
 <?php endif; ?>
 

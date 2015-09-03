@@ -75,6 +75,13 @@
             adjustWindow();
             frameResize();
 
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
             // Fade in sections
             $body.removeClass('loading').addClass('loaded');
 
