@@ -90,7 +90,20 @@ $detect = new Mobile_Detect();
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026367573705&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
-
+    <script>
+        ChatraID = 'uqSiLhJ2pHG4Yf9H2';
+        (function(d, w, c) {
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//chat.chatra.io/chatra.js';
+            n.parentNode.insertBefore(s, n);
+        })(document, window, 'Chatra');
+    </script>
 </head>
 
 <body class="loading">
