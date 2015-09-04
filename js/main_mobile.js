@@ -1,3 +1,6 @@
+/*! viewportSize | Author: Tyson Matanich, 2013 | License: MIT */
+(function(n){n.viewportSize={},n.viewportSize.getHeight=function(){return t("Height")},n.viewportSize.getWidth=function(){return t("Width")};var t=function(t){var f,o=t.toLowerCase(),e=n.document,i=e.documentElement,r,u;return n["inner"+t]===undefined?f=i["client"+t]:n["inner"+t]!=i["client"+t]?(r=e.createElement("body"),r.id="vpw-test-b",r.style.cssText="overflow:scroll",u=e.createElement("div"),u.id="vpw-test-d",u.style.cssText="position:absolute;top:-1000px",u.innerHTML="<style>@media("+o+":"+i["client"+t]+"px){body#vpw-test-b div#vpw-test-d{"+o+":7px!important}}<\/style>",r.appendChild(u),i.insertBefore(r,e.head),f=u["offset"+t]==7?i["client"+t]:n["inner"+t],i.removeChild(r)):f=n["inner"+t],f}})(this);
+
 ( function( $ ) {
 
     // Setup variables
@@ -68,9 +71,25 @@
                 $tabs_container.height($tabs_container_height);
             }
 
+            $('.flexslider').each(function() {
+
+                if ($(this).is(':visible')) {
+                    $(this).flexslider({
+                        animation: "slide",
+                        start: function (slider) {
+                            $('body').removeClass('loading');
+                        }
+                    });
+                }
+            });
+
             // Resize sections
             adjustWindow();
             frameResize();
+
+
+
+            carouselInit();
 
             // Fade in sections
             $body.removeClass('loading').addClass('loaded');
@@ -270,6 +289,19 @@
             $tabs_container.height($tabs_container_height);
         }
 
+
+        $('.flexslider').each(function() {
+
+            if ($(this).is(':visible')) {
+                $(this).flexslider({
+                    animation: "slide",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            }
+        });
+
         if( $('.youtube').length ) {
             $colorbox_height = ( screen.width >= screen.height ?
                 ( screen.height * 0.9 > 600 ? '600' : screen.height * 0.9 ) :
@@ -283,6 +315,15 @@
         }
     });
 
+
+    $window.on( 'orientationchange', function(event) {
+        //$( "#orientation" ).text( "This device is in " + event.orientation + " mode!" );
+        console.log('orientation change ' + event.orientation + ' ' + $.now());
+        console.log('screen width: ' + $window.innerWidth());
+        carouselInit();
+
+
+    });
 
     // Returns a random number between min (inclusive) and max (exclusive)
     function getRandomArbitrary(min, max) {
@@ -972,33 +1013,74 @@
 
     /* main page top carousel */
 
-    if( $('#slide-1 #carousel').length ) {
-        var $myCarousel = $('#slide-1 #carousel');
+    var $myCarousel, $caption_height = 0;
 
-        // Initialize carousel
-        $myCarousel.carousel({
-           // interval: 6000
-        });
 
-        // Select the elements to be animated
-        // in the first slide on page load
-        var $firstAnimatingElems = $myCarousel.find('.item:first')
-            .find('[data-animation ^= "animated"]');
 
-        // Apply the animation using our function
-        doAnimations($firstAnimatingElems);
+    function carouselInit() {
+        if( $('#slide-1 .carousel').length ) {
+            delete $myCarousel;
+            //console.log($('#slide-1 .carousel'));
+            $('#slide-1 .carousel').each(function(){
+                if( $(this).is(':visible') ) {
+                    $myCarousel = $(this); //$('#slide-1 #carousel');
+                }
+            });
 
-        // Pause the carousel
-        $myCarousel.carousel('pause');
+            $caption_height = 0;
+            $myCarousel.find('.carousel-caption').each(function(){
+                var $el = $(this).clone(),
+                    $tmp_height = 0;
 
-        // Attach our doAnimations() function to the
-        // carousel's slide.bs.carousel event
-        $myCarousel.on('slide.bs.carousel', function (e) {
-            // Select the elements to be animated inside the active slide
-            var $animatingElems = $(e.relatedTarget)
-                .find("[data-animation ^= 'animated']");
-            doAnimations($animatingElems);
-        });
+                $el.appendTo('body').
+                    css({
+                        top: '-10000px',
+                        bottom: 'auto' //,
+                        //width: document.documentElement.clientWidth //innerWidth()
+                    }).
+                    addClass('tmp_caption').
+                    show();
+
+                $tmp_height = Math.ceil( $el.children('h2').outerHeight(true) + $el.children('p').outerHeight(true) );
+
+                console.log('.carousel width: ' + screen.width);
+                console.log($myCarousel.attr('id') + ' tmp height: ' + $tmp_height + ' h2(' + $el.children('h2').text() + '): ' + Math.ceil($el.children('h2').outerHeight(true)) + ' p: ' + Math.ceil($el.children('p').outerHeight(true)) );
+                if( $caption_height < $tmp_height ) {
+                    $caption_height = $tmp_height;
+                }
+
+                delete $el;
+                //$('.tmp_caption').remove();
+            });
+
+            $myCarousel.find('.carousel-caption').height( $caption_height );
+            console.log('init height: ' + ($caption_height ));
+
+            // Initialize carousel
+            $myCarousel.carousel({
+                interval: 6000
+            });
+
+            // Select the elements to be animated
+            // in the first slide on page load
+            var $firstAnimatingElems = $myCarousel.find('.item:first')
+                .find('[data-animation ^= "animated"]');
+
+            // Apply the animation using our function
+            doAnimations($firstAnimatingElems);
+
+            // Pause the carousel
+            //$myCarousel.carousel('pause');
+
+            // Attach our doAnimations() function to the
+            // carousel's slide.bs.carousel event
+            $myCarousel.on('slide.bs.carousel', function (e) {
+                // Select the elements to be animated inside the active slide
+                var $animatingElems = $(e.relatedTarget)
+                    .find("[data-animation ^= 'animated']");
+                doAnimations($animatingElems);
+            });
+        }
     }
 
     function doAnimations(elems) {

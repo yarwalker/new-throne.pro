@@ -232,7 +232,7 @@ only screen and (min-resolution: 144dpi) {
         position: relative;
         /*bottom: -45%;
         left: 50%;*/
-        width: 100%;
+        width: 80%;
         height: 100%;
         display: block;
         background-size: contain;
@@ -611,6 +611,11 @@ only screen and (min-resolution: 144dpi) {
     width: 70%;
     margin: 1em auto;
 }
+#slide-1 p.app_links_container {
+    text-align: center;
+    margin-top: 50px;
+}
+
 /*
 #slogan + div {
     width: 74%;
@@ -650,6 +655,39 @@ only screen and (min-resolution: 144dpi) {
     float: right;
 }
 */
+#slide-1 .flexslider { width: 70%; margin: 50px auto 70px; }
+#slide-1 .flexslider .slides { background-color: #8a8a8a; }
+#slide-1 .flexslider .slides > li { position: relative; }
+#slide-1 .flex-caption {
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+#slide-1 .flex-caption h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    position: relative;
+}
+#slide-1 .flex-caption p {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    position: relative;
+    width: 100%;
+}
+#slide-1 .flex-direction-nav a { border-bottom: none !important; }
+
+
+
+
 #slide-1 #carousel {
     margin: 30px 0 50px;
     width: 70%;
@@ -660,7 +698,8 @@ only screen and (min-resolution: 144dpi) {
     /*background-color: #383838;*/
     left: 5%;
     right: 5%;
-
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #slide-1 .carousel-caption h2 {
     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
@@ -687,6 +726,8 @@ only screen and (min-resolution: 144dpi) {
 }
 #slide-1 #carousel .carousel-control.left { left: -70px; }
 #slide-1 #carousel .carousel-control.right { right: -70px; }
+
+
 
 /* /carousel */
 
@@ -3766,12 +3807,13 @@ only screen and (min-resolution: 144dpi) {
         line-height: 49px;
         margin-bottom: 30px;
     }
-    #slogan + div {
+
+    /*#slogan + div {
         width: 90%;
         margin-left: 5%;
-        /*margin: 0 auto;*/
+
         bottom: 0px;
-    }
+    }*/
 }
 
 @media (max-width: 1366px) {
@@ -3878,6 +3920,8 @@ only screen and (min-resolution: 144dpi) {
         margin-left: auto;
         margin-right: auto;
     }
+
+    #slide-1 .flexslider { width: 80%; }
 
     #slide-1 #carousel {
         margin: 30px 0 50px;
