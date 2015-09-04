@@ -92,7 +92,20 @@ $detect = new Mobile_Detect();
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026367573705&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
-
+    <script>
+        ChatraID = 'uqSiLhJ2pHG4Yf9H2';
+        (function(d, w, c) {
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//chat.chatra.io/chatra.js';
+            n.parentNode.insertBefore(s, n);
+        })(document, window, 'Chatra');
+    </script>
 </head>
 
 <body class="loading">
@@ -270,7 +283,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -412,7 +425,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -425,7 +438,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-md">
             <ul class="slides">
                 <li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic1-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -433,7 +446,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="images/carousel/pic2.jpg" />
+  	    	        <img src="images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Сертифицированная установка</h2>
@@ -441,7 +454,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic3.jpg" />
+  	    	        <img src="images/carousel/pic3-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -449,7 +462,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic4-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -462,7 +475,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-sm">
             <ul class="slides">
                 <li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic1-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -470,7 +483,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="images/carousel/pic2.jpg" />
+  	    	        <img src="images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Сертифицированная установка</h2>
@@ -478,7 +491,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic3.jpg" />
+  	    	        <img src="images/carousel/pic3-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -486,7 +499,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic4-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -499,7 +512,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-xs">
             <ul class="slides">
                 <li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic1-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -507,7 +520,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="images/carousel/pic2.jpg" />
+  	    	        <img src="images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Сертифицированная установка</h2>
@@ -515,7 +528,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic3.jpg" />
+  	    	        <img src="images/carousel/pic3-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -523,7 +536,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="images/carousel/pic1.jpg" />
+  	    	        <img src="images/carousel/pic4-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -1058,7 +1071,7 @@ $detect = new Mobile_Detect();
                     <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -1088,7 +1101,7 @@ $detect = new Mobile_Detect();
                     <div><img src="images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
                 </div>
 
             </div>
@@ -1120,7 +1133,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="images/ipad_slide2.jpg" class="img-responsive"  alt=""/>
+                    <img src="images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
                 </div>
 
             </div>
@@ -2230,7 +2243,7 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="js/flowplay/flowplayer.js"></script>
 <!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 
 <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 

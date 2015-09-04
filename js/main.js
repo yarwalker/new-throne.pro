@@ -71,16 +71,22 @@
                 $tabs_container.height($tabs_container_height);
             }
 
-            // Resize sections
-            adjustWindow();
-            frameResize();
-
             $('.flexslider').flexslider({
                 animation: "slide",
                 start: function(slider){
                     $('body').removeClass('loading');
+                    adjustWindow();
+                },
+                init: function(){
+
                 }
             });
+
+            // Resize sections
+            //adjustWindow();
+            frameResize();
+
+
 
             // Fade in sections
             $body.removeClass('loading').addClass('loaded');

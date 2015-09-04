@@ -71,10 +71,6 @@
                 $tabs_container.height($tabs_container_height);
             }
 
-            // Resize sections
-            adjustWindow();
-            frameResize();
-
             $('.flexslider').each(function() {
 
                 if ($(this).is(':visible')) {
@@ -86,6 +82,12 @@
                     });
                 }
             });
+
+            // Resize sections
+            adjustWindow();
+            frameResize();
+
+
 
             carouselInit();
 
@@ -288,7 +290,17 @@
         }
 
 
+        $('.flexslider').each(function() {
 
+            if ($(this).is(':visible')) {
+                $(this).flexslider({
+                    animation: "slide",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            }
+        });
 
         if( $('.youtube').length ) {
             $colorbox_height = ( screen.width >= screen.height ?
@@ -309,6 +321,8 @@
         console.log('orientation change ' + event.orientation + ' ' + $.now());
         console.log('screen width: ' + $window.innerWidth());
         carouselInit();
+
+
     });
 
     // Returns a random number between min (inclusive) and max (exclusive)
