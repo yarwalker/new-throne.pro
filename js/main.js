@@ -71,19 +71,21 @@
                 $tabs_container.height($tabs_container_height);
             }
 
-            $('.flexslider').flexslider({
-                animation: "slide",
-                start: function(slider){
-                    $('body').removeClass('loading');
-                    adjustWindow();
-                },
-                init: function(){
+            if( $('.flexslider').length ) {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                        adjustWindow();
+                    },
+                    init: function () {
 
-                }
-            });
+                    }
+                });
+            }
 
             // Resize sections
-            //adjustWindow();
+            adjustWindow();
             frameResize();
 
 
@@ -488,6 +490,19 @@
         fotoramaResize();
 
         console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
+
+        if($('.flexslider').length) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                    adjustWindow();
+                },
+                init: function () {
+
+                }
+            });
+        }
 
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 

@@ -89,7 +89,7 @@
 
 
 
-            carouselInit();
+          //  carouselInit();
 
             // Fade in sections
             $body.removeClass('loading').addClass('loaded');
@@ -320,7 +320,7 @@
         //$( "#orientation" ).text( "This device is in " + event.orientation + " mode!" );
         console.log('orientation change ' + event.orientation + ' ' + $.now());
         console.log('screen width: ' + $window.innerWidth());
-        carouselInit();
+       // carouselInit();
 
 
     });
