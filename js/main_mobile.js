@@ -773,7 +773,7 @@
     {
         var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
         $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
-        $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
+        $fotorama.width($gallery_width).data('width',$gallery_width); // force resize
         $fotorama.resize({'width': $gallery_width + 'px' });
 
        // console.log('width: ' + $gallery_width);
@@ -821,6 +821,8 @@
         $fw_height = Math.floor($inner_diff / $koeff);
 
         var $new_height = $fw_height; //( $fh_height < $fw_height ) ? Math.floor($fh_height) : Math.floor($fw_height);
+
+        //console.info('$new_height = ' + $new_height);
 
         $('.project_gallery .carousel-inner > .item, .project_gallery .carousel-inner > .item > img').height( $new_height ); //Math.floor(mywindow.height() * 0.55 ));
 
@@ -1104,7 +1106,4 @@
 
 } )( jQuery );
 
-/**
- * Created by shabashov on 02.07.15.
- */
 

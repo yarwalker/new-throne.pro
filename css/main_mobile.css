@@ -1323,10 +1323,10 @@ only screen and (min-resolution: 144dpi) {
         background-image: url("../images/ios_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
-        background-size: 17%;
-        -moz-background-size: 17%;
+        background-size: 14%;
+        -moz-background-size: 14%;
         /*-webkit-background-size: 17%;*/
-        -o-background-size: 17%;
+        -o-background-size: 14%;
         margin-bottom: 17px;
         margin-top: 8px;
     }
@@ -1357,10 +1357,10 @@ only screen and (min-resolution: 144dpi) {
         background-image: url("../images/android_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
-        background-size: 17%;
-        -moz-background-size: 17%;
+        background-size: 14%;
+        -moz-background-size: 14%;
         /*-webkit-background-size: 17%;*/
-        -o-background-size: 17%;
+        -o-background-size: 14%;
     }
 }
 
@@ -3673,6 +3673,29 @@ footer.minor {
 
 #design { float: right; margin-top: 44px; }
 #footer_socials { float: right; margin-top: 19px; }
+.visible-sm #footer_socials, .visible-xs #footer_socials { float: right; margin-top: 10px; margin-bottom: auto; }
+
+.visible-sm #bottom_menu, .visible-xs #bottom_menu {
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+.visible-xs #bottom_menu { float: left; }
+.visible-xs .copy { float: left; width: 100%; margin-bottom: 10px; }
+/*
+@media (min-width: 721px) {
+    .visible-xs #footer_socials {
+        float: right; margin-top: 10px;
+    }
+}*/
+
+@media (max-width: 720px) {
+    .visible-xs #footer_socials {
+        float: left;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
 
 #design a, #footer_socials a { line-height: 15px; }
 

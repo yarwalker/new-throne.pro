@@ -254,7 +254,7 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
 
-        </div-->
+        </div--> 
         <h1 id="slogan">Лучшее решение <nobr>"Умного дома"</nobr> на&nbsp;основе <nobr>3D-интерфейса</nobr> и&nbsp;сервис по&nbsp;его установке</h1>
         <div class="flexslider">
             <ul class="slides">
@@ -782,10 +782,13 @@ $detect = new Mobile_Detect();
               </a>
         </div>
         -->
+
         <p class="text-center">
             <nobr>"Умный дом"</nobr> в исполнении "<span class="capital">ТРОН</span> Проект" &mdash; это набор совершенно понятных функций,
                 которые действительно нужны в&nbsp;повседневной жизни
         </p>
+
+
         <div class="text-center" id="first_frame_factoids">
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
@@ -828,8 +831,8 @@ $detect = new Mobile_Detect();
     <?php endif; ?>
 
     <p class="app_links_container">
-        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE App</a>
-        <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a>
+        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE для iOS</a>
+        <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE для Android</a>
     </p>
     <div class="bottom_line"></div>
 </div>
@@ -1175,7 +1178,7 @@ $detect = new Mobile_Detect();
                         </td>
                         <td>
                             <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
-                            <span>Плавная регулировка<br>яркости</span>
+                            <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
                             <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
@@ -1213,23 +1216,23 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
-                            <span>Кондиционирование</span>
+                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                         </td>
                         <td>
                             <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
-                            <span>Вентиляция</span>
+                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
                             <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
-                            <span>Отопление</span>
+                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                         </td>
                         <td>
                             <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
-                            <span>Теплые полы</span>
+                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
                             <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
-                            <span>Термостаты</span>
+                            <span>Термостаты<br>Полный контроль<br>климата</span>
                         </td>
                     </tr>
                 </table>
@@ -1314,7 +1317,7 @@ $detect = new Mobile_Detect();
                         </td>
                         <td>
                             <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
-                            <span>Плавная регулировка<br>яркости</span>
+                            <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
                             <img src="images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
@@ -1352,23 +1355,23 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
-                            <span>Кондиционирование</span>
+                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                         </td>
                         <td>
                             <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
-                            <span>Вентиляция</span>
+                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
                             <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
-                            <span>Отопление</span>
+                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                         </td>
                         <td>
                             <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
-                            <span>Теплые полы</span>
+                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
                             <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
-                            <span>Термостаты</span>
+                            <span>Термостаты<br>Полный контроль<br>климата</span>
                         </td>
                     </tr>
                 </table>
@@ -1451,12 +1454,12 @@ $detect = new Mobile_Detect();
                             <img  src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
                         </td>
                         <td>
-                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                            <span>Централизованное<br>и&nbsp;зональное<br>управление</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span>Плавная регулировка<br>яркости</span>
+                            <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
                             <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
@@ -1512,12 +1515,12 @@ $detect = new Mobile_Detect();
                             <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                         </td>
                         <td>
-                            <span>Кондиционирование</span>
+                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span>Вентиляция</span>
+                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
                             <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
@@ -1528,12 +1531,12 @@ $detect = new Mobile_Detect();
                             <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                         </td>
                         <td>
-                            <span>Отопление</span>
+                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span>Теплые полы</span>
+                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
                             <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
@@ -1544,7 +1547,7 @@ $detect = new Mobile_Detect();
                             <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                         </td>
                         <td>
-                            <span>Термостаты</span>
+                            <span>Термостаты<br>Полный контроль<br>климата</span>
                         </td>
                     </tr>
                 </table>
@@ -1652,7 +1655,7 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <span>Плавная регулировка<br>яркости</span>
+                        <span>Плавная<br>регулировка<br>яркости</span>
                     </td>
                     <td>
                         <img src="images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
@@ -1732,12 +1735,12 @@ $detect = new Mobile_Detect();
                         <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                     </td>
                     <td>
-                        <span>Кондиционирование</span>
+                        <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span>Вентиляция</span>
+                        <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                     </td>
                     <td>
                         <img src="images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
@@ -1748,12 +1751,12 @@ $detect = new Mobile_Detect();
                         <img src="images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                     </td>
                     <td>
-                        <span>Отопление</span>
+                        <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span>Теплые полы</span>
+                        <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                     </td>
                     <td>
                         <img src="images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
@@ -1764,7 +1767,7 @@ $detect = new Mobile_Detect();
                         <img src="images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                     </td>
                     <td>
-                        <span>Термостаты</span>
+                        <span>Термостаты<br>Полный контроль<br>климата</span>
                     </td>
                 </tr>
             </table>
