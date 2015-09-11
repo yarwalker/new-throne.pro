@@ -85,7 +85,7 @@ $detect = new Mobile_Detect();
             s.parentNode.insertBefore(fbds, s);
             _fbq.loaded = true;
         }
-    })();
+    })(); 
     window._fbq = window._fbq || [];
     window._fbq.push(['track', '6026367573705', {'value':'0.00','currency':'USD'}]);
     </script>
