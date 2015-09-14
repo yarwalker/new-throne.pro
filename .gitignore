@@ -1,4 +1,6 @@
 cfg/
+logs/
 .idea/
 images/
 images_org/
+mail_cfg.php

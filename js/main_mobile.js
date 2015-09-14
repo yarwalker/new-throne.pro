@@ -31,11 +31,14 @@
            //console.log($(this));
            $tabs_container = $(this).find('#tabs_container');
            //console.log($tabs_container);
+           if( $tabs_container.length ) {
+               $first_tab = $tabs_container.find('div').first();
+           }
         }
     });
 
     //console.log($tabs_container);
-    $first_tab = $tabs_container.find('div').first(),
+
     $tabs_container_height = 0,
     htmlbody = $('html,body');
 
@@ -507,6 +510,7 @@
     });
 
     $('#myModal, #myAppStoreModal').on('hide.bs.modal', function (e) {
+        $('#inputName').val('');
         $('#inputPhone').val('');
         $('#inputEmail').val('').closest('div.form-group').removeClass('has-error').removeClass('has-success');
         removeError();
@@ -545,7 +549,7 @@
     });
 
     $('.send-btn').on('click', function(){
-        //console.log('click');
+        console.log('click');
 
        // console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
@@ -568,7 +572,7 @@
 
                 $.post('send_email.php', $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    var $str = '<div class="result">Ошибка отправки письма</div>';
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
                         $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
@@ -945,7 +949,7 @@
         makeProjectCounterString();
     });
 
-    $('#inputPhone').mask("+7 (000) 000-0000");
+    //$('#inputPhone').mask("+7 (000) 000-0000");
 
    /* $('#interior_ipad').flowplayer({
         fullscreen: false,

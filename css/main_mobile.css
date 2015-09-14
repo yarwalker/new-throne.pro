@@ -2338,7 +2338,7 @@ body.modal-open {
 }
 
 .send-btn {
-    float: left;
+    /*float: left;*/
     margin-right: 30px;
 }
 
