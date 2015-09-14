@@ -1587,7 +1587,7 @@ $detect = new Mobile_Detect();
                             <div class="form-group">
                                 <label for="inputName" class="control-label">Ваше имя</label>
                                 <div class=" ">
-                                    <input type="text" class="form-control" id="inputName" name="inputNamee">
+                                    <input type="text" class="form-control" id="inputName" name="inputName">
                                 </div>
                             </div>
                             <div class="form-group">

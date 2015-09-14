@@ -724,6 +724,7 @@
     });
 
     $('#myModal, #myAppStoreModal').on('hide.bs.modal', function (e) {
+        $('#inputName').val('');
         $('#inputPhone').val('');
         $('#inputEmail').val('').closest('div.form-group').removeClass('has-error').removeClass('has-success');
         removeError();
@@ -785,7 +786,9 @@
 
                 $.post('send_email.php', $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    var $str = '<div class="result">Ошибка отправки письма</div>';
+                    console.log(data);
+
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
                         $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
@@ -1160,7 +1163,7 @@
         makeProjectCounterString();
     });
 
-    $('#inputPhone').mask("+7 (000) 000-0000");
+   // $('#inputPhone').mask("+7 (000) 000-0000");
 
     $('#play_demo, #play_demo_text').on('click', function(){
         var $play_demo = $('#play_demo');
