@@ -1372,7 +1372,7 @@ a.ios_throne_app {
     background-repeat: no-repeat;
     margin-bottom: 17px;
     margin-top: 8px;
-    width: 248px;
+    width: 250px;
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1395,7 +1395,7 @@ only screen and (min-resolution: 144dpi) {
         -o-background-size: 14%;
         margin-bottom: 17px;
         margin-top: 8px;
-        width: 248px;
+        width: 250px;
     }
 }
 
@@ -1409,7 +1409,7 @@ a.android_throne_app {
     background-position: 10px center;
     background-repeat: no-repeat;
     /*background-size: 90%;*/
-    width: 248px;
+    width: 250px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1429,7 +1429,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-background-size: 14%;
         /*-webkit-background-size: 17%;*/
         -o-background-size: 14%;
-        width: 248px;
+        width: 250px;
     }
 }
 
