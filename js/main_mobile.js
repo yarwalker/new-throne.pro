@@ -24,6 +24,7 @@
 
     $animation_frame_height = 0;
     $animation_bcg = $('#slide-3 .bcg');
+    var $tabs_container, $first_tab;
     //$tabs_container = $('#tabs_container');
     $('#slide-4 div[class ^= visible]').each(function(){
 
@@ -33,10 +34,13 @@
            //console.log($tabs_container);
            if( $tabs_container.length ) {
                $first_tab = $tabs_container.find('div').first();
+
+               //console.log($first_tab);
            }
         }
     });
 
+    //console.log($first_tab);
     //console.log($tabs_container);
 
     $tabs_container_height = 0,
@@ -68,7 +72,7 @@
     $body.imagesLoaded( function() {
         setTimeout(function() {
 
-            if( typeof($tabs_container) !== 'undefined' ) {
+            if( $tabs_container.length ) {
                 tabulousInit();
                 $tabs_container_height = $first_tab.height() + 20;
                 $tabs_container.height($tabs_container_height);
