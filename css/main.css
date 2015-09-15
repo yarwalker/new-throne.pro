@@ -2297,7 +2297,7 @@ body.modal-open {
     text-align: center;
 }
 
-#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; }
+#notes div { display: inline-block; text-align: center; margin-right: 70px; vertical-align: top; }
 #notes div:last-of-type { margin-right: 0; }
 #notes div img { margin-right: 15px; vertical-align: top; margin-bottom: 10px; position: relative; left: 50%; margin-left: -22px; }
 #notes div span { display: inline-block; }
