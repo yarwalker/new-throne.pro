@@ -1465,7 +1465,7 @@ $detect = new Mobile_Detect();
             <div role="tabpanel" class="tab-pane fade" id="price" aria-labelledby="home-tab">
                 <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
                     Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.
-                    Примеры проектов с ценами вы можете посмотреть в разделе "<a href="about.html" title="О компании">О компании</a>".</p>
+                </p>
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
                                         onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить обсчёт</span></p>
             </div>
@@ -1524,7 +1524,6 @@ $detect = new Mobile_Detect();
                     <div class="panel-body">
                         <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
                             Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
-                        <p>Примеры проектов с ценами вы можете посмотреть в <a href="about.html" title="О компании">разделе "О компании"</a>.</p>
                         <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
                     </div>
                 </div>
