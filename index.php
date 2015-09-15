@@ -130,7 +130,7 @@ $detect = new Mobile_Detect();
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
-        <div id="langs" style="visibility: hidden">
+        <div id="langs" >
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
         </div>
