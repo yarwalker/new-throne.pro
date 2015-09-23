@@ -17,9 +17,9 @@ $detect = new Mobile_Detect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
-    <meta name="description" content="THRONE 3D умный дом " />
-    <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
-    <title>Умный дом ТРОН</title>
+    <meta name="description" content="THRONE 3D smart home" />
+    <meta name="keywords" content="THRONE 3D home automation, THRONE 3D smart home system, THRONE 3D building management system, THRONE 3D smart home technology, THRONE 3D wireless home automation, THRONE 3D smart home security, THRONE 3D home automation software, THRONE 3D building management system, THRONE 3D building automation system, THRONE 3D alarm systems control, THRONE 3D lighting control, THRONE 3D home automation lighting, THRONE 3D security system control, THRONE 3D home security, THRONE 3D homeautomation, THRONE 3D smart home automation, THRONE 3D intelligent home, THRONE 3D curtain control, THRONE 3D shading control, THRONE 3D security alarms, THRONE 3D fire alarms" />
+    <title>THRONE Smart Home</title>
     <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
@@ -109,7 +109,7 @@ $detect = new Mobile_Detect();
     </script>
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029738348169&amp;cd[value]=0.00&amp;cd[currency]=RUB&amp;noscript=1" /></noscript>
 
-    <script>
+    <!--script>
         ChatraID = 'uqSiLhJ2pHG4Yf9H2';
         (function(d, w, c) {
             var n = d.getElementsByTagName('script')[0],
@@ -122,7 +122,7 @@ $detect = new Mobile_Detect();
             + '//chat.chatra.io/chatra.js';
             n.parentNode.insertBefore(s, n);
         })(document, window, 'Chatra');
-    </script>
+    </script-->
 </head>
 
 <body class="loading">
@@ -131,11 +131,11 @@ $detect = new Mobile_Detect();
 <div class="frame">
     <div id="head" class=" hidden-xs">
         <div id="langs" >
-            <span><a href="http://<?=$_SERVER['SERVER_NAME']?>">Ru</a></span>
+            <span><a href="../">Ru</a></span>
             <span  class="active">En</span>
         </div>
 
-        <a id="logo" href="/" >THRONE Project</a>
+        <a id="logo" href="/en" >THRONE Project</a>
 
         <div class="callback visible-lg visible-md">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
@@ -146,7 +146,6 @@ $detect = new Mobile_Detect();
         <ul id="top_menu_ext">
             <li><a href="installation.html" title="How We Work">How We Work</a></li>
             <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="About Us">About Us</a></li>
         </ul>
 
@@ -166,9 +165,9 @@ $detect = new Mobile_Detect();
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="top_menu_ext">
-                        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
-                        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-                        <li><a href="about.html" title="О компании">О компании</a></li>
+                        <li><a href="installation.html" title="How We Work">How We Work</a></li>
+                        <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
+                        <li><a href="about.html" title="About Us">About Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -602,13 +601,14 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
                         <td width="40%">
-                            <h2>Управление освещением</h2>
+                            <h2>Lighting Control</h2>
                             <p class="">
-                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
-                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
-                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
-                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
-                                "ТРОН".</p>
+                                Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
+                                leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
+                            </p>
+                            <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
+                                You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -617,24 +617,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
-                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                            <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                            <span>Centralized<br/>and zonal<br/>management</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
-                            <span>Плавная<br>регулировка<br>яркости</span>
+                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                            <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
-                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                            <span>Custom<br/>scenes<br/>saving</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
-                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                            <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
-                            <span>Полное или частичное<br>управление</span>
+                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                            <span>Full or partial<br/>control</span>
                         </td>
                     </tr>
                 </table>
@@ -645,12 +645,14 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Управление климатом</h2>
+                            <h2>Climate Сontrol (HVAC)</h2>
                             <p class="">
-                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
-                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
-                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
-                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                                Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
+                            </p>
+                            <p>Using THRONE Smart Home you will be able to manage climatic equipment of the house at any time from anywhere.
+                                You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
+                            </p>
+                            <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -659,24 +661,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
-                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
+                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                            <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
-                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
+                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                            <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
-                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
+                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                            <span>Heating<br/>Central<br/>and local</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
-                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
+                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                            <span>Heating floors<br/>Electric<br/>and aquatic</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
-                            <span>Термостаты<br>Полный контроль<br>климата</span>
+                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                            <span>Thermostats<br/>The full control<br/>of climate</span>
                         </td>
                     </tr>
                 </table>
@@ -685,17 +687,15 @@ $detect = new Mobile_Detect();
                 <table>
                     <tbody>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
                         <td>
-                            <h2>Управление системой безопасности</h2>
+                            <h2>Security System Control</h2>
                             <p>
-                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
-                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                                THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
+                                Event notifications are displayed with specification of the location where they occur on the 3D model.
                             </p>
-                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
-                                проникновении (взломе).</p>
-                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
-                                с&nbsp;мобильного телефона или планшета.</p>
+                            <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
+                            <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -704,24 +704,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
-                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                            <span>Security<br/>and fire<br/>alarm</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
-                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                            <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
-                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                            <span>Protection from leakage<br/>and other<br/>emergency situations</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
-                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                            <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
-                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                            <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                         </td>
                     </tr>
                 </table>
@@ -741,13 +741,14 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
                         <td width="40%">
-                            <h2>Управление освещением</h2>
+                            <h2>Lighting Control</h2>
                             <p class="">
-                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
-                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
-                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
-                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
-                                "ТРОН".</p>
+                                Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
+                                leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
+                            </p>
+                            <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
+                                You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -756,24 +757,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
-                            <span>Централизованное<br>и&nbspзональное<br>управление</span>
+                            <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                            <span>Centralized<br/>and zonal<br/>management</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
-                            <span>Плавная<br>регулировка<br>яркости</span>
+                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                            <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
-                            <span>Сохранение<br>пользовательских<br>сцен</span>
+                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                            <span>Custom<br/>scenes<br/>saving</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
-                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
+                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                            <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
-                            <span>Полное или частичное<br>управление</span>
+                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                            <span>Full or partial<br/>control</span>
                         </td>
                     </tr>
                 </table>
@@ -784,12 +785,14 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Управление климатом</h2>
+                            <h2>Climate Сontrol (HVAC)</h2>
                             <p class="">
-                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
-                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
-                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
-                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                                Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
+                            </p>
+                            <p>Using THRONE Smart Home you will be able to manage climatic equipment of the house at any time from anywhere.
+                                You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
+                            </p>
+                            <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -798,24 +801,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
-                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
+                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                            <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
-                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
+                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                            <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
-                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
+                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                            <span>Heating<br/>Central<br/>and local</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
-                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
+                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                            <span>Heating floors<br/>Electric<br/>and aquatic</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
-                            <span>Термостаты<br>Полный контроль<br>климата</span>
+                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                            <span>Thermostats<br/>The full control<br/>of climate</span>
                         </td>
                     </tr>
                 </table>
@@ -824,17 +827,15 @@ $detect = new Mobile_Detect();
                 <table>
                     <tbody>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
                         <td>
-                            <h2>Управление системой безопасности</h2>
+                            <h2>Security System Control</h2>
                             <p>
-                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
-                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                                THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
+                                Event notifications are displayed with specification of the location where they occur on the 3D model.
                             </p>
-                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
-                                проникновении (взломе).</p>
-                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
-                                с&nbsp;мобильного телефона или планшета.</p>
+                            <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
+                            <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -843,24 +844,24 @@ $detect = new Mobile_Detect();
                 <table>
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
-                            <span>Охранная<br>и пожарная<br>сигнализация</span>
+                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                            <span>Security<br/>and fire<br/>alarm</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
-                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
+                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                            <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
-                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
+                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                            <span>Protection from leakage<br/>and other<br/>emergency situations</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
-                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
+                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                            <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
-                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                            <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                         </td>
                     </tr>
                 </table>
@@ -879,14 +880,15 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr>
                         <td>
-                            <h2>Управление освещением</h2>
+                            <h2>Lighting Control</h2>
                             <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                             <p class="">
-                                Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
-                                нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
-                            <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
-                                Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
-                                "ТРОН".</p>
+                                Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
+                                leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
+                            </p>
+                            <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
+                                You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -895,42 +897,42 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img  src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <img  src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                         </td>
                         <td>
-                            <span>Централизованное<br>и&nbsp;зональное<br>управление</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Плавная<br>регулировка<br>яркости</span>
-                        </td>
-                        <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <span>Centralized<br/>and zonal<br/>management</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <span>Сохранение<br>пользовательских<br>сцен</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
-                        </td>
-                        <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                         </td>
                         <td>
-                            <span>Полное или частичное<br>управление</span>
+                            <span>Custom<br/>scenes<br/>saving</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
+                        </td>
+                        <td>
+                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                        </td>
+                        <td>
+                            <span>Full or partial<br/>control</span>
                         </td>
                     </tr>
                 </table>
@@ -941,13 +943,15 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr>
                         <td>
-                            <h2>Управление климатом</h2>
+                            <h2>Climate Сontrol (HVAC)</h2>
                             <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                             <p class="">
-                                Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
-                            <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
-                                вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
-                            <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                                Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
+                            </p>
+                            <p>Using THRONE Smart Home you will be able to manage climatic equipment of the house at any time from anywhere.
+                                You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
+                            </p>
+                            <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -956,42 +960,42 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                         </td>
                         <td>
-                            <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
-                        </td>
-                        <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
-                        </td>
-                        <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                         </td>
                         <td>
-                            <span>Термостаты<br>Полный контроль<br>климата</span>
+                            <span>Heating<br/>Central<br/>and local</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <<span>Heating floors<br/>Electric<br/>and aquatic</span>
+                        </td>
+                        <td>
+                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                        </td>
+                        <td>
+                            <span>Thermostats<br/>The full control<br/>of climate</span>
                         </td>
                     </tr>
                 </table>
@@ -1002,16 +1006,14 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr>
                         <td>
-                            <h2>Управление системой безопасности</h2>
-                            <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                            <h2>Security System Control</h2>
+                            <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
                             <p>
-                                "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
-                                Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                                THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
+                                Event notifications are displayed with specification of the location where they occur on the 3D model.
                             </p>
-                            <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
-                                проникновении (взломе).</p>
-                            <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
-                                с&nbsp;мобильного телефона или планшета.</p>
+                            <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
+                            <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
                         </td>
                     </tr>
                     </tbody>
@@ -1020,42 +1022,42 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                         </td>
                         <td>
-                            <span>Охранная<br>и пожарная<br>сигнализация</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Датчики движения,<br>открытия окон<br>и дверей</span>
-                        </td>
-                        <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <span>Security<br/>and fire<br/>alarm</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
-                        </td>
-                        <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                         </td>
                         <td>
-                            <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                            <span>Protection from leakage<br/>and other<br/>emergency situations</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
+                        </td>
+                        <td>
+                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                        </td>
+                        <td>
+                            <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                         </td>
                     </tr>
                 </table>
@@ -1075,14 +1077,15 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr>
                     <td>
-                        <h2>Управление освещением</h2>
+                        <h2>Lighting Control</h2>
                         <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                         <p class="">
-                            Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
-                            нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
-                        <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
-                            Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
-                            "ТРОН".</p>
+                            Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
+                            leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
+                        </p>
+                        <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
+                            You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1091,83 +1094,60 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                     </td>
                     <td>
-                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Плавная<br>регулировка<br>яркости</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        <span>Centralized<br/>and zonal<br/>management</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        <span>Smooth<br/>brightness<br/>adjustment</span>
                     </td>
                     <td>
-                        <span>Сохранение<br>пользовательских<br>сцен</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                     </td>
                     <td>
-                        <span>Полное или частичное<br>управление</span>
+                        <span>Custom<br/>scenes<br/>saving</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
+                    </td>
+                    <td>
+                        <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                    </td>
+                    <td>
+                        <span>Full or partial<br/>control</span>
                     </td>
                 </tr>
             </table>
-
-            <!--table>
-                <tr>
-                    <td>
-                        <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
-                        <span>Централизованное<br>и&nbspзональное<br>управление</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
-                        <span>Плавная регулировка<br>яркости</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
-                        <span>Сохранение<br>пользовательских<br>сцен</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
-                        <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
-                    </td>
-                    <td>
-                        <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
-                        <span>Полное или частичное<br>управление</span>
-                    </td>
-                </tr>
-            </table-->
         </div>
         <div id="xs-tabs-2">
             <table>
                 <tbody>
                 <tr>
                     <td>
-                        <h2>Управление климатом</h2>
+                        <h2>Climate Сontrol (HVAC)</h2>
                         <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                         <p class="">
-                            Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
-                        <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
-                            вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
-                        <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                            Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
+                        </p>
+                        <p>Using THRONE Smart Home you will be able to manage climatic equipment of the house at any time from anywhere.
+                            You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
+                        </p>
+                        <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
                     </td>
                 </tr>
                 </tbody>
@@ -1176,42 +1156,42 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                        <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                     </td>
                     <td>
-                        <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
-                    </td>
-                    <td>
-                        <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                        <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                        <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                     </td>
                     <td>
-                        <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
-                    </td>
-                    <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                        <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                        <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                     </td>
                     <td>
-                        <span>Термостаты<br>Полный контроль<br>климата</span>
+                        <span>Heating<br/>Central<br/>and local</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Heating floors<br/>Electric<br/>and aquatic</span>
+                    </td>
+                    <td>
+                        <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                    </td>
+                    <td>
+                        <span>Thermostats<br/>The full control<br/>of climate</span>
                     </td>
                 </tr>
             </table>
@@ -1223,16 +1203,14 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr>
                     <td>
-                        <h2>Управление системой безопасности</h2>
-                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                        <h2>Security System Control</h2>
+                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
                         <p>
-                            "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
-                            Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
+                            THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
+                            Event notifications are displayed with specification of the location where they occur on the 3D model.
                         </p>
-                        <p>С помощью "ТРОН" вы можете посмотреть видео с&nbsp;камер наблюдения, получить уведомления о&nbsp;пожаре, протечке воды, утечке газа,
-                            проникновении (взломе).</p>
-                        <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
-                            с&nbsp;мобильного телефона или планшета.</p>
+                        <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
+                        <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
                     </td>
                 </tr>
                 </tbody>
@@ -1241,42 +1219,42 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                        <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                     </td>
                     <td>
-                        <span>Охранная<br>и пожарная<br>сигнализация</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Датчики движения,<br>открытия окон<br>и дверей</span>
-                    </td>
-                    <td>
-                        <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                        <span>Security<br/>and fire<br/>alarm</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                        <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                     </td>
                     <td>
-                        <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
-                    </td>
-                    <td>
-                        <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                        <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                        <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                     </td>
                     <td>
-                        <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
+                        <span>Protection from leakage<br/>and other<br/>emergency situations</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
+                    </td>
+                    <td>
+                        <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                    </td>
+                    <td>
+                        <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                     </td>
                 </tr>
             </table>
@@ -1289,44 +1267,47 @@ $detect = new Mobile_Detect();
 </div>
 
 <div id="slide-5" data-slide="5" class=" frame">
-    <h2 class="text-center">Расширение интеграции</h2>
+    <h2 class="text-center">Extension of Integration</h2>
     <div class="table hidden-xs" id="integr_table">
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_description">
-                    Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
+                    Open a gate or door without leaving your couch
                 </div>
                 <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
-                <p>Открытие дверей<br>или&nbsp;ворот</p>
-
+                <p>Opening of a door<br/>or gate</p>
             </div>
+
             <div class="table_cell">
                 <div class="integr_description">
-                    Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
+                    All weather conditions on your tablet or smartphone
                 </div>
                 <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
-                <p>Погодные<br>станции</p>
+                <p>Weather<br/>Stations</p>
             </div>
+
             <div class="table_cell">
                 <div class="integr_description">
-                    <p>Управление зональным поливом газона</p>
+                    Manage zonal lawn sprinklers
                 </div>
                 <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
-                <p>Поливочные<br>системы</p>
+                <p>Sprinkling<br/>systems</p>
             </div>
+
             <div class="table_cell">
                 <div class="integr_description">
-                    Управление музыкой для&nbsp;каждой комнаты
+                    Control music in each room
                 </div>
                 <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
-                <p>Медиа мультирум</p>
+                <p>Audio<br/>multiroom</p>
             </div>
+
             <div class="table_cell ">
                 <div class="integr_description">
-                    Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
+                    Setting the temperature in a pool or sauna
                 </div>
                 <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
-                <p>Сауны<br>и&nbsp;бассейны</p>
+                <p>Saunas<br/>and pools</p>
             </div>
         </div>
     </div>
@@ -1340,12 +1321,12 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
             <div class="table_cell">
-                Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
+                Open a gate or door without leaving your couch
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell">
-                Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
+                All weather conditions on your tablet or smartphone
             </div>
             <div class="table_cell">
                 <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
@@ -1360,12 +1341,12 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
             <div class="table_cell">
-                <p>Управление зональным поливом газона</p>
+                Manage zonal lawn sprinklers
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell">
-                Управление музыкой для&nbsp;каждой комнаты
+                Control music in each room
             </div>
             <div class="table_cell">
                 <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
@@ -1380,19 +1361,18 @@ $detect = new Mobile_Detect();
                 </div>
             </div>
             <div class="table_cell">
-                Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
+                Setting the temperature in a pool or sauna
             </div>
         </div>
     </div>
 
-    <h2 class="text-center">Оборудование для системы<br>"Умный дом ТРОН"</h2>
+    <h2 class="text-center">Equipment for THRONE<br/>Smart Home system</h2>
     <div class="table hidden-xs" id="equipment" >
         <div class="table_row">
             <div class="table_cell">
-                <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
-                    400 производителей оборудования, каждый из&nbsp;которых проходит строгую сертификацию.
-                    Поэтому наши клиенты всегда получают предложение, оптимально сбалансированное по&nbsp;таким показателям как Цена / Дизайн / Надежность.</p>
-                <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
+                <p>As hardware part of the system we use the equipment of European standard KNX. The KNX Association today includes more than 400 manufacturers of equipment,
+                    each of which passes a rigorous certification. So our customers always get the offer, optimally balanced on such indicators as Price / Design / Reliability.</p>
+                <p>All sensors, switches, controllers and executive devices are certified and tested for safety, reliability and durability.</p>
             </div>
             <div class="table_cell" style="width: 35%;">
                 <img src="../images/equipment.jpg" class="img-responsive" />
@@ -1402,52 +1382,48 @@ $detect = new Mobile_Detect();
 
     <div class="table visible-xs" id="equipment" >
         <div><img src="../images/equipment.jpg" class="img-responsive" /></div>
-        <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
-            400 производителей оборудования, каждый из&nbsp;которых проходит строгую сертификацию.
-            Поэтому наши клиенты всегда получают предложение, оптимально сбалансированное по&nbsp;таким показателям как Цена / Дизайн / Надежность.</p>
-        <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
+        <p>As hardware part of the system we use the equipment of European standard KNX. The KNX Association today includes more than 400 manufacturers of equipment,
+            each of which passes a rigorous certification. So our customers always get the offer, optimally balanced on such indicators as Price / Design / Reliability.</p>
+        <p>All sensors, switches, controllers and executive devices are certified and tested for safety, reliability and durability.</p>
     </div>
 
     <div class="text-center">
         <!--a href="#" class="ios_throne_app" data-toggle="modal" data-target="#myAppStoreModal">THRONE App</a>
         <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE App</a-->
         <span class="order_button" data-toggle="modal" data-target="#myModal"
-              onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить спецификацию</span>
+              onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require Specification</span>
     </div>
 
-    <h2 class="text-center" id="know_more_title">Хотите узнать больше?</h2>
+    <h2 class="text-center" id="know_more_title">Want to know more?</h2>
     <div id="know_more_tabs" class="hidden-xs">
         <ul class="nav nav-pills nav-justified">
-            <li role="presentation"><a href="#about_tab">О компании "ТРОН&nbsp;Проект"</a></li>
-            <li role="presentation"><a href="#how_works">Как мы работаем</a></li>
-            <li role="presentation"><a href="#price">Стоимость "умного&nbsp;дома"</a></li>
-            <li role="presentation" class="active"><a href="#discuss">Давайте всё обсудим!</a></li>
+            <li role="presentation"><a href="#about_tab">About THRONE Project</a></li>
+            <li role="presentation"><a href="#how_works">How We Work</a></li>
+            <li role="presentation"><a href="#price">The Cost of Smart Home</a></li>
+            <li role="presentation" class="active"><a href="#discuss">Let’s Discuss Everything!</a></li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div role="tabpanel" class="tab-pane fade" id="about_tab" aria-labelledby="home-tab">
-                <p>"ТРОН Проект" - международная инженерная компания.
-                    Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
-                    офисов и&nbsp;индустриальных зданий.</p>
-                <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
+                <p>THRONE Project is an international engineering company. We design and install automation systems for homes, offices and industrial buildings.</p>
+                <a href="about.html" title="About THRONE Project">Learn more</a>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="how_works" aria-labelledby="profile-tab">
-                <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.
-                    Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.
-                    Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
-                <a href="installation.html">Подробнее</a>
+                <p>We make free demo version of your Smart Home and the preliminary quotation of the project. We design the system.
+                    We supply the equipment. We mount. We set up and run. Warranty for equipment is 3 years. Warranty for software is lifetime.</p>
+                <a href="installation.html">Read more</a>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="price" aria-labelledby="home-tab">
-                <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
-                    Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.
+                <p>As a good suit is sewn by the figure of a client, the smart home system is designed by the architecture of the premises.
+                    Start with sending us your house plans, this will provide you with a more accurate calculation than using any of the online calculators.
                 </p>
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
-                                        onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить обсчёт</span></p>
+                                        onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a quotation</span></p>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="discuss" aria-labelledby="profile-tab">
-                <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.
-                    Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
+                <p>Leave your phone number, we will quickly contact you and discuss all the issues.
+                    We never run the risk of the customer relationship, so we won't take much ща your time. And will never disclose your contact details to the third parties.</p>
                 <p align="center"><span class="order_button" data-toggle="modal" data-target="#myModal"
-                                        onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a callback</span></p>
+                                        onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a call</span></p>
             </div>
         </div>
     </div>
@@ -1458,14 +1434,14 @@ $detect = new Mobile_Detect();
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            О компании "ТРОН Проект"
+                            About THRONE Project
                         </a>
                     </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        "ТРОН Проект" - международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
-                        офисов и&nbsp;индустриальных зданий. <a href="about.html" title="О компании 'ТРОН Проект'">Узнать больше</a>
+                        THRONE Project is an international engineering company. We design and install automation systems for homes, offices and industrial buildings.
+                        <a href="about.html" title="About THRONE Project">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -1473,16 +1449,16 @@ $detect = new Mobile_Detect();
                 <div class="panel-heading" role="tab" id="headingTwo">
                     <h4 class="panel-title">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Как мы работаем
+                            How We Work
                         </a>
                     </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                        <p>Делаем <strong>бесплатно демо-версию</strong> вашего "умного дома" и&nbsp;предварительный обсчёт проекта.</p>
-                        <p>Проектируем систему. Поставляем оборудование. Монтируем. Запускаем.</p>
-                        <p>Гарантия на оборудование - 3 года. Гарантия на&nbsp;софт - пожизненно.</p>
-                        <a href="installation.html">Подробнее</a>
+                        <p>We make free demo version of your Smart Home and the preliminary quotation of the project.</p>
+                        <p>We design the system. We supply the equipment. We mount. We set up and run. </p>
+                        <p>Warranty for equipment is 3 years. Warranty for software is lifetime.</p>
+                        <a href="installation.html">Read more</a>
                     </div>
                 </div>
             </div>
@@ -1490,15 +1466,15 @@ $detect = new Mobile_Detect();
                 <div class="panel-heading" role="tab" id="headingThree">
                     <h4 class="panel-title">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Стоимость "умного дома"
+                            The Cost of Smart Home
                         </a>
                     </h4>
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
-                        <p>Как хороший костюм шьётся по&nbsp;фигуре клиента, так и&nbsp;система "умный дом" проектируется по&nbsp;архитектуре помещения.
-                            Начните с&nbsp;отправки нам планов дома, это обеспечит вам более точный расчет, чем при&nbsp;помощи каких-либо онлайн-калькуляторов.</p>
-                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Запросить обсчёт</span></p>
+                        <p>As a good suit is sewn by the figure of a client, the smart home system is designed by the architecture of the premises.
+                            Start with sending us your house plans, this will provide you with a more accurate calculation than using any of the online calculators.</p>
+                        <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Require a quotation</span></p>
                     </div>
                 </div>
             </div>
@@ -1506,14 +1482,14 @@ $detect = new Mobile_Detect();
                 <div class="panel-heading" role="tab" id="headingFour">
                     <h4 class="panel-title">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                            Давайте всё обсудим!
+                            Let’s Discuss Everything!
                         </a>
                     </h4>
                 </div>
                 <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
                     <div class="panel-body">
-                        <p>Оставьте номер своего телефона, мы быстро свяжемся с&nbsp;вами и&nbsp;проговорим все вопросы.</p>
-                        <p>Мы никогда не&nbsp;рискуем отношениями с&nbsp;клиентами, поэтому мы не&nbsp;займем у&nbsp;вас много времени. И&nbsp;ни&nbsp;за&nbsp;что не передадим ваши контактные данные третьим лицам.</p>
+                        <p>Leave your phone number, we will quickly contact you and discuss all the issues. </p>
+                        <p>We never run the risk of the customer relationship, so we won't take much ща your time. And will never disclose your contact details to the third parties.</p>
                         <p class="text-center"><span class="order_button" data-toggle="modal" data-target="#myModal">Require a callback</span></p>
                     </div>
                 </div>
@@ -1551,20 +1527,20 @@ $detect = new Mobile_Detect();
                     <!--span aria-hidden="true">&times;</span-->
                     <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
                 </button>
-                <h4 class="modal-title">Мы перезвоним в течение часа</h4>
+                <h4 class="modal-title">We’ll call back within 1 hour</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-7 col-xs-7">
                         <form action="" class=" callback_form">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">Ваше имя</label>
+                                <label for="inputName" class="control-label">Your Name</label>
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputName" name="inputName">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">Номер телефона</label>
+                                <label for="inputPhone" class="control-label">Cellphone Number</label>
 
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
@@ -1572,7 +1548,7 @@ $detect = new Mobile_Detect();
                             </div>
                             <div class="form-group">
                                 <div class="">
-                                    <button type="button" class="send-btn">Отправить</button>
+                                    <button type="button" class="send-btn">Send</button>
                                     <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                 </div>
                             </div>
@@ -1586,18 +1562,18 @@ $detect = new Mobile_Detect();
                     </div>
                     <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
                         <img src="../images/phone_tube.png" alt="">
-                        <div>Смелее! Это вас ни к&nbsp;чему не обязывает.</div>
+                        <div>You will have no obligations.</div>
                         <div id="padlock">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                            <span>Мы никому не передадим ваш номер!</span>
+                            <span>We’ll not disclose you contact details to anyone!</span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
                         <div class="footnote">
-                            Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами!
-                            Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.
+                            Or you can <a href="mailto:office@throne.pro">email us</a> right now!
+                            Just send us the floor plans of your house and we will make a preliminary calculation. <strong>It's free</strong>.
                         </div>
                     </div>
                 </div>
@@ -1785,6 +1761,8 @@ chosen link or button. -->
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
 
 </body>
 

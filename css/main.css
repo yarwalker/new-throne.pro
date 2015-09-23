@@ -2665,7 +2665,7 @@ only screen and (min-resolution: 144dpi) {
 }
 .car-caption .object {
     background: url('../images/object_icon.png') no-repeat;
-    padding-left: 35px;
+    padding-left: 40px;
     background-position: 0px 0px;
     height: 30px;
     padding-top: 12px;
@@ -2675,11 +2675,98 @@ only screen and (min-resolution: 144dpi) {
 }
 .car-caption .automation {
     background: url('../images/automation_icon.png') no-repeat;
-    padding-left: 35px;
+    padding-left: 40px;
     background-position: 0px 0px;
     height: 30px;
     padding-top: 12px;
 }
+
+.car-caption h4 { font-family: circe_b; }
+.car-caption .panel-heading { padding: 0 15px; background-color: #fff; }
+.car-caption .lighting {
+    background: url('../images/lighting_icon.jpg') no-repeat;
+    padding-left: 45px;
+    background-position: 0px 0px;
+    height: 35px;
+    padding-top: 7px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .car-caption .lighting {
+        background: url('../images/lighting_icon@2x.jpg') no-repeat;
+        padding-left: 45px;
+        background-position: 0px 0px;
+        height: 35px;
+        padding-top: 7px;
+    }
+}
+.car-caption .climate {
+    background: url('../images/climate_icon.jpg') no-repeat;
+    padding-left: 45px;
+    background-position: 0px 0px;
+    height: 35px;
+    padding-top: 7px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .car-caption .climate {
+        background: url('../images/climate_icon@2x.jpg') no-repeat;
+        padding-left: 45px;
+        background-position: 0px 0px;
+        height: 35px;
+        padding-top: 7px;
+    }
+}
+.car-caption .security {
+    background: url('../images/security_icon.jpg') no-repeat;
+    padding-left: 45px;
+    background-position: 0px 0px;
+    height: 35px;
+    padding-top: 7px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .car-caption .security {
+        background: url('../images/security_icon@2x.jpg') no-repeat;
+        padding-left: 45px;
+        background-position: 0px 0px;
+        height: 35px;
+        padding-top: 7px;
+    }
+}
+.car-caption .extra {
+    background: url('../images/extra_icon.jpg') no-repeat;
+    padding-left: 45px;
+    background-position: 0px 0px;
+    height: 35px;
+    padding-top: 7px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .car-caption .extra {
+        background: url('../images/extra_icon@2x.jpg') no-repeat;
+        padding-left: 45px;
+        background-position: 0px 0px;
+        height: 35px;
+        padding-top: 7px;
+    }
+}
+
+
+
+
 .carousel {
     width: auto;
     margin: 0;
