@@ -169,6 +169,12 @@ $detect = new Mobile_Detect();
                         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
                         <li><a href="about.html" title="О компании">О компании</a></li>
+                        <li>
+                            <div id="langs" >
+                                <span class="active">Ru</span>
+                                <span><a href="/en">En</a></span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

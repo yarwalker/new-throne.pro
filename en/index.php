@@ -168,6 +168,12 @@ $detect = new Mobile_Detect();
                         <li><a href="installation.html" title="How We Work">How We Work</a></li>
                         <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
                         <li><a href="about.html" title="About Us">About Us</a></li>
+                        <li>
+                            <div id="langs" >
+                                <span><a href="../">Ru</a></span>
+                                <span  class="active">En</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

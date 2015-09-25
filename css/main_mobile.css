@@ -454,13 +454,13 @@ only screen and (min-resolution: 144dpi) {
 }
 #langs span { height: 28px; width: 28px; display: block; text-align: center; margin-bottom: 4px; }
 
-#langs span.active { background: url('../images/lang_active.png') no-repeat; padding-top: 5px; }
+#langs span.active { background: url('../images/lang_active.png') no-repeat; padding-top: 3px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #langs span.active { background: url('../images/lang_active@2x.png') no-repeat; padding-top: 5px; background-size: 28px 28px; width: 28px; height: 28px; }
+    #langs span.active { background: url('../images/lang_active@2x.png') no-repeat; padding-top: 3px; background-size: 28px 28px; width: 28px; height: 28px; }
 }
 
 #langs a { text-align: center; line-height: 15px; margin-bottom: 3px;}
@@ -2765,6 +2765,7 @@ only screen and (min-resolution: 144dpi) {
 }
 .gallery_container .table_cell { max-width: 80%; width: 80%; }
 .gallery_container .table_cell .fotorama { width: 100%; height: 100%; }
+.fotorama__wrap { width: 100% !important; }
 .car-caption {
     /*min-width: 350px;
     width: 20%;
@@ -2987,7 +2988,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-3 #pr_sect8 { background-color: #df2346; }
-#dev-slide-3 #pr_sect8 .top_border_block { margin: 0 0 30px; }
+#dev-slide-3 #pr_sect8 .top_border_block { margin: 0 0 30px; padding-top: 20px; }
 #dev-slide-3 #pr_sect8 .extra_cap { margin-bottom: 20px; }
 
 
@@ -4076,6 +4077,7 @@ only screen and (min-resolution: 144dpi) {
         float: left;
     }
     .hidden-xs #langs { padding-bottom: 15px; }
+    .visible-xs #langs { padding: 0}
 
     #logo {
         margin: 25px 20px 0 0;
