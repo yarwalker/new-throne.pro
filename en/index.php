@@ -418,7 +418,7 @@ $detect = new Mobile_Detect();
 
 
         <p class="text-center">
-            Smart Home executed by THRONE Project is a set of perfectly understandable functions, which are really needed in everyday life
+            Smart Home by THRONE Project is a set of completely understandable functions, which are really needed in everyday life
         </p>
 
 
@@ -1768,7 +1768,19 @@ chosen link or button. -->
 <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-
+<!-- Сleversite chat button -->
+<script type='text/javascript'>
+    (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.charset = 'utf-8';
+        s.src = '//cleversite.ru/cleversite/widget_new.php?supercode=1&referer_main='+encodeURIComponent(document.referrer)+'&clid=12955hntiy&siteNew=18307';
+        var ss = document.getElementsByTagName('script')[0];
+        ss.parentNode.insertBefore(s, ss);
+    })();
+</script>
+<!-- / End of Сleversite chat button -->
 
 </body>
 
