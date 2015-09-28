@@ -1581,6 +1581,7 @@ only screen and (min-resolution: 144dpi) {
 
 #about-slide-2 .table { width: 90%; /*75%;*/ margin-top: 25px; }
 #about-slide-2 .table:first-of-type .table_cell { padding:0 3% 50px; width: 44%;  }
+#about-slide-2 .table:first-of-type .table_row .table_cell:first-of-type { padding-left: 0;  }
 #about-slide-2 .table:first-of-type .table_cell img.right { float: right; }
 
 #about-slide-2 .table h3 { margin-top: 6px; line-height: 34px; }

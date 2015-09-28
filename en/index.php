@@ -464,7 +464,7 @@ $detect = new Mobile_Detect();
     <?php endif; ?>
 
     <p class="app_links_container">
-        <a href="https://itunes.apple.com/ru/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE for iOS</a>
+        <a href="https://itunes.apple.com/en/app/throne-3d-smart-home-building/id1024542280?l=ru&mt=8" class="ios_throne_app" target="_blank">THRONE for iOS</a>
         <a href="https://play.google.com/store/apps/details?id=com.throne.project28.demo.nexus" class="android_throne_app" target="_blank">THRONE for Android</a>
     </p>
     <div class="bottom_line"></div>
