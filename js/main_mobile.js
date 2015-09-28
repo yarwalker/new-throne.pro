@@ -24,8 +24,7 @@
 
     $animation_frame_height = 0;
     $animation_bcg = $('#slide-3 .bcg');
-    var $tabs_container, $first_tab;
-    //$tabs_container = $('#tabs_container');
+    //var $tabs_container;
     $('#slide-4 div[class ^= visible]').each(function(){
 
        if( $(this).is(':visible') ) {
@@ -72,7 +71,7 @@
     $body.imagesLoaded( function() {
         setTimeout(function() {
 
-            if( $tabs_container.length ) {
+            if( typeof($tabs_container) !== 'undefined' && $tabs_container.length ) { console.log($tabs_container);
                 tabulousInit();
                 $tabs_container_height = $first_tab.height() + 20;
                 $tabs_container.height($tabs_container_height);
@@ -195,7 +194,7 @@
             //console.log('win width: ' + winW);
 
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src', ( location.href.search('/en') != -1 ? '../' : '' ) + 'images/ipad_slide2_org.jpg');
 
         } else {
             // удаляем атрибуты элементов анимации
@@ -263,7 +262,7 @@
     function frameResize()
     {
         var k = 1280 / 620;
-        $('#dev-slide-3').height(Math.floor(window.innerWidth / k));
+        //$('#dev-slide-3').height(Math.floor(window.innerWidth / k));
     }
 
     $window.on('resize', function(){
@@ -553,13 +552,20 @@
     });
 
     $('.send-btn').on('click', function(){
-        console.log('click');
+        //console.log('click');
 
        // console.log($(this).closest('.modal.fade').attr('id'));
-        var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
+        var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
+            $str = '',
+            $url = 'send_email.php';
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
-            $($modalID + ' #error').text('Вы не заполнили поле "Телефон"');
+            if( location.href.search('/en') != -1 ) {
+                $str = 'The field "Cellphone Number" can\'t be empty';
+            } else {
+                $str = 'Вы не заполнили поле "Телефон"';
+            }
+            $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
             var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
@@ -574,12 +580,24 @@
 
                 //console.log($('.callback_form').serialize());
 
-                $.post('send_email.php', $($modalID + ' .callback_form').serialize(), function (data) {
+                if( location.href.search('/en') ) {
+                    $url = '../' + $url;
+                }
 
-                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                $.post($url, $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                    if( location.href.search('/en') == -1 ) {
+                        var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+
+                        if( data.msg == 1 ) {
+                            $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                        }
+                    } else {
+                        var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
+
+                        if( data.msg == 1 ) {
+                            $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                        }
                     }
 
                     $($modalID).modal('hide');

@@ -763,13 +763,22 @@
     });
 
     $('.send-btn').on('click', function(){
-        console.log('click');
+        //console.log('click');
 
-        console.log($(this).closest('.modal.fade').attr('id'));
-        var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString();
+        //console.log($(this).closest('.modal.fade').attr('id'));
+        var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
+            $str = '',
+            $url = 'send_email.php';
+
+        console.log(location.href.search('/en'));
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
-            $($modalID + ' #error').text('Вы не заполнили поле "Телефон"');
+            if( location.href.search('/en') != -1 ) {
+                $str = 'The field "Cellphone Number" can\'t be empty';
+            } else {
+                $str = 'Вы не заполнили поле "Телефон"';
+            }
+            $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
             var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
@@ -784,14 +793,25 @@
 
                 //console.log($('.callback_form').serialize());
 
-                $.post('send_email.php', $($modalID + ' .callback_form').serialize(), function (data) {
+                if( location.href.search('/en') ) {
+                    $url = '../' + $url;
+                }
 
-                    console.log(data);
+                $.post( $url, $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                    //console.log(data);
+                    if( location.href.search('/en') == -1 ) {
+                        var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
-                    if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                        if( data.msg == 1 ) {
+                            $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                        }
+                    } else {
+                        var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
+
+                        if( data.msg == 1 ) {
+                            $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                        }
                     }
 
                     $($modalID).modal('hide');
@@ -1014,12 +1034,13 @@
     function makeProjectCounterString()
     {
         var $cur_index = $('#project_list li.active').index() + 1,
-            $str = '';
+            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
 
-        /*if(location.href.search('/en') != -1)
-         $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
-         else if (location.href.search('/ru') != -1 || location.pathname.length == 1) */
-        $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+        if(location.href.search('/en') != -1) {
+            $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
+        }
+        /*else if (location.href.search('/ru') != -1 || location.pathname.length == 1)
+            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();*/
 
         $('#proj_counter').text($str);
     }

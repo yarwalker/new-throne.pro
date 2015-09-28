@@ -109,7 +109,7 @@ $detect = new Mobile_Detect();
     </script>
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029738348169&amp;cd[value]=0.00&amp;cd[currency]=RUB&amp;noscript=1" /></noscript>
 
-    <script>
+    <!--script>
         ChatraID = 'uqSiLhJ2pHG4Yf9H2';
         (function(d, w, c) {
             var n = d.getElementsByTagName('script')[0],
@@ -122,7 +122,7 @@ $detect = new Mobile_Detect();
             + '//chat.chatra.io/chatra.js';
             n.parentNode.insertBefore(s, n);
         })(document, window, 'Chatra');
-    </script>
+    </script-->
 </head>
 
 <body class="loading">
@@ -130,7 +130,7 @@ $detect = new Mobile_Detect();
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
-        <div id="langs" style="visibility: hidden">
+        <div id="langs" >
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
         </div>
@@ -169,6 +169,12 @@ $detect = new Mobile_Detect();
                         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
                         <li><a href="about.html" title="О компании">О компании</a></li>
+                        <li>
+                            <div id="langs" >
+                                <span class="active">Ru</span>
+                                <span><a href="/en">En</a></span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1811,6 +1817,8 @@ chosen link or button. -->
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
 
 </body>
 
