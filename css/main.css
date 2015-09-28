@@ -1558,7 +1558,7 @@ only screen and (min-resolution: 144dpi) {
 #become_partner .callback_contacts { margin-left: 20px; }
 
 /* about */
-#about-slide-2 { position: relative; padding-left: 105px; margin-top: 89px; }
+#about-slide-2 { position: relative; padding: 0 100px 0 105px; margin: 89px auto 50px; }
 #about-slide-2 .left { width: 50%; }
 #about-slide-2 h2 {
     font-family: circe_b;
@@ -1574,18 +1574,21 @@ only screen and (min-resolution: 144dpi) {
     line-height: 40px;
     margin-top: 27px;
     margin-bottom: 0;
+    text-align: center;
 }
 #about-slide-2 p { line-height: 22px; margin: 20px 0; }
 #about-slide-2 p:first-of-type { margin-top: 14px; }
 #about-slide-2 #about_installation { position: absolute; top: 142px; left: 950px; }
 
-#about-slide-2 .table { width: 90%; /*75%;*/ margin-top: 25px; }
-#about-slide-2 .table:first-of-type .table_cell { padding:0 3% 50px; width: 44%;  }
-#about-slide-2 .table:first-of-type .table_row .table_cell:first-of-type { padding-left: 0;  }
-#about-slide-2 .table:first-of-type .table_cell img.right { float: right; }
+#about-slide-2 table { width: 80%; margin: 25px auto 0; max-width: 1600px;}
+#about-slide-2 table tr td { width: 50%; /*75%;*/ padding: 20px 10px; }
+#about-slide-2 .table { width: 90%; /*75%;*/ margin: 25px auto 0; }
+/*#about-slide-2 .table:first-of-type .table_cell { padding:0 3% 50px; width: 44%;  }*/
+/*#about-slide-2 .table:first-of-type .table_row .table_cell:first-of-type { padding-left: 0;  } */
+/*#about-slide-2 .table:first-of-type .table_cell img.right { float: right; }*/
 
-#about-slide-2 .table h3 { margin-top: 6px; line-height: 34px; }
-#about-slide-2 .table .table_cell { width: 25%; padding-right: 5%; }
+#about-slide-2 .table h3 { margin-top: 6px; line-height: 34px; text-align: left; }
+#about-slide-2 .table .table_cell { width: 26%; padding: 0 2%; }
 #about-slide-2 .table .table_cell img { float: left; margin-right: 15px; }
 /* /about */
 
