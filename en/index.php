@@ -200,7 +200,11 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Project design solutions, proved on dozens of sites. Guaranteed quality of work done. Audit and supervision. Using the proper materials and components. Modern project management.</p>
+                        <p>Free 3D demo of your house!<br>
+                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                            With this app the customer can get a complete idea how his Smart home will work. Just send us your floor plans,
+                            and we will make a 3D demo and a preliminary calculation. <strong>It's free</strong>.
+                        </p>
                     </div>
   	    		</li>
   	    		<li>
@@ -283,7 +287,11 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Project design solutions, proved on dozens of sites. Guaranteed quality of work done. Audit and supervision. Using the proper materials and components. Modern project management.</p>
+                        <p>Free 3D demo of your house!<br>
+                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                            With this app the customer can get a complete idea how his Smart home will work. Just send us your floor plans,
+                            and we will make a 3D demo and a preliminary calculation. <strong>It's free</strong>.
+                        </p>
                     </div>
   	    		</li>
   	    		<li>
@@ -320,7 +328,11 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Project design solutions, proved on dozens of sites. Guaranteed quality of work done. Audit and supervision. Using the proper materials and components. Modern project management.</p>
+                        <p>Free 3D demo of your house!<br>
+                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                            With this app the customer can get a complete idea how his Smart home will work. Just send us your floor plans,
+                            and we will make a 3D demo and a preliminary calculation. <strong>It's free</strong>.
+                        </p>
                     </div>
   	    		</li>
   	    		<li>
@@ -357,7 +369,11 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Project design solutions, proved on dozens of sites. Guaranteed quality of work done. Audit and supervision. Using the proper materials and components. Modern project management.</p>
+                        <p>Free 3D demo of your house!<br>
+                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                            With this app the customer can get a complete idea how his Smart home will work. Just send us your floor plans,
+                            and we will make a 3D demo and a preliminary calculation. <strong>It's free</strong>.
+                        </p>
                     </div>
   	    		</li>
   	    		<li>
@@ -394,7 +410,11 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Project design solutions, proved on dozens of sites. Guaranteed quality of work done. Audit and supervision. Using the proper materials and components. Modern project management.</p>
+                        <p>Free 3D demo of your house!<br>
+                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                            With this app the customer can get a complete idea how his Smart home will work. Just send us your floor plans,
+                            and we will make a 3D demo and a preliminary calculation. <strong>It's free</strong>.
+                        </p>
                     </div>
   	    		</li>
   	    		<li>

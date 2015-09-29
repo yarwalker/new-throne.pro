@@ -685,6 +685,7 @@ only screen and (min-resolution: 144dpi) {
     left: 5%;
     z-index: 100;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 #slide-1 .flex-caption h2 {
     text-align: center;
