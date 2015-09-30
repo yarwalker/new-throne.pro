@@ -527,7 +527,7 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span></p>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
                     <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
@@ -557,7 +557,7 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
                     <div><img src="images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
@@ -587,7 +587,7 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Понятный и легкий<br>интерфейс</span></div>
+                    <div><img src="images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
                     <div><img src="images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
                     <div><img src="images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
@@ -612,7 +612,7 @@ $detect = new Mobile_Detect();
                 <div id="notes" class="table">
                     <div class="table_row">
                         <div class="table_cell"><img src="images/interface_icon.png" class="img-responsive"  alt=""/></div>
-                        <div class="table_cell"><span id="note1">Понятный и&nbsp;легкий интерфейс</span></div>
+                        <div class="table_cell"><span id="note1">Действительно интуитивный интерфейс</span></div>
                     </div>
                     <div class="table_row">
                         <div class="table_cell"><img src="images/scale_icon.png" class="img-responsive" alt=""/></div>
@@ -1585,7 +1585,47 @@ $detect = new Mobile_Detect();
     </ul>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
+<!--
+<div id="callback_wrapper">
+    <div id="callback_title">
+        &gt;&gt;&gt; Хотите 3D демо THRONE по архитектуре вашего объекта? &lt;&lt;&lt;
+    </div>
+    <div id="callback_form">
+        <h4 id="cb_form_header">Мы перезвоним в течение часа</h4>
+        <div id="cb_form_body">
+            <div id="cb_form_left">
+                <form action="" class=" callback_form">
+                    <div class="form-group">
+                        <label for="inputName" class="control-label">Ваше имя</label>
+                        <div class=" ">
+                            <input type="text" class="form-control" id="inputName" name="inputName" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhone" class="control-label">Номер телефона</label>
+                        <div class=" ">
+                            <input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="button" class="offer-send-btn">Отправить</button>
 
+                        </div>
+                    </div>
+                    <input type="hidden" name="inputTheme" value="Обратный звонок">
+                </form>
+            </div>
+            <div id="cb_form_right">
+                <img src="images/phone_tube.png" alt="">
+                <p>Смелее! Это вас ни к&nbsp;чему не обязывает.</p>
+                <p><i class="icon-lock"></i> <span>Мы никому не передадим ваш номер!</span></p>
+            </div>
+        </div>
+        <div class="footnote">Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами! Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.</div>
+    </div>
+</div>
+-->
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
