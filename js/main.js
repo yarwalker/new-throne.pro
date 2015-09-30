@@ -457,6 +457,13 @@
                 $('.visible-tablet #slogan + div').css({ position: 'absolute', bottom: ( $(window).height() - $("#slide-1").height()  ), 'margin-left': '5%' });
             }
         }
+
+        // показываем заголовок формы обратного звонка
+        if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
+            $('#callback_wrapper').fadeIn(350);
+        } else {
+            $('#callback_wrapper').fadeOut(350);
+        }
     });
 
 
@@ -755,6 +762,47 @@
      }
      }
      });*/
+
+    $('#callback_title').on('click', function(){
+        $('#callback_form').slideToggle(350);
+    });
+
+    $('.offer-send-btn').on('click', function(ev){
+        var $lang = $('html').attr('lang'),
+            $url = 'http://' + location.hostname + '/' + PATH + '/' + $lang + '/main/offer_sending',
+            $form = $('.callback_form'),
+            $fl = true;
+
+        ev.preventDefault();
+
+        $form.find(':input').each(function(){
+            if( $(this).attr('required') && $(this).val() == '')
+            {
+                $fl = false;
+                return false;
+            }
+        });
+
+        if( $fl )
+        {
+            // все обязательные поля формы заполнены, отправляем письмо
+            $.post($url, $form.serialize(), function(msg){
+                $('#ModalDefault .modal-body').text(msg);
+                $('#ModalDefault').modal();
+            });
+        }
+        else
+        {
+            $('#ModalDefault .modal-body').text(( $lang == 'ru' ? 'Не все обязательные поля формы заполнены!' : 'Some required fields are empty!'));
+            $('#ModalDefault').modal();
+        }
+
+        $form.find(':input').each(function(){
+            $(this).val('');
+        });
+        $('#callback_title').click();
+    });
+
 
     $('#myModal .callback_form').on('submit', function(ev){
         ev.preventDefault();
