@@ -4018,8 +4018,50 @@ only screen and (min-resolution: 144dpi) {
 }
 
 
-
-
+#callback_wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;
+}
+#callback_title {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ff9d0d;
+    width: 45%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#callback_form {
+    display: none;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #333;
+}
+#cb_form_header {
+    text-align: center;
+    margin-top: 0;
+    /* padding-top: 10px;*/
+}
+#cb_form_left {
+    width: 60%;
+    float: left;
+}
+#cb_form_right {
+    display: block;
+    padding: 0 10px 0 20px;
+    margin-left: 60%;
+    font-size: 0.9em;
+}
+.footnote {
+    clear: both;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
 
 
 @media (max-width: 1368px) {
