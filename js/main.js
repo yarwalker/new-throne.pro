@@ -65,7 +65,7 @@
     $body.imagesLoaded( function() {
         setTimeout(function() {
 
-            if( typeof($tabs_container) !== 'undefined' ) {
+            if( typeof($tabs_container) !== 'undefined' && $tabs_container.length ) {
                 tabulousInit();
                 $tabs_container_height = $first_tab.height() + 20;
                 $tabs_container.height($tabs_container_height);
@@ -82,6 +82,11 @@
 
                     }
                 });
+            }
+
+            console.log(location.pathname);
+            if( location.pathname != '/' && location.pathname != '/en/' ) {
+                $('#callback_wrapper').show();
             }
 
             // Resize sections
@@ -459,11 +464,14 @@
         }
 
         // показываем заголовок формы обратного звонка
-        if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
-            $('#callback_wrapper').fadeIn(350);
-        } else {
-            $('#callback_wrapper').fadeOut(350);
+        if( location.pathname == '/' || location.pathname == '/en/' ) {
+            if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
+                $('#callback_wrapper').fadeIn(350);
+            } else {
+                $('#callback_wrapper').fadeOut(350);
+            }
         }
+
     });
 
 
@@ -595,7 +603,7 @@
         }, 1000);
     }
 
-    $('a.inner_anchor, #tabs a, #fake_tabs ul li a').on('click', function(ev){
+    $('a.inner_anchor').on('click', function(ev){
         ev.preventDefault();
 
         $('#tabs a, #fake_tabs a').removeClass('tabulous_active');
@@ -608,6 +616,14 @@
         if( $(this).closest('div').attr('id') == 'fake_tabs' ) {
             $('#tabs a[href=' + $(this).attr('href') + ']').click();
         }
+    });
+
+    $('#fake_tabs ul li a, #slide-4 .visible-lg li a, #slide-4 .visible-md li a, #slide-4 .visible-sm li a, #slide-4 .visible-xs li a').on('click', function(ev){
+        ev.preventDefault();
+
+        htmlbody.animate({
+            scrollTop: ( $( $(this).attr('href') ).offset().top  )
+        }, 1000);
     });
 
 
@@ -769,9 +785,9 @@
 
     $('.offer-send-btn').on('click', function(ev){
         var $lang = $('html').attr('lang'),
-            $url = 'http://' + location.hostname + '/' + PATH + '/' + $lang + '/main/offer_sending',
-            $form = $('.callback_form'),
-            $fl = true;
+            $url = 'send_email.php',
+            $form = $('.callback_form1'),
+            $fl = true; // флаг = true если заполнены все обязательные поля форма
 
         ev.preventDefault();
 
@@ -786,15 +802,37 @@
         if( $fl )
         {
             // все обязательные поля формы заполнены, отправляем письмо
-            $.post($url, $form.serialize(), function(msg){
-                $('#ModalDefault .modal-body').text(msg);
-                $('#ModalDefault').modal();
+            if( $lang != 'ru' ) {
+                $url = '../' + $url;
+            }
+
+            $.post($url, $form.serialize(), function(data){
+
+                if( $lang != 'en' ) {
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                    }
+                } else {
+                    var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                    }
+                }
+
+                $('#mySuccessModal .modal-body').html($str);
+                $('#mySuccessModal').modal();
+            }, 'json')
+            .fail(function() {
+                alert( "error" );
             });
         }
         else
         {
-            $('#ModalDefault .modal-body').text(( $lang == 'ru' ? 'Не все обязательные поля формы заполнены!' : 'Some required fields are empty!'));
-            $('#ModalDefault').modal();
+            $('#mySuccessModal .modal-body').html(( $lang == 'ru' ? '<p>Не все обязательные поля формы заполнены!</p>' : '<p>Some required fields are empty!</p>'));
+            $('#mySuccessModal').modal();
         }
 
         $form.find(':input').each(function(){
@@ -818,7 +856,7 @@
             $str = '',
             $url = 'send_email.php';
 
-        console.log(location.href.search('/en'));
+        //console.log(location.href.search('/en'));
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
             if( location.href.search('/en') != -1 ) {
