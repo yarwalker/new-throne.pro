@@ -515,7 +515,7 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span></p>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Clear and Simple<br/>Interface</span></div>
+                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
                     <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
@@ -540,7 +540,7 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Clear and Simple<br/>Interface</span></div>
+                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
                     <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
@@ -564,7 +564,7 @@ $detect = new Mobile_Detect();
                     For control Smart Home we offer customers THRONE 3D Control interface that has no analogues in the world. It allows to monitor the status of the whole house and control various systems with one or more smartphones or tablets. You can operate each device of a smart home individually, or control room, a whole floor or even a whole building. And it is simple and clear, as never before, due to the use in THRONE system a 3D model of your home.                </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Clear and Simple<br/>Interface</span></div>
+                    <div><img src="../images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Any Size<br/>of a House</span></div>
                     <div><img src="../images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
@@ -583,7 +583,7 @@ $detect = new Mobile_Detect();
                 <div id="notes" class="table">
                     <div class="table_row">
                         <div class="table_cell"><img src="../images/interface_icon.png" class="img-responsive"  alt=""/></div>
-                        <div class="table_cell"><span id="note1">Clear and Simple<br/>Interface</span></div>
+                        <div class="table_cell"><span id="note1">Really Intuitive<br/>Interface</span></div>
                     </div>
                     <div class="table_row">
                         <div class="table_cell"><img src="../images/scale_icon.png" class="img-responsive" alt=""/></div>
