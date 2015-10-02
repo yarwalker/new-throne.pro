@@ -1867,7 +1867,7 @@ chosen link or button. -->
 <!-- /Yandex.Metrika counter -->
 
 <!-- Сleversite chat button -->
-<script type='text/javascript'>
+<!--script type='text/javascript'>
     (function() {
         var s = document.createElement('script');
         s.type = 'text/javascript';
@@ -1877,8 +1877,20 @@ chosen link or button. -->
         var ss = document.getElementsByTagName('script')[0];
         ss.parentNode.insertBefore(s, ss);
     })();
-</script>
+</script-->
 <!-- / End of Сleversite chat button -->
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+    var __lc = {};
+    __lc.license = 6592911;
+    (function() {
+        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+</script>
+<!-- End of LiveChat code -->
 
 </body>
 
