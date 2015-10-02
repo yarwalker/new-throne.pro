@@ -8,8 +8,8 @@ $detect = new Mobile_Detect();
 //!$detect->isMobile() || $_SESSION['DEVICE'] = 'mobile';
 ?>
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
@@ -199,9 +199,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Free 3D demo of your house!<br>
-                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
                     </div>
@@ -285,9 +284,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Free 3D demo of your house!<br>
-                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
                     </div>
@@ -325,9 +323,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Free 3D demo of your house!<br>
-                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <p>Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
                     </div>
@@ -365,9 +362,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Free 3D demo of your house!<br>
-                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
                     </div>
@@ -405,9 +401,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Certified Installation</h2>
-                        <p>Free 3D demo of your house!<br>
-                            Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
+                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
                     </div>
@@ -615,14 +610,14 @@ $detect = new Mobile_Detect();
             <li><a href="#tabs-2" data-slide="4" title="">Climate Сontrol</a></li>
             <li><a href="#tabs-3" data-slide="4" title="">Security</a></li>
         </ul>
-        <div id="tabs_container">
+        <!--div id="tabs_container"-->
             <div id="tabs-1">
-                <table>
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
                         <td width="40%">
-                            <h2>Lighting Control</h2>
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                                 leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -635,7 +630,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
@@ -661,12 +656,12 @@ $detect = new Mobile_Detect();
                 </table>
             </div>
             <div id="tabs-2">
-                <table>
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Climate Сontrol (HVAC)</h2>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                             </p>
@@ -679,7 +674,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
@@ -705,12 +700,12 @@ $detect = new Mobile_Detect();
                 </table>
             </div>
             <div id="tabs-3">
-                <table>
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
                         <td>
-                            <h2>Security System Control</h2>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
                                 Event notifications are displayed with specification of the location where they occur on the 3D model.
@@ -722,7 +717,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
@@ -747,22 +742,22 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-        </div>
+        <!--/div-->
     </div>
     <div id="tabs2" class="visible-md">
         <ul>
-            <li><a href="#tabs-1" data-slide="4" title="">Lighting</a></li>
-            <li><a href="#tabs-2" data-slide="4" title="">Climate Сontrol</a></li>
-            <li><a href="#tabs-3" data-slide="4" title="">Security</a></li>
+            <li><a href="#md-tabs-1" data-slide="4" title="">Lighting</a></li>
+            <li><a href="#md-tabs-2" data-slide="4" title="">Climate Сontrol</a></li>
+            <li><a href="#md-tabs-3" data-slide="4" title="">Security</a></li>
         </ul>
-        <div id="tabs_container">
-            <div id="tabs-1">
-                <table>
+        <!--div id="tabs_container"-->
+            <div id="md-tabs-1">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
                         <td width="40%">
-                            <h2>Lighting Control</h2>
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                                 leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -775,7 +770,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
@@ -800,13 +795,13 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-            <div id="tabs-2">
-                <table>
+            <div id="md-tabs-2">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Climate Сontrol (HVAC)</h2>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                             </p>
@@ -819,7 +814,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
@@ -844,13 +839,13 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-            <div id="tabs-3">
-                <table>
+            <div id="md-tabs-3">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
                         <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
                         <td>
-                            <h2>Security System Control</h2>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
                                 Event notifications are displayed with specification of the location where they occur on the 3D model.
@@ -862,7 +857,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
@@ -887,7 +882,7 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-        </div>
+        <!--/div-->
     </div>
     <div id="tabs3" class="visible-sm">
         <ul>
@@ -897,7 +892,7 @@ $detect = new Mobile_Detect();
         </ul>
         <!--div id="tabs_container"-->
             <div id="sm-tabs-1">
-                <table>
+                <table class="table">
                     <tbody>
                     <tr>
                         <td>
@@ -1539,6 +1534,40 @@ $detect = new Mobile_Detect();
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
 
+<div id="callback_wrapper">
+    <div id="callback_title">
+        &gt;&gt;&gt; Require FREE 3D Demo for your house! &lt;&lt;&lt;
+    </div>
+    <div id="callback_form">
+        <div class="footnote">Just send us the floor plans of your facility to <a href="mailto:office@throne.pro">office@throne.pro</a> and
+            we will make 3D Demo and preliminary estimation. It is <strong>FREE</strong>.</div>
+        <div class="footnote">For processing of your enquiery please leave your contacts and select a convenient time of our call.</div>
+
+        <form action="" class="callback_form1">
+            <table>
+                <tbody>
+                <tr>
+                    <td align="right"><label for="inputName" class="control-label">Your name</label></td>
+                    <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="inputPhone" class="control-label">Phone number</label></td>
+                    <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="inputTime" class="control-label">Time of call</label></td>
+                    <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
+                </tr>
+                <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Send</button></td></tr>
+                </tbody>
+            </table>
+
+            <input type="hidden" name="inputTheme" value="Require Callback">
+        </form>
+
+    </div>
+
+</div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

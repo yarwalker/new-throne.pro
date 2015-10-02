@@ -136,6 +136,7 @@ $name = trim(filter_input(INPUT_POST, 'inputName', FILTER_SANITIZE_STRING));
 $phone = trim(filter_input(INPUT_POST, 'inputPhone', FILTER_SANITIZE_STRING));
 $email = trim(filter_input(INPUT_POST, 'inputEmail', FILTER_VALIDATE_EMAIL));
 $theme = trim(filter_input(INPUT_POST, 'inputTheme', FILTER_SANITIZE_STRING));
+$call_time = trim(filter_input(INPUT_POST, 'inputTime', FILTER_SANITIZE_STRING));
 
 if( file_exists('cfg/config.php') ):
     require 'cfg/config.php';
@@ -151,6 +152,7 @@ if( file_exists('cfg/config.php') ):
     $message =  Date("d.m.Y H:i")."<br/>"
         . ( is_null($name) || $name == '' ? '' : "Имя: " . $name . "<br/>")
         . ( is_null($phone) || $phone == '' ? '' : "Телефон: " . $phone . "<br/>")
+        . ( is_null($call_time) || $call_time == '' ? '' : "Время звонка: " . $call_time . "<br/>")
         . ( $email === FALSE || $email == '' || is_null($email) ? '' : "Почта: " . $email);
 
     $result =  $mailSMTP->send($to, $subject, $message, $headers); // отправляем письмо
@@ -171,6 +173,7 @@ if( file_exists('cfg/config.php') ):
         $message = 'Ошибка отправки письма: ' . $res['msg'] . '<br/>'
             . ( is_null($name) || $name == '' ? '' : "Имя: " . $name . "<br/>")
             . ( is_null($phone) || $phone == '' ? '' : "Телефон: " . $phone . "<br/>")
+            . ( is_null($call_time) || $call_time == '' ? '' : "Время звонка: " . $call_time . "<br/>")
             . ( $email === FALSE || $email == '' || is_null($email) ? '' : "Почта: " . $email);
         $result =  $mailSMTP->send($to, $subject, $message, $headers);
     }

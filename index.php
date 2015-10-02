@@ -8,8 +8,8 @@ $detect = new Mobile_Detect();
 //!$detect->isMobile() || $_SESSION['DEVICE'] = 'mobile';
 ?>
 <!DOCTYPE html>
-<html>
-<head lang="ru">
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
@@ -200,9 +200,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
                         <p>
-                            Бесплатное 3D-демо вашего дома!<br>
                             Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.
                         </p>
@@ -290,9 +289,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
-                        <p>Бесплатное 3D-демо вашего дома!<br>
-                            Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
   	    		</li>
@@ -329,9 +327,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
-                        <p>Бесплатное 3D-демо вашего дома!<br>
-                            Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
   	    		</li>
@@ -368,9 +365,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
-                        <p>Бесплатное 3D-демо вашего дома!<br>
-                            Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
   	    		</li>
@@ -407,9 +403,8 @@ $detect = new Mobile_Detect();
   	    	        <img src="images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Сертифицированная установка</h2>
-                        <p>Бесплатное 3D-демо вашего дома!<br>
-                            Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
   	    		</li>
@@ -566,9 +561,9 @@ $detect = new Mobile_Detect();
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
-                        <li data-anchor-target="#slide-3" ><a href="#tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
-                        <li data-anchor-target="#slide-3"><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
-                        <li data-anchor-target="#slide-3"><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+                        <li data-anchor-target="#slide-3" ><a href="#md-tabs-1" data-slide="4" title="" class="tabulous_active">Освещение</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#md-tabs-2" data-slide="4" title="">Климат</a></li>
+                        <li data-anchor-target="#slide-3"><a href="#md-tabs-3" data-slide="4" title="">Безопасность</a></li>
                         <span class="tabulousclear"></span>
                     </ul>
                 </div>
@@ -639,14 +634,16 @@ $detect = new Mobile_Detect();
             <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
             <li><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
         </ul>
-        <div id="tabs_container">
+        <!--div id="tabs_container"-->
             <div id="tabs-1">
-                <table>
+
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление освещением</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
-                            <h2>Управление освещением</h2>
+
                             <p class="">
                                 Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
                                 нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
@@ -658,7 +655,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
@@ -678,18 +675,18 @@ $detect = new Mobile_Detect();
                         </td>
                         <td>
                             <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
-                            <span>Полное или частичное<br>управление</span>
+                            <span>Полное <br/>или частичное<br/>управление</span>
                         </td>
                     </tr>
                 </table>
             </div>
             <div id="tabs-2">
-                <table>
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление климатом</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Управление климатом</h2>
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
@@ -700,7 +697,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
@@ -726,12 +723,13 @@ $detect = new Mobile_Detect();
                 </table>
             </div>
             <div id="tabs-3">
-                <table>
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление системой безопасности</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
                         <td>
-                            <h2>Управление системой безопасности</h2>
+
                             <p>
                                 "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
                                 Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
@@ -745,7 +743,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
@@ -770,22 +768,23 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-        </div>
+
+        <!--/div-->
     </div>
     <div id="tabs2" class="visible-md">
         <ul>
-            <li><a href="#tabs-1" data-slide="4" title="">Освещение</a></li>
-            <li><a href="#tabs-2" data-slide="4" title="">Климат</a></li>
-            <li><a href="#tabs-3" data-slide="4" title="">Безопасность</a></li>
+            <li><a href="#md-tabs-1" data-slide="4" title="">Освещение</a></li>
+            <li><a href="#md-tabs-2" data-slide="4" title="">Климат</a></li>
+            <li><a href="#md-tabs-3" data-slide="4" title="">Безопасность</a></li>
         </ul>
-        <div id="tabs_container">
-            <div id="tabs-1">
-                <table>
+        <!--div id="tabs_container"-->
+            <div id="md-tabs-1">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление освещением</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img  col-xs-12"  /></td>
                         <td width="40%">
-                            <h2>Управление освещением</h2>
                             <p class="">
                                 Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
                                 нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
@@ -797,7 +796,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
@@ -817,18 +816,18 @@ $detect = new Mobile_Detect();
                         </td>
                         <td>
                             <img src="images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
-                            <span>Полное или частичное<br>управление</span>
+                            <span>Полное<br> или частичное<br/>управление</span>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="tabs-2">
-                <table>
+            <div id="md-tabs-2">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление климатом</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
-                            <h2>Управление климатом</h2>
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
@@ -839,7 +838,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
@@ -864,13 +863,13 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-            <div id="tabs-3">
-                <table>
+            <div id="md-tabs-3">
+                <table class="table">
                     <tbody>
+                    <tr><td colspan="2"><h2>Управление системой безопасности</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
                         <td>
-                            <h2>Управление системой безопасности</h2>
                             <p>
                                 "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
                                 Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
@@ -884,7 +883,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <table>
+                <table class="factoids">
                     <tr>
                         <td>
                             <img src="images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
@@ -909,7 +908,7 @@ $detect = new Mobile_Detect();
                     </tr>
                 </table>
             </div>
-        </div>
+        <!--/div-->
     </div>
     <div id="tabs3" class="visible-sm">
         <ul>
@@ -1585,47 +1584,44 @@ $detect = new Mobile_Detect();
     </ul>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
-<!--
+
 <div id="callback_wrapper">
     <div id="callback_title">
-        &gt;&gt;&gt; Хотите 3D демо THRONE по архитектуре вашего объекта? &lt;&lt;&lt;
+        &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
     </div>
     <div id="callback_form">
-        <h4 id="cb_form_header">Мы перезвоним в течение часа</h4>
-        <div id="cb_form_body">
-            <div id="cb_form_left">
-                <form action="" class=" callback_form">
-                    <div class="form-group">
-                        <label for="inputName" class="control-label">Ваше имя</label>
-                        <div class=" ">
-                            <input type="text" class="form-control" id="inputName" name="inputName" required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPhone" class="control-label">Номер телефона</label>
-                        <div class=" ">
-                            <input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="">
-                            <button type="button" class="offer-send-btn">Отправить</button>
+        <div class="footnote">Просто отправьте нам на адрес <a href="mailto:office@throne.pro">office@throne.pro</a> планы помещений вашего объекта, и мы сделаем 3D-демо и предварительный расчет.
+            <strong>Это бесплатно</strong>.</div>
+        <div class="footnote">Для обработки вашего запроса, пожалуйста, оставьте свои контактные данные и выберите удобное время звонка.</div>
 
-                        </div>
-                    </div>
-                    <input type="hidden" name="inputTheme" value="Обратный звонок">
-                </form>
-            </div>
-            <div id="cb_form_right">
-                <img src="images/phone_tube.png" alt="">
-                <p>Смелее! Это вас ни к&nbsp;чему не обязывает.</p>
-                <p><i class="icon-lock"></i> <span>Мы никому не передадим ваш номер!</span></p>
-            </div>
+        <div id="cb_form_body">
+            <form action="" class="callback_form1">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
+                            <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
+                            <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
+                            <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
+                        </tr>
+                        <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Отправить</button></td></tr>
+                    </tbody>
+                </table>
+
+                <input type="hidden" name="inputTheme" value="Обратный звонок">
+            </form>
+
         </div>
-        <div class="footnote">Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами! Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.</div>
+
     </div>
 </div>
--->
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

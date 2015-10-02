@@ -369,7 +369,7 @@
         }, 1000);
     }
 
-    $('a.inner_anchor, #tabs a, #tabs2 a, #fake_tabs ul li a').on('click', function(ev){
+    $('a.inner_anchor ').on('click', function(ev){
         ev.preventDefault();
 
         //$('#tabs a, #tabs2 a, #tabs3 a,#tabs4 a, #fake_tabs a').removeClass('tabulous_active');
@@ -384,7 +384,7 @@
         }
     });
 
-    $('#slide-4 .visible-sm li a').on('click', function(ev){
+    $('#slide-4 .visible-lg li a, #slide-4 .visible-md li a, #slide-4 .visible-sm li a, #slide-4 .visible-xs li a').on('click', function(ev){
         ev.preventDefault();
 
         htmlbody.animate({
@@ -544,6 +544,76 @@
      }
      }
      });*/
+
+    $('#callback_title').on('click', function(){
+        var $clone = $('#callback_wrapper').clone();
+
+        /*$clone.css({'position': 'absolute', 'left': 0, 'top': 0}).children('#callback_form').show();
+        console.log($window.height());
+        console.log($clone);
+        console.log($clone.height());*/
+
+
+        $('#callback_form').slideToggle(350);
+    });
+
+    $('.offer-send-btn').on('click', function(ev){
+        var $lang = $('html').attr('lang'),
+            $url = 'send_email.php',
+            $form = $('.callback_form1'),
+            $fl = true; // флаг = true если заполнены все обязательные поля форма
+
+        ev.preventDefault();
+
+        $form.find(':input').each(function(){
+            if( $(this).attr('required') && $(this).val() == '')
+            {
+                $fl = false;
+                return false;
+            }
+        });
+
+        if( $fl )
+        {
+            // все обязательные поля формы заполнены, отправляем письмо
+            if( $lang != 'ru' ) {
+                $url = '../' + $url;
+            }
+
+            $.post($url, $form.serialize(), function(data){
+
+                if( $lang != 'en' ) {
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                    }
+                } else {
+                    var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                    }
+                }
+
+                $('#mySuccessModal .modal-body').html($str);
+                $('#mySuccessModal').modal();
+            }, 'json')
+                .fail(function() {
+                    alert( "error" );
+                });
+        }
+        else
+        {
+            $('#mySuccessModal .modal-body').html(( $lang == 'ru' ? '<p>Не все обязательные поля формы заполнены!</p>' : '<p>Some required fields are empty!</p>'));
+            $('#mySuccessModal').modal();
+        }
+
+        $form.find(':input').each(function(){
+            $(this).val('');
+        });
+        $('#callback_title').click();
+    });
 
     $('#myModal .callback_form').on('submit', function(ev){
         ev.preventDefault();

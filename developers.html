@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head lang="ru">
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
@@ -836,6 +836,43 @@
     </div>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
+
+<div id="callback_wrapper">
+    <div id="callback_title">
+        &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
+    </div>
+    <div id="callback_form">
+        <div class="footnote">Просто отправьте нам на адрес <a href="mailto:office@throne.pro">office@throne.pro</a> планы помещений вашего объекта, и мы сделаем 3D-демо и предварительный расчет.
+            <strong>Это бесплатно</strong>.</div>
+        <div class="footnote">Для обработки вашего запроса, пожалуйста, оставьте свои контактные данные и выберите удобное время звонка.</div>
+
+        <div id="cb_form_body">
+            <form action="" class="callback_form1">
+                <table >
+                    <tbody>
+                    <tr>
+                        <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
+                        <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
+                        <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
+                        <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Отправить</button></td></tr>
+                    </tbody>
+                </table>
+
+                <input type="hidden" name="inputTheme" value="Обратный звонок">
+            </form>
+
+        </div>
+
+    </div>
+</div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
