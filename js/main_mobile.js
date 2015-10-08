@@ -301,12 +301,13 @@
     }
 
     $(window).on('resize', function(){
+        var $tmp;
 
         frameResize();
         adjustWindow();
 
         var d = new Date();
-        console.log(d.getDate() + '.' + d.getMonth() + '.' + d.getYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + ':' + d.getMilliseconds());
+        //console.log(d.getDate() + '.' + d.getMonth() + '.' + d.getYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + ':' + d.getMilliseconds());
 
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
 
@@ -364,15 +365,20 @@
         // projects resizing
         if( $('div[id^=about]').length ) {
 
+            $tmp = $about_slide_3;
+
+            //console.log('tmp');
+            //console.log($tmp);
+
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
-                var $tmp;
+
 
                 // Run code here, resizing has "stopped"
 
-                console.log('prev');
-                console.log($about_slide_3);
-                console.log($fotoramaDiv);
+                //console.log('prev');
+                //console.log($about_slide_3);
+                //console.log($fotoramaDiv);
 
 
                 // find visible projects block
@@ -383,9 +389,10 @@
                     }
                 });
 
-                //console.log(fotorama);
-
-                if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+                if( $tmp.data('type') == $about_slide_3.data('type') ) {
+                    //console.log('tmp=new');
+                    fotoramaResize($about_slide_3.data('type'));
+                } else {
                     $projects_cnt = $about_slide_3.find('#project_list li').length;
                     $project_gallery = $about_slide_3.find('.project_gallery');
                     //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
@@ -394,8 +401,8 @@
 
                     //var $rand_project = Math.floor((Math.random() * $projects_cnt));
 
-                    console.log('new');
-                     console.log($about_slide_3);
+                    //console.log('new');
+                    //console.log($about_slide_3);
                     // console.log($rand_project);
 
                     $about_slide_3
@@ -426,11 +433,10 @@
                     // 2. Get the API object.
                     fotorama = $fotoramaDiv.data('fotorama');
 
-                    console.log($fotoramaDiv);
+                    //console.log($fotoramaDiv);
 
                     //fotoramaResize();
                 }
-
             }, 250);
 
 
@@ -985,15 +991,12 @@
         $about_slide_3.find('#project_list').fadeOut();
     });
 
-
-
     function projectsInit()
     {
         var $rand_project = Math.floor((Math.random() * $projects_cnt));
 
         $about_slide_3
             .find('#project_list ul li')
-            //.find('li')
             .eq($rand_project)
             .addClass('active');
 
@@ -1024,25 +1027,26 @@
 
     if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
         projectsInit(); //console.log(fotorama);
-
     }
 
-    function fotoramaResize()
+    function fotoramaResize( type )
     {
-        var $fotorama = $about_slide_3.find('#gallery_wrapper .gallery_container.active .fotorama');
-        console.log('wrapper width: ' + $about_slide_3.find('#gallery_wrapper').width() + ' - ' + $('#about-slide-3.hidden-xs #gallery_wrapper').width());
-        console.log('caption width: ' + $about_slide_3.find('#gallery_wrapper .gallery_container.active .car-caption').outerWidth());
-        $gallery_width = $about_slide_3.find('#gallery_wrapper').width() - $about_slide_3.find('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
+        var $fotorama = $about_slide_3.find('#gallery_wrapper .gallery_container.active .fotorama'),
+            $gallery_wrapper_width = $about_slide_3.find('#gallery_wrapper').width(),
+            $car_caption_width = $about_slide_3.find('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
 
+        if( type == 'sm-xs' ) {
+            $gallery_width = $gallery_wrapper_width;
+        } else {
+            $gallery_width = $gallery_wrapper_width - $car_caption_width;
+        }
 
+       // console.log('$gallery_wrapper_width = ' + $gallery_wrapper_width);
+       // console.log('$car_caption_width = ' + $car_caption_width);
 
-
-       //  $fotorama.width($gallery_width).data('width','100%'); // force resize
-       // $fotorama.resize({'width': $gallery_width + 'px' });
-
-        console.log('width: ' + $gallery_width);
-        console.log($about_slide_3.hasClass('visible-xs'));
-
+        //console.log('$gallery_width = ' + $gallery_width);
+        $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
+        fotorama.resize({width: $gallery_width });
     }
 
     // change active project in gallery

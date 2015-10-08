@@ -583,74 +583,8 @@
             });
         }
 
-        if( $('div[id^=about]').length ) {
-
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
-
-                // Run code here, resizing has "stopped"
-
-                // console.log('prev');
-                //console.log($about_slide_3);
-
-                // find visible projects block
-                $('.projects').each(function(){
-                    if( $(this).is(':visible') ) {
-                        $about_slide_3 = $(this);
-                        //console.log('visible');
-                    }
-                });
-
-                //console.log(fotorama);
-
-                if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
-                    $projects_cnt = $about_slide_3.find('#project_list li').length;
-                    $project_gallery = $about_slide_3.find('.project_gallery');
-                    //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
-                    $gallery_width = $project_gallery.width();
-
-
-                    //var $rand_project = Math.floor((Math.random() * $projects_cnt));
-
-                    // console.log($about_slide_3);
-                    // console.log($rand_project);
-
-                    $about_slide_3
-                        .find('#project_list ul li')
-                        .removeClass('active')
-                        //.find('li')
-                        .eq($cur_project)
-                        .addClass('active');
-
-                    $about_slide_3
-                        .find('#project_title')
-                        .text($about_slide_3.find('#project_list ul li.active a').text());
-
-                    makeProjectCounterString();
-
-                    $about_slide_3
-                        .find('.gallery_container')
-                        .removeClass('active')
-                        .eq($cur_project)
-                        .addClass('active');
-
-                    // destroy previous fotorama
-                    fotorama.destroy();
-
-                    $fotoramaDiv = $about_slide_3
-                        .find('.gallery_container.active .fotorama')
-                        .fotorama();
-
-                    // 2. Get the API object.
-                    fotorama = $fotoramaDiv.data('fotorama');
-
-                    //fotoramaResize();
-                }
-
-            }, 100);
-
-
-
+        if( $('div[id^=about]').length && typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+            fotoramaResize();
         }
     });
 
@@ -1160,9 +1094,9 @@
         $('#project_list').fadeOut();
     });
 
-    var $projects_cnt = $('#about-slide-3.visible-lg #project_list li').length;
-    var $project_gallery = $('#about-slide-3.visible-lg .project_gallery');
-    $project_gallery.width($('#about-slide-3.visible-lg .project_gallery .gallery_container.active').innerWidth());
+    var $projects_cnt = $('#about-slide-3.visible-lg.visible-md #project_list li').length;
+    var $project_gallery = $('#about-slide-3.visible-lg.visible-md .project_gallery');
+    $project_gallery.width($('#about-slide-3.visible-lg.visible-md .project_gallery .gallery_container.active').innerWidth());
     //$project_gallery.width($('#slide-6 .header + div').width());
     var $gallery_width = $project_gallery.width();
 
@@ -1170,12 +1104,12 @@
     {
         var $rand_project = Math.floor((Math.random() * $projects_cnt));
 
-        $('#about-slide-3.visible-lg #project_list ul')
+        $('#about-slide-3.visible-lg.visible-md #project_list ul')
             .find('li')
             .eq($rand_project)
             .addClass('active');
 
-        $('#project_title').text($('#about-slide-3.visible-lg #project_list ul li.active a').text());
+        $('#project_title').text($('#about-slide-3.visible-lg.visible-md #project_list ul li.active a').text());
         $('.gallery_container')
             .eq($rand_project)
             .addClass('active');
@@ -1190,16 +1124,16 @@
         //fotoramaResize();
     }
 
-    projectsInit();
+    if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+        projectsInit(); //console.log(fotorama);
+    }
 
     function fotoramaResize()
     {
-        var $fotorama = $('#about-slide-3.visible-lg #gallery_wrapper .gallery_container.active .fotorama');
-        $gallery_width = $('#about-slide-3.visible-lg #gallery_wrapper').width() - $('#about-slide-3.visible-lg #gallery_wrapper .gallery_container.active .car-caption').outerWidth();
+        var $fotorama = $('#about-slide-3.visible-lg.visible-md #gallery_wrapper .gallery_container.active .fotorama');
+        $gallery_width = $('#about-slide-3.visible-lg.visible-md #gallery_wrapper').width() - $('#about-slide-3.visible-lg.visible-md #gallery_wrapper .gallery_container.active .car-caption').outerWidth();
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
         $fotorama.resize({'width': $gallery_width + 'px' });
-
-        //console.log('width: ' + $gallery_width);
     }
 
     // change active project in gallery
