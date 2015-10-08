@@ -11,12 +11,42 @@
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
 
-    <title>Умный дом ТРОН - О компании</title>
+    <title>О компании - Умный дом ТРОН</title>
     <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+    </script>
+
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script>
+        if(isMobile.any()){
+            $("head link[href = 'css/main.css']").attr('href', 'css/main_mobile.css');
+        }
+    </script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -105,7 +135,7 @@
     <img src="images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 
     <div class="frame">
-        <div id="head">
+        <div id="head" class=" hidden-xs">
             <div id="langs">
                 <span class="active">Ru</span>
                 <span><a href="/en/about.html">En</a></span>
@@ -113,9 +143,10 @@
 
             <a id="logo" href="/" >THRONE Project</a>
 
-            <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
-                <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
+            <div class="callback visible-lg visible-md">
+                <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
             </div>
 
             <ul id="top_menu_ext">
@@ -125,32 +156,38 @@
                 <li class="active">О компании</li>
             </ul>
         </div>
-    </div>
-<!--div class="frame">
-    <div id="head">
-        <div id="langs">
-            <span class="active">Ru</span>
-            <span><a href="/en">En</a></span>
+
+        <div id="head" class=" visible-xs" >
+            <nav class="navbar" id="top_menu_ext" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a id="logo" href="/" >THRONE Project</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav" id="top_menu_ext">
+                            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+                            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+                            <li class="active">О компании</li>
+                            <li>
+                                <div id="langs">
+                                    <span class="active">Ru</span>
+                                    <span><a href="/en/about.html">En</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-
-        <a id="logo" href="/" >THRONE Project</a>
-        <span id="top_slogan">Проектируем и устанавливаем<br>системы 3D-управления для дома или здания</span>
-
-        <div class="callback">
-            <span class="callback_button" data-toggle="modal" data-target="#myModal">Заказать обратный звонок</span>
-            <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
-        </div>
-
-        <ul id="top_menu_ext">
-            <li><a href="installation.html" title="Установка">Установка</a></li>
-            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-            <li><a href="partners.html" title="Партнерам">Партнерам</a></li>
-            <li class="active">О компании</li>
-        </ul>
     </div>
-</div-->
 
-    <div id="about-slide-1" class="frame">
+    <div id="about-slide-1" class="frame visible-lg visible-md">
         <h1>О компании</h1>
         <p>"<span class="capital">ТРОН</span> Проект" &mdash; международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
             офисов и&nbsp;индустриальных зданий. В&nbsp;обиходе эти системы называются "умный&nbsp;дом", "умный&nbsp;офис" или "умное&nbsp;здание".</p>
@@ -160,16 +197,30 @@
         <p>"<span class="capital">ТРОН</span> Проект" имеет более 10&nbsp;лет опыта реализации проектов разного уровня сложности и&nbsp;масштаба. От&nbsp;систем
             "умного&nbsp;дома" в&nbsp;частных квартирах до&nbsp;автоматизации и&nbsp;диспетчеризации объектов коммерческого и&nbsp;индустриального назначения
             &mdash; моллы, офисы, склады, производственные объекты и&nbsp;так далее.</p>
-
-        <!--p class="citation">&laquo;Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
-            богатых и&nbsp;не способом показаться респектабельным, а&nbsp;рациональным выбором каждого человека. Мы хотим,
-            чтобы автоматизация зданий стала мейнстримом, и&nbsp;её благами пользовались миллиарды людей. Мы верим,
-            что наши подходы к&nbsp;бизнесу полностью поменяют рынок.&raquo;<br>
-            <strong>Михаил Куликов</strong>, директор "<span class="capital">ТРОН</span> Проект"</p-->
     </div>
 
-    <div id="about-slide-2" class="frame">
+    <div id="about-slide-1" class="frame visible-xs visible-sm">
+        <img src="images/about_slide1_new_xs.jpg" class="img-responsive" alt=""/>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <h1>О компании</h1>
+                    <p>"<span class="capital">ТРОН</span> Проект" &mdash; международная инженерная компания. Мы проектируем и&nbsp;устанавливаем системы автоматизации домов,
+                        офисов и&nbsp;индустриальных зданий. В&nbsp;обиходе эти системы называются "умный&nbsp;дом", "умный&nbsp;офис" или "умное&nbsp;здание".</p>
+                    <p>Наш бизнес построен вокруг технологии <nobr>THRONE 3D Control</nobr> &mdash; прорывного интерфейса для систем автоматизации, основанного на 3D-модели здания.
+                    Мы предлагаем клиентам сочетание этого революционного продукта с&nbsp;высоким качеством и&nbsp;надежностью оборудования, произведенного
+                    по&nbsp;европейскому стандарту KNX.</p>
+                    <p>"<span class="capital">ТРОН</span> Проект" имеет более 10&nbsp;лет опыта реализации проектов разного уровня сложности и&nbsp;масштаба. От&nbsp;систем
+                        "умного&nbsp;дома" в&nbsp;частных квартирах до&nbsp;автоматизации и&nbsp;диспетчеризации объектов коммерческого и&nbsp;индустриального назначения
+                        &mdash; моллы, офисы, склады, производственные объекты и&nbsp;так далее.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-slide-2" class="frame visible-lg visible-md">
         <h3>Что отличает "<span class="capital">ТРОН</span> Проект" от&nbsp;других интеграторов систем "умный&nbsp;дом"?</h3>
+
 
         <table >
             <tbody>
@@ -186,14 +237,10 @@
                     характеристики, которые отличаются для разных проектов в&nbsp;зависимости от&nbsp;пожеланий заказчиков.
                     </p>
                 </td>
-                <td align="center" valign="center">
-                    <img src="images/upstairs.png" alt="" class="img-responsive"/>
-                </td>
+                <td id="upstairs">&nbsp;</td>
             </tr>
             <tr>
-                <td align="center" valign="center">
-                    <img src="images/houses.jpg" class="img-responsive  right" alt=""/>
-                </td>
+                <td id="houses">&nbsp;</td>
                 <td>
                     <p class=" ">Мы создали простые алгоритмы, которые упростили жизнь и&nbsp;заказчику, и&nbsp;установщику "умного&nbsp;дома". Раньше процесс заказа
                         системы "умный&nbsp;дом" был похож на&nbsp;сборку головоломки. Мы сделали его похожим на&nbsp;покупку автомобиля или туристической
@@ -208,9 +255,7 @@
                         демо-версию, и&nbsp;к&nbsp;моменту заключения договора клиент уже на&nbsp;100% представляет, каким будет его "умный дом".
                     </p>
                 </td>
-                <td align="center" valign="center">
-                    <img src="images/man-on-top.jpg" class="img-responsive" alt=""/>
-                </td>
+                <td id="man-on-top">&nbsp;</td>
             </tr>
             </tbody>
         </table>
@@ -219,23 +264,23 @@
         <div class="table">
             <div class="table_row">
                 <div class="table_cell">
-                    <img src="images/rationalism_icon.png" alt="" />
-                    <h3>Рационализм</h3>
+                    <!--img src="images/rationalism_icon.png" alt="" /-->
+                    <h3 id="rationalism">Рационализм</h3>
                     <p>Мы предлагаем разумные, проверенные и&nbsp;действительно нужные системы: управление освещением и&nbsp;жалюзи, климатическим оборудованием,
                         домофонами и&nbsp;видеонаблюдением, системой безопасности. И&nbsp;всё это контролируется с&nbsp;мобильного устройства с&nbsp;использованием
                         лучшего на&nbsp;рынке пользовательского интерфейса THRONE.</p>
                 </div>
                 <div class="table_cell">
-                    <img src="images/speed_icon.png" alt="" />
-                    <h3>Скорость</h3>
+                    <!--img src="images/speed_icon.png" alt="" /-->
+                    <h3 id="velocity">Скорость</h3>
                     <p>Установка системы "умный&nbsp;дом" не&nbsp;должна длиться дольше стройки дома.
                         На&nbsp;рынке много компаний, которые ведут проекты по&nbsp;домашней автоматизации многие месяцы, а&nbsp;иногда и&nbsp;больше года.
                         Мы упростили, унифицировали и&nbsp;ускорили процедуры заказа и&nbsp;согласования системы. А&nbsp;благодаря <nobr>3D-интерфейсу</nobr> THRONE,
                         заказчик еще на&nbsp;стадии <nobr>демо-версии</nobr> видит, как будет выглядеть управление его умным домом.</p>
                 </div>
                 <div class="table_cell">
-                    <img src="images/standarts_icon.png" alt=""/>
-                    <h3>Стандарты</h3>
+                    <!--img src="images/standarts_icon.png" alt=""/-->
+                    <h3 id="standarts">Стандарты</h3>
                     <p>Унификация бизнес-процессов и&nbsp;производственного цикла.
                         Процесс проектирования и&nbsp;установки систем "умный&nbsp;дом" у&nbsp;"<span class="capital">ТРОН</span> Проект" &mdash;
                         это отлаженный алгоритм, в&nbsp;котором
@@ -246,7 +291,7 @@
             </div>
         </div>
 
-        <table>
+        <table id="citation">
             <tbody>
             <tr>
                 <td>
@@ -265,9 +310,183 @@
 
     </div>
 
+    <div id="about-slide-2" class="frame visible-sm">
+        <div class="container">
+            <h3>Что отличает "<span class="capital">ТРОН</span> Проект" от&nbsp;других интеграторов систем "умный&nbsp;дом"?</h3>
 
+            <table >
+                <tbody>
+                <tr>
+                    <td width="50%">
+                        <p>Однажды мы задумались: почему в&nbsp;наше время высоких технологий так сложно заказать систему "умный&nbsp;дом"?
+                            Можно купить что угодно, не&nbsp;вставая со&nbsp;стула, но проектирование и&nbsp;установка системы "умный&nbsp;дом" оборачивается
+                            целой запутанной историей! И&nbsp;мы поняли: этой индустрии не&nbsp;хватает стандартов.
+                        </p>
+                        <p>Все компании работают <nobr>по-своему</nobr>, все проекты делаются <nobr>по-разному</nobr>. Да что уж, даже термином "умный&nbsp;дом" все называют что-то своё.
+                        В&nbsp;итоге получается, что каждый новый проект похож на&nbsp;покорение Эвереста. Тяжелый путь, который раз за&nbsp;разом проходится заново.</p>
+                        <p>Мы применили подход, который <nobr>когда-то</nobr> совершил революцию в&nbsp;производстве автомобилей: мы сделали конвейер для "умных&nbsp;домов".
+                        В&nbsp;основе любого проекта лежат базовые технологические компоненты, одинаковые для всех. К&nbsp;ним добавляются индивидуальные
+                        характеристики, которые отличаются для разных проектов в&nbsp;зависимости от&nbsp;пожеланий заказчиков.
+                        </p>
+                    </td>
+                    <td id="upstairs">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="houses">&nbsp;</td>
+                    <td>
+                        <p class=" ">Мы создали простые алгоритмы, которые упростили жизнь и&nbsp;заказчику, и&nbsp;установщику "умного&nbsp;дома". Раньше процесс заказа
+                            системы "умный&nbsp;дом" был похож на&nbsp;сборку головоломки. Мы сделали его похожим на&nbsp;покупку автомобиля или туристической
+                            путевки: вот база, вот опции, вот дополнительные сервисы.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Мы не&nbsp;станем навязывать многочисленные встречи-презентации, единственная цель которых &mdash; оценить, сколько денег
+                            можно "вытрясти" из&nbsp;заказчика. Мы оцениваем проект и&nbsp;составляем спецификации дистанционно, делаем бесплатную
+                            демо-версию, и&nbsp;к&nbsp;моменту заключения договора клиент уже на&nbsp;100% представляет, каким будет его "умный дом".
+                        </p>
+                    </td>
+                    <td id="man-on-top">&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
 
-    <div id="about-slide-3" class="frame">
+            <h2>Наши принципы</h2>
+            <div class="table" id="principles">
+                <div class="table_row">
+                    <div class="table_cell">
+                        <!--img src="images/rationalism_icon.png" alt="" /-->
+                        <h3 id="rationalism">Рационализм</h3>
+                        <p>Мы предлагаем разумные, проверенные и&nbsp;действительно нужные системы: управление освещением и&nbsp;жалюзи, климатическим оборудованием,
+                            домофонами и&nbsp;видеонаблюдением, системой безопасности. И&nbsp;всё это контролируется с&nbsp;мобильного устройства с&nbsp;использованием
+                            лучшего на&nbsp;рынке пользовательского интерфейса THRONE.</p>
+                    </div>
+                    <div class="table_cell">
+                        <!--img src="images/speed_icon.png" alt="" /-->
+                        <h3 id="velocity">Скорость</h3>
+                        <p>Установка системы "умный&nbsp;дом" не&nbsp;должна длиться дольше стройки дома.
+                            На&nbsp;рынке много компаний, которые ведут проекты по&nbsp;домашней автоматизации многие месяцы, а&nbsp;иногда и&nbsp;больше года.
+                            Мы упростили, унифицировали и&nbsp;ускорили процедуры заказа и&nbsp;согласования системы. А&nbsp;благодаря <nobr>3D-интерфейсу</nobr> THRONE,
+                        заказчик еще на&nbsp;стадии <nobr>демо-версии</nobr> видит, как будет выглядеть управление его умным домом.</p>
+                    </div>
+                    <div class="table_cell">
+                        <!--img src="images/standarts_icon.png" alt=""/-->
+                        <h3 id="standarts">Стандарты</h3>
+                        <p>Унификация бизнес-процессов и&nbsp;производственного цикла.
+                            Процесс проектирования и&nbsp;установки систем "умный&nbsp;дом" у&nbsp;"<span class="capital">ТРОН</span> Проект" &mdash;
+                            это отлаженный алгоритм, в&nbsp;котором
+                            есть четкое время и&nbsp;место каждому действию, документу, человеку. Мы не&nbsp;изобретаем на&nbsp;ходу,
+                            а&nbsp;добиваемся гарантированного результата.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <table id="citation">
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                    </td>
+                    <td>
+                        <blockquote class=" ">Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
+                            богатых и&nbsp;не способом показаться респектабельным, а&nbsp;рациональным выбором каждого человека. Мы хотим,
+                            чтобы автоматизация зданий стала мейнстримом, и&nbsp;её благами пользовались миллиарды людей. Мы верим,
+                            что наши подходы к&nbsp;бизнесу полностью поменяют рынок.</blockquote>
+                        <strong>Михаил Куликов</strong>, директор "<span class="capital">ТРОН</span> Проект"
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="about-slide-2" class="frame visible-xs">
+        <div class="container">
+            <h3>Что отличает "<span class="capital">ТРОН</span> Проект" от&nbsp;других интеграторов систем "умный&nbsp;дом"?</h3>
+            <div class="row">
+                <div id="upstairs" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p>Однажды мы задумались: почему в&nbsp;наше время высоких технологий так сложно заказать систему "умный&nbsp;дом"?
+                        Можно купить что угодно, не&nbsp;вставая со&nbsp;стула, но проектирование и&nbsp;установка системы "умный&nbsp;дом" оборачивается
+                        целой запутанной историей! И&nbsp;мы поняли: этой индустрии не&nbsp;хватает стандартов.
+                    </p>
+                    <p>Все компании работают <nobr>по-своему</nobr>, все проекты делаются <nobr>по-разному</nobr>. Да что уж, даже термином "умный&nbsp;дом" все называют что-то своё.
+                    В&nbsp;итоге получается, что каждый новый проект похож на&nbsp;покорение Эвереста. Тяжелый путь, который раз за&nbsp;разом проходится заново.</p>
+                    <p>Мы применили подход, который <nobr>когда-то</nobr> совершил революцию в&nbsp;производстве автомобилей: мы сделали конвейер для "умных&nbsp;домов".
+                    В&nbsp;основе любого проекта лежат базовые технологические компоненты, одинаковые для всех. К&nbsp;ним добавляются индивидуальные
+                    характеристики, которые отличаются для разных проектов в&nbsp;зависимости от&nbsp;пожеланий заказчиков.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="houses" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p class=" ">Мы создали простые алгоритмы, которые упростили жизнь и&nbsp;заказчику, и&nbsp;установщику "умного&nbsp;дома". Раньше процесс заказа
+                        системы "умный&nbsp;дом" был похож на&nbsp;сборку головоломки. Мы сделали его похожим на&nbsp;покупку автомобиля или туристической
+                        путевки: вот база, вот опции, вот дополнительные сервисы.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="man-on-top" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p>Мы не&nbsp;станем навязывать многочисленные встречи-презентации, единственная цель которых &mdash; оценить, сколько денег
+                        можно "вытрясти" из&nbsp;заказчика. Мы оцениваем проект и&nbsp;составляем спецификации дистанционно, делаем бесплатную
+                        демо-версию, и&nbsp;к&nbsp;моменту заключения договора клиент уже на&nbsp;100% представляет, каким будет его "умный дом".
+                    </p>
+                </div>
+            </div>
+
+            <h2>Наши принципы</h2>
+            <div class="row" id="principles">
+                <div class="col-xs-4">
+                    <!--img src="images/rationalism_icon.png" alt="" /-->
+                    <h3 id="rationalism">Рационализм</h3>
+                    <p>Мы предлагаем разумные, проверенные и&nbsp;действительно нужные системы: управление освещением и&nbsp;жалюзи, климатическим оборудованием,
+                        домофонами и&nbsp;видеонаблюдением, системой безопасности. И&nbsp;всё это контролируется с&nbsp;мобильного устройства с&nbsp;использованием
+                        лучшего на&nbsp;рынке пользовательского интерфейса THRONE.</p>
+                </div>
+                <div class="col-xs-4">
+                    <!--img src="images/speed_icon.png" alt="" /-->
+                    <h3 id="velocity">Скорость</h3>
+                    <p>Установка системы "умный&nbsp;дом" не&nbsp;должна длиться дольше стройки дома.
+                        На&nbsp;рынке много компаний, которые ведут проекты по&nbsp;домашней автоматизации многие месяцы, а&nbsp;иногда и&nbsp;больше года.
+                        Мы упростили, унифицировали и&nbsp;ускорили процедуры заказа и&nbsp;согласования системы. А&nbsp;благодаря <nobr>3D-интерфейсу</nobr> THRONE,
+                    заказчик еще на&nbsp;стадии <nobr>демо-версии</nobr> видит, как будет выглядеть управление его умным домом.</p>
+                </div>
+                <div class="col-xs-4">
+                    <!--img src="images/standarts_icon.png" alt=""/-->
+                    <h3 id="standarts">Стандарты</h3>
+                    <p>Унификация бизнес-процессов и&nbsp;производственного цикла.
+                        Процесс проектирования и&nbsp;установки систем "умный&nbsp;дом" у&nbsp;"<span class="capital">ТРОН</span> Проект" &mdash;
+                        это отлаженный алгоритм, в&nbsp;котором
+                        есть четкое время и&nbsp;место каждому действию, документу, человеку. Мы не&nbsp;изобретаем на&nbsp;ходу,
+                        а&nbsp;добиваемся гарантированного результата.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" id="citation">
+                    <div class="col-xs-6">
+                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                    </div>
+                    <div class="col-xs-6">
+                        <blockquote class=" ">Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
+                            богатых и&nbsp;не способом показаться респектабельным, а&nbsp;рациональным выбором каждого человека. Мы хотим,
+                            чтобы автоматизация зданий стала мейнстримом, и&nbsp;её благами пользовались миллиарды людей. Мы верим,
+                            что наши подходы к&nbsp;бизнесу полностью поменяют рынок.</blockquote>
+                        <strong>Михаил Куликов</strong>, директор "<span class="capital">ТРОН</span> Проект"
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="about-slide-3"  data-type="lg-md" class="frame visible-lg visible-md projects">
         <h3>Примеры работы "<span class="capital">ТРОН</span> Проекта"</h3>
         <div class="project_gallery">
             <div id="gallery_control">
@@ -323,81 +542,12 @@
                 </div>
 
                 <div id="proj_control_wrap">
-                    <a id="proj_prev"><img src="/images/proj_prev.png" class="img-responsive"></a>
+                    <a id="proj_prev"><img src="images/proj_prev.png" class=""></a>
                     <span id="proj_counter" class="text_white">Проект 5 из 7</span>
-                    <a id="proj_next"><img src="/images/proj_next.png" class="img-responsive"></a>
+                    <a id="proj_next"><img src="images/proj_next.png" class=""></a>
                 </div>
             </div>
             <div id="gallery_wrapper">
-                <!--div class="gallery_container table" id="project_gal_1">
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4 class="object">Объект</h4>
-                            <p>Офис энергетической компании в Москве (Россия), 2 этажа, площадь ок. 1400 кв.м.</p>
-                            <h4 class="automation">Автоматизация</h4>
-                            <p>Автоматизированное управление освещением по зонам. Диммируемое освещение. Включение и отключение освещения по
-                                датчикам движения. Управление с планшета Android.</p>
-                        </div>
-                        <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/office-center-moscow-1.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/office-center-moscow-2.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/office-center-moscow-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/office-center-moscow-4.jpg" class="img-responsive " alt="" >
-                                <a href="//www.youtube.com/embed/1aurR1sNPho">video</a>
-                            </div>
-                        </div>
-                    </div>
-                </div-->
-                <!--div class="gallery_container table" id="project_gal_2">
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4 class="object">Объект</h4>
-                            <p>Центр для проведения культурно-массовых мероприятий в Ярославле (Россия), 9 этажей, площадь более 40 000 кв.м.</p>
-                            <h4 class="automation">Автоматизация</h4>
-                            <p>Автоматизированное управление освещением по зонам. Диммируемое освещение. Включение и отключение освещения
-                                по датчикам движения. Доступ к IP-камерам видеонаблюдения (CCTV). Противопожарная и охранная системы.
-                                Управление с тач-панелей.</p>
-                        </div>
-                        <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/concert-center-yar-1.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/concert-center-yar-2.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/concert-center-yar-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/concert-center-yar-4.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/concert-center-yar-5.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/concert-center-yar-6.jpg" class="img-responsive " alt="" >
-                                <a href="http://www.youtube.com/embed/RwEjV-wSuWI">video</a>
-                            </div>
-                        </div>
-                    </div>
-                </div-->
-                <!--div class="gallery_container table" id="project_gal_3">
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4 class="object">Объект</h4>
-                            <p>Типовой проект коттеджа для коттеджного поселка в Подмосковье (Россия), 2 этажа, площадь ок. 200 кв.м.</p>
-                            <h4 class="automation">Автоматизация</h4>
-                            <p>Автоматизированное управление освещением по зонам. Диммируемое освещение. Включение и отключение
-                                освещения по датчикам движения. Доступ к IP-камерам видеонаблюдения (CCTV). Противопожарная и охранная
-                                системы. Управление с тач-панелей.</p>
-                        </div>
-                        <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/gorky9-1.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-2.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-4.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-5.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-6.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/gorky9-7.jpg" class="img-responsive " alt="" >
-                            </div>
-                        </div>
-                    </div>
-                </div-->
                 <div class="gallery_container table" id="project_gal_4">
                     <div class="table_row">
                         <div class="car-caption">
@@ -409,65 +559,19 @@
                                 системы. Управление с тач-панелей.</p>
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/villa-novogorsk-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/villa-novogorsk-4.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/villa-novogorsk-5.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/villa-novogorsk-6.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/villa-novogorsk-7.jpg" class="img-responsive " alt="" >
+                                <img src="images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/R6Qe0hfkXLQ">video</a>
 
                     </div>
                         </div>
                     </div>
                 </div>
-                <!--div class="gallery_container table" id="project_gal_5">
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4 class="object">Объект</h4>
-                            <p>Складской комплекс, 1 этаж, площадь около 10 000 кв.м.</p>
-                            <h4 class="automation">Автоматизация</h4>
-                            <p>Автоматизированное управление освещением по зонам. Включение и отключение освещения по датчикам движения.
-                                Доступ к IP-камерам видеонаблюдения (CCTV). Управление с тач-панелей.</p>
-                        </div>
-                        <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/sklad-bykovo-1.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/sklad-bykovo-2.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/sklad-bykovo-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/sklad-bykovo-4.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/sklad-bykovo-5.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/sklad-bykovo-6.jpg" class="img-responsive " alt="" >
-                                <a href="http://www.youtube.com/embed/RwEjV-wSuWI">video</a>
-                            </div>
-                        </div>
-                    </div>
-                </div-->
-                <!--div class="gallery_container table"  id="project_gal_6">
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4 class="object">Объект</h4>
-                            <p>Коттеджный поселок недалеко от Санкт-Петербурга.</p>
-                            <h4 class="automation">Автоматизация</h4>
-                            <p>Оснащение диспетчерского пульта возможностями мониторинга, вывод сигналов охранной и пожарной сигнализации,
-                                датчиков протечек, доступ к камерам наблюдения, управление наружным освещением поселка.
-                                Управление с тач-панелей.</p>
-                        </div>
-                        <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/cottage-pos-poroshkino-11.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/cottage-pos-poroshkino-21.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/cottage-pos-poroshkino-31.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/cottage-pos-poroshkino-41.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/cottage-pos-poroshkino-51.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/cottage-pos-poroshkino-61.jpg" class="img-responsive " alt="" >
-                            </div>
-                        </div>
-                    </div>
-                </div-->
                 <div class="gallery_container table" id="project_gal_7">
                     <div class="table_row">
                         <div class="car-caption">
@@ -479,26 +583,25 @@
                                 Противопожарная и охранная системы. Управление с планшета Android.</p>
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/demo-hdl-1.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-2.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-3.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-4.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-5.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-6.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-7.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-8.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-9.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-10.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-11.jpg" class="img-responsive " alt="" >
-                                <img src="images/projects/demo-hdl-12.jpg" class="img-responsive " alt="" >
+                                <img src="images/projects/demo-hdl-1.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-2.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-3.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-4.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-5.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-6.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-7.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-8.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-9.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-10.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-11.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-12.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/180yORqENo8">video</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_8">
                     <div class="table_row">
                         <div class="car-caption">
@@ -571,22 +674,21 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/eights-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/eights-plan.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-climatics.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-lighting.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-rgb-lighting.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-fire-alarm.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-fire-sensor.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-leak-sensor.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/eights-security-sensor.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_9">
                     <div class="table_row">
                         <div class="car-caption">
@@ -659,22 +761,21 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/9-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/9-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-alarm.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-alarm-panel.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-fire.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-light-room.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-leakage.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/9-penetration.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/9-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_10">
                     <div class="table_row">
                         <div class="car-caption">
@@ -747,20 +848,19 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/10-floor-light.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/10-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/10-cameras.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/10-fire.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/10-floor-alarm.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/10-alarm-panel.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/10-light-room.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/10-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_11">
                     <div class="table_row">
                         <div class="car-caption">
@@ -833,17 +933,17 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/11-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/11-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-alarm-floor.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-light-floor.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-light-room.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-leakage.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-cameras-monomode.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/11-penetration.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/11-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -851,7 +951,6 @@
 
 
                 </div>
-
                 <div class="gallery_container table" id="project_gal_12">
                     <div class="table_row">
                         <div class="car-caption">
@@ -922,20 +1021,20 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/12-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/12-exterier2.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-alarm-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-alarm-panel.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-blinds-room.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-light-room.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-cameras-monomode.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-fire.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-leakage.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/12-penetration.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -943,7 +1042,6 @@
 
 
                 </div>
-
                 <div class="gallery_container table" id="project_gal_13">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1014,23 +1112,22 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/13-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/13-light-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-alarm-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-alarm-panel.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-cameras-monomode@2x.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-dimmer.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-fire.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-light-room.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/13-penetration.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_14">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1101,20 +1198,19 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/14-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/14-alarm.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/14-alarm-panel.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/14-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/14-light-floors.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/14-room-blinds.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/14-penetration.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_15">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1185,17 +1281,16 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/15-exterier1.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/15-exterier2.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/15-climate.jpg" class="img-responsive " alt="" data-caption="">
-                                <img src="images/projects/15-light-floor.jpg" class="img-responsive " alt="" data-caption="">
+                                <img src="images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/15-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_16">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1266,19 +1361,18 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/16-exterier.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/16-exterier2.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/16-cameras-monomode.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/16-light-floors.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/16-light-room.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/16-light.jpg" class="img-responsive " alt="" data-caption="" >
+                                <img src="images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light.jpg" class=" " alt="" data-caption="" >
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="gallery_container table" id="project_gal_17">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1349,16 +1443,1015 @@
 
                         </div>
                         <div class="table_cell">
-                            <div class="fotorama" data-arrows="true" data-click="true" data-swipe="true"
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="images/projects/17-floor.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-alarm.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-climate.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-leakage.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-light-floor.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-light-room.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="images/projects/17-tambur.jpg" class="img-responsive " alt="" data-caption="" >
+                                <img src="images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="about-slide-3" class="frame visible-sm visible-xs projects" data-type="sm-xs">
+        <h3>Примеры работы "<span class="capital">ТРОН</span> Проекта"</h3>
+        <div class="project_gallery">
+            <div id="gallery_control">
+                <div id="project_list_wrap">
+                    <div id="project_title">Складской комплекс</div>
+                    <span id="proj_list_icon"></span>
+
+                    <div id="project_list" style="display: none;">
+                        <span id="proj_list_corner"></span>
+                        <span id="proj_list_close"></span>
+
+
+                        <div class="scroll-wrapper scrollbar-outer" style="position: relative;">
+                            <div class="scrollbar-outer scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+                                <ul>
+                                    <li class=""><a href="#project_gal_4" data-project="4">Вилла</a></li>
+                                    <li class=""><a href="#project_gal_7" data-project="7">Демонстрационный павильон HDL China</a></li>
+                                    <li class=""><a href="#project_gal_8" data-project="8">Февраль. Загородный дом</a></li>
+                                    <li class=""><a href="#project_gal_9" data-project="9">Февраль. Коттедж</a></li>
+                                    <li class=""><a href="#project_gal_10" data-project="10">Февраль. Офис/Шоу-рум</a></li>
+                                    <li class=""><a href="#project_gal_11" data-project="11">Апрель. Загородная резиденция</a></li>
+                                    <li class=""><a href="#project_gal_12" data-project="12">Август. Коттедж</a></li>
+                                    <li class=""><a href="#project_gal_13" data-project="13">Август. Загородный дом</a></li>
+                                    <li class=""><a href="#project_gal_14" data-project="14">Июль. Вилла</a></li>
+                                    <li class=""><a href="#project_gal_15" data-project="15">Июль. Особняк</a></li>
+                                    <li class=""><a href="#project_gal_16" data-project="16">Июль. Загородный дом</a></li>
+                                    <li class=""><a href="#project_gal_17" data-project="17">Август. Загородный дом</a></li>
+                                </ul>
+                            </div>
+                            <div class="scroll-element scroll-x"><div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar" style="width: 100px;"></div></div>
+                            </div>
+                            <div class="scroll-element scroll-y">
+                                <div class="scroll-element_outer">
+                                    <div class="scroll-element_size"></div>
+                                    <div class="scroll-element_track"></div>
+                                    <div class="scroll-bar" style="height: 100px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="proj_control_wrap">
+                    <a id="proj_prev"><img src="images/proj_prev.png" class=""></a>
+                    <span id="proj_counter" class="text_white">Проект 5 из 7</span>
+                    <a id="proj_next"><img src="images/proj_next.png" class=""></a>
+                </div>
+            </div>
+            <div id="gallery_wrapper">
+
+                <div class="gallery_container table" id="project_gal_4">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
+                                <img src="images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
+                                <a href="http://www.youtube.com/embed/R6Qe0hfkXLQ">video</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4 class="object">Объект</h4>
+                            <p>Эксклюзивный коттедж в Подмосковье (Россия), 4 этажа (3 из них с автоматизацией), площадь свыше 1000 кв.м.</p>
+                            <h4 class="automation">Автоматизация</h4>
+                            <p>Автоматизированное управление освещением по зонам. Диммируемое и RGB-освещение. Включение и отключение
+                                освещения по датчикам движения. Доступ к IP-камерам видеонаблюдения (CCTV). Противопожарная и охранная
+                                системы. Управление с тач-панелей.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_7">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/demo-hdl-1.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-2.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-3.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-4.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-5.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-6.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-7.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-8.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-9.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-10.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-11.jpg" class=" " alt="" >
+                                <img src="images/projects/demo-hdl-12.jpg" class=" " alt="" >
+                                <a href="http://www.youtube.com/embed/180yORqENo8">video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4 class="object">Объект</h4>
+                            <p>Демонстрационный павильон китайского производителя оборудования для автоматизации зданий HDL China, 1 этаж, площадь более 1000 кв.м.</p>
+                            <h4 class="automation">Автоматизация</h4>
+                            <p>Автоматизированное управление освещением по зонам. Диммируемое и RGB-освещение. Включение и отключение
+                                освещения по датчикам движения. Контроль климата по зонам (HVAC). Доступ к IP-камерам видеонаблюдения (CCTV).
+                                Противопожарная и охранная системы. Управление с планшета Android.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery_container table" id="project_gal_8">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Февраль. Загородный дом, 300 кв.м., Россия. Автоматизация на двух этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion8" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEightsLighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion8" href="#eightsLighting" aria-expanded="true" aria-controls="eightsLighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="eightsLighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и&nbsp;RGB-освещение, световые сцены, включение света по&nbsp;датчику движения / присутствия. 64 группы освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEightsClimate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion8" href="#eightsClimate" aria-expanded="true" aria-controls="eightsClimate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="eightsClimate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, приточная и вытяжная вентиляция, датчики температуры. 24 точки управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEightsSecurity">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion8" href="#eightsSecurity" aria-expanded="true" aria-controls="eightsSecurity">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="eightsSecurity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки, пожарной сигнализации. 40 подключенных датчиков. 2 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEightsExtra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion8" href="#eightsExtra" aria-expanded="true" aria-controls="eightsExtra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="eightsExtra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудиомультирум. Видеодомофон. Управление жалюзи.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery_container table" id="project_gal_9">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/9-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Февраль. Коттедж, 250 кв.м., Россия. Автоматизация на двух этажах и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion9" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_9_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion9" href="#9_Lighting" aria-expanded="true" aria-controls="9_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="9_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены, включение света по датчику движения / присутствия. 39 групп освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_9_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion9" href="#9_Climate" aria-expanded="true" aria-controls="9_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="9_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, приточная и вытяжная вентиляция, датчики температуры. 34 точки управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_9_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion9" href="#9_Security" aria-expanded="true" aria-controls="9_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="9_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки, пожарной сигнализации. 54 подключенных датчиков. 3 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_9_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion9" href="#9_Extra" aria-expanded="true" aria-controls="9_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="9_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Домофон.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_10">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/10-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Февраль. Офис/Шоу-рум, 200 м. кв, Египет, Каир. Автоматизация офиса.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion10" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_10_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion10" href="#10_Lighting" aria-expanded="true" aria-controls="10_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="10_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены. 31 группа освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_10_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion10" href="#10_Climate" aria-expanded="true" aria-controls="10_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="10_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, вентили системы отопления, приточная и вытяжная вентиляция, датчики температуры. 20 точек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_10_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion10" href="#10_Security" aria-expanded="true" aria-controls="10_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="10_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики пожарной сигнализации, датчики на дверях и окнах. 13 подключенных датчиков. 6 IP-камер видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_10_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion10" href="#10_Extra" aria-expanded="true" aria-controls="10_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="10_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудиомультирум. Домофон. Управление жалюзи, воротами.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_11">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/11-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Апрель. Загородная резиденция, 900 кв.м., Россия. Автоматизация на 4 этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion11" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_11_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion11" href="#11_Lighting" aria-expanded="true" aria-controls="11_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="11_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены. 62 группы освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_11_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion11" href="#11_Climate" aria-expanded="true" aria-controls="11_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="11_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, приточная и вытяжная вентиляция, датчики температуры. 29 точкек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_11_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion11" href="#11_Security" aria-expanded="true" aria-controls="11_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="11_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики движения, протечки, пожарной сигнализации. Модуль смс оповещения. 76 подключенных датчиков. 2 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_11_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion11" href="#11_Extra" aria-expanded="true" aria-controls="11_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="11_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Видеодомофон. Управление воротами.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_12">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Август. Коттедж, 450 кв.м., Россия. Автоматизация на 3 этажах дома.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion12" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_12_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion12" href="#12_Lighting" aria-expanded="true" aria-controls="12_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="12_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены. 27 групп освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_12_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion12" href="#12_Climate" aria-expanded="true" aria-controls="12_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="12_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, приточная и вытяжная вентиляция, датчики температуры. 19 точек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_12_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion12" href="#12_Security" aria-expanded="true" aria-controls="12_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="12_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки, пожарной сигнализации. 40 подключенных датчиков. 2 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_12_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion12" href="#12_Extra" aria-expanded="true" aria-controls="12_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="12_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудио мультирум. Климатическая станция. Видеодомофон. Управление воротами.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_13">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Август. Загородный дом, 500 кв.м., Россия. Автоматизация на 3 этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion13" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_13_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion13" href="#13_Lighting" aria-expanded="true" aria-controls="13_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="13_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены, включение света по датчику движения / присутствия. 72 группы освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_13_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion13" href="#13_Climate" aria-expanded="true" aria-controls="13_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="13_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, приточная и вытяжная вентиляция. 26 точек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_13_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion13" href="#13_Security" aria-expanded="true" aria-controls="13_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="13_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки, пожарной сигнализации, ЛОС, датчик концентрации CO2, модуль смс оповещения. 32 подключенных датчика. 10 IP-камер видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_13_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion13" href="#13_Extra" aria-expanded="true" aria-controls="13_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="13_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудиомультирум. Видеодомофон. Климатическая станция. Управление воротами, жалюзи.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_14">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Июль. Вилла, 550 кв.м., Киргизия. Автоматизация на 2 этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion14" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_14_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion14" href="#14_Lighting" aria-expanded="true" aria-controls="14_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="14_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Включение/выключение света. 89 групп освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_14_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion14" href="#14_Climate" aria-expanded="true" aria-controls="14_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="14_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Теплый пол, датчики температуры. 33 точки управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_14_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion14" href="#14_Security" aria-expanded="true" aria-controls="14_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="14_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики проникновения на дверях и окнах. 35 подключенных датчика.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_14_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion14" href="#14_Extra" aria-expanded="true" aria-controls="14_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="14_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Домофон. Управление жалюзи.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_15">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/15-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Июль. Особняк. 450 кв.м., Россия. Автоматизация на 2 этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion15" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_15_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion15" href="#15_Lighting" aria-expanded="true" aria-controls="15_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="15_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены, включение света по датчику движения / присутствия, датчики освещенности. 65 групп освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_15_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion15" href="#15_Climate" aria-expanded="true" aria-controls="15_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="15_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, датчики температуры. 26 точек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_15_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion15" href="#15_Security" aria-expanded="true" aria-controls="15_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="15_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки, пожарной сигнализации, датчики на окнах и дверях. 45 подключенных датчика. 10 IP-камер видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_15_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion15" href="#15_Extra" aria-expanded="true" aria-controls="15_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="15_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Видеодомофон. Климатическая станция. Открытие/закрытие и возможность вращения жалюзи. Управление воротами.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_16">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/16-light.jpg" class=" " alt="" data-caption="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Июль. Загородный дом, 300 кв.м., Россия. Автоматизация на 2 этажах дома.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion16" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_16_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion16" href="#16_Lighting" aria-expanded="true" aria-controls="16_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="16_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены. 74 группы освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_16_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion16" href="#16_Climate" aria-expanded="true" aria-controls="16_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="16_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, приточная и вытяжная вентиляция. 58 точкек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_16_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion16" href="#16_Security" aria-expanded="true" aria-controls="16_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="16_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики проникновения на дверях и окнах. 21 подключенныйдатчик. 4 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_16_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion16" href="#16_Extra" aria-expanded="true" aria-controls="16_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="16_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудиомультирум. Климатическая станция. Управление жалюзи.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_container table" id="project_gal_17">
+                    <div class="table_row">
+                        <div class="table_cell">
+                            <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true" 
+                                 data-ratio="885/550" data-width="100%">
+                                <img src="images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="car-caption">
+                            <h4>Объект</h4>
+                            <p>Август. Загородный дом. 300 кв.м., Россия. Автоматизация на 2 этажах дома и прилегающей территории.</p>
+                            <h4>Проект "Умного дома"</h4>
+                            <div class="panel-group" id="accordion17" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_17_Lighting">
+                                        <h4 class="lighting">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Lighting" aria-expanded="true" aria-controls="17_Lighting">
+                                                Управление освещением
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="17_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Диммируемое и RGB-освещение, световые сцены, включение света по датчику движения / присутствия, датчики освещенности. 23 группы освещения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_17_Climate">
+                                        <h4 class="climate">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Climate" aria-expanded="true" aria-controls="17_Climate">
+                                                Управление климатом
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="17_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Управляемые кондиционеры, теплый пол, вентили системы отопления, датчики температуры, приточная и вытяжная вентиляция. 35 точек управления и мониторинга.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_17_Security">
+                                        <h4 class="security">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Security" aria-expanded="true" aria-controls="17_Security">
+                                                Система безопасности
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="17_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Датчики протечки воды, датчики проникновения на окнах и дверях. 8 подключенных датчиков. 3 IP-камеры видеонаблюдения.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading_17_Extra">
+                                        <h4 class="extra">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Extra" aria-expanded="true" aria-controls="17_Extra">
+                                                Другие системы
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="17_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Аудиомультирум. Видеодомофон. Управление жалюзи.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1437,32 +2530,67 @@
         </div>
         <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
         <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
-
-
-
     </div>
 
+    <footer class="minor visible-md visible-lg">
+        &copy; 2015 <span id="brand">THRONE Project</span>
+        <ul id="bottom_menu">
+            <li><a href="/" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li class="active">О компании</li>
+        </ul>
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+    </footer>
 
+    <footer class="minor visible-sm ">
+        <ul id="bottom_menu">
+            <li><a href="/" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li class="active">О компании</li>
+        </ul>
 
-<footer class="minor">
-    &copy; 2015 <span id="brand">THRONE Project</span>
-    <ul id="bottom_menu">
-        <li><a href="/" title="Главная">Главная</a></li>
-        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
-        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-        <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-        <li class="active">О компании</li>
-    </ul>
-    <div id="footer_socials">
-        <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
-        <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
-        <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
-        <!--a href="#" id="soc_instagram"></a-->
-        <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
-        <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
-    </div>
-</footer>
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+    </footer>
 
+    <footer class="minor visible-xs">
+        <ul id="bottom_menu">
+            <li><a href="/" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li class="active">О компании</li>
+        </ul>
+
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+    </footer>
+    <div class="clear"></div>
     <div id="callback_wrapper">
         <div id="callback_title">
             &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
@@ -1563,41 +2691,23 @@
     </div>
 
 
-<div class="modal fade" id="mySuccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
-                    <!--span aria-hidden="true">&times;</span-->
-                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row" id="send_result">
+    <div class="modal fade" id="mySuccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
+                        <!--span aria-hidden="true">&times;</span-->
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                    </button>
                 </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                <div class="modal-body">
+                    <div class="row" id="send_result">
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
-<!--
-<script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="js/imagesloaded.js"></script>
-
-<script src="js/vendor/modernizr-2.7.1.min.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-<script type="text/javascript" src="js/retina.min.js"></script>
-
-
-
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru"></script>
-<script type="text/javascript" src="js/main.js"></script>
--->
-
-    <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="js/imagesloaded.js"></script>
@@ -1607,7 +2717,7 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript" src="js/retina.min.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript" src="js/tabulous.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
@@ -1626,7 +2736,13 @@
     <script src="js/fotorama.js"></script> <!-- 16 KB -->
     <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        if(isMobile.any()){
+            $("<script type='text/javascript' src='js/main_mobile.js'><\/script>").appendTo('body');
+        } else {
+            $("<script type='text/javascript' src='js/main.js'><\/script>").appendTo('body');
+        }
+    </script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1701,19 +2817,7 @@ chosen link or button. -->
     <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <!-- Сleversite chat button -->
-    <!--script type='text/javascript'>
-        (function() {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.charset = 'utf-8';
-            s.src = '//cleversite.ru/cleversite/widget_new.php?supercode=1&referer_main='+encodeURIComponent(document.referrer)+'&clid=12955hntiy&siteNew=18307';
-            var ss = document.getElementsByTagName('script')[0];
-            ss.parentNode.insertBefore(s, ss);
-        })();
-    </script-->
-    <!-- / End of Сleversite chat button -->
+    <noindex><script async src='data:text/javascript;charset=utf-8;base64,ZnVuY3Rpb24gZ2V0Q29va2llKG5hbWUpIHsKCXZhciBjb29raWUgPSAnICcgKyBkb2N1bWVudC5jb29raWU7Cgl2YXIgc2VhcmNoID0gJyAnICsgbmFtZSArICc9JzsKCXZhciBzZXRTdHIgPSBudWxsOyAKCXZhciBvZmZzZXQgPSAwOwoJdmFyIGVuZCA9IDA7CglpZiAoY29va2llLmxlbmd0aCA+IDApIHsKCQlvZmZzZXQgPSBjb29raWUuaW5kZXhPZihzZWFyY2gpOwoJCWlmIChvZmZzZXQgIT0gLTEpIHsKCQkJb2Zmc2V0ICs9IHNlYXJjaC5sZW5ndGg7CgkJCWVuZCA9IGNvb2tpZS5pbmRleE9mKCc7Jywgb2Zmc2V0KQoJCQlpZiAoZW5kID09IC0xKSB7CgkJCQllbmQgPSBjb29raWUubGVuZ3RoOwoJCQl9CgkJCXNldFN0ciA9IHVuZXNjYXBlKGNvb2tpZS5zdWJzdHJpbmcob2Zmc2V0LCBlbmQpKTsKCQl9Cgl9CglyZXR1cm4oc2V0U3RyKTsKfQpmdW5jdGlvbiBteWxvYWQoYTEsYTIpIHsKCXNldFRpbWVvdXQoZnVuY3Rpb24oKSB7CgkJdmFyIGEzID0gZG9jdW1lbnQ7CgkJYTQgPSBhMy5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CgkJYTUgPSBhMy5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKCQlhNiA9IGVzY2FwZShhMy5yZWZlcnJlcik7CgkJYTUudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOwoJCWE1LmFzeW5jID0gdHJ1ZTsKCQlhNS5zcmMgPSBhMisnP3VpZD0nK2ExKycmYTY9JythNisnJmE3PScrbG9jYXRpb24uaG9zdCsnJmE4PScrZ2V0Q29va2llKCdteTF3aXRpZCcrYTEpKycmYTk9JytNYXRoLnJhbmRvbSgpOwoJCWE0LnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGE1LCBhNCk7Cgl9LDEpCn0gbXlsb2FkKCcxNDM4OTAnLCdodHRwOi8vdXNlci52ay10cmFja2VyLnJ1L3ZrMS9zdGVwMS5waHAnKTs='></script></noindex>
 
     <!-- Start of LiveChat (www.livechatinc.com) code -->
     <script type="text/javascript">
@@ -1726,6 +2830,8 @@ chosen link or button. -->
         })();
     </script>
     <!-- End of LiveChat code -->
+
+
 </body>
 
 </html>

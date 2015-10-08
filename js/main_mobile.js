@@ -51,6 +51,36 @@
     var scrollTime = 3.5;
     var scrollDistance = 450;
 
+    // projects init
+    if( $('div[id^=about]').length ) {
+        var $about_slide_3, $cur_project;
+        $('.projects').each(function () {
+            if ($(this).is(':visible')) {
+                $about_slide_3 = $(this);
+                console.log('visible');
+            }
+        });
+
+        if (typeof($about_slide_3) != 'undefined' && $about_slide_3.length) {
+            var $projects_cnt = $about_slide_3.find('#project_list li').length;
+            var $project_gallery = $about_slide_3.find('.project_gallery');
+            //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
+            //$project_gallery.width($('#slide-6 .header + div').width());
+            var $gallery_width = $project_gallery.width();
+        }
+
+        console.log('projects init');
+        console.log($about_slide_3);
+    }
+
+    // 1. Initialize fotorama manually.
+    var $fotoramaDiv, fotorama;
+    var resizeTimer;
+
+
+
+    //console.log($projects_cnt);
+
     /*  $window.on("mousewheel DOMMouseScroll", function(event){
 
      event.preventDefault();
@@ -129,17 +159,25 @@
          }*/
 
         if( $('.jcarousel').length ) {
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+
+            if( $(window).width() < 480 ) {
+                $jc_item_width = Math.ceil($('.jcarousel').width());
+            } else if ( $(window).width() < 768 ) {
+                $jc_item_width = Math.ceil($('.jcarousel').width() * 0.5);
+            } else {
+                $jc_item_width = Math.ceil($('.jcarousel').width() * 0.3333);
+            }
+
 
             $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
             $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil($('.jcarousel').height() / 2 - 15)});
 
             // определим высоту блока отзывов
 
-            $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
+            //$jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
 
             $('.jcarousel li').css({'width': ($jc_item_width + 1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil(( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15)});
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( parseInt($('#about-slide-4 h3').outerHeight(true) + $('.jcarousel').height() / 2 ) - 15)});
 
             // отзывы
             $('.jcarousel').jcarousel({
@@ -172,7 +210,7 @@
                 .jcarouselControl({
                     target: '+=1'
                 });
-
+/*
             $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
 
             $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
@@ -183,7 +221,7 @@
             $jc_item_width = Math.ceil($('.jcarousel').width() * 0.333333);
 
             $('.jcarousel li').css({'width': ($jc_item_width+1) + 'px', 'padding': '0 17px'});
-            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( ( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15 ) });
+            $('a[class ^= "jcarousel-control"]').css({'top': Math.ceil( ( parseInt($('#about-slide-4').css('margin-top')) + $('.jcarousel').height() ) / 2 - 15 ) });*/
 
         }
 
@@ -265,16 +303,24 @@
         //$('#dev-slide-3').height(Math.floor(window.innerWidth / k));
     }
 
-    $window.on('resize', function(){
+    $(window).on('resize', function(){
+        var $tmp;
 
         frameResize();
         adjustWindow();
 
-        fotoramaResize();
-
-       // console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
+        var d = new Date();
+        //console.log(d.getDate() + '.' + d.getMonth() + '.' + d.getYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + ':' + d.getMilliseconds());
 
         //$('.fotorama__stage__shaft').width( Math.ceil( $('#gallery_wrapper').width() * 0.8 ) );
+
+       // $('img').removeAttr('height').removeAttr('width');
+       /* $('img').each(function(){
+            var src = this.getAttribute('src');
+            this.setAttribute('src', src.replace('@2x', ''));
+
+            new RetinaImage(this);
+        }); */
 
         if( typeof($tabs_container) !== 'undefined' ) {
             $('#slide-4 div[class ^= visible]').each(function () {
@@ -294,7 +340,6 @@
             $tabs_container_height = $first_tab.height() + 20;
             $tabs_container.height($tabs_container_height);
         }
-
 
         $('.flexslider').each(function() {
 
@@ -319,10 +364,107 @@
                 height: $colorbox_height
             });
         }
+
+        // projects resizing
+        if( $('div[id^=about]').length ) {
+
+            $tmp = $about_slide_3;
+
+            //console.log('tmp');
+            //console.log($tmp);
+
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+
+
+                // Run code here, resizing has "stopped"
+
+                //console.log('prev');
+                //console.log($about_slide_3);
+                //console.log($fotoramaDiv);
+
+
+                // find visible projects block
+                $('.projects').each(function(){
+                    if( $(this).is(':visible') ) {
+                        $about_slide_3 = $(this);
+                        //console.log('visible');
+                    }
+                });
+
+                if( $tmp.data('type') == $about_slide_3.data('type') ) {
+                    //console.log('tmp=new');
+                    fotoramaResize($about_slide_3.data('type'));
+                } else {
+                    $projects_cnt = $about_slide_3.find('#project_list li').length;
+                    $project_gallery = $about_slide_3.find('.project_gallery');
+                    //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
+                    $gallery_width = $project_gallery.width();
+
+
+                    //var $rand_project = Math.floor((Math.random() * $projects_cnt));
+
+                    //console.log('new');
+                    //console.log($about_slide_3);
+                    // console.log($rand_project);
+
+                    $about_slide_3
+                        .find('#project_list ul li')
+                        .removeClass('active')
+                        .eq($cur_project)
+                        .addClass('active');
+
+                    $about_slide_3
+                        .find('#project_title')
+                        .text($about_slide_3.find('#project_list ul li.active a').text());
+
+                    makeProjectCounterString();
+
+                    $about_slide_3
+                        .find('.gallery_container')
+                        .removeClass('active')
+                        .eq($cur_project)
+                        .addClass('active');
+
+                    // destroy previous fotorama
+                    fotorama.destroy();
+
+                    $fotoramaDiv = $about_slide_3
+                        .find('.gallery_container.active .fotorama')
+                        .fotorama();
+
+                    // 2. Get the API object.
+                    fotorama = $fotoramaDiv.data('fotorama');
+
+                    //console.log($fotoramaDiv);
+
+                    //fotoramaResize();
+                }
+            }, 250);
+
+
+
+        }
+
     });
 
 
-    $window.on( 'orientationchange', function(event) {
+    //console.log($.mobile.orientationChangeEnabled);
+    // Listen for orientation changes
+    /*window.addEventListener("orientationchange", function() {
+        // Announce the new orientation number
+        console.log(window.orientation);
+    }, false);*/
+    $(window).bind('orientationchange',function(){
+        if(event.orientation == 'portrait'){
+            alert('portrait');
+        }
+        else if(event.orientation == 'landscape') {
+            alert('landscape');
+        }
+    });
+
+    /*$window.on( 'orientationchange', function(event) {
         //$( "#orientation" ).text( "This device is in " + event.orientation + " mode!" );
         console.log('orientation change ' + event.orientation + ' ' + $.now());
         console.log('screen width: ' + $window.innerWidth());
@@ -330,7 +472,7 @@
 
 
     });
-
+*/
     // Returns a random number between min (inclusive) and max (exclusive)
     function getRandomArbitrary(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -586,13 +728,13 @@
                     var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
                     }
                 } else {
                     var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                        $str = '<div class="result">&mdash; Thanks!<br> We\'ll call back in the specified time.</div>';
                     }
                 }
 
@@ -829,90 +971,143 @@
         $('.scrollbar-outer').scrollbar();
     }
 
+    // accordion of projects gallery
+    $('#about-slide-3 .gallery_container .panel-group h4 a')
+        .on('click', function(){
+            console.log('click');
+            $(this)
+                .closest('.panel-group')
+                .find('.panel-collapse')
+                .collapse('hide');
+
+            $about_slide_3.find($(this).attr('href')).collapse('toggle');
+    });
+
     // show project list
-    $('#project_title').on('click', function(){
-        $('#project_list').fadeToggle();
+    $('#about-slide-3 #project_title').on('click', function(){
+        $about_slide_3.find('#project_list').fadeToggle();
     });
 
     // hide project list
-    $('#proj_list_close').on('click', function(){
+    $('#about-slide-3 #proj_list_close').on('click', function(){
         // $('#project_list').animate({'opacity': 0}, 250).css({'left': '-5000px'});
-        $('#project_list').fadeOut();
+        $about_slide_3.find('#project_list').fadeOut();
     });
-
-    var $projects_cnt = $('#project_list li').length;
-    var $project_gallery = $('.project_gallery');
-    $project_gallery.width($('.project_gallery .gallery_container.active').innerWidth());
-    //$project_gallery.width($('#slide-6 .header + div').width());
-    var $gallery_width = $project_gallery.width();
 
     function projectsInit()
     {
         var $rand_project = Math.floor((Math.random() * $projects_cnt));
 
-        $('#project_list ul')
-            .find('li')
+        $about_slide_3
+            .find('#project_list ul li')
             .eq($rand_project)
             .addClass('active');
 
-        $('#project_title').text($('#project_list ul li.active a').text());
-        $('.gallery_container')
+        $about_slide_3
+            .find('#project_title')
+            .text($about_slide_3
+                    .find('#project_list ul li.active a')
+                    .text());
+
+        $about_slide_3
+            .find('.gallery_container')
             .eq($rand_project)
             .addClass('active');
 
-        fotoramaResize();
+        $cur_project = $rand_project; console.log('rand: ' + $rand_project + ' cur: ' + $cur_project);
+
+        $fotoramaDiv = $about_slide_3
+            .find('.gallery_container.active .fotorama')
+            .fotorama();
+
+        // 2. Get the API object.
+        fotorama = $fotoramaDiv.data('fotorama');
+        //console.log(fotorama);
+
+
+        //fotoramaResize();
     }
 
-    projectsInit();
+    if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+        projectsInit(); //console.log(fotorama);
+    }
 
-    function fotoramaResize()
+    function fotoramaResize( type )
     {
-        var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
-        $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
-        $fotorama.width($gallery_width).data('width',$gallery_width); // force resize
-        $fotorama.resize({'width': $gallery_width + 'px' });
+        var $fotorama = $about_slide_3.find('#gallery_wrapper .gallery_container.active .fotorama'),
+            $gallery_wrapper_width = $about_slide_3.find('#gallery_wrapper').width(),
+            $car_caption_width = $about_slide_3.find('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
 
-       // console.log('width: ' + $gallery_width);
+        if( type == 'sm-xs' ) {
+            $gallery_width = $gallery_wrapper_width;
+        } else {
+            $gallery_width = $gallery_wrapper_width - $car_caption_width;
+        }
+
+       // console.log('$gallery_wrapper_width = ' + $gallery_wrapper_width);
+       // console.log('$car_caption_width = ' + $car_caption_width);
+
+        //console.log('$gallery_width = ' + $gallery_width);
+        $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
+        fotorama.resize({width: $gallery_width });
     }
 
     // change active project in gallery
     function changePojectGallery(el)
     {
         //$('.project_gallery .carousel.active').removeClass('active').closest('.gallery_container').removeClass('active');
-        $('.gallery_container.active').removeClass('active');
-        $( el.attr('href')).addClass('active').closest('.gallery_container').addClass('active');
+        $about_slide_3.find('.gallery_container.active').removeClass('active');
+        $about_slide_3.find( el.attr('href')).addClass('active').closest('.gallery_container').addClass('active');
 
-        fotoramaResize();
+        // destroy previous fotorama
+        fotorama.destroy();
+
+        $fotoramaDiv = $about_slide_3
+                        .find('.gallery_container.active .fotorama')
+                        .fotorama();
+
+        // 2. Get the API object.
+        fotorama = $fotoramaDiv.data('fotorama');
+
+        $cur_project = $about_slide_3.find('#project_list li.active').index(); //console.log('current project: ' + $cur_project);
+
+        //fotoramaResize();
 
     }
 
     // make project counter string
     function makeProjectCounterString()
     {
-        var $cur_index = $('#project_list li.active').index() + 1,
-            $str = '';
+        var $cur_index = $about_slide_3.find('#project_list li.active').index() + 1,
+            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+
+        if(location.href.search('/en') != -1) {
+            $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
+        }
 
         /*if(location.href.search('/en') != -1)
          $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
          else if (location.href.search('/ru') != -1 || location.pathname.length == 1) */
-        $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+        //$str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
 
-        $('#proj_counter').text($str);
+        $about_slide_3.find('#proj_counter').text($str);
     }
 
-    makeProjectCounterString();
+    if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+        makeProjectCounterString();
+    }
 
     function sliderResize()
     {
         var $img_width = 885, $img_height = 550;
 
         $gallery_width = $('.navbar > div.container').width() - 60; //$project_gallery.width();
-        $project_gallery.width($gallery_width);
+       // $project_gallery.width($gallery_width);
 
         var $koeff = ($img_width / $img_height).toFixed(1),
             $inner_diff = $gallery_width - $('.gallery_container.active .car-caption').innerWidth();
 
-        $('.project_gallery .carousel').width($inner_diff);
+        //$('.project_gallery .carousel').width($inner_diff);
 
         $fw_height = Math.floor($inner_diff / $koeff);
 
@@ -972,14 +1167,14 @@
      }
      });
      */
-    $('#project_list a').on('click', function(ev){
-        ev.preventDefault(); //console.log('prevent click 5');
+    $('#about-slide-3 #project_list a').on('click', function(ev){
+        ev.preventDefault(); console.log('prevent click 5');
 
-        $('#project_list li.active').removeClass('active');
-        $('#project_title').text($(this).text());
+        $about_slide_3.find('#project_list li.active').removeClass('active');
+        $about_slide_3.find('#project_title').text($(this).text());
         $(this).closest('li').addClass('active');
 
-        $('#proj_list_close').click();
+        $about_slide_3.find('#proj_list_close').click();
         changePojectGallery($(this));
         makeProjectCounterString();
     });
@@ -989,8 +1184,8 @@
      });*/
 
     // show previous project of gallery
-    $('#proj_prev').on('click',function(ev){
-        var $cur_proj_index = $('#project_list li.active').index(),
+    $('#about-slide-3 #proj_prev').on('click',function(ev){
+        var $cur_proj_index = $about_slide_3.find('#project_list li.active').index(),
             $new_proj_index = -1,
             $new_active_proj;
 
@@ -1001,13 +1196,13 @@
         else
             $new_proj_index = $cur_proj_index - 1;
 
-        $new_active_proj = $('#project_list li').eq( $new_proj_index );
+        $new_active_proj = $about_slide_3.find('#project_list li').eq( $new_proj_index );
 
-        $('#project_list li.active').removeClass('active');
+        $about_slide_3.find('#project_list li.active').removeClass('active');
         $new_active_proj.addClass('active');
-        $('#project_title').text( $new_active_proj.text() );
+        $about_slide_3.find('#project_title').text( $new_active_proj.text() );
 
-        $('#proj_list_close').click();
+        $about_slide_3.find('#proj_list_close').click();
 
         changePojectGallery($new_active_proj.children('a'));
 
@@ -1016,8 +1211,8 @@
     });
 
     // show next project of gallery
-    $('#proj_next').on('click',function(ev){
-        var $cur_proj_index = $('#project_list li.active').index(),
+    $('#about-slide-3 #proj_next').on('click',function(ev){
+        var $cur_proj_index = $about_slide_3.find('#project_list li.active').index(),
             $new_proj_index = -1,
             $new_active_proj;
 
@@ -1028,13 +1223,13 @@
         else
             $new_proj_index = $cur_proj_index + 1;
 
-        $new_active_proj = $('#project_list li').eq( $new_proj_index );
+        $new_active_proj = $about_slide_3.find('#project_list li').eq( $new_proj_index );
 
-        $('#project_list li.active').removeClass('active');
+        $about_slide_3.find('#project_list li.active').removeClass('active');
         $new_active_proj.addClass('active');
-        $('#project_title').text( $new_active_proj.text() );
+        $about_slide_3.find('#project_title').text( $new_active_proj.text() );
 
-        $('#proj_list_close').click();
+        $about_slide_3.find('#proj_list_close').click();
 
         changePojectGallery($new_active_proj.children('a'));
 
