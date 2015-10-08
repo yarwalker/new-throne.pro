@@ -45,6 +45,26 @@
     var scrollTime = 3.5;
     var scrollDistance = 450;
 
+    var $about_slide_3, $cur_project;
+    $('.projects').each(function(){
+        if( $(this).is(':visible') ) {
+            $about_slide_3 = $(this);
+            console.log('visible');
+        }
+    });
+
+    if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+        var $projects_cnt = $about_slide_3.find('#project_list li').length;
+        var $project_gallery = $about_slide_3.find('.project_gallery');
+        //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
+        //$project_gallery.width($('#slide-6 .header + div').width());
+        var $gallery_width = $project_gallery.width();
+    }
+
+    // 1. Initialize fotorama manually.
+    var $fotoramaDiv, fotorama;
+    var resizeTimer;
+
     /*  $window.on("mousewheel DOMMouseScroll", function(event){
 
      event.preventDefault();
@@ -502,9 +522,9 @@
         frameResize();
         adjustWindow();
 
-        fotoramaResize();
+        //fotoramaResize();
 
-        console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
+        //console.log($('#interior_ipad').width() + 'x' + $('#interior_ipad').height());
 
         if($('.flexslider').length) {
             $('.flexslider').flexslider({
@@ -561,6 +581,76 @@
                 width: ( Math.round(screen.width * 0.9) > 800 ? 800 : Math.round(screen.width * 0.9) ), //'90%',
                 height: $colorbox_height
             });
+        }
+
+        if( $('div[id^=about]').length ) {
+
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+
+                // Run code here, resizing has "stopped"
+
+                // console.log('prev');
+                //console.log($about_slide_3);
+
+                // find visible projects block
+                $('.projects').each(function(){
+                    if( $(this).is(':visible') ) {
+                        $about_slide_3 = $(this);
+                        //console.log('visible');
+                    }
+                });
+
+                //console.log(fotorama);
+
+                if( typeof($about_slide_3) != 'undefined' && $about_slide_3.length ) {
+                    $projects_cnt = $about_slide_3.find('#project_list li').length;
+                    $project_gallery = $about_slide_3.find('.project_gallery');
+                    //$project_gallery.width($about_slide_3.find('.project_gallery .gallery_container.active').innerWidth());
+                    $gallery_width = $project_gallery.width();
+
+
+                    //var $rand_project = Math.floor((Math.random() * $projects_cnt));
+
+                    // console.log($about_slide_3);
+                    // console.log($rand_project);
+
+                    $about_slide_3
+                        .find('#project_list ul li')
+                        .removeClass('active')
+                        //.find('li')
+                        .eq($cur_project)
+                        .addClass('active');
+
+                    $about_slide_3
+                        .find('#project_title')
+                        .text($about_slide_3.find('#project_list ul li.active a').text());
+
+                    makeProjectCounterString();
+
+                    $about_slide_3
+                        .find('.gallery_container')
+                        .removeClass('active')
+                        .eq($cur_project)
+                        .addClass('active');
+
+                    // destroy previous fotorama
+                    fotorama.destroy();
+
+                    $fotoramaDiv = $about_slide_3
+                        .find('.gallery_container.active .fotorama')
+                        .fotorama();
+
+                    // 2. Get the API object.
+                    fotorama = $fotoramaDiv.data('fotorama');
+
+                    //fotoramaResize();
+                }
+
+            }, 100);
+
+
+
         }
     });
 
@@ -812,13 +902,13 @@
                     var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
                     }
                 } else {
                     var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
+                        $str = '<div class="result">&mdash; Thanks!<br> We\'ll call back in the specified time.</div>';
                     }
                 }
 
@@ -1070,9 +1160,9 @@
         $('#project_list').fadeOut();
     });
 
-    var $projects_cnt = $('#project_list li').length;
-    var $project_gallery = $('.project_gallery');
-    $project_gallery.width($('.project_gallery .gallery_container.active').innerWidth());
+    var $projects_cnt = $('#about-slide-3.visible-lg #project_list li').length;
+    var $project_gallery = $('#about-slide-3.visible-lg .project_gallery');
+    $project_gallery.width($('#about-slide-3.visible-lg .project_gallery .gallery_container.active').innerWidth());
     //$project_gallery.width($('#slide-6 .header + div').width());
     var $gallery_width = $project_gallery.width();
 
@@ -1080,25 +1170,32 @@
     {
         var $rand_project = Math.floor((Math.random() * $projects_cnt));
 
-        $('#project_list ul')
+        $('#about-slide-3.visible-lg #project_list ul')
             .find('li')
             .eq($rand_project)
             .addClass('active');
 
-        $('#project_title').text($('#project_list ul li.active a').text());
+        $('#project_title').text($('#about-slide-3.visible-lg #project_list ul li.active a').text());
         $('.gallery_container')
             .eq($rand_project)
             .addClass('active');
 
-        fotoramaResize();
+        $fotoramaDiv = $about_slide_3
+            .find('.gallery_container.active .fotorama')
+            .fotorama();
+
+        // 2. Get the API object.
+        fotorama = $fotoramaDiv.data('fotorama');
+
+        //fotoramaResize();
     }
 
     projectsInit();
 
     function fotoramaResize()
     {
-        var $fotorama = $('#gallery_wrapper .gallery_container.active .fotorama');
-        $gallery_width = $('#gallery_wrapper').width() - $('#gallery_wrapper .gallery_container.active .car-caption').outerWidth();
+        var $fotorama = $('#about-slide-3.visible-lg #gallery_wrapper .gallery_container.active .fotorama');
+        $gallery_width = $('#about-slide-3.visible-lg #gallery_wrapper').width() - $('#about-slide-3.visible-lg #gallery_wrapper .gallery_container.active .car-caption').outerWidth();
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
         $fotorama.resize({'width': $gallery_width + 'px' });
 
@@ -1109,17 +1206,29 @@
     function changePojectGallery(el)
     {
         //$('.project_gallery .carousel.active').removeClass('active').closest('.gallery_container').removeClass('active');
-        $('.gallery_container.active').removeClass('active');
+        $('#about-slide-3.visible-lg .gallery_container.active').removeClass('active');
         $( el.attr('href')).addClass('active').closest('.gallery_container').addClass('active');
 
-        fotoramaResize();
+        // destroy previous fotorama
+        fotorama.destroy();
+
+        $fotoramaDiv = $about_slide_3
+            .find('.gallery_container.active .fotorama')
+            .fotorama();
+
+        // 2. Get the API object.
+        fotorama = $fotoramaDiv.data('fotorama');
+
+        $cur_project = $about_slide_3.find('#project_list li.active').index();
+
+        //fotoramaResize();
 
     }
 
     // make project counter string
     function makeProjectCounterString()
     {
-        var $cur_index = $('#project_list li.active').index() + 1,
+        var $cur_index = $('#about-slide-3.visible-lg #project_list li.active').index() + 1,
             $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
 
         if(location.href.search('/en') != -1) {
