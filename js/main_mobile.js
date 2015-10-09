@@ -112,6 +112,7 @@
                 if ($(this).is(':visible')) {
                     $(this).flexslider({
                         animation: "slide",
+                        slideshowSpeed: 7000,
                         start: function (slider) {
                             $('body').removeClass('loading');
                         }
@@ -346,6 +347,7 @@
             if ($(this).is(':visible')) {
                 $(this).flexslider({
                     animation: "slide",
+                    slideshowSpeed: 7000,
                     start: function (slider) {
                         $('body').removeClass('loading');
                     }
