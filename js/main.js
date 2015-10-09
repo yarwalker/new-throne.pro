@@ -94,6 +94,7 @@
             if( $('.flexslider').length ) {
                 $('.flexslider').flexslider({
                     animation: "slide",
+                    slideshowSpeed: 7000,
                     start: function (slider) {
                         $('body').removeClass('loading');
                         adjustWindow();
@@ -529,6 +530,7 @@
         if($('.flexslider').length) {
             $('.flexslider').flexslider({
                 animation: "slide",
+                slideshowSpeed: 7000,
                 start: function (slider) {
                     $('body').removeClass('loading');
                     adjustWindow();
@@ -1131,7 +1133,8 @@
     function fotoramaResize()
     {
         var $fotorama = $('#about-slide-3.visible-lg.visible-md #gallery_wrapper .gallery_container.active .fotorama');
-        $gallery_width = $('#about-slide-3.visible-lg.visible-md #gallery_wrapper').width() - $('#about-slide-3.visible-lg.visible-md #gallery_wrapper .gallery_container.active .car-caption').outerWidth();
+        $gallery_width = $('#about-slide-3.visible-lg.visible-md #gallery_wrapper').width() -
+                         $('#about-slide-3.visible-lg.visible-md #gallery_wrapper .gallery_container.active .car-caption').outerWidth();
         $fotorama.width($gallery_width).data('width',$gallery_width); // forse resize
         $fotorama.resize({'width': $gallery_width + 'px' });
     }

@@ -33,10 +33,13 @@
            //console.log($tabs_container);
            if( $tabs_container.length ) {
                $first_tab = $tabs_container.find('div').first();
+
+               //console.log($first_tab);
            }
         }
     });
 
+    //console.log($first_tab);
     //console.log($tabs_container);
 
     $tabs_container_height = 0,
@@ -109,6 +112,7 @@
                 if ($(this).is(':visible')) {
                     $(this).flexslider({
                         animation: "slide",
+                        slideshowSpeed: 7000,
                         start: function (slider) {
                             $('body').removeClass('loading');
                         }
@@ -343,6 +347,7 @@
             if ($(this).is(':visible')) {
                 $(this).flexslider({
                     animation: "slide",
+                    slideshowSpeed: 7000,
                     start: function (slider) {
                         $('body').removeClass('loading');
                     }
