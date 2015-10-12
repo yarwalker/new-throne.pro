@@ -25,6 +25,6 @@ switch( $SxGeo->getCountry($_SERVER['REMOTE_ADDR']) ):
 endswitch;
 
 if( $_SERVER['REQUEST_URI'] == '/' ):
-    header('Location: http://' . $_SERVER['SERVER_NAME'] . '/' . $country );
+    header('Location: http://' . $_SERVER['SERVER_NAME'] . '/' . ( $country != '' ? $country . '/index.php' : 'index.php') );
     exit();
 endif;
