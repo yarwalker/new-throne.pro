@@ -1,5 +1,33 @@
 DirectoryIndex index.php
 
+Options -Indexes
+
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+    CharsetSourceEnc utf-8
+    CharsetDefault utf-8
+</IfModule>
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(jp(e?)g|gif|png|css|js|ico)$ [NC]
+RewriteCond %{REQUEST_URI} ([A-Za-z]+)/(.*)$ [NC]
+RewriteCond %{DOCUMENT_ROOT}/%1 -d
+RewriteRule ^([A-Za-z]+)/(.*)$ $1/$2 [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ redirect.php [QSA,L]
+
 # включаем кэширование в браузере
 #<ifmodule mod_expires.c>
 #<filesmatch "\.(jpg|gif|png|css|js|mp4|webm|ogv)$">
