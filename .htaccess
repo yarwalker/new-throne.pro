@@ -1,4 +1,4 @@
-DirectoryIndex index.php
+DirectoryIndex index.html
 
 Options -Indexes
 
@@ -18,15 +18,19 @@ RewriteEngine On
 
 RewriteBase /
 
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /redirect.php [R,L]
+
+RewriteRule ^installation.html$ /ru/installation.html [R=301,L]
+RewriteRule ^developers.html$ /ru/developers.html [R=301,L]
+RewriteRule ^about.html$ /ru/about.html [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !\.(jp(e?)g|gif|png|css|js|ico)$ [NC]
-RewriteCond %{REQUEST_URI} ([A-Za-z]+)/(.*)$ [NC]
-RewriteCond %{DOCUMENT_ROOT}/%1 -d
-RewriteRule ^([A-Za-z]+)/(.*)$ $1/$2 [NC,L]
+RewriteRule ^(.*)$ 404.html [QSA,L]
 
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^(.*)$ redirect.php [QSA,L]
+
+
 
 # включаем кэширование в браузере
 #<ifmodule mod_expires.c>
@@ -132,7 +136,7 @@ RewriteRule ^(.*)$ redirect.php [QSA,L]
     ExpiresByType application/x-gzip A31536000
     ExpiresByType application/zip A31536000
 </IfModule>
-<FilesMatch "\.(?i:css|js|htm|html|rtf|rtx|txt|xml|gif|ico|jpg|jpeg|jpe|png|svg|svgz|asf|asx|wax|wmv|wmx|avi|mov|qt|mp4|m4v|mpeg|mpg|mpe|pdf|swf|ttf|ttc|eot|otf|mp3|m4a|ogg|wav|wma|tar|gz|gzip|zip)$">
+<FilesMatch "\.(?i:css|js|rtf|rtx|txt|xml|gif|ico|jpg|jpeg|jpe|png|svg|svgz|asf|asx|wax|wmv|wmx|avi|mov|qt|mp4|m4v|mpeg|mpg|mpe|pdf|swf|ttf|ttc|eot|otf|mp3|m4a|ogg|wav|wma|tar|gz|gzip|zip)$">
     <IfModule mod_headers.c>
         Header set Pragma "public"
         Header append Cache-Control "public, must-revalidate, proxy-revalidate"

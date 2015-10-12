@@ -131,7 +131,7 @@ $detect = new Mobile_Detect();
 <div class="frame">
     <div id="head" class=" hidden-xs">
         <div id="langs" >
-            <span><a href="../">Ru</a></span>
+            <span><a href="/ru">Ru</a></span>
             <span  class="active">En</span>
         </div>
 
@@ -170,7 +170,7 @@ $detect = new Mobile_Detect();
                         <li><a href="about.html" title="About Us">About Us</a></li>
                         <li>
                             <div id="langs" >
-                                <span><a href="../">Ru</a></span>
+                                <span><a href="/ru">Ru</a></span>
                                 <span  class="active">En</span>
                             </div>
                         </li>
