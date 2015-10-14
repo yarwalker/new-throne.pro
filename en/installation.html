@@ -16,7 +16,37 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="../css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+    </script>
+
+
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script>
+        if(isMobile.any()){
+            $("head link[href = '../css/main.css']").attr('href', '../css/main_mobile.css');
+        }
+    </script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
@@ -105,7 +135,7 @@
 <body>
     <img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;"/>
     <div class="frame">
-        <div id="head">
+        <div id="head" class="hidden-xs">
             <div id="langs" >
                 <span><a href="/ru/installation.html">Ru</a></span>
                 <span class="active">En</span>
@@ -113,8 +143,9 @@
 
             <a id="logo" href="/en" >THRONE Project</a>
 
-            <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a callback</span>
+            <div class="callback visible-lg visible-md">
+                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();
+                    fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a callback</span>
                 <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> or +7 (495) 255-0-777</span>
             </div>
 
@@ -124,6 +155,35 @@
                 <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
                 <li><a href="about.html" title="About Us">About Us</a></li>
             </ul>
+        </div>
+
+        <div id="head" class=" visible-xs" >
+            <nav class="navbar" id="top_menu_ext" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a id="logo" href="/en" >THRONE Project</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav" id="top_menu_ext">
+                            <li class="active">How We Work</li>
+                            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
+                            <li><a href="about.html" title="About Us">About Us</a></li>
+                            <li>
+                                <div id="langs">
+                                    <span><a href="/ru/installation.html">Ru</a></span>
+                                    <span class="active">En</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
 
@@ -151,7 +211,7 @@
         </div>
     </div-->
 
-    <div id="install-slide-1" class="frame">
+    <div id="install-slide-1" class="frame hidden-xs">
         <div class="overlay"></div>
         <div class="content">
             <h1>How We Work</h1>
@@ -175,24 +235,163 @@
                 <li>we install your Smart Home system;</li>
                 <li>we configure and commission the system.</li>
             </ul>
-
         </div>
-        <!--div class="icons">
-            <div class="icons_row">
-                <div class="icons_cell"><img src="../images/garanty_icon.png" alt=""/></div>
-                <div class="icons_cell"><img src="../images/knx_standart_icon.png" alt=""/></div>
-                <div class="icons_cell"><img src="../images/cert_installation_icon.png" alt=""/></div>
-            </div>
-            <div class="icons_row">
-                <div class="icons_cell"><span>Отвечаем<br>за работу<br>гарантией</span></div>
-                <div class="icons_cell"><span>Оборудование<br/>стандарта KNX</span></div>
-                <div class="icons_cell"><span>Сертифицированная<br/>установка</span></div>
-            </div>
-         </div-->
-
     </div>
 
-    <div id="install-slide-2" class="frame">
+    <div id="install-slide-1" class="frame visible-xs">
+        <img src="../images/install_slide1xs.jpg" class="img-responsive" alt=""/>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>How We Work</h1>
+                    <p>We work differently from most companies on the market. We will not impose numerous meetings and presentations
+                        whose sole purpose is to estimate how much money you can 'shake out' from the customer.
+                        We do some of the work remotely to save your and our time. Due to 3D THRONE interface the client is 100% sure
+                        what his 'smart home' will look like before signing the contract.</p>
+                    <p>Remote work:</p>
+                    <ul>
+                        <li>we develop 3D demo based on your architecture (according to the plans of the premises);</li>
+                        <li>we make specification and quotation of the project;</li>
+                        <li>after approval by the client we offer the contract;</li>
+                        <li>we develop project documentation, cable routing schema, the specification of the entire engineering 'stuffing'.</li>
+                    </ul>
+
+                    <p>On-site work:</p>
+                    <ul>
+                        <li>we arrange shipment of the equipment with a minimum of intermediaries;</li>
+                        <li>organize a team of certified electricians to work according to the project documentation;</li>
+                        <li>we assemble the Intellectual System Controller Box;</li>
+                        <li>we install your Smart Home system;</li>
+                        <li>we configure and commission the system.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="install-slide-2" class="frame hidden-xs">
+        <div id="inst-slide2-left">
+            <div class="table">
+                <div class="table_row">
+                    <div class="table_cell" id="prep_5days_cell">&nbsp;</div>
+                    <div class="table_cell">
+                        <p class="text-title">The Preparation Of a Proposal With 3D-demo and Price</p>
+                        <p>Having received from you the plans of the premises, we will create a 3D demo and present a preliminary quotation of the project.
+                            You will see your smart home with a complete set of functions and a list of necessary equipment with the prices.
+                            <span class="marker"><nobr>~ 1 week</nobr></span></p>
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_cell" id="project_plan_cell">&nbsp;</div>
+                    <div class="table_cell">
+                        <p class="text-title">Development of project documentation</p>
+                        <p>Project documentation is the basis of any smart home system. It is a set of engineering documents
+                            that describe all the electronic 'stuffing' of the system and the method of its installation.
+                            <span class="marker"><nobr>~ 1 month</nobr></span></p>
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_cell" id="server_cell">&nbsp;</div>
+                    <div class="table_cell">
+                        <p class="text-title">Procurement of equipment</p>
+                        <p>Sensors, controllers, actuators, meters and other equipment of smart home system specified in the Project documentation
+                            will be ordered and delivered at the best prices.
+                            <span class="marker"><nobr>~ 1 month</nobr>, in parallel with the previous stage</span></p>
+                    </div>
+                </div>
+                <div class="table_row">
+                    <div class="table_cell" id="install_cell">&nbsp;</div>
+                    <div class="table_cell">
+                        <p class="text-title">Installation, programming and commissioning</p>
+                        <p>We lay the cable, assemble the Intellectual System Controller Box, connect all the actuators.
+                            Then we program the devices of the whole system. We connect the server and tablets.
+                            <span class="marker"><nobr>~ 1 month</nobr>, partly in parallel with the previous stage</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="inst-slide2-right">
+            <div class="icons">
+                <div class="icons_row">
+                    <div class="icons_cell" id="garanty_cell"><span>Affirmed With<br>Warranty</span></div>
+                </div>
+
+                <div class="icons_row">
+                    <div class="icons_cell" id="cert_install_cell"><span>Certified<br>Installation</span></div>
+                </div>
+
+                <div class="icons_row">
+                    <div class="icons_cell" id="knx_standart_cell"><span>Equipment of<br>KNX Standard</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="install-slide-2" class="frame visible-xs">
+        <div class="container">
+            <div class="row">
+                <div id="inst-slide2-left" class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-3" id="prep_5days_cell"></div>
+                        <div class="col-xs-9">
+                            <p class="text-title">The Preparation Of a Proposal With 3D-demo and Price</p>
+                            <p>Having received from you the plans of the premises, we will create a 3D demo and present a preliminary quotation of the project.
+                                You will see your smart home with a complete set of functions and a list of necessary equipment with the prices.
+                                <span class="marker"><nobr>~ 1 week</nobr></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="project_plan_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Development of project documentation</p>
+                            <p>Project documentation is the basis of any smart home system. It is a set of engineering documents
+                                that describe all the electronic 'stuffing' of the system and the method of its installation.
+                                <span class="marker"><nobr>~ 1 month</nobr></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="server_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Procurement of equipment</p>
+                            <p>Sensors, controllers, actuators, meters and other equipment of smart home system specified in the Project documentation
+                                will be ordered and delivered at the best prices.
+                                <span class="marker"><nobr>~ 1 month</nobr>, in parallel with the previous stage</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="install_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Installation, programming and commissioning</p>
+                            <p>We lay the cable, assemble the Intellectual System Controller Box, connect all the actuators.
+                                Then we program the devices of the whole system. We connect the server and tablets.
+                                <span class="marker"><nobr>~ 1 month</nobr>, partly in parallel with the previous stage</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="inst-slide2-right" class="col-xs-4">
+                    <div class="icons">
+                        <div class="icons_row">
+                            <div class="icons_cell" id="garanty_cell"><span>Affirmed With<br>Warranty</span></div>
+                        </div>
+
+                        <div class="icons_row">
+                            <div class="icons_cell" id="cert_install_cell"><span>Certified<br>Installation</span></div>
+                        </div>
+
+                        <div class="icons_row">
+                            <div class="icons_cell" id="knx_standart_cell"><span>Equipment of<br>KNX Standard</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--div id="install-slide-2" class="frame">
         <div id="inst-slide2-left">
             <div class="table">
                 <div class="table_row">
@@ -252,8 +451,9 @@
          </div>
         </div>
 
-    </div>
-    <div class="table" id="factoid">
+    </div-->
+
+    <!--div class="table" id="factoid">
         <div class="table_row">
             <div class="table_cell" id="factoid_left"></div>
             <div class="table_cell" id="factoid_center">
@@ -262,6 +462,38 @@
             </div>
             <div class="table_cell" id="factoid_right"></div>
         </div>
+    </div-->
+
+    <div class="table hidden-xs" id="factoid">
+        <div class="table_row">
+            <div class="table_cell" id="factoid_left"></div>
+            <div class="table_cell" id="factoid_center">
+                <div id="f_days">45</div>
+                <p><nobr>days is average period</nobr><br>for installation of THRONE Smart Home.</p>
+                <p><nobr>From the first call of a client till comissioning.</nobr>.</p>
+            </div>
+            <div class="table_cell" id="factoid_right"></div>
+        </div>
+    </div>
+
+    <div class="table visible-xs" id="factoid">
+        <table>
+            <tbody>
+            <tr>
+                <td id="factoid_left"></td>
+            </tr>
+            <tr>
+                <td id="factoid_center">
+                    <div id="f_days">45</div>
+                    <p><nobr>days is average period</nobr><br>for installation of THRONE Smart Home.</p>
+                    <p>From the first call of a client till comissioning.</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="factoid_right"></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <div id="install-slide-3" class="frame">
@@ -303,7 +535,7 @@
         </div>
     </div>
 
-    <footer class="minor">
+    <footer class="minor visible-md visible-lg">
         &copy; 2015 <span id="brand">THRONE Project</span>
         <ul id="bottom_menu">
             <li><a href="/en" title="Main">Main</a></li>
@@ -320,6 +552,46 @@
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
+    </footer>
+
+    <footer class="minor visible-sm ">
+        <ul id="bottom_menu">
+            <li><a href="/en" title="Main">Main</a></li>
+            <li class="active">How We Work</li>
+            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li><a href="about.html" title="About Us">About Us</a></li>
+        </ul>
+
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+    </footer>
+
+    <footer class="minor visible-xs">
+        <ul id="bottom_menu">
+            <li><a href="/en" title="Main">Main</a></li>
+            <li class="active">How We Work</li>
+            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li><a href="about.html" title="About Us">About Us</a></li>
+        </ul>
+
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
     </footer>
 
     <div id="callback_wrapper">
@@ -456,7 +728,13 @@
     <!-- /smooth scrolling -->
     <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        if(isMobile.any()){
+            $("<script type='text/javascript' src='../js/main_mobile.js'><\/script>").appendTo('body');
+        } else {
+            $("<script type='text/javascript' src='../js/main.js'><\/script>").appendTo('body');
+        }
+    </script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

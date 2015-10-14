@@ -914,11 +914,11 @@ only screen and (min-resolution: 144dpi) {
     background-image: url('../images/install_slide1.jpg');
     background-position: left top;
     background-size: cover;
-    min-height: 904px;
+   /* min-height: 904px;
     margin-top: 68px;
     padding-left: 100px;
     color: #fff;
-    position: relative;
+    position: relative;*/
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -929,16 +929,66 @@ only screen and (min-resolution: 144dpi) {
         background-image: url('../images/install_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
-        min-height: 904px;
+      /*  min-height: 904px;
         margin-top: 68px;
         padding-left: 100px;
         color: #fff;
-        position: relative;
+        position: relative;*/
     }
 }
 
+#install-slide-1.hidden-xs {
+    /*background-image: url('../images/dev_slide1.jpg');
+    background-position: center top;
+    background-size: cover;*/
+    /*min-height: 840px;*/
+    margin-top: 30px;
+    color: #fff;
+    position: relative;
+    background-color: #8a8a8a;
+    padding: 0 100px 50px 105px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #install-slide-1.hidden-xs {
+        background-size: cover;
+        /* min-height: 840px; */
+        margin-top: 0px;
+        color: #fff;
+        position: relative;
+        padding: 0 100px 50px 105px;
+    }
+}
 
-#install-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 47px; margin-bottom: 0; }
+#install-slide-1.visible-xs {
+    /* min-height: 840px; */
+    margin-top: 0px;
+    color: #fff;
+    position: relative;
+    padding: 0 0 50px 0;
+    background-color: #8a8a8a;
+    background-image: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+    #install-slide-1.visible-xs {
+        /* min-height: 840px; */
+        margin-top: 0px;
+        color: #fff;
+        position: relative;
+        padding: 0 0 50px 0;
+        background-color: #8a8a8a;
+        background-image: none;
+    }
+}
+#install-slide-1 > img {
+    width: 100%;
+}
+
+
+#install-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 29px; margin-bottom: 0; }
 #install-slide-1 p { width: 400px; /*30%;*/ line-height: 22px; margin: 12px 0; }
 #install-slide-1 ul { margin: 0; width: 450px; }
 
@@ -1485,7 +1535,7 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
 #inst-slide2-right p { font-family: circe_l; font-size: 30px; /*width: 60%;*/ line-height: 36px; }
 #inst-slide2-right p:first-of-type { padding-top: 5px; }
 
-#inst-slide2-left .table_cell img { margin-right: 9px; margin-top: 10px; }
+#inst-slide2-left .table_cell img { margin-right: 9px; margin-top: 10px;  }
 #inst-slide2-left p { line-height: 22px; margin: 22px 0; }
 #inst-slide2-left .table_cell p:last-of-type { margin-bottom: 25px; }
 #inst-slide2-left .table_cell p:nth-of-type(2) { margin-top: 9px; }
@@ -1496,6 +1546,195 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
     padding-top: 0;
     line-height: 34px;
     margin-bottom: 0;
+}
+
+#inst-slide2-left #prep_5days_cell {
+    width: 90px;
+    background-image: url('../images/prep_5days_icon.png');
+    background-position: left 10px;
+    background-repeat: no-repeat;
+    background-size: 60px 49px;
+    -o-background-size: 60px 49px;
+    -webkit-background-size: 60px 49px;
+    -moz-background-size: 60px 49px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-left #prep_5days_cell {
+        width: 90px;
+        background-image: url('../images/prep_5days_icon@2x.png');
+        background-position: left 10px;
+        background-repeat: no-repeat;
+        background-size: 60px 49px;
+        -o-background-size: 60px 49px;
+        -webkit-background-size: 60px 49px;
+        -moz-background-size: 60px 49px;
+    }
+}
+
+#inst-slide2-left #project_plan_cell {
+    width: 90px;
+    background-image: url('../images/project_plan_icon.png');
+    background-position: left 10px;
+    background-repeat: no-repeat;
+    background-size: 64px 51px;
+    -o-background-size: 64px 51px;
+    -webkit-background-size: 64px 51px;
+    -moz-background-size: 64px 51px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-left #project_plan_cell {
+        width: 90px;
+        background-image: url('../images/project_plan_icon@2x.png');
+        background-position: left 10px;
+        background-repeat: no-repeat;
+        background-size: 64px 51px;
+        -o-background-size: 64px 51px;
+        -webkit-background-size: 64px 51px;
+        -moz-background-size: 64px 51px;
+    }
+}
+
+#inst-slide2-left #server_cell {
+    width: 90px;
+    background-image: url('../images/server_icon.png');
+    background-position: left 10px;
+    background-repeat: no-repeat;
+    background-size: 70px 36px;
+    -o-background-size: 70px 36px;
+    -webkit-background-size: 70px 36px;
+    -moz-background-size: 70px 36px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-left #server_cell {
+        width: 90px;
+        background-image: url('../images/server_icon@2x.png');
+        background-position: left 10px;
+        background-repeat: no-repeat;
+        background-size: 70px 36px;
+        -o-background-size: 70px 36px;
+        -webkit-background-size: 70px 36px;
+        -moz-background-size: 70px 36px;
+    }
+}
+
+#inst-slide2-left #install_cell {
+    width: 90px;
+    background-image: url('../images/installation_icon.png');
+    background-position: left 10px;
+    background-repeat: no-repeat;
+    background-size: 65px 48px;
+    -o-background-size: 65px 48px;
+    -webkit-background-size: 65px 48px;
+    -moz-background-size: 65px 48px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-left #install_cell {
+        width: 90px;
+        background-image: url('../images/installation_icon@2x.png');
+        background-position: left 10px;
+        background-repeat: no-repeat;
+        background-size: 65px 48px;
+        -o-background-size: 65px 48px;
+        -webkit-background-size: 65px 48px;
+        -moz-background-size: 65px 48px;
+    }
+}
+
+#inst-slide2-right #garanty_cell {
+    background-image: url("../images/garanty_icon.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 83px 112px;
+    -o-background-size: 83px 112px;
+    -webkit-background-size: 83px 112px;
+    -moz-background-size: 83px 112px;
+    padding-top: 120px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-right #garanty_cell {
+        background-image: url("../images/garanty_icon@2x.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 83px 112px;
+        -o-background-size: 83px 112px;
+        -webkit-background-size: 83px 112px;
+        -moz-background-size: 83px 112px;
+        padding-top: 120px;
+    }
+}
+
+#inst-slide2-right #cert_install_cell {
+    background-image: url("../images/cert_installation_icon.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 79px 112px;
+    -o-background-size: 79px 112px;
+    -webkit-background-size: 79px 112px;
+    -moz-background-size: 79px 112px;
+    padding-top: 120px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-right #cert_install_cell {
+        background-image: url("../images/cert_installation_icon@2x.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 79px 112px;
+        -o-background-size: 79px 112px;
+        -webkit-background-size: 79px 112px;
+        -moz-background-size: 79px 112px;
+        padding-top: 120px;
+    }
+}
+
+#inst-slide2-right #knx_standart_cell {
+    background-image: url("../images/knx_standart_icon.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 141px 85px;
+    -o-background-size: 141px 85px;
+    -webkit-background-size: 141px 85px;
+    -moz-background-size: 141px 85px;
+    padding-top: 94px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    #inst-slide2-right #knx_standart_cell {
+        background-image: url("../images/knx_standart_icon@2x.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 141px 85px;
+        -o-background-size: 141px 85px;
+        -webkit-background-size: 141px 85px;
+        -moz-background-size: 141px 85px;
+        padding-top: 94px;
+    }
 }
 
 #docs { margin-top: 104px; }
@@ -1510,6 +1749,7 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
     background-image: url("../images/factoid_left.png");
     background-position: top right;
     background-size: cover;
+    min-height: 170px !important;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1521,6 +1761,7 @@ only screen and (min-resolution: 144dpi) {
         background-image: url("../images/factoid_left@2x.png");
         background-position: top right;
         background-size: cover;
+        min-height: 170px !important;
     }
 }
 
@@ -1529,6 +1770,7 @@ only screen and (min-resolution: 144dpi) {
     background-image: url("../images/factoid_right.png");
     background-position: top left;
     background-size: cover;
+    min-height: 170px !important;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1540,13 +1782,15 @@ only screen and (min-resolution: 144dpi) {
         background-image: url("../images/factoid_right@2x.png");
         background-position: top left;
         background-size: cover;
+        min-height: 170px !important;
     }
 }
 
 #factoid_center {
     text-align: center;
+    height: 250px;
 }
-#f_days { font-size: 134px; font-family: circe_b; }
+#f_days { font-size: 134px; font-family: circe_b; line-height: 144px; }
 #factoid_center p { margin: -2px 0 0; }
 #factoid_center p:first-of-type {
     line-height: 22px;
@@ -2779,7 +3023,7 @@ only screen and (min-resolution: 144dpi) {
 #slide-3 .icons div img { margin-bottom: 15px; }
 */
 
-#install-slide-3 { padding-left: 70px; padding-right: 50px; margin-top: 120px; /*147px;*/ padding-bottom: 50px; /*182px;*/ }
+#install-slide-3 { padding-left: 50px; padding-right: 50px; margin-top: 120px; /*147px;*/ padding-bottom: 50px; /*182px;*/ }
 
 #install-slide-3 div.table { width: 55%; margin: 0 auto }
 
@@ -4445,6 +4689,12 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 10px;
 }
 
+@media ( min-width: 1930px ) {
+    #factoid_center {
+        text-align: center;
+        height: 310px;
+    }
+}
 
 @media (max-width: 1368px) {
     #slogan {
@@ -4574,7 +4824,7 @@ only screen and (min-resolution: 144dpi) {
     #top_menu_ext li, #top_menu li, #bottom_menu li {
         display: inline-block;
         padding-top: 30px;
-        margin-right: 20px;
+        margin-right: 18px;
     }
     #top_menu_ext {
         list-style: none;
@@ -4895,7 +5145,7 @@ only screen and (min-resolution: 144dpi) {
     #slide-4 .visible-sm .factoids tr td:last-of-type, #slide-4 .visible-xs .factoids tr td:last-of-type { text-align: left; padding-left: 30px; }
     /*#slide-4 .visible-sm .factoids tr td:first-of-type { text-align: */
 
-    #install-slide-1 {
+    /*#install-slide-1 {
         background-image: url('../images/install_slide1.jpg');
         background-position: left top;
         background-size: cover;
@@ -4904,7 +5154,7 @@ only screen and (min-resolution: 144dpi) {
         padding-left: 50px;
         color: #fff;
         position: relative;
-    }
+    }*/
 
     #install-slide-1 p {
         width: 400px;
@@ -4926,6 +5176,16 @@ only screen and (min-resolution: 144dpi) {
         display: table-cell;
         padding-right: 20px;
         line-height: 22px;
+    }
+
+    #install-slide-2.hidden-xs {
+        position: relative;
+        margin: 50px 0;
+    }
+
+    #install-slide-3 div.table {
+        width: 70%;
+        margin: 0 auto;
     }
 
     #bottom_menu {
@@ -5105,6 +5365,8 @@ only screen and (min-resolution: 144dpi) {
     .jcarousel-control-next {
         right: 3%;
     }
+
+    #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs { margin-top: 0; }
 }
 
 
@@ -5130,6 +5392,11 @@ only screen and (min-resolution: 144dpi) {
 
     #slide-5 .table .table_cell {
         padding-right: 20px;
+    }
+
+    #install-slide-2.hidden-xs {
+        position: relative;
+        margin: 50px 0;
     }
 
     #dev-slide-1.hidden-xs { margin-top: 0; }
@@ -5238,6 +5505,11 @@ only screen and (min-resolution: 144dpi) {
     .jcarousel-control-next {
         right: 3%;
     }
+
+    #install-slide-3 div.table {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767px) {
@@ -5280,9 +5552,15 @@ only screen and (min-resolution: 144dpi) {
         margin-right: auto;
     }
 
-    #slide-1 p { width: 90%; margin: 1em auto; }
+    #slide-1 p {
+        width: 90%;
+        margin: 1em auto;
+    }
 
-    #dev-slide-1.visible-xs .icons div { margin-bottom: 30px; }
+    #dev-slide-1.visible-xs .icons div {
+        margin-bottom: 30px;
+    }
+
     #dev-slide-1.visible-xs .icons div img {
         margin-bottom: 15px;
         height: auto;
@@ -5330,6 +5608,7 @@ only screen and (min-resolution: 144dpi) {
         margin: 0 15px 45px;
 
     }
+
     #slide-5 h2:first-of-type {
         margin-top: 62px;
         margin-bottom: 15px;
@@ -5340,11 +5619,227 @@ only screen and (min-resolution: 144dpi) {
         margin: 0 auto 50px;
 
     }
-    #slide-5 .table .table_cell { padding: 20px 0; border-bottom: solid 1px #aaa; }
-    #slide-5 .table .table_cell .integr_block_wrap { float: right; text-align: left; }
-    #slide-5 .table .table_row:last-of-type .table_cell { border-bottom: none; }
-    #slide-5 .table .table_row .table_cell:first-of-type { text-align: right; padding-right: 30px; }
-    #slide-5 .table .table_row .table_cell:last-of-type { padding-left: 30px; }
+
+    #slide-5 .table .table_cell {
+        padding: 20px 0;
+        border-bottom: solid 1px #aaa;
+    }
+
+    #slide-5 .table .table_cell .integr_block_wrap {
+        float: right;
+        text-align: left;
+    }
+
+    #slide-5 .table .table_row:last-of-type .table_cell {
+        border-bottom: none;
+    }
+
+    #slide-5 .table .table_row .table_cell:first-of-type {
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    #slide-5 .table .table_row .table_cell:last-of-type {
+        padding-left: 30px;
+    }
+
+    #install-slide-1.visible-xs p {
+        width: 100%;
+        line-height: 22px;
+        margin: 21px 0;
+    }
+
+    #install-slide-1.visible-xs ul {
+        margin: 0;
+        width: auto;
+    }
+
+    #install-slide-2.visible-xs {
+        /* padding-left: 50px; */
+        position: relative;
+        margin-top: 0px;
+        padding: 50px 15px;
+    }
+
+    #install-slide-2.visible-xs #inst-slide2-left .table_cell img {
+        margin-right: 9px;
+        margin-top: 10px;
+    }
+
+    #install-slide-2.visible-xs #inst-slide2-left {
+        width: 66.66666667%;
+        float: left;
+        padding-left: 0px;
+    }
+
+    #install-slide-2.visible-xs #inst-slide2-right {
+        width: 33.33333333%;
+        margin-left: 0;
+    }
+
+    #install-slide-2.visible-xs #prep_5days_cell {
+        width: 25%;
+        background-image: url('../images/prep_5days_icon@2x.png');
+        background-position: right 10px;
+        background-repeat: no-repeat;
+        background-size: 60px 49px;
+        -o-background-size: 60px 49px;
+        -webkit-background-size: 60px 49px;
+        -moz-background-size: 60px 49px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #project_plan_cell {
+        width: 25%;
+        background-image: url('../images/project_plan_icon.png');
+        background-position: right 10px;
+        background-repeat: no-repeat;
+        background-size: 64px 51px;
+        -o-background-size: 64px 51px;
+        -webkit-background-size: 64px 51px;
+        -moz-background-size: 64px 51px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #server_cell {
+        width: 25%;
+        background-image: url('../images/server_icon.png');
+        background-position: right 10px;
+        background-repeat: no-repeat;
+        background-size: 70px 36px;
+        -o-background-size: 70px 36px;
+        -webkit-background-size: 70px 36px;
+        -moz-background-size: 70px 36px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #install_cell {
+        width: 25%;
+        background-image: url('../images/installation_icon.png');
+        background-position: right 10px;
+        background-repeat: no-repeat;
+        background-size: 65px 48px;
+        -o-background-size: 65px 48px;
+        -webkit-background-size: 65px 48px;
+        -moz-background-size: 65px 48px;
+        min-height: 70px;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #install-slide-2.visible-xs #prep_5days_cell {
+            width: 25%;
+            background-image: url('../images/prep_5days_icon@2x.png');
+            background-position: right 10px;
+            background-repeat: no-repeat;
+            background-size: 60px 49px;
+            -o-background-size: 60px 49px;
+            -webkit-background-size: 60px 49px;
+            -moz-background-size: 60px 49px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #project_plan_cell {
+            width: 25%;
+            background-image: url('../images/project_plan_icon@2x.png');
+            background-position: right 10px;
+            background-repeat: no-repeat;
+            background-size: 64px 51px;
+            -o-background-size: 64px 51px;
+            -webkit-background-size: 64px 51px;
+            -moz-background-size: 64px 51px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #server_cell {
+            width: 25%;
+            background-image: url('../images/server_icon@2x.png');
+            background-position: right 10px;
+            background-repeat: no-repeat;
+            background-size: 70px 36px;
+            -o-background-size: 70px 36px;
+            -webkit-background-size: 70px 36px;
+            -moz-background-size: 70px 36px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #install_cell {
+            width: 25%;
+            background-image: url('../images/installation_icon@2x.png');
+            background-position: right 10px;
+            background-repeat: no-repeat;
+            background-size: 65px 48px;
+            -o-background-size: 65px 48px;
+            -webkit-background-size: 65px 48px;
+            -moz-background-size: 65px 48px;
+            min-height: 70px;
+        }
+    }
+
+    #factoid table { width: 100%; }
+
+    #factoid_center {
+        text-align: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #factoid_left {
+        width: 40%;
+        background-image: url("../images/factoid_left.png");
+        background-position: -80% 100%;
+        background-size: 80%;
+        /* min-height: 170px !important; */
+        height: 175px;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_left {
+            width: 40%;
+            background-image: url("../images/factoid_left@2x.png");
+            background-position: -80% 100%;
+            background-size: 80%;
+            /* min-height: 170px !important; */
+            height: 175px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #factoid_right {
+        width: 40%;
+        background-image: url("../images/factoid_right.png");
+        background-position: 200% 0%;
+        background-size: 85%;
+        height: 175px;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_right {
+            width: 40%;
+            background-image: url("../images/factoid_right@2x.png");
+            background-position: 200% 0%;
+            background-size: 85%;
+            height: 175px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #factoid_center p:first-of-type {
+        line-height: 22px;
+        width: 100%;
+        margin: -20px auto 0;
+    }
+
+
+    #install-slide-3 {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+    #install-slide-3 div.table {
+        width: 90%;
+        margin: 0 auto;
+    }
 
     #dev-slide-1 { padding: 0px 50px; }
     #dev-slide-1 p {
@@ -5523,6 +6018,119 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media (max-width: 650px) {
+    #install-slide-2.visible-xs #inst-slide2-left {
+        width: 100%;
+        float: left;
+        padding-left: 15px;
+    }
+    #install-slide-2.visible-xs #inst-slide2-right {
+        display: none;
+    }
+
+    #install-slide-2.visible-xs #prep_5days_cell {
+        width: 16%;
+        background-image: url('../images/prep_5days_icon.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 60px 49px;
+        -o-background-size: 60px 49px;
+        -webkit-background-size: 60px 49px;
+        -moz-background-size: 60px 49px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #project_plan_cell {
+        width: 16%;
+        background-image: url('../images/project_plan_icon.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 64px 51px;
+        -o-background-size: 64px 51px;
+        -webkit-background-size: 64px 51px;
+        -moz-background-size: 64px 51px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #server_cell {
+        width: 16%;
+        background-image: url('../images/server_icon.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 70px 36px;
+        -o-background-size: 70px 36px;
+        -webkit-background-size: 70px 36px;
+        -moz-background-size: 70px 36px;
+        min-height: 70px;
+    }
+
+    #inst-slide2-left #install_cell {
+        width: 16%;
+        background-image: url('../images/installation_icon.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 65px 48px;
+        -o-background-size: 65px 48px;
+        -webkit-background-size: 65px 48px;
+        -moz-background-size: 65px 48px;
+        min-height: 70px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #install-slide-2.visible-xs #prep_5days_cell {
+            width: 16%;
+            background-image: url('../images/prep_5days_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 60px 49px;
+            -o-background-size: 60px 49px;
+            -webkit-background-size: 60px 49px;
+            -moz-background-size: 60px 49px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #project_plan_cell {
+            width: 16%;
+            background-image: url('../images/project_plan_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 64px 51px;
+            -o-background-size: 64px 51px;
+            -webkit-background-size: 64px 51px;
+            -moz-background-size: 64px 51px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #server_cell {
+            width: 16%;
+            background-image: url('../images/server_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 70px 36px;
+            -o-background-size: 70px 36px;
+            -webkit-background-size: 70px 36px;
+            -moz-background-size: 70px 36px;
+            min-height: 70px;
+        }
+
+        #inst-slide2-left #install_cell {
+            width: 16%;
+            background-image: url('../images/installation_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 65px 48px;
+            -o-background-size: 65px 48px;
+            -webkit-background-size: 65px 48px;
+            -moz-background-size: 65px 48px;
+            min-height: 70px;
+        }
+    }
+
+    #inst-slide2-left .col-xs-9 { width: 84%; }
+
+    #install-slide-3 div.table {
+        width: 98%;
+        margin: 0 auto;
+    }
+
     #dev-slide-1 p {
         width: 100%;
         line-height: 22px;
@@ -5639,6 +6247,47 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 50px;
         overflow: visible;
     }
+
+    #factoid_left {
+        width: 40%;
+        background-image: url("../images/factoid_left.png");
+        background-position: -80% 100%;
+        background-size: 80%;
+        /* min-height: 170px !important; */
+        height: 145px;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_left {
+            width: 40%;
+            background-image: url("../images/factoid_left@2x.png");
+            background-position: -80% 100%;
+            background-size: 80%;
+            /* min-height: 170px !important; */
+            height: 145px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #factoid_right {
+        width: 40%;
+        background-image: url("../images/factoid_right.png");
+        background-position: 200% 0%;
+        background-size: 85%;
+        height: 145px;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_right {
+            width: 40%;
+            background-image: url("../images/factoid_right@2x.png");
+            background-position: 200% 0%;
+            background-size: 85%;
+            height: 145px;
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 @media (max-width: 650px) and (orientation: portrait) {
@@ -5707,6 +6356,150 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 20px;
         margin-left: 5%;
     }
+
+    #factoid_left {
+        width: 40%;
+        background-image: url("../images/factoid_left.png");
+        background-position: -80% 100%;
+        background-size: 80%;
+        /* min-height: 170px !important; */
+        height: 125px;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_left {
+            width: 40%;
+            background-image: url("../images/factoid_left@2x.png");
+            background-position: -80% 100%;
+            background-size: 80%;
+            /* min-height: 170px !important; */
+            height: 125px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #factoid_right {
+        width: 40%;
+        background-image: url("../images/factoid_right.png");
+        background-position: 200% 0%;
+        background-size: 85%;
+        height: 125px;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_right {
+            width: 40%;
+            background-image: url("../images/factoid_right@2x.png");
+            background-position: 200% 0%;
+            background-size: 85%;
+            height: 125px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #install-slide-2.visible-xs #prep_5days_cell {
+        width: 100%;
+        background-image: url('../images/prep_5days_icon@2x.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 121px 100px;
+        -o-background-size: 121px 100px;
+        -webkit-background-size: 121px 100px;
+        -moz-background-size: 121px 100px;
+        min-height: 120px;
+    }
+
+    #inst-slide2-left #project_plan_cell {
+        width: 100%;
+        background-image: url('../images/project_plan_icon@2x.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 128px 103px;
+        -o-background-size: 128px 103px;
+        -webkit-background-size: 128px 103px;
+        -moz-background-size: 128px 103px;
+        min-height: 123px;
+    }
+
+    #inst-slide2-left #server_cell {
+        width: 100%;
+        background-image: url('../images/server_icon@2x.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 140px 73px;
+        -o-background-size: 140px 73px;
+        -webkit-background-size: 140px 73px;
+        -moz-background-size: 140px 73px;
+        min-height: 93px;
+    }
+
+    #inst-slide2-left #install_cell {
+        width: 100%;
+        background-image: url('../images/installation_icon@2x.png');
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 130px 96px;
+        -o-background-size: 130px 96px;
+        -webkit-background-size: 130px 96px;
+        -moz-background-size: 130px 96px;
+        min-height: 116px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #install-slide-2.visible-xs #prep_5days_cell {
+            width: 100%;
+            background-image: url('../images/prep_5days_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 121px 100px;
+            -o-background-size: 121px 100px;
+            -webkit-background-size: 121px 100px;
+            -moz-background-size: 121px 100px;
+            min-height: 120px;
+        }
+
+        #inst-slide2-left #project_plan_cell {
+            width: 100%;
+            background-image: url('../images/project_plan_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 128px 103px;
+            -o-background-size: 128px 103px;
+            -webkit-background-size: 128px 103px;
+            -moz-background-size: 128px 103px;
+            min-height: 123px;
+        }
+
+        #inst-slide2-left #server_cell {
+            width: 100%;
+            background-image: url('../images/server_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 140px 73px;
+            -o-background-size: 140px 73px;
+            -webkit-background-size: 140px 73px;
+            -moz-background-size: 140px 73px;
+            min-height: 93px;
+        }
+
+        #inst-slide2-left #install_cell {
+            width: 100%;
+            background-image: url('../images/installation_icon@2x.png');
+            background-position: center 10px;
+            background-repeat: no-repeat;
+            background-size: 130px 96px;
+            -o-background-size: 130px 96px;
+            -webkit-background-size: 130px 96px;
+            -moz-background-size: 130px 96px;
+            min-height: 116px;
+        }
+    }
+
+    #inst-slide2-left .col-xs-3, #inst-slide2-left .col-xs-9 { width: 100%; }
+    #inst-slide2-left .row { margin-bottom: 10px; }
+    #inst-slide2-left p.text-title + p { margin-top: 10px; }
 }
 
 @media (max-width: 479px) {
@@ -5823,8 +6616,8 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 45px;
     }*/
 
-    #dev-slide-1 { padding: 0px 15px; }
-    #dev-slide-1 h1 {
+    #dev-slide-1, #install-slide-1 { padding: 0px 15px; }
+    #dev-slide-1 h1, #install-slide-1 h1 {
         font-size: 39px;
         font-family: circe_b;
         padding-top: 29px;
@@ -5915,6 +6708,56 @@ only screen and (min-resolution: 144dpi) {
         margin-top: 0px;
         margin-bottom: 50px;
         overflow: visible;
+    }
+
+    #install-slide-3 { padding-left: 15px; padding-right: 15px; margin-top: 30px; /*147px;*/ padding-bottom: 50px; /*182px;*/ }
+
+    #install-slide-2.visible-xs {
+        /* padding-left: 50px; */
+        position: relative;
+        margin-top: 0px;
+        padding: 50px 15px 0;
+    }
+
+    #factoid_left {
+        width: 40%;
+        background-image: url("../images/factoid_left.png");
+        background-position: -80% 100%;
+        background-size: 80%;
+        /* min-height: 170px !important; */
+        height: 110px;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_left {
+            width: 40%;
+            background-image: url("../images/factoid_left@2x.png");
+            background-position: -80% 100%;
+            background-size: 80%;
+            /* min-height: 170px !important; */
+            height: 110px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #factoid_right {
+        width: 40%;
+        background-image: url("../images/factoid_right.png");
+        background-position: 200% 0%;
+        background-size: 85%;
+        height: 110px;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
+        #factoid_right {
+            width: 40%;
+            background-image: url("../images/factoid_right@2x.png");
+            background-position: 200% 0%;
+            background-size: 85%;
+            height: 110px;
+            background-repeat: no-repeat;
+        }
     }
 }
 

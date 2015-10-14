@@ -16,7 +16,38 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+    </script>
+
+
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script>
+        if(isMobile.any()){
+            $("head link[href = '../css/main.css']").attr('href', '../css/main_mobile.css');
+        }
+    </script>
+
 
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
@@ -86,26 +117,13 @@
     </script>
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029738348169&amp;cd[value]=0.00&amp;cd[currency]=RUB&amp;noscript=1" /></noscript>
 
-    <!--script>
-        ChatraID = 'uqSiLhJ2pHG4Yf9H2';
-        (function(d, w, c) {
-            var n = d.getElementsByTagName('script')[0],
-                    s = d.createElement('script');
-            w[c] = w[c] || function() {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            s.async = true;
-            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
-            + '//chat.chatra.io/chatra.js';
-            n.parentNode.insertBefore(s, n);
-        })(document, window, 'Chatra');
-    </script-->
+
 </head>
 
 <body>
     <img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;"/>
     <div class="frame">
-        <div id="head">
+        <div id="head" class="hidden-xs">
             <div id="langs" >
                 <span class="active">Ru</span>
                 <span><a href="/en/installation.html">En</a></span>
@@ -113,9 +131,10 @@
 
             <a id="logo" href="/ru" >THRONE Project</a>
 
-            <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
-                <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
+            <div class="callback visible-lg visible-md">
+                <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
+                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
             </div>
 
             <ul id="top_menu_ext">
@@ -125,33 +144,38 @@
                 <li><a href="about.html" title="О компании">О компании</a></li>
             </ul>
         </div>
+
+        <div id="head" class=" visible-xs" >
+            <nav class="navbar" id="top_menu_ext" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a id="logo" href="/ru" >THRONE Project</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav" id="top_menu_ext">
+                            <li class="active">Как мы работаем</li>
+                            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+                            <li><a href="about.html" title="О компании">О компании</a></li>
+                            <li>
+                                <div id="langs">
+                                    <span class="active">Ru</span>
+                                    <span><a href="/en/installation.html">En</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
 
-    <!--div class="frame">
-        <div id="head">
-            <div id="langs">
-                <span class="active">Ru</span>
-                <span><a href="/en">En</a></span>
-            </div>
-
-            <a id="logo" href="/" >THRONE Project</a>
-            <span id="top_slogan">Проектируем и устанавливаем<br>системы 3D-управления для дома или здания</span>
-
-            <div class="callback">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal">Заказать обратный звонок</span>
-                <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> или +7 (495) 255-0-777</span>
-            </div>
-
-            <ul id="top_menu_ext">
-                <li class="active">Установка</li>
-                <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-                <li><a href="partners.html" title="Партнерам">Партнерам</a></li>
-                <li><a href="about.html" title="О компании">О компании</a></li>
-            </ul>
-        </div>
-    </div-->
-
-    <div id="install-slide-1" class="frame">
+    <div id="install-slide-1" class="frame hidden-xs">
         <div class="overlay"></div>
         <div class="content">
             <h1>Как мы работаем</h1>
@@ -169,7 +193,7 @@
             <p>На месте:</p>
             <ul>
                 <li>организуем поставку оборудования с&nbsp;минимумом посредников;</li>
-                <li>Организуем команду профессиональных инженеров и&nbsp;монтажников для работы на&nbsp;объекте;</li>
+                <li>Организуем команду профессиональных инженеров и&nbsp;монтажников для&nbsp;работы на&nbsp;объекте;</li>
                 <li>собираем шкаф с&nbsp;электроникой;</li>
                 <li>устанавливаем систему "умный дом" на&nbsp;объекте;</li>
                 <li>производим настройку и&nbsp;пуско-наладку оборудования.</li>
@@ -191,11 +215,41 @@
 
     </div>
 
-    <div id="install-slide-2" class="frame">
+    <div id="install-slide-1" class="frame visible-xs">
+        <img src="../images/install_slide1xs.jpg" class="img-responsive" alt=""/>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Как мы работаем</h1>
+                    <p>Мы работаем иначе, чем большинство компаний на&nbsp;рынке. Мы не&nbsp;станем устраивать бесконечные встречи, задача которых только в&nbsp;том,
+                        чтобы побольше "вытрясти" из&nbsp;клиента. Мы делаем часть работы дистанционно, чтобы сэкономить свое и&nbsp;ваше время, а&nbsp;часть работы - на&nbsp; месте.
+                        Благодаря использованию <nobr>3D-интерфейса</nobr> THRONE, еще до&nbsp;начала работ вы точно представляете, как будет выглядеть и&nbsp;работать система вашего "умного дома".</p>
+                    <p>Дистанционно:</p>
+                    <ul>
+                        <li><strong>бесплатно</strong> разрабатываем 3D демо-версию на&nbsp;основе вашей архитектуры (по&nbsp;планам помещений);</li>
+                        <li><strong>бесплатно</strong> делаем спецификацию и&nbsp;смету проекта;</li>
+                        <li>после утверждения подписываем договор;</li>
+                        <li>разрабатываем проектную документацию &mdash; схему прокладки кабеля, описываем всю инженерную "начинку".</li>
+                    </ul>
+
+                    <p>На месте:</p>
+                    <ul>
+                        <li>организуем поставку оборудования с&nbsp;минимумом посредников;</li>
+                        <li>Организуем команду профессиональных инженеров и&nbsp;монтажников для&nbsp;работы на&nbsp;объекте;</li>
+                        <li>собираем шкаф с&nbsp;электроникой;</li>
+                        <li>устанавливаем систему "умный дом" на&nbsp;объекте;</li>
+                        <li>производим настройку и&nbsp;пуско-наладку оборудования.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="install-slide-2" class="frame hidden-xs">
         <div id="inst-slide2-left">
             <div class="table">
                 <div class="table_row">
-                    <div class="table_cell"><img src="../images/prep_5days_icon.png" alt=""/></div>
+                    <div class="table_cell" id="prep_5days_cell">&nbsp;</div>
                     <div class="table_cell">
                         <p class="text-title">Подготовка предложения с 3D-демо и ценой</p>
                         <p>Получив от&nbsp;вас планы помещений, мы бесплатно создадим 3D-демо и&nbsp;представим предварительную смету проекта.
@@ -204,7 +258,7 @@
                     </div>
                 </div>
                 <div class="table_row">
-                    <div class="table_cell"><img src="../images/project_plan_icon.png" alt=""/></div>
+                    <div class="table_cell" id="project_plan_cell">&nbsp;</div>
                     <div class="table_cell">
                         <p class="text-title">Разработка проектной документации</p>
                         <p>Проектная документация - это основа любого "умного дома". Это набор инженерных документов, описывающих всю электронную
@@ -212,7 +266,7 @@
                     </div>
                 </div>
                 <div class="table_row">
-                    <div class="table_cell"><img src="../images/server_icon.png" alt=""/></div>
+                    <div class="table_cell" id="server_cell">&nbsp;</div>
                     <div class="table_cell">
                         <p class="text-title">Заказ и поставка оборудования</p>
                         <p>Датчики, контроллеры, приводы, счетчики и другое оборудование "умного дома", указанное в спецификации и проектной документации,
@@ -220,7 +274,7 @@
                     </div>
                 </div>
                 <div class="table_row">
-                    <div class="table_cell"><img src="../images/installation_icon.png" alt=""/></div>
+                    <div class="table_cell" id="install_cell">&nbsp;</div>
                     <div class="table_cell">
                         <p class="text-title">Монтаж, программирование и&nbsp;пуско-наладка</p>
                         <p>Прокладываем кабель, собираем электрощит, подключаем к нему исполнительные устройства. Программируем устройства всей системы.
@@ -232,32 +286,111 @@
         <div id="inst-slide2-right">
             <div class="icons">
                 <div class="icons_row">
-                    <div class="icons_cell"><img src="../images/garanty_icon.png" alt=""/></div>
-                    <div class="icons_cell"><span>Отвечаем за&nbsp;работу<br>гарантией</span></div>
+                    <div class="icons_cell" id="garanty_cell"><span>Отвечаем за&nbsp;работу<br>гарантией</span></div>
                 </div>
 
                 <div class="icons_row">
-                    <div class="icons_cell"><img src="../images/cert_installation_icon.png" alt=""/></div>
-                    <div class="icons_cell"><span>Сертифицированная<br/>установка</span></div>
+                    <div class="icons_cell" id="cert_install_cell"><span>Сертифицированная<br/>установка</span></div>
                 </div>
 
                 <div class="icons_row">
-                    <div class="icons_cell"><img src="../images/knx_standart_icon.png" alt=""/></div>
-                    <div class="icons_cell"><span>Оборудование<br/>стандарта KNX</span></div>
+                    <div class="icons_cell" id="knx_standart_cell"><span>Оборудование<br/>стандарта KNX</span></div>
                 </div>
-         </div>
+            </div>
         </div>
-
     </div>
-    <div class="table" id="factoid">
+
+    <div id="install-slide-2" class="frame visible-xs">
+        <div class="container">
+            <div class="row">
+                <div id="inst-slide2-left" class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-3" id="prep_5days_cell"></div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Подготовка предложения с 3D-демо и ценой</p>
+                            <p>Получив от&nbsp;вас планы помещений, мы бесплатно создадим 3D-демо и&nbsp;представим предварительную смету проекта.
+                                Вы увидите на&nbsp;планшете свой "умный дом" с&nbsp;полным набором функций, а&nbsp;также список необходимого оборудования с&nbsp;расценками.
+                                <span class="marker"><nobr>~ 1 неделя</nobr></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="project_plan_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Разработка проектной документации</p>
+                            <p>Проектная документация - это основа любого "умного дома". Это набор инженерных документов, описывающих всю электронную
+                                "начинку" системы и&nbsp;методику её монтажа. <span class="marker"><nobr>~ 1 месяц</nobr></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="server_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Заказ и поставка оборудования</p>
+                            <p>Датчики, контроллеры, приводы, счетчики и другое оборудование "умного дома", указанное в спецификации и проектной документации,
+                                будет заказано и поставлено по наилучшим ценам. <span class="marker"><nobr>~ 1 месяц</nobr>, в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3" id="install_cell">&nbsp;</div>
+                        <div class="col-xs-9">
+                            <p class="text-title">Монтаж, программирование и&nbsp;пуско-наладка</p>
+                            <p>Прокладываем кабель, собираем электрощит, подключаем к нему исполнительные устройства. Программируем устройства всей системы.
+                                Подсоединяем сервер и&nbsp;планшеты. <span class="marker"><nobr>~ 1 месяц</nobr>, частично в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="inst-slide2-right" class="col-xs-4">
+                    <div class="icons">
+                        <div class="icons_row">
+                            <div class="icons_cell" id="garanty_cell"><span>Отвечаем за&nbsp;работу<br>гарантией</span></div>
+                        </div>
+
+                        <div class="icons_row">
+                            <div class="icons_cell" id="cert_install_cell"><span>Сертифицированная<br/>установка</span></div>
+                        </div>
+
+                        <div class="icons_row">
+                            <div class="icons_cell" id="knx_standart_cell"><span>Оборудование<br/>стандарта KNX</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table hidden-xs" id="factoid">
         <div class="table_row">
             <div class="table_cell" id="factoid_left"></div>
             <div class="table_cell" id="factoid_center">
                 <div id="f_days">45</div>
-                <p><nobr>дней в среднем уходит</nobr><br>на установку "умного дома <span class="capital">ТРОН</span>".</p><p><nobr>От звонка клиента до шеф-монтажа</nobr>.</p>
+                <p><nobr>дней в среднем уходит</nobr><br>на установку "умного дома <span class="capital">ТРОН</span>".</p>
+                <p><nobr>От звонка клиента до шеф-монтажа</nobr>.</p>
             </div>
             <div class="table_cell" id="factoid_right"></div>
         </div>
+    </div>
+
+    <div class="table visible-xs" id="factoid">
+        <table>
+            <tbody>
+                <tr>
+                    <td id="factoid_left"></td>
+                </tr>
+                <tr>
+                    <td id="factoid_center">
+                        <div id="f_days">45</div>
+                        <p><nobr>дней в среднем уходит</nobr><br>на установку "умного дома <span class="capital">ТРОН</span>".</p>
+                        <p><nobr>От звонка клиента до шеф-монтажа</nobr>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="factoid_right"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div id="install-slide-3" class="frame">
@@ -300,7 +433,7 @@
         </div>
     </div>
 
-    <footer class="minor">
+    <footer class="minor visible-md visible-lg">
         &copy; 2015 <span id="brand">THRONE Project</span>
         <ul id="bottom_menu">
             <li><a href="/ru" title="Главная">Главная</a></li>
@@ -317,6 +450,46 @@
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
+    </footer>
+
+    <footer class="minor visible-sm ">
+        <ul id="bottom_menu">
+            <li><a href="/ru" title="Главная">Главная</a></li>
+            <li class="active">Как мы работаем</li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li><a href="about.html" title="О компании">О компании</a></li>
+        </ul>
+
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+    </footer>
+
+    <footer class="minor visible-xs">
+        <ul id="bottom_menu">
+            <li><a href="/ru" title="Главная">Главная</a></li>
+            <li class="active">Как мы работаем</li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
+            <li><a href="about.html" title="О компании">О компании</a></li>
+        </ul>
+
+        <div id="footer_socials">
+            <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
+            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
+            <!--a href="#" id="soc_instagram"></a-->
+            <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
+            <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
+        </div>
+        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
     </footer>
 
     <div id="callback_wrapper">
@@ -418,7 +591,6 @@
         </div>
     </div>
 
-
     <div class="modal fade" id="mySuccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -436,7 +608,7 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <script src="../js/jquery-2.1.3.min.js"></script>
+    <!--script src="../js/jquery-2.1.3.min.js"></script-->
     <script src="../js/jquery-ui.min.js"></script>
     <!--script src="js/jquery-2.1.3.min.js"></script-->
     <!--script src="js/jquery-ui.js"></script-->
@@ -455,7 +627,13 @@
     <!-- /smooth scrolling -->
     <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        if(isMobile.any()){
+            $("<script type='text/javascript' src='../js/main_mobile.js'><\/script>").appendTo('body');
+        } else {
+            $("<script type='text/javascript' src='../js/main.js'><\/script>").appendTo('body');
+        }
+    </script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
