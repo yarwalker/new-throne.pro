@@ -704,6 +704,7 @@ only screen and (min-resolution: 144dpi) {
     z-index: 10;
     position: relative;
     width: 100%;
+    direction: rtl;
 }
 #slide-1 .flex-direction-nav a { border-bottom: none !important; }
 

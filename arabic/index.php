@@ -117,13 +117,6 @@ $detect = new Mobile_Detect();
 <div class="frame">
     <div id="head" class=" hidden-xs">
 
-
-        <!--ul id="top_menu_ext">
-            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
-            <li><a href="developers.html" title="للمطورين">للمطورين</a></li>
-            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
-        </ul-->
-
         <div id="langs" class="form-group">
             <select class="form-control">
                 <option value="ru" >RU</option>
@@ -196,7 +189,7 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
-                        <p>واجهة تحكم (انتيرفيس) موحدة ثلاثية الأبعاد للتحكم عن بعد بالإنارة، الستائر،التكييف والتدفئة،أنظمة الحماية والأجهزة الصوتية والمرئية وغيرها من أنظمة المنزل الذكي .</p>
+                        <p>واجهة تحكم (انتيرفيس) موحدة ثلاثية الأبعاد للتحكم عن بعد بالإنارة، الستائر،التكييف والتدفئة،أنظمة الحماية والأجهزة الصوتية والمرئية وغيرها من أنظمة المنزل الذكي</p>
                     </div>
                 </li>
   	    		<li>
@@ -213,7 +206,8 @@ $detect = new Mobile_Detect();
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية</h2>
-                        <p>النظام بإمكانه إدارة شقة صغيرة أو دار سكن ضخم . عدد أجهزة البيت الذكي التي يمكن توصيلها غير محدود ، كذلك الامر بالنسبة لأجهزة (التابلت) و الهواتف الذكية ( السمارتفون) !</p>
+                        <p>النظام بإمكانه إدارة شقة صغيرة أو دار سكن ضخم . عدد أجهزة البيت الذكي التي يمكن توصيلها غير محدود ، كذلك الامر بالنسبة لأجهزة (التابلت) و الهواتف الذكية ( السمارتفون) !
+                        </p>
                     </div>
   	    		</li>
   	    		<li>
@@ -231,9 +225,9 @@ $detect = new Mobile_Detect();
         <p class="text-center">البيت الذكي من خلال "مشروع ترون" ، هوعبارةٌ عن مجموعة من الوظائف المفهومة  تماما و التي بالفعل نحتاجها في حياتنا اليومية.</p>
         <div class="text-center" id="first_frame_factoids">
             <div>
-                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title=" التحكم بنظام الإنارة الذكية">
-                    التحكم بنظام <br>الإنارة الذكية<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="الحماية و المراقبة">
+                    الحماية <br>و المراقبة<br>
+                    <img src="../images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
             <div>
@@ -243,9 +237,9 @@ $detect = new Mobile_Detect();
                 </a>
             </div>
             <div>
-                <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="الحماية و المراقبة">
-                    الحماية <br>و المراقبة<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                <a href="#tabs-1" data-slide="4" class="inner_anchor light" title=" التحكم بنظام الإنارة الذكية">
+                    التحكم بنظام <br>الإنارة الذكية<br>
+                    <img src="../images/light_slide_control.png" alt=""/>
                 </a>
             </div>
         </div>
