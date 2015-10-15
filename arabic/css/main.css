@@ -485,7 +485,7 @@ only screen and (min-resolution: 144dpi) {
 #langs a { text-align: center; line-height: 15px; margin-bottom: 3px;}
 
 #logo {
-    margin: 25px 27px 0 0;
+    margin: 25px 0 0;
     float: right;
     background-image: url('../../images/logo.png');
     background-position: left top;
@@ -523,7 +523,7 @@ only screen and (min-resolution: 144dpi) {
     display: inline-block;
 }
 
-#top_menu_ext { list-style: none; display: block; padding-left: 0; margin-left: 287px; margin-top: 0px; }
+#top_menu_ext { list-style: none; display: block; padding-right: 0; margin-right: 45px; margin-top: 0px; float: right; }
 
 #top_menu, #bottom_menu { list-style: none; display: inline-block; padding-left: 0; }
 #top_menu_ext li, #top_menu li, #bottom_menu li { display: inline-block; padding-top: 30px; margin-right: 29px; }
@@ -537,7 +537,7 @@ only screen and (min-resolution: 144dpi) {
 
 .callback {
     float: right;
-    margin-right: 75px;
+    margin-right: 165px;
     padding-top: 23px;
     font-size: 13px;
     text-align: center;
@@ -625,6 +625,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
     width: 70%;
     color: #000;
+    direction: rtl;
 }
 
 #slide-1 p {

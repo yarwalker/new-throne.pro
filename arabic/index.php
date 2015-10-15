@@ -116,16 +116,7 @@ $detect = new Mobile_Detect();
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
-        <!--div id="langs" >
-            <span class="active">Ru</span>
-            <span><a href="/en">En</a></span>
-        </div-->
 
-        <!--div class="callback visible-lg visible-md">
-            <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
-            <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a>&nbsp;&nbsp;+7 (495) 255-0-777</span>
-        </div-->
 
         <!--ul id="top_menu_ext">
             <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
@@ -143,7 +134,17 @@ $detect = new Mobile_Detect();
 
         <a id="logo" href="/arabic" >THRONE Project</a>
 
+        <ul id="top_menu_ext">
+            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+            <li><a href="developers.html" title="للمطورين">للمطورين</a></li>
+            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+        </ul>
 
+        <div class="callback visible-lg visible-md">
+            <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
+            <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a>&nbsp;&nbsp;+7 (495) 255-0-777</span>
+        </div>
 
     </div>
 
@@ -183,11 +184,11 @@ $detect = new Mobile_Detect();
         </nav>
     </div>
 </div>
-<!--
+
 <div id="slide-1" data-slide="1" class="frame animation" >
     <?php if(!$detect->isMobile()): ?>
 
-        <h1 id="slogan">الحل الأمث يت الذكي على أساس واجهة تحكم(انتيرفيس) ثلاثية الأبعاد وخدمة تثبيته</h1>
+        <h1 id="slogan">الحل الأمثل للبيت الذكي على أساس واجهة تحكم(انتيرفيس) ثلاثية الأبعاد وخدمة تثبيته</h1>
         <div class="flexslider">
             <ul class="slides">
                 <li>
@@ -474,26 +475,24 @@ $detect = new Mobile_Detect();
     <div class="bottom_line"></div>
 </div>
 
--->
+
 
 
 
 <footer class="hidden-xs">
     &copy; 2015 <span id="brand">THRONE Project</span>
     <ul id="bottom_menu">
-        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
-        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-        <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-        <li><a href="about.html" title="О компании">О компании</a></li>
+        <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+        <li><a href="developers.html" title="للمطورين">للمطورين</a></li>
+        <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
     </ul>
 </footer>
 
 <footer class="visible-xs">
     <ul id="bottom_menu">
-        <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
-        <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-        <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-        <li><a href="about.html" title="О компании">О компании</a></li>
+        <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+        <li><a href="developers.html" title="للمطورين">للمطورين</a></li>
+        <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
     </ul>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
