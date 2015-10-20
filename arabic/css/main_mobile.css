@@ -116,14 +116,14 @@ div.frame:first-of-type {
 
 /* slide-1 */
 /*#slide-1 {
-    background: #eaeaea url('../images/slide1_rect.jpg') no-repeat top right;
+    background: #eaeaea url('../../images/slide1_rect.jpg') no-repeat top right;
     background-size: contain;
     overflow: hidden;
     height: auto;
 } */
 
 #interier {
-    background: url('../images/interier.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -141,7 +141,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #interier {
-        background: url('../images/interier@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -156,7 +156,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .visible-tablet #interier {
-    background: url('../images/interier_tablet.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier_tablet.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -174,7 +174,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #interier {
-        background: url('../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -412,7 +412,7 @@ only screen and (min-resolution: 144dpi) {
 /*#slide-1 .bcg {position: fixed; z-index: 999; top: -30px; color: #fff; padding-right: 105px; padding-left: 100px; }*/
 
 #slide-1 {
-    /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     /*background-color: #eaeaea;*/
     background-size: contain;
@@ -433,7 +433,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-1 {
-        /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         /*background-color: #eaeaea;*/
         background-size: contain;
@@ -450,26 +450,26 @@ only screen and (min-resolution: 144dpi) {
 
 #langs {
     font-size: 14px;
-    padding: 24px 75px 20px 20px;
-    float: left;
+    padding: 24px 20px 20px 75px;
+    float: right;
 }
 #langs span { height: 28px; width: 28px; display: block; text-align: center; margin-bottom: 4px; }
 
-#langs span.active { background: url('../images/lang_active.png') no-repeat; padding-top: 3px; }
+#langs span.active { background: url('../../images/lang_active.png') no-repeat; padding-top: 3px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #langs span.active { background: url('../images/lang_active@2x.png') no-repeat; padding-top: 3px; background-size: 28px 28px; width: 28px; height: 28px; }
+    #langs span.active { background: url('../../images/lang_active@2x.png') no-repeat; padding-top: 3px; background-size: 28px 28px; width: 28px; height: 28px; }
 }
 
 #langs a { text-align: center; line-height: 15px; margin-bottom: 3px;}
 
 #logo {
-    margin: 25px 27px 0 0;
-    float: left;
-    background-image: url('../images/logo.png');
+    margin: 25px 0 0;
+    float: right;
+    background-image: url('../../images/logo.png');
     background-position: left top;
     background-repeat: no-repeat;
     width: 136px;
@@ -487,7 +487,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #logo {
-        background-image: url('../images/logo@2x.png');
+        background-image: url('../../images/logo@2x.png');
         background-size: 124px 23px;
         background-repeat: no-repeat;
         width: 124px;
@@ -505,7 +505,14 @@ only screen and (min-resolution: 144dpi) {
     display: inline-block;
 }
 
-#top_menu_ext { list-style: none; display: block; padding-left: 0; margin-left: 287px; margin-top: 0px; }
+#top_menu_ext {
+    list-style: none;
+    display: block;
+    padding-right: 0;
+    margin-right: 45px;
+    margin-top: 0px;
+    float: right;
+}
 
 #top_menu, #bottom_menu { list-style: none; display: inline-block; padding-left: 0; }
 #top_menu_ext li, #top_menu li, #bottom_menu li { display: inline-block; padding-top: 30px; margin-right: 29px; }
@@ -518,8 +525,9 @@ only screen and (min-resolution: 144dpi) {
 #brand { margin-left: 20px; }
 
 .callback {
-    float: right;
-    margin-right: 75px;
+    float: left;
+    /*margin-right: 165px;*/
+    margin-left: 75px;
     padding-top: 23px;
     font-size: 13px;
     text-align: center;
@@ -911,7 +919,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* installation */
 #install-slide-1 {
-    background-image: url('../images/install_slide1.jpg');
+    background-image: url('../../images/install_slide1.jpg');
     background-position: left top;
     background-size: cover;
    /* min-height: 904px;
@@ -926,7 +934,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #install-slide-1 {
-        background-image: url('../images/install_slide1@2x.jpg');
+        background-image: url('../../images/install_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
       /*  min-height: 904px;
@@ -938,7 +946,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #install-slide-1.hidden-xs {
-    /*background-image: url('../images/dev_slide1.jpg');
+    /*background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;*/
     /*min-height: 840px;*/
@@ -1012,7 +1020,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* partners */
 #partners-slide-1 {
-    background-image: url('../images/partners_slide1.jpg');
+    background-image: url('../../images/partners_slide1.jpg');
     background-position: left top;
     background-size: cover;
     min-height: 690px;
@@ -1027,7 +1035,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #partners-slide-1 {
-        background-image: url('../images/partners_slide1@2x.jpg');
+        background-image: url('../../images/partners_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 690px;
@@ -1118,7 +1126,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* developers */
 #dev-slide-1.hidden-xs {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;
     /*min-height: 840px;*/
@@ -1134,7 +1142,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-1.hidden-xs {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         /*min-height: 840px;*/
@@ -1147,7 +1155,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-1.visible-xs {
-    /*background-image: url('../images/dev_slide1.jpg');
+    /*background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;*/
     /*min-height: 840px;*/
@@ -1164,7 +1172,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-1.visible-xs {
-        /*background-image: url('../images/dev_slide1@2x.jpg');
+        /*background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;*/
         /*min-height: 840px;*/
@@ -1215,7 +1223,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* dev_test */
 #dev1-slide-1 {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;
     min-height: 840px;
@@ -1230,7 +1238,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev1-slide-1 {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         min-height: 840px;
@@ -1452,13 +1460,13 @@ a.ios_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/ios_app_icon.png");
+    background-image: url("../../images/ios_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     margin-bottom: 17px;
     margin-top: 8px;
     width: 250px;
-
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1471,7 +1479,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/ios_app_icon@2x.png");
+        background-image: url("../../images/ios_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 14%;
@@ -1481,6 +1489,7 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 17px;
         margin-top: 8px;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1490,11 +1499,12 @@ a.android_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/android_app_icon.png");
+    background-image: url("../../images/android_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     /*background-size: 90%;*/
     width: 250px;
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1507,7 +1517,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/android_app_icon@2x.png");
+        background-image: url("../../images/android_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 14%;
@@ -1515,6 +1525,7 @@ only screen and (min-resolution: 144dpi) {
         /*-webkit-background-size: 17%;*/
         -o-background-size: 14%;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1550,7 +1561,7 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
 
 #inst-slide2-left #prep_5days_cell {
     width: 90px;
-    background-image: url('../images/prep_5days_icon.png');
+    background-image: url('../../images/prep_5days_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 60px 49px;
@@ -1565,7 +1576,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #prep_5days_cell {
         width: 90px;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -1577,7 +1588,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #project_plan_cell {
     width: 90px;
-    background-image: url('../images/project_plan_icon.png');
+    background-image: url('../../images/project_plan_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 64px 51px;
@@ -1592,7 +1603,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #project_plan_cell {
         width: 90px;
-        background-image: url('../images/project_plan_icon@2x.png');
+        background-image: url('../../images/project_plan_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -1604,7 +1615,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #server_cell {
     width: 90px;
-    background-image: url('../images/server_icon.png');
+    background-image: url('../../images/server_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 70px 36px;
@@ -1619,7 +1630,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #server_cell {
         width: 90px;
-        background-image: url('../images/server_icon@2x.png');
+        background-image: url('../../images/server_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -1631,7 +1642,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #install_cell {
     width: 90px;
-    background-image: url('../images/installation_icon.png');
+    background-image: url('../../images/installation_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 65px 48px;
@@ -1646,7 +1657,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #install_cell {
         width: 90px;
-        background-image: url('../images/installation_icon@2x.png');
+        background-image: url('../../images/installation_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -2677,7 +2688,7 @@ only screen and (min-resolution: 144dpi) {
 /*#watch_video img { vertical-align: bottom; }*/
 
 
-#watch_btn  { display: inline-block; background-image: url('../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_btn  { display: inline-block; background-image: url('../../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2686,7 +2697,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video@2x.png');
+        background-image: url('../../images/watch_video@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2695,7 +2706,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 
-#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2704,7 +2715,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_video a:hover + #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video_hover@2x.png');
+        background-image: url('../../images/watch_video_hover@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2830,7 +2841,7 @@ body.modal-open {
     /* min-height: 320px; */
     /* height: 100%; */
     /* width: 100%; */
-    /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+    /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
     position: relative;
     margin: 70px auto 0;
     max-width: 1600px;
@@ -2850,7 +2861,7 @@ body.modal-open {
     max-height: 407px;
     height: 100%;
     width: 100%;
-    background: url('../images/ipad_slide2.jpg') no-repeat center -4px;
+    background: url('../../images/ipad_slide2.jpg') no-repeat center -4px;
     position: relative;
     margin: 207px auto 0;
 }
@@ -2861,7 +2872,7 @@ body.modal-open {
     text-align: center;
 }
 
-#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; }
+#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; margin-bottom: 20px; }
 #notes div:last-of-type { margin-right: 0; }
 #notes div img { margin-right: 15px; vertical-align: top; display: inline-block; margin-bottom: 10px; }
 #notes div span { display: inline-block; }
@@ -2921,7 +2932,7 @@ body.modal-open {
 /*
 #slide-3-left {
     height: 100%;
-    background: #3f3e43 url('../images/slide3_left.jpg') no-repeat left center;
+    background: #3f3e43 url('../../images/slide3_left.jpg') no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2937,7 +2948,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-left {
         height: 100%;
-        background: #3f3e43 url('../images/slide3_left@2x.jpg') no-repeat left center;
+        background: #3f3e43 url('../../images/slide3_left@2x.jpg') no-repeat left center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -2958,7 +2969,7 @@ only screen and (min-resolution: 144dpi) {
 
 #slide-3-right {
     height: 100%;
-    background: #d7c5ad url('../images/slide3_right.jpg') no-repeat center bottom;
+    background: #d7c5ad url('../../images/slide3_right.jpg') no-repeat center bottom;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -2973,7 +2984,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-right {
         height: 100%;
-        background: #d7c5ad url('../images/slide3_right@2x.jpg') no-repeat center bottom;
+        background: #d7c5ad url('../../images/slide3_right@2x.jpg') no-repeat center bottom;
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
@@ -3125,7 +3136,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #about-slide-3 #project_title:hover { cursor: pointer; }
 #about-slide-3 #proj_list_icon {
-    background: url('../images/proj_list_icon.png') no-repeat;
+    background: url('../../images/proj_list_icon.png') no-repeat;
     width: 5px;
     height: 12px;
     margin: 0px 0 0 10px;
@@ -3171,13 +3182,13 @@ only screen and (min-resolution: 144dpi) {
     height: 11px;
     top: -11px;
     left: 25px;
-    background: url('../images/proj_list_corner.png') no-repeat;
+    background: url('../../images/proj_list_corner.png') no-repeat;
 }
 #proj_list_close {
     position: absolute;
     top: 0;
     right: -25px;
-    background: url('../images/proj_list_close.jpg');
+    background: url('../../images/proj_list_close.jpg');
     height: 25px;
     width: 25px;
 }
@@ -3237,7 +3248,7 @@ only screen and (min-resolution: 144dpi) {
     font-size: 15px;
 }
 .car-caption .object {
-    background: url('../images/object_icon.png') no-repeat;
+    background: url('../../images/object_icon.png') no-repeat;
     padding-left: 35px;
     background-position: 0px 0px;
     height: 30px;
@@ -3247,7 +3258,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 0 20px;
 }
 .car-caption .automation {
-    background: url('../images/automation_icon.png') no-repeat;
+    background: url('../../images/automation_icon.png') no-repeat;
     padding-left: 35px;
     background-position: 0px 0px;
     height: 30px;
@@ -3266,7 +3277,7 @@ only screen and (min-resolution: 144dpi) {
 .car-caption .panel-heading { padding: 0 15px; background-color: #fff; }
 
 .car-caption .lighting {
-    background: url('../images/lighting_icon.jpg') no-repeat;
+    background: url('../../images/lighting_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3278,7 +3289,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .lighting {
-        background: url('../images/lighting_icon@2x.jpg') no-repeat;
+        background: url('../../images/lighting_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3287,7 +3298,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .climate {
-    background: url('../images/climate_icon.jpg') no-repeat;
+    background: url('../../images/climate_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3299,7 +3310,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .climate {
-        background: url('../images/climate_icon@2x.jpg') no-repeat;
+        background: url('../../images/climate_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3308,7 +3319,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .security {
-    background: url('../images/security_icon.jpg') no-repeat;
+    background: url('../../images/security_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3320,7 +3331,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .security {
-        background: url('../images/security_icon@2x.jpg') no-repeat;
+        background: url('../../images/security_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3329,7 +3340,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .extra {
-    background: url('../images/extra_icon.jpg') no-repeat;
+    background: url('../../images/extra_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3341,7 +3352,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .extra {
-        background: url('../images/extra_icon@2x.jpg') no-repeat;
+        background: url('../../images/extra_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3401,7 +3412,7 @@ only screen and (min-resolution: 144dpi) {
     padding-bottom: 10px;
 }
 #dev-slide-3 #pr_sect2 .plus {
-    background-image: url('../images/presentation/frame3_plus_sign.png');
+    background-image: url('../../images/presentation/frame3_plus_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 37px;
@@ -3415,7 +3426,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .plus {
-        background-image: url('../images/presentation/frame3_plus_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_plus_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 37px;
@@ -3427,7 +3438,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-3 #pr_sect2 .equal {
-    background-image: url('../images/presentation/frame3_equal_sign.png');
+    background-image: url('../../images/presentation/frame3_equal_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 26px;
@@ -3442,7 +3453,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .equal {
-        background-image: url('../images/presentation/frame3_equal_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_equal_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 26px;
@@ -3571,7 +3582,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* slide-4 */
 #slide-4 {
-    /*background: url('../images/slide4_bg.jpg') no-repeat left bottom;
+    /*background: url('../../images/slide4_bg.jpg') no-repeat left bottom;
     background-size: cover;
     padding-left: 50px;
     color: #fff;
@@ -3588,7 +3599,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-4 {
-        /* background: url('../images/slide4_bg@2x.jpg') no-repeat left bottom;
+        /* background: url('../../images/slide4_bg@2x.jpg') no-repeat left bottom;
          background-size: cover;
          padding-left: 50px;
          color: #fff;
@@ -3645,7 +3656,7 @@ only screen and (min-resolution: 144dpi) {
 #tabs4 ul li:first-of-type,
 #tabs4 ul li:first-of-type a.tabulous_active
 {
-    background-color: #f4a00a !important;
+    background-color: #cf1834 !important;
     color: #fff !important;
 }
 
@@ -3663,7 +3674,7 @@ only screen and (min-resolution: 144dpi) {
 #tabs3 ul li:nth-of-type(3), #tabs3 ul li:nth-of-type(3) a.tabulous_active,
 #tabs4 ul li:nth-of-type(3), #tabs4 ul li:nth-of-type(3) a.tabulous_active
 {
-    background-color: #cf1834 !important;
+    background-color: #f4a00a !important;
     color: #fff !important;
 }
 #tabs ul li a.tabulous_active, #tabs2 ul li a.tabulous_active, #tabs3 ul li a.tabulous_active, #tabs4 ul li a.tabulous_active { border-bottom: none; }
@@ -3751,7 +3762,7 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
 }
 
-#slide-4 p { /*width: 40%;*/ font-size: 18px; /*line-height: 22px;*/ margin-top: 2px; margin-bottom: 17px; }
+#slide-4 p { /*width: 40%;*/ font-size: 18px; /*line-height: 22px;*/ margin-top: 2px; margin-bottom: 17px; direction: rtl; }
 
 #slide-4 .icons {
     position: absolute;
@@ -3774,9 +3785,9 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 30px;
 }
 
-#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { border-bottom: 2px solid #f4a00a; }
-#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { border-bottom: 2px solid #425d94; }
-#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { border-bottom: 2px solid #cf1834; }
+#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { border-bottom: 2px solid #f4a00a; text-align: right; }
+#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { border-bottom: 2px solid #425d94; text-align: right; }
+#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { border-bottom: 2px solid #cf1834; text-align: right; }
 
 #slide-4 .visible-lg .factoids, #slide-4 .visible-md .factoids { width: auto; margin: 50px auto 30px; }
 #slide-4 .visible-lg .factoids td, #slide-4 .visible-md .factoids td {
@@ -4139,7 +4150,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4154,7 +4165,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4169,7 +4180,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4184,7 +4195,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4199,7 +4210,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4273,8 +4284,8 @@ only screen and (min-resolution: 144dpi) {
 /*#platforms span img { margin-right: 10px; vertical-align: bottom; }*/
 
 #platforms #android, #platforms #apple { margin-right: 10px; vertical-align: bottom; }
-#platforms #android { display: inline-block; background-image: url('../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
-#platforms #apple { display: inline-block; background-image: url('../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #android { display: inline-block; background-image: url('../../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #apple { display: inline-block; background-image: url('../../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -4283,7 +4294,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #android {
         display: inline-block;
-        background-image: url('../images/android@2x.png');
+        background-image: url('../../images/android@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4298,7 +4309,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #apple {
         display: inline-block;
-        background-image: url('../images/apple@2x.png');
+        background-image: url('../../images/apple@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4383,7 +4394,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_footer_twitter@2x.png');
+        background-image: url('../../images/soc_footer_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4392,7 +4403,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_twitter:hover {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4407,7 +4418,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_footer_facebook@2x.png');
+        background-image: url('../../images/soc_footer_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4416,7 +4427,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_facebook:hover {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4431,7 +4442,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_footer_googleplus@2x.png');
+        background-image: url('../../images/soc_footer_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4440,7 +4451,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_googleplus:hover {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4455,7 +4466,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_footer_instagram@2x.png');
+        background-image: url('../../images/soc_footer_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4464,7 +4475,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_instagram:hover {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4479,7 +4490,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_footer_youtube@2x.png');
+        background-image: url('../../images/soc_footer_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4488,7 +4499,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_youtube:hover {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4503,7 +4514,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_flickr {
         display: inline-block;
-        background-image: url('../images/soc_footer_flickr@2x.png');
+        background-image: url('../../images/soc_footer_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4512,7 +4523,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_flickr:hover {
         display: inline-block;
-        background-image: url('../images/soc_flickr@2x.png');
+        background-image: url('../../images/soc_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4761,22 +4772,24 @@ only screen and (min-resolution: 144dpi) {
 
     #langs {
         font-size: 14px;
-        padding: 24px 20px 20px 20px;
-        float: left;
+        padding: 24px 20px 20px 75px;
+        float: right;
     }
     .hidden-xs #langs { padding-bottom: 15px; }
     .visible-xs #langs { padding: 0}
 
     #logo {
-        margin: 25px 20px 0 0;
-        float: left;
-        background-image: url('../images/logo.png');
+        margin: 25px 0 0;
+        float: right;
+        background-image: url('../../images/logo.png');
         background-position: left top;
         background-repeat: no-repeat;
         width: 136px;
         height: 46px;
         border: none;
         font-size: 16px;
+        /* vertical-align: bottom; */
+        /* display: inline-block; */
         padding-top: 37px;
         padding-left: 3px;
     }
@@ -4786,24 +4799,34 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 144dpi) {
         #logo {
-            background-image: url('../images/logo@2x.png');
-            background-size: 124px 23px;
+            margin: 25px 0 0;
+            float: right;
+            background-image: url('../../images/logo@2x.png');
+            background-position: left top;
             background-repeat: no-repeat;
-            width: 124px;
-            height: 23px;
+            width: 136px;
+            height: 46px;
+            border: none;
+            font-size: 16px;
+            /* vertical-align: bottom; */
+            /* display: inline-block; */
+            padding-top: 37px;
+            padding-left: 3px;
         }
     }
 
     .visible-sm #logo, .visible-xs #logo {
-        margin: 10px 20px 0 10px;
-        float: left;
-        background-image: url('../images/logo.png');
+        margin: 25px 0 0;
+        float: right;
+        background-image: url('../../images/logo.png');
         background-position: left top;
         background-repeat: no-repeat;
         width: 136px;
         height: 46px;
         border: none;
         font-size: 16px;
+        /* vertical-align: bottom; */
+        /* display: inline-block; */
         padding-top: 37px;
         padding-left: 3px;
     }
@@ -4813,11 +4836,19 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 144dpi) {
         .visible-sm #logo, .visible-xs #logo {
-            background-image: url('../images/logo@2x.png');
-            background-size: 124px 23px;
+            margin: 25px 0 0;
+            float: right;
+            background-image: url('../../images/logo@2x.png');
+            background-position: left top;
             background-repeat: no-repeat;
-            width: 124px;
-            height: 23px;
+            width: 136px;
+            height: 46px;
+            border: none;
+            font-size: 16px;
+            /* vertical-align: bottom; */
+            /* display: inline-block; */
+            padding-top: 37px;
+            padding-left: 3px;
         }
     }
 
@@ -4830,7 +4861,7 @@ only screen and (min-resolution: 144dpi) {
         list-style: none;
         display: block;
         padding-left: 0;
-        margin-left: 225px;
+        /*margin-left: 225px;*/
         margin-top: 0;
     }
     .visible-sm #top_menu_ext, .visible-xs #top_menu_ext {
@@ -4959,16 +4990,19 @@ only screen and (min-resolution: 144dpi) {
     #slide-4 .visible-sm div#sm-tabs-1 h2,
     #slide-4 .visible-xs div#xs-tabs-1 h2 {
         border-bottom: 2px solid #f4a00a;
+        text-align: right;
     }
 
     #slide-4 .visible-sm div#sm-tabs-2 h2,
     #slide-4 .visible-xs div#xs-tabs-2 h2 {
         border-bottom: 2px solid #425d94;
+        text-align: right;
     }
 
     #slide-4 .visible-sm div#sm-tabs-3 h2,
     #slide-4 .visible-xs div#xs-tabs-3 h2 {
         border-bottom: 2px solid #cf1834;
+        text-align: right;
     }
 
     #advantages {
@@ -5065,6 +5099,7 @@ only screen and (min-resolution: 144dpi) {
 
     #slide-3 .visible-xs #notes div span {
         display: initial;
+
     }
 
     #slide-3 .visible-xs #notes {
@@ -5077,6 +5112,7 @@ only screen and (min-resolution: 144dpi) {
         /* text-align: left; */
         margin-right: 0;
         margin-bottom: 20px;
+        text-align: right;
         /*float: left;*/
     }
     #slide-3 .visible-xs #notes div.table_cell { display: table-cell; padding: 10px; }
@@ -5088,7 +5124,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 70px auto 0;
         max-width: 1600px;
@@ -5101,7 +5137,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 70px auto 0;
         max-width: 1600px;
@@ -5115,7 +5151,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 35px auto 0;
         max-width: 1600px;
@@ -5146,7 +5182,7 @@ only screen and (min-resolution: 144dpi) {
     /*#slide-4 .visible-sm .factoids tr td:first-of-type { text-align: */
 
     /*#install-slide-1 {
-        background-image: url('../images/install_slide1.jpg');
+        background-image: url('../../images/install_slide1.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 904px;
@@ -5643,6 +5679,20 @@ only screen and (min-resolution: 144dpi) {
         padding-left: 30px;
     }
 
+    #slide-5 .visible-xs #accordion .panel-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: inherit;
+        direction: rtl;
+        text-align: right;
+    }
+
+    #slide-5 .visible-xs #accordion .panel-body {
+        direction: rtl;
+        text-align: right;
+    }
+
     #install-slide-1.visible-xs p {
         width: 100%;
         line-height: 22px;
@@ -5679,7 +5729,7 @@ only screen and (min-resolution: 144dpi) {
 
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 25%;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -5691,7 +5741,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 25%;
-        background-image: url('../images/project_plan_icon.png');
+        background-image: url('../../images/project_plan_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -5703,7 +5753,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 25%;
-        background-image: url('../images/server_icon.png');
+        background-image: url('../../images/server_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -5715,7 +5765,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 25%;
-        background-image: url('../images/installation_icon.png');
+        background-image: url('../../images/installation_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -5728,7 +5778,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 25%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 60px 49px;
@@ -5740,7 +5790,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 25%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 64px 51px;
@@ -5752,7 +5802,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 25%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 70px 36px;
@@ -5764,7 +5814,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 25%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 65px 48px;
@@ -6029,7 +6079,7 @@ only screen and (min-resolution: 144dpi) {
 
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 16%;
-        background-image: url('../images/prep_5days_icon.png');
+        background-image: url('../../images/prep_5days_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -6041,7 +6091,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 16%;
-        background-image: url('../images/project_plan_icon.png');
+        background-image: url('../../images/project_plan_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -6053,7 +6103,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 16%;
-        background-image: url('../images/server_icon.png');
+        background-image: url('../../images/server_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -6065,7 +6115,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 16%;
-        background-image: url('../images/installation_icon.png');
+        background-image: url('../../images/installation_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -6077,7 +6127,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 16%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 60px 49px;
@@ -6089,7 +6139,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 16%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 64px 51px;
@@ -6101,7 +6151,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 16%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 70px 36px;
@@ -6113,7 +6163,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 16%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 65px 48px;
@@ -6402,7 +6452,7 @@ only screen and (min-resolution: 144dpi) {
 @media (max-width: 500px) {
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 100%;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 121px 100px;
@@ -6414,7 +6464,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 100%;
-        background-image: url('../images/project_plan_icon@2x.png');
+        background-image: url('../../images/project_plan_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 128px 103px;
@@ -6426,7 +6476,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 100%;
-        background-image: url('../images/server_icon@2x.png');
+        background-image: url('../../images/server_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 140px 73px;
@@ -6438,7 +6488,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 100%;
-        background-image: url('../images/installation_icon@2x.png');
+        background-image: url('../../images/installation_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 130px 96px;
@@ -6450,7 +6500,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 100%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 121px 100px;
@@ -6462,7 +6512,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 100%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 128px 103px;
@@ -6474,7 +6524,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 100%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 140px 73px;
@@ -6486,7 +6536,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 100%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 130px 96px;
@@ -6784,7 +6834,7 @@ only screen and (min-resolution: 144dpi) {
     #interior_ipad { margin-bottom: 0; }
 
     #about-slide-3 #proj_list_icon {
-        background: url('../images/proj_list_icon.png') no-repeat;
+        background: url('../../images/proj_list_icon.png') no-repeat;
         width: 5px;
         height: 12px;
         margin: 0px 0 0 2px;

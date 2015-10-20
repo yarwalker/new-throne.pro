@@ -1,26 +1,26 @@
 @font-face {
     font-family: circe;
-    src: url('../fonts/Circe.otf');
+    src: url('../../fonts/Circe.otf');
 }
 
 @font-face {
     font-family: circe_b;
-    src: url('../fonts/CirceBold.otf');
+    src: url('../../fonts/CirceBold.otf');
 }
 
 @font-face {
     font-family: circe_xb;
-    src: url('../fonts/CirceExtraBold.otf');
+    src: url('../../fonts/CirceExtraBold.otf');
 }
 
 @font-face {
     font-family: circe_xl;
-    src: url('../fonts/CirceExtraLight.otf');
+    src: url('../../fonts/CirceExtraLight.otf');
 }
 
 @font-face {
     font-family: circe_l;
-    src: url('../fonts/CirceLight.otf');
+    src: url('../../fonts/CirceLight.otf');
 }
 
 body { /*outline: solid 1px red*/ }
@@ -115,14 +115,14 @@ div.frame:first-of-type {
 
 /* slide-1 */
 /*#slide-1 {
-    background: #eaeaea url('../images/slide1_rect.jpg') no-repeat top right;
+    background: #eaeaea url('../../images/slide1_rect.jpg') no-repeat top right;
     background-size: contain;
     overflow: hidden;
     height: auto;
 } */
 
 #interier {
-    background: url('../images/interier.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -140,7 +140,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #interier {
-        background: url('../images/interier@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -155,7 +155,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .visible-tablet #interier {
-    background: url('../images/interier_tablet.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier_tablet.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -173,7 +173,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #interier {
-        background: url('../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -207,7 +207,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #interior_ipad {
     /* width: 10%; */
-    background: url("../images/new_ipad.png") center no-repeat;
+    background: url("../../images/new_ipad.png") center no-repeat;
     position: relative;
     /*bottom: -45%;
     left: 50%;*/
@@ -228,7 +228,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #interior_ipad {
         /* width: 10%; */
-        background: url("../images/new_ipad@2x.png") center no-repeat;
+        background: url("../../images/new_ipad@2x.png") center no-repeat;
         position: relative;
         /*bottom: -45%;
         left: 50%;*/
@@ -263,7 +263,7 @@ only screen and (min-resolution: 144dpi) {
 
 .visible-tablet #interior_ipad {
     /* width: 10%; */
-    background: url("../images/new_ipad.png") center no-repeat;
+    background: url("../../images/new_ipad.png") center no-repeat;
     position: relative;
     /*bottom: -45%;
     left: 50%;*/
@@ -282,7 +282,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #interior_ipad {
         /* width: 10%; */
-        background: url("../images/new_ipad@2x.png") center no-repeat;
+        background: url("../../images/new_ipad@2x.png") center no-repeat;
         position: relative;
         /*bottom: -45%;
         left: 50%;*/
@@ -310,7 +310,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #play_demo {
-    background: url("../images/play-button.png") no-repeat right center;
+    background: url("../../images/play-button.png") no-repeat right center;
     background-size: contain;
     width: 100px;
     height: 100px;
@@ -328,7 +328,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #play_demo {
-        background: url("../images/play-button@2x.png") no-repeat right center;
+        background: url("../../images/play-button@2x.png") no-repeat right center;
         background-size: contain;
         width: 100px;
         height: 100px;
@@ -343,7 +343,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .visible-tablet #play_demo {
-    background: url("../images/play-button@2x.png") no-repeat right center;
+    background: url("../../images/play-button@2x.png") no-repeat right center;
     background-size: contain;
     width: 60px;
     height: 60px;
@@ -361,7 +361,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #play_demo {
-        background: url("../images/play-button@2x.png") no-repeat right center;
+        background: url("../../images/play-button@2x.png") no-repeat right center;
         background-size: contain;
         width: 60px;
         height: 60px;
@@ -431,7 +431,7 @@ only screen and (min-resolution: 144dpi) {
 /*#slide-1 .bcg {position: fixed; z-index: 999; top: -30px; color: #fff; padding-right: 105px; padding-left: 100px; }*/
 
 #slide-1 {
-    /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     /*background-color: #eaeaea;*/
     background-size: contain;
@@ -452,7 +452,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-1 {
-        /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         /*background-color: #eaeaea;*/
         background-size: contain;
@@ -473,13 +473,13 @@ only screen and (min-resolution: 144dpi) {
 }
 #langs span { height: 28px; width: 28px; display: block; text-align: center; margin-bottom: 4px; }
 
-#langs span.active { background: url('../images/lang_active.png') no-repeat; padding-top: 5px; }
+#langs span.active { background: url('../../images/lang_active.png') no-repeat; padding-top: 5px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #langs span.active { background: url('../images/lang_active@2x.png') no-repeat; padding-top: 5px; background-size: 28px 28px; width: 28px; height: 28px; }
+    #langs span.active { background: url('../../images/lang_active@2x.png') no-repeat; padding-top: 5px; background-size: 28px 28px; width: 28px; height: 28px; }
 }
 
 #langs a { text-align: center; line-height: 15px; margin-bottom: 3px;}
@@ -536,8 +536,9 @@ only screen and (min-resolution: 144dpi) {
 #brand { margin-left: 20px; }
 
 .callback {
-    float: right;
-    margin-right: 165px;
+    float: left;
+    /*margin-right: 165px;*/
+    margin-left: 75px;
     padding-top: 23px;
     font-size: 13px;
     text-align: center;
@@ -787,7 +788,7 @@ h1.title {
 
 #planshet {
     width: 80%;
-    background-image: url("../images/ipad.png");
+    background-image: url("../../images/ipad.png");
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -809,7 +810,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #planshet {
         width: 80%;
-        background-image: url("../images/ipad.png");
+        background-image: url("../../images/ipad.png");
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -836,7 +837,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* installation */
 #install-slide-1 {
-    background-image: url('../images/install_slide1.jpg');
+    background-image: url('../../images/install_slide1.jpg');
     background-position: left top;
     background-size: cover;
     min-height: 904px;
@@ -851,7 +852,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #install-slide-1 {
-        background-image: url('../images/install_slide1@2x.jpg');
+        background-image: url('../../images/install_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 904px;
@@ -887,7 +888,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* partners */
 #partners-slide-1 {
-    background-image: url('../images/partners_slide1.jpg');
+    background-image: url('../../images/partners_slide1.jpg');
     background-position: left top;
     background-size: cover;
     min-height: 690px;
@@ -902,7 +903,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #partners-slide-1 {
-        background-image: url('../images/partners_slide1@2x.jpg');
+        background-image: url('../../images/partners_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 690px;
@@ -920,7 +921,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* about */
 #about-slide-1 {
-    background-image: url("../images/about_slide1_new.jpg"); /*about_slide1.jpg");*/
+    background-image: url("../../images/about_slide1_new.jpg"); /*about_slide1.jpg");*/
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -936,7 +937,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-1 {
-        background-image: url("../images/about_slide1_new@2x.jpg");
+        background-image: url("../../images/about_slide1_new@2x.jpg");
         background-position: center right;
         background-size: cover;
         min-height: 855px;
@@ -956,7 +957,7 @@ only screen and (min-resolution: 144dpi) {
     right: 50px; }
 
 #about-slide-1-5 {
-    /* background-image: url("../images/about_slide1.jpg"); */ /*about_slide1.jpg");*/
+    /* background-image: url("../../images/about_slide1.jpg"); */ /*about_slide1.jpg");*/
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -972,7 +973,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-1-5 {
-        /*background-image: url("../images/about_slide1@2x.jpg"); */
+        /*background-image: url("../../images/about_slide1@2x.jpg"); */
         background-position: top center;
         background-size: cover;
         /*min-height: 940px;*/
@@ -1029,7 +1030,7 @@ blockquote > p:first-child {
 
 /* developers */
 #dev-slide-1 {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1047,7 +1048,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-1 {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         /*min-height: 840px;*/
@@ -1088,7 +1089,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* dev_test */
 #dev1-slide-1 {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;
     min-height: 840px;
@@ -1103,7 +1104,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev1-slide-1 {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         min-height: 840px;
@@ -1201,13 +1202,13 @@ only screen and (min-resolution: 144dpi) {
 
 #pdf_p1 {
     background-color: #363533;
-    background-image: url("../images/presentation/frame1_cube1.png");
+    background-image: url("../../images/presentation/frame1_cube1.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     color: #fff;
 }
 #pdf_p1_logo {
-    background-image: url("../images/presentation/frame1_throne_logo1.png");
+    background-image: url("../../images/presentation/frame1_throne_logo1.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 215px;
@@ -1261,7 +1262,7 @@ only screen and (min-resolution: 144dpi) {
 #dev1-slide-2 .plus_sign {
     padding-top: 25px;
     padding-left: 25px;
-    background-image: url("../images/presentation/frame3_plus_sign1.png");
+    background-image: url("../../images/presentation/frame3_plus_sign1.png");
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 0;
@@ -1270,7 +1271,7 @@ only screen and (min-resolution: 144dpi) {
 #dev1-slide-2 .equal_sign {
     padding-top: 15px;
     padding-left: 25px;
-    background-image: url("../images/presentation/frame3_equal_sign1.png");
+    background-image: url("../../images/presentation/frame3_equal_sign1.png");
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 0;
@@ -1323,13 +1324,13 @@ a.ios_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/ios_app_icon.png");
+    background-image: url("../../images/ios_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     margin-bottom: 17px;
     margin-top: 8px;
     width: 250px;
-
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1342,7 +1343,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/ios_app_icon@2x.png");
+        background-image: url("../../images/ios_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 17%;
@@ -1352,6 +1353,7 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 17px;
         margin-top: 8px;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1361,11 +1363,12 @@ a.android_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/android_app_icon.png");
+    background-image: url("../../images/android_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     /*background-size: 90%;*/
     width: 250px;
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1378,7 +1381,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/android_app_icon@2x.png");
+        background-image: url("../../images/android_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 17%;
@@ -1386,6 +1389,7 @@ only screen and (min-resolution: 144dpi) {
         /*-webkit-background-size: 17%;*/
         -o-background-size: 17%;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1421,7 +1425,7 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
 
 #inst-slide2-left #prep_5days_cell {
     width: 90px;
-    background-image: url('../images/prep_5days_icon.png');
+    background-image: url('../../images/prep_5days_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 60px 49px;
@@ -1436,7 +1440,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #prep_5days_cell {
         width: 90px;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -1448,7 +1452,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #project_plan_cell {
     width: 90px;
-    background-image: url('../images/project_plan_icon.png');
+    background-image: url('../../images/project_plan_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 64px 51px;
@@ -1463,7 +1467,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #project_plan_cell {
         width: 90px;
-        background-image: url('../images/project_plan_icon@2x.png');
+        background-image: url('../../images/project_plan_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -1475,7 +1479,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #server_cell {
     width: 90px;
-    background-image: url('../images/server_icon.png');
+    background-image: url('../../images/server_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 70px 36px;
@@ -1490,7 +1494,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #server_cell {
         width: 90px;
-        background-image: url('../images/server_icon@2x.png');
+        background-image: url('../../images/server_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -1502,7 +1506,7 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #install_cell {
     width: 90px;
-    background-image: url('../images/installation_icon.png');
+    background-image: url('../../images/installation_icon.png');
     background-position: left 10px;
     background-repeat: no-repeat;
     background-size: 65px 48px;
@@ -1517,7 +1521,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #install_cell {
         width: 90px;
-        background-image: url('../images/installation_icon@2x.png');
+        background-image: url('../../images/installation_icon@2x.png');
         background-position: left 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -1528,7 +1532,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #inst-slide2-right #garanty_cell {
-    background-image: url("../images/garanty_icon.png");
+    background-image: url("../../images/garanty_icon.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 83px 112px;
@@ -1543,7 +1547,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #garanty_cell {
-        background-image: url("../images/garanty_icon@2x.png");
+        background-image: url("../../images/garanty_icon@2x.png");
         background-repeat: no-repeat;
         background-position: left top;
         background-size: 83px 112px;
@@ -1555,7 +1559,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #inst-slide2-right #cert_install_cell {
-    background-image: url("../images/cert_installation_icon.png");
+    background-image: url("../../images/cert_installation_icon.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 79px 112px;
@@ -1570,7 +1574,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #cert_install_cell {
-        background-image: url("../images/cert_installation_icon@2x.png");
+        background-image: url("../../images/cert_installation_icon@2x.png");
         background-repeat: no-repeat;
         background-position: left top;
         background-size: 79px 112px;
@@ -1582,7 +1586,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #inst-slide2-right #knx_standart_cell {
-    background-image: url("../images/knx_standart_icon.png");
+    background-image: url("../../images/knx_standart_icon.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 141px 85px;
@@ -1597,7 +1601,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #knx_standart_cell {
-        background-image: url("../images/knx_standart_icon@2x.png");
+        background-image: url("../../images/knx_standart_icon@2x.png");
         background-repeat: no-repeat;
         background-position: left top;
         background-size: 141px 85px;
@@ -1617,7 +1621,7 @@ only screen and (min-resolution: 144dpi) {
 #factoid { clear: both; width: 100%; }
 #factoid_left {
     width:40%;
-    background-image: url("../images/factoid_left.png");
+    background-image: url("../../images/factoid_left.png");
     background-position: top right;
     background-size: cover;
 }
@@ -1628,7 +1632,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #factoid_left {
         width:40%;
-        background-image: url("../images/factoid_left@2x.png");
+        background-image: url("../../images/factoid_left@2x.png");
         background-position: top right;
         background-size: cover;
     }
@@ -1636,7 +1640,7 @@ only screen and (min-resolution: 144dpi) {
 
 #factoid_right {
     width:40%;
-    background-image: url("../images/factoid_right.png");
+    background-image: url("../../images/factoid_right.png");
     background-position: top left;
     background-size: cover;
 }
@@ -1647,7 +1651,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #factoid_right {
         width:40%;
-        background-image: url("../images/factoid_right@2x.png");
+        background-image: url("../../images/factoid_right@2x.png");
         background-position: top left;
         background-size: cover;
     }
@@ -1704,7 +1708,7 @@ only screen and (min-resolution: 144dpi) {
     padding-bottom: 106px;
     display: inline-block;
     margin-top: 96px;
-    background-image: url("../images/partners_interface_bg.png");
+    background-image: url("../../images/partners_interface_bg.png");
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -1725,7 +1729,7 @@ only screen and (min-resolution: 144dpi) {
         padding-bottom: 106px;
         display: inline-block;
         margin-top: 96px;
-        background-image: url("../images/partners_interface_bg@2x.png");
+        background-image: url("../../images/partners_interface_bg@2x.png");
         background-position: center center;
         background-size: cover;
         position: relative;
@@ -1787,7 +1791,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #upstairs {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/upstairs.png");
+    background-image: url("../../images/upstairs.png");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1798,7 +1802,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #upstairs {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/upstairs@2x.png");
+        background-image: url("../../images/upstairs@2x.png");
         background-position: center center;
     }
 }
@@ -1806,7 +1810,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #houses {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/houses.jpg");
+    background-image: url("../../images/houses.jpg");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1817,7 +1821,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #houses {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/houses@2x.jpg");
+        background-image: url("../../images/houses@2x.jpg");
         background-position: center center;
     }
 }
@@ -1825,7 +1829,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #man-on-top {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/man-on-top.jpg");
+    background-image: url("../../images/man-on-top.jpg");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1836,13 +1840,13 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #man-on-top {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/man-on-top@2x.jpg");
+        background-image: url("../../images/man-on-top@2x.jpg");
         background-position: center center;
     }
 }
 
 #about-slide-2 h3#rationalism {
-    background-image: url("../images/rationalism_icon.png");
+    background-image: url("../../images/rationalism_icon.png");
     background-position: left top;
     background-repeat: no-repeat;
     padding-top: 60px;
@@ -1854,7 +1858,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#rationalism {
-        background-image: url("../images/rationalism_icon@2x.png");
+        background-image: url("../../images/rationalism_icon@2x.png");
         background-position: left top;
         background-repeat: no-repeat;
         padding-top: 60px;
@@ -1862,7 +1866,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 #about-slide-2 h3#velocity {
-    background-image: url("../images/velocity_icon.png");
+    background-image: url("../../images/velocity_icon.png");
     background-position: left top;
     background-repeat: no-repeat;
     padding-top: 60px;
@@ -1874,7 +1878,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#velocity {
-        background-image: url("../images/velocity_icon@2x.png");
+        background-image: url("../../images/velocity_icon@2x.png");
         background-position: left top;
         background-repeat: no-repeat;
         padding-top: 60px;
@@ -1882,7 +1886,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 #about-slide-2 h3#standarts {
-    background-image: url("../images/standarts_icon.png");
+    background-image: url("../../images/standarts_icon.png");
     background-position: left top;
     background-repeat: no-repeat;
     padding-top: 60px;
@@ -1894,7 +1898,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#standarts {
-        background-image: url("../images/standarts_icon@2x.png");
+        background-image: url("../../images/standarts_icon@2x.png");
         background-position: left top;
         background-repeat: no-repeat;
         padding-top: 60px;
@@ -1955,7 +1959,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 51;
-    background-image: url("../images/floor_new.png");
+    background-image: url("../../images/floor_new.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1971,7 +1975,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 51;
-        background-image: url("../images/floor_new@2x.png");
+        background-image: url("../../images/floor_new@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -1984,7 +1988,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 46;
-    background-image: url("../images/floor_shadow.png");
+    background-image: url("../../images/floor_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2000,7 +2004,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 46;
-        background-image: url("../images/floor_shadow@2x.png");
+        background-image: url("../../images/floor_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2013,7 +2017,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 48;
-    background-image: url("../images/floor_back.png");
+    background-image: url("../../images/floor_back.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2029,7 +2033,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 48;
-        background-image: url("../images/floor_back@2x.png");
+        background-image: url("../../images/floor_back@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2042,7 +2046,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 48;
-    background-image: url("../images/top_buttons.png");
+    background-image: url("../../images/top_buttons.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2058,7 +2062,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 48;
-        background-image: url("../images/top_buttons@2x.png");
+        background-image: url("../../images/top_buttons@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2071,7 +2075,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 47;
-    background-image: url("../images/top_buttons_shadows.png");
+    background-image: url("../../images/top_buttons_shadows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2088,7 +2092,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 47;
-        background-image: url("../images/top_buttons_shadows@2x.png");
+        background-image: url("../../images/top_buttons_shadows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2103,7 +2107,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 46;
-    background-image: url("../images/light_panel_shadow.png");
+    background-image: url("../../images/light_panel_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2120,7 +2124,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 46;
-        background-image: url("../images/light_panel_shadow@2x.png");
+        background-image: url("../../images/light_panel_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2134,7 +2138,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 47;
-    background-image: url("../images/light_panel.png");
+    background-image: url("../../images/light_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2151,7 +2155,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 47;
-        background-image: url("../images/light_panel@2x.png");
+        background-image: url("../../images/light_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2165,7 +2169,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 49;
-    background-image: url("../images/light_zones.png");
+    background-image: url("../../images/light_zones.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2182,7 +2186,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 49;
-        background-image: url("../images/light_zones@2x.png");
+        background-image: url("../../images/light_zones@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2196,7 +2200,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 51;
-    background-image: url("../images/climate_panel.png");
+    background-image: url("../../images/climate_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2213,7 +2217,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 51;
-        background-image: url("../images/climate_panel@2x.png");
+        background-image: url("../../images/climate_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2227,7 +2231,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/climate_panel_shadow.png");
+    background-image: url("../../images/climate_panel_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2244,7 +2248,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50;
-        background-image: url("../images/climate_panel_shadow@2x.png");
+        background-image: url("../../images/climate_panel_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2258,7 +2262,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/climate_zones.png");
+    background-image: url("../../images/climate_zones.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2276,7 +2280,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50;
-        background-image: url("../images/climate_zones@2x.png");
+        background-image: url("../../images/climate_zones@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2291,7 +2295,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/alarm_panel.png");
+    background-image: url("../../images/alarm_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2308,7 +2312,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50
-    background-image: url("../images/alarm_panel@2x.png");
+    background-image: url("../../images/alarm_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2322,7 +2326,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 52;
-    background-image: url("../images/alarm_cameras.png");
+    background-image: url("../../images/alarm_cameras.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2339,7 +2343,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 52
-    background-image: url("../images/alarm_cameras@2x.png");
+    background-image: url("../../images/alarm_cameras@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2353,7 +2357,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 49;
-    background-image: url("../images/alarm_panel_shadows.png");
+    background-image: url("../../images/alarm_panel_shadows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2370,7 +2374,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 49;
-        background-image: url("../images/alarm_panel_shadows@2x.png");
+        background-image: url("../../images/alarm_panel_shadows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2384,7 +2388,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 52;
-    background-image: url("../images/alarm_windows.png");
+    background-image: url("../../images/alarm_windows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2401,7 +2405,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 52;
-        background-image: url("../images/alarm_windows@2x.png");
+        background-image: url("../../images/alarm_windows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2477,7 +2481,7 @@ only screen and (min-resolution: 144dpi) {
 */
 
 #fake_tabs ul li:first-of-type, #fake_tabs ul li:first-of-type a, #fake_tabs ul li:first-of-type a.tabulous_active {
-    background-color: #f4a00a !important;
+    background-color: #cf1834 !important;
     color: #fff !important;
 }
 #fake_tabs ul li:nth-of-type(2), #fake_tabs ul li:nth-of-type(2) a, #fake_tabs ul li:nth-of-type(2) a.tabulous_active {
@@ -2485,7 +2489,7 @@ only screen and (min-resolution: 144dpi) {
     color: #fff !important;
 }
 #fake_tabs ul li:nth-of-type(3), #fake_tabs ul li:nth-of-type(3) a, #fake_tabs ul li:nth-of-type(3) a.tabulous_active {
-    background-color: #cf1834 !important;
+    background-color: #f4a00a !important;
     color: #fff !important;
 }
 #fake_tabs ul li a.tabulous_active { border-bottom: none; }
@@ -2512,7 +2516,7 @@ only screen and (min-resolution: 144dpi) {
 /*#watch_video img { vertical-align: bottom; }*/
 
 
-#watch_btn  { display: inline-block; background-image: url('../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_btn  { display: inline-block; background-image: url('../../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2521,7 +2525,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video@2x.png');
+        background-image: url('../../images/watch_video@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2530,7 +2534,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 
-#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2539,7 +2543,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_video a:hover + #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video_hover@2x.png');
+        background-image: url('../../images/watch_video_hover@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2671,7 +2675,7 @@ body.modal-open {
     /* min-height: 320px; */
     /* height: 100%; */
     /* width: 100%; */
-    /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+    /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
     position: relative;
     margin: 207px auto 0;
     max-width: 1600px;
@@ -2688,7 +2692,7 @@ body.modal-open {
     max-height: 407px;
     height: 100%;
     width: 100%;
-    background: url('../images/ipad_slide2.jpg') no-repeat center -4px;
+    background: url('../../images/ipad_slide2.jpg') no-repeat center -4px;
     position: relative;
     margin: 207px auto 0;
 }
@@ -2759,7 +2763,7 @@ body.modal-open {
 /*
 #slide-3-left {
     height: 100%;
-    background: #3f3e43 url('../images/slide3_left.jpg') no-repeat left center;
+    background: #3f3e43 url('../../images/slide3_left.jpg') no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2775,7 +2779,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-left {
         height: 100%;
-        background: #3f3e43 url('../images/slide3_left@2x.jpg') no-repeat left center;
+        background: #3f3e43 url('../../images/slide3_left@2x.jpg') no-repeat left center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -2796,7 +2800,7 @@ only screen and (min-resolution: 144dpi) {
 
 #slide-3-right {
     height: 100%;
-    background: #d7c5ad url('../images/slide3_right.jpg') no-repeat center bottom;
+    background: #d7c5ad url('../../images/slide3_right.jpg') no-repeat center bottom;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -2811,7 +2815,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-right {
         height: 100%;
-        background: #d7c5ad url('../images/slide3_right@2x.jpg') no-repeat center bottom;
+        background: #d7c5ad url('../../images/slide3_right@2x.jpg') no-repeat center bottom;
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
@@ -2905,7 +2909,7 @@ only screen and (min-resolution: 144dpi) {
     width: 100%;
     min-height: 561px;
     background-size: cover;
-    background-image: url("../images/about_slide3.jpg");
+    background-image: url("../../images/about_slide3.jpg");
     background-position: center bottom;
     position: relative;
 }
@@ -2918,7 +2922,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         min-height: 561px;
         background-size: cover;
-        background-image: url("../images/about_slide3.jpg");
+        background-image: url("../../images/about_slide3.jpg");
         background-position: center bottom;
     }
 }
@@ -2962,7 +2966,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #about-slide-3 #project_title:hover { cursor: pointer; }
 #about-slide-3 #proj_list_icon {
-    background: url('../images/proj_list_icon.png') no-repeat;
+    background: url('../../images/proj_list_icon.png') no-repeat;
     width: 5px;
     height: 12px;
     margin: 0px 0 0 10px;
@@ -3008,13 +3012,13 @@ only screen and (min-resolution: 144dpi) {
     height: 11px;
     top: -11px;
     left: 25px;
-    background: url('../images/proj_list_corner.png') no-repeat;
+    background: url('../../images/proj_list_corner.png') no-repeat;
 }
 #proj_list_close {
     position: absolute;
     top: 0;
     right: -25px;
-    background: url('../images/proj_list_close.jpg');
+    background: url('../../images/proj_list_close.jpg');
     height: 25px;
     width: 25px;
 }
@@ -3068,7 +3072,7 @@ only screen and (min-resolution: 144dpi) {
     font-size: 15px;
 }
 .car-caption .object {
-    background: url('../images/object_icon.png') no-repeat;
+    background: url('../../images/object_icon.png') no-repeat;
     padding-left: 40px;
     background-position: 0px 0px;
     height: 30px;
@@ -3078,7 +3082,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 0 20px;
 }
 .car-caption .automation {
-    background: url('../images/automation_icon.png') no-repeat;
+    background: url('../../images/automation_icon.png') no-repeat;
     padding-left: 40px;
     background-position: 0px 0px;
     height: 30px;
@@ -3088,7 +3092,7 @@ only screen and (min-resolution: 144dpi) {
 .car-caption h4 { font-family: circe_b; }
 .car-caption .panel-heading { padding: 0 15px; background-color: #fff; }
 .car-caption .lighting {
-    background: url('../images/lighting_icon.jpg') no-repeat;
+    background: url('../../images/lighting_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3100,7 +3104,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .lighting {
-        background: url('../images/lighting_icon@2x.jpg') no-repeat;
+        background: url('../../images/lighting_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3109,7 +3113,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .climate {
-    background: url('../images/climate_icon.jpg') no-repeat;
+    background: url('../../images/climate_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3121,7 +3125,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .climate {
-        background: url('../images/climate_icon@2x.jpg') no-repeat;
+        background: url('../../images/climate_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3130,7 +3134,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .security {
-    background: url('../images/security_icon.jpg') no-repeat;
+    background: url('../../images/security_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3142,7 +3146,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .security {
-        background: url('../images/security_icon@2x.jpg') no-repeat;
+        background: url('../../images/security_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3151,7 +3155,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .extra {
-    background: url('../images/extra_icon.jpg') no-repeat;
+    background: url('../../images/extra_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3163,7 +3167,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .extra {
-        background: url('../images/extra_icon@2x.jpg') no-repeat;
+        background: url('../../images/extra_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3193,7 +3197,7 @@ only screen and (min-resolution: 144dpi) {
     position: relative;
     background-color: #31302e;
     color: #fff;
-    /*background-image: url("../images/dev_slide3.jpg");*/
+    /*background-image: url("../../images/dev_slide3.jpg");*/
     /*background-position: center center;*/
     /*background-size: cover;
     background-repeat: no-repeat; */
@@ -3228,7 +3232,7 @@ only screen and (min-resolution: 144dpi) {
     padding-bottom: 10px;
 }
 #dev-slide-3 #pr_sect2 .plus {
-    background-image: url('../images/presentation/frame3_plus_sign.png');
+    background-image: url('../../images/presentation/frame3_plus_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 37px;
@@ -3242,7 +3246,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .plus {
-        background-image: url('../images/presentation/frame3_plus_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_plus_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 37px;
@@ -3257,7 +3261,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-3 #pr_sect2 .equal {
-    background-image: url('../images/presentation/frame3_equal_sign.png');
+    background-image: url('../../images/presentation/frame3_equal_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 26px;
@@ -3271,7 +3275,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .equal {
-        background-image: url('../images/presentation/frame3_equal_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_equal_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 26px;
@@ -3319,7 +3323,7 @@ only screen and (min-resolution: 144dpi) {
 #dev-slide-3 #pr_sect6 {
     background-color: #df2346;
     padding-bottom: 50px;
-    background-image: url("../images/presentation/frame9_upstairs.png");
+    background-image: url("../../images/presentation/frame9_upstairs.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
@@ -3373,7 +3377,7 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #dev-slide-3 { margin-top: 34px; position: relative; background-image: url("../images/dev_slide3@2x.jpg"); background-size: cover; background-repeat: no-repeat; }
+    #dev-slide-3 { margin-top: 34px; position: relative; background-image: url("../../images/dev_slide3@2x.jpg"); background-size: cover; background-repeat: no-repeat; }
 }*/
 
 #dev-slide-3 #devs {
@@ -3402,7 +3406,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* slide-4 */
 #slide-4 {
-    /*background: url('../images/slide4_bg.jpg') no-repeat left bottom;
+    /*background: url('../../images/slide4_bg.jpg') no-repeat left bottom;
     background-size: cover;
     padding-left: 50px;
     color: #fff;
@@ -3419,7 +3423,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-4 {
-        /* background: url('../images/slide4_bg@2x.jpg') no-repeat left bottom;
+        /* background: url('../../images/slide4_bg@2x.jpg') no-repeat left bottom;
          background-size: cover;
          padding-left: 50px;
          color: #fff;
@@ -3487,7 +3491,7 @@ only screen and (min-resolution: 144dpi) {
 
 #tabs ul li:first-of-type, #tabs ul li:first-of-type a.tabulous_active,
 #tabs2 ul li:first-of-type, #tabs2 ul li:first-of-type a.tabulous_active {
-    background-color: #f4a00a !important;
+    background-color: #cf1834 !important;
     color: #fff !important;
 }
 #tabs ul li:nth-of-type(2), #tabs ul li:nth-of-type(2) a.tabulous_active,
@@ -3497,14 +3501,14 @@ only screen and (min-resolution: 144dpi) {
 }
 #tabs ul li:nth-of-type(3), #tabs ul li:nth-of-type(3) a.tabulous_active,
 #tabs2 ul li:nth-of-type(3), #tabs2 ul li:nth-of-type(3) a.tabulous_active {
-    background-color: #cf1834 !important;
+    background-color: #f4a00a !important;
     color: #fff !important;
 }
 #tabs ul li a.tabulous_active, #tabs2 ul li a.tabulous_active { border-bottom: none; }
 #tabs ul li a:hover, #tabs2 ul li a:hover { border: none; }
 #tabs ul li:first-of-type a:hover,
 #tabs2 ul li:first-of-type a:hover{
-    background-color: #f4a00a !important;
+    background-color: #cf1834 !important;
     color: #fff !important;
 }
 #tabs ul li:nth-of-type(2) a:hover,
@@ -3514,7 +3518,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #tabs ul li:nth-of-type(3) a:hover,
 #tabs2 ul li:nth-of-type(3) a:hover {
-    background-color: #cf1834 !important;
+    background-color: #f4a00a !important;
     color: #fff !important;
 }
 
@@ -3576,7 +3580,7 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
 }
 
-#slide-4 p { /*width: 40%;*/ font-size: 18px; line-height: 22px; margin-top: 2px; margin-bottom: 17px; }
+#slide-4 p { /*width: 40%;*/ font-size: 18px; line-height: 22px; margin-top: 2px; margin-bottom: 17px; direction: rtl; }
 
 #slide-4 .icons {
     position: absolute;
@@ -3605,9 +3609,9 @@ only screen and (min-resolution: 144dpi) {
 }
 /* /for firefox */
 
-#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { border-bottom: 2px solid #f4a00a; }
-#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { border-bottom: 2px solid #425d94; }
-#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { border-bottom: 2px solid #cf1834; }
+#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { text-align: right; border-bottom: 2px solid #f4a00a; }
+#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { text-align: right; border-bottom: 2px solid #425d94; }
+#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { text-align: right; border-bottom: 2px solid #cf1834; }
 
 #slide-4 .visible-lg .factoids, #slide-4 .visible-md .factoids { width: auto; margin: 50px auto 30px; }
 #slide-4 .visible-lg .factoids td, #slide-4 .visible-md .factoids td {
@@ -3720,23 +3724,31 @@ only screen and (min-resolution: 144dpi) {
 #slide-5 a.ios_throne_app { margin-right: 14px; }
 
 #slide-5 #integr_table .table_cell { position: relative; }
-#slide-5 #integr_table .table_cell img, #slide-5 #integr_table .table_cell p { position: relative;  }
+#slide-5 #integr_table .table_cell img, #slide-5 #integr_table .table_cell p { position: relative; }
+#slide-5 #integr_table .table_cell img { margin: 0 auto 15px; }
 #slide-5 #integr_table .table_cell .integr_description {
     display: block;
     left: -10000px;
     position: absolute;
     background-color: #f2f2f2;
     padding: 30px;
-    padding-left: 160%;
+    padding-left: 140%;
     border-radius: 7px;
     width: auto !important;
-    min-width: 150%;
+    min-width: 180%;
     min-height: 110%;
     height: auto;
     z-index: 2;
     opacity: 0;
     -webkit-opacity: 0;
     -moz-opacity: 0;
+    text-align: right;
+    direction: rtl;
+}
+#slide-5 #integr_table .table_cell:last-of-type .integr_description {
+    min-width: 260%;
+    padding-left: 30px;
+    padding-right: 150%;
 }
 #slide-5 #integr_table .table_cell:hover .integr_description {
     /*display: block;*/
@@ -3756,8 +3768,6 @@ only screen and (min-resolution: 144dpi) {
     top: -30px;
     right: -30px;
     left: auto;
-    padding-left: 30px;
-    padding-right: 160%;
     opacity: 1;
     -webkit-opacity: 1;
     -moz-opacity: 1;
@@ -3780,7 +3790,7 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0px;
 }
 #slide-5 #integr_table .table_cell p:last-of-type { margin-bottom: 0; }
-#slide-5 .table .table_cell p { line-height: 22px; margin: 10px 0; }
+#slide-5 .table .table_cell p { line-height: 22px; margin: 10px 0; direction: rtl; }
 #slide-5 .table .table_cell h4 + p { margin-top: 4px; }
 
 #slide-5 #equipment {
@@ -3794,7 +3804,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
 }
 #slide-5 #know_more_tabs li { vertical-align: middle;  height: 100%; }
-#slide-5 #know_more_tabs li a { border: none; }
+#slide-5 #know_more_tabs li a { border: none; direction: rtl; }
 #slide-5 #know_more_tabs li a:hover { background-color: #fff; }
 #slide-5 #know_more_tabs li { border-bottom: solid 1px transparent; }
 #slide-5 #know_more_tabs li.active { border-bottom: solid 1px #be0005; }
@@ -3812,6 +3822,8 @@ only screen and (min-resolution: 144dpi) {
     margin-top: 10px;
     background-color: #fcfcfc;
     margin-bottom: 20px;
+    text-align: right;
+    direction: rtl;
 }
 
 #accordion {
@@ -3944,11 +3956,11 @@ only screen and (min-resolution: 144dpi) {
 
 
 #socials a { margin-right: 10px; border: none; }
-#socials #soc_twitter { background-image: url("../images/soc_twitter.png"); width: 28px; height: 28px; }
-#socials #soc_facebook { background-image: url("../images/soc_facebook.png"); width: 28px; height: 28px; }
-#socials #soc_googleplus { background-image: url("../images/soc_googleplus.png"); width: 28px; height: 28px; }
-#socials #soc_instagram { background-image: url("../images/soc_instagram.png"); width: 28px; height: 28px; }
-#socials #soc_youtube { background-image: url("../images/soc_youtube.png"); width: 28px; height: 28px; }
+#socials #soc_twitter { background-image: url("../../images/soc_twitter.png"); width: 28px; height: 28px; }
+#socials #soc_facebook { background-image: url("../../images/soc_facebook.png"); width: 28px; height: 28px; }
+#socials #soc_googleplus { background-image: url("../../images/soc_googleplus.png"); width: 28px; height: 28px; }
+#socials #soc_instagram { background-image: url("../../images/soc_instagram.png"); width: 28px; height: 28px; }
+#socials #soc_youtube { background-image: url("../../images/soc_youtube.png"); width: 28px; height: 28px; }
 /*
 #socials a img { border: none; }*/
 
@@ -3959,7 +3971,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -3974,7 +3986,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -3989,7 +4001,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4004,7 +4016,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4019,7 +4031,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4093,8 +4105,8 @@ only screen and (min-resolution: 144dpi) {
 /*#platforms span img { margin-right: 10px; vertical-align: bottom; }*/
 
 #platforms #android, #platforms #apple { margin-right: 10px; vertical-align: bottom; }
-#platforms #android { display: inline-block; background-image: url('../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
-#platforms #apple { display: inline-block; background-image: url('../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #android { display: inline-block; background-image: url('../../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #apple { display: inline-block; background-image: url('../../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -4103,7 +4115,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #android {
         display: inline-block;
-        background-image: url('../images/android@2x.png');
+        background-image: url('../../images/android@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4118,7 +4130,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #apple {
         display: inline-block;
-        background-image: url('../images/apple@2x.png');
+        background-image: url('../../images/apple@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4140,6 +4152,7 @@ footer {
     max-width: 1600px;
     /*width: 100%;*/
     margin: 0 auto;
+    text-align: right;
 }
 
 footer.minor {
@@ -4153,23 +4166,23 @@ footer.minor {
 
 #footer_socials a { margin-right: 7px; border: none; }
 #footer_socials a:last-of-type { margin-right: 0; }
-#footer_socials #soc_twitter { background-image: url("../images/soc_footer_twitter.png"); width: 28px; height: 28px; }
-#footer_socials #soc_twitter:hover { background-image: url("../images/soc_twitter.png"); width: 28px; height: 28px; }
+#footer_socials #soc_twitter { background-image: url("../../images/soc_footer_twitter.png"); width: 28px; height: 28px; }
+#footer_socials #soc_twitter:hover { background-image: url("../../images/soc_twitter.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_facebook { background-image: url("../images/soc_footer_facebook.png"); width: 28px; height: 28px; }
-#footer_socials #soc_facebook:hover { background-image: url("../images/soc_facebook.png"); width: 28px; height: 28px; }
+#footer_socials #soc_facebook { background-image: url("../../images/soc_footer_facebook.png"); width: 28px; height: 28px; }
+#footer_socials #soc_facebook:hover { background-image: url("../../images/soc_facebook.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_googleplus { background-image: url("../images/soc_footer_googleplus.png"); width: 28px; height: 28px; }
-#footer_socials #soc_googleplus:hover { background-image: url("../images/soc_googleplus.png"); width: 28px; height: 28px; }
+#footer_socials #soc_googleplus { background-image: url("../../images/soc_footer_googleplus.png"); width: 28px; height: 28px; }
+#footer_socials #soc_googleplus:hover { background-image: url("../../images/soc_googleplus.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_instagram { background-image: url("../images/soc_footer_instagram.png"); width: 28px; height: 28px; }
-#footer_socials #soc_instagram:hover { background-image: url("../images/soc_instagram.png"); width: 28px; height: 28px; }
+#footer_socials #soc_instagram { background-image: url("../../images/soc_footer_instagram.png"); width: 28px; height: 28px; }
+#footer_socials #soc_instagram:hover { background-image: url("../../images/soc_instagram.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_youtube { background-image: url("../images/soc_footer_youtube.png"); width: 28px; height: 28px; }
-#footer_socials #soc_youtube:hover { background-image: url("../images/soc_youtube.png"); width: 28px; height: 28px; }
+#footer_socials #soc_youtube { background-image: url("../../images/soc_footer_youtube.png"); width: 28px; height: 28px; }
+#footer_socials #soc_youtube:hover { background-image: url("../../images/soc_youtube.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_flickr { background-image: url("../images/soc_footer_flickr.png"); width: 28px; height: 28px; }
-#footer_socials #soc_flickr:hover { background-image: url("../images/soc_flickr.png"); width: 28px; height: 28px; }
+#footer_socials #soc_flickr { background-image: url("../../images/soc_footer_flickr.png"); width: 28px; height: 28px; }
+#footer_socials #soc_flickr:hover { background-image: url("../../images/soc_flickr.png"); width: 28px; height: 28px; }
 /*
 #socials a img { border: none; }*/
 
@@ -4180,7 +4193,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_footer_twitter@2x.png');
+        background-image: url('../../images/soc_footer_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4189,7 +4202,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_twitter:hover {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4204,7 +4217,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_footer_facebook@2x.png');
+        background-image: url('../../images/soc_footer_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4213,7 +4226,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_facebook:hover {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4228,7 +4241,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_footer_googleplus@2x.png');
+        background-image: url('../../images/soc_footer_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4237,7 +4250,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_googleplus:hover {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4252,7 +4265,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_footer_instagram@2x.png');
+        background-image: url('../../images/soc_footer_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4261,7 +4274,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_instagram:hover {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4276,7 +4289,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_footer_youtube@2x.png');
+        background-image: url('../../images/soc_footer_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4285,7 +4298,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_youtube:hover {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4300,7 +4313,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_flickr {
         display: inline-block;
-        background-image: url('../images/soc_footer_flickr@2x.png');
+        background-image: url('../../images/soc_footer_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4309,7 +4322,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_flickr:hover {
         display: inline-block;
-        background-image: url('../images/soc_flickr@2x.png');
+        background-image: url('../../images/soc_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4529,19 +4542,21 @@ only screen and (min-resolution: 144dpi) {
 
     #langs {
         font-size: 14px;
-        padding: 24px 20px 20px 20px;
-        float: left;
+        padding: 24px 20px 20px 75px;
+        float: right;
     }
     #logo {
-        margin: 25px 20px 0 0;
-        float: left;
-        background-image: url('../images/logo.png');
+        margin: 25px 0 0;
+        float: right;
+        background-image: url('../../images/logo.png');
         background-position: left top;
         background-repeat: no-repeat;
         width: 136px;
         height: 46px;
         border: none;
         font-size: 16px;
+        /* vertical-align: bottom; */
+        /* display: inline-block; */
         padding-top: 37px;
         padding-left: 3px;
     }
@@ -4551,7 +4566,7 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 144dpi) {
         #logo {
-            background-image: url('../images/logo@2x.png');
+            background-image: url('../../images/logo@2x.png');
             background-size: 124px 23px;
             background-repeat: no-repeat;
             width: 124px;
@@ -4566,9 +4581,10 @@ only screen and (min-resolution: 144dpi) {
     #top_menu_ext {
         list-style: none;
         display: block;
-        padding-left: 0;
-        margin-left: 225px;
-        margin-top: 0;
+        padding-right: 0;
+        margin-right: 45px;
+        margin-top: 0px;
+        float: right;
     }
     .visible-sm #top_menu_ext {
         list-style: none;
@@ -4580,15 +4596,17 @@ only screen and (min-resolution: 144dpi) {
     }
 
     .callback {
-        float: right;
-        margin-right: 10px;
+        float: left;
+        /*margin-right: 165px;*/
+        margin-left: 75px;
         padding-top: 23px;
         font-size: 13px;
         text-align: center;
     }
-    .visible-sm .callback {
-        float: right;
-        margin-right: 10px;
+    .callback.visible-md  {
+        float: left;
+        /*margin-right: 165px;*/
+        margin-left: 75px;
         padding-top: 23px;
         font-size: 13px;
         text-align: center;
@@ -4619,7 +4637,7 @@ only screen and (min-resolution: 144dpi) {
 
     #planshet {
         width: 70%;
-        background-image: url("../images/ipad.png");
+        background-image: url("../../images/ipad.png");
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -4657,7 +4675,7 @@ only screen and (min-resolution: 144dpi) {
     #dev-slide-1 .icons_new { width: 90%; }
 
     #install-slide-1 {
-        background-image: url('../images/install_slide1.jpg');
+        background-image: url('../../images/install_slide1.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 904px;

@@ -106,7 +106,7 @@
             }
 
             console.log(location.pathname);
-            if( location.pathname != '/' && location.pathname != '/en/' ) {
+            if( location.pathname != '/ru/' && location.pathname != '/en/' && location.pathname != '/arabic/') {
                 $('#callback_wrapper').show();
             }
 
@@ -213,7 +213,7 @@
             console.log('win width: ' + winW);
             $('#slide-3').height( $animation_frame_height );
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src', '../../images/ipad_slide2_org.jpg');
 
             if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
                 console.log('visible');
@@ -294,14 +294,14 @@
             //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
             $('.visible-lg #fake_tabs ul').attr('data--' + $('.visible-lg #fake_tabs').height() + '-bottom', "visibility: hidden");
 
-            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
 
             $('.visible-lg #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
             $('.visible-lg #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
 
-            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('.visible-lg #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-lg #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
 
 
             // for visible-md
@@ -309,14 +309,14 @@
             //$('#fake_tabs ul').attr('data-' + $('#fake_tabs').height() + '-bottom', "visibility: visible");
             $('.visible-md #fake_tabs ul').attr('data--' + $('.visible-md #fake_tabs').height() + '-bottom', "visibility: hidden");
 
-            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.25) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0; opacity: 1;");
 
             $('.visible-md #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.5) + '-bottom-top', "bottom: 0px; opacity: 0;");
             $('.visible-md #fake_tabs ul li').eq(1).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0; opacity: 1;");
 
-            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
-            $('.visible-md #fake_tabs ul li').eq(2).attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
+            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 1.75) + '-bottom-top', "bottom: 0px; opacity: 0;");
+            $('.visible-md #fake_tabs ul li').first().attr('data--' + Math.floor($animation_frame_height * 2 - 30) + '-bottom-top', "bottom: 0; opacity: 1;");
 
             // показываем этаж и кнопки с тенями
             $('#floor, #floor_back, #top_buttons').attr(
@@ -425,7 +425,7 @@
                 // destroy skrollr elements
                 $('#slide-3').height($animation_frame_height);
                 $('.skrollr_el').remove();
-                $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
+                $('#slide2-ipad img').attr('src', '../../images/ipad_slide2_org.jpg');
 
                 // Init Skrollr
                 var s = skrollr.init();
@@ -485,7 +485,7 @@
         }
 
         // показываем заголовок формы обратного звонка
-        if( location.pathname == '/' || location.pathname == '/en/' ) {
+        if( location.pathname == '/ru/' || location.pathname == '/en/' || location.pathname == '/arabic/') {
             if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
                 $('#callback_wrapper').fadeIn(350);
             } else {
