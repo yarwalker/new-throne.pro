@@ -106,7 +106,7 @@
             }
 
             console.log(location.pathname);
-            if( location.pathname != '/' && location.pathname != '/en/' ) {
+            if( location.pathname != '/ru/' && location.pathname != '/en/' && location.pathname != '/arabic/' ) {
                 $('#callback_wrapper').show();
             }
 
@@ -485,7 +485,7 @@
         }
 
         // показываем заголовок формы обратного звонка
-        if( location.pathname == '/' || location.pathname == '/en/' ) {
+        if( location.pathname == '/ru/' || location.pathname == '/en/' || location.pathname == '/arabic/' ) {
             if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
                 $('#callback_wrapper').fadeIn(350);
             } else {
