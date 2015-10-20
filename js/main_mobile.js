@@ -1397,6 +1397,16 @@
 
     /* /main page top carousel */
 
+    $('#langs select').on('change', function(){
+        var arr = location.pathname.split('/');
+
+        //if( $(this).val() != 'ru' ) {
+        window.location = location.protocol + '//' + location.host + '/' + $(this).val() + '/' + arr[arr.length-1];
+        //} else {
+        //    window.location = location.protocol + '//' + location.host + '/' + arr[arr.length-1];
+        //}
+    });
+
 } )( jQuery );
 
 

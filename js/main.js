@@ -1401,11 +1401,8 @@
     /* /main page top carousel */
 
     $('#langs select').on('change', function(){
-        console.log('change ' + $(this).val());
-        console.log(location.pathname);
-        console.log(location.pathname.split('/'));
         var arr = location.pathname.split('/');
-        console.log(arr[arr.length-1])
+
         //if( $(this).val() != 'ru' ) {
             window.location = location.protocol + '//' + location.host + '/' + $(this).val() + '/' + arr[arr.length-1];
         //} else {

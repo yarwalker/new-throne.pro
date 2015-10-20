@@ -137,9 +137,9 @@ $detect = new Mobile_Detect();
 
         <div id="langs" class="form-group">
             <select class="form-control">
-                <option value="ru" >RU</option>
+                <option value="ru" selected>RU</option>
                 <option value="en">EN</option>
-                <option value="arabic" selected>العربية</option>
+                <option value="arabic">العربية</option>
             </select>
         </div>
 
@@ -489,8 +489,6 @@ $detect = new Mobile_Detect();
     </p>
     <div class="bottom_line"></div>
 </div>
-
-
 
 <div id="slide-3" data-slide="3" class=" frame">
 

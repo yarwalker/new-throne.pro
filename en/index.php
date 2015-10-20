@@ -130,9 +130,16 @@ $detect = new Mobile_Detect();
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
-        <div id="langs" >
+        <!--div id="langs" >
             <span><a href="/ru">Ru</a></span>
             <span  class="active">En</span>
+        </div-->
+        <div id="langs" class="form-group">
+            <select class="form-control">
+                <option value="ru">RU</option>
+                <option value="en" selected>EN</option>
+                <option value="arabic">العربية</option>
+            </select>
         </div>
 
         <a id="logo" href="/en" >THRONE Project</a>
