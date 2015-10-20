@@ -557,7 +557,7 @@ $detect = new Mobile_Detect();
                     <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
+                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
