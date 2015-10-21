@@ -233,7 +233,7 @@
             //console.log('win width: ' + winW);
 
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src',  '../images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src',  '../../images/ipad_slide2_org.jpg');
 
         } else {
             // удаляем атрибуты элементов анимации
@@ -774,11 +774,8 @@
             $url = 'send_email.php';
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
-            if( location.href.search('/en') != -1 ) {
-                $str = 'The field "Cellphone Number" can\'t be empty';
-            } else {
-                $str = 'Вы не заполнили поле "Телефон"';
-            }
+            $str = 'The field "Cellphone Number" can\'t be empty';
+
             $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
@@ -794,24 +791,14 @@
 
                 //console.log($('.callback_form').serialize());
 
-                if( location.href.search('/en') ) {
-                    $url = '../' + $url;
-                }
+                $url = '../' + $url;
 
                 $.post($url, $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    if( location.href.search('/en') == -1 ) {
-                        var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
-                        if( data.msg == 1 ) {
-                            $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
-                        }
-                    } else {
-                        var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
-
-                        if( data.msg == 1 ) {
-                            $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
-                        }
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">شكرا ! سنتصل بكم قريبا &mdash;</div>';
                     }
 
                     $($modalID).modal('hide');

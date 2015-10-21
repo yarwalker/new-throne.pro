@@ -178,9 +178,12 @@ $detect = new Mobile_Detect();
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
                         <li><a href="about.html" title="О компании">О компании</a></li>
                         <li>
-                            <div id="langs" >
-                                <span class="active">Ru</span>
-                                <span><a href="/en">En</a></span>
+                            <div id="langs" class="form-group">
+                                <select class="form-control">
+                                    <option value="ru" selected>RU</option>
+                                    <option value="en" >EN</option>
+                                    <option value="arabic" >العربية</option>
+                                </select>
                             </div>
                         </li>
                     </ul>

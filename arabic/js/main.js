@@ -425,7 +425,7 @@
                 // destroy skrollr elements
                 $('#slide-3').height($animation_frame_height);
                 $('.skrollr_el').remove();
-                $('#slide2-ipad img').attr('src', '../../images/ipad_slide2_org.jpg');
+                $('#slide2-ipad img').attr('src', '../../images/ipad_slide2.jpg');
 
                 // Init Skrollr
                 var s = skrollr.init();
@@ -840,6 +840,12 @@
                     if( data.msg == 1 ) {
                         $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
                     }
+                } else if( $lang == 'arabic' ) {
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
+                    }
                 } else {
                     var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
 
@@ -885,11 +891,8 @@
         //console.log(location.href.search('/en'));
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
-            if( location.href.search('/en') != -1 ) {
-                $str = 'The field "Cellphone Number" can\'t be empty';
-            } else {
-                $str = 'Вы не заполнили поле "Телефон"';
-            }
+            $str = 'The field "Cellphone Number" can\'t be empty';
+
             $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
@@ -905,26 +908,18 @@
 
                 //console.log($('.callback_form').serialize());
 
-                if( location.href.search('/en') ) {
+                //if( location.href.search('/en') ) {
                     $url = '../' + $url;
-                }
+                //}
 
                 $.post( $url, $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    //console.log(data);
-                    if( location.href.search('/en') == -1 ) {
-                        var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
-                        if( data.msg == 1 ) {
-                            $str = '<div class="result">&mdash; Спасибо!<br> Мы свяжемся с вами в течение часа.</div>';
-                        }
-                    } else {
-                        var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
-
-                        if( data.msg == 1 ) {
-                            $str = '<div class="result">&mdash; Thanks!<br> We will contact you shortly.</div>';
-                        }
+                    if( data.msg == 1 ) {
+                        $str = '<div class="result">شكرا ! سنتصل بكم قريبا &mdash;</div>';
                     }
+
 
                     $($modalID).modal('hide');
                     $('#send_result').html($str);

@@ -864,11 +864,11 @@ only screen and (min-resolution: 144dpi) {
 }
 
 
-#install-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 47px; margin-bottom: 0; }
-#install-slide-1 p { width: 400px; /*30%;*/ line-height: 22px; margin: 12px 0; }
-#install-slide-1 ul { margin: 0; width: 450px; }
+#install-slide-1 h1 { width: 400px; font-size: 60px; font-family: circe_b; padding-top: 47px; margin-bottom: 0; text-align: right; direction: rtl; }
+#install-slide-1 p { width: 400px; /*30%;*/ line-height: 22px; margin: 12px 0; text-align: right; direction: rtl; }
+#install-slide-1 ul { margin: 0; width: 400px; }
 
-#install-slide-1 p + ul { margin-top: -12px; }
+#install-slide-1 p + ul { margin-top: -12px; text-align: right; direction: rtl; padding-right: 30px; }
 #install-slide-1 p:first-of-type { margin-top: 17px; }
 #install-slide-1 .icons { position: absolute;
     bottom: 50px;
@@ -1398,22 +1398,22 @@ only screen and (min-resolution: 144dpi) {
 div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-color: #ccc; }
 
 #install-slide-2 {
-    padding-left: 50px;
+    padding-right: 50px;
     position: relative;
     margin: 78px auto;
 }
 #install-slide-2 span.marker { padding: 0 5px; background-color: #dedede; }
 #install-slide-2 .icons_row { margin-bottom: 20px; }
 
-#inst-slide2-left { width: 55%; float: left; padding-left: 50px; }
-#inst-slide2-right { width: 30%; margin-left: 70%; }
+#inst-slide2-left { width: 55%; float: right; padding-right: 50px; }
+#inst-slide2-right { width: auto; margin-right: 15%; float: right; }
 #inst-slide2-right p { font-family: circe_l; font-size: 30px; /*width: 60%;*/ line-height: 36px; }
 #inst-slide2-right p:first-of-type { padding-top: 5px; }
 
 #inst-slide2-left .table_cell img { margin-right: 9px; margin-top: 10px; }
 #inst-slide2-left p { line-height: 22px; margin: 22px 0; }
 #inst-slide2-left .table_cell p:last-of-type { margin-bottom: 25px; }
-#inst-slide2-left .table_cell p:nth-of-type(2) { margin-top: 9px; }
+#inst-slide2-left .table_cell p:nth-of-type(2) { margin-top: 9px; text-align: right; direction: rtl; }
 #inst-slide2-left p.text-title {
     font-size: 30px;
     font-family: circe_b;
@@ -1421,12 +1421,14 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
     padding-top: 0;
     line-height: 34px;
     margin-bottom: 0;
+    text-align: right;
+    direction: rtl;
 }
 
 #inst-slide2-left #prep_5days_cell {
     width: 90px;
     background-image: url('../../images/prep_5days_icon.png');
-    background-position: left 10px;
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 60px 49px;
     -o-background-size: 60px 49px;
@@ -1441,7 +1443,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #prep_5days_cell {
         width: 90px;
         background-image: url('../../images/prep_5days_icon@2x.png');
-        background-position: left 10px;
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
         -o-background-size: 60px 49px;
@@ -1453,7 +1455,7 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-left #project_plan_cell {
     width: 90px;
     background-image: url('../../images/project_plan_icon.png');
-    background-position: left 10px;
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 64px 51px;
     -o-background-size: 64px 51px;
@@ -1468,7 +1470,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #project_plan_cell {
         width: 90px;
         background-image: url('../../images/project_plan_icon@2x.png');
-        background-position: left 10px;
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
         -o-background-size: 64px 51px;
@@ -1480,7 +1482,7 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-left #server_cell {
     width: 90px;
     background-image: url('../../images/server_icon.png');
-    background-position: left 10px;
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 70px 36px;
     -o-background-size: 70px 36px;
@@ -1495,7 +1497,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #server_cell {
         width: 90px;
         background-image: url('../../images/server_icon@2x.png');
-        background-position: left 10px;
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
         -o-background-size: 70px 36px;
@@ -1507,7 +1509,7 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-left #install_cell {
     width: 90px;
     background-image: url('../../images/installation_icon.png');
-    background-position: left 10px;
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 65px 48px;
     -o-background-size: 65px 48px;
@@ -1522,7 +1524,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #install_cell {
         width: 90px;
         background-image: url('../../images/installation_icon@2x.png');
-        background-position: left 10px;
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
         -o-background-size: 65px 48px;
@@ -1534,12 +1536,14 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-right #garanty_cell {
     background-image: url("../../images/garanty_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 83px 112px;
     -o-background-size: 83px 112px;
     -webkit-background-size: 83px 112px;
     -moz-background-size: 83px 112px;
     padding-top: 120px;
+    text-align: right;
+    /*direction: rtl;*/
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1549,7 +1553,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #garanty_cell {
         background-image: url("../../images/garanty_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 83px 112px;
         -o-background-size: 83px 112px;
         -webkit-background-size: 83px 112px;
@@ -1561,12 +1565,14 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-right #cert_install_cell {
     background-image: url("../../images/cert_installation_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 79px 112px;
     -o-background-size: 79px 112px;
     -webkit-background-size: 79px 112px;
     -moz-background-size: 79px 112px;
     padding-top: 120px;
+    text-align: right;
+    /*direction: rtl;*/
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1576,7 +1582,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #cert_install_cell {
         background-image: url("../../images/cert_installation_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 79px 112px;
         -o-background-size: 79px 112px;
         -webkit-background-size: 79px 112px;
@@ -1588,12 +1594,14 @@ only screen and (min-resolution: 144dpi) {
 #inst-slide2-right #knx_standart_cell {
     background-image: url("../../images/knx_standart_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 141px 85px;
     -o-background-size: 141px 85px;
     -webkit-background-size: 141px 85px;
     -moz-background-size: 141px 85px;
     padding-top: 94px;
+    text-align: right;
+    /*direction: rtl;*/
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1603,7 +1611,7 @@ only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #knx_standart_cell {
         background-image: url("../../images/knx_standart_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 141px 85px;
         -o-background-size: 141px 85px;
         -webkit-background-size: 141px 85px;
@@ -2588,15 +2596,24 @@ body.modal-open {
 
 .callback_form, .ios_form {
     margin: 15px 0;
+    direction: rtl;
 }
 
 .cb_form_right {
-    padding-top: 15px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.cb_form_right img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
 }
 
 .cb_form_right div {
     margin-top: 10px;
     font-size: 0.77em;
+    direction: rtl;
 }
 #padlock { margin-top: 20px; }
 
@@ -2621,7 +2638,7 @@ body.modal-open {
 
 .send-btn {
     /*float: left;*/
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .send-btn:hover {
@@ -2655,6 +2672,7 @@ body.modal-open {
 .footnote {
     font-size: 0.77em;
     margin-top: 15px;
+    direction: rtl;
 }
 .footnote a { line-height: 14px; }
 
@@ -4160,7 +4178,7 @@ footer.minor {
 }
 
 #design { float: right; margin-top: 44px; }
-#footer_socials { float: right; margin-top: 19px; }
+#footer_socials { float: left; margin-top: 19px; }
 
 #design a, #footer_socials a { line-height: 15px; }
 
@@ -4414,6 +4432,8 @@ only screen and (min-resolution: 144dpi) {
     border: solid 1px #333;
 }
 
+#callback_wrapper .callback_form1 { direction: rtl; }
+
 #callback_form table { width: auto; margin: 0 auto; }
 #callback_form table td { padding: 5px 10px; }
 
@@ -4428,7 +4448,7 @@ only screen and (min-resolution: 144dpi) {
     background: #fefcea; /* Для старых браузров */
     background: linear-gradient(to top, #efecdd, #fdfae9);
     padding: 5px 40px;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 

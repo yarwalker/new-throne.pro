@@ -928,11 +928,12 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img  src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
-                    </td>
-                    <td>
                         <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
+                    <td>
+                        <img  src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>
@@ -944,11 +945,12 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
-                    </td>
-                    <td>
                         <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
+                    <td>
+                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                    </td>
+
                 </tr>
                 <tr>
                     <td>
@@ -960,10 +962,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <span>تحكم كلي أو جزئي </span>
                     </td>
                     <td>
-                        <span>تحكم كلي أو جزئي </span>
+                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                     </td>
                 </tr>
             </table>
@@ -989,10 +991,10 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <span>تكييف مركزي او مقسم لمناطق </span>
+                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1005,10 +1007,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <span>تدفئة مركزية او مقسمة لمناطق </span>
+                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1021,13 +1023,13 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
+                        <span>منظمات الحرارة
+التحكم الكامل بالمناخ </span>
+                    </td>
+                    <td>
                         <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة
 التحكم الكامل بالمناخ " title="منظمات الحرارة
 التحكم الكامل بالمناخ "/>
-                    </td>
-                    <td>
-                        <span>منظمات الحرارة
-التحكم الكامل بالمناخ </span>
                     </td>
                 </tr>
             </table>
@@ -1051,10 +1053,10 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
+                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                     </td>
                 </tr>
                 <tr>
@@ -1070,25 +1072,26 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
+                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية
+                        <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية</span>
+                    </td>
                     <td>
                         <img src="../images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                     <td>
-                        <span>عدد غير محدود من كاميرات المراقبة </span>
+                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                     </td>
                 </tr>
             </table>
@@ -1122,10 +1125,10 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                        <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
                     <td>
-                        <span>تحكم مركزي أو مقسم لمناطق </span>
+                        <img src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1138,10 +1141,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                        <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
                     <td>
-                        <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
+                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
                     </td>
                 </tr>
                 <tr>
@@ -1154,10 +1157,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <span>تحكم كلي أو جزئي </span>
                     </td>
                     <td>
-                        <span>تحكم كلي أو جزئي </span>
+                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                     </td>
                 </tr>
             </table>
@@ -1207,10 +1210,10 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <span>تكييف مركزي او مقسم لمناطق </span>
+                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1223,10 +1226,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <span>تدفئة مركزية او مقسمة لمناطق </span>
+                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1239,13 +1242,13 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
+                        <span>منظمات الحرارة
+التحكم الكامل بالمناخ </span>
+                    </td>
+                    <td>
                         <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة
 التحكم الكامل بالمناخ " title="منظمات الحرارة
 التحكم الكامل بالمناخ "/>
-                    </td>
-                    <td>
-                        <span>منظمات الحرارة
-التحكم الكامل بالمناخ </span>
                     </td>
                 </tr>
             </table>
@@ -1268,10 +1271,10 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
+                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                     </td>
                 </tr>
                 <tr>
@@ -1287,10 +1290,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
+                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                     </td>
                 </tr>
                 <tr>
@@ -1302,10 +1305,10 @@ $detect = new Mobile_Detect();
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                     <td>
-                        <span>عدد غير محدود من كاميرات المراقبة </span>
+                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                     </td>
                 </tr>
             </table>
@@ -1361,13 +1364,13 @@ $detect = new Mobile_Detect();
     <div class="table visible-xs" id="integr_table">
         <div class="table_row">
             <div class="table_cell">
+                فتح البوابة من دون مغادرة مكان جلوسكم
+            </div>
+            <div class="table_cell">
                 <div class="integr_block_wrap">
                     <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
                     <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
                 </div>
-            </div>
-            <div class="table_cell">
-                فتح البوابة من دون مغادرة مكان جلوسكم
             </div>
         </div>
 
@@ -1383,13 +1386,13 @@ $detect = new Mobile_Detect();
 
         <div class="table_row">
             <div class="table_cell">
+                <p>إدارة أنظمة الري وفقا لمناطق متعددة </p>
+            </div>
+            <div class="table_cell">
                 <div class="integr_block_wrap">
                     <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
                     <!--p>Поливочные<br>системы</p-->
                 </div>
-            </div>
-            <div class="table_cell">
-                <p>إدارة أنظمة الري وفقا لمناطق متعددة </p>
             </div>
         </div>
 
@@ -1404,14 +1407,14 @@ $detect = new Mobile_Detect();
         </div>
 
         <div class="table_row">
+            <div class="table_cell">
+                ضبط درجات حرارة المياه في المسبح و حمامات البخار
+            </div>
             <div class="table_cell ">
                 <div class="integr_block_wrap">
                     <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
                     <!--p>Сауны<br>и&nbsp;бассейны</p-->
                 </div>
-            </div>
-            <div class="table_cell">
-                ضبط درجات حرارة المياه في المسبح و حمامات البخار
             </div>
         </div>
     </div>
@@ -1569,7 +1572,7 @@ $detect = new Mobile_Detect();
 
 <div id="callback_wrapper">
     <div id="callback_title">
-        &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
+        &gt;&gt;&gt; اطب مجانا تصميم نموذج ثلاثي الأبعاد للمنزل  &lt;&lt;&lt;
     </div>
     <div id="callback_form">
         <div class="footnote">Просто отправьте нам на адрес <a href="mailto:office@throne.pro">office@throne.pro</a> планы помещений вашего объекта, и мы сделаем 3D-демо и предварительный расчет.
@@ -1581,18 +1584,18 @@ $detect = new Mobile_Detect();
                 <table>
                     <tbody>
                     <tr>
-                        <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
+                        <td align="left"><label for="inputName" class="control-label">الإسم </label></td>
                         <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
                     </tr>
                     <tr>
-                        <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
+                        <td align="left"><label for="inputPhone" class="control-label">رقم الهاتف</label></td>
                         <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
                     </tr>
                     <tr>
-                        <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
+                        <td align="left"><label for="inputTime" class="control-label">Время звонка</label></td>
                         <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
                     </tr>
-                    <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Отправить</button></td></tr>
+                    <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">لإرسال</button></td></tr>
                     </tbody>
                 </table>
 
@@ -1619,13 +1622,13 @@ $detect = new Mobile_Detect();
                     <div class="col-sm-7 col-xs-7">
                         <form action="" class=" callback_form">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">اسم حضرتكم </label>
+                                <label for="inputName" class="control-label">الإسم</label>
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputName" name="inputName">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">رقم الهاتف </label>
+                                <label for="inputPhone" class="control-label">رقم الهاتف</label>
 
                                 <div class=" ">
                                     <input type="text" class="form-control" id="inputPhone" name="inputPhone">
@@ -1633,7 +1636,7 @@ $detect = new Mobile_Detect();
                             </div>
                             <div class="form-group">
                                 <div class="">
-                                    <button type="button" class="send-btn">Отправить</button>
+                                    <button type="button" class="send-btn">لإرسال</button>
                                     <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                 </div>
                             </div>
@@ -1647,18 +1650,18 @@ $detect = new Mobile_Detect();
                     </div>
                     <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
                         <img src="../images/phone_tube.png" alt="">
-                        <div>الاستشارات المقدمة من قبل شركتنا لا تُرتب عليكم أي إلتزام مادي </div>
+                        <div>الاستشارات المقدمة من قبل شركتنا لا تُرتب عليكم أي إلتزام مادي</div>
                         <div id="padlock">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                            <span>نتعهد بضمان الخصوصية التامة و بأن رقم هاتفكم و المعلومات الخاصة بكم لن يتم مشاركتها مع أي طرف آخر</span>
+                            <span>نتعهد بضمان الخصوصية التامة و بأن المعلومات الخاصة بكم لن يتم مشاركتها مع أي طرف آخر</span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
                         <div class="footnote">
-                            Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами!
-                            Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.
+                            <!--a href="mailto:office@throne.pro">написать нам</a-->
+                            او بامكانكم التواصل عبر البريد الالكتروني بارسال رسالة مرفقة بمخخط المنزل او البناء و سنجيبكم على الفور بالتكلفة التقديرية للمشروع مجانا
                         </div>
                     </div>
                 </div>
