@@ -145,7 +145,7 @@ $detect = new Mobile_Detect();
         <nav class="navbar" id="top_menu_ext" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a id="logo" href="/" >THRONE Project</a>
+                    <a id="logo" href="/arabic" >THRONE Project</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -1567,7 +1567,7 @@ $detect = new Mobile_Detect();
         <li><a href="developers.html" title="للمطورين">للمطورين</a></li>
         <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
     </ul>
-    <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+    <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015</div>
 </footer>
 
 <div id="callback_wrapper">

@@ -1113,8 +1113,8 @@ only screen and (min-resolution: 144dpi) {
 
 #about-slide-1 > img { width: 100%; }
 
-#about-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 34px; margin-bottom: 19px }
-#about-slide-1 p { width: 40%; line-height: 22px; margin: 21px 0; }
+#about-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 34px; margin-bottom: 19px; direction: rtl; text-align: right; }
+#about-slide-1 p { width: 40%; line-height: 22px; margin: 21px 0; direction: rtl; text-align: right; }
 #about-slide-1 p:first-of-type { margin-top: 17px; }
 #about-slide-1 p.citation {   /* margin-top: 66px; */
     position: absolute;
@@ -4388,7 +4388,7 @@ footer.minor {
 
 #design { float: right; margin-top: 44px; }
 #footer_socials { float: left; margin-top: 19px; }
-.visible-sm #footer_socials, .visible-xs #footer_socials { float: right; margin-top: 10px; margin-bottom: auto; }
+.visible-sm #footer_socials, .visible-xs #footer_socials { float: left; margin-top: 10px; margin-bottom: auto; }
 
 .visible-sm #bottom_menu, .visible-xs #bottom_menu {
     margin-left: 0px;
@@ -4405,7 +4405,7 @@ footer.minor {
 
 @media (max-width: 720px) {
     .visible-xs #footer_socials {
-        float: left;
+        float: none;
         margin-top: -10px;
         margin-bottom: 20px;
         width: 100%;
@@ -6121,14 +6121,14 @@ only screen and (min-resolution: 144dpi) {
         right: 3%;
     }
 
-    footer { text-align: right; padding-bottom: 20px; }
+    footer { text-align: right; padding-bottom: 75px; }
     .visible-xs #bottom_menu {
         float: none;
     }
     .visible-xs #bottom_menu li {
         display: inline-block;
         padding-top: 30px;
-        margin-right: 0px;
+        margin-left: 18px;
     }
 }
 
@@ -6527,6 +6527,14 @@ only screen and (min-resolution: 144dpi) {
             background-repeat: no-repeat;
         }
     }
+
+    footer { padding-left: 15px; padding-right: 15px; }
+
+    .visible-xs #bottom_menu li {
+        display: inline-block;
+        padding-top: 30px;
+        margin-left: 12px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -6640,10 +6648,11 @@ only screen and (min-resolution: 144dpi) {
         font-size: 1.05em;
     }
 
-    footer { padding: 10px 20px 30px; }
+    footer { padding: 10px 15px 30px; }
     .visible-xs #bottom_menu li {
         display: inline-block;
         margin-right: 15px;
+        margin-right: 0;
     }
 
     #advantages .visible-xs .table_cell img {
@@ -6927,6 +6936,24 @@ only screen and (min-resolution: 144dpi) {
     .panel-heading a { border-bottom: none; text-decoration: underline; }
 }
 
+.visible-xs #bottom_menu.vertical  {
+    display: none;
+}
+@media (max-width: 440px) {
+    .visible-xs #bottom_menu.vertical {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .visible-xs #bottom_menu.vertical li {
+        padding-top: 15px;
+        display: block;
+    }
+
+    .visible-xs #bottom_menu  {
+        display: none;
+    }
+}
 
 .title-light { border-bottom: dashed 1px #f4a00a; display: inline-block; }
 .title-climate { border-bottom: dashed 1px #425d94; display: inline-block; }
