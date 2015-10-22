@@ -4689,6 +4689,14 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 10px;
 }
 
+#faq-slide-1 {
+    position: relative;
+    padding: 50px 0;
+}
+#faq-slide-1 h1 {
+    text-align: center;
+}
+
 @media ( min-width: 1930px ) {
     #factoid_center {
         text-align: center;
@@ -5193,7 +5201,7 @@ only screen and (min-resolution: 144dpi) {
     }
     .visible-xs #bottom_menu {
         margin-left: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
     }
 
@@ -5367,6 +5375,14 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs { margin-top: 0; }
+
+    .callback {
+        float: right;
+        margin-right: 15px;
+        padding-top: 23px;
+        font-size: 13px;
+        text-align: center;
+    }
 }
 
 
@@ -5513,6 +5529,15 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media (max-width: 767px) {
+
+    #faq-slide-1 {
+        position: relative;
+        padding: 0px 0;
+    }
+    #faq-slide-1 h1 {
+        text-align: center;
+    }
+
     #callback_title {
         text-align: center;
         padding: 10px 10px 7px;
@@ -6810,3 +6835,13 @@ only screen and (min-resolution: 144dpi) {
     width: 320px !important;
 }*/
 /* /LiveChat */
+
+.panel-title a { display: inline; line-height: 24px; }
+.panel-title a .capital { border-bottom: none; }
+.panel-title a:hover .capital {
+    transition: color 0.1s ease;
+    -webkit-transition: color 0.1s ease;
+    -moz-transition: color 0.1s ease;
+    -o-transition: color 0.1s ease;
+    color: #be0005;
+}
