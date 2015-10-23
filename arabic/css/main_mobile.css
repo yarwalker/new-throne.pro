@@ -1821,7 +1821,7 @@ only screen and (min-resolution: 144dpi) {
     height: 250px;
 }
 #f_days { font-size: 134px; font-family: circe_b; line-height: 144px; }
-#factoid_center p { margin: -2px 0 0; }
+#factoid_center p { margin: -2px 0 0; direction: rtl; }
 #factoid_center p:first-of-type {
     line-height: 22px;
     /*width: 60%;*/
@@ -1932,7 +1932,8 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
 }
 
-#about-slide-2 p { line-height: 22px; margin: 20px 0; }
+#about-slide-2 p { line-height: 22px; margin: 20px 0; direction: rtl; text-align: right; }
+#about-slide-2 ul { direction: rtl; text-align: right; }
 #about-slide-2 p:first-of-type { margin-top: 14px; }
 #about-slide-2 #about_installation { position: absolute; top: 142px; left: 950px; }
 #about-slide-2 .table { width: 90%; /*75%;*/ margin-top: 61px; }
@@ -2003,10 +2004,12 @@ only screen and (min-resolution: 144dpi) {
 
 #about-slide-2 h3#rationalism {
     background-image: url("../../images/rationalism_icon.png");
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 44px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2015,18 +2018,21 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#rationalism {
         background-image: url("../../images/rationalism_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 44px 50px;
+
     }
 }
 #about-slide-2 h3#velocity {
     background-image: url("../../images/velocity_icon.png");
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 88px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2035,7 +2041,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#velocity {
         background-image: url("../../images/velocity_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 88px 50px;
@@ -2043,10 +2049,12 @@ only screen and (min-resolution: 144dpi) {
 }
 #about-slide-2 h3#standarts {
     background-image: url("../../images/standarts_icon.png");
-    background-position: left top;
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 42px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2055,22 +2063,27 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#standarts {
         background-image: url("../../images/standarts_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 42px 50px;
     }
 }
 
+#about-slide-2 #citation tr td:last-of-type { direction: rtl; text-align: right; }
+
 #about-slide-2 #citation tr td:first-of-type { width: 50% }
 #about-slide-2 #citation tr td:last-of-type { width: 46%; padding-left: 4%; }
 
 blockquote {
     /*background: #f7f7f7;*/
-    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-left: none;
     font-style: italic;
     /*margin: 1.5em 10px;*/
     padding: 0.5em 10px;
+    direction: rtl;
+    text-align: right;
 }
 
 blockquote:before {
@@ -3087,9 +3100,11 @@ only screen and (min-resolution: 144dpi) {
     line-height: 40px;
     margin-top: 27px;
     margin-bottom: 0;
+    text-align: right;
+    direction: rtl;
 }
 
-#install-slide-3 p { font-size: 18px; line-height: 22px; margin: 20px 0; }
+#install-slide-3 p { font-size: 18px; line-height: 22px; margin: 20px 0; text-align: right; direction: rtl; }
 #install-slide-3 p:first-of-type { margin: 9px 0 20px; }
 #install-slide-3 p.note { font-size: 14px; line-height: 18px; border-top: 1px solid #000;
     padding-top: 5px; }
@@ -5941,6 +5956,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         margin: -20px auto 0;
     }
+    #factoid_center p { direction: rtl; }
 
 
     #install-slide-3 {
@@ -6069,6 +6085,7 @@ only screen and (min-resolution: 144dpi) {
     }
     #about-slide-2.visible-xs .container h3 {
         margin-bottom: 30px;
+        direction: rtl;
     }
     #about-slide-2.visible-xs #principles .table_cell {
         width: 30%;
@@ -6338,35 +6355,42 @@ only screen and (min-resolution: 144dpi) {
 
     #about-slide-2 h3#rationalism {
         background-image: url("../../images/rationalism_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 15px;
         padding-left: 60px;
         background-size: 44px 50px;
         margin-bottom: 0;
+        padding-right: 60px;
+        direction: rtl;
+        text-align: right;
     }
 
     #about-slide-2 h3#velocity {
         background-image: url("../../images/velocity_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 10px;
-        padding-left: 104px;
+        padding-right: 104px;
         background-size: 88px 50px;
         margin-bottom: 0;
+        direction: rtl;
+        text-align: right;
     }
 
     #about-slide-2 h3#standarts {
         background-image: url("../../images/standarts_icon@2x.png");
-        background-position: left top;
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 15px;
-        padding-left: 60px;
+        padding-right: 60px;
         background-size: 42px 50px;
         margin-bottom: 0;
+        direction: rtl;
+        text-align: right;
     }
 
-    #about-slide-2 #citation { margin-top: 30px; }
+    #about-slide-2 #citation { margin-top: 30px; direction: rtl; text-align: right; }
     #about-slide-2 #citation .col-xs-6 {
         margin-bottom: 20px;
     }

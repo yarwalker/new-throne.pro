@@ -1068,7 +1068,7 @@
     function makeProjectCounterString()
     {
         var $cur_index = $about_slide_3.find('#project_list li.active').index() + 1,
-            $str = 'Проект ' + $cur_index.toString() + ' из ' + $projects_cnt.toString();
+            $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
 
         if(location.href.search('/en') != -1) {
             $str = 'Project ' + $cur_index.toString() + ' of ' + $projects_cnt.toString();
