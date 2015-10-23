@@ -213,7 +213,7 @@
             console.log('win width: ' + winW);
             $('#slide-3').height( $animation_frame_height );
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', '../../images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src', '../images/ipad_slide2_org.jpg');
 
             if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
                 console.log('visible');
@@ -425,7 +425,7 @@
                 // destroy skrollr elements
                 $('#slide-3').height($animation_frame_height);
                 $('.skrollr_el').remove();
-                $('#slide2-ipad img').attr('src', '../../images/ipad_slide2.jpg');
+                $('#slide2-ipad img').attr('src', '../images/ipad_slide2.jpg');
 
                 // Init Skrollr
                 var s = skrollr.init();

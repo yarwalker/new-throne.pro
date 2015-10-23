@@ -233,7 +233,7 @@
             //console.log('win width: ' + winW);
 
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src',  '../../images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src',  '../images/ipad_slide2_org.jpg');
 
         } else {
             // удаляем атрибуты элементов анимации
