@@ -616,8 +616,9 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
     width: 85%;
     color: #000;
+    direction: rtl;
 }
-#slide-1 p { width: 80%; margin: 1em auto; }
+#slide-1 p { width: 80%; margin: 1em auto; direction: rtl; }
 
 #slide-1 p.app_links_container {
     text-align: center;
@@ -688,6 +689,7 @@ only screen and (min-resolution: 144dpi) {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     z-index: 10;
     position: relative;
+    direction: rtl;
 }
 #slide-1 .visible-xs .flex-caption h2 { font-size: 24px; }
 #slide-1 .visible-lg .flex-caption p,
@@ -700,6 +702,7 @@ only screen and (min-resolution: 144dpi) {
     z-index: 10;
     position: relative;
     width: 100%;
+    direction: rtl;
 }
 #slide-1 .visible-md .flex-caption p, #slide-1 .visible-sm .flex-caption p, #slide-1 .visible-xs .flex-caption p { margin-top: 10px; }
 #slide-1 .visible-lg .flex-direction-nav a { border-bottom: none !important; }
@@ -2712,6 +2715,7 @@ only screen and (min-resolution: 144dpi) {
     /*text-align: justify;*/
     margin-right: auto;
     margin-left: auto;
+    direction: rtl;
 }
 
 #watch_video { font-family: circe; /*margin-top: 20px;*/ margin-bottom: 43px; z-index: 999; position: relative; }
@@ -2921,10 +2925,10 @@ body.modal-open {
     text-align: center;
 }
 
-#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; margin-bottom: 20px; }
+#notes div { display: inline-block; text-align: right; margin-right: 70px; vertical-align: top; margin-bottom: 20px; }
 #notes div:last-of-type { margin-right: 0; }
-#notes div img { margin-right: 15px; vertical-align: top; display: inline-block; margin-bottom: 10px; }
-#notes div span { display: inline-block; }
+#notes div img { margin-right: 15px; vertical-align: top; float: right; margin-left: 15px; margin-bottom: 10px; }
+#notes div span { display: inline-block; direction: rtl; text-align: right; }
 
 #note1 {
     /*position: absolute;
@@ -4039,7 +4043,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
 }
 #slide-5 #know_more_tabs li { vertical-align: middle;  height: 100%; }
-#slide-5 #know_more_tabs li a { border: none; }
+#slide-5 #know_more_tabs li a { border: none; direction: rtl; }
 #slide-5 #know_more_tabs li a:hover { background-color: #fff; }
 #slide-5 #know_more_tabs li { border-bottom: solid 1px transparent; }
 #slide-5 #know_more_tabs li.active { border-bottom: solid 1px #be0005; }
@@ -5043,7 +5047,6 @@ only screen and (min-resolution: 144dpi) {
 
     }
 
-
     #slide-2 h1 { margin-top: 0; }
     #slide-2 h1.visible-sm, #slide-2 h1.visible-xs { margin-bottom: 0;  }
 
@@ -5131,6 +5134,15 @@ only screen and (min-resolution: 144dpi) {
         margin-left: auto;
     }
 
+    .visible-sm #notes, .visible-xs #notes {
+        display: flex;
+        text-align: right;
+        /* width: auto; */
+        /* margin: 0 auto; */
+    }
+    .visible-sm #notes div:last-of-type,
+    .visible-xs #notes div:last-of-type { margin-right: 70px; }
+
     #slide-3 .visible-md #notes div img {
         margin-right: 15px;
         vertical-align: top;
@@ -5141,7 +5153,7 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #slide-3 .visible-sm #notes div img {
-        margin-right: 15px;
+        margin-right: 0px;
         vertical-align: top;
         display: block;
         margin-bottom: 10px;
@@ -5152,7 +5164,7 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #slide-3 .visible-xs #notes div img {
-        margin-right: 15px;
+        margin-right: 0px;
         vertical-align: top;
         display: block;
         margin-bottom: 10px;
