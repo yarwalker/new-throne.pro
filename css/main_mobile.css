@@ -5513,6 +5513,8 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media (max-width: 767px) {
+
+
     #callback_title {
         text-align: center;
         padding: 10px 10px 7px;
@@ -6006,6 +6008,13 @@ only screen and (min-resolution: 144dpi) {
     }
     .jcarousel-control-next {
         right: 3%;
+    }
+
+    #first_frame_factoids div {
+        display: inline-block;
+        margin-right: 40px;
+        vertical-align: top;
+        margin-bottom: 0px;
     }
 }
 

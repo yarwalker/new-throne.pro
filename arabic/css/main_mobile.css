@@ -4029,7 +4029,7 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0px;
 }
 #slide-5 #integr_table .table_cell p:last-of-type { margin-bottom: 0; }
-#slide-5 .table .table_cell p { line-height: 22px; margin: 10px 0; direction: rtl; }
+#slide-5 .table p { line-height: 22px; margin: 10px 0; direction: rtl; }
 #slide-5 .table .table_cell h4 + p { margin-top: 4px; }
 
 #slide-5 #equipment {
@@ -4692,6 +4692,7 @@ only screen and (min-resolution: 144dpi) {
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
+    direction: rtl;
 }
 
 #callback_wrapper .callback_form1 { direction: rtl; }
@@ -6159,6 +6160,13 @@ only screen and (min-resolution: 144dpi) {
         padding-top: 30px;
         margin-left: 18px;
     }
+
+    #first_frame_factoids div {
+        display: inline-block;
+        margin-right: 40px;
+        vertical-align: top;
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -6712,7 +6720,7 @@ only screen and (min-resolution: 144dpi) {
         /* max-width: 40%; */
         height: auto;
         width: 90px;
-        /* float: left; */
+        float: none;
     }
 
     #tabs4 {

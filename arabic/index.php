@@ -1521,6 +1521,13 @@ $detect = new Mobile_Detect();
         <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
         <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
     </ul>
+
+    <ul id="bottom_menu" class="vertical">
+        <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+        <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+        <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+
+    </ul>
     <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015</div>
 </footer>
 
