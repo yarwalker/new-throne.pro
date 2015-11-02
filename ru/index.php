@@ -1880,7 +1880,7 @@ chosen link or button. -->
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
     var __lc = {};
-    __lc.license = 6592911;
+    __lc.license = 6709351;
     (function() {
         var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
         lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
