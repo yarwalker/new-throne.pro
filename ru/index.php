@@ -130,14 +130,22 @@ $detect = new Mobile_Detect();
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
-        <div id="langs" >
+        <!--div id="langs" >
             <span class="active">Ru</span>
             <span><a href="/en">En</a></span>
+        </div-->
+
+        <div id="langs" class="form-group">
+            <select class="form-control">
+                <option value="ru" selected>RU</option>
+                <option value="en">EN</option>
+                <option value="arabic">العربية</option>
+            </select>
         </div>
 
         <a id="logo" href="/ru" >THRONE Project</a>
 
-        <div class="callback visible-lg visible-md">
+        <div class="callback visible-lg">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
@@ -172,9 +180,12 @@ $detect = new Mobile_Detect();
                         <li><a href="about.html" title="О компании">О компании</a></li>
                         <li><a href="faq.html" title="FAQ">FAQ</a></li>
                         <li>
-                            <div id="langs" >
-                                <span class="active">Ru</span>
-                                <span><a href="/en">En</a></span>
+                            <div id="langs" class="form-group">
+                                <select class="form-control">
+                                    <option value="ru" selected>RU</option>
+                                    <option value="en" >EN</option>
+                                    <option value="arabic" >العربية</option>
+                                </select>
                             </div>
                         </li>
                     </ul>
@@ -483,8 +494,6 @@ $detect = new Mobile_Detect();
     </p>
     <div class="bottom_line"></div>
 </div>
-
-
 
 <div id="slide-3" data-slide="3" class=" frame">
 

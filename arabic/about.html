@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="arabic">
 <head>
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
@@ -8,14 +8,15 @@
     <meta name="viewport" content="width=device-width, minimum-scale=0.3, maximum-scale=1, user-scalable=yes" />
     <meta name="HandheldFriendly" content="True"/>
 
-    <meta name="description" content="About THRONE Project company" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="THRONE 3D умный дом " />
+    <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
 
-    <title>About Us - THRONE Smart Home</title>
+
+    <title dir="rtl">عن الشركة - "ترون" البيت الذكي</title>
     <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
-    <!--link href="../css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
+    <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
 
     <script src="../js/jquery-2.1.3.min.js"></script>
     <script>
@@ -40,10 +41,11 @@
             }
         };
     </script>
-    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <script>
         if(isMobile.any()){
-            $("head link[href = '../css/main.css']").attr('href', '../css/main_mobile.css');
+            $("head link[href = 'css/main.css']").attr('href', 'css/main_mobile.css');
         }
     </script>
 
@@ -62,10 +64,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
     <link rel="manifest" href="../images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -123,36 +123,35 @@
     <img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 
     <div class="frame">
-        <div id="head" class="hidden-xs">
+        <div id="head" class=" hidden-xs">
             <div id="langs" class="form-group">
                 <select class="form-control">
                     <option value="ru" >RU</option>
-                    <option value="en" selected>EN</option>
-                    <option value="arabic" >العربية</option>
+                    <option value="en">EN</option>
+                    <option value="arabic" selected>العربية</option>
                 </select>
             </div>
 
-            <a id="logo" href="/en" >THRONE Project</a>
+            <a id="logo" href="/arabic" >THRONE Project</a>
+
+            <ul id="top_menu_ext">
+                <li class="active">عن الشركة</a></li>
+                <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+                <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+            </ul>
 
             <div class="callback visible-lg visible-md">
                 <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                      onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require a callback</span>
-                <span class="callback_contacts"><a href="mailto:office@throne.pro">office@throne.pro</a> or +7 (495) 255-0-777</span>
+                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
+                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a>&nbsp;&nbsp;+7 (495) 255-0-777</span>
             </div>
-
-            <ul id="top_menu_ext">
-                <li><a href="installation.html" title="How We Work">How We Work</a></li>
-                <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-                <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-                <li class="active">About Us</li>
-            </ul>
         </div>
 
         <div id="head" class=" visible-xs" >
             <nav class="navbar" id="top_menu_ext" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="logo" href="/en" >THRONE Project</a>
+                        <a id="logo" href="/arabic" >THRONE Project</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -162,15 +161,15 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav" id="top_menu_ext">
-                            <li><a href="installation.html" title="How We Work">How We Work</a></li>
-                            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-                            <li class="active">About Us</li>
+                            <li><a href="installation.html" title="عن الشركة">كيف نعمل</a></li>
+                            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+                            <li class="active">عن الشركة</li>
                             <li>
                                 <div id="langs" class="form-group">
                                     <select class="form-control">
                                         <option value="ru" >RU</option>
-                                        <option value="en" selected>EN</option>
-                                        <option value="arabic" >العربية</option>
+                                        <option value="en">EN</option>
+                                        <option value="arabic" selected>العربية</option>
                                     </select>
                                 </div>
                             </li>
@@ -181,15 +180,13 @@
         </div>
     </div>
 
-
     <div id="about-slide-1" class="frame visible-lg visible-md">
-        <h1>About Us</h1>
-        <p>THRONE Project is an international engineering company. We design and install automation systems for homes, offices and industrial buildings.
-            These systems are often called Smart Home, Smart Office or Smart Building.</p>
-        <p>Our business is built around the THRONE 3D Control technology &mdash; a breakthrough interface for automation systems based on the 3D model of a building.
-            We offer clients the combination of this revolutionary product with high quality and reliability of the equipment produced under European standard KNX.</p>
-        <p>THRONE Project has more than 10 years of experience of different scale projects implementation:
-            from Smart Home in residential houses (villa or appartment) to automation of huge commercial facilities (malls, offices, business centers, etc.).</p>
+        <h1>عن الشركة</h1>
+        <p>«مشروع ترون» هي شركة هندسية دولية رائدة تعمل منذ
+            أكثر من عشرة أعوام في مجال تصميم و تنفيذ و تركيب أنظمة الأتمتة الخاصة بالمنازل و المكاتب و المباني التجارية والصناعية. وغالباً يطلق على هذه الأنظمة تسمياتٍ مثل: البيت الذكي، المكتب الذكي أو المبنى الذكي. </p>
+        <p>إن عملنا في الشركة، مبني حول تقنية التحكم "ترون" الثلاثية الأبعاد و المطبقة في واجهة التحكم (انتيرفيس) الأولى من نوعها الخاصة بأنظمة الأتمتة،والتي تعكس نموذج المبنى على شكل رسم بياني ثلاثي الأبعاد واضح وبسيط. كما تتميز شركتنا بعروضها التي تتضمن بالاضافة إلى هذا المنتج الفريد، التجهيزات العالية الجودة والأداء و المصنعة وفقا للمعايير الأوروبية و المواصفة الأوروبية
+            KNX</p>
+        <p>شركة "مشروع ترون" تمتلك خبرة طويلة تمتد لأكثر من عشرة أعوام في مجال تنفيذ مشاريع مختلفة الصعوبة والأحجام. فمن ضمن المشاريع التي تم تنفيذها من قبل شركتنا بكل نجاح، هناك عدد كبير من المباني والشقق السكنية التي تم تزويدها بأنظمة البيت الذكي بالاضافة لقائمة كبيرة من مشاريع أتمتة المواقع الصناعية و التجارية مثل:المولات، المكاتب، المستودعات وغيرها)</p>
     </div>
 
     <div id="about-slide-1" class="frame visible-xs visible-sm">
@@ -197,83 +194,87 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
-                    <h1>About Us</h1>
-                    <p>THRONE Project is an international engineering company. We design and install automation systems for homes, offices and industrial buildings.
-                        These systems are often called Smart Home, Smart Office or Smart Building.</p>
-                    <p>Our business is built around the THRONE 3D Control technology &mdash; a breakthrough interface for automation systems based on the 3D model of a building.
-                        We offer clients the combination of this revolutionary product with high quality and reliability of the equipment produced under European standard KNX.</p>
-                    <p>THRONE Project has more than 10 years of experience of different scale projects implementation:
-                        from Smart Home in residential houses (villa or appartment) to automation of huge commercial facilities (malls, offices, business centers, etc.).</p>
+                    <h1>عن الشركة</h1>
+                    <p>«مشروع ترون» هي شركة هندسية دولية رائدة تعمل منذ
+                        أكثر من عشرة أعوام في مجال تصميم و تنفيذ و تركيب أنظمة الأتمتة الخاصة بالمنازل و المكاتب و المباني التجارية والصناعية. وغالباً يطلق على هذه الأنظمة تسمياتٍ مثل: البيت الذكي، المكتب الذكي أو المبنى الذكي. </p>
+                    <p>إن عملنا في الشركة، مبني حول تقنية التحكم "ترون" الثلاثية الأبعاد و المطبقة في واجهة التحكم (انتيرفيس) الأولى من نوعها الخاصة بأنظمة الأتمتة،والتي تعكس نموذج المبنى على شكل رسم بياني ثلاثي الأبعاد واضح وبسيط. كما تتميز شركتنا بعروضها التي تتضمن بالاضافة إلى هذا المنتج الفريد، التجهيزات العالية الجودة والأداء و المصنعة وفقا للمعايير الأوروبية و المواصفة الأوروبية
+                        KNX</p>
+                    <p>شركة "مشروع ترون" تمتلك خبرة طويلة تمتد لأكثر من عشرة أعوام في مجال تنفيذ مشاريع مختلفة الصعوبة والأحجام. فمن ضمن المشاريع التي تم تنفيذها من قبل شركتنا بكل نجاح، هناك عدد كبير من المباني والشقق السكنية التي تم تزويدها بأنظمة البيت الذكي بالاضافة لقائمة كبيرة من مشاريع أتمتة المواقع الصناعية و التجارية مثل:المولات، المكاتب، المستودعات وغيرها)</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="about-slide-2" class="frame visible-lg visible-md">
-        <h3>What differs us from other companies installing Smart Home systems?</h3>
+        <h3>ماالذي يميزنا عن بقية الشركات التي تعمل في مجال تثبيت أنظمة البيت الذكي ؟</h3>
 
-        <table>
+        <table >
             <tbody>
-                <tr>
-                    <td width="50%">
-                        <p>Once we thought: why in our time of high technologies it is so difficult to order a Smart Home system?
-                            You can buy anything, without leaving your chair, but the design and installation of Smart Home turns into a complicated and confusing issue!
-                            And we understood that this industry lacks standards.
-                        </p>
-                        <p>All companies work in their own way, all projects are done differently. Even the term 'smart home' is used each time for something different.
-                            The result is that each new project is like climbing a huge mountain. A hard way, which is repeatedly traversed again.</p>
-                        <p>We used an approach that once made a revolution in car production: we made an assembly line for Smart homes.
-                            At the basis of any project underlie basic technological components, similar for all. Then we add individual characteristics,
-                            which are different for different projects and depend on client's demands.
-                        </p>
-                    </td>
-                    <td id="upstairs">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td id="houses">&nbsp;</td>
-                    <td>
-                        <p>We have created simple algorithms, which made life easier for a customer, and installer of a Smart Home system.
-                            Earlier the order process of a system looked like assembling a puzzle. We made it similar to buying a car or tour packages:
-                            here is the base, here are the options, here are additional services.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>We will not impose numerous meetings and presentations whose sole purpose is to estimate how much money you can 'shake out' from the customer.
-                            We evaluate the project and prepare specifications remotely, make free demo version, and at the time of signing the contract the client is already 100% sure
-                            what his 'smart home' will look like.</p>
-                    </td>
-                    <td id="man-on-top">&nbsp;</td>
-                </tr>
+            <tr>
+                <td width="50%">
+                    <p>في إحدى المرات ورد الى ذهننا سؤال هام : على الرغم من أننا نعيش في عصر التقنيات الحديثة، لماذا نواجه كل تلك الصعوبات عندما نرغب في إختيار وتثبيت نظام البيت الذكي المناسب لنا ؟ في الوقت نفسه حيث تتوفراليوم إمكانية شراء أي غرضٍ كان، من دون الحاجة للخروج حتى من المنزل، على عكس مسألة شراء منظومة البيت الذكي و التي بالفور تتحول الى أمر بغاية التعقيد، حينها علمنا أن هذه الصناعة بحاجة لمعايير محددة !</p>
+                    <p>لكل شركة طريقتها الخاصة بها بالعمل، و جميع المشاريع يتم تنفيذها أيضاٌ بطرق مختلفة. حتى أن البعض بدأ يطلق تسمية البيت الذكي على مشاريع لا تمت بأية صلة لهذه التسمية. وبالتالي كل مشروع جديد أصبح بمثابة تحدي كبير شبيه بتسلق قمة جبل إفرست، و بلوغ الهدف أمر بغاية الصعوبة على عكس ما هو عليه الأمر بالفعل...</p>
+                    <p>لقد اخترنا اسلوباً في عملنا شبيه بتلك الطريقة التي أحدثت ثورة في عالم صناعة السيارات يوما ما، فقد صنعنا خط تجميع و إنتاج آلي للبيوت الذكية. إن أي مشروع صناعي كان، يعتمد على مجموعة من الأسس التكنولوجية الجوهرية و هي موحدة بالنسبة للجميع. وفيما بعد يتم الإضافة على تلك الأسس، مواصفات خاصة و التي تختلف بالنسبة لكل مشروع بحسب رغبات كل زبون .</p>
+                </td>
+                <td id="upstairs">&nbsp;</td>
+            </tr>
+            <tr>
+                <td id="houses">&nbsp;</td>
+                <td>
+                    <p class=" ">
+                        لقد أنشأنا برمجيات بسيطة و التي سهلت حياة كل من:
+                    </p>
+                    <ul>
+                        <li>الزبون: أومن يقوم باستخدام البيت الذكي</li>
+                        <li>المنفذ: أي من يشرف على تثبيت نظام البيت الذكي</li>
+                    </ul>
+                    <p>
+                        سابقا، عملية اختيار و شراء نظام البيت الذكي كانت أشبه بحل أحجية معقدة. أما نحن فقد توصلنا الى جعل تلك العملية بأسرها ، شبيهة بعملية شراء السيارة او رحلة سياحية، تلك هي القاعدة، و هاهي المواصفات المطلوبة، وهذه هي الخدمات الاضافية
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>إن سياسة شركتنا لاتعتمد على تنظيم عروض تقديمية متكررة حول المنتج أمام العملاء، فالهدف الوحيد منها يكون غالبا لدى الشركات الأخرى التي تقوم بذلك، هومعرفة كمية المال التي يمكن إستجرارها من الزبون. إن حساب الكلفة التقديرية للمشروع بناءاً على المواصفات المطلوبة، تقوم به شركتنا مجانا ومن دون الحاجة حتى لتنظيم لقاء شخصي، وكذلك الأمر بالنسبة لتصميم نموذج العرض المجاني الخاص بمنزلكم وهو الأمر الذي يساعد الزبون من معرفة 100% من الشكل الذي سيكون عليه البيت الذكي الخاص به.</p>
+                </td>
+                <td id="man-on-top">&nbsp;</td>
+            </tr>
             </tbody>
         </table>
 
-        <h2>Our Principles</h2>
+        <h2>مبادئنا</h2>
         <div class="table">
             <div class="table_row">
                 <div class="table_cell">
-                    <!--img src="../images/rationalism_icon.png" alt=""/-->
-                    <h3 id="rationalism">Rationalism</h3>
-                    <p>It's time to stop presenting 'Smart home' as mischievous antics of hilarious wizards. No 'clap your hands and turn on the light'.
-                        No 'refrigerator will order food for you'. Those fairy tales made many of reasonable people sceptic regarding 'smart home' systems</p>
-                    <p>We offer reasonable, affordable and really needed systems: control of lighting and blinds, climatic equipment,
-                        intercoms and video surveillance, security systems. All this is controlled from a mobile device using THRONE user interface,
-                        the best one on the market.</p>
+                    <!--img src="images/rationalism_icon.png" alt="" /-->
+                    <h3 id="rationalism">العقلانية</h3>
+                    <p>
+                        باعتقادنا، أنه آن الآوان لتغيير المفهوم السائد عن البيت الذكي و كأنه مسرح لألعاب الخفة . فلن تضيء الأضواء في المنزل بمجرد التصفيق باليدين، ولن يرسل البراد في طلب الطعام نيابة عنكم . تلك الحكايات لا أساس لها من الصحة و ان كانت تروى من قبل بعض الصحفيين او المهندسيين الغير مؤهلين
+                    </p>
+                    <p>
+                        نحن نعرض عليكم أنظمة: جدية،حقيقية،متوفرة و مفيدة بالفعل، كنظم التحكم
+                    </p>
+                    <ul>
+                        <li> بالإنارة</li>
+                        <li> بأجهزة التكييف والتدفئة</li>
+                        <li>الإنترفون المنزلي و كاميرات المراقبة</li>
+                        <li>أجهزة الأمان و الحماية</li>
+                    </ul>
+                    <p>
+                        وكل هذه الأنظمة يمكن إدارتها بواسطة الهاتف النقال من خلال واجهة المستخدم ( الانتيرفيس) "ترون"، المنتج الأفضل المتوفرحالياً في الأسواق
+                    </p>
                 </div>
                 <div class="table_cell">
-                    <!--img src="../images/speed_icon.png" alt=""/-->
-                    <h3 id="velocity">Velocity</h3>
-                    <p>Installation of 'Smart Home' should not take longer than building a house. The market is full of companies that do home automation projects for many months,
-                        and sometimes more than a year. We have simplified, unified and accelerated the procedures of order, design and installation of Smart Home system.
-                        Also, due to 3D THRONE interface, the customer get the full understanding of his system yet at the stage of demo version.</p>
+                    <!--img src="images/speed_icon.png" alt="" /-->
+                    <h3 id="velocity">السرعة</h3>
+                    <p>ان مدة إنجاز أعمال تركيب نظام البيت الذكي، لا يجب أن تتجاوز اليوم المحدد لنهاية كافة أعمال بناء المنزل. و من المؤسف أن اليوم هناك العديد من الشركات التي تقوم بتنفيذ مشاريع أتمتة المنازل، تتجاوز مدة أعمالها الأشهر و في بعض الأحيان قد تتجاوزهذه المدة السنة. لقد قمنا من جهتناا بتسهيل ودمج و تسريع كافة إجراءات حجز و تصميم و تثبيت أنظمة البيت الذكي.  بفضل الانتيرفيس "ترون" الثلاثي الابعاد، أصبح بامكان الزبون الحصول على تصورٍ واضح مسبق بالنسبة لآلية ادارة بيته الذكي وكل ذلك بفضل نموذج العرض التوضيحي المجاني.</p>
                 </div>
                 <div class="table_cell">
-                    <!--img src="../images/standarts_icon.png" alt=""/-->
-                    <h3 id="standarts">Standards</h3>
-                    <p>Unification of business processes and production cycle. The process of designing and installation of Smart Home systems in THRONE Project is a properly
-                        debugged algorithm in which there is a clear time and place for every action, document, person.
-                        We are not inventing on the fly, but achieve a guaranteed result.
+                    <!--img src="images/standarts_icon.png" alt=""/-->
+                    <h3 id="standarts"> المقاييس</h3>
+                    <p>
+                        دمج مراحل العمل و دورة الانتاج .
+                        إن طريقة تصميم و تنفيذ نظام البيت الذكي لدى "مشروع ترون" ، تتم وفقا لمنهج أثبت فاعليته بكفأة عالية ، حيث لكل شخص او عمل او وثيقة ، المكان والتوقيت المحدد بدقة. نحن لا نبتكر أثناء سير العمل و إنما هدفنا هو بلوغ النتيجة المضمونة
                     </p>
                 </div>
             </div>
@@ -281,17 +282,17 @@
 
         <table id="citation">
             <tbody>
-                <tr>
-                    <td>
-                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
-                    </td>
-                    <td>
-                        <blockquote class=" ">We are working to make 'smart systems' become rational choice of a person, but not a pampering or entertainment.
-                            We want the building automation to become mainstream, and its benefits to be enjoyed by billions of people.
-                            We believe that our approach to the business will completely change the market.</blockquote>
-                        <strong>Mikhail Kulikov</strong>, Director of THRONE Project
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                </td>
+                <td>
+                    <blockquote class=" ">
+                        إننا نعمل كي تصبح الأنظمة الذكية و ما توفرها من فوائد بمتناول واختيارالجميع و ليس حكراً على طبقة معينة من الناس و وسيلة للتميز او التسلية الخاصة بهم . فنحن نؤمن بأن اسلوب و طريقة عملنا كفيلة بتغييرمفاهيم هذا القطاع من الأعمال بشكل جذري، و لكي تصبح عمليات أتمتة المباني متاحة لمليارات من الناس
+                    </blockquote>
+                    <strong>ميخائيل كوليكوف</strong>, مدير شركة "مشروع ترون"
+                </td>
+            </tr>
             </tbody>
         </table>
 
@@ -299,70 +300,75 @@
 
     <div id="about-slide-2" class="frame visible-sm">
         <div class="container">
-            <h3>What differs us from other companies installing Smart Home systems?</h3>
+            <h3>ماالذي يميزنا عن بقية الشركات التي تعمل في مجال تثبيت أنظمة البيت الذكي ؟</h3>
 
-            <table>
+            <table >
                 <tbody>
                 <tr>
                     <td width="50%">
-                        <p>Once we thought: why in our time of high technologies it is so difficult to order a Smart Home system?
-                            You can buy anything, without leaving your chair, but the design and installation of Smart Home turns into a complicated and confusing issue!
-                            And we understood that this industry lacks standards.
-                        </p>
-                        <p>All companies work in their own way, all projects are done differently. Even the term 'smart home' is used each time for something different.
-                            The result is that each new project is like climbing a huge mountain. A hard way, which is repeatedly traversed again.</p>
-                        <p>We used an approach that once made a revolution in car production: we made an assembly line for Smart homes.
-                            At the basis of any project underlie basic technological components, similar for all. Then we add individual characteristics,
-                            which are different for different projects and depend on client's demands.
-                        </p>
+                        <p>في إحدى المرات ورد الى ذهننا سؤال هام : على الرغم من أننا نعيش في عصر التقنيات الحديثة، لماذا نواجه كل تلك الصعوبات عندما نرغب في إختيار وتثبيت نظام البيت الذكي المناسب لنا ؟ في الوقت نفسه حيث تتوفراليوم إمكانية شراء أي غرضٍ كان، من دون الحاجة للخروج حتى من المنزل، على عكس مسألة شراء منظومة البيت الذكي و التي بالفور تتحول الى أمر بغاية التعقيد، حينها علمنا أن هذه الصناعة بحاجة لمعايير محددة !</p>
+                        <p>لكل شركة طريقتها الخاصة بها بالعمل، و جميع المشاريع يتم تنفيذها أيضاٌ بطرق مختلفة. حتى أن البعض بدأ يطلق تسمية البيت الذكي على مشاريع لا تمت بأية صلة لهذه التسمية. وبالتالي كل مشروع جديد أصبح بمثابة تحدي كبير شبيه بتسلق قمة جبل إفرست، و بلوغ الهدف أمر بغاية الصعوبة على عكس ما هو عليه الأمر بالفعل...</p>
+                        <p>لقد اخترنا اسلوباً في عملنا شبيه بتلك الطريقة التي أحدثت ثورة في عالم صناعة السيارات يوما ما، فقد صنعنا خط تجميع و إنتاج آلي للبيوت الذكية. إن أي مشروع صناعي كان، يعتمد على مجموعة من الأسس التكنولوجية الجوهرية و هي موحدة بالنسبة للجميع. وفيما بعد يتم الإضافة على تلك الأسس، مواصفات خاصة و التي تختلف بالنسبة لكل مشروع بحسب رغبات كل زبون .</p>
                     </td>
                     <td id="upstairs">&nbsp;</td>
                 </tr>
                 <tr>
                     <td id="houses">&nbsp;</td>
                     <td>
-                        <p>We have created simple algorithms, which made life easier for a customer, and installer of a Smart Home system.
-                            Earlier the order process of a system looked like assembling a puzzle. We made it similar to buying a car or tour packages:
-                            here is the base, here are the options, here are additional services.
+                        <p class=" ">
+                            لقد أنشأنا برمجيات بسيطة و التي سهلت حياة كل من:
+                        </p>
+                        <ul>
+                            <li>الزبون: أومن يقوم باستخدام البيت الذكي</li>
+                            <li>المنفذ: أي من يشرف على تثبيت نظام البيت الذكي</li>
+                        </ul>
+                        <p>
+                            سابقا، عملية اختيار و شراء نظام البيت الذكي كانت أشبه بحل أحجية معقدة. أما نحن فقد توصلنا الى جعل تلك العملية بأسرها ، شبيهة بعملية شراء السيارة او رحلة سياحية، تلك هي القاعدة، و هاهي المواصفات المطلوبة، وهذه هي الخدمات الاضافية
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p>We will not impose numerous meetings and presentations whose sole purpose is to estimate how much money you can 'shake out' from the customer.
-                            We evaluate the project and prepare specifications remotely, make free demo version, and at the time of signing the contract the client is already 100% sure
-                            what his 'smart home' will look like.</p>
+                        <p>إن سياسة شركتنا لاتعتمد على تنظيم عروض تقديمية متكررة حول المنتج أمام العملاء، فالهدف الوحيد منها يكون غالبا لدى الشركات الأخرى التي تقوم بذلك، هومعرفة كمية المال التي يمكن إستجرارها من الزبون. إن حساب الكلفة التقديرية للمشروع بناءاً على المواصفات المطلوبة، تقوم به شركتنا مجانا ومن دون الحاجة حتى لتنظيم لقاء شخصي، وكذلك الأمر بالنسبة لتصميم نموذج العرض المجاني الخاص بمنزلكم وهو الأمر الذي يساعد الزبون من معرفة 100% من الشكل الذي سيكون عليه البيت الذكي الخاص به.</p>
                     </td>
                     <td id="man-on-top">&nbsp;</td>
                 </tr>
                 </tbody>
             </table>
 
-            <h2>Our Principles</h2>
-            <div id="principles" class="table">
+            <h2>مبادئنا</h2>
+            <div class="table" id="principles">
                 <div class="table_row">
                     <div class="table_cell">
-                        <!--img src="../images/rationalism_icon.png" alt=""/-->
-                        <h3 id="rationalism">Rationalism</h3>
-                        <p>It's time to stop presenting 'Smart home' as mischievous antics of hilarious wizards. No 'clap your hands and turn on the light'.
-                            No 'refrigerator will order food for you'. Those fairy tales made many of reasonable people sceptic regarding 'smart home' systems</p>
-                        <p>We offer reasonable, affordable and really needed systems: control of lighting and blinds, climatic equipment,
-                            intercoms and video surveillance, security systems. All this is controlled from a mobile device using THRONE user interface,
-                            the best one on the market.</p>
+                        <!--img src="images/rationalism_icon.png" alt="" /-->
+                        <h3 id="rationalism">العقلانية</h3>
+                        <p>
+                            باعتقادنا، أنه آن الآوان لتغيير المفهوم السائد عن البيت الذكي و كأنه مسرح لألعاب الخفة . فلن تضيء الأضواء في المنزل بمجرد التصفيق باليدين، ولن يرسل البراد في طلب الطعام نيابة عنكم . تلك الحكايات لا أساس لها من الصحة و ان كانت تروى من قبل بعض الصحفيين او المهندسيين الغير مؤهلين
+                        </p>
+                        <p>
+                            نحن نعرض عليكم أنظمة: جدية،حقيقية،متوفرة و مفيدة بالفعل، كنظم التحكم
+                        </p>
+                        <ul>
+                            <li> بالإنارة</li>
+                            <li> بأجهزة التكييف والتدفئة</li>
+                            <li>الإنترفون المنزلي و كاميرات المراقبة</li>
+                            <li>أجهزة الأمان و الحماية</li>
+                        </ul>
+                        <p>
+                            وكل هذه الأنظمة يمكن إدارتها بواسطة الهاتف النقال من خلال واجهة المستخدم ( الانتيرفيس) "ترون"، المنتج الأفضل المتوفرحالياً في الأسواق
+                        </p>
                     </div>
                     <div class="table_cell">
-                        <!--img src="../images/speed_icon.png" alt=""/-->
-                        <h3 id="velocity">Velocity</h3>
-                        <p>Installation of 'Smart Home' should not take longer than building a house. The market is full of companies that do home automation projects for many months,
-                            and sometimes more than a year. We have simplified, unified and accelerated the procedures of order, design and installation of Smart Home system.
-                            Also, due to 3D THRONE interface, the customer get the full understanding of his system yet at the stage of demo version.</p>
+                        <!--img src="images/speed_icon.png" alt="" /-->
+                        <h3 id="velocity">السرعة</h3>
+                        <p>ان مدة إنجاز أعمال تركيب نظام البيت الذكي، لا يجب أن تتجاوز اليوم المحدد لنهاية كافة أعمال بناء المنزل. و من المؤسف أن اليوم هناك العديد من الشركات التي تقوم بتنفيذ مشاريع أتمتة المنازل، تتجاوز مدة أعمالها الأشهر و في بعض الأحيان قد تتجاوزهذه المدة السنة. لقد قمنا من جهتناا بتسهيل ودمج و تسريع كافة إجراءات حجز و تصميم و تثبيت أنظمة البيت الذكي.  بفضل الانتيرفيس "ترون" الثلاثي الابعاد، أصبح بامكان الزبون الحصول على تصورٍ واضح مسبق بالنسبة لآلية ادارة بيته الذكي وكل ذلك بفضل نموذج العرض التوضيحي المجاني.</p>
                     </div>
                     <div class="table_cell">
-                        <!--img src="../images/standarts_icon.png" alt=""/-->
-                        <h3 id="standarts">Standards</h3>
-                        <p>Unification of business processes and production cycle. The process of designing and installation of Smart Home systems in THRONE Project is a properly
-                            debugged algorithm in which there is a clear time and place for every action, document, person.
-                            We are not inventing on the fly, but achieve a guaranteed result.
+                        <!--img src="images/standarts_icon.png" alt=""/-->
+                        <h3 id="standarts"> المقاييس</h3>
+                        <p>
+                            دمج مراحل العمل و دورة الانتاج .
+                            إن طريقة تصميم و تنفيذ نظام البيت الذكي لدى "مشروع ترون" ، تتم وفقا لمنهج أثبت فاعليته بكفأة عالية ، حيث لكل شخص او عمل او وثيقة ، المكان والتوقيت المحدد بدقة. نحن لا نبتكر أثناء سير العمل و إنما هدفنا هو بلوغ النتيجة المضمونة
                         </p>
                     </div>
                 </div>
@@ -375,10 +381,10 @@
                         <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
                     </td>
                     <td>
-                        <blockquote class=" ">We are working to make 'smart systems' become rational choice of a person, but not a pampering or entertainment.
-                            We want the building automation to become mainstream, and its benefits to be enjoyed by billions of people.
-                            We believe that our approach to the business will completely change the market.</blockquote>
-                        <strong>Mikhail Kulikov</strong>, Director of THRONE Project
+                        <blockquote class=" ">
+                            إننا نعمل كي تصبح الأنظمة الذكية و ما توفرها من فوائد بمتناول واختيارالجميع و ليس حكراً على طبقة معينة من الناس و وسيلة للتميز او التسلية الخاصة بهم . فنحن نؤمن بأن اسلوب و طريقة عملنا كفيلة بتغييرمفاهيم هذا القطاع من الأعمال بشكل جذري، و لكي تصبح عمليات أتمتة المباني متاحة لمليارات من الناس
+                        </blockquote>
+                        <strong>ميخائيل كوليكوف</strong>, مدير شركة "مشروع ترون"
                     </td>
                 </tr>
                 </tbody>
@@ -388,67 +394,71 @@
 
     <div id="about-slide-2" class="frame visible-xs">
         <div class="container">
-            <h3>What differs us from other companies installing Smart Home systems?</h3>
-
+            <h3>ماالذي يميزنا عن بقية الشركات التي تعمل في مجال تثبيت أنظمة البيت الذكي ؟</h3>
             <div class="row">
-                <div id="upstairs" class="col-xs-6"></div>
                 <div class="col-xs-6">
-                    <p>Once we thought: why in our time of high technologies it is so difficult to order a Smart Home system?
-                        You can buy anything, without leaving your chair, but the design and installation of Smart Home turns into a complicated and confusing issue!
-                        And we understood that this industry lacks standards.
-                    </p>
-                    <p>All companies work in their own way, all projects are done differently. Even the term 'smart home' is used each time for something different.
-                        The result is that each new project is like climbing a huge mountain. A hard way, which is repeatedly traversed again.</p>
-                    <p>We used an approach that once made a revolution in car production: we made an assembly line for Smart homes.
-                        At the basis of any project underlie basic technological components, similar for all. Then we add individual characteristics,
-                        which are different for different projects and depend on client's demands.
-                    </p>
+                    <p>في إحدى المرات ورد الى ذهننا سؤال هام : على الرغم من أننا نعيش في عصر التقنيات الحديثة، لماذا نواجه كل تلك الصعوبات عندما نرغب في إختيار وتثبيت نظام البيت الذكي المناسب لنا ؟ في الوقت نفسه حيث تتوفراليوم إمكانية شراء أي غرضٍ كان، من دون الحاجة للخروج حتى من المنزل، على عكس مسألة شراء منظومة البيت الذكي و التي بالفور تتحول الى أمر بغاية التعقيد، حينها علمنا أن هذه الصناعة بحاجة لمعايير محددة !</p>
+                    <p>لكل شركة طريقتها الخاصة بها بالعمل، و جميع المشاريع يتم تنفيذها أيضاٌ بطرق مختلفة. حتى أن البعض بدأ يطلق تسمية البيت الذكي على مشاريع لا تمت بأية صلة لهذه التسمية. وبالتالي كل مشروع جديد أصبح بمثابة تحدي كبير شبيه بتسلق قمة جبل إفرست، و بلوغ الهدف أمر بغاية الصعوبة على عكس ما هو عليه الأمر بالفعل...</p>
+                    <p>لقد اخترنا اسلوباً في عملنا شبيه بتلك الطريقة التي أحدثت ثورة في عالم صناعة السيارات يوما ما، فقد صنعنا خط تجميع و إنتاج آلي للبيوت الذكية. إن أي مشروع صناعي كان، يعتمد على مجموعة من الأسس التكنولوجية الجوهرية و هي موحدة بالنسبة للجميع. وفيما بعد يتم الإضافة على تلك الأسس، مواصفات خاصة و التي تختلف بالنسبة لكل مشروع بحسب رغبات كل زبون .</p>
                 </div>
+                <div id="upstairs" class="col-xs-6"></div>
             </div>
 
             <div class="row">
                 <div id="houses" class="col-xs-6"></div>
                 <div class="col-xs-6">
-                    <p>We have created simple algorithms, which made life easier for a customer, and installer of a Smart Home system.
-                        Earlier the order process of a system looked like assembling a puzzle. We made it similar to buying a car or tour packages:
-                        here is the base, here are the options, here are additional services.
+                    <p class=" ">
+                        لقد أنشأنا برمجيات بسيطة و التي سهلت حياة كل من:
+                    </p>
+                    <ul>
+                        <li>الزبون: أومن يقوم باستخدام البيت الذكي</li>
+                        <li>المنفذ: أي من يشرف على تثبيت نظام البيت الذكي</li>
+                    </ul>
+                    <p>
+                        سابقا، عملية اختيار و شراء نظام البيت الذكي كانت أشبه بحل أحجية معقدة. أما نحن فقد توصلنا الى جعل تلك العملية بأسرها ، شبيهة بعملية شراء السيارة او رحلة سياحية، تلك هي القاعدة، و هاهي المواصفات المطلوبة، وهذه هي الخدمات الاضافية
                     </p>
                 </div>
             </div>
 
             <div class="row">
-                <div id="man-on-top" class="col-xs-6"></div>
                 <div class="col-xs-6">
-                    <p>We will not impose numerous meetings and presentations whose sole purpose is to estimate how much money you can 'shake out' from the customer.
-                        We evaluate the project and prepare specifications remotely, make free demo version, and at the time of signing the contract the client is already 100% sure
-                        what his 'smart home' will look like.</p>
+                    <p>إن سياسة شركتنا لاتعتمد على تنظيم عروض تقديمية متكررة حول المنتج أمام العملاء، فالهدف الوحيد منها يكون غالبا لدى الشركات الأخرى التي تقوم بذلك، هومعرفة كمية المال التي يمكن إستجرارها من الزبون. إن حساب الكلفة التقديرية للمشروع بناءاً على المواصفات المطلوبة، تقوم به شركتنا مجانا ومن دون الحاجة حتى لتنظيم لقاء شخصي، وكذلك الأمر بالنسبة لتصميم نموذج العرض المجاني الخاص بمنزلكم وهو الأمر الذي يساعد الزبون من معرفة 100% من الشكل الذي سيكون عليه البيت الذكي الخاص به.</p>
                 </div>
+                <div id="man-on-top" class="col-xs-6"></div>
             </div>
 
-            <h2>Our Principles</h2>
-            <div id="principles" class="row">
+            <h2>مبادئنا</h2>
+            <div class="row" id="principles">
                 <div class="col-xs-4">
-                    <!--img src="../images/rationalism_icon.png" alt=""/-->
-                    <h3 id="rationalism">Rationalism</h3>
-                    <p>It's time to stop presenting 'Smart home' as mischievous antics of hilarious wizards. No 'clap your hands and turn on the light'.
-                        No 'refrigerator will order food for you'. Those fairy tales made many of reasonable people sceptic regarding 'smart home' systems</p>
-                    <p>We offer reasonable, affordable and really needed systems: control of lighting and blinds, climatic equipment,
-                        intercoms and video surveillance, security systems. All this is controlled from a mobile device using THRONE user interface,
-                        the best one on the market.</p>
+                    <!--img src="images/rationalism_icon.png" alt="" /-->
+                    <h3 id="rationalism">العقلانية</h3>
+                    <p>
+                        باعتقادنا، أنه آن الآوان لتغيير المفهوم السائد عن البيت الذكي و كأنه مسرح لألعاب الخفة . فلن تضيء الأضواء في المنزل بمجرد التصفيق باليدين، ولن يرسل البراد في طلب الطعام نيابة عنكم . تلك الحكايات لا أساس لها من الصحة و ان كانت تروى من قبل بعض الصحفيين او المهندسيين الغير مؤهلين
+                    </p>
+                    <p>
+                        نحن نعرض عليكم أنظمة: جدية،حقيقية،متوفرة و مفيدة بالفعل، كنظم التحكم
+                    </p>
+                    <ul>
+                        <li> بالإنارة</li>
+                        <li> بأجهزة التكييف والتدفئة</li>
+                        <li>الإنترفون المنزلي و كاميرات المراقبة</li>
+                        <li>أجهزة الأمان و الحماية</li>
+                    </ul>
+                    <p>
+                        وكل هذه الأنظمة يمكن إدارتها بواسطة الهاتف النقال من خلال واجهة المستخدم ( الانتيرفيس) "ترون"، المنتج الأفضل المتوفرحالياً في الأسواق
+                    </p>
                 </div>
                 <div class="col-xs-4">
-                    <!--img src="../images/speed_icon.png" alt=""/-->
-                    <h3 id="velocity">Velocity</h3>
-                    <p>Installation of 'Smart Home' should not take longer than building a house. The market is full of companies that do home automation projects for many months,
-                        and sometimes more than a year. We have simplified, unified and accelerated the procedures of order, design and installation of Smart Home system.
-                        Also, due to 3D THRONE interface, the customer get the full understanding of his system yet at the stage of demo version.</p>
+                    <!--img src="images/speed_icon.png" alt="" /-->
+                    <h3 id="velocity">السرعة</h3>
+                    <p>ان مدة إنجاز أعمال تركيب نظام البيت الذكي، لا يجب أن تتجاوز اليوم المحدد لنهاية كافة أعمال بناء المنزل. و من المؤسف أن اليوم هناك العديد من الشركات التي تقوم بتنفيذ مشاريع أتمتة المنازل، تتجاوز مدة أعمالها الأشهر و في بعض الأحيان قد تتجاوزهذه المدة السنة. لقد قمنا من جهتناا بتسهيل ودمج و تسريع كافة إجراءات حجز و تصميم و تثبيت أنظمة البيت الذكي.  بفضل الانتيرفيس "ترون" الثلاثي الابعاد، أصبح بامكان الزبون الحصول على تصورٍ واضح مسبق بالنسبة لآلية ادارة بيته الذكي وكل ذلك بفضل نموذج العرض التوضيحي المجاني.</p>
                 </div>
                 <div class="col-xs-4">
-                    <!--img src="../images/standarts_icon.png" alt=""/-->
-                    <h3 id="standarts">Standards</h3>
-                    <p>Unification of business processes and production cycle. The process of designing and installation of Smart Home systems in THRONE Project is a properly
-                        debugged algorithm in which there is a clear time and place for every action, document, person.
-                        We are not inventing on the fly, but achieve a guaranteed result.
+                    <!--img src="images/standarts_icon.png" alt=""/-->
+                    <h3 id="standarts"> المقاييس</h3>
+                    <p>
+                        دمج مراحل العمل و دورة الانتاج .
+                        إن طريقة تصميم و تنفيذ نظام البيت الذكي لدى "مشروع ترون" ، تتم وفقا لمنهج أثبت فاعليته بكفأة عالية ، حيث لكل شخص او عمل او وثيقة ، المكان والتوقيت المحدد بدقة. نحن لا نبتكر أثناء سير العمل و إنما هدفنا هو بلوغ النتيجة المضمونة
                     </p>
                 </div>
             </div>
@@ -458,11 +468,95 @@
                     <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
                 </div>
                 <div class="col-xs-6">
-                    <blockquote class=" ">We are working to make 'smart systems' become rational choice of a person, but not a pampering or entertainment.
-                        We want the building automation to become mainstream, and its benefits to be enjoyed by billions of people.
-                        We believe that our approach to the business will completely change the market.</blockquote>
-                    <strong>Mikhail Kulikov</strong>, Director of THRONE Project
+                    <blockquote class=" ">
+                        إننا نعمل كي تصبح الأنظمة الذكية و ما توفرها من فوائد بمتناول واختيارالجميع و ليس حكراً على طبقة معينة من الناس و وسيلة للتميز او التسلية الخاصة بهم . فنحن نؤمن بأن اسلوب و طريقة عملنا كفيلة بتغييرمفاهيم هذا القطاع من الأعمال بشكل جذري، و لكي تصبح عمليات أتمتة المباني متاحة لمليارات من الناس
+                    </blockquote>
+                    <strong>ميخائيل كوليكوف</strong>, مدير شركة "مشروع ترون"
                 </div>
+
+            </div>
+        </div>
+        <div class="container vertical">
+            <h3>ماالذي يميزنا عن بقية الشركات التي تعمل في مجال تثبيت أنظمة البيت الذكي ؟</h3>
+            <div class="row">
+                <div id="upstairs" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p>في إحدى المرات ورد الى ذهننا سؤال هام : على الرغم من أننا نعيش في عصر التقنيات الحديثة، لماذا نواجه كل تلك الصعوبات عندما نرغب في إختيار وتثبيت نظام البيت الذكي المناسب لنا ؟ في الوقت نفسه حيث تتوفراليوم إمكانية شراء أي غرضٍ كان، من دون الحاجة للخروج حتى من المنزل، على عكس مسألة شراء منظومة البيت الذكي و التي بالفور تتحول الى أمر بغاية التعقيد، حينها علمنا أن هذه الصناعة بحاجة لمعايير محددة !</p>
+                    <p>لكل شركة طريقتها الخاصة بها بالعمل، و جميع المشاريع يتم تنفيذها أيضاٌ بطرق مختلفة. حتى أن البعض بدأ يطلق تسمية البيت الذكي على مشاريع لا تمت بأية صلة لهذه التسمية. وبالتالي كل مشروع جديد أصبح بمثابة تحدي كبير شبيه بتسلق قمة جبل إفرست، و بلوغ الهدف أمر بغاية الصعوبة على عكس ما هو عليه الأمر بالفعل...</p>
+                    <p>لقد اخترنا اسلوباً في عملنا شبيه بتلك الطريقة التي أحدثت ثورة في عالم صناعة السيارات يوما ما، فقد صنعنا خط تجميع و إنتاج آلي للبيوت الذكية. إن أي مشروع صناعي كان، يعتمد على مجموعة من الأسس التكنولوجية الجوهرية و هي موحدة بالنسبة للجميع. وفيما بعد يتم الإضافة على تلك الأسس، مواصفات خاصة و التي تختلف بالنسبة لكل مشروع بحسب رغبات كل زبون .</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="houses" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p class=" ">
+                        لقد أنشأنا برمجيات بسيطة و التي سهلت حياة كل من:
+                    </p>
+                    <ul>
+                        <li>الزبون: أومن يقوم باستخدام البيت الذكي</li>
+                        <li>المنفذ: أي من يشرف على تثبيت نظام البيت الذكي</li>
+                    </ul>
+                    <p>
+                        سابقا، عملية اختيار و شراء نظام البيت الذكي كانت أشبه بحل أحجية معقدة. أما نحن فقد توصلنا الى جعل تلك العملية بأسرها ، شبيهة بعملية شراء السيارة او رحلة سياحية، تلك هي القاعدة، و هاهي المواصفات المطلوبة، وهذه هي الخدمات الاضافية
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="man-on-top" class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <p>إن سياسة شركتنا لاتعتمد على تنظيم عروض تقديمية متكررة حول المنتج أمام العملاء، فالهدف الوحيد منها يكون غالبا لدى الشركات الأخرى التي تقوم بذلك، هومعرفة كمية المال التي يمكن إستجرارها من الزبون. إن حساب الكلفة التقديرية للمشروع بناءاً على المواصفات المطلوبة، تقوم به شركتنا مجانا ومن دون الحاجة حتى لتنظيم لقاء شخصي، وكذلك الأمر بالنسبة لتصميم نموذج العرض المجاني الخاص بمنزلكم وهو الأمر الذي يساعد الزبون من معرفة 100% من الشكل الذي سيكون عليه البيت الذكي الخاص به.</p>
+                </div>
+            </div>
+
+            <h2>مبادئنا</h2>
+            <div class="row" id="principles">
+                <div class="col-xs-4">
+                    <!--img src="images/rationalism_icon.png" alt="" /-->
+                    <h3 id="rationalism">العقلانية</h3>
+                    <p>
+                        باعتقادنا، أنه آن الآوان لتغيير المفهوم السائد عن البيت الذكي و كأنه مسرح لألعاب الخفة . فلن تضيء الأضواء في المنزل بمجرد التصفيق باليدين، ولن يرسل البراد في طلب الطعام نيابة عنكم . تلك الحكايات لا أساس لها من الصحة و ان كانت تروى من قبل بعض الصحفيين او المهندسيين الغير مؤهلين
+                    </p>
+                    <p>
+                        نحن نعرض عليكم أنظمة: جدية،حقيقية،متوفرة و مفيدة بالفعل، كنظم التحكم
+                    </p>
+                    <ul>
+                        <li> بالإنارة</li>
+                        <li> بأجهزة التكييف والتدفئة</li>
+                        <li>الإنترفون المنزلي و كاميرات المراقبة</li>
+                        <li>أجهزة الأمان و الحماية</li>
+                    </ul>
+                    <p>
+                        وكل هذه الأنظمة يمكن إدارتها بواسطة الهاتف النقال من خلال واجهة المستخدم ( الانتيرفيس) "ترون"، المنتج الأفضل المتوفرحالياً في الأسواق
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <!--img src="images/speed_icon.png" alt="" /-->
+                    <h3 id="velocity">السرعة</h3>
+                    <p>ان مدة إنجاز أعمال تركيب نظام البيت الذكي، لا يجب أن تتجاوز اليوم المحدد لنهاية كافة أعمال بناء المنزل. و من المؤسف أن اليوم هناك العديد من الشركات التي تقوم بتنفيذ مشاريع أتمتة المنازل، تتجاوز مدة أعمالها الأشهر و في بعض الأحيان قد تتجاوزهذه المدة السنة. لقد قمنا من جهتناا بتسهيل ودمج و تسريع كافة إجراءات حجز و تصميم و تثبيت أنظمة البيت الذكي.  بفضل الانتيرفيس "ترون" الثلاثي الابعاد، أصبح بامكان الزبون الحصول على تصورٍ واضح مسبق بالنسبة لآلية ادارة بيته الذكي وكل ذلك بفضل نموذج العرض التوضيحي المجاني.</p>
+                </div>
+                <div class="col-xs-4">
+                    <!--img src="images/standarts_icon.png" alt=""/-->
+                    <h3 id="standarts"> المقاييس</h3>
+                    <p>
+                        دمج مراحل العمل و دورة الانتاج .
+                        إن طريقة تصميم و تنفيذ نظام البيت الذكي لدى "مشروع ترون" ، تتم وفقا لمنهج أثبت فاعليته بكفأة عالية ، حيث لكل شخص او عمل او وثيقة ، المكان والتوقيت المحدد بدقة. نحن لا نبتكر أثناء سير العمل و إنما هدفنا هو بلوغ النتيجة المضمونة
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" id="citation">
+                    <div class="col-xs-6">
+                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                    </div>
+                    <div class="col-xs-6">
+                        <blockquote class=" ">
+                            إننا نعمل كي تصبح الأنظمة الذكية و ما توفرها من فوائد بمتناول واختيارالجميع و ليس حكراً على طبقة معينة من الناس و وسيلة للتميز او التسلية الخاصة بهم . فنحن نؤمن بأن اسلوب و طريقة عملنا كفيلة بتغييرمفاهيم هذا القطاع من الأعمال بشكل جذري، و لكي تصبح عمليات أتمتة المباني متاحة لمليارات من الناس
+                        </blockquote>
+                        <strong>ميخائيل كوليكوف</strong>, مدير شركة "مشروع ترون"
+                    </div>
+
             </div>
         </div>
     </div>
@@ -542,7 +636,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="gallery_container table" id="project_gal_7">
                     <div class="table_row">
                         <div class="car-caption">
@@ -1354,7 +1448,7 @@
                     </div>
                 </div>
 
-<!--<div class="gallery_container table" id="project_gal_17">
+                <!--<div class="gallery_container table" id="project_gal_17">
                     <div class="table_row">
                         <div class="car-caption">
                             <h4>Facility</h4>
@@ -2348,98 +2442,96 @@
                     </div>
                 </div>
 
-<!--                <div class="gallery_container table" id="project_gal_17">
-                    <div class="table_row">
-                        <div class="table_cell">
-                            <div class="fotorama" data-auto="false" data-arrows="true" data-click="true" data-swipe="true"
-                                 data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/17-floor.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-alarm.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-climate.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-leakage.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-floor.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-room.jpg" class="img-responsive " alt="" data-caption="" >
-                                <img src="../images/projects/17-tambur.jpg" class="img-responsive " alt="" data-caption="" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="car-caption">
-                            <h4>Facility</h4>
-                            <p>August. Country residence, 30 sq.m., Russia. Automation on 3 floors and surrounding territory.</p>
-                            <h4>Smart Home project</h4>
-                            <div class="panel-group" id="accordion17" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading_17_Lighting">
-                                        <h4 class="lighting">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Lighting" aria-expanded="true" aria-controls="17_Lighting">
-                                                Lighting control
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="17_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Dimmable and RGB lighting, lighting scenes, switching on motion / presence sensor. 23 lighting groups.
+                <!--                <div class="gallery_container table" id="project_gal_17">
+                                    <div class="table_row">
+                                        <div class="table_cell">
+                                            <div class="fotorama" data-auto="false" data-arrows="true" data-click="true" data-swipe="true"
+                                                 data-ratio="885/550" data-width="100%">
+                                                <img src="../images/projects/17-floor.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-alarm.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-climate.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-leakage.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-light-floor.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-light-room.jpg" class="img-responsive " alt="" data-caption="" >
+                                                <img src="../images/projects/17-tambur.jpg" class="img-responsive " alt="" data-caption="" >
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="table_row">
+                                        <div class="car-caption">
+                                            <h4>Facility</h4>
+                                            <p>August. Country residence, 30 sq.m., Russia. Automation on 3 floors and surrounding territory.</p>
+                                            <h4>Smart Home project</h4>
+                                            <div class="panel-group" id="accordion17" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading_17_Lighting">
+                                                        <h4 class="lighting">
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Lighting" aria-expanded="true" aria-controls="17_Lighting">
+                                                                Lighting control
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="17_Lighting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            Dimmable and RGB lighting, lighting scenes, switching on motion / presence sensor. 23 lighting groups.
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading_17_Climate">
-                                        <h4 class="climate">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Climate" aria-expanded="true" aria-controls="17_Climate">
-                                                Climate control
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="17_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Controlled air conditioners, heating floors, heating system valves, inlet and exhaust ventilation, temperature sensors. 35 control and monitoring points.
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading_17_Climate">
+                                                        <h4 class="climate">
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Climate" aria-expanded="true" aria-controls="17_Climate">
+                                                                Climate control
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="17_Climate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            Controlled air conditioners, heating floors, heating system valves, inlet and exhaust ventilation, temperature sensors. 35 control and monitoring points.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading_17_Security">
+                                                        <h4 class="security">
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Security" aria-expanded="true" aria-controls="17_Security">
+                                                                Security system
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="17_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            Leakage, fire sensors, switching on motion / presence sensor. 8 connected sensors. 3 video surveillance IP cameras.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading_17_Extra">
+                                                        <h4 class="extra">
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Extra" aria-expanded="true" aria-controls="17_Extra">
+                                                                Other systems
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="17_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            Audio multiroom. Video doorphone. Curtains control.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading_17_Security">
-                                        <h4 class="security">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Security" aria-expanded="true" aria-controls="17_Security">
-                                                Security system
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="17_Security" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Leakage, fire sensors, switching on motion / presence sensor. 8 connected sensors. 3 video surveillance IP cameras.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading_17_Extra">
-                                        <h4 class="extra">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion17" href="#17_Extra" aria-expanded="true" aria-controls="17_Extra">
-                                                Other systems
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="17_Extra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Audio multiroom. Video doorphone. Curtains control.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
+                                </div> -->
             </div>
         </div>
 
     </div>
 
-
-    
     <div id="about-slide-4" class="frame">
         <h3>Feedback on THRONE</h3>
         <div class="jcarousel">
@@ -2517,14 +2609,6 @@
     </div>
 
     <footer class="minor visible-md visible-lg">
-        &copy; 2015 <span id="brand">THRONE Project</span>
-        <ul id="bottom_menu">
-            <li><a href="/en" title="Main">Main</a></li>
-            <li><a href="installation.html" title="How We Work">How We Work</a></li>
-            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li class="active">About Us</li>
-        </ul>
         <div id="footer_socials">
             <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
             <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
@@ -2533,15 +2617,34 @@
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
+        <!--ul id="bottom_menu">
+            <li><a href="/ru" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <li class="active">О компании</li>
+        </ul-->
+        <ul id="bottom_menu">
+            <li class="active">عن الشركة</li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+            <li><a href="/arabic" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+        </ul>
+        <span id="brand">THRONE Project</span>  &copy; 2015
+
     </footer>
 
     <footer class="minor visible-sm ">
+        <!--ul id="bottom_menu">
+            <li><a href="/ru" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <li class="active">О компании</li>
+        </ul-->
         <ul id="bottom_menu">
-            <li><a href="/en" title="Main">Main</a></li>
-            <li><a href="installation.html" title="How We Work">How We Work</a></li>
-            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li class="active">About Us</li>
+            <li class="active">عن الشركة</li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+            <li><a href="/arabic" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
         </ul>
 
         <div id="footer_socials">
@@ -2552,16 +2655,29 @@
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
-        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+        <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015 </div>
     </footer>
 
     <footer class="minor visible-xs">
+        <!--ul id="bottom_menu">
+            <li><a href="/ru" title="Главная">Главная</a></li>
+            <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
+            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
+            <li class="active">О компании</li>
+        </ul-->
+
         <ul id="bottom_menu">
-            <li><a href="/en" title="Main">Main</a></li>
-            <li><a href="installation.html" title="How We Work">How We Work</a></li>
-            <li><a href="developers.html" title="For RE Developers">For RE Developers</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li class="active">About Us</li>
+            <li class="active">عن الشركة</li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+            <li><a href="/arabic" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+        </ul>
+
+        <ul id="bottom_menu" class="vertical">
+            <li><a href="/arabic" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+            <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li class="active">عن الشركة</li>
         </ul>
 
         <div id="footer_socials">
@@ -2572,43 +2688,44 @@
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
-        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+        <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015 </div>
     </footer>
     <div class="clear"></div>
 
     <div id="callback_wrapper">
         <div id="callback_title">
-            &gt;&gt;&gt; Require FREE 3D Demo for your house! &lt;&lt;&lt;
+            &gt;&gt;&gt; اطب مجانا تصميم نموذج ثلاثي الأبعاد للمنزل  &lt;&lt;&lt;
         </div>
         <div id="callback_form">
-            <div class="footnote">Just send us the floor plans of your facility to <a href="mailto:office@throne.pro">office@throne.pro</a> and
-                we will make 3D Demo and preliminary estimation. It is <strong>FREE</strong>.</div>
-            <div class="footnote">For processing of your enquiery please leave your contacts and select a convenient time of our call.</div>
+            <div class="footnote">فقط أرسل لنا مخطط المبني وسنبذل نموذج تجريبي  ثلاثي الأبعاد للمنزل ,تقدير أولي. إنه مجاني. <a href="mailto:office@throne.pro">office@throne.pro</a></div>
+            <div class="footnote">لتجهيز طلبك، يرجى ترك المعلومات الاتصال الخاصة بك وحدد وقت مناسب للمكالمة.</div>
 
-            <form action="" class="callback_form1">
-                <table>
-                    <tbody>
-                    <tr>
-                        <td align="right"><label for="inputName" class="control-label">Your name</label></td>
-                        <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
-                    </tr>
-                    <tr>
-                        <td align="right"><label for="inputPhone" class="control-label">Phone number</label></td>
-                        <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
-                    </tr>
-                    <tr>
-                        <td align="right"><label for="inputTime" class="control-label">Time of call</label></td>
-                        <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
-                    </tr>
-                    <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Send</button></td></tr>
-                    </tbody>
-                </table>
+            <div id="cb_form_body">
+                <form action="" class="callback_form1">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td align="left"><label for="inputName" class="control-label">الإسم </label></td>
+                            <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
+                        </tr>
+                        <tr>
+                            <td align="left"><label for="inputPhone" class="control-label">رقم الهاتف</label></td>
+                            <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
+                        </tr>
+                        <tr>
+                            <td align="left"><label for="inputTime" class="control-label">وقت الإتصال </label></td>
+                            <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
+                        </tr>
+                        <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">لإرسال</button></td></tr>
+                        </tbody>
+                    </table>
 
-                <input type="hidden" name="inputTheme" value="Require Callback">
-            </form>
+                    <input type="hidden" name="inputTheme" value="Обратный звонок">
+                </form>
+
+            </div>
 
         </div>
-
     </div>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -2619,27 +2736,28 @@
                         <!--span aria-hidden="true">&times;</span-->
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
                     </button>
-                    <h4 class="modal-title">We’ll call back within 1 hour</h4>
+                    <h4 class="modal-title">سنعاود الاتصال بكم خلال ساعة </h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-7 col-xs-7">
                             <form action="" class=" callback_form">
                                 <div class="form-group">
-                                    <label for="inputName" class="control-label">Your Name</label>
+                                    <label for="inputName" class="control-label">الإسم</label>
                                     <div class=" ">
                                         <input type="text" class="form-control" id="inputName" name="inputName">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputPhone" class="control-label">Cellphone Number</label>
+                                    <label for="inputPhone" class="control-label">رقم الهاتف</label>
+
                                     <div class=" ">
                                         <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="button" class="send-btn">Send</button>
+                                        <button type="button" class="send-btn">لإرسال</button>
                                         <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                     </div>
                                 </div>
@@ -2653,18 +2771,18 @@
                         </div>
                         <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
                             <img src="../images/phone_tube.png" alt="">
-                            <div>You will have no obligations.</div>
+                            <div>الاستشارات المقدمة من قبل شركتنا لا تُرتب عليكم أي إلتزام مادي</div>
                             <div id="padlock">
                                 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                                <span>We’ll not disclose you contact details to anyone!</span>
+                                <span>نتعهد بضمان الخصوصية التامة و بأن المعلومات الخاصة بكم لن يتم مشاركتها مع أي طرف آخر</span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-xs-12">
                             <div class="footnote">
-                                Or you can <a href="mailto:office@throne.pro">email us</a> right now!
-                                Just send us the floor plans of your house and we will make a preliminary calculation. <strong>It's free</strong>.
+                                <!--a href="mailto:office@throne.pro">написать нам</a-->
+                                او بامكانكم التواصل عبر البريد الالكتروني بارسال رسالة مرفقة بمخخط المنزل او البناء و سنجيبكم على الفور بالتكلفة التقديرية للمشروع مجانا
                             </div>
                         </div>
                     </div>
@@ -2690,24 +2808,6 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-<!--
-<script src="../js/jquery-2.1.3.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="../js/imagesloaded.js"></script>
-
-<script src="../js/vendor/modernizr-2.7.1.min.js"></script>
-<script type="text/javascript" src="../js/skrollr.min.js"></script>
-<script type="text/javascript" src="../js/retina.min.js"></script>
-
-
-
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru"></script>
-<script type="text/javascript" src="../js/main.js"></script>
--->
-
-    <!--script src="../js/jquery-2.1.3.min.js"></script-->
     <script src="../js/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="../js/imagesloaded.js"></script>
@@ -2717,11 +2817,11 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/vendor/modernizr-2.7.1.min.js"></script>
     <script type="text/javascript" src="../js/skrollr.min.js"></script>
-    <script type="text/javascript" src="../js/retina.min.js"></script>
+    <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/tabulous.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-    <!--script type="text/javascript" src="../js/jquery.liquid-slider.js"></script-->
+    <!--script type="text/javascript" src="js/jquery.liquid-slider.js"></script-->
     <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
 
@@ -2738,9 +2838,9 @@
 
     <script>
         if(isMobile.any()){
-            $("<script type='text/javascript' src='../js/main_mobile.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='js/main_mobile.js'><\/script>").appendTo('body');
         } else {
-            $("<script type='text/javascript' src='../js/main.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='js/main.js'><\/script>").appendTo('body');
         }
     </script>
 
@@ -2830,6 +2930,8 @@ chosen link or button. -->
         })();
     </script>
     <!-- End of LiveChat code -->
+
+
 </body>
 
 </html>

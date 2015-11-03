@@ -213,7 +213,7 @@
             console.log('win width: ' + winW);
             $('#slide-3').height( $animation_frame_height );
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', '../images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
 
             if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
                 console.log('visible');
@@ -425,7 +425,8 @@
                 // destroy skrollr elements
                 $('#slide-3').height($animation_frame_height);
                 $('.skrollr_el').remove();
-                $('#slide2-ipad img').attr('src', '../images/ipad_slide2.jpg');
+
+                $('#slide2-ipad img').attr('src', 'images/ipad_slide2.jpg');
 
                 // Init Skrollr
                 var s = skrollr.init();
@@ -828,9 +829,6 @@
         if( $fl )
         {
             // все обязательные поля формы заполнены, отправляем письмо
-           /* if( $lang != 'ru' ) {
-                $url = '../' + $url;
-            } */
 
             $.post($url, $form.serialize(), function(data){
 
@@ -1399,6 +1397,16 @@
 
 
     /* /main page top carousel */
+
+    $('#langs select').on('change', function(){
+        var arr = location.pathname.split('/');
+
+        //if( $(this).val() != 'ru' ) {
+            window.location = location.protocol + '//' + location.host + '/' + $(this).val() + '/' + arr[arr.length-1];
+        //} else {
+        //    window.location = location.protocol + '//' + location.host + '/' + arr[arr.length-1];
+        //}
+    });
 
 } )( jQuery );
 

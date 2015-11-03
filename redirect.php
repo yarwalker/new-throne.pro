@@ -23,6 +23,31 @@ if(is_file($file)):
         case 'KG':
             $country = 'ru';
             break;
+        case 'DZ': // Алжир
+        case 'BH': // Бахрейн
+        case 'DJ': // Джибути
+        case 'EG': // Египет
+        case 'EH': // Западная Сахара
+        case 'YE': // Йемен
+        case 'JO': // Иордания
+        case 'IQ': // Ирак
+        case 'QA': // Катар
+        case 'KM': // Коморы
+        case 'KW': // Кувейт
+        case 'LB': // Ливан
+        case 'LY': // Ливия
+        case 'MR': // Мавритания
+        case 'MA': // Марокко
+        case 'AE': // ОАЭ
+        case 'OM': // Оман
+        case 'PS': // Палестина
+        case 'SA': // Саудовская Аравия
+        case 'SY': // Сирия
+        case 'SO': // Сомали
+        case 'SD': // Судан
+        case 'TN': // Тунис
+            $country = 'arabic';
+            break;
         default:
             $country = 'en';
 

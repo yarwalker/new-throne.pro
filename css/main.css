@@ -3855,6 +3855,11 @@ only screen and (min-resolution: 144dpi) {
 
 /* /about */
 
+/* FAQ */
+#faq-slide-1 { padding: 50px 0; }
+#faq-slide-1 h1 { text-align: center; }
+/* /FAQ */
+
 /* developers */
 #dev-slide-5 { padding: 0 130px 0 105px; margin-top: 0; }
 #dev-slide-5 #become_partner {

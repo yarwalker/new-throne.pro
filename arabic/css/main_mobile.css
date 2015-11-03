@@ -1,26 +1,26 @@
 @font-face {
     font-family: circe;
-    src: url('../fonts/Circe.otf');
+    src: url('../../fonts/Circe.otf');
 }
 
 @font-face {
     font-family: circe_b;
-    src: url('../fonts/CirceBold.otf');
+    src: url('../../fonts/CirceBold.otf');
 }
 
 @font-face {
     font-family: circe_xb;
-    src: url('../fonts/CirceExtraBold.otf');
+    src: url('../../fonts/CirceExtraBold.otf');
 }
 
 @font-face {
     font-family: circe_xl;
-    src: url('../fonts/CirceExtraLight.otf');
+    src: url('../../fonts/CirceExtraLight.otf');
 }
 
 @font-face {
     font-family: circe_l;
-    src: url('../fonts/CirceLight.otf');
+    src: url('../../fonts/CirceLight.otf');
 }
 
 body { /*outline: solid 1px red*/ }
@@ -116,14 +116,14 @@ div.frame:first-of-type {
 
 /* slide-1 */
 /*#slide-1 {
-    background: #eaeaea url('../images/slide1_rect.jpg') no-repeat top right;
+    background: #eaeaea url('../../images/slide1_rect.jpg') no-repeat top right;
     background-size: contain;
     overflow: hidden;
     height: auto;
 } */
 
 #interier {
-    background: url('../images/interier.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -141,7 +141,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #interier {
-        background: url('../images/interier@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -156,7 +156,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .visible-tablet #interier {
-    background: url('../images/interier_tablet.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    background: url('../../images/interier_tablet.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     background-size: cover;
     /*min-height: 1133px;*/
@@ -174,7 +174,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #interier {
-        background: url('../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        background: url('../../images/interier_tablet@2x.jpg') no-repeat center center; /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         background-size: cover;
         /*min-height: 1133px;*/
@@ -208,7 +208,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #interior_ipad {
     /* width: 10%; */
-    background: url("../images/new_ipad.png") center no-repeat;
+    background: url("../../images/new_ipad.png") center no-repeat;
     position: relative;
     /*bottom: -45%;
     left: 50%;*/
@@ -227,7 +227,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #interior_ipad {
         /* width: 10%; */
-        background: url("../images/new_ipad@2x.png") center no-repeat;
+        background: url("../../images/new_ipad@2x.png") center no-repeat;
         position: relative;
         /*bottom: -45%;
         left: 50%;*/
@@ -244,7 +244,7 @@ only screen and (min-resolution: 144dpi) {
 
 .visible-tablet #interior_ipad {
     /* width: 10%; */
-    background: url("../images/new_ipad.png") center no-repeat;
+    background: url("../../images/new_ipad.png") center no-repeat;
     position: relative;
     /*bottom: -45%;
     left: 50%;*/
@@ -263,7 +263,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #interior_ipad {
         /* width: 10%; */
-        background: url("../images/new_ipad@2x.png") center no-repeat;
+        background: url("../../images/new_ipad@2x.png") center no-repeat;
         position: relative;
         /*bottom: -45%;
         left: 50%;*/
@@ -291,7 +291,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #play_demo {
-    background: url("../images/play-button.png") no-repeat right center;
+    background: url("../../images/play-button.png") no-repeat right center;
     background-size: contain;
     width: 100px;
     height: 100px;
@@ -309,7 +309,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #play_demo {
-        background: url("../images/play-button@2x.png") no-repeat right center;
+        background: url("../../images/play-button@2x.png") no-repeat right center;
         background-size: contain;
         width: 100px;
         height: 100px;
@@ -324,7 +324,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .visible-tablet #play_demo {
-    background: url("../images/play-button@2x.png") no-repeat right center;
+    background: url("../../images/play-button@2x.png") no-repeat right center;
     background-size: contain;
     width: 60px;
     height: 60px;
@@ -342,7 +342,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .visible-tablet #play_demo {
-        background: url("../images/play-button@2x.png") no-repeat right center;
+        background: url("../../images/play-button@2x.png") no-repeat right center;
         background-size: contain;
         width: 60px;
         height: 60px;
@@ -412,7 +412,7 @@ only screen and (min-resolution: 144dpi) {
 /*#slide-1 .bcg {position: fixed; z-index: 999; top: -30px; color: #fff; padding-right: 105px; padding-left: 100px; }*/
 
 #slide-1 {
-    /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+    /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
     /*background-position: center top;*/
     /*background-color: #eaeaea;*/
     background-size: contain;
@@ -433,7 +433,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-1 {
-        /*background: url('../images/interier.jpg') no-repeat top center;*/ /*url('../images/slide1_rect.jpg') no-repeat top right;*/
+        /*background: url('../../images/interier.jpg') no-repeat top center;*/ /*url('../../images/slide1_rect.jpg') no-repeat top right;*/
         /*background-position: center top;*/
         /*background-color: #eaeaea;*/
         background-size: contain;
@@ -450,26 +450,26 @@ only screen and (min-resolution: 144dpi) {
 
 #langs {
     font-size: 14px;
-    padding: 24px 75px 20px 20px;
-    float: left;
+    padding: 24px 20px 20px 75px;
+    float: right;
 }
 #langs span { height: 28px; width: 28px; display: block; text-align: center; margin-bottom: 4px; }
 
-#langs span.active { background: url('../images/lang_active.png') no-repeat; padding-top: 3px; }
+#langs span.active { background: url('../../images/lang_active.png') no-repeat; padding-top: 3px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #langs span.active { background: url('../images/lang_active@2x.png') no-repeat; padding-top: 3px; background-size: 28px 28px; width: 28px; height: 28px; }
+    #langs span.active { background: url('../../images/lang_active@2x.png') no-repeat; padding-top: 3px; background-size: 28px 28px; width: 28px; height: 28px; }
 }
 
 #langs a { text-align: center; line-height: 15px; margin-bottom: 3px;}
 
 #logo {
-    margin: 25px 27px 0 0;
-    float: left;
-    background-image: url('../images/logo.png');
+    margin: 25px 0 0;
+    float: right;
+    background-image: url('../../images/logo.png');
     background-position: left top;
     background-repeat: no-repeat;
     width: 136px;
@@ -487,7 +487,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #logo {
-        background-image: url('../images/logo@2x.png');
+        background-image: url('../../images/logo@2x.png');
         background-size: 124px 23px;
         background-repeat: no-repeat;
         width: 124px;
@@ -505,7 +505,14 @@ only screen and (min-resolution: 144dpi) {
     display: inline-block;
 }
 
-#top_menu_ext { list-style: none; display: block; padding-left: 0; margin-left: 287px; margin-top: 0px; }
+#top_menu_ext {
+    list-style: none;
+    display: block;
+    padding-right: 0;
+    margin-right: 45px;
+    margin-top: 0px;
+    float: right;
+}
 
 #top_menu, #bottom_menu { list-style: none; display: inline-block; padding-left: 0; }
 #top_menu_ext li, #top_menu li, #bottom_menu li { display: inline-block; padding-top: 30px; margin-right: 29px; }
@@ -518,8 +525,9 @@ only screen and (min-resolution: 144dpi) {
 #brand { margin-left: 20px; }
 
 .callback {
-    float: right;
-    margin-right: 75px;
+    float: left;
+    /*margin-right: 165px;*/
+    margin-left: 75px;
     padding-top: 23px;
     font-size: 13px;
     text-align: center;
@@ -608,8 +616,9 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
     width: 85%;
     color: #000;
+    direction: rtl;
 }
-#slide-1 p { width: 80%; margin: 1em auto; }
+#slide-1 p { width: 80%; margin: 1em auto; direction: rtl; }
 
 #slide-1 p.app_links_container {
     text-align: center;
@@ -680,6 +689,7 @@ only screen and (min-resolution: 144dpi) {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     z-index: 10;
     position: relative;
+    direction: rtl;
 }
 #slide-1 .visible-xs .flex-caption h2 { font-size: 24px; }
 #slide-1 .visible-lg .flex-caption p,
@@ -692,6 +702,7 @@ only screen and (min-resolution: 144dpi) {
     z-index: 10;
     position: relative;
     width: 100%;
+    direction: rtl;
 }
 #slide-1 .visible-md .flex-caption p, #slide-1 .visible-sm .flex-caption p, #slide-1 .visible-xs .flex-caption p { margin-top: 10px; }
 #slide-1 .visible-lg .flex-direction-nav a { border-bottom: none !important; }
@@ -862,7 +873,7 @@ h1.title {
 
 #planshet {
     width: 80%;
-    background-image: url("../images/ipad.png");
+    background-image: url("../../images/ipad.png");
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -884,7 +895,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #planshet {
         width: 80%;
-        background-image: url("../images/ipad.png");
+        background-image: url("../../images/ipad.png");
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -911,7 +922,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* installation */
 #install-slide-1 {
-    background-image: url('../images/install_slide1.jpg');
+    background-image: url('../../images/install_slide1.jpg');
     background-position: left top;
     background-size: cover;
    /* min-height: 904px;
@@ -926,7 +937,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #install-slide-1 {
-        background-image: url('../images/install_slide1@2x.jpg');
+        background-image: url('../../images/install_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
       /*  min-height: 904px;
@@ -938,7 +949,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #install-slide-1.hidden-xs {
-    /*background-image: url('../images/dev_slide1.jpg');
+    /*background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;*/
     /*min-height: 840px;*/
@@ -988,11 +999,16 @@ only screen and (min-resolution: 144dpi) {
 }
 
 
-#install-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 29px; margin-bottom: 0; }
-#install-slide-1 p { width: 400px; /*30%;*/ line-height: 22px; margin: 12px 0; }
-#install-slide-1 ul { margin: 0; width: 450px; }
+#install-slide-1 h1 { width: 400px; font-size: 60px; font-family: circe_b; padding-top: 29px; margin-bottom: 0; text-align: right; direction: rtl; }
+#install-slide-1 p { width: 400px; /*30%;*/ line-height: 22px; margin: 12px 0; text-align: right; direction: rtl; }
+#install-slide-1 ul { margin: 0; width: 400px; }
 
-#install-slide-1 p + ul { margin-top: -12px; }
+#install-slide-1 p + ul {
+    margin-top: -12px;
+    text-align: right;
+    direction: rtl;
+    padding-right: 30px;
+}
 #install-slide-1 p:first-of-type { margin-top: 17px; }
 #install-slide-1 .icons { position: absolute;
     bottom: 50px;
@@ -1012,7 +1028,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* partners */
 #partners-slide-1 {
-    background-image: url('../images/partners_slide1.jpg');
+    background-image: url('../../images/partners_slide1.jpg');
     background-position: left top;
     background-size: cover;
     min-height: 690px;
@@ -1027,7 +1043,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #partners-slide-1 {
-        background-image: url('../images/partners_slide1@2x.jpg');
+        background-image: url('../../images/partners_slide1@2x.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 690px;
@@ -1046,7 +1062,7 @@ only screen and (min-resolution: 144dpi) {
 /* about */
 #about-slide-1 { padding-bottom: 50px; }
 #about-slide-1.visible-lg, #about-slide-1.visible-md {
-    background-image: url("../images/about_slide1_new.jpg");
+    background-image: url("../../images/about_slide1_new.jpg");
     background-position: right top;
     background-size: cover;
     /*min-height: 855px;*/
@@ -1061,7 +1077,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-1.visible-lg, #about-slide-1.visible-md {
-        background-image: url("../images/about_slide1_new@2x.jpg");
+        background-image: url("../../images/about_slide1_new@2x.jpg");
         background-position: right top;
         background-size: cover;
         /*min-height: 855px;*/
@@ -1073,7 +1089,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #about-slide-1.visible-sm, #about-slide-1.visible-xs {
-   /* background-image: url("../images/about_slide1_new.jpg");
+   /* background-image: url("../../images/about_slide1_new.jpg");
     background-position: center center;
     background-size: cover;*/
     /*min-height: 855px;*/
@@ -1090,7 +1106,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-1.visible-sm, #about-slide-1.visible-xs {
-        /* background-image: url("../images/about_slide1_new.jpg");
+        /* background-image: url("../../images/about_slide1_new.jpg");
      background-position: center center;
      background-size: cover;*/
         /*min-height: 855px;*/
@@ -1105,8 +1121,8 @@ only screen and (min-resolution: 144dpi) {
 
 #about-slide-1 > img { width: 100%; }
 
-#about-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 34px; margin-bottom: 19px }
-#about-slide-1 p { width: 40%; line-height: 22px; margin: 21px 0; }
+#about-slide-1 h1 { font-size: 60px; font-family: circe_b; padding-top: 34px; margin-bottom: 19px; width: 40%; direction: rtl; text-align: right; }
+#about-slide-1 p { width: 40%; line-height: 22px; margin: 21px 0; direction: rtl; text-align: right; }
 #about-slide-1 p:first-of-type { margin-top: 17px; }
 #about-slide-1 p.citation {   /* margin-top: 66px; */
     position: absolute;
@@ -1118,7 +1134,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* developers */
 #dev-slide-1.hidden-xs {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;
     /*min-height: 840px;*/
@@ -1134,7 +1150,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-1.hidden-xs {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         /*min-height: 840px;*/
@@ -1147,7 +1163,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-1.visible-xs {
-    /*background-image: url('../images/dev_slide1.jpg');
+    /*background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;*/
     /*min-height: 840px;*/
@@ -1164,7 +1180,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-1.visible-xs {
-        /*background-image: url('../images/dev_slide1@2x.jpg');
+        /*background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;*/
         /*min-height: 840px;*/
@@ -1215,7 +1231,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* dev_test */
 #dev1-slide-1 {
-    background-image: url('../images/dev_slide1.jpg');
+    background-image: url('../../images/dev_slide1.jpg');
     background-position: center top;
     background-size: cover;
     min-height: 840px;
@@ -1230,7 +1246,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev1-slide-1 {
-        background-image: url('../images/dev_slide1@2x.jpg');
+        background-image: url('../../images/dev_slide1@2x.jpg');
         background-position: right bottom;
         background-size: cover;
         min-height: 840px;
@@ -1324,13 +1340,13 @@ only screen and (min-resolution: 144dpi) {
 
 #pdf_p1 {
     background-color: #363533;
-    background-image: url("../images/presentation/frame1_cube1.png");
+    background-image: url("../../images/presentation/frame1_cube1.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     color: #fff;
 }
 #pdf_p1_logo {
-    background-image: url("../images/presentation/frame1_throne_logo1.png");
+    background-image: url("../../images/presentation/frame1_throne_logo1.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 215px;
@@ -1384,7 +1400,7 @@ only screen and (min-resolution: 144dpi) {
 #dev1-slide-2 .plus_sign {
     padding-top: 25px;
     padding-left: 25px;
-    background-image: url("../images/presentation/frame3_plus_sign1.png");
+    background-image: url("../../images/presentation/frame3_plus_sign1.png");
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 0;
@@ -1393,7 +1409,7 @@ only screen and (min-resolution: 144dpi) {
 #dev1-slide-2 .equal_sign {
     padding-top: 15px;
     padding-left: 25px;
-    background-image: url("../images/presentation/frame3_equal_sign1.png");
+    background-image: url("../../images/presentation/frame3_equal_sign1.png");
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 0;
@@ -1452,13 +1468,13 @@ a.ios_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/ios_app_icon.png");
+    background-image: url("../../images/ios_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     margin-bottom: 17px;
     margin-top: 8px;
     width: 250px;
-
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1471,7 +1487,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/ios_app_icon@2x.png");
+        background-image: url("../../images/ios_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 14%;
@@ -1481,6 +1497,7 @@ only screen and (min-resolution: 144dpi) {
         margin-bottom: 17px;
         margin-top: 8px;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1490,11 +1507,12 @@ a.android_throne_app {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: 10px 20px 10px 50px;
-    background-image: url("../images/android_app_icon.png");
+    background-image: url("../../images/android_app_icon.png");
     background-position: 10px center;
     background-repeat: no-repeat;
     /*background-size: 90%;*/
     width: 250px;
+    direction: rtl;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1507,7 +1525,7 @@ only screen and (min-resolution: 144dpi) {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         padding: 10px 20px 10px 50px;
-        background-image: url("../images/android_app_icon@2x.png");
+        background-image: url("../../images/android_app_icon@2x.png");
         background-position: 10px center;
         background-repeat: no-repeat;
         background-size: 14%;
@@ -1515,6 +1533,7 @@ only screen and (min-resolution: 144dpi) {
         /*-webkit-background-size: 17%;*/
         -o-background-size: 14%;
         width: 250px;
+        direction: rtl;
     }
 }
 
@@ -1530,8 +1549,17 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
 #install-slide-2 span.marker { padding: 0 5px; background-color: #dedede; }
 #install-slide-2 .icons_row { margin-bottom: 20px; }
 
-#inst-slide2-left { width: 55%; float: left; padding-left: 50px; }
-#inst-slide2-right { width: 30%; margin-left: 70%; }
+#inst-slide2-left {
+    width: 55%;
+    float: right;
+    padding-right: 50px;
+}
+
+#inst-slide2-right {
+    width: auto;
+    margin-right: 15%;
+    float: right;
+}
 #inst-slide2-right p { font-family: circe_l; font-size: 30px; /*width: 60%;*/ line-height: 36px; }
 #inst-slide2-right p:first-of-type { padding-top: 5px; }
 
@@ -1546,12 +1574,16 @@ div.bottom_line { width: 70%; margin: 100px auto 0; height: 1px; background-colo
     padding-top: 0;
     line-height: 34px;
     margin-bottom: 0;
+    text-align: right;
+    direction: rtl;
 }
+
+#inst-slide2-left p { text-align: right; direction: rtl; }
 
 #inst-slide2-left #prep_5days_cell {
     width: 90px;
-    background-image: url('../images/prep_5days_icon.png');
-    background-position: left 10px;
+    background-image: url('../../images/prep_5days_icon.png');
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 60px 49px;
     -o-background-size: 60px 49px;
@@ -1565,8 +1597,8 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #prep_5days_cell {
         width: 90px;
-        background-image: url('../images/prep_5days_icon@2x.png');
-        background-position: left 10px;
+        background-image: url('../../images/prep_5days_icon@2x.png');
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
         -o-background-size: 60px 49px;
@@ -1577,8 +1609,8 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #project_plan_cell {
     width: 90px;
-    background-image: url('../images/project_plan_icon.png');
-    background-position: left 10px;
+    background-image: url('../../images/project_plan_icon.png');
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 64px 51px;
     -o-background-size: 64px 51px;
@@ -1592,8 +1624,8 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #project_plan_cell {
         width: 90px;
-        background-image: url('../images/project_plan_icon@2x.png');
-        background-position: left 10px;
+        background-image: url('../../images/project_plan_icon@2x.png');
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
         -o-background-size: 64px 51px;
@@ -1604,8 +1636,8 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #server_cell {
     width: 90px;
-    background-image: url('../images/server_icon.png');
-    background-position: left 10px;
+    background-image: url('../../images/server_icon.png');
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 70px 36px;
     -o-background-size: 70px 36px;
@@ -1619,8 +1651,8 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #server_cell {
         width: 90px;
-        background-image: url('../images/server_icon@2x.png');
-        background-position: left 10px;
+        background-image: url('../../images/server_icon@2x.png');
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
         -o-background-size: 70px 36px;
@@ -1631,8 +1663,8 @@ only screen and (min-resolution: 144dpi) {
 
 #inst-slide2-left #install_cell {
     width: 90px;
-    background-image: url('../images/installation_icon.png');
-    background-position: left 10px;
+    background-image: url('../../images/installation_icon.png');
+    background-position: right 10px;
     background-repeat: no-repeat;
     background-size: 65px 48px;
     -o-background-size: 65px 48px;
@@ -1646,8 +1678,8 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-left #install_cell {
         width: 90px;
-        background-image: url('../images/installation_icon@2x.png');
-        background-position: left 10px;
+        background-image: url('../../images/installation_icon@2x.png');
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
         -o-background-size: 65px 48px;
@@ -1657,14 +1689,15 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #inst-slide2-right #garanty_cell {
-    background-image: url("../images/garanty_icon.png");
+    background-image: url("../../images/garanty_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 83px 112px;
     -o-background-size: 83px 112px;
     -webkit-background-size: 83px 112px;
     -moz-background-size: 83px 112px;
     padding-top: 120px;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1672,26 +1705,28 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #garanty_cell {
-        background-image: url("../images/garanty_icon@2x.png");
+        background-image: url("../../images/garanty_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 83px 112px;
         -o-background-size: 83px 112px;
         -webkit-background-size: 83px 112px;
         -moz-background-size: 83px 112px;
         padding-top: 120px;
+        text-align: right;
     }
 }
 
 #inst-slide2-right #cert_install_cell {
-    background-image: url("../images/cert_installation_icon.png");
+    background-image: url("../../images/cert_installation_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 79px 112px;
     -o-background-size: 79px 112px;
     -webkit-background-size: 79px 112px;
     -moz-background-size: 79px 112px;
     padding-top: 120px;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1699,26 +1734,28 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #cert_install_cell {
-        background-image: url("../images/cert_installation_icon@2x.png");
+        background-image: url("../../images/cert_installation_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 79px 112px;
         -o-background-size: 79px 112px;
         -webkit-background-size: 79px 112px;
         -moz-background-size: 79px 112px;
         padding-top: 120px;
+        text-align: right;
     }
 }
 
 #inst-slide2-right #knx_standart_cell {
-    background-image: url("../images/knx_standart_icon.png");
+    background-image: url("../../images/knx_standart_icon.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     background-size: 141px 85px;
     -o-background-size: 141px 85px;
     -webkit-background-size: 141px 85px;
     -moz-background-size: 141px 85px;
     padding-top: 94px;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1726,14 +1763,15 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #inst-slide2-right #knx_standart_cell {
-        background-image: url("../images/knx_standart_icon@2x.png");
+        background-image: url("../../images/knx_standart_icon@2x.png");
         background-repeat: no-repeat;
-        background-position: left top;
+        background-position: right top;
         background-size: 141px 85px;
         -o-background-size: 141px 85px;
         -webkit-background-size: 141px 85px;
         -moz-background-size: 141px 85px;
         padding-top: 94px;
+        text-align: right;
     }
 }
 
@@ -1746,7 +1784,7 @@ only screen and (min-resolution: 144dpi) {
 #factoid { clear: both; width: 100%; }
 #factoid_left {
     width:40%;
-    background-image: url("../images/factoid_left.png");
+    background-image: url("../../images/factoid_left.png");
     background-position: top right;
     background-size: cover;
     min-height: 170px !important;
@@ -1758,7 +1796,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #factoid_left {
         width:40%;
-        background-image: url("../images/factoid_left@2x.png");
+        background-image: url("../../images/factoid_left@2x.png");
         background-position: top right;
         background-size: cover;
         min-height: 170px !important;
@@ -1767,7 +1805,7 @@ only screen and (min-resolution: 144dpi) {
 
 #factoid_right {
     width:40%;
-    background-image: url("../images/factoid_right.png");
+    background-image: url("../../images/factoid_right.png");
     background-position: top left;
     background-size: cover;
     min-height: 170px !important;
@@ -1779,7 +1817,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #factoid_right {
         width:40%;
-        background-image: url("../images/factoid_right@2x.png");
+        background-image: url("../../images/factoid_right@2x.png");
         background-position: top left;
         background-size: cover;
         min-height: 170px !important;
@@ -1791,7 +1829,7 @@ only screen and (min-resolution: 144dpi) {
     height: 250px;
 }
 #f_days { font-size: 134px; font-family: circe_b; line-height: 144px; }
-#factoid_center p { margin: -2px 0 0; }
+#factoid_center p { margin: -2px 0 0; direction: rtl; }
 #factoid_center p:first-of-type {
     line-height: 22px;
     /*width: 60%;*/
@@ -1837,7 +1875,7 @@ only screen and (min-resolution: 144dpi) {
     padding-bottom: 106px;
     display: inline-block;
     margin-top: 96px;
-    background-image: url("../images/partners_interface_bg.png");
+    background-image: url("../../images/partners_interface_bg.png");
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -1858,7 +1896,7 @@ only screen and (min-resolution: 144dpi) {
         padding-bottom: 106px;
         display: inline-block;
         margin-top: 96px;
-        background-image: url("../images/partners_interface_bg@2x.png");
+        background-image: url("../../images/partners_interface_bg@2x.png");
         background-position: center center;
         background-size: cover;
         position: relative;
@@ -1892,6 +1930,8 @@ only screen and (min-resolution: 144dpi) {
     line-height: 40px;
     margin-top: 27px;
     margin-bottom: 20px;
+    direction: rtl;
+    text-align: center;
 }
 #about-slide-2 h2 {
     font-family: circe_b;
@@ -1900,9 +1940,11 @@ only screen and (min-resolution: 144dpi) {
     margin-top: 50px;
     margin-bottom: 0;
     text-align: center;
+    direction: rtl;
 }
 
-#about-slide-2 p { line-height: 22px; margin: 20px 0; }
+#about-slide-2 p { line-height: 22px; margin: 20px 0; direction: rtl; text-align: right; }
+#about-slide-2 ul { direction: rtl; text-align: right; }
 #about-slide-2 p:first-of-type { margin-top: 14px; }
 #about-slide-2 #about_installation { position: absolute; top: 142px; left: 950px; }
 #about-slide-2 .table { width: 90%; /*75%;*/ margin-top: 61px; }
@@ -1917,7 +1959,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #upstairs {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/upstairs.png");
+    background-image: url("../../images/upstairs.png");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1928,7 +1970,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #upstairs {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/upstairs@2x.png");
+        background-image: url("../../images/upstairs@2x.png");
         background-position: center center;
     }
 }
@@ -1936,7 +1978,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #houses {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/houses.jpg");
+    background-image: url("../../images/houses.jpg");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1947,7 +1989,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #houses {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/houses@2x.jpg");
+        background-image: url("../../images/houses@2x.jpg");
         background-position: center center;
     }
 }
@@ -1955,7 +1997,7 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-2 #man-on-top {
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../images/man-on-top.jpg");
+    background-image: url("../../images/man-on-top.jpg");
     background-position: center center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1966,17 +2008,19 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #man-on-top {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/man-on-top@2x.jpg");
+        background-image: url("../../images/man-on-top@2x.jpg");
         background-position: center center;
     }
 }
 
 #about-slide-2 h3#rationalism {
-    background-image: url("../images/rationalism_icon.png");
-    background-position: left top;
+    background-image: url("../../images/rationalism_icon.png");
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 44px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -1984,19 +2028,22 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#rationalism {
-        background-image: url("../images/rationalism_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/rationalism_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 44px 50px;
+
     }
 }
 #about-slide-2 h3#velocity {
-    background-image: url("../images/velocity_icon.png");
-    background-position: left top;
+    background-image: url("../../images/velocity_icon.png");
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 88px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2004,19 +2051,21 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#velocity {
-        background-image: url("../images/velocity_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/velocity_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 88px 50px;
     }
 }
 #about-slide-2 h3#standarts {
-    background-image: url("../images/standarts_icon.png");
-    background-position: left top;
+    background-image: url("../../images/standarts_icon.png");
+    background-position: right top;
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: 42px 50px;
+    direction: rtl;
+    text-align: right;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2024,23 +2073,29 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #about-slide-2 h3#standarts {
-        background-image: url("../images/standarts_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/standarts_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 60px;
         background-size: 42px 50px;
     }
 }
 
+#about-slide-2 #citation { text-align: right; direction: rtl; }
+#about-slide-2 #citation tr td:last-of-type { direction: rtl; text-align: right; }
+
 #about-slide-2 #citation tr td:first-of-type { width: 50% }
 #about-slide-2 #citation tr td:last-of-type { width: 46%; padding-left: 4%; }
 
 blockquote {
     /*background: #f7f7f7;*/
-    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-left: none;
     font-style: italic;
     /*margin: 1.5em 10px;*/
     padding: 0.5em 10px;
+    direction: rtl;
+    text-align: right;
 }
 
 blockquote:before {
@@ -2119,7 +2174,7 @@ blockquote > p:first-child {
     height: 680px;
     opacity: 0;
     z-index: 51;
-    background-image: url("../images/floor_new.png");
+    background-image: url("../../images/floor_new.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2135,7 +2190,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 51;
-        background-image: url("../images/floor_new@2x.png");
+        background-image: url("../../images/floor_new@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2148,7 +2203,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 46;
-    background-image: url("../images/floor_shadow.png");
+    background-image: url("../../images/floor_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2164,7 +2219,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 46;
-        background-image: url("../images/floor_shadow@2x.png");
+        background-image: url("../../images/floor_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2177,7 +2232,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 48;
-    background-image: url("../images/floor_back.png");
+    background-image: url("../../images/floor_back.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2193,7 +2248,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 48;
-        background-image: url("../images/floor_back@2x.png");
+        background-image: url("../../images/floor_back@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2206,7 +2261,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 48;
-    background-image: url("../images/top_buttons.png");
+    background-image: url("../../images/top_buttons.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2222,7 +2277,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 48;
-        background-image: url("../images/top_buttons@2x.png");
+        background-image: url("../../images/top_buttons@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2235,7 +2290,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 47;
-    background-image: url("../images/top_buttons_shadows.png");
+    background-image: url("../../images/top_buttons_shadows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2252,7 +2307,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 47;
-        background-image: url("../images/top_buttons_shadows@2x.png");
+        background-image: url("../../images/top_buttons_shadows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2267,7 +2322,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 46;
-    background-image: url("../images/light_panel_shadow.png");
+    background-image: url("../../images/light_panel_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2284,7 +2339,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 46;
-        background-image: url("../images/light_panel_shadow@2x.png");
+        background-image: url("../../images/light_panel_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2298,7 +2353,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 47;
-    background-image: url("../images/light_panel.png");
+    background-image: url("../../images/light_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2315,7 +2370,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 47;
-        background-image: url("../images/light_panel@2x.png");
+        background-image: url("../../images/light_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2329,7 +2384,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 49;
-    background-image: url("../images/light_zones.png");
+    background-image: url("../../images/light_zones.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2346,7 +2401,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 49;
-        background-image: url("../images/light_zones@2x.png");
+        background-image: url("../../images/light_zones@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2360,7 +2415,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 51;
-    background-image: url("../images/climate_panel.png");
+    background-image: url("../../images/climate_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2377,7 +2432,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 51;
-        background-image: url("../images/climate_panel@2x.png");
+        background-image: url("../../images/climate_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2391,7 +2446,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/climate_panel_shadow.png");
+    background-image: url("../../images/climate_panel_shadow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2408,7 +2463,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50;
-        background-image: url("../images/climate_panel_shadow@2x.png");
+        background-image: url("../../images/climate_panel_shadow@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2422,7 +2477,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/climate_zones.png");
+    background-image: url("../../images/climate_zones.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2440,7 +2495,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50;
-        background-image: url("../images/climate_zones@2x.png");
+        background-image: url("../../images/climate_zones@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2455,7 +2510,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 50;
-    background-image: url("../images/alarm_panel.png");
+    background-image: url("../../images/alarm_panel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2472,7 +2527,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 50
-    background-image: url("../images/alarm_panel@2x.png");
+    background-image: url("../../images/alarm_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2486,7 +2541,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 52;
-    background-image: url("../images/alarm_cameras.png");
+    background-image: url("../../images/alarm_cameras.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2503,7 +2558,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 52
-    background-image: url("../images/alarm_cameras@2x.png");
+    background-image: url("../../images/alarm_cameras@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2517,7 +2572,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 49;
-    background-image: url("../images/alarm_panel_shadows.png");
+    background-image: url("../../images/alarm_panel_shadows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2534,7 +2589,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 49;
-        background-image: url("../images/alarm_panel_shadows@2x.png");
+        background-image: url("../../images/alarm_panel_shadows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2548,7 +2603,7 @@ only screen and (min-resolution: 144dpi) {
     height: 680px;
     opacity: 0;
     z-index: 52;
-    background-image: url("../images/alarm_windows.png");
+    background-image: url("../../images/alarm_windows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -2565,7 +2620,7 @@ only screen and (min-resolution: 144dpi) {
         height: 680px;
         opacity: 0;
         z-index: 52;
-        background-image: url("../images/alarm_windows@2x.png");
+        background-image: url("../../images/alarm_windows@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -2669,6 +2724,7 @@ only screen and (min-resolution: 144dpi) {
     /*text-align: justify;*/
     margin-right: auto;
     margin-left: auto;
+    direction: rtl;
 }
 
 #watch_video { font-family: circe; /*margin-top: 20px;*/ margin-bottom: 43px; z-index: 999; position: relative; }
@@ -2677,7 +2733,7 @@ only screen and (min-resolution: 144dpi) {
 /*#watch_video img { vertical-align: bottom; }*/
 
 
-#watch_btn  { display: inline-block; background-image: url('../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_btn  { display: inline-block; background-image: url('../../images/watch_video.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2686,7 +2742,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video@2x.png');
+        background-image: url('../../images/watch_video@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2695,7 +2751,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 
-#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
+#watch_video a:hover + #watch_btn { display: inline-block; background-image: url('../../images/watch_video_hover.png'); background-repeat: no-repeat; width: 26px; height: 26px; vertical-align: bottom; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -2704,7 +2760,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #watch_video a:hover + #watch_btn {
         display: inline-block;
-        background-image: url('../images/watch_video_hover@2x.png');
+        background-image: url('../../images/watch_video_hover@2x.png');
         background-repeat: no-repeat;
         background-size: 26px 26px;
         width: 26px;
@@ -2749,15 +2805,26 @@ body.modal-open {
 
 .callback_form, .ios_form {
     margin: 15px 0;
+    direction: rtl;
 }
 
 .cb_form_right {
-    padding-top: 15px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.cb_form_right img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: auto;
 }
 
 .cb_form_right div {
     margin-top: 10px;
     font-size: 0.77em;
+    direction: rtl;
 }
 #padlock { margin-top: 20px; }
 
@@ -2782,7 +2849,7 @@ body.modal-open {
 
 .send-btn {
     /*float: left;*/
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .send-btn:hover {
@@ -2799,6 +2866,11 @@ body.modal-open {
 
 .send-btn:focus { outline: none }
 
+#myModal .modal-header {
+    border: inherit;
+    padding-bottom: 10px;
+    text-align: center;
+}
 .modal-header {
     border: none;
     padding-bottom: 20px;
@@ -2810,6 +2882,7 @@ body.modal-open {
 .footnote {
     font-size: 0.77em;
     margin-top: 15px;
+    direction: rtl;
 }
 .footnote a { line-height: 14px; }
 
@@ -2818,6 +2891,7 @@ body.modal-open {
 #error {
     font-size: 0.77em;
 }
+.alert-danger { direction: rtl; }
 
 .result {
     padding: 30px 0;
@@ -2830,7 +2904,7 @@ body.modal-open {
     /* min-height: 320px; */
     /* height: 100%; */
     /* width: 100%; */
-    /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+    /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
     position: relative;
     margin: 70px auto 0;
     max-width: 1600px;
@@ -2850,7 +2924,7 @@ body.modal-open {
     max-height: 407px;
     height: 100%;
     width: 100%;
-    background: url('../images/ipad_slide2.jpg') no-repeat center -4px;
+    background: url('../../images/ipad_slide2.jpg') no-repeat center -4px;
     position: relative;
     margin: 207px auto 0;
 }
@@ -2861,10 +2935,10 @@ body.modal-open {
     text-align: center;
 }
 
-#notes div { display: inline-block; text-align: left; margin-right: 70px; vertical-align: top; }
+#notes div { display: inline-block; text-align: right; margin-right: 70px; vertical-align: top; margin-bottom: 20px; }
 #notes div:last-of-type { margin-right: 0; }
-#notes div img { margin-right: 15px; vertical-align: top; display: inline-block; margin-bottom: 10px; }
-#notes div span { display: inline-block; }
+#notes div img { margin-right: 15px; vertical-align: top; float: right; margin-left: 15px; margin-bottom: 10px; }
+#notes div span { display: inline-block; direction: rtl; text-align: right; }
 
 #note1 {
     /*position: absolute;
@@ -2921,7 +2995,7 @@ body.modal-open {
 /*
 #slide-3-left {
     height: 100%;
-    background: #3f3e43 url('../images/slide3_left.jpg') no-repeat left center;
+    background: #3f3e43 url('../../images/slide3_left.jpg') no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2937,7 +3011,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-left {
         height: 100%;
-        background: #3f3e43 url('../images/slide3_left@2x.jpg') no-repeat left center;
+        background: #3f3e43 url('../../images/slide3_left@2x.jpg') no-repeat left center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -2958,7 +3032,7 @@ only screen and (min-resolution: 144dpi) {
 
 #slide-3-right {
     height: 100%;
-    background: #d7c5ad url('../images/slide3_right.jpg') no-repeat center bottom;
+    background: #d7c5ad url('../../images/slide3_right.jpg') no-repeat center bottom;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -2973,7 +3047,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-3-right {
         height: 100%;
-        background: #d7c5ad url('../images/slide3_right@2x.jpg') no-repeat center bottom;
+        background: #d7c5ad url('../../images/slide3_right@2x.jpg') no-repeat center bottom;
         -webkit-background-size:cover;
         -moz-background-size:cover;
         -o-background-size:cover;
@@ -3040,9 +3114,11 @@ only screen and (min-resolution: 144dpi) {
     line-height: 40px;
     margin-top: 27px;
     margin-bottom: 0;
+    text-align: right;
+    direction: rtl;
 }
 
-#install-slide-3 p { font-size: 18px; line-height: 22px; margin: 20px 0; }
+#install-slide-3 p { font-size: 18px; line-height: 22px; margin: 20px 0; text-align: right; direction: rtl; }
 #install-slide-3 p:first-of-type { margin: 9px 0 20px; }
 #install-slide-3 p.note { font-size: 14px; line-height: 18px; border-top: 1px solid #000;
     padding-top: 5px; }
@@ -3067,7 +3143,7 @@ only screen and (min-resolution: 144dpi) {
     width: 100%;
     min-height: 561px;
     background-size: cover;
-    background-image: url("../images/about_slide3.jpg");
+    background-image: url("../../images/about_slide3.jpg");
     background-position: center bottom;
     position: relative;
 }
@@ -3080,7 +3156,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         min-height: 561px;
         background-size: cover;
-        background-image: url("../images/about_slide3.jpg");
+        background-image: url("../../images/about_slide3.jpg");
         background-position: center bottom;
     }
 }
@@ -3125,7 +3201,7 @@ only screen and (min-resolution: 144dpi) {
 }
 #about-slide-3 #project_title:hover { cursor: pointer; }
 #about-slide-3 #proj_list_icon {
-    background: url('../images/proj_list_icon.png') no-repeat;
+    background: url('../../images/proj_list_icon.png') no-repeat;
     width: 5px;
     height: 12px;
     margin: 0px 0 0 10px;
@@ -3171,13 +3247,13 @@ only screen and (min-resolution: 144dpi) {
     height: 11px;
     top: -11px;
     left: 25px;
-    background: url('../images/proj_list_corner.png') no-repeat;
+    background: url('../../images/proj_list_corner.png') no-repeat;
 }
 #proj_list_close {
     position: absolute;
     top: 0;
     right: -25px;
-    background: url('../images/proj_list_close.jpg');
+    background: url('../../images/proj_list_close.jpg');
     height: 25px;
     width: 25px;
 }
@@ -3237,7 +3313,7 @@ only screen and (min-resolution: 144dpi) {
     font-size: 15px;
 }
 .car-caption .object {
-    background: url('../images/object_icon.png') no-repeat;
+    background: url('../../images/object_icon.png') no-repeat;
     padding-left: 35px;
     background-position: 0px 0px;
     height: 30px;
@@ -3247,7 +3323,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 0 20px;
 }
 .car-caption .automation {
-    background: url('../images/automation_icon.png') no-repeat;
+    background: url('../../images/automation_icon.png') no-repeat;
     padding-left: 35px;
     background-position: 0px 0px;
     height: 30px;
@@ -3266,7 +3342,7 @@ only screen and (min-resolution: 144dpi) {
 .car-caption .panel-heading { padding: 0 15px; background-color: #fff; }
 
 .car-caption .lighting {
-    background: url('../images/lighting_icon.jpg') no-repeat;
+    background: url('../../images/lighting_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3278,7 +3354,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .lighting {
-        background: url('../images/lighting_icon@2x.jpg') no-repeat;
+        background: url('../../images/lighting_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3287,7 +3363,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .climate {
-    background: url('../images/climate_icon.jpg') no-repeat;
+    background: url('../../images/climate_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3299,7 +3375,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .climate {
-        background: url('../images/climate_icon@2x.jpg') no-repeat;
+        background: url('../../images/climate_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3308,7 +3384,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .security {
-    background: url('../images/security_icon.jpg') no-repeat;
+    background: url('../../images/security_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3320,7 +3396,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .security {
-        background: url('../images/security_icon@2x.jpg') no-repeat;
+        background: url('../../images/security_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3329,7 +3405,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 .car-caption .extra {
-    background: url('../images/extra_icon.jpg') no-repeat;
+    background: url('../../images/extra_icon.jpg') no-repeat;
     padding-left: 45px;
     background-position: 0px 0px;
     height: 35px;
@@ -3341,7 +3417,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .car-caption .extra {
-        background: url('../images/extra_icon@2x.jpg') no-repeat;
+        background: url('../../images/extra_icon@2x.jpg') no-repeat;
         padding-left: 45px;
         background-position: 0px 0px;
         height: 35px;
@@ -3357,7 +3433,7 @@ only screen and (min-resolution: 144dpi) {
     margin-top: 34px;
     position: relative;
     color: #fff;
-    /*background-image: url("../images/dev_slide3.jpg");*/
+    /*background-image: url("../../images/dev_slide3.jpg");*/
     /*background-position: center center;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -3401,7 +3477,7 @@ only screen and (min-resolution: 144dpi) {
     padding-bottom: 10px;
 }
 #dev-slide-3 #pr_sect2 .plus {
-    background-image: url('../images/presentation/frame3_plus_sign.png');
+    background-image: url('../../images/presentation/frame3_plus_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 37px;
@@ -3415,7 +3491,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .plus {
-        background-image: url('../images/presentation/frame3_plus_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_plus_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 37px;
@@ -3427,7 +3503,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 #dev-slide-3 #pr_sect2 .equal {
-    background-image: url('../images/presentation/frame3_equal_sign.png');
+    background-image: url('../../images/presentation/frame3_equal_sign.png');
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 26px;
@@ -3442,7 +3518,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect2 .equal {
-        background-image: url('../images/presentation/frame3_equal_sign@2x.png');
+        background-image: url('../../images/presentation/frame3_equal_sign@2x.png');
         background-repeat: no-repeat;
         background-position: left top;
         padding-top: 26px;
@@ -3487,7 +3563,7 @@ only screen and (min-resolution: 144dpi) {
 #dev-slide-3 #pr_sect6 {
     background-color: #df2346;
     padding-bottom: 50px;
-    background-image: url("../images/presentation/frame9_upstairs.png");
+    background-image: url("../../images/presentation/frame9_upstairs.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
@@ -3542,7 +3618,7 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    #dev-slide-3 { margin-top: 34px; position: relative; background-image: url("../images/dev_slide3@2x.jpg"); background-size: cover; background-repeat: no-repeat; }
+    #dev-slide-3 { margin-top: 34px; position: relative; background-image: url("../../images/dev_slide3@2x.jpg"); background-size: cover; background-repeat: no-repeat; }
 }*/
 
 #dev-slide-3 #devs {
@@ -3571,7 +3647,7 @@ only screen and (min-resolution: 144dpi) {
 
 /* slide-4 */
 #slide-4 {
-    /*background: url('../images/slide4_bg.jpg') no-repeat left bottom;
+    /*background: url('../../images/slide4_bg.jpg') no-repeat left bottom;
     background-size: cover;
     padding-left: 50px;
     color: #fff;
@@ -3588,7 +3664,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #slide-4 {
-        /* background: url('../images/slide4_bg@2x.jpg') no-repeat left bottom;
+        /* background: url('../../images/slide4_bg@2x.jpg') no-repeat left bottom;
          background-size: cover;
          padding-left: 50px;
          color: #fff;
@@ -3645,7 +3721,7 @@ only screen and (min-resolution: 144dpi) {
 #tabs4 ul li:first-of-type,
 #tabs4 ul li:first-of-type a.tabulous_active
 {
-    background-color: #f4a00a !important;
+    background-color: #cf1834 !important;
     color: #fff !important;
 }
 
@@ -3663,7 +3739,7 @@ only screen and (min-resolution: 144dpi) {
 #tabs3 ul li:nth-of-type(3), #tabs3 ul li:nth-of-type(3) a.tabulous_active,
 #tabs4 ul li:nth-of-type(3), #tabs4 ul li:nth-of-type(3) a.tabulous_active
 {
-    background-color: #cf1834 !important;
+    background-color: #f4a00a !important;
     color: #fff !important;
 }
 #tabs ul li a.tabulous_active, #tabs2 ul li a.tabulous_active, #tabs3 ul li a.tabulous_active, #tabs4 ul li a.tabulous_active { border-bottom: none; }
@@ -3751,7 +3827,7 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
 }
 
-#slide-4 p { /*width: 40%;*/ font-size: 18px; /*line-height: 22px;*/ margin-top: 2px; margin-bottom: 17px; }
+#slide-4 p { /*width: 40%;*/ font-size: 18px; /*line-height: 22px;*/ margin-top: 2px; margin-bottom: 17px; direction: rtl; }
 
 #slide-4 .icons {
     position: absolute;
@@ -3774,9 +3850,9 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 30px;
 }
 
-#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { border-bottom: 2px solid #f4a00a; }
-#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { border-bottom: 2px solid #425d94; }
-#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { border-bottom: 2px solid #cf1834; }
+#slide-4 .visible-lg div#tabs-1 h2, #slide-4 .visible-md div#md-tabs-1 h2 { border-bottom: 2px solid #f4a00a; text-align: right; }
+#slide-4 .visible-lg div#tabs-2 h2, #slide-4 .visible-md div#md-tabs-2 h2 { border-bottom: 2px solid #425d94; text-align: right; }
+#slide-4 .visible-lg div#tabs-3 h2, #slide-4 .visible-md div#md-tabs-3 h2 { border-bottom: 2px solid #cf1834; text-align: right; }
 
 #slide-4 .visible-lg .factoids, #slide-4 .visible-md .factoids { width: auto; margin: 50px auto 30px; }
 #slide-4 .visible-lg .factoids td, #slide-4 .visible-md .factoids td {
@@ -3900,16 +3976,26 @@ only screen and (min-resolution: 144dpi) {
     position: absolute;
     background-color: #f2f2f2;
     padding: 30px;
-    padding-left: 160%;
+    padding-left: 140%;
     border-radius: 7px;
     width: auto !important;
-    min-width: 150%;
+    min-width: 180%;
     min-height: 110%;
     height: auto;
     z-index: 2;
     opacity: 0;
     -webkit-opacity: 0;
     -moz-opacity: 0;
+    text-align: right;
+    direction: rtl;
+}
+#slide-5 #integr_table .table_cell:last-of-type .integr_description {
+    min-width: 260%;
+    padding-left: 30px;
+    padding-right: 150%;
+}
+#slide-5 #integr_table .table_cell img {
+    margin: 0 auto 15px;
 }
 #slide-5 #integr_table .table_cell:hover .integr_description {
     /*display: block;*/
@@ -3953,7 +4039,7 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0px;
 }
 #slide-5 #integr_table .table_cell p:last-of-type { margin-bottom: 0; }
-#slide-5 .table .table_cell p { line-height: 22px; margin: 10px 0; }
+#slide-5 .table p { line-height: 22px; margin: 10px 0; direction: rtl; }
 #slide-5 .table .table_cell h4 + p { margin-top: 4px; }
 
 #slide-5 #equipment {
@@ -3967,7 +4053,7 @@ only screen and (min-resolution: 144dpi) {
     margin: 0 auto;
 }
 #slide-5 #know_more_tabs li { vertical-align: middle;  height: 100%; }
-#slide-5 #know_more_tabs li a { border: none; }
+#slide-5 #know_more_tabs li a { border: none; direction: rtl; }
 #slide-5 #know_more_tabs li a:hover { background-color: #fff; }
 #slide-5 #know_more_tabs li { border-bottom: solid 1px transparent; }
 #slide-5 #know_more_tabs li.active { border-bottom: solid 1px #be0005; }
@@ -3985,6 +4071,8 @@ only screen and (min-resolution: 144dpi) {
     margin-top: 10px;
     background-color: #fcfcfc;
     margin-bottom: 20px;
+    text-align: right;
+    direction: rtl;
 }
 
 #accordion {
@@ -4036,11 +4124,6 @@ only screen and (min-resolution: 144dpi) {
 #about-slide-5 #about_phone .phone800 { display: block; font-size: 24px; line-height: 26px; }
 
 /* /about */
-
-/* FAQ */
-#faq-slide-1 { padding: 50px 0; }
-#faq-slide-1 h1 { text-align: center; }
-/* /FAQ */
 
 /* developers */
 #dev-slide-5 { padding: 0 130px 0 105px; margin-top: 0; }
@@ -4129,11 +4212,11 @@ only screen and (min-resolution: 144dpi) {
 
 
 #socials a { margin-right: 10px; border: none; }
-#socials #soc_twitter { background-image: url("../images/soc_twitter.png"); width: 28px; height: 28px; }
-#socials #soc_facebook { background-image: url("../images/soc_facebook.png"); width: 28px; height: 28px; }
-#socials #soc_googleplus { background-image: url("../images/soc_googleplus.png"); width: 28px; height: 28px; }
-#socials #soc_instagram { background-image: url("../images/soc_instagram.png"); width: 28px; height: 28px; }
-#socials #soc_youtube { background-image: url("../images/soc_youtube.png"); width: 28px; height: 28px; }
+#socials #soc_twitter { background-image: url("../../images/soc_twitter.png"); width: 28px; height: 28px; }
+#socials #soc_facebook { background-image: url("../../images/soc_facebook.png"); width: 28px; height: 28px; }
+#socials #soc_googleplus { background-image: url("../../images/soc_googleplus.png"); width: 28px; height: 28px; }
+#socials #soc_instagram { background-image: url("../../images/soc_instagram.png"); width: 28px; height: 28px; }
+#socials #soc_youtube { background-image: url("../../images/soc_youtube.png"); width: 28px; height: 28px; }
 /*
 #socials a img { border: none; }*/
 
@@ -4144,7 +4227,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4159,7 +4242,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4174,7 +4257,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4189,7 +4272,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4204,7 +4287,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4278,8 +4361,8 @@ only screen and (min-resolution: 144dpi) {
 /*#platforms span img { margin-right: 10px; vertical-align: bottom; }*/
 
 #platforms #android, #platforms #apple { margin-right: 10px; vertical-align: bottom; }
-#platforms #android { display: inline-block; background-image: url('../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
-#platforms #apple { display: inline-block; background-image: url('../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #android { display: inline-block; background-image: url('../../images/android.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
+#platforms #apple { display: inline-block; background-image: url('../../images/apple.png'); background-repeat: no-repeat; width: 17px; height: 21px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -4288,7 +4371,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #android {
         display: inline-block;
-        background-image: url('../images/android@2x.png');
+        background-image: url('../../images/android@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4303,7 +4386,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #platforms #apple {
         display: inline-block;
-        background-image: url('../images/apple@2x.png');
+        background-image: url('../../images/apple@2x.png');
         background-repeat: no-repeat;
         background-size: 17px 21px;
         width: 17px;
@@ -4314,7 +4397,7 @@ only screen and (min-resolution: 144dpi) {
 /* /slide-7 */
 
 footer {
-    padding: 10px 50px 30px;
+    padding: 10px 50px 50px;
     clear: both;
     font-size: 14px;
     -webkit-box-sizing: border-box;
@@ -4325,6 +4408,7 @@ footer {
     max-width: 1600px;
     /*width: 100%;*/
     margin: 0 auto;
+    text-align: right;
 }
 
 footer.minor {
@@ -4332,14 +4416,14 @@ footer.minor {
 }
 
 #design { float: right; margin-top: 44px; }
-#footer_socials { float: right; margin-top: 19px; }
-.visible-sm #footer_socials, .visible-xs #footer_socials { float: right; margin-top: 10px; margin-bottom: auto; }
+#footer_socials { float: left; margin-top: 19px; }
+.visible-sm #footer_socials, .visible-xs #footer_socials { float: left; margin-top: 10px; margin-bottom: auto; }
 
 .visible-sm #bottom_menu, .visible-xs #bottom_menu {
     margin-left: 0px;
     margin-bottom: 30px;
 }
-.visible-xs #bottom_menu { float: left; }
+.visible-xs #bottom_menu { float: right; }
 .visible-xs .copy { float: left; width: 100%; margin-bottom: 10px; }
 /*
 @media (min-width: 721px) {
@@ -4350,7 +4434,7 @@ footer.minor {
 
 @media (max-width: 720px) {
     .visible-xs #footer_socials {
-        float: left;
+        float: none;
         margin-top: -10px;
         margin-bottom: 20px;
         width: 100%;
@@ -4361,23 +4445,23 @@ footer.minor {
 
 #footer_socials a { margin-right: 7px; border: none; }
 #footer_socials a:last-of-type { margin-right: 0; }
-#footer_socials #soc_twitter { background-image: url("../images/soc_footer_twitter.png"); width: 28px; height: 28px; }
-#footer_socials #soc_twitter:hover { background-image: url("../images/soc_twitter.png"); width: 28px; height: 28px; }
+#footer_socials #soc_twitter { background-image: url("../../images/soc_footer_twitter.png"); width: 28px; height: 28px; }
+#footer_socials #soc_twitter:hover { background-image: url("../../images/soc_twitter.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_facebook { background-image: url("../images/soc_footer_facebook.png"); width: 28px; height: 28px; }
-#footer_socials #soc_facebook:hover { background-image: url("../images/soc_facebook.png"); width: 28px; height: 28px; }
+#footer_socials #soc_facebook { background-image: url("../../images/soc_footer_facebook.png"); width: 28px; height: 28px; }
+#footer_socials #soc_facebook:hover { background-image: url("../../images/soc_facebook.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_googleplus { background-image: url("../images/soc_footer_googleplus.png"); width: 28px; height: 28px; }
-#footer_socials #soc_googleplus:hover { background-image: url("../images/soc_googleplus.png"); width: 28px; height: 28px; }
+#footer_socials #soc_googleplus { background-image: url("../../images/soc_footer_googleplus.png"); width: 28px; height: 28px; }
+#footer_socials #soc_googleplus:hover { background-image: url("../../images/soc_googleplus.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_instagram { background-image: url("../images/soc_footer_instagram.png"); width: 28px; height: 28px; }
-#footer_socials #soc_instagram:hover { background-image: url("../images/soc_instagram.png"); width: 28px; height: 28px; }
+#footer_socials #soc_instagram { background-image: url("../../images/soc_footer_instagram.png"); width: 28px; height: 28px; }
+#footer_socials #soc_instagram:hover { background-image: url("../../images/soc_instagram.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_youtube { background-image: url("../images/soc_footer_youtube.png"); width: 28px; height: 28px; }
-#footer_socials #soc_youtube:hover { background-image: url("../images/soc_youtube.png"); width: 28px; height: 28px; }
+#footer_socials #soc_youtube { background-image: url("../../images/soc_footer_youtube.png"); width: 28px; height: 28px; }
+#footer_socials #soc_youtube:hover { background-image: url("../../images/soc_youtube.png"); width: 28px; height: 28px; }
 
-#footer_socials #soc_flickr { background-image: url("../images/soc_footer_flickr.png"); width: 28px; height: 28px; }
-#footer_socials #soc_flickr:hover { background-image: url("../images/soc_flickr.png"); width: 28px; height: 28px; }
+#footer_socials #soc_flickr { background-image: url("../../images/soc_footer_flickr.png"); width: 28px; height: 28px; }
+#footer_socials #soc_flickr:hover { background-image: url("../../images/soc_flickr.png"); width: 28px; height: 28px; }
 /*
 #socials a img { border: none; }*/
 
@@ -4388,7 +4472,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_twitter {
         display: inline-block;
-        background-image: url('../images/soc_footer_twitter@2x.png');
+        background-image: url('../../images/soc_footer_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4397,7 +4481,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_twitter:hover {
         display: inline-block;
-        background-image: url('../images/soc_twitter@2x.png');
+        background-image: url('../../images/soc_twitter@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4412,7 +4496,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_facebook {
         display: inline-block;
-        background-image: url('../images/soc_footer_facebook@2x.png');
+        background-image: url('../../images/soc_footer_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4421,7 +4505,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_facebook:hover {
         display: inline-block;
-        background-image: url('../images/soc_facebook@2x.png');
+        background-image: url('../../images/soc_facebook@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4436,7 +4520,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_googleplus {
         display: inline-block;
-        background-image: url('../images/soc_footer_googleplus@2x.png');
+        background-image: url('../../images/soc_footer_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4445,7 +4529,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_googleplus:hover {
         display: inline-block;
-        background-image: url('../images/soc_googleplus@2x.png');
+        background-image: url('../../images/soc_googleplus@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4460,7 +4544,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_instagram {
         display: inline-block;
-        background-image: url('../images/soc_footer_instagram@2x.png');
+        background-image: url('../../images/soc_footer_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4469,7 +4553,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_instagram:hover {
         display: inline-block;
-        background-image: url('../images/soc_instagram@2x.png');
+        background-image: url('../../images/soc_instagram@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4484,7 +4568,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_youtube {
         display: inline-block;
-        background-image: url('../images/soc_footer_youtube@2x.png');
+        background-image: url('../../images/soc_footer_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4493,7 +4577,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_youtube:hover {
         display: inline-block;
-        background-image: url('../images/soc_youtube@2x.png');
+        background-image: url('../../images/soc_youtube@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4508,7 +4592,7 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     #footer_socials #soc_flickr {
         display: inline-block;
-        background-image: url('../images/soc_footer_flickr@2x.png');
+        background-image: url('../../images/soc_footer_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4517,7 +4601,7 @@ only screen and (min-resolution: 144dpi) {
 
     #footer_socials #soc_flickr:hover {
         display: inline-block;
-        background-image: url('../images/soc_flickr@2x.png');
+        background-image: url('../../images/soc_flickr@2x.png');
         background-repeat: no-repeat;
         background-size: 28px 28px;
         width: 28px;
@@ -4618,9 +4702,10 @@ only screen and (min-resolution: 144dpi) {
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
+    direction: rtl;
 }
 
-
+#callback_wrapper .callback_form1 { direction: rtl; }
 
 #cb_form_body .table_row .table_cell:first-of-type { width: 60%; padding-right: 5%; }
 
@@ -4648,7 +4733,7 @@ only screen and (min-resolution: 144dpi) {
     background: #fefcea; /* Для старых браузров */
     background: linear-gradient(to top, #efecdd, #fdfae9);
     padding: 5px 40px;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 
@@ -4692,14 +4777,6 @@ only screen and (min-resolution: 144dpi) {
 #callback_wrapper #callback_form { padding-bottom: 0; }
 #callback_wrapper .form-group {
     margin-bottom: 10px;
-}
-
-#faq-slide-1 {
-    position: relative;
-    padding: 50px 0;
-}
-#faq-slide-1 h1 {
-    text-align: center;
 }
 
 @media ( min-width: 1930px ) {
@@ -4774,22 +4851,24 @@ only screen and (min-resolution: 144dpi) {
 
     #langs {
         font-size: 14px;
-        padding: 24px 20px 20px 20px;
-        float: left;
+        padding: 24px 20px 20px 75px;
+        float: right;
     }
     .hidden-xs #langs { padding-bottom: 15px; }
     .visible-xs #langs { padding: 0}
 
     #logo {
-        margin: 25px 20px 0 0;
-        float: left;
-        background-image: url('../images/logo.png');
+        margin: 25px 0 0;
+        float: right;
+        background-image: url('../../images/logo.png');
         background-position: left top;
         background-repeat: no-repeat;
         width: 136px;
         height: 46px;
         border: none;
         font-size: 16px;
+        /* vertical-align: bottom; */
+        /* display: inline-block; */
         padding-top: 37px;
         padding-left: 3px;
     }
@@ -4799,24 +4878,34 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 144dpi) {
         #logo {
-            background-image: url('../images/logo@2x.png');
-            background-size: 124px 23px;
+            margin: 25px 0 0;
+            float: right;
+            background-image: url('../../images/logo@2x.png');
+            background-position: left top;
             background-repeat: no-repeat;
-            width: 124px;
-            height: 23px;
+            width: 136px;
+            height: 46px;
+            border: none;
+            font-size: 16px;
+            /* vertical-align: bottom; */
+            /* display: inline-block; */
+            padding-top: 37px;
+            padding-left: 3px;
         }
     }
 
     .visible-sm #logo, .visible-xs #logo {
-        margin: 10px 20px 0 10px;
-        float: left;
-        background-image: url('../images/logo.png');
+        margin: 25px 0 0;
+        float: right;
+        background-image: url('../../images/logo.png');
         background-position: left top;
         background-repeat: no-repeat;
         width: 136px;
         height: 46px;
         border: none;
         font-size: 16px;
+        /* vertical-align: bottom; */
+        /* display: inline-block; */
         padding-top: 37px;
         padding-left: 3px;
     }
@@ -4826,11 +4915,19 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 144dpi) {
         .visible-sm #logo, .visible-xs #logo {
-            background-image: url('../images/logo@2x.png');
-            background-size: 124px 23px;
+            margin: 25px 0 0;
+            float: right;
+            background-image: url('../../images/logo@2x.png');
+            background-position: left top;
             background-repeat: no-repeat;
-            width: 124px;
-            height: 23px;
+            width: 136px;
+            height: 46px;
+            border: none;
+            font-size: 16px;
+            /* vertical-align: bottom; */
+            /* display: inline-block; */
+            padding-top: 37px;
+            padding-left: 3px;
         }
     }
 
@@ -4843,21 +4940,21 @@ only screen and (min-resolution: 144dpi) {
         list-style: none;
         display: block;
         padding-left: 0;
-        margin-left: 225px;
+        /*margin-left: 225px;*/
         margin-top: 0;
     }
     .visible-sm #top_menu_ext, .visible-xs #top_menu_ext {
         list-style: none;
         display: block;
         padding-left: 0;
-        margin-left: 0px;
-        margin-top: 0;
-        /*margin-bottom: 10px;*/
+        margin: 0 0 20px 0;
+        width: 100% !important;
     }
     .visible-sm #top_menu_ext li, .visible-xs #top_menu_ext li,
     .visible-sm #top_menu li, .visible-xs #top_menu li
    /* .visible-sm #bottom_menu li, .visible-xs #bottom_menu li*/ {
         display: block;
+        text-align: right;
     }
 
     .visible-sm #bottom_menu li, .visible-xs #bottom_menu li {
@@ -4876,6 +4973,7 @@ only screen and (min-resolution: 144dpi) {
         border-color: #9A9A9A;
         margin-top: 20px;
         margin-bottom: 0;
+        float: left;
     }
     .navbar-toggle .icon-bar { background-color: #9A9A9A; }
 
@@ -4905,7 +5003,7 @@ only screen and (min-resolution: 144dpi) {
 
     #planshet {
         width: 70%;
-        background-image: url("../images/ipad.png");
+        background-image: url("../../images/ipad.png");
         background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -4917,7 +5015,7 @@ only screen and (min-resolution: 144dpi) {
     #interior_ipad img { border: none; outline: none; }
     #interior_ipad {
         /* width: 10%; */
-        /*background: url("../images/new_ipad.png") center no-repeat;*/
+        /*background: url("../../images/new_ipad.png") center no-repeat;*/
         background: none;
         position: relative;
         /*bottom: -45%;
@@ -4940,7 +5038,7 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-resolution: 144dpi) {
         #interior_ipad {
             /* width: 10%; */
-           /* background: url("../images/new_ipad@2x.png") center no-repeat;*/
+           /* background: url("../../images/new_ipad@2x.png") center no-repeat;*/
             position: relative;
             /*bottom: -45%;
             left: 50%;*/
@@ -4960,7 +5058,6 @@ only screen and (min-resolution: 144dpi) {
 
     }
 
-
     #slide-2 h1 { margin-top: 0; }
     #slide-2 h1.visible-sm, #slide-2 h1.visible-xs { margin-bottom: 0;  }
 
@@ -4972,16 +5069,19 @@ only screen and (min-resolution: 144dpi) {
     #slide-4 .visible-sm div#sm-tabs-1 h2,
     #slide-4 .visible-xs div#xs-tabs-1 h2 {
         border-bottom: 2px solid #f4a00a;
+        text-align: right;
     }
 
     #slide-4 .visible-sm div#sm-tabs-2 h2,
     #slide-4 .visible-xs div#xs-tabs-2 h2 {
         border-bottom: 2px solid #425d94;
+        text-align: right;
     }
 
     #slide-4 .visible-sm div#sm-tabs-3 h2,
     #slide-4 .visible-xs div#xs-tabs-3 h2 {
         border-bottom: 2px solid #cf1834;
+        text-align: right;
     }
 
     #advantages {
@@ -5045,6 +5145,15 @@ only screen and (min-resolution: 144dpi) {
         margin-left: auto;
     }
 
+    .visible-sm #notes, .visible-xs #notes {
+        display: flex;
+        text-align: right;
+        /* width: auto; */
+        /* margin: 0 auto; */
+    }
+    .visible-sm #notes div:last-of-type,
+    .visible-xs #notes div:last-of-type { margin-right: 70px; }
+
     #slide-3 .visible-md #notes div img {
         margin-right: 15px;
         vertical-align: top;
@@ -5055,7 +5164,7 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #slide-3 .visible-sm #notes div img {
-        margin-right: 15px;
+        margin-right: 0px;
         vertical-align: top;
         display: block;
         margin-bottom: 10px;
@@ -5066,7 +5175,7 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #slide-3 .visible-xs #notes div img {
-        margin-right: 15px;
+        margin-right: 0px;
         vertical-align: top;
         display: block;
         margin-bottom: 10px;
@@ -5078,6 +5187,7 @@ only screen and (min-resolution: 144dpi) {
 
     #slide-3 .visible-xs #notes div span {
         display: initial;
+
     }
 
     #slide-3 .visible-xs #notes {
@@ -5090,6 +5200,7 @@ only screen and (min-resolution: 144dpi) {
         /* text-align: left; */
         margin-right: 0;
         margin-bottom: 20px;
+        text-align: right;
         /*float: left;*/
     }
     #slide-3 .visible-xs #notes div.table_cell { display: table-cell; padding: 10px; }
@@ -5101,7 +5212,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 70px auto 0;
         max-width: 1600px;
@@ -5114,7 +5225,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 70px auto 0;
         max-width: 1600px;
@@ -5128,7 +5239,7 @@ only screen and (min-resolution: 144dpi) {
         /* min-height: 320px; */
         /* height: 100%; */
         /* width: 100%; */
-        /* background: url('../images/ipad_slide2.jpg') no-repeat center -4px; */
+        /* background: url('../../images/ipad_slide2.jpg') no-repeat center -4px; */
         position: relative;
         margin: 35px auto 0;
         max-width: 1600px;
@@ -5147,19 +5258,21 @@ only screen and (min-resolution: 144dpi) {
     #slide-4 .visible-sm div[id^=sm-tabs], #slide-4 .visible-xs div[id^=xs-tabs] { margin-bottom: 30px; }
 
     #slide-4 .visible-sm .factoids, #slide-4 .visible-xs .factoids { width: 80%; margin: 0 auto; }
-    #slide-4 .visible-sm .factoids td, #slide-4 .visible-xs .factoids td { width: 50%; padding: 15px 0; border-bottom: solid 1px #aaa; }
+    #slide-4 .visible-sm .factoids tr td:first-of-type, #slide-4 .visible-xs .factoids tr td:first-of-type { width: 60%; }
+    #slide-4 .visible-sm .factoids td, #slide-4 .visible-xs .factoids td { padding: 15px 0; border-bottom: solid 1px #aaa; }
     #slide-4 .visible-sm .factoids td img, #slide-4 .visible-xs .factoids td img {
         width: auto;
         /*max-width: 40%;*/
         height: 100px;
+
     }
     #slide-4 .visible-sm .factoids tr:last-of-type td, #slide-4 .visible-xs .factoids tr:last-of-type td { border-bottom: none; }
     #slide-4 .visible-sm .factoids tr td:first-of-type, #slide-4 .visible-xs .factoids tr td:first-of-type { /*border-right: solid 1px #999;*/ text-align: right; padding-right: 30px; }
-    #slide-4 .visible-sm .factoids tr td:last-of-type, #slide-4 .visible-xs .factoids tr td:last-of-type { text-align: left; padding-left: 30px; }
+    #slide-4 .visible-sm .factoids tr td:last-of-type, #slide-4 .visible-xs .factoids tr td:last-of-type { text-align: center; padding-left: 0px; }
     /*#slide-4 .visible-sm .factoids tr td:first-of-type { text-align: */
 
     /*#install-slide-1 {
-        background-image: url('../images/install_slide1.jpg');
+        background-image: url('../../images/install_slide1.jpg');
         background-position: left top;
         background-size: cover;
         min-height: 904px;
@@ -5173,8 +5286,10 @@ only screen and (min-resolution: 144dpi) {
         width: 400px;
         line-height: 22px;
         margin: 12px 0;
+        text-align: right;
+        direction: rtl;
     }
-    #install-slide-1 p + ul { margin-top: -11px; }
+    #install-slide-1 p + ul { margin-top: -11px; text-align: right; direction: rtl; padding-right: 30px; }
     #install-slide-1 ul li {
         line-height: 22px;
     }
@@ -5206,7 +5321,7 @@ only screen and (min-resolution: 144dpi) {
     }
     .visible-xs #bottom_menu {
         margin-left: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
     }
 
@@ -5379,18 +5494,11 @@ only screen and (min-resolution: 144dpi) {
         right: 3%;
     }
 
-
-    #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs,
-    #about-slide-1.visible-lg, #about-slide-1.visible-md { margin-top: 0; }
-
-    #faq-slide-1 { padding-top: 0; }
-
+    #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs { margin-top: 0; }
 }
 
 
 @media ( min-width: 768px ) and ( max-width: 991px ) {
-    #faq-slide-1 { padding-top: 0; }
-
     #callback_title {
         text-align: center;
         padding: 10px 10px 7px;
@@ -5458,6 +5566,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
     }
 
+    #about-slide-1 h1 { width: 100%; }
     #about-slide-1.visible-xs p {
         width: 100%;
         line-height: 22px;
@@ -5533,10 +5642,6 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media (max-width: 767px) {
-
-
-    #faq-slide-1 { padding-top: 0; }
-
     #callback_title {
         text-align: center;
         padding: 10px 10px 7px;
@@ -5650,8 +5755,14 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #slide-5 .table .table_cell .integr_block_wrap {
-        float: right;
-        text-align: left;
+        float: none;
+        text-align: center;
+    }
+
+    #slide-5 #integr_table.table .table_cell img {
+        height: 90px;
+        width: auto;
+        margin: 0 auto;
     }
 
     #slide-5 .table .table_row:last-of-type .table_cell {
@@ -5661,10 +5772,27 @@ only screen and (min-resolution: 144dpi) {
     #slide-5 .table .table_row .table_cell:first-of-type {
         text-align: right;
         padding-right: 30px;
+        width: 60%;
     }
 
     #slide-5 .table .table_row .table_cell:last-of-type {
-        padding-left: 30px;
+        padding-left: 0px;
+        text-align: center;
+
+    }
+
+    #slide-5 .visible-xs #accordion .panel-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: inherit;
+        direction: rtl;
+        text-align: right;
+    }
+
+    #slide-5 .visible-xs #accordion .panel-body {
+        direction: rtl;
+        text-align: right;
     }
 
     #install-slide-1.visible-xs p {
@@ -5691,19 +5819,20 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #install-slide-2.visible-xs #inst-slide2-left {
-        width: 66.66666667%;
-        float: left;
+        width: 55%;
+        float: right;
         padding-left: 0px;
     }
 
     #install-slide-2.visible-xs #inst-slide2-right {
-        width: 33.33333333%;
+        width: auto;
         margin-left: 0;
+        margin-right: 12%;
     }
 
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 25%;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -5715,7 +5844,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 25%;
-        background-image: url('../images/project_plan_icon.png');
+        background-image: url('../../images/project_plan_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -5727,7 +5856,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 25%;
-        background-image: url('../images/server_icon.png');
+        background-image: url('../../images/server_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -5739,7 +5868,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 25%;
-        background-image: url('../images/installation_icon.png');
+        background-image: url('../../images/installation_icon.png');
         background-position: right 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -5752,7 +5881,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 25%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 60px 49px;
@@ -5764,7 +5893,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 25%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 64px 51px;
@@ -5776,7 +5905,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 25%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 70px 36px;
@@ -5788,7 +5917,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 25%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: right 10px;
             background-repeat: no-repeat;
             background-size: 65px 48px;
@@ -5808,7 +5937,7 @@ only screen and (min-resolution: 144dpi) {
     }
     #factoid_left {
         width: 40%;
-        background-image: url("../images/factoid_left.png");
+        background-image: url("../../images/factoid_left.png");
         background-position: -80% 100%;
         background-size: 80%;
         /* min-height: 170px !important; */
@@ -5819,7 +5948,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_left {
             width: 40%;
-            background-image: url("../images/factoid_left@2x.png");
+            background-image: url("../../images/factoid_left@2x.png");
             background-position: -80% 100%;
             background-size: 80%;
             /* min-height: 170px !important; */
@@ -5830,7 +5959,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_right {
         width: 40%;
-        background-image: url("../images/factoid_right.png");
+        background-image: url("../../images/factoid_right.png");
         background-position: 200% 0%;
         background-size: 85%;
         height: 175px;
@@ -5839,7 +5968,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_right {
             width: 40%;
-            background-image: url("../images/factoid_right@2x.png");
+            background-image: url("../../images/factoid_right@2x.png");
             background-position: 200% 0%;
             background-size: 85%;
             height: 175px;
@@ -5849,9 +5978,10 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_center p:first-of-type {
         line-height: 22px;
-        width: 100%;
+        width: 90%;
         margin: -20px auto 0;
     }
+    #factoid_center p { direction: rtl; }
 
 
     #install-slide-3 {
@@ -5953,6 +6083,7 @@ only screen and (min-resolution: 144dpi) {
         margin-top: 9px;
     }
 
+    #about-slide-1 h1 { width: 100%; }
     #about-slide-1.visible-xs p {
         width: 100%;
         line-height: 22px;
@@ -5980,6 +6111,7 @@ only screen and (min-resolution: 144dpi) {
     }
     #about-slide-2.visible-xs .container h3 {
         margin-bottom: 30px;
+        direction: rtl;
     }
     #about-slide-2.visible-xs #principles .table_cell {
         width: 30%;
@@ -6032,11 +6164,27 @@ only screen and (min-resolution: 144dpi) {
         right: 3%;
     }
 
+    footer { text-align: right; padding-bottom: 75px; }
+    .visible-xs #bottom_menu {
+        float: none;
+    }
+    .visible-xs #bottom_menu li {
+        display: inline-block;
+        padding-top: 30px;
+        margin-left: 18px;
+    }
+
     #first_frame_factoids div {
         display: inline-block;
         margin-right: 40px;
         vertical-align: top;
         margin-bottom: 0px;
+    }
+
+    #inst-slide2-right {
+        width: auto;
+        margin-right: 15%;
+        float: right;
     }
 }
 
@@ -6046,7 +6194,22 @@ only screen and (min-resolution: 144dpi) {
         min-height: 50vh;
     }
     #about-slide-2 .container .row .col-xs-6 p { margin-top: 0; }
+
+    footer { text-align: right; padding-bottom: 90px; }
+    .visible-xs #bottom_menu li {
+        display: inline-block;
+        padding-top: 30px;
+        margin-right: 0px;
+    }
 }
+
+#install-slide-2.visible-xs #inst-slide2-left.vertical {
+    display: none;
+    padding-right: 15px;
+}
+
+#about-slide-2.visible-xs .container { display: block; }
+#about-slide-2.visible-xs .container.vertical { display: none; }
 
 @media (max-width: 650px) {
     #install-slide-2.visible-xs #inst-slide2-left {
@@ -6060,7 +6223,7 @@ only screen and (min-resolution: 144dpi) {
 
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 16%;
-        background-image: url('../images/prep_5days_icon.png');
+        background-image: url('../../images/prep_5days_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 60px 49px;
@@ -6072,7 +6235,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 16%;
-        background-image: url('../images/project_plan_icon.png');
+        background-image: url('../../images/project_plan_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 64px 51px;
@@ -6084,7 +6247,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 16%;
-        background-image: url('../images/server_icon.png');
+        background-image: url('../../images/server_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 70px 36px;
@@ -6096,7 +6259,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 16%;
-        background-image: url('../images/installation_icon.png');
+        background-image: url('../../images/installation_icon.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 65px 48px;
@@ -6108,7 +6271,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 16%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 60px 49px;
@@ -6120,7 +6283,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 16%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 64px 51px;
@@ -6132,7 +6295,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 16%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 70px 36px;
@@ -6144,7 +6307,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 16%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 65px 48px;
@@ -6202,6 +6365,9 @@ only screen and (min-resolution: 144dpi) {
     #dev-slide-3 #pr_sect8 .col-xs-7 { width: 80%; margin-left: 10%; margin-bottom: 30px; }
     #dev-slide-3 #pr_sect8 .col-xs-5 { width: 80%; margin-left: 10%; }
 
+    #about-slide-2.visible-xs .container { display: none; }
+    #about-slide-2.visible-xs .container.vertical { display: block; }
+
     #about-slide-2.visible-xs .col-xs-6 {
         width: 100%;
     }
@@ -6209,7 +6375,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #upstairs {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/upstairs@2x.png");
+        background-image: url("../../images/upstairs@2x.png");
         background-position: center center;
         min-height: 80vh;
         margin-bottom: 10px;
@@ -6218,7 +6384,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #houses {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/houses@2x.jpg");
+        background-image: url("../../images/houses@2x.jpg");
         background-position: center center;
         min-height: 80vh;
         margin-bottom: 10px;
@@ -6227,7 +6393,7 @@ only screen and (min-resolution: 144dpi) {
     #about-slide-2 #man-on-top {
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("../images/man-on-top@2x.jpg");
+        background-image: url("../../images/man-on-top@2x.jpg");
         background-position: center center;
         min-height: 80vh;
         margin-bottom: 10px;
@@ -6238,36 +6404,43 @@ only screen and (min-resolution: 144dpi) {
     }
 
     #about-slide-2 h3#rationalism {
-        background-image: url("../images/rationalism_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/rationalism_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 15px;
         padding-left: 60px;
         background-size: 44px 50px;
         margin-bottom: 0;
+        padding-right: 60px;
+        direction: rtl;
+        text-align: right;
     }
 
     #about-slide-2 h3#velocity {
-        background-image: url("../images/velocity_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/velocity_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 10px;
-        padding-left: 104px;
+        padding-right: 104px;
         background-size: 88px 50px;
         margin-bottom: 0;
+        direction: rtl;
+        text-align: right;
     }
 
     #about-slide-2 h3#standarts {
-        background-image: url("../images/standarts_icon@2x.png");
-        background-position: left top;
+        background-image: url("../../images/standarts_icon@2x.png");
+        background-position: right top;
         background-repeat: no-repeat;
         padding-top: 15px;
-        padding-left: 60px;
+        padding-right: 60px;
         background-size: 42px 50px;
         margin-bottom: 0;
+        direction: rtl;
+        text-align: right;
     }
 
-    #about-slide-2 #citation { margin-top: 30px; }
+    #about-slide-2 #citation { margin-top: 30px; direction: rtl; text-align: right; }
     #about-slide-2 #citation .col-xs-6 {
         margin-bottom: 20px;
     }
@@ -6281,7 +6454,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_left {
         width: 40%;
-        background-image: url("../images/factoid_left.png");
+        background-image: url("../../images/factoid_left.png");
         background-position: -80% 100%;
         background-size: 80%;
         /* min-height: 170px !important; */
@@ -6292,7 +6465,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_left {
             width: 40%;
-            background-image: url("../images/factoid_left@2x.png");
+            background-image: url("../../images/factoid_left@2x.png");
             background-position: -80% 100%;
             background-size: 80%;
             /* min-height: 170px !important; */
@@ -6303,7 +6476,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_right {
         width: 40%;
-        background-image: url("../images/factoid_right.png");
+        background-image: url("../../images/factoid_right.png");
         background-position: 200% 0%;
         background-size: 85%;
         height: 145px;
@@ -6312,7 +6485,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_right {
             width: 40%;
-            background-image: url("../images/factoid_right@2x.png");
+            background-image: url("../../images/factoid_right@2x.png");
             background-position: 200% 0%;
             background-size: 85%;
             height: 145px;
@@ -6390,7 +6563,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_left {
         width: 40%;
-        background-image: url("../images/factoid_left.png");
+        background-image: url("../../images/factoid_left.png");
         background-position: -80% 100%;
         background-size: 80%;
         /* min-height: 170px !important; */
@@ -6401,7 +6574,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_left {
             width: 40%;
-            background-image: url("../images/factoid_left@2x.png");
+            background-image: url("../../images/factoid_left@2x.png");
             background-position: -80% 100%;
             background-size: 80%;
             /* min-height: 170px !important; */
@@ -6412,7 +6585,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_right {
         width: 40%;
-        background-image: url("../images/factoid_right.png");
+        background-image: url("../../images/factoid_right.png");
         background-position: 200% 0%;
         background-size: 85%;
         height: 125px;
@@ -6421,7 +6594,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_right {
             width: 40%;
-            background-image: url("../images/factoid_right@2x.png");
+            background-image: url("../../images/factoid_right@2x.png");
             background-position: 200% 0%;
             background-size: 85%;
             height: 125px;
@@ -6429,15 +6602,27 @@ only screen and (min-resolution: 144dpi) {
         }
     }
 
+    footer { padding-left: 15px; padding-right: 15px; }
+
     .visible-xs #bottom_menu li {
-        display: block;
+        display: inline-block;
+        padding-top: 30px;
+        margin-left: 12px;
     }
 }
 
 @media (max-width: 500px) {
+
+    #install-slide-2.visible-xs #inst-slide2-left, #install-slide-2.visible-xs #inst-slide2-right {
+        display: none;
+    }
+    #install-slide-2.visible-xs #inst-slide2-left.vertical {
+        display: block;
+    }
+
     #install-slide-2.visible-xs #prep_5days_cell {
         width: 100%;
-        background-image: url('../images/prep_5days_icon@2x.png');
+        background-image: url('../../images/prep_5days_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 121px 100px;
@@ -6449,7 +6634,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #project_plan_cell {
         width: 100%;
-        background-image: url('../images/project_plan_icon@2x.png');
+        background-image: url('../../images/project_plan_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 128px 103px;
@@ -6461,7 +6646,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #server_cell {
         width: 100%;
-        background-image: url('../images/server_icon@2x.png');
+        background-image: url('../../images/server_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 140px 73px;
@@ -6473,7 +6658,7 @@ only screen and (min-resolution: 144dpi) {
 
     #inst-slide2-left #install_cell {
         width: 100%;
-        background-image: url('../images/installation_icon@2x.png');
+        background-image: url('../../images/installation_icon@2x.png');
         background-position: center 10px;
         background-repeat: no-repeat;
         background-size: 130px 96px;
@@ -6485,7 +6670,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #install-slide-2.visible-xs #prep_5days_cell {
             width: 100%;
-            background-image: url('../images/prep_5days_icon@2x.png');
+            background-image: url('../../images/prep_5days_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 121px 100px;
@@ -6497,7 +6682,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #project_plan_cell {
             width: 100%;
-            background-image: url('../images/project_plan_icon@2x.png');
+            background-image: url('../../images/project_plan_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 128px 103px;
@@ -6509,7 +6694,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #server_cell {
             width: 100%;
-            background-image: url('../images/server_icon@2x.png');
+            background-image: url('../../images/server_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 140px 73px;
@@ -6521,7 +6706,7 @@ only screen and (min-resolution: 144dpi) {
 
         #inst-slide2-left #install_cell {
             width: 100%;
-            background-image: url('../images/installation_icon@2x.png');
+            background-image: url('../../images/installation_icon@2x.png');
             background-position: center 10px;
             background-repeat: no-repeat;
             background-size: 130px 96px;
@@ -6545,8 +6730,11 @@ only screen and (min-resolution: 144dpi) {
         font-size: 1.05em;
     }
 
+    footer { padding: 10px 15px 30px; }
     .visible-xs #bottom_menu li {
-        display: block;
+        display: inline-block;
+        margin-right: 15px;
+        margin-right: 0;
     }
 
     #advantages .visible-xs .table_cell img {
@@ -6570,7 +6758,7 @@ only screen and (min-resolution: 144dpi) {
         /* max-width: 40%; */
         height: auto;
         width: 90px;
-        /* float: left; */
+        float: none;
     }
 
     #tabs4 {
@@ -6657,6 +6845,7 @@ only screen and (min-resolution: 144dpi) {
         font-family: circe_b;
         padding-top: 29px;
         margin-bottom: 0;
+        width: auto;
     }
     #dev-slide-1 .icons div {
         /* float: left; */
@@ -6736,6 +6925,7 @@ only screen and (min-resolution: 144dpi) {
         font-family: circe_b;
         padding-top: 29px;
         margin-bottom: 0;
+        width: 100%;
     }
 
     #about-slide-3 {
@@ -6756,7 +6946,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_left {
         width: 40%;
-        background-image: url("../images/factoid_left.png");
+        background-image: url("../../images/factoid_left.png");
         background-position: -80% 100%;
         background-size: 80%;
         /* min-height: 170px !important; */
@@ -6767,7 +6957,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_left {
             width: 40%;
-            background-image: url("../images/factoid_left@2x.png");
+            background-image: url("../../images/factoid_left@2x.png");
             background-position: -80% 100%;
             background-size: 80%;
             /* min-height: 170px !important; */
@@ -6778,7 +6968,7 @@ only screen and (min-resolution: 144dpi) {
 
     #factoid_right {
         width: 40%;
-        background-image: url("../images/factoid_right.png");
+        background-image: url("../../images/factoid_right.png");
         background-position: 200% 0%;
         background-size: 85%;
         height: 110px;
@@ -6787,7 +6977,7 @@ only screen and (min-resolution: 144dpi) {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, only screen and (min-resolution: 144dpi) {
         #factoid_right {
             width: 40%;
-            background-image: url("../images/factoid_right@2x.png");
+            background-image: url("../../images/factoid_right@2x.png");
             background-position: 200% 0%;
             background-size: 85%;
             height: 110px;
@@ -6805,7 +6995,7 @@ only screen and (min-resolution: 144dpi) {
         padding-right: 15px;
     }
     #slide-4 .visible-sm .factoids tr td:last-of-type, #slide-4 .visible-xs .factoids tr td:last-of-type {
-        text-align: left;
+        text-align: center;
         padding-left: 15px;
     }
 
@@ -6819,7 +7009,7 @@ only screen and (min-resolution: 144dpi) {
     #interior_ipad { margin-bottom: 0; }
 
     #about-slide-3 #proj_list_icon {
-        background: url('../images/proj_list_icon.png') no-repeat;
+        background: url('../../images/proj_list_icon.png') no-repeat;
         width: 5px;
         height: 12px;
         margin: 0px 0 0 2px;
@@ -6829,6 +7019,24 @@ only screen and (min-resolution: 144dpi) {
     .panel-heading a { border-bottom: none; text-decoration: underline; }
 }
 
+.visible-xs #bottom_menu.vertical  {
+    display: none;
+}
+@media (max-width: 440px) {
+    .visible-xs #bottom_menu.vertical {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .visible-xs #bottom_menu.vertical li {
+        padding-top: 15px;
+        display: block;
+    }
+
+    .visible-xs #bottom_menu  {
+        display: none;
+    }
+}
 
 .title-light { border-bottom: dashed 1px #f4a00a; display: inline-block; }
 .title-climate { border-bottom: dashed 1px #425d94; display: inline-block; }
@@ -6845,13 +7053,3 @@ only screen and (min-resolution: 144dpi) {
     width: 320px !important;
 }*/
 /* /LiveChat */
-
-.panel-title a { display: inline; line-height: 24px; }
-.panel-title a .capital { border-bottom: none; }
-.panel-title a:hover .capital {
-    transition: color 0.1s ease;
-    -webkit-transition: color 0.1s ease;
-    -moz-transition: color 0.1s ease;
-    -o-transition: color 0.1s ease;
-    color: #be0005;
-}
