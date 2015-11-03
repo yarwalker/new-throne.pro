@@ -4694,6 +4694,14 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 10px;
 }
 
+#faq-slide-1 {
+    position: relative;
+    padding: 50px 0;
+}
+#faq-slide-1 h1 {
+    text-align: center;
+}
+
 @media ( min-width: 1930px ) {
     #factoid_center {
         text-align: center;
@@ -5198,7 +5206,7 @@ only screen and (min-resolution: 144dpi) {
     }
     .visible-xs #bottom_menu {
         margin-left: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
     }
 
@@ -5371,6 +5379,7 @@ only screen and (min-resolution: 144dpi) {
         right: 3%;
     }
 
+
     #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs,
     #about-slide-1.visible-lg, #about-slide-1.visible-md { margin-top: 0; }
 
@@ -5524,6 +5533,7 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media (max-width: 767px) {
+
 
     #faq-slide-1 { padding-top: 0; }
 
@@ -6835,3 +6845,13 @@ only screen and (min-resolution: 144dpi) {
     width: 320px !important;
 }*/
 /* /LiveChat */
+
+.panel-title a { display: inline; line-height: 24px; }
+.panel-title a .capital { border-bottom: none; }
+.panel-title a:hover .capital {
+    transition: color 0.1s ease;
+    -webkit-transition: color 0.1s ease;
+    -moz-transition: color 0.1s ease;
+    -o-transition: color 0.1s ease;
+    color: #be0005;
+}

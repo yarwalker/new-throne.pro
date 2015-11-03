@@ -209,7 +209,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
                         <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
@@ -294,7 +294,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
                         <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
@@ -333,7 +333,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
                         <p>Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
@@ -372,7 +372,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
                         <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>
@@ -411,7 +411,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Free 3D demo of your house!</h2>
+                        <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
                         <p> Even before signing the contract we provide to a client our 3D demo app, designed according to the floor plans of his house.
                             With this app the customer can get a complete idea how his Smart home will work. <strong>It's free</strong>.
                         </p>

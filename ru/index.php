@@ -213,7 +213,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
                         <p>
                             Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.
@@ -302,7 +302,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
                         <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
@@ -340,7 +340,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
                         <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
@@ -378,7 +378,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
                         <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>
@@ -416,7 +416,7 @@ $detect = new Mobile_Detect();
   	    	        <img src="../images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
-                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома!</h2>
+                        <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
                         <p>Еще до&nbsp;заключения договора мы предлагаем клиенту демо-приложение, сделанное по&nbsp;планам его дома. По&nbsp;этому приложению заказчик системы может получить полное представление,
                             как будет работать его "умный&nbsp;дом". <strong>Это бесплатно</strong>.</p>
                     </div>

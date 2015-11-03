@@ -28,7 +28,7 @@ $detect = new Mobile_Detect();
     <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="../css/tabulous.css" rel="stylesheet" type="text/css" />
     <!--link href="../css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.../css/3.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate/css/3.0.0/animate.min.css">
 
     <link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
 
