@@ -2699,7 +2699,11 @@ body.modal-open {
 
 #error {
     font-size: 0.77em;
+   /* text-align: right;
+    direction: rtl;*/
 }
+
+.alert-danger { direction: rtl; }
 
 .result {
     padding: 30px 0;

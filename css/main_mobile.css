@@ -4037,6 +4037,11 @@ only screen and (min-resolution: 144dpi) {
 
 /* /about */
 
+/* FAQ */
+#faq-slide-1 { padding: 50px 0; }
+#faq-slide-1 h1 { text-align: center; }
+/* /FAQ */
+
 /* developers */
 #dev-slide-5 { padding: 0 130px 0 105px; margin-top: 0; }
 #dev-slide-5 #become_partner {
@@ -5366,11 +5371,17 @@ only screen and (min-resolution: 144dpi) {
         right: 3%;
     }
 
-    #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs { margin-top: 0; }
+    #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs,
+    #about-slide-1.visible-lg, #about-slide-1.visible-md { margin-top: 0; }
+
+    #faq-slide-1 { padding-top: 0; }
+
 }
 
 
 @media ( min-width: 768px ) and ( max-width: 991px ) {
+    #faq-slide-1 { padding-top: 0; }
+
     #callback_title {
         text-align: center;
         padding: 10px 10px 7px;
@@ -5514,6 +5525,7 @@ only screen and (min-resolution: 144dpi) {
 
 @media (max-width: 767px) {
 
+    #faq-slide-1 { padding-top: 0; }
 
     #callback_title {
         text-align: center;
@@ -6405,6 +6417,10 @@ only screen and (min-resolution: 144dpi) {
             height: 125px;
             background-repeat: no-repeat;
         }
+    }
+
+    .visible-xs #bottom_menu li {
+        display: block;
     }
 }
 

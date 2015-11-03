@@ -811,7 +811,7 @@
 
     $('.offer-send-btn').on('click', function(ev){
         var $lang = $('html').attr('lang'),
-            $url = 'send_email.php',
+            $url = '../send_email.php',
             $form = $('.callback_form1'),
             $fl = true; // флаг = true если заполнены все обязательные поля форма
 
@@ -828,31 +828,31 @@
         if( $fl )
         {
             // все обязательные поля формы заполнены, отправляем письмо
-            if( $lang != 'ru' ) {
+            /*if( $lang != 'ru' ) {
                 $url = '../' + $url;
-            }
+            }*/
 
             $.post($url, $form.serialize(), function(data){
 
-                if( $lang != 'en' ) {
+                /*if( $lang != 'en' ) {
                     var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
                         $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
                     }
-                } else if( $lang == 'arabic' ) {
-                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                } else if( $lang == 'arabic' ) {*/
+                var $str = '<div class="result">' + (data.msg) + '<br>حدث خطأ أثناء إرسال البريد الإلكتروني.</div>';
 
                     if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
+                        $str = '<div class="result"> شكرا لك! ونحن ندعو لكم مرة أخرى في وقت محدد.</div>';
                     }
-                } else {
+               /* } else {
                     var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
 
                     if( data.msg == 1 ) {
                         $str = '<div class="result">&mdash; Thanks!<br> We\'ll call back in the specified time.</div>';
                     }
-                }
+                }*/
 
                 $('#mySuccessModal .modal-body').html($str);
                 $('#mySuccessModal').modal();
@@ -863,7 +863,7 @@
         }
         else
         {
-            $('#mySuccessModal .modal-body').html(( $lang == 'ru' ? '<p>Не все обязательные поля формы заполнены!</p>' : '<p>Some required fields are empty!</p>'));
+            $('#mySuccessModal .modal-body').html( '<p style="direction: rtl;">البيانات المطلوبة فارغة</p>' );
             $('#mySuccessModal').modal();
         }
 
@@ -886,12 +886,12 @@
         //console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
             $str = '',
-            $url = 'send_email.php';
+            $url = '../send_email.php';
 
         //console.log(location.href.search('/en'));
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
-            $str = 'The field "Cellphone Number" can\'t be empty';
+            $str = 'مجال"رقم الهاتف"لايمكن ان تكون فارغة';
 
             $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
@@ -909,12 +909,12 @@
                 //console.log($('.callback_form').serialize());
 
                 //if( location.href.search('/en') ) {
-                    $url = '../' + $url;
+                   // $url = '../' + $url;
                 //}
 
                 $.post( $url, $($modalID + ' .callback_form').serialize(), function (data) {
 
-                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                    var $str = '<div class="result">' + (data.msg) + '<br>حدث خطأ أثناء إرسال البريد الإلكتروني.</div>';
 
                     if( data.msg == 1 ) {
                         $str = '<div class="result">شكرا ! سنتصل بكم قريبا &mdash;</div>';

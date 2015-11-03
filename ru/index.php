@@ -145,7 +145,7 @@ $detect = new Mobile_Detect();
 
         <a id="logo" href="/ru" >THRONE Project</a>
 
-        <div class="callback visible-lg visible-md">
+        <div class="callback visible-lg">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
@@ -156,6 +156,7 @@ $detect = new Mobile_Detect();
             <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
             <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="О компании">О компании</a></li>
+            <li><a href="faq.html" title="FAQ">FAQ</a></li>
         </ul>
 
     </div>
@@ -177,6 +178,7 @@ $detect = new Mobile_Detect();
                         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
                         <li><a href="about.html" title="О компании">О компании</a></li>
+                        <li><a href="faq.html" title="FAQ">FAQ</a></li>
                         <li>
                             <div id="langs" class="form-group">
                                 <select class="form-control">
@@ -1581,6 +1583,7 @@ $detect = new Mobile_Detect();
         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
+        <li><a href="faq.html" title="FAQ">FAQ</a></li>
     </ul>
 </footer>
 
@@ -1590,6 +1593,7 @@ $detect = new Mobile_Detect();
         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
+        <li><a href="faq.html" title="FAQ">FAQ</a></li>
     </ul>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>
