@@ -533,6 +533,9 @@ only screen and (min-resolution: 144dpi) {
 
 #top_menu li.active, #top_menu_ext li.active, #bottom_menu li.active { color: #cc0000; }
 
+#top_menu_ext li span { padding: 5px; outline: solid 1px #cacaca; }
+#top_menu_ext li span a { border-bottom: none; }
+
 #brand { margin-left: 20px; }
 
 .callback {
@@ -4523,6 +4526,8 @@ only screen and (min-resolution: 144dpi) {
         padding: 10px;
         border: solid 1px #333;
     }
+
+    .callback { margin-right: 15px; }
 }
 
 @media (max-width: 1180px) {
@@ -4817,7 +4822,7 @@ only screen and (min-resolution: 144dpi) {
     display:none;
 }
 
-.panel-title a { display: inline; line-height: 24px; }
+.panel-title a { display: inline; line-height: 24px; font-size: 18px; }
 .panel-title a .capital { border-bottom: none; }
 .panel-title a:hover .capital {
     transition: color 0.1s ease;

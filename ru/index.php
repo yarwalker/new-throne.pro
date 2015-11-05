@@ -129,12 +129,7 @@ $detect = new Mobile_Detect();
 <img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
-    <div id="head" class=" hidden-xs">
-        <!--div id="langs" >
-            <span class="active">Ru</span>
-            <span><a href="/en">En</a></span>
-        </div-->
-
+    <div id="head" class="visible-lg visible-md">
         <div id="langs" class="form-group">
             <select class="form-control">
                 <option value="ru" selected>RU</option>
@@ -156,12 +151,12 @@ $detect = new Mobile_Detect();
             <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
             <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
             <li><a href="about.html" title="О компании">О компании</a></li>
-            <li><a href="faq.html" title="FAQ">FAQ</a></li>
+            <li><span><a href="faq.html" title="Частые вопросы">Частые вопросы</a></span></li>
         </ul>
 
     </div>
 
-    <div id="head" class=" visible-xs" >
+    <div id="head" class="visible-sm visible-xs" >
         <nav class="navbar" id="top_menu_ext" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -178,7 +173,7 @@ $detect = new Mobile_Detect();
                         <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>
                         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
                         <li><a href="about.html" title="О компании">О компании</a></li>
-                        <li><a href="faq.html" title="FAQ">FAQ</a></li>
+                        <li><span><a href="faq.html" title="Частые вопросы">Частые вопросы</a></span></li>
                         <li>
                             <div id="langs" class="form-group">
                                 <select class="form-control">
@@ -1583,7 +1578,7 @@ $detect = new Mobile_Detect();
         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
-        <li><a href="faq.html" title="FAQ">FAQ</a></li>
+        <li><a href="faq.html" title="Частые вопросы">Частые вопросы</a></li>
     </ul>
 </footer>
 
@@ -1593,7 +1588,7 @@ $detect = new Mobile_Detect();
         <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
         <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
         <li><a href="about.html" title="О компании">О компании</a></li>
-        <li><a href="faq.html" title="FAQ">FAQ</a></li>
+        <li><a href="faq.html" title="Частые вопросы">Частые вопросы</a></li>
     </ul>
     <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
 </footer>

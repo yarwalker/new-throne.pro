@@ -4393,7 +4393,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-header {
         float: left
     }
@@ -4413,7 +4413,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     overflow-y: auto
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4545,7 +4545,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     margin-top: 4px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-toggle {
         display: none
     }
@@ -4586,7 +4586,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-nav {
         float: left;
         margin: 0

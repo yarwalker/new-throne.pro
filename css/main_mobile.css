@@ -515,6 +515,9 @@ only screen and (min-resolution: 144dpi) {
 
 #top_menu li.active, #top_menu_ext li.active, #bottom_menu li.active { color: #cc0000; }
 
+#top_menu_ext li span { padding: 5px; outline: solid 1px #cacaca; }
+#top_menu_ext li span a { border-bottom: none; }
+
 #brand { margin-left: 20px; }
 
 .callback {
@@ -4314,7 +4317,7 @@ only screen and (min-resolution: 144dpi) {
 /* /slide-7 */
 
 footer {
-    padding: 10px 50px 30px;
+    padding: 10px 50px 50px;
     clear: both;
     font-size: 14px;
     -webkit-box-sizing: border-box;
@@ -4348,6 +4351,7 @@ footer.minor {
     }
 }*/
 
+/*
 @media (max-width: 720px) {
     .visible-xs #footer_socials {
         float: left;
@@ -4355,7 +4359,7 @@ footer.minor {
         margin-bottom: 20px;
         width: 100%;
     }
-}
+}*/
 
 #design a, #footer_socials a { line-height: 15px; }
 
@@ -4736,6 +4740,10 @@ only screen and (min-resolution: 144dpi) {
         margin-left: 15%;
     }
 
+}
+
+@media (max-width: 1279px) {
+    .callback { margin-right: 15px; }
 }
 
 #dev-slide-3 #pr_sect6 img { width: 100%; }
@@ -5389,6 +5397,11 @@ only screen and (min-resolution: 144dpi) {
 
 
 @media ( min-width: 768px ) and ( max-width: 991px ) {
+
+    /*.collapse {
+        display: none !important;
+    }*/
+
     #faq-slide-1 { padding-top: 0; }
 
     #callback_title {
@@ -5529,6 +5542,14 @@ only screen and (min-resolution: 144dpi) {
     #install-slide-3 div.table {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media ( max-width: 780px ) {
+    .visible-sm #footer_socials {
+        float: right;
+        margin-top: 0;
+        margin-bottom: auto;
     }
 }
 
@@ -6038,6 +6059,15 @@ only screen and (min-resolution: 144dpi) {
         vertical-align: top;
         margin-bottom: 0px;
     }
+
+    footer { padding: 10px 30px 50px; }
+
+    .visible-xs #footer_socials {
+        float: left;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -6319,6 +6349,8 @@ only screen and (min-resolution: 144dpi) {
             background-repeat: no-repeat;
         }
     }
+
+    footer { padding: 10px 20px 30px; }
 }
 
 @media (max-width: 650px) and (orientation: portrait) {
@@ -6846,7 +6878,7 @@ only screen and (min-resolution: 144dpi) {
 }*/
 /* /LiveChat */
 
-.panel-title a { display: inline; line-height: 24px; }
+.panel-title a { display: inline; line-height: 24px; font-size: 18px; }
 .panel-title a .capital { border-bottom: none; }
 .panel-title a:hover .capital {
     transition: color 0.1s ease;
