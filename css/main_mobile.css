@@ -450,7 +450,7 @@ only screen and (min-resolution: 144dpi) {
 
 #langs {
     font-size: 14px;
-    padding: 24px 75px 20px 20px;
+    padding: 24px 60px 20px 20px;
     float: left;
 }
 #langs span { height: 28px; width: 28px; display: block; text-align: center; margin-bottom: 4px; }
@@ -515,7 +515,7 @@ only screen and (min-resolution: 144dpi) {
 
 #top_menu li.active, #top_menu_ext li.active, #bottom_menu li.active { color: #cc0000; }
 
-#top_menu_ext li span { padding: 5px; outline: solid 1px #cacaca; }
+#top_menu_ext li span { padding: 0 10px; outline: solid 1px #cacaca; }
 #top_menu_ext li span a { border-bottom: none; }
 
 #brand { margin-left: 20px; }
