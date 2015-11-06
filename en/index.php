@@ -17,6 +17,10 @@ $detect = new Mobile_Detect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
+    <link rel="alternate" hreflang="en" href="http://throne.pro/en">
+    <link rel="alternate" hreflang="ru" href="http://throne.pro/ru">
+    <link rel="alternate" hreflang="ar" href="http://throne.pro/arabic">
+
     <meta name="description" content="THRONE 3D smart home" />
     <meta name="keywords" content="THRONE 3D home automation, THRONE 3D smart home system, THRONE 3D building management system, THRONE 3D smart home technology, THRONE 3D wireless home automation, THRONE 3D smart home security, THRONE 3D home automation software, THRONE 3D building management system, THRONE 3D building automation system, THRONE 3D alarm systems control, THRONE 3D lighting control, THRONE 3D home automation lighting, THRONE 3D security system control, THRONE 3D home security, THRONE 3D homeautomation, THRONE 3D smart home automation, THRONE 3D intelligent home, THRONE 3D curtain control, THRONE 3D shading control, THRONE 3D security alarms, THRONE 3D fire alarms" />
     <title>THRONE Smart Home</title>
