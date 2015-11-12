@@ -17,6 +17,10 @@ $detect = new Mobile_Detect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
+    <link rel="alternate" hreflang="en" href="http://throne.pro/en">
+    <link rel="alternate" hreflang="ru" href="http://throne.pro/ru">
+    <link rel="alternate" hreflang="ar" href="http://throne.pro/arabic">
+
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
     <title>Умный дом ТРОН</title>

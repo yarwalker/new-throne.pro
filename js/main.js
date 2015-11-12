@@ -1410,6 +1410,4 @@
 
 } )( jQuery );
 
-/**
- * Created by shabashov on 02.07.15.
- */
+

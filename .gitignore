@@ -6,3 +6,6 @@ images_org/
 mail_cfg.php
 SxGeo.dat
 SxGeo.php
+catalog/assets/images/
+catalog/assets/uploads/
+catalog/application/config/

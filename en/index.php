@@ -17,6 +17,10 @@ $detect = new Mobile_Detect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="HandheldFriendly" content="True"/>
 
+    <link rel="alternate" hreflang="en" href="http://throne.pro/en">
+    <link rel="alternate" hreflang="ru" href="http://throne.pro/ru">
+    <link rel="alternate" hreflang="ar" href="http://throne.pro/arabic">
+
     <meta name="description" content="THRONE 3D smart home" />
     <meta name="keywords" content="THRONE 3D home automation, THRONE 3D smart home system, THRONE 3D building management system, THRONE 3D smart home technology, THRONE 3D wireless home automation, THRONE 3D smart home security, THRONE 3D home automation software, THRONE 3D building management system, THRONE 3D building automation system, THRONE 3D alarm systems control, THRONE 3D lighting control, THRONE 3D home automation lighting, THRONE 3D security system control, THRONE 3D home security, THRONE 3D homeautomation, THRONE 3D smart home automation, THRONE 3D intelligent home, THRONE 3D curtain control, THRONE 3D shading control, THRONE 3D security alarms, THRONE 3D fire alarms" />
     <title>THRONE Smart Home</title>
@@ -109,20 +113,7 @@ $detect = new Mobile_Detect();
     </script>
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029738348169&amp;cd[value]=0.00&amp;cd[currency]=RUB&amp;noscript=1" /></noscript>
 
-    <!--script>
-        ChatraID = 'uqSiLhJ2pHG4Yf9H2';
-        (function(d, w, c) {
-            var n = d.getElementsByTagName('script')[0],
-                s = d.createElement('script');
-            w[c] = w[c] || function() {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            s.async = true;
-            s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
-            + '//chat.chatra.io/chatra.js';
-            n.parentNode.insertBefore(s, n);
-        })(document, window, 'Chatra');
-    </script-->
+
 </head>
 
 <body class="loading">
