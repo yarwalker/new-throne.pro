@@ -13,7 +13,7 @@ $descr = 'descr_' . $lang;
             <h1><?php echo $equipment[0]->$name; ?></h1>
             <?php echo $equipment[0]->$descr; ?>
             <p>
-                <strong class="label"><?php echo lang('manufacturer_label'); ?></strong><a href="<?php echo $equipment[0]->manufacturer_url; ?>"><?php echo $equipment[0]->manufacturer; ?></a>
+                <strong class="label"><?php echo lang('manufacturer_label'); ?></strong><a href="<?php echo $equipment[0]->manufacturer_url; ?>" target="_blank"><?php echo $equipment[0]->manufacturer; ?></a>
             </p>
         </div>
     </div>
