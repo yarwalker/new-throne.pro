@@ -177,7 +177,7 @@
                         '       <div class="form-group">' +
                         '           <label class="col-md-4 control-label" for="textinput">Производитель</label>' +
                         '           <div class="col-md-5">' +
-                        '               <input id="manufacturer" name="manufacturer" type="text" placeholder="Производитель" class="form-control input-md">' +
+                        '               <input id="manufacturer" name="manufacturer" type="text" placeholder="Производитель" class="form-control input-md" value="' + result.item.equipment[0].manufacturer + '">' +
                         '           </div>' +
                         '       </div>' +
                         '       <div class="form-group">' +
