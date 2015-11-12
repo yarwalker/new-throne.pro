@@ -1,0 +1,40 @@
+php_flag display_errors on
+# php_value error_reporting 2047
+php_value max_execution_time 60
+
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+    CharsetSourceEnc utf-8
+    CharsetDefault utf-8
+</IfModule>
+
+#Включаем mod_deflate для gzip  сжатия файлов на серверах apache2
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+<filesmatch "\.(ttf|otf|eot|svg)$" >
+    SetOutputFilter DEFLATE
+</filesmatch>
+</ifmodule>
+
+# включаем кэширование в браузере
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteBase /catalog/
+
+# God, please no more index.php in url's!
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|gif|htm|json)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

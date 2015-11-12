@@ -1,0 +1,39 @@
+html,body { margin: 0; padding: 0; font-size: 16px; }
+
+#item_wrapper { margin-top: 50px; }
+#item_wrapper h1 { text-align: left; margin-top: 0;}
+#item_wrapper div.arabic { text-align: right; direction: rtl; }
+#item_wrapper div.arabic h1 { text-align: right;}
+#item_wrapper .label { margin-right: 10px; color: #000; font-size: 1.0em; padding: 0; }
+#item_wrapper div.arabic .label { margin-left: 10px; margin-right: 0; }
+.tab-pane { padding-top: 30px; }
+.glyphicon { cursor: pointer; margin-right: 15px; }
+#add_image { margin-top: 20px; display: inline-block;}
+#new_record_form input[type="file"], #record_form input[type="file"] { margin-bottom: 10px; display: inline; }
+#langs { visibility: visible; }
+.col-md-1 .glyphicon {
+    cursor: pointer;
+    margin-right: 0;
+}
+.modal-dialog { margin-top: 50px; }
+#login-wrap{
+    display: block;
+    margin: 20% auto;
+    width: 50%;
+}
+#login-form {
+
+    padding: 20px;
+
+    height: auto;
+    display: block;
+    border: solid 1px #bebebe;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+#padlock .glyphicon { cursor: none; margin-right: 0px; }
+
+footer { margin-top: 50px; }
