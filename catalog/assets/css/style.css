@@ -9,7 +9,7 @@ html,body { margin: 0; padding: 0; font-size: 16px; }
 .tab-pane { padding-top: 30px; }
 .glyphicon { cursor: pointer; margin-right: 15px; }
 #add_image { margin-top: 20px; display: inline-block;}
-#new_record_form input[type="file"], #record_form input[type="file"] { margin-bottom: 10px; display: inline; }
+#new_record_form input[type="file"], #record_form input[type="file"] { margin-bottom: 10px; display: inline; width: 80%; }
 #langs { visibility: visible; }
 .col-md-1 .glyphicon {
     cursor: pointer;
