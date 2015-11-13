@@ -270,8 +270,11 @@
 
         // удаляем изображение из базы
         $.post('delete_image', {'id' : $(this).data('eq-id')}, function(result){
-            $('#myAdmModal .modal-body').html(result.message);
-            $('#myAdmModal').modal();
+            if( result.code == 12 )
+            {
+                $('#myAdmModal .modal-body').html(result.message);
+                $('#myAdmModal').modal();
+            }
         }, 'json')
         .error(function(response) {
             alert('Error: ' + response.responseText);
