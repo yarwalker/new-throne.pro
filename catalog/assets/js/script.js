@@ -96,6 +96,8 @@
                 contentType : false,
                 processData : false,
                 success : function(data) {
+                    $('#myEditRecordModal').modal('hide');
+
                     $('#myAdmModal .modal-body').html(data.message);
                     $('#myAdmModal').modal();
 
@@ -144,102 +146,83 @@
         e.preventDefault();
 
         $.post('get_item',{'id' : $id}, function(result){
+            var $str = '';
             if( result.code == 0)
             {
-                $form = '<form class="form-horizontal" id="record_form" method="post" accept-charset="utf-8" enctype="multipart/form-data">' +
-                        '   <fieldset>' +
-                        '       <input type="hidden" name="id" id="id" value="' + result.item.equipment[0].id + '" />' +
-                        '       <legend>Редактирование записи</legend>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Наименование (рус) <sup style="color: red">*</sup></label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="name_ru" name="name_ru" type="text" placeholder="Наименование (рус)"  class="form-control input-md" required="" value="' + result.item.equipment[0].name_ru + '">' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Наименование (англ) <sup style="color: red">*</sup></label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="name_en" name="name_en" type="text" placeholder="Наименование (англ)" class="form-control input-md" required="" value="' + result.item.equipment[0].name_en + '">' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Наименование (араб) <sup style="color: red">*</sup></label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="name_arabic" name="name_arabic" type="text" placeholder="Наименование (араб)" class="form-control input-md" required="" value="' + result.item.equipment[0].name_arabic + '">' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Гарантия</label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="warranty" name="warranty" type="text" placeholder="Гарантия" class="form-control input-md" value="' + result.item.equipment[0].warranty + '">' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Производитель</label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="manufacturer" name="manufacturer" type="text" placeholder="Производитель" class="form-control input-md" value="' + result.item.equipment[0].manufacturer + '">' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="textinput">Производитель (URL сайта)</label>' +
-                        '           <div class="col-md-5">' +
-                        '               <input id="manufacturer_url" name="manufacturer_url" type="text" placeholder="Производитель (URL сайта)" class="form-control input-md" value="' + result.item.equipment[0].manufacturer_url + '" >' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="descr_ru">Описание (рус)</label>' +
-                        '           <div class="col-md-6">' +
-                        '               <textarea class="form-control" rows="5" id="descr_ru" name="descr_ru" >' + result.item.equipment[0].descr_ru + '</textarea>' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="descr_en">Описание (англ)</label>' +
-                        '           <div class="col-md-6">' +
-                        '               <textarea class="form-control" rows="5"  id="descr_en" name="descr_en">' + result.item.equipment[0].descr_en + '</textarea>' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="descr_arabic">Описание (араб)</label>' +
-                        '           <div class="col-md-6">' +
-                        '               <textarea class="form-control" rows="5"  id="descr_arabic" name="descr_arabic">' + result.item.equipment[0].descr_arabic + '</textarea>' +
-                        '           </div>' +
-                        '       </div>' +
-                        '       <div class="form-group">' +
-                        '           <label class="col-md-4 control-label" for="filebutton">Изображение</label>' +
-                        '           <div class="col-md-7 img_wrapper">';
+                $('#myEditRecordModal #id').val(result.item.equipment[0].id);
+                $('#myEditRecordModal #name_ru').val(result.item.equipment[0].name_ru);
+                $('#myEditRecordModal #name_en').val(result.item.equipment[0].name_en);
+                $('#myEditRecordModal #name_arabic').val(result.item.equipment[0].name_arabic);
+                $('#myEditRecordModal #warranty').val(result.item.equipment[0].warranty);
+                $('#myEditRecordModal #manufacturer').val(result.item.equipment[0].manufacturer);
+                $('#myEditRecordModal #manufacturer_url').val(result.item.equipment[0].manufacturer_url);
+                $('#myEditRecordModal #descr_ru').val(result.item.equipment[0].descr_ru);
+                $('#myEditRecordModal #descr_en').val(result.item.equipment[0].descr_en);
+                $('#myEditRecordModal #descr_arabic').val(result.item.equipment[0].descr_arabic);
+
                 if( result.item.images.length )
                 {
-                    $form += '<div class="col-md-6">' +
-                             '<img src="' + result.item.images[0].image_url + '" data-eq-id="' + result.item.images[0].eq_id + '" class="img-responsive" />' +
-                             '</div><div class="col-md-1"><span class="glyphicon glyphicon-trash" data-eq-id="' + result.item.images[0].eq_id + '"  style="float: right" aria-hidden="true"></span></div>   ';
+                    $str = '<div class="row">' +
+                    '  <div class="col-sm-8">' +
+                    '      <img src="' + result.item.images[0].image_url + '" data-eq-id="' + result.item.images[0].eq_id + '" class="img-responsive" />' +
+                    '  </div>' +
+                    '  <div class="col-sm-2">' +
+                    '      <span class="glyphicon glyphicon-trash" data-eq-id="' + result.item.images[0].eq_id + '"  style="float: right" aria-hidden="true"></span>' +
+                    '  </div>   ' +
+                    '  </div>';
                 }
                 else
                 {
-                    $form += '<input id="image" name="image" accept="image/jpeg,image/png,image/gif" class="input-file" type="file" multiple>';
+                    $str = '<input id="image" name="image" accept="image/jpeg,image/png,image/gif" class="input-file" type="file" multiple>';
                 }
-                $form += '           </div>' +
-                         '           <!--div class="col-md-offset-4 col-md-8">' +
-                         '               <a href="#" class="add_image">Добавить изображение</a>' +
-                         '           </div-->' +
-                         '       </div>'  +
-                         '       <div class="form-group">' +
-                         '           <label class="col-md-4 control-label" for="submit_rec"></label>' +
-                         '           <div class="col-md-4">' +
-                         '               <button id="submit_rec" name="submit_rec" class="btn btn-primary">Сохранить</button>' +
-                         '           </div>' +
-                         '       </div>' +
-                         '   </fieldset>' +
-                         '</form>' ;
-                $('#myAdmModalLabel').text(result.item.equipment[0].name_ru);
-                $('#myAdmModal .modal-body').html($form);
+
+                $('#myEditRecordModal .img_wrapper').html($str);
+
+
+                $('#myRecordEditModalLabel').text(result.item.equipment[0].name_ru);
+                $('#myEditRecordModal').modal();
+
+                $('#myEditRecordModal textarea.tinymce').tinymce({
+                    script_url: 'http://tinymce.moxiecode.com/js/tinymce/jscripts/tiny_mce/tiny_mce.js',
+                    theme: 'modern'
+                });
             }
             else
             {
                 $('#myAdmModal .modal-body').html(result.message);
+                $('#myAdmModal').modal();
             }
 
             //$('#myAdmModal .modal-body').html();
-            $('#myAdmModal').modal();
+
+
+            // инициализируем tinymce
+          /*  tinyMCE.baseURL = "tinymce/";
+            $(".modal-body textarea.tinymce").tinymce({
+                //selector: ".modal-body textarea.tinymce",
+                //script_url : 'tinymce/tinymce.min.js',
+                theme: "modern",
+                schema: "html5",
+                invalid_elements: 'script',
+                inline_styles: true,
+                convert_urls : false,
+                relative_urls : false,
+                remove_script_host : false,
+                cleanup: true,
+                extended_valid_elements:"*[*]",
+                plugins: [
+                    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                    "searchreplace wordcount visualblocks visualchars code fullscreen",
+                    "insertdatetime media nonbreaking save table contextmenu directionality",
+                    "emoticons template paste textcolor moxiemanager"
+                ],
+                toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | justifyleft justifycenter justifyright justifyfull | bullist numlist outdent indent | link image",
+                toolbar2: "print preview media | forecolor backcolor emoticons",
+                image_advtab: true,
+                templates: []
+
+            }); */
+
         }, 'json')
         .error(function(response) {
                 alert('Error: ' + response.responseText);
@@ -300,6 +283,20 @@
         $(this).find('#myAdmModalLabel').text('Сообщение');
         $(this).find('.modal-body').text('');
         $('[data-toggle="tooltip"]').tooltip();
+    });
+
+
+    $('#myEditRecordModal').on('hidden.bs.modal', function (e) {
+        $(this).find('#myRecordEditModalLabel').text('');
+        $('#record_form :input[type=text], #record_form textarea, #record_form :input[type=file]').val('');
+    });
+
+    $('#myEditRecordModal').on('shown.bs.modal', function (e) {
+        $('textarea.tinymce').tinymce({
+           // script_url: 'http://tinymce.moxiecode.com/js/tinymce/jscripts/tiny_mce/tiny_mce.js',
+            theme: 'modern'
+        });
+
     });
 
     // обработка формы авторизации
