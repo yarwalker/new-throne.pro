@@ -27,20 +27,28 @@ class Equipment_model extends CI_Model {
         date_default_timezone_set('Europe/Moscow');
         $date = new DateTime(date('Y-m-d H:i:s', time()), new DateTimeZone('Europe/Moscow'));
 
-        if( is_null($id) ):
-            $data = array(
-                'name_ru' => $this->input->post('name_ru'),
-                'name_en' => $this->input->post('name_en'),
-                'name_arabic' => $this->input->post('name_arabic'),
-                'warranty' => $this->input->post('warranty'),
-                'manufacturer' => $this->input->post('manufacturer'),
-                'manufacturer_url' => $this->input->post('manufacturer_url'),
-                'descr_ru' => $this->input->post('descr_ru'),
-                'descr_en' => $this->input->post('descr_en'),
-                'descr_arabic' => $this->input->post('descr_arabic'),
-                'date' => $date->format('Y-m-d H:i:s')
-            );
+        $patterns = array(
+            0 => '/<script.*\/script>/is',
+            1 => '/<\?.*\?>/is',
+            2 => '/<!--\?.*\?-->/is'
+        );
 
+        $replacements = array( 0 => '' );
+
+        $data = array(
+            'name_ru' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_ru') ), ENT_QUOTES, 'UTF-8'),
+            'name_en' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_en') ), ENT_QUOTES, 'UTF-8'),
+            'name_arabic' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_arabic') ), ENT_QUOTES, 'UTF-8'),
+            'warranty' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('warranty') ), ENT_QUOTES, 'UTF-8'),
+            'manufacturer' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('manufacturer') ), ENT_QUOTES, 'UTF-8'),
+            'manufacturer_url' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('manufacturer_url') ), ENT_QUOTES, 'UTF-8'),
+            'descr_ru' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('descr_ru') ), ENT_QUOTES, 'UTF-8'),
+            'descr_en' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('descr_en') ), ENT_QUOTES, 'UTF-8'),
+            'descr_arabic' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('descr_arabic') ), ENT_QUOTES, 'UTF-8'),
+            'date' => $date->format('Y-m-d H:i:s')
+        );
+
+        if( is_null($id) ):
             $this->db->insert($this->_table_equipment, $data);
 
             $result = array('id' => $this->db->insert_id());
@@ -49,22 +57,7 @@ class Equipment_model extends CI_Model {
             else:
                 $result['code'] = 1;
             endif;
-
-
         else:
-            $data = array(
-                'name_ru' => $this->input->post('name_ru'),
-                'name_en' => $this->input->post('name_en'),
-                'name_arabic' => $this->input->post('name_arabic'),
-                'warranty' => $this->input->post('warranty'),
-                'manufacturer' => $this->input->post('manufacturer'),
-                'manufacturer_url' => $this->input->post('manufacturer_url'),
-                'descr_ru' => $this->input->post('descr_ru'),
-                'descr_en' => $this->input->post('descr_en'),
-                'descr_arabic' => $this->input->post('descr_arabic'),
-                'date' => $date->format('Y-m-d H:i:s')
-            );
-
             $this->db->where('id', $id);
             $this->db->update($this->_table_equipment, $data);
 
@@ -74,8 +67,6 @@ class Equipment_model extends CI_Model {
             else:
                 $result['code'] = 1;
             endif;
-
-
         endif;
 
         return $result;

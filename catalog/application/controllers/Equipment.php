@@ -211,6 +211,20 @@ class Equipment extends MY_Controller {
                 if( is_array($result) && !empty($result) ):
                     $code = 0;
                     $item = $result;
+
+                    $item['equipment'][0]->name_ru = htmlspecialchars_decode($item['equipment'][0]->name_ru);
+                    $item['equipment'][0]->name_en = htmlspecialchars_decode($item['equipment'][0]->name_en);
+                    $item['equipment'][0]->name_arabic = htmlspecialchars_decode($item['equipment'][0]->name_arabic);
+
+                    $item['equipment'][0]->descr_ru = htmlspecialchars_decode($item['equipment'][0]->descr_ru);
+                    $item['equipment'][0]->descr_en = htmlspecialchars_decode($item['equipment'][0]->descr_en);
+                    $item['equipment'][0]->descr_arabic = htmlspecialchars_decode($item['equipment'][0]->descr_arabic);
+
+                    $item['equipment'][0]->manufacturer = htmlspecialchars_decode($item['equipment'][0]->manufacturer);
+                    $item['equipment'][0]->manufacturer_url = htmlspecialchars_decode($item['equipment'][0]->manufacturer_url);
+
+                    $item['equipment'][0]->warranty = htmlspecialchars_decode($item['equipment'][0]->warranty);
+
                 elseif(empty($result)):
                     $code = 11;
                     $str = 'Не найдено ни одного элемента с таким ID.';
