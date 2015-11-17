@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 
     <div class="modal fade" id="myEditRecordModal" tabindex="-1" role="dialog" aria-labelledby="myRecordEditModalLabel">
-        <div class="modal-dialog  modal-md" role="document">
+        <div class="modal-dialog  modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -86,19 +86,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                            <div class="form-group">
                                <label class="col-md-4 control-label" for="descr_ru">Описание (рус)</label>
                                <div class="col-md-6">
-                                    <textarea class="form-control tinymce" rows="5" id="descr_ru" name="descr_ru" ></textarea>
+                                    <textarea class="form-control tinymce" rows="5" id="descr_ru_edit" name="descr_ru" ></textarea>
                                </div>
                            </div>
                            <div class="form-group">
                                <label class="col-md-4 control-label" for="descr_en">Описание (англ)</label>
                                <div class="col-md-6">
-                                    <textarea class="form-control tinymce" rows="5"  id="descr_en" name="descr_en"></textarea>
+                                    <textarea class="form-control tinymce" rows="5"  id="descr_en_edit" name="descr_en"></textarea>
                                </div>
                            </div>
                            <div class="form-group">
                                <label class="col-md-4 control-label" for="descr_arabic">Описание (араб)</label>
                                <div class="col-md-6">
-                                    <textarea class="form-control tinymce" rows="5"  id="descr_arabic" name="descr_arabic"></textarea>
+                                    <textarea class="form-control tinymce" rows="5"  id="descr_arabic_edit" name="descr_arabic"></textarea>
                                </div>
                            </div>
                            <div class="form-group">

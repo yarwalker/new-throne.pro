@@ -31,6 +31,45 @@
         if( $(this).parent().index() == 0 )
         {
             refreshList();
+            tinyMCE.remove();
+        }
+        else if( $(this).parent().index() == 1 )
+        {
+            tinyMCE.init({
+                selector: "#new_record_form textarea.tinymce",
+                theme: "modern",
+                schema: "html5",
+                invalid_elements: 'script',
+                inline_styles: true,
+                convert_urls: false,
+                relative_urls: false,
+                remove_script_host: false,
+                cleanup: true,
+                extended_valid_elements: "*[*]",
+                // content_css: true,
+                //valid_elements: "p[style|center]",
+                //extended_valid_elements : "a[href|style|title],p[style|center],div[style],span[style]",
+                //extended_valid_elements : "hr[class|width|size|noshade],font[face|size|color|style],p[class|align|style],span[class|align|style],input[class|value|style|id|type|name|size],form[name|method|action]",
+                //cleanup: false,
+                plugins: [
+                    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                    "searchreplace wordcount visualblocks visualchars code fullscreen",
+                    "insertdatetime media nonbreaking save table contextmenu directionality",
+                    "emoticons template paste textcolor moxiemanager"
+                ],
+                toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | justifyleft justifycenter justifyright justifyfull | bullist numlist outdent indent | link image",
+                toolbar2: "print preview media | forecolor backcolor emoticons",
+                image_advtab: true,
+                templates: [
+                    {
+                        title: 'Fotorama',
+                        content: '<div class="fotorama" data-nav="thumbs" data-width="100%" data-maxwidth="100%" data-ratio="16/9" data-allowfullscreen="true">...</div>'
+                    },
+                    {
+                        title: 'Test snippet',
+                        content: '<h3>Test snippet</h3> <p>dear friends, welcome to our super webinar!</p>'
+                    }]
+            });
         }
 
         $(this).tab('show');
@@ -42,11 +81,15 @@
     $('#new_record_form').on('submit', function(e){
         e.preventDefault();
 
+        $(this).find('#descr_ru').val(tinymce.get('descr_ru').getContent());
+        $(this).find('#descr_en').val(tinymce.get('descr_en').getContent());
+        $(this).find('#descr_arabic').val(tinymce.get('descr_arabic').getContent());
+
         if (typeof FormData !== 'undefined') {
 
             // send the formData
             var formData = new FormData( $('#new_record_form')[0] );
-            console.log(formData);
+
             $.ajax({
                 url : 'save',  // Controller URL
                 type : 'POST',
@@ -63,7 +106,10 @@
                     // при успешном сохранении очищаем форму
                     if( data.code == 0 )
                     {
+                        tinyMCE.remove();
                         $('#new_record_form :input[type=text], #new_record_form textarea, #new_record_form :input[type=file]').val('');
+                        refreshList();
+                        $('#eq_tabs li:first a').tab('show');
                     }
                 },
                 error: function(response) {
@@ -105,6 +151,7 @@
                     if( data.code == 0 )
                     {
                         $('#record_form :input[type=text], #record_form textarea, #record_form :input[type=file]').val('');
+                        $('#record_form textarea').html('');
                         refreshList();
                     }
                 },
@@ -156,9 +203,9 @@
                 $('#myEditRecordModal #warranty').val(result.item.equipment[0].warranty);
                 $('#myEditRecordModal #manufacturer').val(result.item.equipment[0].manufacturer);
                 $('#myEditRecordModal #manufacturer_url').val(result.item.equipment[0].manufacturer_url);
-                $('#myEditRecordModal #descr_ru').val(result.item.equipment[0].descr_ru);
-                $('#myEditRecordModal #descr_en').val(result.item.equipment[0].descr_en);
-                $('#myEditRecordModal #descr_arabic').val(result.item.equipment[0].descr_arabic);
+                $('#myEditRecordModal #descr_ru_edit').val(result.item.equipment[0].descr_ru);
+                $('#myEditRecordModal #descr_en_edit').val(result.item.equipment[0].descr_en);
+                $('#myEditRecordModal #descr_arabic_edit').val(result.item.equipment[0].descr_arabic);
 
                 if( result.item.images.length )
                 {
@@ -193,35 +240,7 @@
                 $('#myAdmModal').modal();
             }
 
-            //$('#myAdmModal .modal-body').html();
 
-
-            // инициализируем tinymce
-          /*  tinyMCE.baseURL = "tinymce/";
-            $(".modal-body textarea.tinymce").tinymce({
-                //selector: ".modal-body textarea.tinymce",
-                //script_url : 'tinymce/tinymce.min.js',
-                theme: "modern",
-                schema: "html5",
-                invalid_elements: 'script',
-                inline_styles: true,
-                convert_urls : false,
-                relative_urls : false,
-                remove_script_host : false,
-                cleanup: true,
-                extended_valid_elements:"*[*]",
-                plugins: [
-                    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
-                    "searchreplace wordcount visualblocks visualchars code fullscreen",
-                    "insertdatetime media nonbreaking save table contextmenu directionality",
-                    "emoticons template paste textcolor moxiemanager"
-                ],
-                toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | justifyleft justifycenter justifyright justifyfull | bullist numlist outdent indent | link image",
-                toolbar2: "print preview media | forecolor backcolor emoticons",
-                image_advtab: true,
-                templates: []
-
-            }); */
 
         }, 'json')
         .error(function(response) {
@@ -289,14 +308,50 @@
     $('#myEditRecordModal').on('hidden.bs.modal', function (e) {
         $(this).find('#myRecordEditModalLabel').text('');
         $('#record_form :input[type=text], #record_form textarea, #record_form :input[type=file]').val('');
+        tinyMCE.remove();
+    });
+
+    tinyMCE.init({
+        mode : "none",
+        theme : "modern"
     });
 
     $('#myEditRecordModal').on('shown.bs.modal', function (e) {
-        $('textarea.tinymce').tinymce({
-           // script_url: 'http://tinymce.moxiecode.com/js/tinymce/jscripts/tiny_mce/tiny_mce.js',
-            theme: 'modern'
+        tinyMCE.init({
+            selector: "#myEditRecordModal textarea.tinymce",
+            theme: "modern",
+            schema: "html5",
+            invalid_elements: 'script',
+            inline_styles: true,
+            convert_urls: false,
+            relative_urls: false,
+            remove_script_host: false,
+            cleanup: true,
+            extended_valid_elements: "*[*]",
+            // content_css: true,
+            //valid_elements: "p[style|center]",
+            //extended_valid_elements : "a[href|style|title],p[style|center],div[style],span[style]",
+            //extended_valid_elements : "hr[class|width|size|noshade],font[face|size|color|style],p[class|align|style],span[class|align|style],input[class|value|style|id|type|name|size],form[name|method|action]",
+            //cleanup: false,
+            plugins: [
+                "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code fullscreen",
+                "insertdatetime media nonbreaking save table contextmenu directionality",
+                "emoticons template paste textcolor moxiemanager"
+            ],
+            toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | justifyleft justifycenter justifyright justifyfull | bullist numlist outdent indent | link image",
+            toolbar2: "print preview media | forecolor backcolor emoticons",
+            image_advtab: true,
+            templates: [
+                {
+                    title: 'Fotorama',
+                    content: '<div class="fotorama" data-nav="thumbs" data-width="100%" data-maxwidth="100%" data-ratio="16/9" data-allowfullscreen="true">...</div>'
+                },
+                {
+                    title: 'Test snippet',
+                    content: '<h3>Test snippet</h3> <p>dear friends, welcome to our super webinar!</p>'
+                }]
         });
-
     });
 
     // обработка формы авторизации
@@ -425,5 +480,45 @@
     $('#input_login, #input_pass').on('keypress', function(){
         removeError();
     });
+
+    function ActivateTinyMCE() {
+        tinyMCE.init({
+            selector: "textarea.tinymce",
+            theme: "modern",
+            schema: "html5",
+            invalid_elements: 'script',
+            inline_styles: true,
+            convert_urls: false,
+            relative_urls: false,
+            remove_script_host: false,
+            cleanup: true,
+            extended_valid_elements: "*[*]",
+            // content_css: true,
+            //valid_elements: "p[style|center]",
+            //extended_valid_elements : "a[href|style|title],p[style|center],div[style],span[style]",
+            //extended_valid_elements : "hr[class|width|size|noshade],font[face|size|color|style],p[class|align|style],span[class|align|style],input[class|value|style|id|type|name|size],form[name|method|action]",
+            //cleanup: false,
+            plugins: [
+                "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code fullscreen",
+                "insertdatetime media nonbreaking save table contextmenu directionality",
+                "emoticons template paste textcolor moxiemanager"
+            ],
+            toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | justifyleft justifycenter justifyright justifyfull | bullist numlist outdent indent | link image",
+            toolbar2: "print preview media | forecolor backcolor emoticons",
+            image_advtab: true,
+            templates: [
+                {
+                    title: 'Fotorama',
+                    content: '<div class="fotorama" data-nav="thumbs" data-width="100%" data-maxwidth="100%" data-ratio="16/9" data-allowfullscreen="true">...</div>'
+                },
+                {
+                    title: 'Test snippet',
+                    content: '<h3>Test snippet</h3> <p>dear friends, welcome to our super webinar!</p>'
+                }]
+        });
+    }
+
+    //ActivateTinyMCE();
 
 } )( jQuery );
