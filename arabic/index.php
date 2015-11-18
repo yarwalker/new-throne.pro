@@ -1814,17 +1814,20 @@ chosen link or button. -->
 <noscript><div><img src="//mc.yandex.ru/watch/30996876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<!-- Start of LiveChat (www.livechatinc.com) code -->
+
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    window.__lc = window.__lc || {};
-    window.__lc.license = 6770551;
-    (function() {
-        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/564c7dd43b30fc9f698f8132/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
     })();
 </script>
-<!-- End of LiveChat code -->
+<!--End of Tawk.to Script-->
 
 </body>
 
