@@ -200,6 +200,7 @@
                 $('#myEditRecordModal #name_ru').val(result.item.equipment[0].name_ru);
                 $('#myEditRecordModal #name_en').val(result.item.equipment[0].name_en);
                 $('#myEditRecordModal #name_arabic').val(result.item.equipment[0].name_arabic);
+                $('#myEditRecordModal #sku').val(result.item.equipment[0].sku);
                 $('#myEditRecordModal #warranty').val(result.item.equipment[0].warranty);
                 $('#myEditRecordModal #manufacturer').val(result.item.equipment[0].manufacturer);
                 $('#myEditRecordModal #manufacturer_url').val(result.item.equipment[0].manufacturer_url);

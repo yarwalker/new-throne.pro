@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Наименование (рус) <sup style="color: red">*</sup></label>
+                            <label class="col-md-4 control-label" for="name_ru">Наименование (рус) <sup style="color: red">*</sup></label>
                             <div class="col-md-5">
                                 <input id="name_ru" name="name_ru" type="text" placeholder="Наименование (рус)" class="form-control input-md" required="">
                             </div>
@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Наименование (англ) <sup style="color: red">*</sup></label>
+                            <label class="col-md-4 control-label" for="name_en">Наименование (англ) <sup style="color: red">*</sup></label>
                             <div class="col-md-5">
                                 <input id="name_en" name="name_en" type="text" placeholder="Наименование (англ)" class="form-control input-md" required="">
                             </div>
@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Наименование (араб) <sup style="color: red">*</sup></label>
+                            <label class="col-md-4 control-label" for="name_arabic">Наименование (араб) <sup style="color: red">*</sup></label>
                             <div class="col-md-5">
                                 <input id="name_arabic" name="name_arabic" type="text" placeholder="Наименование (араб)" class="form-control input-md" required="">
                             </div>
@@ -63,7 +63,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Гарантия</label>
+                            <label class="col-md-4 control-label" for="sku">Артикул</label>
+                            <div class="col-md-5">
+                                <input id="sku" name="sku" type="text" placeholder="Арткиул" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="warranty">Гарантия</label>
                             <div class="col-md-5">
                                 <input id="warranty" name="warranty" type="text" placeholder="Гарантия" class="form-control input-md">
 
@@ -72,7 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Производитель</label>
+                            <label class="col-md-4 control-label" for="manufacturer">Производитель</label>
                             <div class="col-md-5">
                                 <input id="manufacturer" name="manufacturer" type="text" placeholder="Производитель" class="form-control input-md">
 
@@ -81,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="textinput">Производитель (URL сайта)</label>
+                            <label class="col-md-4 control-label" for="manufacturer_url">Производитель (URL сайта)</label>
                             <div class="col-md-5">
                                 <input id="manufacturer_url" name="manufacturer_url" type="text" placeholder="Производитель (URL сайта)" class="form-control input-md">
 

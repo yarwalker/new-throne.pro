@@ -183,3 +183,4 @@ $lang['my_modal'] = '<div class="modal fade" id="myModal" tabindex="-1" role="di
 </div>';
 
 $lang['manufacturer_label'] = 'الصانع:';
+$lang['sku_label'] = 'رقم القطعة:';

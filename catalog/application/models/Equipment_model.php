@@ -39,6 +39,7 @@ class Equipment_model extends CI_Model {
             'name_ru' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_ru') ), ENT_QUOTES, 'UTF-8'),
             'name_en' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_en') ), ENT_QUOTES, 'UTF-8'),
             'name_arabic' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('name_arabic') ), ENT_QUOTES, 'UTF-8'),
+            'sku' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('sku') ), ENT_QUOTES, 'UTF-8'),
             'warranty' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('warranty') ), ENT_QUOTES, 'UTF-8'),
             'manufacturer' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('manufacturer') ), ENT_QUOTES, 'UTF-8'),
             'manufacturer_url' => htmlspecialchars( preg_replace( $patterns, $replacements, $this->input->post('manufacturer_url') ), ENT_QUOTES, 'UTF-8'),

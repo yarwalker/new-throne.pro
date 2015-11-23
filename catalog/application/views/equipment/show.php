@@ -12,6 +12,7 @@ $descr = 'descr_' . $lang;
         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 <?php echo ( $lang == 'arabic' ? 'arabic' : '' ); ?>">
             <h1><?php echo htmlspecialchars_decode($equipment[0]->$name, ENT_QUOTES); ?></h1>
             <?php echo htmlspecialchars_decode($equipment[0]->$descr, ENT_QUOTES); ?>
+            <p><strong class="label"><?php echo lang('sku_label'); ?></strong><?php echo htmlspecialchars_decode($equipment[0]->sku, ENT_QUOTES); ?></p>
             <p>
                 <strong class="label"><?php echo lang('manufacturer_label'); ?></strong><a href="<?php echo htmlspecialchars_decode($equipment[0]->manufacturer_url, ENT_QUOTES); ?>" target="_blank"><?php echo htmlspecialchars_decode($equipment[0]->manufacturer, ENT_QUOTES); ?></a>
             </p>

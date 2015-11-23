@@ -65,6 +65,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <input id="name_arabic" name="name_arabic" type="text" placeholder="Наименование (араб)" class="form-control input-md" required="" value="">
                                </div>
                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="sku">Артикул</label>
+                                <div class="col-md-5">
+                                    <input id="sku" name="sku" type="text" placeholder="Артикул" class="form-control input-md" value="">
+                                </div>
+                            </div>
                            <div class="form-group">
                                <label class="col-md-4 control-label" for="warranty">Гарантия</label>
                                <div class="col-md-5">
