@@ -34,6 +34,18 @@ html,body { margin: 0; padding: 0; font-size: 16px; }
 
 }
 
+@media (orientation: landscape){
+    .cat_callback_fix_btn {
+        position: fixed;
+        top: 30%;
+        left: 95%;
+        z-index: 999;
+        display: inline;
+        cursor: pointer;
+        /*width: 80px;
+        height: 80px;*/
+    }
+}
 .cat_callback_fix_btn {
     position: fixed;
     top: 40%;
