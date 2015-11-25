@@ -92,6 +92,17 @@ a.inner_anchor.security { color: #cf1834; }
     height: 80px;*/
 }
 
+.faq_callback_fix_btn {
+    position: fixed;
+    bottom: 50%;
+    left: 95%;
+    z-index: 999;
+    display: inline;
+    cursor: pointer;
+    /*width: 80px;
+    height: 80px;*/
+}
+
 .capital { letter-spacing: 2px; }
 
 div.frame {
