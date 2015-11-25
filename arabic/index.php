@@ -518,7 +518,7 @@ $detect = new Mobile_Detect();
             <div class="hsContent">
                 <h1>تحكم سهل و واضح</h1>
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span></p>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span></p>
                 <div id="notes">
                     <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
@@ -541,7 +541,7 @@ $detect = new Mobile_Detect();
             <div class="hsContent">
                 <h1>تحكم سهل و واضح</h1>
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
                 <div id="notes">
                     <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
@@ -564,7 +564,7 @@ $detect = new Mobile_Detect();
             <div class="hsContent">
                 <h1>تحكم سهل و واضح</h1>
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
                 <div id="notes">
                     <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
                     <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
@@ -580,7 +580,7 @@ $detect = new Mobile_Detect();
             <div class="hsContent">
                 <h1>تحكم سهل و واضح</h1>
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
-                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/P8bqAepnccI?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
+                <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
                 <div id="notes" class="table">
                     <div class="table_row">
                         <div class="table_cell"><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
