@@ -1,7 +1,7 @@
 <?
 session_start();
 
-include '../Mobile_Detect.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/Mobile_Detect.php';
 $detect = new Mobile_Detect();
 
 //$_SESSION['DEVICE'] = 'desktop';
@@ -24,43 +24,43 @@ $detect = new Mobile_Detect();
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
     <title>Умный дом ТРОН</title>
-    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css"-->
-    <link href="../css/fixed-positioning.css" rel="stylesheet" type="text/css" />
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/tabulous.css" rel="stylesheet" type="text/css" />
+    <link href="/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/tabulous.css" rel="stylesheet" type="text/css" />
     <!--link href="css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
-    <link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+    <link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
 
-    <link rel="stylesheet" href="../js/flowplay/skin/functional.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="/js/flowplay/skin/functional.css">
+    <link rel="stylesheet" href="/css/animate.css">
 
     <?php if ( !$detect->isMobile() ): ?>
-        <link href="../css/main.css" rel="stylesheet" type="text/css" />
+        <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <?php else: ?>
-        <link href="../css/main_mobile.css" rel="stylesheet" type="text/css" />
+        <link href="/css/main_mobile.css" rel="stylesheet" type="text/css" />
     <?php endif; ?>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -130,7 +130,24 @@ $detect = new Mobile_Detect();
 </head>
 
 <body class="loading">
-<img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
+<!--div id="cities">
+    <div class="container">
+        <img src="/images/geo-location.png" alt="">
+        <div class="btn-group">
+
+            <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Москва <span class="my_caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li data-city="moscow">Москва</li>
+                <li data-city="yaroslavl">Ярославль</li>
+            </ul>
+        </div>
+        <span id="city_moscow" class="visible">+7(495) 255-0-777 </span>
+        <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
+    </div>
+</div-->
+<img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class="visible-lg visible-md">
@@ -201,7 +218,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -209,7 +226,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
@@ -220,7 +237,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -228,7 +245,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -248,19 +265,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
                     система<br>"умного"<br>освещения<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
                     управление<br>и автоматизация<br>климата<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
                     системы<br>безопасности<br>и мониторинга<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
         </div>
@@ -269,7 +286,7 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -290,7 +307,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-lg">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -298,7 +315,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
@@ -307,7 +324,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -315,7 +332,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -328,7 +345,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-md">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-md.jpg" />
+  	    	        <img src="/images/carousel/pic1-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -336,7 +353,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-md.jpg" />
+  	    	        <img src="/images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
@@ -345,7 +362,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-md.jpg" />
+  	    	        <img src="/images/carousel/pic3-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -353,7 +370,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-md.jpg" />
+  	    	        <img src="/images/carousel/pic4-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -366,7 +383,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-sm">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-sm.jpg" />
+  	    	        <img src="/images/carousel/pic1-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -374,7 +391,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-sm.jpg" />
+  	    	        <img src="/images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
@@ -383,7 +400,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-sm.jpg" />
+  	    	        <img src="/images/carousel/pic3-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -391,7 +408,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-sm.jpg" />
+  	    	        <img src="/images/carousel/pic4-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -404,7 +421,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-xs">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-xs.jpg" />
+  	    	        <img src="/images/carousel/pic1-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Революционное решение на основе 3D-технологии</h2>
@@ -412,7 +429,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-xs.jpg" />
+  	    	        <img src="/images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Бесплатное 3D-демо вашего дома</h2>
@@ -421,7 +438,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-xs.jpg" />
+  	    	        <img src="/images/carousel/pic3-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Любые масштабы зданий</h2>
@@ -429,7 +446,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-xs.jpg" />
+  	    	        <img src="/images/carousel/pic4-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Послепродажная поддержка</h2>
@@ -450,19 +467,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
                     система<br>"умного"<br>освещения<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
                     управление<br>и автоматизация<br>климата<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
                     системы<br>безопасности<br>и мониторинга<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
         </div>
@@ -471,7 +488,7 @@ $detect = new Mobile_Detect();
            Безопасность, комфорт  и&nbsp;энергосбережение &mdash; вот что дает владельцам система <nobr>"умный дом"</nobr>.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-color: #fff;">
@@ -532,12 +549,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/GVm8eZS0NPg?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span></p>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -562,12 +579,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/GVm8eZS0NPg?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -592,12 +609,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/GVm8eZS0NPg?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Действительно интуитивный<br>интерфейс</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Управление объектами<br>любого масштаба</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Дистанционное управление<br>с планшета или телефона</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
                 </div>
 
             </div>
@@ -616,20 +633,20 @@ $detect = new Mobile_Detect();
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/GVm8eZS0NPg?autoplay=1" class="youtube">Смотреть видео</a><span id="watch_btn"></span>
                 <div id="notes" class="table">
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/interface_icon.png" class="img-responsive"  alt=""/></div>
+                        <div class="table_cell"><img src="/images/interface_icon.png" class="img-responsive"  alt=""/></div>
                         <div class="table_cell"><span id="note1">Действительно интуитивный интерфейс</span></div>
                     </div>
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/scale_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/scale_icon.png" class="img-responsive" alt=""/></div>
                         <div class="table_cell"><span id="note2">Управление объектами любого масштаба</span></div>
                     </div>
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
                         <div class="table_cell"><span id="note3">Дистанционное управление с&nbsp;планшета или телефона</span></div>
                     </div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
                 </div>
 
             </div>
@@ -651,7 +668,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление освещением</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
+                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
 
                             <p class="">
@@ -668,23 +685,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <img src="/images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
                             <span>Централизованное<br>и&nbspзональное<br>управление</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <img src="/images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
                             <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <img src="/images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
                             <span>Сохранение<br>пользовательских<br>сцен</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <img src="/images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
                             <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <img src="/images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
                             <span>Полное <br/>или частичное<br/>управление</span>
                         </td>
                     </tr>
@@ -695,7 +712,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление климатом</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
@@ -710,23 +727,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <img src="/images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                             <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <img src="/images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
                             <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <img src="/images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                             <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
                             <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                             <span>Термостаты<br>Полный контроль<br>климата</span>
                         </td>
                     </tr>
@@ -737,7 +754,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление системой безопасности</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
                         <td>
 
                             <p>
@@ -756,23 +773,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <img src="/images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
                             <span>Охранная<br>и пожарная<br>сигнализация</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <img src="/images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
                             <span>Датчики движения,<br>открытия окон<br>и дверей</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <img src="/images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
                             <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
                             <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <img src="/images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
                             <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
                         </td>
                     </tr>
@@ -793,7 +810,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление освещением</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img  col-xs-12"  /></td>
+                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img  col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
@@ -809,23 +826,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <img src="/images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
                             <span>Централизованное<br>и&nbspзональное<br>управление</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <img src="/images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
                             <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <img src="/images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
                             <span>Сохранение<br>пользовательских<br>сцен</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <img src="/images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
                             <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <img src="/images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
                             <span>Полное<br> или частичное<br/>управление</span>
                         </td>
                     </tr>
@@ -836,7 +853,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление климатом</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
@@ -851,23 +868,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <img src="/images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                             <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <img src="/images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
                             <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <img src="/images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                             <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
                             <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                             <span>Термостаты<br>Полный контроль<br>климата</span>
                         </td>
                     </tr>
@@ -878,7 +895,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление системой безопасности</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
                         <td>
                             <p>
                                 "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
@@ -896,23 +913,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <img src="/images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
                             <span>Охранная<br>и пожарная<br>сигнализация</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <img src="/images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
                             <span>Датчики движения,<br>открытия окон<br>и дверей</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <img src="/images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
                             <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
                             <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <img src="/images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
                             <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
                         </td>
                     </tr>
@@ -933,7 +950,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Управление освещением</h2>
-                            <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                            <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                             <p class="">
                                 Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
                                 нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
@@ -948,7 +965,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img  src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                            <img  src="/images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
                         </td>
                         <td>
                             <span>Централизованное<br>и&nbsp;зональное<br>управление</span>
@@ -959,12 +976,12 @@ $detect = new Mobile_Detect();
                             <span>Плавная<br>регулировка<br>яркости</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                            <img src="/images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                            <img src="/images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
                         </td>
                         <td>
                             <span>Сохранение<br>пользовательских<br>сцен</span>
@@ -975,12 +992,12 @@ $detect = new Mobile_Detect();
                             <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                            <img src="/images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                            <img src="/images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
                         </td>
                         <td>
                             <span>Полное или частичное<br>управление</span>
@@ -995,7 +1012,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Управление климатом</h2>
-                            <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                            <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
@@ -1009,7 +1026,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                            <img src="/images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                         </td>
                         <td>
                             <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
@@ -1020,12 +1037,12 @@ $detect = new Mobile_Detect();
                             <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                            <img src="/images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                            <img src="/images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                         </td>
                         <td>
                             <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
@@ -1036,12 +1053,12 @@ $detect = new Mobile_Detect();
                             <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                         </td>
                         <td>
                             <span>Термостаты<br>Полный контроль<br>климата</span>
@@ -1056,7 +1073,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Управление системой безопасности</h2>
-                            <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                            <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
                             <p>
                                 "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
                                 Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
@@ -1073,7 +1090,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                            <img src="/images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
                         </td>
                         <td>
                             <span>Охранная<br>и пожарная<br>сигнализация</span>
@@ -1084,12 +1101,12 @@ $detect = new Mobile_Detect();
                             <span>Датчики движения,<br>открытия окон<br>и дверей</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                            <img src="/images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                            <img src="/images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
                         </td>
                         <td>
                             <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
@@ -1100,12 +1117,12 @@ $detect = new Mobile_Detect();
                             <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                            <img src="/images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
                         </td>
                         <td>
                             <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
@@ -1129,7 +1146,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Управление освещением</h2>
-                        <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                        <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                         <p class="">
                             Задумайтесь: в&nbsp;вашем доме будет несколько десятков светильников. Как убедиться, что ни один из&nbsp;них не горит? Перед сном или отъездом
                             нужно обойти весь дом, чтобы всё проверить. Это надежный, но несколько устаревший метод для <nob>21-го</nob> века.</p>
@@ -1144,7 +1161,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
+                        <img src="/images/light_zone_management.png" alt="Централизованное и зональное управление" title="Централизованное и зональное управление"/>
                     </td>
                     <td>
                         <span>Централизованное<br>и&nbspзональное<br>управление</span>
@@ -1155,12 +1172,12 @@ $detect = new Mobile_Detect();
                         <span>Плавная<br>регулировка<br>яркости</span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
+                        <img src="/images/light_slide_control.png" alt="Плавная регулировка яркости освещения" title="Плавная регулировка яркости освещения"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
+                        <img src="/images/light_scene_saving.png" alt="Сохранение пользовательских сцен освещения" title="Сохранение пользовательских сцен освещения"/>
                     </td>
                     <td>
                         <span>Сохранение<br>пользовательских<br>сцен</span>
@@ -1171,12 +1188,12 @@ $detect = new Mobile_Detect();
                         <span>Затенение шторами,<br>рольставнями<br>и&nbspжалюзи</span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
+                        <img src="/images/light_curtains.png" alt="Затенение шторами, рольставнями и жалюзи" title="Затенение шторами, рольставнями и жалюзи"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
+                        <img src="/images/light_part_management.png" alt="Полное или частичное управление освещением" title="Полное или частичное управление освещением"  />
                     </td>
                     <td>
                         <span>Полное или частичное<br>управление</span>
@@ -1215,7 +1232,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Управление климатом</h2>
-                        <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                         <p class="">
                             Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
                         <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
@@ -1229,7 +1246,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
+                        <img src="/images/climate_condition.jpg" alt="Управление кондиционированием" title="Управление кондиционированием"/>
                     </td>
                     <td>
                         <span>Кондиционирование<br>Централизованное<br>и&nbsp;зональное</span>
@@ -1240,12 +1257,12 @@ $detect = new Mobile_Detect();
                         <span>Вентиляция<br>Приточная<br>и&nbsp;вытяжная</span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
+                        <img src="/images/climate_ventil.jpg" alt="Управление вентиляцией" title="Управление вентиляцией"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
+                        <img src="/images/climate_heating.jpg" alt="Управление отоплением" title="Управление отоплением"/>
                     </td>
                     <td>
                         <span>Отопление<br>Центральное<br>и&nbsp;местное</span>
@@ -1256,12 +1273,12 @@ $detect = new Mobile_Detect();
                         <span>Теплые полы<br>Электрические<br>и&nbsp;водяные</span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="Управление теплыми полами" title="Управление теплыми полами"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
+                        <img src="/images/climate_thermostate.jpg" alt="Управление термостатами" title="Управление термостатами"/>
                     </td>
                     <td>
                         <span>Термостаты<br>Полный контроль<br>климата</span>
@@ -1277,7 +1294,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Управление системой безопасности</h2>
-                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
+                        <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Управление системой безопасности" title="Управление системой безопасности"/>
                         <p>
                             "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
                             Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
@@ -1294,7 +1311,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
+                        <img src="/images/security_alarm.jpg" alt="Охранная и пожарная сигнализация" title="Охранная и пожарная сигнализация"/>
                     </td>
                     <td>
                         <span>Охранная<br>и пожарная<br>сигнализация</span>
@@ -1305,12 +1322,12 @@ $detect = new Mobile_Detect();
                         <span>Датчики движения,<br>открытия окон<br>и дверей</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
+                        <img src="/images/security_sensors.jpg" alt="Датчики движения, открытия окон и дверей" title="Датчики движения, открытия окон и дверей"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
+                        <img src="/images/security_emergency.jpg" alt="Защита от протечек и других нештатных ситуаций" title="Защита от протечек и других нештатных ситуаций"/>
                     </td>
                     <td>
                         <span>Защита от протечек<br>и других нештатных<br>ситуаций</span>
@@ -1321,12 +1338,12 @@ $detect = new Mobile_Detect();
                         <span>Оповещение<br>на охранные пульты<br>и через SMS</span>
                     </td>
                     <td>
-                        <img src="../images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
+                        <img src="/images/security_notification.jpg" alt="Оповещение на охранные пульты и через SMS" title="Оповещение на охранные пульты и через SMS"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
+                        <img src="/images/security_video.jpg" alt="Любое количество IP-камер видеонаблюдения" title="Любое количество IP-камер видеонаблюдения"/>
                     </td>
                     <td>
                         <span>Любое количество<br>IP-камер<br>видеонаблюдения</span>
@@ -1349,7 +1366,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Открытие ворот или&nbsp;дверей не&nbsp;вставая с&nbsp;дивана
                 </div>
-                <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                 <p>Открытие дверей<br>или&nbsp;ворот</p>
 
             </div>
@@ -1357,28 +1374,28 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
                 </div>
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <p>Погодные<br>станции</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     <p>Управление зональным поливом газона</p>
                 </div>
-                <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                 <p>Поливочные<br>системы</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     Управление музыкой для&nbsp;каждой комнаты
                 </div>
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <p>Медиа мультирум</p>
             </div>
             <div class="table_cell ">
                 <div class="integr_description">
                     Настройка температуры воды в&nbsp;бассейне или&nbsp;сауне
                 </div>
-                <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                 <p>Сауны<br>и&nbsp;бассейны</p>
             </div>
         </div>
@@ -1388,7 +1405,7 @@ $detect = new Mobile_Detect();
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                     <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
                 </div>
             </div>
@@ -1401,14 +1418,14 @@ $detect = new Mobile_Detect();
                 Все погодные условия на&nbsp;экране планшета или&nbsp;смартфона
             </div>
             <div class="table_cell">
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <!--p>Погодные<br>станции</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                     <!--p>Поливочные<br>системы</p-->
                 </div>
             </div>
@@ -1421,14 +1438,14 @@ $detect = new Mobile_Detect();
                 Управление музыкой для&nbsp;каждой комнаты
             </div>
             <div class="table_cell">
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <!--p>Медиа мультирум</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell ">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                     <!--p>Сауны<br>и&nbsp;бассейны</p-->
                 </div>
             </div>
@@ -1448,13 +1465,13 @@ $detect = new Mobile_Detect();
                 <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
             </div>
             <div class="table_cell" style="width: 35%;">
-                <img src="../images/equipment.jpg" class="img-responsive" />
+                <img src="/images/equipment.jpg" class="img-responsive" />
             </div>
         </div>
     </div>
 
     <div class="table visible-xs" id="equipment" >
-        <div><img src="../images/equipment.jpg" class="img-responsive" /></div>
+        <div><img src="/images/equipment.jpg" class="img-responsive" /></div>
         <p>В качестве аппаратной части системы мы используем оборудование европейского стандарта KNX. В&nbsp;ассоциацию KNX на&nbsp;сегодня входят более
             400 производителей оборудования, каждый из&nbsp;которых проходит строгую сертификацию.
             Поэтому наши клиенты всегда получают предложение, оптимально сбалансированное по&nbsp;таким показателям как Цена / Дизайн / Надежность.</p>
@@ -1677,7 +1694,7 @@ $detect = new Mobile_Detect();
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
-                        <img src="../images/phone_tube.png" alt="">
+                        <img src="/images/phone_tube.png" alt="">
                         <div>Смелее! Это вас ни к&nbsp;чему не обязывает.</div>
                         <div id="padlock">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -1758,39 +1775,39 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-<script src="../js/jquery-2.1.3.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="../js/imagesloaded.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/imagesloaded.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
-<script src="../js/jquery.mousewheel.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/vendor/modernizr-2.7.1.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/vendor/modernizr-2.7.1.min.js"></script>
 <?php if(!$detect->isMobile()): ?>
-    <script type="text/javascript" src="../js/skrollr.min.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
 <?php endif; ?>
-<script type="text/javascript" src="../js/retina.min.js"></script>
-<script type="text/javascript" src="../js/tabulous.js"></script>
+<script type="text/javascript" src="/js/retina.min.js"></script>
+<script type="text/javascript" src="/js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 <!--script type="text/javascript" src="js/jquery.liquid-slider.js"></script-->
-<script type="text/javascript" src="../js/bootstrap.youtubepopup.min.js"></script>
-<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.youtubepopup.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
 
-<script type="text/javascript" src="../js/flowplay/flowplayer.js"></script>
+<script type="text/javascript" src="/js/flowplay/flowplayer.js"></script>
 <!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
-<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
-<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 <?php else: ?>
     <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.13.min.js"></script>
     <!--script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script-->
-    <script type="text/javascript" src="../js/main_mobile.js"></script>
+    <script type="text/javascript" src="/js/main_mobile.js"></script>
 <?php endif; ?>
 
 

@@ -1,7 +1,7 @@
 <?
 session_start();
 
-include '../Mobile_Detect.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/Mobile_Detect.php';
 $detect = new Mobile_Detect();
 
 //$_SESSION['DEVICE'] = 'desktop';
@@ -24,45 +24,45 @@ $detect = new Mobile_Detect();
     <meta name="description" content="THRONE 3D smart home" />
     <meta name="keywords" content="THRONE 3D home automation, THRONE 3D smart home system, THRONE 3D building management system, THRONE 3D smart home technology, THRONE 3D wireless home automation, THRONE 3D smart home security, THRONE 3D home automation software, THRONE 3D building management system, THRONE 3D building automation system, THRONE 3D alarm systems control, THRONE 3D lighting control, THRONE 3D home automation lighting, THRONE 3D security system control, THRONE 3D home security, THRONE 3D homeautomation, THRONE 3D smart home automation, THRONE 3D intelligent home, THRONE 3D curtain control, THRONE 3D shading control, THRONE 3D security alarms, THRONE 3D fire alarms" />
     <title>THRONE Smart Home</title>
-    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css"-->
-    <link href="../css/fixed-positioning.css" rel="stylesheet" type="text/css" />
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/tabulous.css" rel="stylesheet" type="text/css" />
+    <link href="/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/tabulous.css" rel="stylesheet" type="text/css" />
     <!--link href="css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
-    <link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+    <link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
 
-    <link rel="stylesheet" href="../js/flowplay/skin/functional.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="/js/flowplay/skin/functional.css">
+    <link rel="stylesheet" href="/css/animate.css">
 
     <?php if ( !$detect->isMobile() ): ?>
-        <link href="../css/main.css" rel="stylesheet" type="text/css" />
+        <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <?php else: ?>
-        <link href="../css/main_mobile.css" rel="stylesheet" type="text/css" />
+        <link href="/css/main_mobile.css" rel="stylesheet" type="text/css" />
     <?php endif; ?>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Facebook Pixel Code -->
     <script>
@@ -117,7 +117,7 @@ $detect = new Mobile_Detect();
 </head>
 
 <body class="loading">
-<img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
+<img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
@@ -189,7 +189,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">A Revolutionary Solution On a Basis Of 3D Technology</h2>
@@ -197,7 +197,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
@@ -207,7 +207,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Any Size of Facilities</h2>
@@ -215,7 +215,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Post-sale Support</h2>
@@ -233,19 +233,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Smart lighting system">
                     smart<br>lighting<br>system<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Temperature (HVAC) automation and control" >
                     temperature<br>(HVAC) automation<br>and control<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Security and monitoring systems">
                     security<br>and monitoring<br>systems<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
         </div>
@@ -253,16 +253,16 @@ $detect = new Mobile_Detect();
             managed through a single 3D interface on a smartphone or tablet. Safety, comfort and energy efficiency &mdash; this is what a Smart Home system provides to a customer.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
             background-color: #fff;">
-            <!--img src="../images/new_ipad.png" alt="" class="img-responsive"/-->
+            <!--img src="/images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
-                <source src="../uploads/videos/sequence02.webm" type="video/webm">
-                <source src="../uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -274,7 +274,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-lg">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">A Revolutionary Solution On a Basis Of 3D Technology</h2>
@@ -282,7 +282,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
@@ -292,7 +292,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Any Size of Facilities</h2>
@@ -300,7 +300,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Post-sale Support</h2>
@@ -313,7 +313,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-md">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-md.jpg" />
+  	    	        <img src="/images/carousel/pic1-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">A Revolutionary Solution On a Basis Of 3D Technology</h2>
@@ -321,7 +321,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-md.jpg" />
+  	    	        <img src="/images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
@@ -331,7 +331,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-md.jpg" />
+  	    	        <img src="/images/carousel/pic3-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Any Size of Facilities</h2>
@@ -339,7 +339,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-md.jpg" />
+  	    	        <img src="/images/carousel/pic4-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Post-sale Support</h2>
@@ -352,7 +352,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-sm">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-sm.jpg" />
+  	    	        <img src="/images/carousel/pic1-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">A Revolutionary Solution On a Basis Of 3D Technology</h2>
@@ -360,7 +360,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-sm.jpg" />
+  	    	        <img src="/images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
@@ -370,7 +370,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-sm.jpg" />
+  	    	        <img src="/images/carousel/pic3-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Any Size of Facilities</h2>
@@ -378,7 +378,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-sm.jpg" />
+  	    	        <img src="/images/carousel/pic4-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Post-sale Support</h2>
@@ -391,7 +391,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-xs">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-xs.jpg" />
+  	    	        <img src="/images/carousel/pic1-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">A Revolutionary Solution On a Basis Of 3D Technology</h2>
@@ -399,7 +399,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-xs.jpg" />
+  	    	        <img src="/images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Free 3D demo of your house</h2>
@@ -409,7 +409,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-xs.jpg" />
+  	    	        <img src="/images/carousel/pic3-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Any Size of Facilities</h2>
@@ -417,7 +417,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-xs.jpg" />
+  	    	        <img src="/images/carousel/pic4-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">Post-sale Support</h2>
@@ -437,19 +437,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Smart lighting system">
                     smart<br>lighting<br>system<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Temperature (HVAC) automation and control" >
                     temperature<br>(HVAC) automation<br>and control<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Security and monitoring systems">
                     security<br>and monitoring<br>systems<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
         </div>
@@ -458,15 +458,15 @@ $detect = new Mobile_Detect();
             managed through a single 3D interface on a smartphone or tablet. Safety, comfort and energy efficiency &mdash; this is what a Smart Home system provides to a customer.
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-color: #fff;">
-            <!--img src="../images/new_ipad.png" alt="" class="img-responsive"/-->
+            <!--img src="/images/new_ipad.png" alt="" class="img-responsive"/-->
             <video id="screendemo" loop="loop"
               >
-                <source src="../uploads/videos/sequence02.webm" type="video/webm">
-                <source src="../uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -516,12 +516,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span></p>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -541,12 +541,12 @@ $detect = new Mobile_Detect();
                 </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">Any Size<br/>of a House</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -565,12 +565,12 @@ $detect = new Mobile_Detect();
                     For control Smart Home we offer customers THRONE 3D Control interface that has no analogues in the world. It allows to monitor the status of the whole house and control various systems with one or more smartphones or tablets. You can operate each device of a smart home individually, or control room, a whole floor or even a whole building. And it is simple and clear, as never before, due to the use in THRONE system a 3D model of your home.                </p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Any Size<br/>of a House</span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive"  alt=""/><span id="note1">Really Intuitive<br/>Interface</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive"  alt=""/><span id="note2">Any Size<br/>of a House</span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive"  alt=""/><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
                 </div>
 
             </div>
@@ -583,20 +583,20 @@ $detect = new Mobile_Detect();
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/Z0WqmjWTfeY?autoplay=1" class="youtube">Watch video!</a><span id="watch_btn"></span>
                 <div id="notes" class="table">
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/interface_icon.png" class="img-responsive"  alt=""/></div>
+                        <div class="table_cell"><img src="/images/interface_icon.png" class="img-responsive"  alt=""/></div>
                         <div class="table_cell"><span id="note1">Really Intuitive<br/>Interface</span></div>
                     </div>
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/scale_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/scale_icon.png" class="img-responsive" alt=""/></div>
                         <div class="table_cell"><span id="note2">Any Size<br/>of a House</span></div>
                     </div>
                     <div class="table_row">
-                        <div class="table_cell"><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
                         <div class="table_cell"><span id="note3">Remote control from<br/>tablet or smartphone</span></div>
                     </div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
                 </div>
 
             </div>
@@ -617,7 +617,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -634,23 +634,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                            <img src="/images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                             <span>Centralized<br/>and zonal<br/>management</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                            <img src="/images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                             <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                            <img src="/images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                             <span>Custom<br/>scenes<br/>saving</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                            <img src="/images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
                             <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                            <img src="/images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
                             <span>Full or partial<br/>control</span>
                         </td>
                     </tr>
@@ -661,7 +661,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -678,23 +678,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                            <img src="/images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                             <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                            <img src="/images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                             <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                            <img src="/images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                             <span>Heating<br/>Central<br/>and local</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
                             <span>Heating floors<br/>Electric<br/>and aquatic</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
                             <span>Thermostats<br/>The full control<br/>of climate</span>
                         </td>
                     </tr>
@@ -705,7 +705,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
+                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
                         <td>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
@@ -721,23 +721,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                            <img src="/images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                             <span>Security<br/>and fire<br/>alarm</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                            <img src="/images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                             <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                            <img src="/images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                             <span>Protection from leakage<br/>and other<br/>emergency situations</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
                             <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                            <img src="/images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
                             <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                         </td>
                     </tr>
@@ -757,7 +757,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -774,23 +774,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                            <img src="/images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                             <span>Centralized<br/>and zonal<br/>management</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                            <img src="/images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                             <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                            <img src="/images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                             <span>Custom<br/>scenes<br/>saving</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                            <img src="/images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
                             <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                         </td>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                            <img src="/images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
                             <span>Full or partial<br/>control</span>
                         </td>
                     </tr>
@@ -801,7 +801,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -818,23 +818,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                            <img src="/images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                             <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                            <img src="/images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                             <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                            <img src="/images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                             <span>Heating<br/>Central<br/>and local</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
                             <span>Heating floors<br/>Electric<br/>and aquatic</span>
                         </td>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
                             <span>Thermostats<br/>The full control<br/>of climate</span>
                         </td>
                     </tr>
@@ -845,7 +845,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
+                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
                         <td>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
@@ -861,23 +861,23 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                            <img src="/images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                             <span>Security<br/>and fire<br/>alarm</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                            <img src="/images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                             <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                            <img src="/images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                             <span>Protection from leakage<br/>and other<br/>emergency situations</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
                             <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                            <img src="/images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
                             <span>Any number<br/>of IP video surveillance<br/>cameras</span>
                         </td>
                     </tr>
@@ -898,7 +898,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Lighting Control</h2>
-                            <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                            <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                                 leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -914,7 +914,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img  src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                            <img  src="/images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                         </td>
                         <td>
                             <span>Centralized<br/>and zonal<br/>management</span>
@@ -925,12 +925,12 @@ $detect = new Mobile_Detect();
                             <span>Smooth<br/>brightness<br/>adjustment</span>
                         </td>
                         <td>
-                            <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                            <img src="/images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                            <img src="/images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                         </td>
                         <td>
                             <span>Custom<br/>scenes<br/>saving</span>
@@ -941,12 +941,12 @@ $detect = new Mobile_Detect();
                             <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                         </td>
                         <td>
-                            <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                            <img src="/images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                            <img src="/images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
                         </td>
                         <td>
                             <span>Full or partial<br/>control</span>
@@ -961,7 +961,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Climate Сontrol (HVAC)</h2>
-                            <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                            <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                             </p>
@@ -977,7 +977,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                            <img src="/images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                         </td>
                         <td>
                             <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
@@ -988,12 +988,12 @@ $detect = new Mobile_Detect();
                             <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                         </td>
                         <td>
-                            <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                            <img src="/images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                            <img src="/images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                         </td>
                         <td>
                             <span>Heating<br/>Central<br/>and local</span>
@@ -1004,12 +1004,12 @@ $detect = new Mobile_Detect();
                             <<span>Heating floors<br/>Electric<br/>and aquatic</span>
                         </td>
                         <td>
-                            <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                            <img src="/images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                            <img src="/images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
                         </td>
                         <td>
                             <span>Thermostats<br/>The full control<br/>of climate</span>
@@ -1024,7 +1024,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Security System Control</h2>
-                            <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
+                            <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
                                 Event notifications are displayed with specification of the location where they occur on the 3D model.
@@ -1039,7 +1039,7 @@ $detect = new Mobile_Detect();
                 <table class="factoids">
                     <tr>
                         <td>
-                            <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                            <img src="/images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                         </td>
                         <td>
                             <span>Security<br/>and fire<br/>alarm</span>
@@ -1050,12 +1050,12 @@ $detect = new Mobile_Detect();
                             <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                         </td>
                         <td>
-                            <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                            <img src="/images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                            <img src="/images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                         </td>
                         <td>
                             <span>Protection from leakage<br/>and other<br/>emergency situations</span>
@@ -1066,12 +1066,12 @@ $detect = new Mobile_Detect();
                             <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                         </td>
                         <td>
-                            <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                            <img src="/images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                            <img src="/images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
                         </td>
                         <td>
                             <span>Any number<br/>of IP video surveillance<br/>cameras</span>
@@ -1095,7 +1095,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Lighting Control</h2>
-                        <img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                        <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
                         <p class="">
                             Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                             leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -1111,7 +1111,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
+                        <img src="/images/light_zone_management.png" alt="Centralized and zonal management" title="Centralized and zonal management"/>
                     </td>
                     <td>
                         <span>Centralized<br/>and zonal<br/>management</span>
@@ -1122,12 +1122,12 @@ $detect = new Mobile_Detect();
                         <span>Smooth<br/>brightness<br/>adjustment</span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
+                        <img src="/images/light_slide_control.png" alt="Smooth brightness adjustment" title="Smooth brightness adjustment"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
+                        <img src="/images/light_scene_saving.png" alt="Custom scenes saving" title="Custom scenes saving"/>
                     </td>
                     <td>
                         <span>Custom<br/>scenes<br/>saving</span>
@@ -1138,12 +1138,12 @@ $detect = new Mobile_Detect();
                         <span>Shading with curtains,<br/>shutters<br/>and blinds</span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
+                        <img src="/images/light_curtains.png" alt="Shading with curtains, shutters and blinds" title="Shading with curtains, shutters and blinds"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
+                        <img src="/images/light_part_management.png" alt="Full or partial control" title="Full or partial control"  />
                     </td>
                     <td>
                         <span>Full or partial<br/>control</span>
@@ -1157,7 +1157,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Climate Сontrol (HVAC)</h2>
-                        <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
                         <p class="">
                             Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                         </p>
@@ -1173,7 +1173,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
+                        <img src="/images/climate_condition.jpg" alt="Air Conditioning Centralized and zonal" title="Air Conditioning Centralized and zonal"/>
                     </td>
                     <td>
                         <span>Air Conditioning<br/>Centralized<br/>and zonal</span>
@@ -1184,12 +1184,12 @@ $detect = new Mobile_Detect();
                         <span>Ventilation<br/>Inlet<br/>and exhaust</span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
+                        <img src="/images/climate_ventil.jpg" alt="Ventilation Inlet and exhaust" title="Ventilation Inlet and exhaust"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
+                        <img src="/images/climate_heating.jpg" alt="Heating Central and local" title="Heating Central and local"/>
                     </td>
                     <td>
                         <span>Heating<br/>Central<br/>and local</span>
@@ -1200,12 +1200,12 @@ $detect = new Mobile_Detect();
                         <span>Heating floors<br/>Electric<br/>and aquatic</span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="Heating floors Electric and aquatic" title="Heating floors Electric and aquatic"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
+                        <img src="/images/climate_thermostate.jpg" alt="Thermostats The full control of climate" title="Thermostats The full control of climate"/>
                     </td>
                     <td>
                         <span>Thermostats<br/>The full control<br/>of climate</span>
@@ -1221,7 +1221,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Security System Control</h2>
-                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
+                        <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/>
                         <p>
                             THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
                             Event notifications are displayed with specification of the location where they occur on the 3D model.
@@ -1236,7 +1236,7 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
+                        <img src="/images/security_alarm.jpg" alt="Security and fire alarm" title="Security and fire alarm"/>
                     </td>
                     <td>
                         <span>Security<br/>and fire<br/>alarm</span>
@@ -1247,12 +1247,12 @@ $detect = new Mobile_Detect();
                         <span>Motion sensors,<br/>windows and doors<br/>opening sensors</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
+                        <img src="/images/security_sensors.jpg" alt="Motion sensors, windows and doors opening sensors" title="Motion sensors, windows and doors opening sensors"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
+                        <img src="/images/security_emergency.jpg" alt="Protection from leakage and other emergency situations" title="Protection from leakage and other emergency situations"/>
                     </td>
                     <td>
                         <span>Protection from leakage<br/>and other<br/>emergency situations</span>
@@ -1263,12 +1263,12 @@ $detect = new Mobile_Detect();
                         <span>Alert sending<br/>to security services<br/>and customer via SMS</span>
                     </td>
                     <td>
-                        <img src="../images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
+                        <img src="/images/security_notification.jpg" alt="Alert sending to security services and customer via SMS" title="Alert sending to security services and customer via SMS"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
+                        <img src="/images/security_video.jpg" alt="Any number of IP video surveillance cameras" title="Any number of IP video surveillance cameras"/>
                     </td>
                     <td>
                         <span>Any number<br/>of IP video surveillance<br/>cameras</span>
@@ -1291,7 +1291,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Open a gate or door without leaving your couch
                 </div>
-                <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                 <p>Opening of a door<br/>or gate</p>
             </div>
 
@@ -1299,7 +1299,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     All weather conditions on your tablet or smartphone
                 </div>
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <p>Weather<br/>Stations</p>
             </div>
 
@@ -1307,7 +1307,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Manage zonal lawn sprinklers
                 </div>
-                <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                 <p>Sprinkling<br/>systems</p>
             </div>
 
@@ -1315,7 +1315,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Control music in each room
                 </div>
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <p>Audio<br/>multiroom</p>
             </div>
 
@@ -1323,7 +1323,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     Setting the temperature in a pool or sauna
                 </div>
-                <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                 <p>Saunas<br/>and pools</p>
             </div>
         </div>
@@ -1333,7 +1333,7 @@ $detect = new Mobile_Detect();
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                     <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
                 </div>
             </div>
@@ -1346,14 +1346,14 @@ $detect = new Mobile_Detect();
                 All weather conditions on your tablet or smartphone
             </div>
             <div class="table_cell">
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <!--p>Погодные<br>станции</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                     <!--p>Поливочные<br>системы</p-->
                 </div>
             </div>
@@ -1366,14 +1366,14 @@ $detect = new Mobile_Detect();
                 Control music in each room
             </div>
             <div class="table_cell">
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <!--p>Медиа мультирум</p-->
             </div>
         </div>
         <div class="table_row">
             <div class="table_cell ">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                     <!--p>Сауны<br>и&nbsp;бассейны</p-->
                 </div>
             </div>
@@ -1392,13 +1392,13 @@ $detect = new Mobile_Detect();
                 <p>All sensors, switches, controllers and executive devices are certified and tested for safety, reliability and durability.</p>
             </div>
             <div class="table_cell" style="width: 35%;">
-                <img src="../images/equipment.jpg" class="img-responsive" />
+                <img src="/images/equipment.jpg" class="img-responsive" />
             </div>
         </div>
     </div>
 
     <div class="table visible-xs" id="equipment" >
-        <div><img src="../images/equipment.jpg" class="img-responsive" /></div>
+        <div><img src="/images/equipment.jpg" class="img-responsive" /></div>
         <p>As hardware part of the system we use the equipment of European standard KNX. The KNX Association today includes more than 400 manufacturers of equipment,
             each of which passes a rigorous certification. So our customers always get the offer, optimally balanced on such indicators as Price / Design / Reliability.</p>
         <p>All sensors, switches, controllers and executive devices are certified and tested for safety, reliability and durability.</p>
@@ -1612,7 +1612,7 @@ $detect = new Mobile_Detect();
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
-                        <img src="../images/phone_tube.png" alt="">
+                        <img src="/images/phone_tube.png" alt="">
                         <div>You will have no obligations.</div>
                         <div id="padlock">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -1693,39 +1693,39 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-<script src="../js/jquery-2.1.3.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="../js/imagesloaded.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/imagesloaded.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
-<script src="../js/jquery.mousewheel.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/vendor/modernizr-2.7.1.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/vendor/modernizr-2.7.1.min.js"></script>
 <?php if(!$detect->isMobile()): ?>
-    <script type="text/javascript" src="../js/skrollr.min.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
 <?php endif; ?>
-<script type="text/javascript" src="../js/retina.min.js"></script>
-<script type="text/javascript" src="../js/tabulous.js"></script>
+<script type="text/javascript" src="/js/retina.min.js"></script>
+<script type="text/javascript" src="/js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 <!--script type="text/javascript" src="js/jquery.liquid-slider.js"></script-->
-<script type="text/javascript" src="../js/bootstrap.youtubepopup.min.js"></script>
-<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.youtubepopup.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
 
-<script type="text/javascript" src="../js/flowplay/flowplayer.js"></script>
+<script type="text/javascript" src="/js/flowplay/flowplayer.js"></script>
 <!--script type="text/javascript" src="js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
-<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
-<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 <?php else: ?>
     <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.13.min.js"></script>
     <!--script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script-->
-    <script type="text/javascript" src="../js/main_mobile.js"></script>
+    <script type="text/javascript" src="/js/main_mobile.js"></script>
 <?php endif; ?>
 
 

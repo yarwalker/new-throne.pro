@@ -25,6 +25,8 @@ RewriteRule ^installation.html$ /ru/installation.html [R=301,L]
 RewriteRule ^developers.html$ /ru/developers.html [R=301,L]
 RewriteRule ^about.html$ /ru/about.html [R=301,L]
 
+RewriteRule ^ru/(.*)/(.*)$ /ru/$2 [QSA,L]
+
 RewriteRule ^catalog/(.*)$ catalog/$1 [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f

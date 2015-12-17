@@ -213,7 +213,7 @@
             console.log('win width: ' + winW);
             $('#slide-3').height( $animation_frame_height );
             $('.skrollr_el').remove();
-            $('#slide2-ipad img').attr('src', 'images/ipad_slide2_org.jpg');
+            $('#slide2-ipad img').attr('src', '/images/ipad_slide2_org.jpg');
 
             if( $('#slide-1 .bcg.visible-tablet').is(':visible') ) {
                 console.log('visible');
@@ -426,7 +426,7 @@
                 $('#slide-3').height($animation_frame_height);
                 $('.skrollr_el').remove();
 
-                $('#slide2-ipad img').attr('src', 'images/ipad_slide2.jpg');
+                $('#slide2-ipad img').attr('src', '/images/ipad_slide2.jpg');
 
                 // Init Skrollr
                 var s = skrollr.init();
@@ -1407,6 +1407,120 @@
         //    window.location = location.protocol + '//' + location.host + '/' + arr[arr.length-1];
         //}
     });
+
+    var cities = ['moscow', 'yaroslavl'];
+    var tmp_path = location.pathname,
+        arr = tmp_path.split('/'),
+        i = 0;
+
+    for( i = 1; i < arr.length; i++){
+        // проверим есть в пути какой-нибудь из городов
+        if( cities.indexOf(arr[i]) != -1 ){ console.info(arr[i]);
+            $('#logo').attr('href', '/' + arr[1] + '/' + arr[i] + '/');
+            $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
+            $('#cities .btn-group').siblings('span[id = city_' + arr[i] + ']').removeClass('hidden').addClass('visible');
+            $('#cities .btn-group .dropdown-menu li').each(function(){
+                if( $(this).data('city') == arr[i] ){
+                    $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
+                }
+            });
+        }
+    }
+
+    $('#cities .btn-group .dropdown-menu li').on('click', function(){
+        var path = location.pathname,
+            arr = path.split('/'),
+            url = '/';
+
+        for( i = 1; i < arr.length - 1; i++){
+            // проверим есть в пути какой-нибудь из городов
+            if( cities.indexOf(arr[i]) == -1 ){
+                url += arr[i] + '/';
+            }
+        }
+
+        // add city to our url
+        url += $(this).data('city') + '/';
+
+        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).val() + '/');
+
+        if( arr[arr.length-1] != '' ){
+            url += arr[arr.length-1];
+        }
+
+        history.pushState( '', '', url );
+
+        $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
+        $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
+        $('#cities .btn-group').siblings('span[id = city_' + $(this).data('city') + ']').removeClass('hidden').addClass('visible');
+        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).data('city') + '/');
+    });
+
+/*
+    for( i = 1; i < arr.length; i++){
+        // проверим есть в пути какой-нибудь из городов
+        if( cities.indexOf(arr[i]) != -1 ){ console.info(arr[i]);
+            $('#logo').attr('href', '/' + arr[1] + '/' + arr[i] + '/');
+            $('#city_select').parent().siblings('span.visible').removeClass('visible').addClass('hidden');
+            $('#city_select').parent().siblings('span[id = city_' + arr[i] + ']').removeClass('hidden').addClass('visible');
+            $('#city_select').val(arr[i]);
+        }
+    }
+
+    $('#city_select').on('change', function(){
+        $(this).parent().siblings('span.visible').removeClass('visible').addClass('hidden');
+        $(this).parent().siblings('span[id = city_' + $(this).val() + ']').removeClass('hidden').addClass('visible');
+
+        //$.address.value($(this).val());
+
+        var path = location.pathname,
+            arr = path.split('/'),
+            url = '/';
+
+        for( i = 1; i < arr.length - 1; i++){
+            // проверим есть в пути какой-нибудь из городов
+            if( cities.indexOf(arr[i]) == -1 ){
+                url += arr[i] + '/';
+            }
+        }
+
+        // add city to our url
+        url += $(this).val() + '/';
+
+        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).val() + '/');
+
+        if( arr[arr.length-1] != '' ){
+            url += arr[arr.length-1];
+        }
+
+        history.pushState( '', '', url );
+        $(this).next().removeClass('glyphicon-collapse-up').addClass('glyphicon-collapse-down');
+    });
+
+    $('#city_select').on('focus', function(){
+        $(this).next().removeClass('glyphicon-collapse-down').addClass('glyphicon-collapse-up');
+    });
+
+
+
+    $('#city_select').on('blur', function(){
+        $(this).next().removeClass('glyphicon-collapse-up').addClass('glyphicon-collapse-down');
+    });
+
+    $('#city_select + span').on('click', function(){
+        //$('#city_select').fireEvent('onmousedown');
+        open($(this).prev());
+        console.log('click');
+    });
+    function open(elem) {
+        if (document.createEvent) {
+            var e = document.createEvent("MouseEvents");
+            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            elem[0].dispatchEvent(e);
+        } else if (element.fireEvent) {
+            elem[0].fireEvent("onmousedown");
+        }
+    } */
 
 } )( jQuery );
 
