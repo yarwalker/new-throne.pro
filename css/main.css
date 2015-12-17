@@ -105,6 +105,90 @@ a.inner_anchor.security { color: #cf1834; }
 
 .capital { letter-spacing: 2px; }
 
+#cities {
+    background: #333;
+    width: 100%;
+    /*position: fixed;*/
+    top: 0;
+    color: #efefef;
+    /*z-index: 999;*/
+    padding: 10px 0;
+    font-size: 0.8em;
+    font-family: Circe;
+
+}
+#cities .container { width: auto; max-width: 1600px; margin: 0 auto; }
+.city_wrapper {
+    padding: 0 10px 0;
+    background-color: #333;
+    display: inline-block;
+    margin-right: 10px;
+}
+#cities .btn-group { margin-right: 40px; }
+#cities .btn-group > .btn { background-color: #333; color: #efefef !important; font-family: Circe; padding-left: 5px; }
+#cities .btn-group > .btn:hover { background-color: #333; color: #efefef; }
+#cities .btn-group .dropdown-menu { background-color: #333; color: #efefef; }
+#cities .btn-group .dropdown-menu li { padding: 3px 10px; cursor: pointer; }
+#cities .btn-group .dropdown-menu li:hover { color: red; }
+#cities .my_caret {
+    position: relative;
+    cursor: pointer;
+}
+#cities .my_caret:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 6px;
+    border-top: 7px solid #fefefe;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    -moz-border-top-colors: #fefefe;
+    -moz-border-left-colors: transparent;
+    -moz-border-right-colors: transparent;
+}
+#cities  .my_caret:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 7px;
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    -moz-border-top-colors: #333;
+    -moz-border-left-colors: transparent;
+    -moz-border-right-colors: transparent;
+}
+/*#cities .my_caret:hover:before {
+    border-top-color: #fefefe;
+}*/
+    /*#city_select {
+        padding: 0 10px;
+        margin-left: 5px;
+        margin-right: 0px;
+        font-family: Circe;
+        background-color: #333;
+        color: #efefef;
+        border: 0;
+        border-radius: 0;
+        line-height: 1;
+        cursor: pointer;
+
+        -webkit-appearance: none;
+
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+
+        -ms-appearance: none;
+        appearance: none!important;
+        outline: none;
+    }*/
+#city_select + span { cursor: pointer; }
+#cities span.visible { display: inline-block; }
+#cities span.hidden { display: none; }
+
+/*#head { margin-top: 50px; }*/
+
 div.frame {
     /*min-width: 980px;*/
     position: relative;
@@ -2319,7 +2403,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         height: 680px;
         opacity: 0;
-        z-index: 50
+        z-index: 50;
     background-image: url("../images/alarm_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -2350,7 +2434,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         height: 680px;
         opacity: 0;
-        z-index: 52
+        z-index: 52;
     background-image: url("../images/alarm_cameras@2x.png");
         background-size: contain;
         background-repeat: no-repeat;

@@ -16,12 +16,12 @@
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
 
     <title>О компании - Умный дом ТРОН</title>
-    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
     <!--link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" /-->
 
-    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
     <script>
         var isMobile = {
             Android: function() {
@@ -45,27 +45,27 @@
         };
     </script>
 
-    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <script>
         if(isMobile.any()){
-            $("head link[href = '../css/main.css']").attr('href', '../css/main_mobile.css');
+            $("head link[href = '/css/main.css']").attr('href', '/css/main_mobile.css');
         }
     </script>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -123,7 +123,24 @@
 </head>
 
 <body>
-    <img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
+<div id="cities">
+    <div class="container">
+        <img src="/images/geo-location.png" alt="">
+        <div class="btn-group">
+
+            <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Москва <span class="my_caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li data-city="moscow">Москва</li>
+                <li data-city="yaroslavl">Ярославль</li>
+            </ul>
+        </div>
+        <span id="city_moscow" class="visible">+7(495) 255-0-777 </span>
+        <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
+    </div>
+</div>
+    <img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 
     <div class="frame">
         <div id="head" class="visible-lg visible-md">
@@ -199,7 +216,7 @@
     </div>
 
     <div id="about-slide-1" class="frame visible-xs visible-sm">
-        <img src="../images/about_slide1_new_xs.jpg" class="img-responsive" alt=""/>
+        <img src="/images/about_slide1_new_xs.jpg" class="img-responsive" alt=""/>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
@@ -293,7 +310,7 @@
             <tbody>
             <tr>
                 <td>
-                    <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                    <img src="/images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
                 </td>
                 <td>
                     <blockquote class=" ">Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
@@ -385,7 +402,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                        <img src="/images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
                     </td>
                     <td>
                         <blockquote class=" ">Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
@@ -470,7 +487,7 @@
 
             <div class="row" id="citation">
                     <div class="col-xs-6">
-                        <img src="../images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
+                        <img src="/images/about_slide1.jpg" class="img-responsive col-xs-12" alt=""/>
                     </div>
                     <div class="col-xs-6">
                         <blockquote class=" ">Мы работаем, чтобы "умные&nbsp;системы" стали не&nbsp;баловством, не&nbsp;развлечением для
@@ -530,9 +547,9 @@
                 </div>
 
                 <div id="proj_control_wrap">
-                    <a id="proj_prev"><img src="../images/proj_prev.png" class=""></a>
+                    <a id="proj_prev"><img src="/images/proj_prev.png" class=""></a>
                     <span id="proj_counter" class="text_white">Проект 5 из 7</span>
-                    <a id="proj_next"><img src="../images/proj_next.png" class=""></a>
+                    <a id="proj_next"><img src="/images/proj_next.png" class=""></a>
                 </div>
             </div>
             <div id="gallery_wrapper">
@@ -549,11 +566,11 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/R6Qe0hfkXLQ">video</a>
 
                             </div>
@@ -574,18 +591,18 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/demo-hdl-1.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-2.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-3.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-4.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-5.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-6.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-7.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-8.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-9.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-10.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-11.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-12.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-1.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-2.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-3.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-4.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-5.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-6.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-7.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-8.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-9.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-10.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-11.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-12.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/180yORqENo8">video</a>
                             </div>
                         </div>
@@ -665,15 +682,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -752,15 +769,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/9-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/9-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -839,13 +856,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/10-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/10-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -924,15 +941,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/11-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/11-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1012,18 +1029,18 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1103,16 +1120,16 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1189,13 +1206,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1272,10 +1289,10 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/15-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1352,12 +1369,12 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light.jpg" class=" " alt="" data-caption="" >
                             </div>
                         </div>
                     </div>
@@ -1434,13 +1451,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
                             </div>
                         </div>
                     </div>
@@ -1496,9 +1513,9 @@
                 </div>
 
                 <div id="proj_control_wrap">
-                    <a id="proj_prev"><img src="../images/proj_prev.png" class=""></a>
+                    <a id="proj_prev"><img src="/images/proj_prev.png" class=""></a>
                     <span id="proj_counter" class="text_white">Проект 5 из 7</span>
-                    <a id="proj_next"><img src="../images/proj_next.png" class=""></a>
+                    <a id="proj_next"><img src="/images/proj_next.png" class=""></a>
                 </div>
             </div>
             <div id="gallery_wrapper">
@@ -1508,11 +1525,11 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
-                                <img src="../images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-3.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-4.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-5.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-6.jpg" class=" " alt="" >
+                                <img src="/images/projects/villa-novogorsk-7.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/R6Qe0hfkXLQ">video</a>
 
                             </div>
@@ -1535,18 +1552,18 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/demo-hdl-1.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-2.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-3.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-4.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-5.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-6.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-7.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-8.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-9.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-10.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-11.jpg" class=" " alt="" >
-                                <img src="../images/projects/demo-hdl-12.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-1.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-2.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-3.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-4.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-5.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-6.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-7.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-8.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-9.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-10.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-11.jpg" class=" " alt="" >
+                                <img src="/images/projects/demo-hdl-12.jpg" class=" " alt="" >
                                 <a href="http://www.youtube.com/embed/180yORqENo8">video</a>
                             </div>
                         </div>
@@ -1569,15 +1586,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/eights-plan.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-climatics.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-rgb-lighting.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-fire-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-fire-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-leak-sensor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/eights-security-sensor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1660,15 +1677,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/9-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/9-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/9-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1750,13 +1767,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/10-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-floor-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/10-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-cameras.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-floor-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/10-light-room.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1837,15 +1854,15 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/11-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/11-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-alarm-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/11-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -1927,18 +1944,18 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/12-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-blinds-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-leakage.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/12-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -2018,16 +2035,16 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-fire.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/13-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-alarm-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-cameras-monomode.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-dimmer.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-fire.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-light-room.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/13-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -2106,13 +2123,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/14-alarm.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-alarm-panel.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-light-floors.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-room-blinds.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/14-penetration.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -2192,10 +2209,10 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/15-climate.jpg" class=" " alt="" data-caption="">
-                                <img src="../images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-exterier1.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/15-exterier2.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-climate.jpg" class=" " alt="" data-caption="">
+                                <img src="/images/projects/15-light-floor.jpg" class=" " alt="" data-caption="">
                             </div>
                         </div>
                     </div>
@@ -2275,12 +2292,12 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true"
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/16-light.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-exterier.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-exterier2.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-cameras-monomode.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light-floors.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/16-light.jpg" class=" " alt="" data-caption="" >
                             </div>
                         </div>
                     </div>
@@ -2360,13 +2377,13 @@
                         <div class="table_cell">
                             <div class="fotorama" data-auto="false"  data-arrows="true" data-click="true" data-swipe="true" 
                                  data-ratio="885/550" data-width="100%">
-                                <img src="../images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
-                                <img src="../images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-alarm.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-climate.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-leakage.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-light-floor.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-light-room.jpg" class=" " alt="" data-caption="" >
+                                <img src="/images/projects/17-tambur.jpg" class=" " alt="" data-caption="" >
                             </div>
                         </div>
                     </div>
@@ -2657,7 +2674,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
-                            <img src="../images/phone_tube.png" alt="">
+                            <img src="/images/phone_tube.png" alt="">
                             <div>Смелее! Это вас ни к&nbsp;чему не обязывает.</div>
                             <div id="padlock">
                                 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -2695,39 +2712,39 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <script src="../js/jquery-ui.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
 
-    <script type="text/javascript" src="../js/imagesloaded.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/imagesloaded.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
-    <script src="../js/jquery.mousewheel.min.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/vendor/modernizr-2.7.1.min.js"></script>
-    <script type="text/javascript" src="../js/skrollr.min.js"></script>
-    <script type="text/javascript" src="../js/retina.js"></script>
-    <script type="text/javascript" src="../js/tabulous.js"></script>
+    <script src="/js/jquery.mousewheel.min.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
+    <script type="text/javascript" src="/js/retina.js"></script>
+    <script type="text/javascript" src="/js/tabulous.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <!--script type="text/javascript" src="js/jquery.liquid-slider.js"></script-->
-    <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.magnific-popup.js"></script>
 
     <!-- scrollbar -->
     <link type="text/css" href="css/jquery.scrollbar.css " rel="stylesheet" media="all" />
-    <script type="text/javascript" src="../js/jquery.scrollbar.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollbar.js"></script>
 
     <!-- fotorama.css & fotorama.js. -->
     <!--link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script-->
-    <link  href="../css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-    <script src="../js/fotorama.js"></script> <!-- 16 KB -->
-    <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+    <link  href="/css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="/js/fotorama.js"></script> <!-- 16 KB -->
+    <script type="text/javascript" src="/js/jquery.mask.min.js"></script>
 
     <script>
         if(isMobile.any()){
-            $("<script type='text/javascript' src='../js/main_mobile.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='/js/main_mobile.js'><\/script>").appendTo('body');
         } else {
-            $("<script type='text/javascript' src='../js/main.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='/js/main.js'><\/script>").appendTo('body');
         }
     </script>
 

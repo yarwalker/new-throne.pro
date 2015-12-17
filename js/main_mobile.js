@@ -234,7 +234,7 @@
 
             $('.skrollr_el').remove();
             $('.visible-lg #slide2-ipad img, .visible-md #slide2-ipad img,' +
-            '.visible-sm #slide2-ipad img, .visible-xs #slide2-ipad img').attr('src',  '../images/ipad_slide2_org.jpg');
+            '.visible-sm #slide2-ipad img, .visible-xs #slide2-ipad img').attr('src',  '/images/ipad_slide2_org.jpg');
 
         } else {
             // удаляем атрибуты элементов анимации
@@ -448,6 +448,7 @@
 
 
         }
+
 
     });
 
@@ -704,7 +705,7 @@
 
     $('.offer-send-btn').on('click', function(ev){
         var $lang = $('html').attr('lang'),
-            $url = '../send_email.php',
+            $url = '/send_email.php',
             $form = $('.callback_form1'),
             $fl = true; // флаг = true если заполнены все обязательные поля форма
 
@@ -772,7 +773,7 @@
        // console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
             $str = '',
-            $url = '../send_email.php';
+            $url = '/send_email.php';
 
         if( $($modalID + ' #inputPhone').val() == '' ) {
             if( location.href.search('/en') != -1 ) {
@@ -1407,6 +1408,89 @@
         //    window.location = location.protocol + '//' + location.host + '/' + arr[arr.length-1];
         //}
     });
+
+
+
+    var cities = ['moscow', 'yaroslavl'];
+    var tmp_path = location.pathname,
+        arr = tmp_path.split('/'),
+        i = 0;
+
+    for( i = 1; i < arr.length; i++){
+        // проверим есть в пути какой-нибудь из городов
+        if( cities.indexOf(arr[i]) != -1 ){ console.info(arr[i]);
+            $('#logo').attr('href', '/' + arr[1] + '/' + arr[i] + '/');
+            $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
+            $('#cities .btn-group').siblings('span[id = city_' + arr[i] + ']').removeClass('hidden').addClass('visible');
+            $('#cities .btn-group .dropdown-menu li').each(function(){
+                if( $(this).data('city') == arr[i] ){
+                    $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
+                }
+            });
+        }
+    }
+
+    $('#cities .btn-group .dropdown-menu li').on('click', function(){
+        var path = location.pathname,
+            arr = path.split('/'),
+            url = '/';
+
+        for( i = 1; i < arr.length - 1; i++){
+            // проверим есть в пути какой-нибудь из городов
+            if( cities.indexOf(arr[i]) == -1 ){
+                url += arr[i] + '/';
+            }
+        }
+
+        // add city to our url
+        url += $(this).data('city') + '/';
+
+        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).val() + '/');
+
+        if( arr[arr.length-1] != '' ){
+            url += arr[arr.length-1];
+        }
+
+        history.pushState( '', '', url );
+
+        $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
+        $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
+        $('#cities .btn-group').siblings('span[id = city_' + $(this).data('city') + ']').removeClass('hidden').addClass('visible');
+    });
+
+  /*  for( i = 1; i < arr.length; i++){
+        // проверим есть в пути какой-нибудь из городов
+        if( cities.indexOf(arr[i]) != -1 ){ console.info(arr[i]);
+            $('#logo').attr('href', '/' + arr[1] + '/' + arr[i] + '/');
+            $('#city_select').parent().siblings('span.visible').removeClass('visible').addClass('hidden');
+            $('#city_select').parent().siblings('span[id = city_' + arr[i] + ']').removeClass('hidden').addClass('visible');
+            $('#city_select').val(arr[i]);
+        }
+    }
+    $('#city_select').on('change', function(){
+        var path = location.pathname,
+            arr = path.split('/'),
+            url = '/';
+
+        $(this).parent().siblings('span.visible').removeClass('visible').addClass('hidden');
+        $(this).parent().siblings('span[id = city_' + $(this).val() + ']').removeClass('hidden').addClass('visible');
+
+        for( i = 1; i < arr.length - 1; i++){
+            // проверим есть в пути какой-нибудь из городов
+            if( cities.indexOf(arr[i]) == -1 ){
+                url += arr[i] + '/';
+            }
+        }
+
+        // add city to our url
+        url += $(this).val() + '/';
+
+        if( arr[arr.length-1] != '' ){
+            url += arr[arr.length-1];
+        }
+
+        history.pushState( '', '', url );
+    }); */
 
 } )( jQuery );
 

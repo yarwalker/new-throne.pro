@@ -617,7 +617,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -661,7 +661,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -705,7 +705,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
+                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
                         <td>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
@@ -757,7 +757,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  /></td>
+                        <td width="60%"><img src="../images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -801,7 +801,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -845,7 +845,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="Security System Control" title="Security System Control"/></td>
+                        <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
                         <td>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
