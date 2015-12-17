@@ -130,7 +130,7 @@ $detect = new Mobile_Detect();
 </head>
 
 <body class="loading">
-<div id="cities">
+<!--div id="cities">
     <div class="container">
         <img src="/images/geo-location.png" alt="">
         <div class="btn-group">
@@ -146,7 +146,7 @@ $detect = new Mobile_Detect();
         <span id="city_moscow" class="visible">+7(495) 255-0-777 </span>
         <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
     </div>
-</div>
+</div-->
 <img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
@@ -1801,9 +1801,6 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
 <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
-
-<!--script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
-<script type="text/javascript" src="/js/jquery.address-1.5.min.js"></script-->
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="/js/main.js"></script>

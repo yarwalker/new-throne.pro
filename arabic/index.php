@@ -1,7 +1,7 @@
 <?
 session_start();
 
-include '../Mobile_Detect.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/Mobile_Detect.php';
 $detect = new Mobile_Detect();
 
 //$_SESSION['DEVICE'] = 'desktop';
@@ -24,22 +24,22 @@ $detect = new Mobile_Detect();
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
     <title dir="rtl">"ترون" البيت الذكي</title>
-    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
-    <!--link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css"-->
-    <link href="../css/fixed-positioning.css" rel="stylesheet" type="text/css" />
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/tabulous.css" rel="stylesheet" type="text/css" />
-    <!--link href="../css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
+    <!--link href="/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"-->
+    <link href="/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/tabulous.css" rel="stylesheet" type="text/css" />
+    <!--link href="/css/liquid-slider.css" rel="stylesheet" type="text/css" /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate/css/3.0.0/animate.min.css">
 
-    <link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+    <link href="/css/colorbox.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
 
-    <link rel="stylesheet" href="../js/flowplay/skin/functional.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="/js/flowplay/skin/functional.css">
+    <link rel="stylesheet" href="/css/animate.css">
 
     <?php if ( !$detect->isMobile() ): ?>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -47,22 +47,22 @@ $detect = new Mobile_Detect();
         <link href="css/main_mobile.css" rel="stylesheet" type="text/css" />
     <?php endif; ?>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Facebook Pixel Code -->
     <script>
@@ -116,7 +116,7 @@ $detect = new Mobile_Detect();
 </head>
 
 <body class="loading">
-<img src="../images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
+<img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
     <div id="head" class=" hidden-xs">
@@ -189,7 +189,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
@@ -197,7 +197,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">نموذج عرض لمنزلكم على واجهة تحكم ثلاثية الأبعاد مجاناً</h2>
@@ -205,7 +205,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية !</h2>
@@ -213,7 +213,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">خدمة ما بعد البيع</h2>
@@ -228,19 +228,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="الحماية و المراقبة">
                     الحماية <br>و المراقبة<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title=" التشغيل الآلي لأنظمة الحرارة والتكيف" >
                       التشغيل الآلي لأنظمة <br>الحرارة والتكيف<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title=" التحكم بنظام الإنارة الذكية">
                     التحكم بنظام <br>الإنارة الذكية<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
         </div>
@@ -248,7 +248,7 @@ $detect = new Mobile_Detect();
             وكذلك التحكم بالإنترفون المنزلي وكاميرات المراقبة وكافة أجهزة السلامة والراحة وغيرها من الأنظمة التي تلعب دورا هاما في التوفير من استهلاك الطاقة وتساهم في رفع درجة الامان. تلك هي الميزات الأهم التي يقدمها نظام البيت الذكي لمستخدميه، و بواسطة «مشروع ترون» أصبحت جميع تلك الوظائف سهلة الادارة والتنفيذ حيث تم ترجمتها بطريقة حديثة من خلال واجهة موحده ثلاثية الأبعاد يتم تثبيتها على الهاتف النقال (السمارتفون) او أجهزة الحاسب الشخصية وأجهزة (التابلت).
         </p>
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -256,8 +256,8 @@ $detect = new Mobile_Detect();
 
             <video id="screendemo" loop="loop"
               >
-                <source src="../uploads/videos/sequence02.webm" type="video/webm">
-                <source src="../uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -269,7 +269,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-lg">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1.jpg" />
+  	    	        <img src="/images/carousel/pic1.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
@@ -277,7 +277,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2.jpg" />
+  	    	        <img src="/images/carousel/pic2.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">نموذج عرض لمنزلكم على واجهة تحكم ثلاثية الأبعاد مجاناً</h2>
@@ -285,7 +285,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3.jpg" />
+  	    	        <img src="/images/carousel/pic3.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية !</h2>
@@ -293,7 +293,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4.jpg" />
+  	    	        <img src="/images/carousel/pic4.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">خدمة ما بعد البيع</h2>
@@ -306,7 +306,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-md">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-md.jpg" />
+  	    	        <img src="/images/carousel/pic1-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
@@ -314,7 +314,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-md.jpg" />
+  	    	        <img src="/images/carousel/pic2-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">نموذج عرض لمنزلكم على واجهة تحكم ثلاثية الأبعاد مجاناً</h2>
@@ -322,7 +322,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-md.jpg" />
+  	    	        <img src="/images/carousel/pic3-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية !</h2>
@@ -330,7 +330,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-md.jpg" />
+  	    	        <img src="/images/carousel/pic4-md.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">خدمة ما بعد البيع</h2>
@@ -343,7 +343,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-sm">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-sm.jpg" />
+  	    	        <img src="/images/carousel/pic1-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
@@ -351,7 +351,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-sm.jpg" />
+  	    	        <img src="/images/carousel/pic2-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">نموذج عرض لمنزلكم على واجهة تحكم ثلاثية الأبعاد مجاناً</h2>
@@ -359,7 +359,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-sm.jpg" />
+  	    	        <img src="/images/carousel/pic3-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية !</h2>
@@ -367,7 +367,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-sm.jpg" />
+  	    	        <img src="/images/carousel/pic4-sm.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">خدمة ما بعد البيع</h2>
@@ -380,7 +380,7 @@ $detect = new Mobile_Detect();
         <div class="flexslider visible-xs">
             <ul class="slides">
                 <li>
-  	    	        <img src="../images/carousel/pic1-xs.jpg" />
+  	    	        <img src="/images/carousel/pic1-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">الحل الثوري على أُسس تقنية ثلاثية الأبعاد</h2>
@@ -388,7 +388,7 @@ $detect = new Mobile_Detect();
                     </div>
                 </li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic2-xs.jpg" />
+  	    	        <img src="/images/carousel/pic2-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">نموذج عرض لمنزلكم على واجهة تحكم ثلاثية الأبعاد مجاناً</h2>
@@ -396,7 +396,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic3-xs.jpg" />
+  	    	        <img src="/images/carousel/pic3-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">أياً كان حجم الأبنية !</h2>
@@ -404,7 +404,7 @@ $detect = new Mobile_Detect();
                     </div>
   	    		</li>
   	    		<li>
-  	    	        <img src="../images/carousel/pic4-xs.jpg" />
+  	    	        <img src="/images/carousel/pic4-xs.jpg" />
                     <div class="flex-caption">
                         <span class="overlay"></span>
                         <h2 data-animation="animated pulse">خدمة ما بعد البيع</h2>
@@ -420,19 +420,19 @@ $detect = new Mobile_Detect();
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="الحماية و المراقبة">
                     الحماية <br>و المراقبة<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title=" التشغيل الآلي لأنظمة الحرارة والتكيف" >
                     التشغيل الآلي لأنظمة <br>الحرارة والتكيف<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title=" التحكم بنظام الإنارة الذكية">
                     التحكم بنظام <br>الإنارة الذكية<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
         </div>
@@ -441,21 +441,21 @@ $detect = new Mobile_Detect();
             <div>
                 <a data-slide="4" href="#tabs-3" class="inner_anchor security" title="Управление системой безопасности">
                     системы<br>безопасности<br>и мониторинга<br>
-                    <img src="../images/security_alarm.jpg" alt=""/>
+                    <img src="/images/security_alarm.jpg" alt=""/>
                 </a>
             </div>
 
             <div>
                 <a href="#tabs-2" data-slide="4" class="inner_anchor climate" title="Управление климатом" >
                     управление<br>и автоматизация<br>климата<br>
-                    <img src="../images/climate_condition.jpg" alt=""/>
+                    <img src="/images/climate_condition.jpg" alt=""/>
                 </a>
             </div>
 
             <div>
                 <a href="#tabs-1" data-slide="4" class="inner_anchor light" title="Управление освещением">
                     система<br>"умного"<br>освещения<br>
-                    <img src="../images/light_slide_control.png" alt=""/>
+                    <img src="/images/light_slide_control.png" alt=""/>
                 </a>
             </div>
         </div-->
@@ -465,15 +465,15 @@ $detect = new Mobile_Detect();
         </p>
 
         <div id="interior_ipad" class="flowplayer no-volume no-mute functional is-splash"
-            style="background-image:url('../images/new_ipad222.jpg');
+            style="background-image:url('/images/new_ipad222.jpg');
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-color: #fff;">
 
             <video id="screendemo" loop="loop"
               >
-                <source src="../uploads/videos/sequence02.webm" type="video/webm">
-                <source src="../uploads/videos/sequence02.mp4" type="video/mp4">
+                <source src="/uploads/videos/sequence02.webm" type="video/webm">
+                <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -520,12 +520,12 @@ $detect = new Mobile_Detect();
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/dzgVzU1d8tU?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span></p>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -543,12 +543,12 @@ $detect = new Mobile_Detect();
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/dzgVzU1d8tU?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2.jpg" class="img-responsive" alt=""/>
                 </div>
                 <div id="fake_tabs" align="center" width="100%">
                     <ul  data-anchor-target="#slide-3" data-bottom-top="visibility: hidden">
@@ -566,12 +566,12 @@ $detect = new Mobile_Detect();
                 <p class="text-center" id="descr">لإدارة البيت الذكي نحن نقدم لعملائنا واجهة التحكم (انتيرفيس) "ترون" ثلاثية الأبعاد الفريدة من نوعها و التي لم ينتج مثيل لها حتى الآن في العالم ، بوساطتها سيمكنكم متابعة الحالة العامة للمنزل و إدارة الأنظمة المختلفة فيه من خلال الهاتف النقال الشخصي أو عن طريق عدد منها أو من أي جهاز حاسب شخصي. فابإمكانكم التحكم بكل من أجهزة البيت الذكي بشكل منفرد، أو بغرفة معينة أو بطابق كامل أو بالبيت بأكمله. وإن القيام بكل تلك العمليات، أصبح أمراً بسيطاً جداً وبدرجةٍ من السهولة بشكل لم نعهده من قبل وكل ذلك بفضل استخدام نظام "ترون" ثلاثي الأبعاد و المخصص لمنزلكم بالذات.</p>
                 <p class="text-center" id="watch_video"><a href="http://www.youtube.com/embed/dzgVzU1d8tU?autoplay=1" class="youtube">مشاهدة فيديو </a><span id="watch_btn"></span>
                 <div id="notes">
-                    <div><img src="../images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
-                    <div><img src="../images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
-                    <div><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
+                    <div><img src="/images/interface_icon.png" class="img-responsive" alt=""/><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
+                    <div><img src="/images/scale_icon.png" class="img-responsive" alt=""/><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
+                    <div><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/><span id="note3">التحكم عن بعد بواسطة الهاتف النقال<br>( السمارتفون ) او أجهزة ( التابلت )  </span></div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive" alt=""/>
                 </div>
 
             </div>
@@ -584,19 +584,19 @@ $detect = new Mobile_Detect();
                 <div id="notes" class="table">
                     <div class="table_row">
                         <div class="table_cell"><span id="note1">واجهة تحكم (إنتيرفيس) واضحة و سهلة</span></div>
-                        <div class="table_cell"><img src="../images/interface_icon.png" class="img-responsive"  alt=""/></div>
+                        <div class="table_cell"><img src="/images/interface_icon.png" class="img-responsive"  alt=""/></div>
                     </div>
                     <div class="table_row">
                         <div class="table_cell"><span id="note2">إدارة المنشآت مهما بلغت مساحتها </span></div>
-                        <div class="table_cell"><img src="../images/scale_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/scale_icon.png" class="img-responsive" alt=""/></div>
                     </div>
                     <div class="table_row">
                         <div class="table_cell"><span id="note3">التحكم عن بعد بواسطة الهاتف النقال السمارتفون او أجهزة التابلت</span></div>
-                        <div class="table_cell"><img src="../images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
+                        <div class="table_cell"><img src="/images/dist_manage_icon.png" class="img-responsive" alt=""/></div>
                     </div>
                 </div>
                 <div id="slide2-ipad">
-                    <img src="../images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
+                    <img src="/images/ipad_slide2_org.jpg" class="img-responsive"  alt=""/>
                 </div>
 
             </div>
@@ -618,7 +618,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>التحكم بالإنارة </h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img col-xs-12"  /></td>
+                    <td width="60%"><img src="/images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img col-xs-12"  /></td>
                     <td width="40%">
 
                         <p class="">
@@ -633,23 +633,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                        <img src="/images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
                         <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
+                        <img src="/images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
                         <span>تعديل تدرج السطوع</span>
                     </td>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                        <img src="/images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
                         <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
+                        <img src="/images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
                         <span>حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها </span>
                     </td>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <img src="/images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                         <span>تحكم كلي أو جزئي </span>
                     </td>
                 </tr>
@@ -660,7 +660,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>التحكم بالمناخ </h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="التحكم بالمناخ " title="التحكم بالمناخ "/></td>
+                    <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="التحكم بالمناخ " title="التحكم بالمناخ "/></td>
                     <td>
                         <p class="">
                             نظام التحكم بالمناخ (درجة الحرارة) داخل مقصورات قيادة السيارات، أصبح من الميزات العادية منذ زمن طويل، وهنا السؤال الذي يطرح نفسه : ماهو السبب الذي يمنعنا من التمتع بنفس تلك الميزة لكن في المنزل ؟</p>
@@ -675,23 +675,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <img src="/images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                         <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
+                        <img src="/images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
                         <span>تهوية معكوسة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <img src="/images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                         <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
                         <span>التدفئة الأرضية الكهربائية و بالأنابيب المائية</span>
                     </td>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
+                        <img src="/images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
                         <span>منظمات الحرارة</span>
                     </td>
                 </tr>
@@ -702,7 +702,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>إدارة انظمة الأمان</h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/></td>
+                    <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/></td>
                     <td>
                         <p>"البيت الذكي ترون" يتيح تشغيل او إيقاف نظام الأمان و الإنذارفوريا بكامل المبنى او بكل طابق بشكل مستقل او في أقسام معينة منه. التبليغ بحدوث طارئ ما يترافق مع تحديد المكان على النموذج الثلاثي الابعاد . </p>
                         <p>بواسطة " ترون" ، يمكنكم مشاهدة الفيديو من كاميرات المراقبة، تلقي الإنذارات حول نشوب حريق ما، تسرب غاز او مياه، أو بحدوث أي تسلل إلى داخل حرم المنزل .</p>
@@ -715,23 +715,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <img src="/images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                         <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
+                        <img src="/images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
                         <span>حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب</span>
                     </td>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <img src="/images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                         <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <img src="../images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
+                        <img src="/images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
                         <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية</span>
                     </td>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <img src="/images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                         <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                 </tr>
@@ -752,7 +752,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>التحكم بالإنارة </h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img  col-xs-12"  /></td>
+                    <td width="60%"><img src="/images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img  col-xs-12"  /></td>
                     <td width="40%">
                         <p class="">
                             على سيبل المثال : قد يكون في منزلكم العشرات من أجهزة الإضاءة، وللتأكد من أن جميعها دون استثناء قد تم إيقاف تشغيلها قبل الخلود إلى النوم أو مغادرة المنزل، سيتوجب عليكم المرور عَلى كل غرف البيت للتأكد من هذا الأمر . وهذه الطريقة التقليدية و إن كانت مضمونة، لكنها قديمة بعض الشيء بالنسبة لحداثة القرن 21 .</p>
@@ -766,23 +766,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                        <img src="/images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
                         <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
+                        <img src="/images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
                         <span>تعديل تدرج السطوع</span>
                     </td>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                        <img src="/images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
                         <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
+                        <img src="/images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
                         <span>حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها </span>
                     </td>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <img src="/images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                         <span>تحكم كلي أو جزئي </span>
                     </td>
                 </tr>
@@ -793,7 +793,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>التحكم بالمناخ </h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="التحكم بالمناخ " title="التحكم بالمناخ "/></td>
+                    <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="التحكم بالمناخ " title="التحكم بالمناخ "/></td>
                     <td>
                         <p class="">
                             نظام التحكم بالمناخ (درجة الحرارة) داخل مقصورات قيادة السيارات، أصبح من الميزات العادية منذ زمن طويل، وهنا السؤال الذي يطرح نفسه : ماهو السبب الذي يمنعنا من التمتع بنفس تلك الميزة لكن في المنزل ؟</p>
@@ -808,23 +808,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <img src="/images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                         <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
+                        <img src="/images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
                         <span>تهوية معكوسة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <img src="/images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                         <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
                         <span>التدفئة الأرضية الكهربائية و بالأنابيب المائية</span>
                     </td>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
+                        <img src="/images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
                         <span>منظمات الحرارة</span>
                     </td>
                 </tr>
@@ -835,7 +835,7 @@ $detect = new Mobile_Detect();
                 <tbody>
                 <tr><td colspan="2"><h2>إدارة انظمة الأمان</h2></td></tr>
                 <tr>
-                    <td width="60%"><img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/></td>
+                    <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/></td>
                     <td>
                         <p>"البيت الذكي ترون" يتيح تشغيل او إيقاف نظام الأمان و الإنذارفوريا بكامل المبنى او بكل طابق بشكل مستقل او في أقسام معينة منه. التبليغ بحدوث طارئ ما يترافق مع تحديد المكان على النموذج الثلاثي الابعاد . </p>
                         <p>بواسطة " ترون" ، يمكنكم مشاهدة الفيديو من كاميرات المراقبة، تلقي الإنذارات حول نشوب حريق ما، تسرب غاز او مياه، أو بحدوث أي تسلل إلى داخل حرم المنزل .</p>
@@ -848,23 +848,23 @@ $detect = new Mobile_Detect();
             <table class="factoids">
                 <tr>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <img src="/images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                         <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
+                        <img src="/images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
                         <span>حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب</span>
                     </td>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <img src="/images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                         <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <img src="../images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
+                        <img src="/images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
                         <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية</span>
                     </td>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <img src="/images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                         <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                 </tr>
@@ -885,7 +885,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>التحكم بالإنارة </h2>
-                        <img src="../images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img"  />
+                        <img src="/images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img"  />
                         <p class="">
                             على سيبل المثال : قد يكون في منزلكم العشرات من أجهزة الإضاءة، وللتأكد من أن جميعها دون استثناء قد تم إيقاف تشغيلها قبل الخلود إلى النوم أو مغادرة المنزل، سيتوجب عليكم المرور عَلى كل غرف البيت للتأكد من هذا الأمر . وهذه الطريقة التقليدية و إن كانت مضمونة، لكنها قديمة بعض الشيء بالنسبة لحداثة القرن 21 .</p>
                         <p>
@@ -901,7 +901,7 @@ $detect = new Mobile_Detect();
                         <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img  src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                        <img  src="/images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
                     </td>
 
                 </tr>
@@ -910,7 +910,7 @@ $detect = new Mobile_Detect();
                         <span>تعديل تدرج السطوع</span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
+                        <img src="/images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
                     </td>
                 </tr>
                 <tr>
@@ -918,7 +918,7 @@ $detect = new Mobile_Detect();
                         <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                        <img src="/images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
                     </td>
 
                 </tr>
@@ -927,7 +927,7 @@ $detect = new Mobile_Detect();
                         <span>حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها </span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
+                        <img src="/images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
                     </td>
                 </tr>
                 <tr>
@@ -935,7 +935,7 @@ $detect = new Mobile_Detect();
                         <span>تحكم كلي أو جزئي </span>
                     </td>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <img src="/images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                     </td>
                 </tr>
             </table>
@@ -947,7 +947,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>التحكم بالمناخ </h2>
-                        <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="التحكم بالمناخ " title="التحكم بالمناخ "/>
+                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="التحكم بالمناخ " title="التحكم بالمناخ "/>
                         <p class="">
                             نظام التحكم بالمناخ (درجة الحرارة) داخل مقصورات قيادة السيارات، أصبح من الميزات العادية منذ زمن طويل، وهنا السؤال الذي يطرح نفسه : ماهو السبب الذي يمنعنا من التمتع بنفس تلك الميزة لكن في المنزل ؟</p>
                         <p>بواسطة البيت الذكي "ترون" سيصبح بإمكانكم التحكم الكامل بكل أجهزة التكييف و التدفئة في المنزل في أي وقت او من أي مكان من داخل او من خارج المنزل. فقبل وصولكم الى البيت سيمكنكم تهيئة المناخ المناسب حسب طلبكم، فتكون البرودة باستقبالكم في أيام الصيف الحارة ، او يمكنكم تشغيل أنظمة تدفئة الأرضية مسبقا لرفع درجة حرارة المنزل بما يتناسب مع رغبتكم في ليالي الشتاء الباردة .</p>
@@ -964,7 +964,7 @@ $detect = new Mobile_Detect();
                         <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <img src="/images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -972,7 +972,7 @@ $detect = new Mobile_Detect();
                         <span>تهوية معكوسة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
+                        <img src="/images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
                     </td>
                 </tr>
                 <tr>
@@ -980,7 +980,7 @@ $detect = new Mobile_Detect();
                         <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <img src="/images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -988,7 +988,7 @@ $detect = new Mobile_Detect();
                         <span>التدفئة الأرضية الكهربائية و بالأنابيب المائية</span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
                     </td>
                 </tr>
                 <tr>
@@ -996,7 +996,7 @@ $detect = new Mobile_Detect();
                         <span>منظمات الحرارة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
+                        <img src="/images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
                     </td>
                 </tr>
             </table>
@@ -1008,7 +1008,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>إدارة انظمة الأمان</h2>
-                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/>
+                        <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/>
                         <p>"البيت الذكي ترون" يتيح تشغيل او إيقاف نظام الأمان و الإنذارفوريا بكامل المبنى او بكل طابق بشكل مستقل او في أقسام معينة منه. التبليغ بحدوث طارئ ما يترافق مع تحديد المكان على النموذج الثلاثي الابعاد . </p>
                         <p>بواسطة " ترون" ، يمكنكم مشاهدة الفيديو من كاميرات المراقبة، تلقي الإنذارات حول نشوب حريق ما، تسرب غاز او مياه، أو بحدوث أي تسلل إلى داخل حرم المنزل .</p>
                         <p>وبتوصيل جهاز الانترفون المنزلي لبرنامج ترون، يصبح ممكنا رؤية الزوار القادمين إليكم و فتح الأبوب الخارجية لهم مباشرة عن طريق هاتفكم النقال او جهاز الحاسب الخاص بكم .</p>
@@ -1023,7 +1023,7 @@ $detect = new Mobile_Detect();
                         <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <img src="/images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                     </td>
                 </tr>
                 <tr>
@@ -1031,7 +1031,7 @@ $detect = new Mobile_Detect();
                         <span>حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
+                        <img src="/images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
                     </td>
                 </tr>
                 <tr>
@@ -1039,7 +1039,7 @@ $detect = new Mobile_Detect();
                         <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <img src="/images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                     </td>
                 </tr>
                 <tr>
@@ -1047,7 +1047,7 @@ $detect = new Mobile_Detect();
                         <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية</span>
                     </td>
                     <td>
-                        <img src="../images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
+                        <img src="/images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
                     </td>
                 </tr>
                 <tr>
@@ -1055,7 +1055,7 @@ $detect = new Mobile_Detect();
                         <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <img src="/images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                     </td>
                 </tr>
             </table>
@@ -1076,7 +1076,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>التحكم بالإنارة </h2>
-                        <img src="../images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img"  />
+                        <img src="/images/light_manage.jpg" alt="التحكم بالإنارة " title="التحكم بالإنارة " class="img-responsive tab_main_img"  />
                         <p class="">
                             على سيبل المثال : قد يكون في منزلكم العشرات من أجهزة الإضاءة، وللتأكد من أن جميعها دون استثناء قد تم إيقاف تشغيلها قبل الخلود إلى النوم أو مغادرة المنزل، سيتوجب عليكم المرور عَلى كل غرف البيت للتأكد من هذا الأمر . وهذه الطريقة التقليدية و إن كانت مضمونة، لكنها قديمة بعض الشيء بالنسبة لحداثة القرن 21 .</p>
                         <p>
@@ -1092,7 +1092,7 @@ $detect = new Mobile_Detect();
                         <span>تحكم مركزي أو مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
+                        <img src="/images/light_zone_management.png" alt="تحكم مركزي أو مقسم لمناطق " title="تحكم مركزي أو مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1100,7 +1100,7 @@ $detect = new Mobile_Detect();
                         <span>تعديل تدرج السطوع</span>
                     </td>
                     <td>
-                        <img src="../images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
+                        <img src="/images/light_slide_control.png" alt="تعديل تدرج السطوع" title="تعديل تدرج السطوع"/>
                     </td>
                 </tr>
                 <tr>
@@ -1108,7 +1108,7 @@ $detect = new Mobile_Detect();
                         <span>حفظ نماذج (مشاهد) إضاءة معينة للمستخدم </span>
                     </td>
                     <td>
-                        <img src="../images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
+                        <img src="/images/light_scene_saving.png" alt="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم " title="حفظ نماذج (مشاهد) إضاءة معينة للمستخدم "/>
                     </td>
                 </tr>
                 <tr>
@@ -1116,7 +1116,7 @@ $detect = new Mobile_Detect();
                         <span>حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها </span>
                     </td>
                     <td>
-                        <img src="../images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
+                        <img src="/images/light_curtains.png" alt="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها " title="حجب النور الخارجي بواسطة إسدال الستائرعلى مختلف أنواعها "/>
                     </td>
                 </tr>
                 <tr>
@@ -1124,7 +1124,7 @@ $detect = new Mobile_Detect();
                         <span>تحكم كلي أو جزئي </span>
                     </td>
                     <td>
-                        <img src="../images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
+                        <img src="/images/light_part_management.png" alt="تحكم كلي أو جزئي " title="تحكم كلي أو جزئي "  />
                     </td>
                 </tr>
             </table>
@@ -1160,7 +1160,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>التحكم بالمناخ </h2>
-                        <img src="../images/climate_management.jpg" class="img-responsive tab_main_img" alt="التحكم بالمناخ " title="التحكم بالمناخ "/>
+                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="التحكم بالمناخ " title="التحكم بالمناخ "/>
                         <p class="">
                             نظام التحكم بالمناخ (درجة الحرارة) داخل مقصورات قيادة السيارات، أصبح من الميزات العادية منذ زمن طويل، وهنا السؤال الذي يطرح نفسه : ماهو السبب الذي يمنعنا من التمتع بنفس تلك الميزة لكن في المنزل ؟</p>
                         <p>بواسطة البيت الذكي "ترون" سيصبح بإمكانكم التحكم الكامل بكل أجهزة التكييف و التدفئة في المنزل في أي وقت او من أي مكان من داخل او من خارج المنزل. فقبل وصولكم الى البيت سيمكنكم تهيئة المناخ المناسب حسب طلبكم، فتكون البرودة باستقبالكم في أيام الصيف الحارة ، او يمكنكم تشغيل أنظمة تدفئة الأرضية مسبقا لرفع درجة حرارة المنزل بما يتناسب مع رغبتكم في ليالي الشتاء الباردة .</p>
@@ -1177,7 +1177,7 @@ $detect = new Mobile_Detect();
                         <span>تكييف مركزي او مقسم لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
+                        <img src="/images/climate_condition.jpg" alt="تكييف مركزي او مقسم لمناطق " title="تكييف مركزي او مقسم لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1185,7 +1185,7 @@ $detect = new Mobile_Detect();
                         <span>تهوية معكوسة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
+                        <img src="/images/climate_ventil.jpg" alt="تهوية معكوسة" title="تهوية معكوسة"/>
                     </td>
                 </tr>
                 <tr>
@@ -1193,7 +1193,7 @@ $detect = new Mobile_Detect();
                         <span>تدفئة مركزية او مقسمة لمناطق </span>
                     </td>
                     <td>
-                        <img src="../images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
+                        <img src="/images/climate_heating.jpg" alt="تدفئة مركزية او مقسمة لمناطق " title="تدفئة مركزية او مقسمة لمناطق "/>
                     </td>
                 </tr>
                 <tr>
@@ -1201,7 +1201,7 @@ $detect = new Mobile_Detect();
                         <span>التدفئة الأرضية الكهربائية و بالأنابيب المائية</span>
                     </td>
                     <td>
-                        <img src="../images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
+                        <img src="/images/climate_warm_floor.jpg" alt="التدفئة الأرضية الكهربائية و بالأنابيب المائية" title="التدفئة الأرضية الكهربائية و بالأنابيب المائية"/>
                     </td>
                 </tr>
                 <tr>
@@ -1209,7 +1209,7 @@ $detect = new Mobile_Detect();
                         <span>منظمات الحرارة</span>
                     </td>
                     <td>
-                        <img src="../images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
+                        <img src="/images/climate_thermostate.jpg" alt="منظمات الحرارة" title="منظمات الحرارة"/>
                     </td>
                 </tr>
             </table>
@@ -1220,7 +1220,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>إدارة انظمة الأمان</h2>
-                        <img src="../images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/>
+                        <img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img" alt="إدارة انظمة الأمان" title="إدارة انظمة الأمان"/>
                         <p>"البيت الذكي ترون" يتيح تشغيل او إيقاف نظام الأمان و الإنذارفوريا بكامل المبنى او بكل طابق بشكل مستقل او في أقسام معينة منه. التبليغ بحدوث طارئ ما يترافق مع تحديد المكان على النموذج الثلاثي الابعاد . </p>
                         <p>بواسطة " ترون" ، يمكنكم مشاهدة الفيديو من كاميرات المراقبة، تلقي الإنذارات حول نشوب حريق ما، تسرب غاز او مياه، أو بحدوث أي تسلل إلى داخل حرم المنزل .</p>
                         <p>وبتوصيل جهاز الانترفون المنزلي لبرنامج ترون، يصبح ممكنا رؤية الزوار القادمين إليكم و فتح الأبوب الخارجية لهم مباشرة عن طريق هاتفكم النقال او جهاز الحاسب الخاص بكم .</p>
@@ -1235,7 +1235,7 @@ $detect = new Mobile_Detect();
                         <span>أجهزة الانذار من الحرائق و إنذار الأمان</span>
                     </td>
                     <td>
-                        <img src="../images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
+                        <img src="/images/security_alarm.jpg" alt="أجهزة الانذار من الحرائق و إنذار الأمان" title="أجهزة الانذار من الحرائق و إنذار الأمان"/>
                     </td>
                 </tr>
                 <tr>
@@ -1243,7 +1243,7 @@ $detect = new Mobile_Detect();
                         <span>حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب</span>
                     </td>
                     <td>
-                        <img src="../images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
+                        <img src="/images/security_sensors.jpg" alt="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب" title="حسسات الحركة، ومستشعرات فتح النوافذ و الأبواب"/>
                     </td>
                 </tr>
                 <tr>
@@ -1251,14 +1251,14 @@ $detect = new Mobile_Detect();
                         <span>حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة</span>
                     </td>
                     <td>
-                        <img src="../images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
+                        <img src="/images/security_emergency.jpg" alt="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة" title="حماية تامة من كافة أنواع التسريب و غيرها من الحالات الطارئة"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <span>تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية
                     <td>
-                        <img src="../images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
+                        <img src="/images/security_notification.jpg" alt="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية" title="تبليغ برسائل قصيرة و إنذار المراكز المسؤولة عن الحماية"/>
                     </td>
                 </tr>
                 <tr>
@@ -1266,7 +1266,7 @@ $detect = new Mobile_Detect();
                         <span>عدد غير محدود من كاميرات المراقبة </span>
                     </td>
                     <td>
-                        <img src="../images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
+                        <img src="/images/security_video.jpg" alt="عدد غير محدود من كاميرات المراقبة " title="عدد غير محدود من كاميرات المراقبة "/>
                     </td>
                 </tr>
             </table>
@@ -1284,7 +1284,7 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     فتح البوابة من دون مغادرة مكان جلوسكم
                 </div>
-                <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                 <p>فتح الأبواب او بوابة<br> السور الخارجية </p>
 
             </div>
@@ -1292,28 +1292,28 @@ $detect = new Mobile_Detect();
                 <div class="integr_description">
                     كل أحوال الطقس يمكن رؤيتها من على شاشة الجوال او الحاسب الشخصي
                 </div>
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <p>محطات<br> الطقس</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     <p>إدارة أنظمة الري وفقا لمناطق متعددة </p>
                 </div>
-                <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                 <p>أنظمة الري و<br> سقاية الحدائق</p>
             </div>
             <div class="table_cell">
                 <div class="integr_description">
                     التحكم بالموسيقا الخاصة بكل غرفة
                 </div>
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <p>إدارة الأنظمة الصوتية<br> في كل غرفة</p>
             </div>
             <div class="table_cell ">
                 <div class="integr_description">
                     ضبط درجات حرارة المياه في المسبح و حمامات البخار
                 </div>
-                <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                 <p>المسابح و<br> حمامات البخار</p>
             </div>
         </div>
@@ -1326,7 +1326,7 @@ $detect = new Mobile_Detect();
             </div>
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_open_gates.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_open_gates.png" class="img-responsive" alt=""/>
                     <!--p>Открытие дверей<br>или&nbsp;ворот</p-->
                 </div>
             </div>
@@ -1337,7 +1337,7 @@ $detect = new Mobile_Detect();
                 كل أحوال الطقس يمكن رؤيتها من على شاشة الجوال او الحاسب الشخصي
             </div>
             <div class="table_cell">
-                <img src="../images/integr_weather_stations.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_weather_stations.png" class="img-responsive" alt=""/>
                 <!--p>Погодные<br>станции</p-->
             </div>
         </div>
@@ -1348,7 +1348,7 @@ $detect = new Mobile_Detect();
             </div>
             <div class="table_cell">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_watering_systems.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_watering_systems.png" class="img-responsive" alt=""/>
                     <!--p>Поливочные<br>системы</p-->
                 </div>
             </div>
@@ -1359,7 +1359,7 @@ $detect = new Mobile_Detect();
                 التحكم بالموسيقا الخاصة بكل غرفة
             </div>
             <div class="table_cell">
-                <img src="../images/integr_mediaroom.png" class="img-responsive" alt=""/>
+                <img src="/images/integr_mediaroom.png" class="img-responsive" alt=""/>
                 <!--p>Медиа мультирум</p-->
             </div>
         </div>
@@ -1370,7 +1370,7 @@ $detect = new Mobile_Detect();
             </div>
             <div class="table_cell ">
                 <div class="integr_block_wrap">
-                    <img src="../images/integr_pool.png" class="img-responsive" alt=""/>
+                    <img src="/images/integr_pool.png" class="img-responsive" alt=""/>
                     <!--p>Сауны<br>и&nbsp;бассейны</p-->
                 </div>
             </div>
@@ -1389,13 +1389,13 @@ $detect = new Mobile_Detect();
                 <p>جميع أجهزة الاستشعار و الحسساسات و مفاتيح الاغلاق و كل المعدات المنفذة لوظائف النظام، تم إخضاعها لاختبارات المتانة و السلامة و الديمومة و التحمل.</p>
             </div>
             <div class="table_cell" style="width: 35%;">
-                <img src="../images/equipment.jpg" class="img-responsive" />
+                <img src="/images/equipment.jpg" class="img-responsive" />
             </div>
         </div>
     </div>
 
     <div class="table visible-xs" id="equipment" >
-        <div><img src="../images/equipment.jpg" class="img-responsive" /></div>
+        <div><img src="/images/equipment.jpg" class="img-responsive" /></div>
         <p>كأجزاء مكونة لنظام "ترون" ، نحن نتستخدم المعدات المطابقة للمواصفة الاوروبية
             KNX
             تضم منظمة ال
@@ -1613,7 +1613,7 @@ $detect = new Mobile_Detect();
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
-                        <img src="../images/phone_tube.png" alt="">
+                        <img src="/images/phone_tube.png" alt="">
                         <div>الاستشارات المقدمة من قبل شركتنا لا تُرتب عليكم أي إلتزام مادي</div>
                         <div id="padlock">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
@@ -1694,46 +1694,46 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-<script src="../js/jquery-2.1.3.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="../js/imagesloaded.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/imagesloaded.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
-<script src="../js/jquery.mousewheel.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/vendor/modernizr-2.7.1.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/vendor/modernizr-2.7.1.min.js"></script>
 <?php if(!$detect->isMobile()): ?>
-    <script type="text/javascript" src="../js/skrollr.min.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
 <?php endif; ?>
-<script type="text/javascript" src="../js/retina.min.js"></script>
-<script type="text/javascript" src="../js/tabulous.js"></script>
+<script type="text/javascript" src="/js/retina.min.js"></script>
+<script type="text/javascript" src="/js/tabulous.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-<!--script type="text/javascript" src="../js/jquery.liquid-slider.js"></script-->
-<script type="text/javascript" src="../js/bootstrap.youtubepopup.min.js"></script>
-<script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+<!--script type="text/javascript" src="/js/jquery.liquid-slider.js"></script-->
+<script type="text/javascript" src="/js/bootstrap.youtubepopup.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
 
-<script type="text/javascript" src="../js/flowplay/flowplayer.js"></script>
-<!--script type="text/javascript" src="../js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
+<script type="text/javascript" src="/js/flowplay/flowplayer.js"></script>
+<!--script type="text/javascript" src="/js/flowplay/flowplayer.ipad-3.2.13.min.js"></script-->
 
-<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
-<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="js/main.js"></script>
 <?php else: ?>
-    <script type="text/javascript" src="http://releases.flowplayer.org/../js/flowplayer.ipad-3.2.13.min.js"></script>
-    <!--script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script-->
+    <script type="text/javascript" src="http://releases.flowplayer.org//js/flowplayer.ipad-3.2.13.min.js"></script>
+    <!--script type="text/javascript" src="/js/jquery.mobile-1.4.5.min.js"></script-->
     <script type="text/javascript" src="js/main_mobile.js"></script>
 <?php endif; ?>
 
 
-<!--script src="../js/jquery-2.1.3.min.js"></script-->
-<!--script src="../js/jquery-ui.js"></script-->
+<!--script src="/js/jquery-2.1.3.min.js"></script-->
+<!--script src="/js/jquery-ui.js"></script-->
 
-<!--script type="text/javascript" src="../js/enquire.min.js"></script-->
+<!--script type="text/javascript" src="/js/enquire.min.js"></script-->
 
 
 <!-- smooth scrolling -->
