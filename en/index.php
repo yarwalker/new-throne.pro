@@ -113,6 +113,7 @@ $detect = new Mobile_Detect();
     </script>
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029738348169&amp;cd[value]=0.00&amp;cd[currency]=RUB&amp;noscript=1" /></noscript>
 
+    <meta name="google-site-verification" content="CiMZRvE_Po9AR5n-FG4HtIYCSXeNkkCiP72C028BNy8" />
 
 </head>
 
