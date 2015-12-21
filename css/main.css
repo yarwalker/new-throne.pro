@@ -128,8 +128,9 @@ a.inner_anchor.security { color: #cf1834; }
 #cities .btn-group > .btn:hover .my_caret:before { border-top-color: #be0005; -moz-border-top-colors: #be0005; }
 
 #cities .btn-group .dropdown-menu { background-color: #333; color: #efefef; }
-#cities .btn-group .dropdown-menu li { padding: 3px 10px; cursor: pointer; }
-#cities .btn-group .dropdown-menu li:hover { color: #be0005; }
+#cities .btn-group .dropdown-menu li { padding: 3px 10px; }
+#cities .btn-group .dropdown-menu li a { color: #efefef; text-decoration: none; border: none; background-color: transparent; }
+#cities .btn-group .dropdown-menu li a:hover { color: #be0005; }
 #cities .my_caret {
     position: relative;
     cursor: pointer;

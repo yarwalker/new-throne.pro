@@ -120,7 +120,7 @@ $detect = new Mobile_Detect();
 <div id="cities">
     <div class="container">
         <div class="row">
-            <div class="city_wrapper col-lg-8 col-md-7 col-sm-6 col-xs-12">
+            <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
                 <img src="/images/geo-location.png" alt="">
                 <div class="btn-group">
 
@@ -128,14 +128,14 @@ $detect = new Mobile_Detect();
                         Москва <span class="my_caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li data-city="moscow">Москва</li>
-                        <li data-city="yaroslavl">Ярославль</li>
+                        <li data-city="moscow"><a href="/ru/moscow">Москва</a></li>
+                        <li data-city="yaroslavl"><a href="/ru/yaroslavl">Ярославль</a></li>
                     </ul>
                 </div>
-                <span id="city_moscow" class="visible">+7(495) 2550777 </span>
+                <span id="city_moscow" class="visible">+7(495) 255-0777 </span>
                 <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
             </div>
-            <div class="callback_wrapper col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="callback_wrapper col-lg-4 col-md-5 col-sm-7 col-xs-12">
                 <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
                 <span class="callback_button" data-toggle="modal" data-target="#myModal"
                       onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать звонок</span>

@@ -9,7 +9,7 @@ if(is_file($file)):
     require($file);
     $SxGeo = new SxGeo('SxGeoCity.dat', SXGEO_BATCH | SXGEO_MEMORY);
 
-    $arr = $SxGeo->getCity('95.175.232.2'); //$_SERVER['REMOTE_ADDR']);
+    $arr = $SxGeo->getCity($_SERVER['REMOTE_ADDR']); //$_SERVER['REMOTE_ADDR']); // '95.175.232.2'
     if( in_array( strtolower($arr['city']['name_en']) , $cities) ):
         $city = strtolower($arr['city']['name_en']);
     endif;
