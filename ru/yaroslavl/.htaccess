@@ -1,0 +1,24 @@
+DirectoryIndex index.php
+Options All -ExecCGI -Indexes -Includes +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    #RewriteBase /ru/
+
+
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_URI} !(.*)/$
+    #RewriteRule (.*) / [QSA,L]
+
+    #RewriteRule ^$ /redirect.php [R,L]
+
+    #RewriteRule ^(.*)/$ /ru/ [L]
+    #RewriteRule ^(.*)/(.*)$ /ru/$2 [QSA,L]
+    #RewriteRule ^$ /redirect.php [R,L]
+
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)$ /4041.html [QSA,L]
+</IfModule>
+

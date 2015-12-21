@@ -1,12 +1,21 @@
 <?php
 $file = "SxGeo.php";
+$cities = array('moscow', 'yaroslavl');
+$city = '';
+$country = '';
 
 // определение страны для перенаправления на нужный интерфейс
 if(is_file($file)):
     require($file);
-    $SxGeo = new SxGeo('SxGeo.dat', SXGEO_BATCH | SXGEO_MEMORY);
+    $SxGeo = new SxGeo('SxGeoCity.dat', SXGEO_BATCH | SXGEO_MEMORY);
 
-    switch( $SxGeo->getCountry($_SERVER['REMOTE_ADDR']) ):
+    $arr = $SxGeo->getCity($_SERVER['REMOTE_ADDR']); //$_SERVER['REMOTE_ADDR']); // '95.175.232.2'
+    if( in_array( strtolower($arr['city']['name_en']) , $cities) ):
+        $city = strtolower($arr['city']['name_en']);
+    endif;
+    $country = $arr['country']['iso'];
+
+    switch( $country ):
         case 'RU':
         case 'UA':
         case 'BY':
@@ -53,7 +62,7 @@ if(is_file($file)):
 
     endswitch;
 
-    header('Location: http://' . $_SERVER['SERVER_NAME'] . '/' . $country );
+    header('Location: http://' . $_SERVER['SERVER_NAME'] . '/' . $country . ( $city != '' ? '/' . $city . '/' : '/' ) );
     exit();
 else:
     echo $file . ' no such file';

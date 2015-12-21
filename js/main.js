@@ -812,7 +812,7 @@
 
     $('.offer-send-btn').on('click', function(ev){
         var $lang = $('html').attr('lang'),
-            $url = '../send_email.php',
+            $url = '/send_email.php',
             $form = $('.callback_form1'),
             $fl = true; // флаг = true если заполнены все обязательные поля форма
 
@@ -878,7 +878,7 @@
         //console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
             $str = '',
-            $url = '../send_email.php';
+            $url = '/send_email.php';
 
         //console.log(location.href.search('/en'));
 
@@ -1427,11 +1427,16 @@
         }
     }
 
-    $('#cities .btn-group .dropdown-menu li').on('click', function(){
+    $('#cities .btn-group .dropdown-menu li a').on('click', function(ev){
         var path = location.pathname,
             arr = path.split('/'),
             url = '/';
 
+        ev.preventDefault();
+        console.log(arr);
+        console.log($(this).parent().data('city'));
+        location.href = '/' + arr[1] + '/' + $(this).parent().data('city') + '/' + arr[arr.length-1];
+        /*
         for( i = 1; i < arr.length - 1; i++){
             // проверим есть в пути какой-нибудь из городов
             if( cities.indexOf(arr[i]) == -1 ){
@@ -1453,7 +1458,7 @@
         $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
         $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
         $('#cities .btn-group').siblings('span[id = city_' + $(this).data('city') + ']').removeClass('hidden').addClass('visible');
-        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).data('city') + '/');
+        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).data('city') + '/'); */
     });
 
 /*

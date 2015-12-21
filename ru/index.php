@@ -117,23 +117,32 @@ $detect = new Mobile_Detect();
 </head>
 
 <body class="loading">
-<!--div id="cities">
+<div id="cities">
     <div class="container">
-        <img src="/images/geo-location.png" alt="">
-        <div class="btn-group">
+        <div class="row">
+            <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
+                <img src="/images/geo-location.png" alt="">
+                <div class="btn-group">
 
-            <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Москва <span class="my_caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li data-city="moscow">Москва</li>
-                <li data-city="yaroslavl">Ярославль</li>
-            </ul>
+                    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Москва <span class="my_caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li data-city="moscow"><a href="/ru/moscow">Москва</a></li>
+                        <li data-city="yaroslavl"><a href="/ru/yaroslavl">Ярославль</a></li>
+                    </ul>
+                </div>
+                <span id="city_moscow" class="visible">+7(495) 255-0777 </span>
+                <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
+            </div>
+            <div class="callback_wrapper col-lg-4 col-md-5 col-sm-7 col-xs-12">
+                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
+                <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать звонок</span>
+            </div>
         </div>
-        <span id="city_moscow" class="visible">+7(495) 255-0-777 </span>
-        <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
     </div>
-</div-->
+</div>
 <img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
@@ -148,11 +157,11 @@ $detect = new Mobile_Detect();
 
         <a id="logo" href="/ru" >THRONE Project</a>
 
-        <div class="callback visible-lg">
+        <!--div class="callback visible-lg">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
-        </div>
+        </div-->
 
         <ul id="top_menu_ext">
             <li><a href="installation.html" title="Как мы работаем">Как мы работаем</a></li>

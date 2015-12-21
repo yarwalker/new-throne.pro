@@ -1430,32 +1430,38 @@
         }
     }
 
-    $('#cities .btn-group .dropdown-menu li').on('click', function(){
+    $('#cities .btn-group .dropdown-menu li a').on('click', function(ev){
         var path = location.pathname,
             arr = path.split('/'),
             url = '/';
 
-        for( i = 1; i < arr.length - 1; i++){
-            // проверим есть в пути какой-нибудь из городов
-            if( cities.indexOf(arr[i]) == -1 ){
-                url += arr[i] + '/';
-            }
-        }
+        ev.preventDefault();
+        console.log(arr);
+        console.log($(this).parent().data('city'));
+        location.href = '/' + arr[1] + '/' + $(this).parent().data('city') + '/' + arr[arr.length-1];
+        /*
+         for( i = 1; i < arr.length - 1; i++){
+         // проверим есть в пути какой-нибудь из городов
+         if( cities.indexOf(arr[i]) == -1 ){
+         url += arr[i] + '/';
+         }
+         }
 
-        // add city to our url
-        url += $(this).data('city') + '/';
+         // add city to our url
+         url += $(this).data('city') + '/';
 
-        $('#logo').attr('href', '/' + arr[1] + '/' + $(this).val() + '/');
+         $('#logo').attr('href', '/' + arr[1] + '/' + $(this).val() + '/');
 
-        if( arr[arr.length-1] != '' ){
-            url += arr[arr.length-1];
-        }
+         if( arr[arr.length-1] != '' ){
+         url += arr[arr.length-1];
+         }
 
-        history.pushState( '', '', url );
+         history.pushState( '', '', url );
 
-        $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
-        $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
-        $('#cities .btn-group').siblings('span[id = city_' + $(this).data('city') + ']').removeClass('hidden').addClass('visible');
+         $('#cities .btn-group button').html( $(this).text() + ' <span class="my_caret"></span>' );
+         $('#cities .btn-group').siblings('span.visible').removeClass('visible').addClass('hidden');
+         $('#cities .btn-group').siblings('span[id = city_' + $(this).data('city') + ']').removeClass('hidden').addClass('visible');
+         $('#logo').attr('href', '/' + arr[1] + '/' + $(this).data('city') + '/'); */
     });
 
   /*  for( i = 1; i < arr.length; i++){
