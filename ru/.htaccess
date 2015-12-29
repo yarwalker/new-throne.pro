@@ -4,11 +4,11 @@ Options All -ExecCGI -Indexes -Includes +FollowSymLinks
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteBase /ru/
+   # RewriteBase /ru/
 
-    RewriteCond %{REQUEST_URI} ^/ru$ [OR]
-    RewriteCond %{REQUEST_URI} ^/ru/$
-    RewriteRule (.*) /redirect.php [R,L]
+    #RewriteCond %{REQUEST_URI} ^/ru$ [OR]
+    #RewriteCond %{REQUEST_URI} ^/ru/(.*)$
+    #RewriteRule (.*) /redirect.php?uri=$1 [R,L]
 
         #RewriteRule ^$ /redirect.php [R,L]
 

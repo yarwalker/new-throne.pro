@@ -94,6 +94,91 @@ a.inner_anchor.security { color: #cf1834; }
 
 .capital { letter-spacing: 2px; }
 
+#cities {
+    background: #333;
+    width: 100%;
+    /*position: fixed;*/
+    top: 0;
+    color: #efefef;
+    /*z-index: 999;*/
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+#cities .container { width: auto; max-width: 1600px; margin: 0 auto; }
+.city_wrapper {
+    padding-top: 4px;
+    text-align: right;
+}
+#cities .callback_wrapper { text-align: left; }
+#cities .btn-group { margin-right: 20px; margin-left: 20px; }
+#cities .btn-group > .btn { background-color: #333; color: #efefef !important; font-family: Circe; padding-left: 5px; }
+#cities .btn-group > .btn:hover { background-color: #333; color: #be0005 !important; }
+#cities .btn-group > .btn:hover .my_caret:before { border-top-color: #be0005; -moz-border-top-colors: #be0005; }
+
+#cities .btn-group .dropdown-menu { background-color: #333; color: #efefef; left: auto; right: 0; text-align: right; float: right; }
+#cities .btn-group .dropdown-menu li { padding: 3px 10px; }
+#cities .btn-group .dropdown-menu li a { color: #efefef; text-decoration: none; border: none; background-color: transparent; }
+#cities .btn-group .dropdown-menu li a:hover { color: #be0005; }
+#cities .my_caret {
+    position: relative;
+    cursor: pointer;
+}
+#cities .my_caret:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 6px;
+    border-top: 7px solid #fefefe;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    -moz-border-top-colors: #fefefe;
+    -moz-border-left-colors: transparent;
+    -moz-border-right-colors: transparent;
+}
+#cities  .my_caret:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 7px;
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    -moz-border-top-colors: #333;
+    -moz-border-left-colors: transparent;
+    -moz-border-right-colors: transparent;
+}
+
+#city_select + span { cursor: pointer; }
+#cities span.visible { display: inline-block; }
+#cities span.hidden { display: none; }
+#cities span.callback_contacts a, #cities .callback_button { color: #efefef; }
+#cities span.callback_contacts a { border-bottom-color: #efefef; }
+#cities span.callback_contacts a:hover {
+    border-bottom-color: #be0005;
+    color: #be0005;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    outline: 0;
+}
+#cities .callback_button {
+    border-color: #efefef;
+    left: auto;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 0;
+    width: 200px;
+}
+#cities .callback_button:hover {
+    border-color: #be0005;
+    color: #be0005;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+}
+
 div.frame {
     /*min-width: 980px;*/
     position: relative;
@@ -111,6 +196,16 @@ div.frame {
 div.frame:first-of-type {
     z-index: 15;
 }
+
+.msg { background-color: maroon; margin-top: 30px !important; }
+.new-year {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.new-year td { padding: 5px 0; }
+.new-year img { width: 30px; }
 
 .trail { margin-left: -12px; }
 
@@ -2526,7 +2621,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         height: 680px;
         opacity: 0;
-        z-index: 50
+        z-index: 50;
     background-image: url("../../images/alarm_panel@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -2557,7 +2652,7 @@ only screen and (min-resolution: 144dpi) {
         width: 100%;
         height: 680px;
         opacity: 0;
-        z-index: 52
+        z-index: 52;
     background-image: url("../../images/alarm_cameras@2x.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -4854,7 +4949,7 @@ only screen and (min-resolution: 144dpi) {
         padding: 24px 20px 20px 75px;
         float: right;
     }
-    .hidden-xs #langs { padding-bottom: 15px; }
+    .hidden-xs #langs { padding-bottom: 20px; }
     .visible-xs #langs { padding: 0}
 
     #logo {
@@ -7035,6 +7130,32 @@ only screen and (min-resolution: 144dpi) {
 
     .visible-xs #bottom_menu  {
         display: none;
+    }
+}
+
+#cities span.cc_370 { display: none; }
+
+@media (max-width: 370px) {
+    #cities span.callback_contacts a {
+        border-bottom-color: #efefef;
+        margin-bottom: 10px;
+    }
+
+
+    #cities span.callback_contacts { display: none; }
+    #cities span.cc_370 { display: block; }
+
+    #cities .callback_wrapper {
+        text-align: right;
+    }
+
+    #cities .callback_button {
+        border-color: #efefef;
+        left: auto;
+        display: inline-block;
+        margin-right: 0px;
+        margin-left: 0;
+        width: 200px;
     }
 }
 

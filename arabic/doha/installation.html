@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="arabic">
 <head>
     <meta charset="UTF-8">
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
@@ -15,7 +15,7 @@
     <meta name="description" content="THRONE 3D умный дом " />
     <meta name="keywords" content="THRONE 3D управление освещением, THRONE 3D система умный дом, THRONE 3D технология умный дом, THRONE 3D оборудование умный дом, THRONE 3D умный дом купить, THRONE 3D умный дом цена, THRONE 3D умный дом стоимость, THRONE 3D умный дом онлайн, THRONE 3D умный дом новейшие технологии, THRONE 3D умный дом новые технологии, THRONE 3D видеонаблюдение, THRONE 3D пожарная сигнализация, THRONE 3D охранная сигнализация, THRONE 3D управление жалюзи, THRONE 3D управление шторами" />
 
-    <title>Как мы работаем - Умный дом ТРОН</title>
+    <title dir="rtl">طريقة عملنا  - "ترون" البيت الذكي</title>
     <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css">
@@ -45,10 +45,10 @@
     </script>
 
 
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/arabic/css/main.css" rel="stylesheet" type="text/css" />
     <script>
         if(isMobile.any()){
-            $("head link[href = '/css/main.css']").attr('href', '/css/main_mobile.css');
+            $("head link[href = '/arabic/css/main.css']").attr('href', '/arabic/css/main_mobile.css');
         }
     </script>
 
@@ -68,7 +68,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Facebook Pixel Code -->
@@ -125,66 +125,90 @@
 </head>
 
 <body>
-    <div id="cities">
+    <div id="cities" class="hidden-xs">
         <div class="container">
             <div class="row">
+                <div class="callback_wrapper col-lg-4 col-md-5 col-sm-7 col-xs-12">
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
+                    <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
+                </div>
+
                 <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
-                    <img src="/images/geo-location.png" alt="">
+
+                    <span id="city_doha" class="visible">+974 44980308</span>
                     <div class="btn-group">
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Москва <span class="my_caret"></span>
+                            الدوحة <span class="my_caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li data-city="moscow"><a href="/ru/moscow">Москва</a></li>
-                            <li data-city="yaroslavl"><a href="/ru/yaroslavl">Ярославль</a></li>
+                            <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
                         </ul>
                     </div>
-                    <span id="city_moscow" class="visible">+7(495) 255-0777 </span>
-                    <span id="city_yaroslavl" class="hidden">+7(4852) 77-06-77 </span>
-                </div>
-                <div class="callback_wrapper col-lg-4 col-md-5 col-sm-6 col-xs-12">
-                    <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
-                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать звонок</span>
+                    <img src="/images/geo-location.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="cities" class="visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
+
+                    <span id="city_doha" class="visible">+974 44980308</span>
+                    <div class="btn-group">
+
+                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            الدوحة <span class="my_caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
+                        </ul>
+                    </div>
+                    <img src="/images/geo-location.png" alt="">
+                </div>
+                <div class="callback_wrapper col-lg-4 col-md-5 col-sm-7 col-xs-12">
+                    <span class="callback_contacts cc_370"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
+                    <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                          onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
+                    <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal" onclick="goog_report_conversion();  fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;"/>
     <div class="frame">
-        <div id="head" class="visible-lg visible-md">
+        <div id="head" class="hidden-xs">
             <div id="langs" class="form-group">
                 <select class="form-control">
-                    <option value="ru" selected>RU</option>
-                    <option value="en" >EN</option>
-                    <option value="arabic" >العربية</option>
+                    <option value="ru" >RU</option>
+                    <option value="en">EN</option>
+                    <option value="arabic" selected>العربية</option>
                 </select>
             </div>
 
-            <a id="logo" href="/ru" >THRONE Project</a>
-
-            <!--div class="callback visible-lg">
-                <span class="callback_button" data-toggle="modal" data-target="#myModal"
-                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Заказать обратный звонок</span>
-                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a> или +7 (495) 255-0-777</span>
-            </div-->
+            <a id="logo" href="/arabic/doha" >THRONE Project</a>
 
             <ul id="top_menu_ext">
-                <li class="active">Как мы работаем</li>
-                <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-                <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-                <li><a href="about.html" title="О компании">О компании</a></li>
-                <li><span><a href="faq.html" title="Частые вопросы">Частые вопросы</a></span></li>
+                <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+                <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+                <li class="active">كيف نعمل</li>
             </ul>
+
+            <div class="callback visible-lg visible-md">
+                <span class="callback_button" data-toggle="modal" data-target="#myModal"
+                  onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
+                <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a>&nbsp;&nbsp;+7 (495) 255-0-777</span>
+            </div>
         </div>
 
-        <div id="head" class="visible-sm visible-xs" >
+        <div id="head" class=" visible-xs" >
             <nav class="navbar" id="top_menu_ext" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="logo" href="/ru" >THRONE Project</a>
+                        <a id="logo" href="/arabic/doha" >THRONE Project</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -194,16 +218,15 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav" id="top_menu_ext">
-                            <li class="active">Как мы работаем</li>
-                            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-                            <li><a href="about.html" title="О компании">О компании</a></li>
-                            <li><span><a href="faq.html" title="Частые вопросы">Частые вопросы</a></span></li>
+                            <li class="active">كيف نعمل</li>
+                            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+                            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
                             <li>
                                 <div id="langs" class="form-group">
                                     <select class="form-control">
-                                        <option value="ru" selected>RU</option>
-                                        <option value="en" >EN</option>
-                                        <option value="arabic" >العربية</option>
+                                        <option value="ru" >RU</option>
+                                        <option value="en">EN</option>
+                                        <option value="arabic" selected>العربية</option>
                                     </select>
                                 </div>
                             </li>
@@ -218,7 +241,7 @@
         <table class="new-year">
             <tr>
                 <td><img src="/images/firework.gif" alt="" class="img-responsive"></td>
-                <td><span>С Новым годом! В&nbsp;праздники мы работаем в&nbsp;обычном режиме</span></td>
+                <td><span>Happy New Year! On holidays we work as usual</span></td>
                 <td><img src="/images/firework.gif" alt="" class="img-responsive"></td>
             </tr>
         </table>
@@ -227,41 +250,26 @@
     <div id="install-slide-1" class="frame hidden-xs">
         <div class="overlay"></div>
         <div class="content">
-            <h1>Как мы работаем</h1>
-            <p>Мы работаем иначе, чем большинство компаний на&nbsp;рынке. Мы не&nbsp;станем устраивать бесконечные встречи, задача которых только в&nbsp;том,
-                чтобы побольше "вытрясти" из&nbsp;клиента. Мы делаем часть работы дистанционно, чтобы сэкономить свое и&nbsp;ваше время, а&nbsp;часть работы - на&nbsp; месте.
-                Благодаря использованию <nobr>3D-интерфейса</nobr> THRONE, еще до&nbsp;начала работ вы точно представляете, как будет выглядеть и&nbsp;работать система вашего "умного дома".</p>
-            <p>Дистанционно:</p>
+            <h1>طريقة عملنا </h1>
+            <p>ان إسلوب عمل شركتنا يختلف كلياً عن نمط عمل بقية الشركات العاملة في السوق . فنحن لا نقوم بترتيب لقاءات لا نهاية لها، الغاية منها تكون غالبا هي استجرار أكبر قدر ممكن من المال من الزبون .و لتوفير وقتكم الثمين بالنسبة لنا نحن نقوم بجزء من العمل من عن بعد ومن ثم القسم الآخر يتم تنفيذه في المكان المطلوب.حتى قبل الشروع بتنفيذ الأعمال و بفضل واجهة ترون الثلاثية الأبعاد أصبح ممكنا تصور الشكل و آلية العمل لنظام بيتكم الذكي.</p>
+            <p>الأعمال التي يتم تنفيذها عن بعد :</p>
             <ul>
-                <li><strong>бесплатно</strong> разрабатываем 3D демо-версию на&nbsp;основе вашей архитектуры (по&nbsp;планам помещений);</li>
-                <li><strong>бесплатно</strong> делаем спецификацию и&nbsp;смету проекта;</li>
-                <li>после утверждения подписываем договор;</li>
-                <li>разрабатываем проектную документацию &mdash; схему прокладки кабеля, описываем всю инженерную "начинку".</li>
+                <li>نصمم نموذج عرض ثلاثي الأبعاد وفقاً  للتصميم الهندسي للبناء الخاص بكم</li>
+                <li>نحدد المواصفات والكلفة التقديرية للمشروع</li>
+                <li> بعد الحصول على موافقة الزبون،نقوم بتوقيع العقد</li>
+                <li>نقوم بتجهيز كافة الوثائق المطلوبة للمشروع من مخطط التمديدات، قائمة مواصفات المواد وكل متطلبات عمل المهندسين</li>
             </ul>
 
-            <p>На месте:</p>
+            <p>في موقع التنفيذ :</p>
             <ul>
-                <li>организуем поставку оборудования с&nbsp;минимумом посредников;</li>
-                <li>Организуем команду профессиональных инженеров и&nbsp;монтажников для&nbsp;работы на&nbsp;объекте;</li>
-                <li>собираем шкаф с&nbsp;электроникой;</li>
-                <li>устанавливаем систему "умный дом" на&nbsp;объекте;</li>
-                <li>производим настройку и&nbsp;пуско-наладку оборудования.</li>
+                <li> نقوم بتوريد المعدات و التجهيزات بأقل كلفة ممكنة و من المصادر المباشرة لتلك التجهيزات</li>
+                <li>نوفر طاقم عمل مؤهل من ذوي الخبرات المطلوبة لتنفيذ الأعمال وفق مخطط المشروع</li>
+                <li>نقوم بتجميع خزانة إدارة المهام الالكترونية</li>
+                <li>نقوم بتثبيت نظام البيت الذكي</li>
+                <li>نعمل علي برمجة كافة الإعددات و التأكد من عمل كافة المعدات و اللأجهزة</li>
             </ul>
 
         </div>
-        <!--div class="icons">
-            <div class="icons_row">
-                <div class="icons_cell"><img src="images/garanty_icon.png" alt=""/></div>
-                <div class="icons_cell"><img src="images/knx_standart_icon.png" alt=""/></div>
-                <div class="icons_cell"><img src="images/cert_installation_icon.png" alt=""/></div>
-            </div>
-            <div class="icons_row">
-                <div class="icons_cell"><span>Отвечаем<br>за работу<br>гарантией</span></div>
-                <div class="icons_cell"><span>Оборудование<br/>стандарта KNX</span></div>
-                <div class="icons_cell"><span>Сертифицированная<br/>установка</span></div>
-            </div>
-         </div-->
-
     </div>
 
     <div id="install-slide-1" class="frame visible-xs">
@@ -269,25 +277,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Как мы работаем</h1>
-                    <p>Мы работаем иначе, чем большинство компаний на&nbsp;рынке. Мы не&nbsp;станем устраивать бесконечные встречи, задача которых только в&nbsp;том,
-                        чтобы побольше "вытрясти" из&nbsp;клиента. Мы делаем часть работы дистанционно, чтобы сэкономить свое и&nbsp;ваше время, а&nbsp;часть работы - на&nbsp; месте.
-                        Благодаря использованию <nobr>3D-интерфейса</nobr> THRONE, еще до&nbsp;начала работ вы точно представляете, как будет выглядеть и&nbsp;работать система вашего "умного дома".</p>
-                    <p>Дистанционно:</p>
+                    <h1>طريقة عملنا </h1>
+                    <p>ان إسلوب عمل شركتنا يختلف كلياً عن نمط عمل بقية الشركات العاملة في السوق . فنحن لا نقوم بترتيب لقاءات لا نهاية لها، الغاية منها تكون غالبا هي استجرار أكبر قدر ممكن من المال من الزبون .و لتوفير وقتكم الثمين بالنسبة لنا نحن نقوم بجزء من العمل من عن بعد ومن ثم القسم الآخر يتم تنفيذه في المكان المطلوب.حتى قبل الشروع بتنفيذ الأعمال و بفضل واجهة ترون الثلاثية الأبعاد أصبح ممكنا تصور الشكل و آلية العمل لنظام بيتكم الذكي.</p>
+                    <p>الأعمال التي يتم تنفيذها عن بعد :</p>
                     <ul>
-                        <li><strong>бесплатно</strong> разрабатываем 3D демо-версию на&nbsp;основе вашей архитектуры (по&nbsp;планам помещений);</li>
-                        <li><strong>бесплатно</strong> делаем спецификацию и&nbsp;смету проекта;</li>
-                        <li>после утверждения подписываем договор;</li>
-                        <li>разрабатываем проектную документацию &mdash; схему прокладки кабеля, описываем всю инженерную "начинку".</li>
+                        <li>نصمم نموذج عرض ثلاثي الأبعاد وفقاً  للتصميم الهندسي للبناء الخاص بكم</li>
+                        <li>نحدد المواصفات والكلفة التقديرية للمشروع</li>
+                        <li> بعد الحصول على موافقة الزبون،نقوم بتوقيع العقد</li>
+                        <li>نقوم بتجهيز كافة الوثائق المطلوبة للمشروع من مخطط التمديدات، قائمة مواصفات المواد وكل متطلبات عمل المهندسين</li>
                     </ul>
 
-                    <p>На месте:</p>
+                    <p>في موقع التنفيذ :</p>
                     <ul>
-                        <li>организуем поставку оборудования с&nbsp;минимумом посредников;</li>
-                        <li>Организуем команду профессиональных инженеров и&nbsp;монтажников для&nbsp;работы на&nbsp;объекте;</li>
-                        <li>собираем шкаф с&nbsp;электроникой;</li>
-                        <li>устанавливаем систему "умный дом" на&nbsp;объекте;</li>
-                        <li>производим настройку и&nbsp;пуско-наладку оборудования.</li>
+                        <li> نقوم بتوريد المعدات و التجهيزات بأقل كلفة ممكنة و من المصادر المباشرة لتلك التجهيزات</li>
+                        <li>نوفر طاقم عمل مؤهل من ذوي الخبرات المطلوبة لتنفيذ الأعمال وفق مخطط المشروع</li>
+                        <li>نقوم بتجميع خزانة إدارة المهام الالكترونية</li>
+                        <li>نقوم بتثبيت نظام البيت الذكي</li>
+                        <li>نعمل علي برمجة كافة الإعددات و التأكد من عمل كافة المعدات و اللأجهزة</li>
                     </ul>
                 </div>
             </div>
@@ -298,52 +304,53 @@
         <div id="inst-slide2-left">
             <div class="table">
                 <div class="table_row">
+                    <div class="table_cell">
+                        <p class="text-title">إعداد عرض سعر مع نموذج ثلاثي الأبعاد</p>
+                        <p>بمجرد استلامنا مخخطات البناء المطلوبة ، نقوم مجانا بتصميم نموذج عرض ثلاثي الأبعاد وحساب تكلفة تقديرية خاص بكم . سيمكنكم رؤية بيتكم الذكي من على جهازكم التابلت بكافة تفاصيله و ميزاته مرفقاً بقائمة التجهيزات و المعدات المطلوبة مع عرض الأسعار .
+                            المدة المطلوبة: اسبوع تقريباٌ    </p>
+                    </div>
                     <div class="table_cell" id="prep_5days_cell">&nbsp;</div>
-                    <div class="table_cell">
-                        <p class="text-title">Подготовка предложения с 3D-демо и ценой</p>
-                        <p>Получив от&nbsp;вас планы помещений, мы бесплатно создадим 3D-демо и&nbsp;представим предварительную смету проекта.
-                            Вы увидите на&nbsp;планшете свой "умный дом" с&nbsp;полным набором функций, а&nbsp;также список необходимого оборудования с&nbsp;расценками.
-                            <span class="marker"><nobr>~ 1 неделя</nobr></span></p>
-                    </div>
                 </div>
+
                 <div class="table_row">
+                    <div class="table_cell">
+                        <p class="text-title">إعداد وثائق المشروع</p>
+                        <p>وثائق ومخططات المشروع هي حجر الأساس لكل بيت ذكي . وهي تتألف من الوثائق الهندسية والتي تبين كل تفاصيل (الحشوة) الالكترونية للنظام و آلية تثبيته وعمله .
+                            المدة المطلوبة : شهر تقريباً</p>
+                    </div>
                     <div class="table_cell" id="project_plan_cell">&nbsp;</div>
-                    <div class="table_cell">
-                        <p class="text-title">Разработка проектной документации</p>
-                        <p>Проектная документация - это основа любого "умного дома". Это набор инженерных документов, описывающих всю электронную
-                            "начинку" системы и&nbsp;методику её монтажа. <span class="marker"><nobr>~ 1 месяц</nobr></span></p>
-                    </div>
                 </div>
+
                 <div class="table_row">
+                    <div class="table_cell">
+                        <p class="text-title">تأمين التجهيزات</p>
+                        <p>أجهزة الاستشعار ( الحسسات )،أجهزة التحكم و المتفاعلات الكهربائية و غيرها من تجهيزات البيت الذكي و المذكورة في وثائق مواصفات المشروع سيتم تأمينها بأفضل الأسعار في مدة أقصاها شهر واحد و تزامناً مع المرحلة المذكورة سابقاً
+                        </p>
+                    </div>
                     <div class="table_cell" id="server_cell">&nbsp;</div>
-                    <div class="table_cell">
-                        <p class="text-title">Заказ и поставка оборудования</p>
-                        <p>Датчики, контроллеры, приводы, счетчики и другое оборудование "умного дома", указанное в спецификации и проектной документации,
-                           будет заказано и поставлено по наилучшим ценам. <span class="marker"><nobr>~ 1 месяц</nobr>, в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
-                    </div>
                 </div>
+
                 <div class="table_row">
-                    <div class="table_cell" id="install_cell">&nbsp;</div>
                     <div class="table_cell">
-                        <p class="text-title">Монтаж, программирование и&nbsp;пуско-наладка</p>
-                        <p>Прокладываем кабель, собираем электрощит, подключаем к нему исполнительные устройства. Программируем устройства всей системы.
-                            Подсоединяем сервер и&nbsp;планшеты. <span class="marker"><nobr>~ 1 месяц</nobr>, частично в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
+                        <p class="text-title">التثبيت و البرجمة و اختبار التشغيل النهائي</p>
+                        <p>نمدد الكابلات و نقوم بتجميع لوحة التحكم الكهربائية لنظام البيت الذكي، ثم نقوم بتوصيل كافة الأجهزة المنزلية لها. يتم برمجة كافة تجهيزات النظام ومن بعدها نوصل الحاسب المخدم (السيرفر) وأجهزة التابلت. المدة المطلوبة لإنجاز هذه المرحلة : عدة أيام، مجموعها لا يتجاوز الشهرالواحد و تتم أعمال هذه المرحلة بالتزامن مع أعمال المرحلة السابقة. </p>
                     </div>
+                    <div class="table_cell" id="install_cell">&nbsp;</div>
                 </div>
             </div>
         </div>
         <div id="inst-slide2-right">
             <div class="icons">
                 <div class="icons_row">
-                    <div class="icons_cell" id="garanty_cell"><span>Отвечаем за&nbsp;работу<br>гарантией</span></div>
+                    <div class="icons_cell" id="garanty_cell"><span>تثبيت معتمد</span></div>
                 </div>
 
                 <div class="icons_row">
-                    <div class="icons_cell" id="cert_install_cell"><span>Сертифицированная<br/>установка</span></div>
+                    <div class="icons_cell" id="cert_install_cell"><span>شهادة ضمان جودة</span></div>
                 </div>
 
                 <div class="icons_row">
-                    <div class="icons_cell" id="knx_standart_cell"><span>Оборудование<br/>стандарта KNX</span></div>
+                    <div class="icons_cell" id="knx_standart_cell"><span> معدات من مقياس KNX</span></div>
                 </div>
             </div>
         </div>
@@ -354,55 +361,94 @@
             <div class="row">
                 <div id="inst-slide2-left" class="col-xs-8">
                     <div class="row">
+                        <div class="col-xs-9">
+                            <p class="text-title">إعداد عرض سعر مع نموذج ثلاثي الأبعاد</p>
+                            <p>بمجرد استلامنا مخخطات البناء المطلوبة ، نقوم مجانا بتصميم نموذج عرض ثلاثي الأبعاد وحساب تكلفة تقديرية خاص بكم . سيمكنكم رؤية بيتكم الذكي من على جهازكم التابلت بكافة تفاصيله و ميزاته مرفقاً بقائمة التجهيزات و المعدات المطلوبة مع عرض الأسعار .
+                                المدة المطلوبة: اسبوع تقريباٌ    </p>
+                        </div>
+                        <div class="col-xs-3" id="prep_5days_cell"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <p class="text-title">إعداد وثائق المشروع</p>
+                            <p>وثائق ومخططات المشروع هي حجر الأساس لكل بيت ذكي . وهي تتألف من الوثائق الهندسية والتي تبين كل تفاصيل (الحشوة) الالكترونية للنظام و آلية تثبيته وعمله .
+                                المدة المطلوبة : شهر تقريب</p>
+                        </div>
+                        <div class="col-xs-3" id="project_plan_cell">&nbsp;</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <p class="text-title">تأمين التجهيزات</p>
+                            <p>أجهزة الاستشعار ( الحسسات )،أجهزة التحكم و المتفاعلات الكهربائية و غيرها من تجهيزات البيت الذكي و المذكورة في وثائق مواصفات المشروع سيتم تأمينها بأفضل الأسعار في مدة أقصاها شهر واحد و تزامناً مع المرحلة المذكورة سابقاً
+                            </p>
+                        </div>
+                        <div class="col-xs-3" id="server_cell">&nbsp;</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <p class="text-title">التثبيت و البرجمة و اختبار التشغيل النهائي</p>
+                            <p>نمدد الكابلات و نقوم بتجميع لوحة التحكم الكهربائية لنظام البيت الذكي، ثم نقوم بتوصيل كافة الأجهزة المنزلية لها. يتم برمجة كافة تجهيزات النظام ومن بعدها نوصل الحاسب المخدم (السيرفر) وأجهزة التابلت. المدة المطلوبة لإنجاز هذه المرحلة : عدة أيام، مجموعها لا يتجاوز الشهرالواحد و تتم أعمال هذه المرحلة بالتزامن مع أعمال المرحلة السابقة. </p>
+                        </div>
+                        <div class="col-xs-3" id="install_cell">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div id="inst-slide2-left" class="col-xs-8 vertical">
+                    <div class="row">
                         <div class="col-xs-3" id="prep_5days_cell"></div>
                         <div class="col-xs-9">
-                            <p class="text-title">Подготовка предложения с 3D-демо и ценой</p>
-                            <p>Получив от&nbsp;вас планы помещений, мы бесплатно создадим 3D-демо и&nbsp;представим предварительную смету проекта.
-                                Вы увидите на&nbsp;планшете свой "умный дом" с&nbsp;полным набором функций, а&nbsp;также список необходимого оборудования с&nbsp;расценками.
-                                <span class="marker"><nobr>~ 1 неделя</nobr></span></p>
+                            <p class="text-title">إعداد عرض سعر مع نموذج ثلاثي الأبعاد</p>
+                            <p>بمجرد استلامنا مخخطات البناء المطلوبة ، نقوم مجانا بتصميم نموذج عرض ثلاثي الأبعاد وحساب تكلفة تقديرية خاص بكم . سيمكنكم رؤية بيتكم الذكي من على جهازكم التابلت بكافة تفاصيله و ميزاته مرفقاً بقائمة التجهيزات و المعدات المطلوبة مع عرض الأسعار .
+                                المدة المطلوبة: اسبوع تقريباٌ    </p>
                         </div>
+
                     </div>
 
                     <div class="row">
                         <div class="col-xs-3" id="project_plan_cell">&nbsp;</div>
                         <div class="col-xs-9">
-                            <p class="text-title">Разработка проектной документации</p>
-                            <p>Проектная документация - это основа любого "умного дома". Это набор инженерных документов, описывающих всю электронную
-                                "начинку" системы и&nbsp;методику её монтажа. <span class="marker"><nobr>~ 1 месяц</nobr></span></p>
+                            <p class="text-title">إعداد وثائق المشروع</p>
+                            <p>وثائق ومخططات المشروع هي حجر الأساس لكل بيت ذكي . وهي تتألف من الوثائق الهندسية والتي تبين كل تفاصيل (الحشوة) الالكترونية للنظام و آلية تثبيته وعمله .
+                                المدة المطلوبة : شهر تقريب</p>
                         </div>
+
                     </div>
 
                     <div class="row">
                         <div class="col-xs-3" id="server_cell">&nbsp;</div>
                         <div class="col-xs-9">
-                            <p class="text-title">Заказ и поставка оборудования</p>
-                            <p>Датчики, контроллеры, приводы, счетчики и другое оборудование "умного дома", указанное в спецификации и проектной документации,
-                                будет заказано и поставлено по наилучшим ценам. <span class="marker"><nobr>~ 1 месяц</nobr>, в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
+                            <p class="text-title">تأمين التجهيزات</p>
+                            <p>أجهزة الاستشعار ( الحسسات )،أجهزة التحكم و المتفاعلات الكهربائية و غيرها من تجهيزات البيت الذكي و المذكورة في وثائق مواصفات المشروع سيتم تأمينها بأفضل الأسعار في مدة أقصاها شهر واحد و تزامناً مع المرحلة المذكورة سابقاً
+                            </p>
                         </div>
+
                     </div>
 
                     <div class="row">
                         <div class="col-xs-3" id="install_cell">&nbsp;</div>
                         <div class="col-xs-9">
-                            <p class="text-title">Монтаж, программирование и&nbsp;пуско-наладка</p>
-                            <p>Прокладываем кабель, собираем электрощит, подключаем к нему исполнительные устройства. Программируем устройства всей системы.
-                                Подсоединяем сервер и&nbsp;планшеты. <span class="marker"><nobr>~ 1 месяц</nobr>, частично в&nbsp;параллели с&nbsp;предыдущим этапом</span></p>
+                            <p class="text-title">التثبيت و البرجمة و اختبار التشغيل النهائي</p>
+                            <p>نمدد الكابلات و نقوم بتجميع لوحة التحكم الكهربائية لنظام البيت الذكي، ثم نقوم بتوصيل كافة الأجهزة المنزلية لها. يتم برمجة كافة تجهيزات النظام ومن بعدها نوصل الحاسب المخدم (السيرفر) وأجهزة التابلت. المدة المطلوبة لإنجاز هذه المرحلة : عدة أيام، مجموعها لا يتجاوز الشهرالواحد و تتم أعمال هذه المرحلة بالتزامن مع أعمال المرحلة السابقة. </p>
                         </div>
+
                     </div>
                 </div>
 
                 <div id="inst-slide2-right" class="col-xs-4">
                     <div class="icons">
                         <div class="icons_row">
-                            <div class="icons_cell" id="garanty_cell"><span>Отвечаем за&nbsp;работу<br>гарантией</span></div>
+                            <div class="icons_cell" id="garanty_cell"><span>تثبيت معتمد</span></div>
                         </div>
 
                         <div class="icons_row">
-                            <div class="icons_cell" id="cert_install_cell"><span>Сертифицированная<br/>установка</span></div>
+                            <div class="icons_cell" id="cert_install_cell"><span>شهادة ضمان جودة</span></div>
                         </div>
 
                         <div class="icons_row">
-                            <div class="icons_cell" id="knx_standart_cell"><span>Оборудование<br/>стандарта KNX</span></div>
+                            <div class="icons_cell" id="knx_standart_cell"><span> معدات من مقياس KNX</span></div>
                         </div>
                     </div>
                 </div>
@@ -415,8 +461,7 @@
             <div class="table_cell" id="factoid_left"></div>
             <div class="table_cell" id="factoid_center">
                 <div id="f_days">45</div>
-                <p><nobr>дней в среднем уходит</nobr><br>на установку "умного дома <span class="capital">ТРОН</span>".</p>
-                <p><nobr>От звонка клиента до шеф-монтажа</nobr>.</p>
+                <p>يوماً تقريبا تستغرق مدة انجاز البيت الذكي من "ترون" بشكل كامل، تبدأ تلك المدة من اليوم الاول لاتصال العميل وتنتهي باستكمال آخرأعمال التركيب والتشغيل.  </p>
             </div>
             <div class="table_cell" id="factoid_right"></div>
         </div>
@@ -431,8 +476,7 @@
                 <tr>
                     <td id="factoid_center">
                         <div id="f_days">45</div>
-                        <p><nobr>дней в среднем уходит</nobr><br>на установку "умного дома <span class="capital">ТРОН</span>".</p>
-                        <p><nobr>От звонка клиента до шеф-монтажа</nobr>.</p>
+                        <p>يوماً تقريبا تستغرق مدة انجاز البيت الذكي من "ترون" بشكل كامل، تبدأ تلك المدة من اليوم الاول لاتصال العميل وتنتهي باستكمال آخرأعمال التركيب والتشغيل.  </p>
                     </td>
                 </tr>
                 <tr>
@@ -448,128 +492,109 @@
                 <div class="table_cell left">
                     <div class="wrapper">
                         <div class="left">
-                        <h3>Постпродажное обслуживание</h3>
-                        <p>На софт THRONE распространяется бессрочная гарантия<sup>*</sup>. Гарантия на&nbsp;оборудование определяется производителем
-                            и&nbsp;может составлять от <nobr>1 года</nobr> до <nobr>3 лет.</nobr></p>
-                        <p>Программное обеспечение THRONE подлежит обновлению: можно добавить новые функции системы, видоизменить архитектуру здания и&nbsp;т.д.</p>
-                        <p>Позвоните <nobr>+7 495 255-0777</nobr>, чтобы узнать подробности обслуживания.</p>
-                        <p class="note"><sup>*</sup>При условии неизменной конфигурации системы. К&nbsp;сожалению, мы не&nbsp;можем гарантировать работу ТРОНА с&nbsp;устройствами, которые подключили без&nbsp;нашего участия.</p>
+                        <h3>خدمة ما بعد البيع</h3>
+                        <p>تسري على برنامج "ترون" كفالة مدى الحياة. أما بالنسبة للتجهيزات فيتم تحديد مدة الضمانة بالنسبة لها من قبل الشركات المصنعة وغالباً تترواح تلك المدة من سنة إلى ثلاث سنوات.</p>
+                        <p>تخضع برمجيات نظام "ترون" لامكانية التحديث والتجديد، ولذلك يمكن دوماً اضافة مهام ووظائف جديدة لأجهزة البيت الذكي، اوحتى بالامكان القيام بتغييرات على هندسة البناء وغيرها من التعديلات. </p>
+                        <p>اتصلو بنا لمعرفة المزيد حول تفاصيل هذه الخدمات</p>
+                        <p class="note"><sup>*</sup> في حال تم تغيير اعدادات نظام "ترون" وتوصيله لتجهيزات اضافية دون استشارتنا، لا يمكننا ضمانة عمل وتوافق برنامج "ترون" مع تلك الاجهزة التي تم توصيلها من دون مشاركتنا. </p>
                             </div>
-                        <!--div class="left">
-                            <h3>Оборудование</h3>
-                            <p>Все сенсоры, датчики, выключатели, исполнительные и&nbsp;системные устройства сертифицированы и&nbsp;прошли проверку на&nbsp;безопасность, надежность и&nbsp;долговечность.</p>
-                        </div-->
-                        <!--div class="right">
-                            <p><img src="images/knx_icon.png" alt=""/>
-                                Международный стандарт приборов автоматизации
-                            </p>
-                            <p><img src="images/zwave_icon.png" alt=""/>
-                                Система управления оборудованием через Wi-Fi
-                            </p>
-                        </div-->
                         <div class="clear"></div>
                     </div>
                 </div>
-                <!--div class="table_cell right">
-                    <h3>Постпродажное обслуживание</h3>
-                    <p>На софт THRONE распространяется бессрочная гарантия<sup>*</sup>. Гарантия на&nbsp;оборудование определяется производителем
-                        и&nbsp;может составлять от <nobr>1 года</nobr> до <nobr>3 лет.</nobr></p>
-                    <p>Программное обеспечение THRONE подлежит обновлению: можно добавить новые функции системы, видоизменить архитектуру здания и&nbsp;т.д.</p>
-                    <p>Позвоните <nobr>+7 495 255-0777</nobr>, чтобы узнать подробности обслуживания.</p>
-                    <p class="note"><sup>*</sup>При условии неизменной конфигурации системы. К&nbsp;сожалению, мы не&nbsp;можем гарантировать работу ТРОНА с&nbsp;устройствами, которые подключили без&nbsp;нашего участия.</p>
-                </div-->
             </div>
         </div>
     </div>
 
     <footer class="minor visible-md visible-lg">
-        &copy; 2015 <span id="brand">THRONE Project</span>
-        <ul id="bottom_menu">
-            <li><a href="/ru" title="Главная">Главная</a></li>
-            <li class="active">Как мы работаем</li>
-            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li><a href="about.html" title="О компании">О компании</a></li>
-            <li><a href="faq.html" title="Частые вопросы">Частые вопросы</a></li>
-        </ul>
         <div id="footer_socials">
             <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
-            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://www.facebook.com/throneme/" target="_blank"  id="soc_facebook"></a>
             <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
             <!--a href="#" id="soc_instagram"></a-->
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
+
+        <ul id="bottom_menu">
+            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li class="active">كيف نعمل</li>
+            <li><a href="/arabic/doha" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+        </ul>
+
+        <span id="brand">THRONE Project</span>  &copy; 2015
     </footer>
 
     <footer class="minor visible-sm ">
         <ul id="bottom_menu">
-            <li><a href="/ru" title="Главная">Главная</a></li>
-            <li class="active">Как мы работаем</li>
-            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li><a href="about.html" title="О компании">О компании</a></li>
-            <li><a href="faq.html" title="Частые вопросы">Частые вопросы</a></li>
+            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li class="active">كيف نعمل</li>
+            <li><a href="/arabic/doha" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
         </ul>
 
         <div id="footer_socials">
             <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
-            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://www.facebook.com/throneme/" target="_blank"  id="soc_facebook"></a>
             <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
             <!--a href="#" id="soc_instagram"></a-->
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
-        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+        <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015</div>
     </footer>
 
     <footer class="minor visible-xs">
         <ul id="bottom_menu">
-            <li><a href="/ru" title="Главная">Главная</a></li>
-            <li class="active">Как мы работаем</li>
-            <li><a href="developers.html" title="Девелоперам">Девелоперам</a></li>
-            <!--li><a href="partners.html" title="Партнерство">Партнерство</a></li-->
-            <li><a href="about.html" title="О компании">О компании</a></li>
-            <li><a href="faq.html" title="Частые вопросы">Частые вопросы</a></li>
+            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li class="active">كيف نعمل</li>
+            <li><a href="/arabic/doha" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+        </ul>
+
+        <ul id="bottom_menu" class="vertical">
+            <li><a href="/arabic/doha" title="الصفحة الرئيسية">الصفحة الرئيسية</a></li>
+            <li class="active">كيف نعمل</li>
+            <!--li><a href="developers.html" title="للمطورين">للمطورين</a></li-->
+            <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
         </ul>
 
         <div id="footer_socials">
             <a href="https://twitter.com/ThroneBMS" target="_blank" id="soc_twitter"></a>
-            <a href="http://www.facebook.com/thronebms" target="_blank"  id="soc_facebook"></a>
+            <a href="https://www.facebook.com/throneme/" target="_blank"  id="soc_facebook"></a>
             <a href="https://plus.google.com/u/0/105833833797834552973/posts" target="_blank"  id="soc_googleplus"></a>
             <!--a href="#" id="soc_instagram"></a-->
             <a href="https://www.flickr.com/photos/101988304@N02/" target="_blank" id="soc_flickr"></a>
             <a href="http://www.youtube.com/user/ThroneBMS" target="_blank" id="soc_youtube"></a>
         </div>
-        <div class="copy">&copy; 2015 <span id="brand">THRONE Project</span></div>
+        <div class="copy"><span id="brand">THRONE Project</span> &copy; 2015</div>
     </footer>
 
     <div id="callback_wrapper">
         <div id="callback_title">
-            &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
+            &gt;&gt;&gt; اطب مجانا تصميم نموذج ثلاثي الأبعاد للمنزل  &lt;&lt;&lt;
         </div>
         <div id="callback_form">
-            <div class="footnote">Просто отправьте нам на адрес <a href="mailto:office@throne.pro">office@throne.pro</a> планы помещений вашего объекта, и мы сделаем 3D-демо и предварительный расчет.
-                <strong>Это бесплатно</strong>.</div>
-            <div class="footnote">Для обработки вашего запроса, пожалуйста, оставьте свои контактные данные и выберите удобное время звонка.</div>
+            <div class="footnote">فقط أرسل لنا مخطط المبني وسنبذل نموذج تجريبي  ثلاثي الأبعاد للمنزل ,تقدير أولي. إنه مجاني. <a href="mailto:office@throne.pro">office@throne.pro</a></div>
+            <div class="footnote">لتجهيز طلبك، يرجى ترك المعلومات الاتصال الخاصة بك وحدد وقت مناسب للمكالمة.</div>
 
             <div id="cb_form_body">
                 <form action="" class="callback_form1">
-                    <table >
+                    <table>
                         <tbody>
                         <tr>
-                            <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
+                            <td align="left"><label for="inputName" class="control-label">الإسم </label></td>
                             <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
                         </tr>
                         <tr>
-                            <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
+                            <td align="left"><label for="inputPhone" class="control-label">رقم الهاتف</label></td>
                             <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
                         </tr>
                         <tr>
-                            <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
+                            <td align="left"><label for="inputTime" class="control-label">وقت الإتصال </label></td>
                             <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
                         </tr>
-                        <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Отправить</button></td></tr>
+                        <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">لإرسال</button></td></tr>
                         </tbody>
                     </table>
 
@@ -589,27 +614,28 @@
                         <!--span aria-hidden="true">&times;</span-->
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
                     </button>
-                    <h4 class="modal-title">Мы перезвоним в течение часа</h4>
+                    <h4 class="modal-title">سنعاود الاتصال بكم خلال ساعة </h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-7 col-xs-7">
                             <form action="" class=" callback_form">
                                 <div class="form-group">
-                                    <label for="inputName" class="control-label">Ваше имя</label>
+                                    <label for="inputName" class="control-label">الإسم</label>
                                     <div class=" ">
                                         <input type="text" class="form-control" id="inputName" name="inputName">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputPhone" class="control-label">Номер телефона</label>
+                                    <label for="inputPhone" class="control-label">رقم الهاتف</label>
+
                                     <div class=" ">
                                         <input type="text" class="form-control" id="inputPhone" name="inputPhone">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="button" class="send-btn">Отправить</button>
+                                        <button type="button" class="send-btn">لإرسال</button>
                                         <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                     </div>
                                 </div>
@@ -623,18 +649,18 @@
                         </div>
                         <div class="col-sm-4 col-xs-5 col-sm-offset-1  cb_form_right">
                             <img src="/images/phone_tube.png" alt="">
-                            <div>Смелее! Это вас ни к&nbsp;чему не обязывает.</div>
+                            <div>الاستشارات المقدمة من قبل شركتنا لا تُرتب عليكم أي إلتزام مادي</div>
                             <div id="padlock">
                                 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                                <span>Мы никому не передадим ваш номер!</span>
+                                <span>نتعهد بضمان الخصوصية التامة و بأن المعلومات الخاصة بكم لن يتم مشاركتها مع أي طرف آخر</span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-xs-12">
                             <div class="footnote">
-                                Или вы можете <a href="mailto:office@throne.pro">написать нам</a> сами!
-                                Просто отправьте нам планы помещений вашего объекта, и&nbsp;мы сделаем предварительный расчет. <strong>Это бесплатно</strong>.
+                                <!--a href="mailto:office@throne.pro">написать нам</a-->
+                                او بامكانكم التواصل عبر البريد الالكتروني بارسال رسالة مرفقة بمخخط المنزل او البناء و سنجيبكم على الفور بالتكلفة التقديرية للمشروع مجانا
                             </div>
                         </div>
                     </div>
@@ -660,7 +686,7 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <!--script src="/js/jquery-2.1.3.min.js"></script-->
+    <!--script src="//js/jquery-2.1.3.min.js"></script-->
     <script src="/js/jquery-ui.min.js"></script>
     <!--script src="js/jquery-2.1.3.min.js"></script-->
     <!--script src="js/jquery-ui.js"></script-->
@@ -681,9 +707,9 @@
 
     <script>
         if(isMobile.any()){
-            $("<script type='text/javascript' src='/js/main_mobile.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='/arabic/js/main_mobile.js'><\/script>").appendTo('body');
         } else {
-            $("<script type='text/javascript' src='/js/main.js'><\/script>").appendTo('body');
+            $("<script type='text/javascript' src='/arabic/js/main.js'><\/script>").appendTo('body');
         }
     </script>
 
@@ -769,7 +795,7 @@ chosen link or button. -->
         (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
-            s1.src='https://embed.tawk.to/564c7dd43b30fc9f698f8132/default';
+            s1.src='https://embed.tawk.to/565c5eaafc4bd1b143997801/default';
             s1.charset='UTF-8';
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);

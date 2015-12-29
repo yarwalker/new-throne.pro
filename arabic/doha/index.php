@@ -42,9 +42,9 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="/css/animate.css">
 
     <?php if ( !$detect->isMobile() ): ?>
-        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="/arabic/css/main.css" rel="stylesheet" type="text/css" />
     <?php else: ?>
-        <link href="css/main_mobile.css" rel="stylesheet" type="text/css" />
+        <link href="/arabic/css/main_mobile.css" rel="stylesheet" type="text/css" />
     <?php endif; ?>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
@@ -172,6 +172,7 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
+
 <img src="/images/phone_tube.png" alt="" class="callback_fix_btn" data-toggle="modal" data-target="#myModal"
      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;" />
 <div class="frame">
@@ -185,7 +186,7 @@ $detect = new Mobile_Detect();
             </select>
         </div>
 
-        <a id="logo" href="/arabic" >THRONE Project</a>
+        <a id="logo" href="/arabic/doha" >THRONE Project</a>
 
         <ul id="top_menu_ext">
             <li><a href="about.html" title="عن الشركة">عن الشركة</a></li>
@@ -193,11 +194,11 @@ $detect = new Mobile_Detect();
             <li><a href="installation.html" title="كيف نعمل">كيف نعمل</a></li>
         </ul>
 
-        <div class="callback visible-lg visible-md">
+        <!--div class="callback visible-lg visible-md">
             <span class="callback_button" data-toggle="modal" data-target="#myModal"
                   onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">طلب إتصال</span>
             <span class="callback_contacts"><a href="mailto:office@throne.pro" target="_blank">office@throne.pro</a>&nbsp;&nbsp;+7 (495) 255-0-777</span>
-        </div>
+        </div-->
 
     </div>
 
@@ -205,7 +206,7 @@ $detect = new Mobile_Detect();
         <nav class="navbar" id="top_menu_ext" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a id="logo" href="/arabic" >THRONE Project</a>
+                    <a id="logo" href="/arabic/doha" >THRONE Project</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -1788,11 +1789,11 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/arabic/js/main.js"></script>
 <?php else: ?>
     <script type="text/javascript" src="http://releases.flowplayer.org//js/flowplayer.ipad-3.2.13.min.js"></script>
     <!--script type="text/javascript" src="/js/jquery.mobile-1.4.5.min.js"></script-->
-    <script type="text/javascript" src="js/main_mobile.js"></script>
+    <script type="text/javascript" src="/arabic/js/main_mobile.js"></script>
 <?php endif; ?>
 
 
