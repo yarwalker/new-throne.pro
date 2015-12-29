@@ -168,7 +168,8 @@ a.inner_anchor.security { color: #cf1834; }
     border-color: #efefef;
     left: auto;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
     width: 200px;
 }
 #cities .callback_button:hover {
