@@ -112,6 +112,16 @@ div.frame:first-of-type {
     z-index: 15;
 }
 
+.msg { background-color: maroon; margin-top: 30px !important; }
+.new-year {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.new-year td { padding: 5px 0; }
+.new-year img { width: 30px; }
+
 .trail { margin-left: -12px; }
 
 /* slide-1 */

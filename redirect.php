@@ -4,6 +4,8 @@ $cities = array('moscow', 'yaroslavl');
 $city = '';
 $country = '';
 
+//echo $_SERVER['REQUEST_URI'];
+
 // определение страны для перенаправления на нужный интерфейс
 if(is_file($file)):
     require($file);
