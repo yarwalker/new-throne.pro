@@ -1623,7 +1623,7 @@ $detect = new Mobile_Detect();
     </footer>
 
     <div id="callback_wrapper">
-        <div id="callback_title">
+        <div id="callback_title" onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">
             &gt;&gt;&gt; Закажите бесплатное 3D-демо вашего дома! &lt;&lt;&lt;
         </div>
         <div id="callback_form">
@@ -1647,7 +1647,7 @@ $detect = new Mobile_Detect();
                                 <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
                                 <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
                             </tr>
-                            <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn">Отправить</button></td></tr>
+                            <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn" onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Отправить</button></td></tr>
                         </tbody>
                     </table>
 
