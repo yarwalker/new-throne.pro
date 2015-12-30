@@ -183,7 +183,7 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-<div class="msg">
+<!--div class="msg">
     <table class="new-year">
         <tr>
             <td><img src="/images/firework.gif" alt="" class="img-responsive"></td>
@@ -191,7 +191,7 @@ $detect = new Mobile_Detect();
             <td><img src="/images/firework.gif" alt="" class="img-responsive"></td>
         </tr>
     </table>
-</div>
+</div-->
 
 <div id="slide-1" data-slide="1" class="frame animation" >
     <?php if(!$detect->isMobile()): ?>
