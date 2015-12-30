@@ -1410,7 +1410,7 @@
         //}
     });
 
-    var cities = ['moscow', 'yaroslavl'];
+    var cities = ['moscow', 'yaroslavl','kirov'];
     var tmp_path = location.pathname,
         arr = tmp_path.split('/'),
         i = 0;
