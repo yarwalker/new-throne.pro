@@ -1430,7 +1430,7 @@
         ev.preventDefault();
         console.log(arr);
         console.log($(this).parent().data('city'));
-        location.href = '/' + arr[1] + '/' + $(this).parent().data('city') + '/' + arr[arr.length-1];
+        location.href = '/' + arr[1] + '/' + ( $(this).parent().data('city') != 'default' ? $(this).parent().data('city') + '/' : '' ) + arr[arr.length-1];
         /*
          for( i = 1; i < arr.length - 1; i++){
          // проверим есть в пути какой-нибудь из городов

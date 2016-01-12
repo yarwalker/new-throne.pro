@@ -128,14 +128,15 @@ $detect = new Mobile_Detect();
             </div>
 
             <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
-
-                <span id="city_doha" class="visible">+974 44980308</span>
+                <span id="city_default" class="visible">+7 978 949 3960</span>
+                <span id="city_doha" class="hidden">+974 44980308</span>
                 <div class="btn-group">
 
                     <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        الدوحة <span class="my_caret"></span>
+                        THRONE Middle East HQ<span class="my_caret"></span>
                     </button>
                     <ul class="dropdown-menu">
+                        <li data-city="default"><a href="/arabic">THRONE Middle East HQ</a></li>
                         <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
                     </ul>
                 </div>
@@ -150,13 +151,15 @@ $detect = new Mobile_Detect();
         <div class="row">
             <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
 
-                <span id="city_doha" class="visible">+974 44980308</span>
+                <span id="city_default" class="visible">+7 978 949 3960</span>
+                <span id="city_doha" class="hidden">+974 44980308</span>
                 <div class="btn-group">
 
                     <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        الدوحة <span class="my_caret"></span>
+                        THRONE Middle East HQ<span class="my_caret"></span>
                     </button>
                     <ul class="dropdown-menu">
+                        <li data-city="default"><a href="/arabic">THRONE Middle East HQ</a></li>
                         <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
                     </ul>
                 </div>
