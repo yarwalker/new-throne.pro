@@ -136,6 +136,7 @@ $detect = new Mobile_Detect();
                         الدوحة <span class="my_caret"></span>
                     </button>
                     <ul class="dropdown-menu">
+                        <li data-city="default"><a href="/arabic">THRONE Middle East HQ</a></li>
                         <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
                     </ul>
                 </div>
@@ -157,6 +158,7 @@ $detect = new Mobile_Detect();
                         الدوحة <span class="my_caret"></span>
                     </button>
                     <ul class="dropdown-menu">
+                        <li data-city="default"><a href="/arabic">THRONE Middle East HQ</a></li>
                         <li data-city="doha"><a href="/arabic/doha">الدوحة</a></li>
                     </ul>
                 </div>
