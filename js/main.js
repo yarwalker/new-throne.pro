@@ -635,7 +635,11 @@
     $('a.inner_anchor').on('click', function(ev){
         ev.preventDefault();
 
-        $('#tabs a, #fake_tabs a').removeClass('tabulous_active');
+        htmlbody.animate({
+            scrollTop: ( $( $(this).attr('href') ).offset().top  )
+        }, 1000);
+
+        /*$('#tabs a, #fake_tabs a').removeClass('tabulous_active');
 
         $('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
 
@@ -644,7 +648,7 @@
 
         if( $(this).closest('div').attr('id') == 'fake_tabs' ) {
             $('#tabs a[href=' + $(this).attr('href') + ']').click();
-        }
+        }*/
     });
 
     $('#fake_tabs ul li a, #slide-4 .visible-lg li a, #slide-4 .visible-md li a, #slide-4 .visible-sm li a, #slide-4 .visible-xs li a').on('click', function(ev){
