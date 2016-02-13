@@ -41,6 +41,8 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="/js/flowplay/skin/functional.css">
     <link rel="stylesheet" href="/css/animate.css">
 
+    <link rel="stylesheet" href="/css/intlTelInput.css">
+
     <?php if ( !$detect->isMobile() ): ?>
         <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <?php else: ?>
@@ -1622,16 +1624,18 @@ $detect = new Mobile_Detect();
         <div class="footnote">Для обработки вашего запроса, пожалуйста, оставьте свои контактные данные и выберите удобное время звонка.</div>
 
         <div id="cb_form_body">
-            <form action="" class="callback_form1">
+            <form action="" class="callback_form1" data-toggle="validator" role="form">
                 <table>
                     <tbody>
-                        <tr>
+                        <tr class="form-group">
                             <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
-                            <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
+                            <td><input type="text" class="form-control" id="inputName" name="inputName" required /></td>
                         </tr>
-                        <tr>
-                            <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
-                            <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
+                        <tr class="form-group">
+                            <td align="right"><label for="inputPhoneDemo" class="control-label">Номер телефона</label></td>
+                            <td>
+                                <input type="text" class="form-control phone" id="inputPhoneDemo" name="inputPhone" required >
+                            </td>
                         </tr>
                         <tr>
                             <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
@@ -1641,7 +1645,7 @@ $detect = new Mobile_Detect();
                     </tbody>
                 </table>
 
-                <input type="hidden" name="inputTheme" value="Обратный звонок">
+                <input type="hidden" name="inputTheme" value="Заказ 3D-Демо">
             </form>
 
         </div>
@@ -1663,7 +1667,7 @@ $detect = new Mobile_Detect();
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-7 col-xs-7">
-                        <form action="" class=" callback_form">
+                        <form action="" class=" callback_form" >
                             <div class="form-group">
                                 <label for="inputName" class="control-label">Ваше имя</label>
                                 <div class=" ">
@@ -1671,10 +1675,10 @@ $detect = new Mobile_Detect();
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">Номер телефона</label>
+                                <label for="inputPhoneCB" class="control-label">Номер телефона</label>
 
                                 <div class=" ">
-                                    <input type="text" class="form-control" id="inputPhone" name="inputPhone">
+                                    <input type="text" class="form-control phone" id="inputPhoneCB" name="inputPhone" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -1778,6 +1782,7 @@ $detect = new Mobile_Detect();
 
 <script type="text/javascript" src="/js/imagesloaded.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/validator.min.js" ></script>
 
 <script src="/js/jquery.mousewheel.min.js"></script>
 <script src="/js/jquery.easing.1.3.js"></script>
@@ -1799,6 +1804,9 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
 <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+
+<script type="text/javascript" src="/js/intl_phone_input/intlTelInput.min.js"></script>
+<script type="text/javascript" src="/js/intl_phone_input/utils.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="/js/main.js"></script>

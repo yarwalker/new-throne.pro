@@ -636,7 +636,7 @@
         htmlbody.animate({
             scrollTop: ( $( $(this).attr('href') ).offset().top  )
         }, 1000);
-        
+
         /*$('#tabs a, #fake_tabs a').removeClass('tabulous_active');
 
         $('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
