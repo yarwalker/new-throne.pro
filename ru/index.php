@@ -1653,7 +1653,6 @@ $detect = new Mobile_Detect();
     </div>
 </div>
 
-
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1805,6 +1804,7 @@ $detect = new Mobile_Detect();
 
 <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
 
+<script type="text/javascript" src="/js/validator.min.js" ></script>
 <script type="text/javascript" src="/js/intl_phone_input/intlTelInput.min.js"></script>
 <script type="text/javascript" src="/js/intl_phone_input/utils.js"></script>
 

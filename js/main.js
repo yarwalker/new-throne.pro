@@ -1554,7 +1554,7 @@
             callback(countryCode);
         })
         },
-        utilsScript: "../intl_phone_input/utils.js"
+        utilsScript: "/js/intl_phone_input/utils.js"
     });
 
     var reset = function() {
@@ -1588,7 +1588,7 @@
                 callback(countryCode);
             })
         },
-        utilsScript: "../intl_phone_input/utils.js"
+        utilsScript: "/js/intl_phone_input/utils.js"
     });
 
     var reset = function() {
