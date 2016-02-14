@@ -950,8 +950,6 @@
         }
     });
 
-
-
     $('#myAppStoreModal .ios_form').on('submit', function(ev){
         ev.preventDefault();
 
