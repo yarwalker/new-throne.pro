@@ -1666,7 +1666,7 @@ $detect = new Mobile_Detect();
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-7 col-xs-7">
-                        <form action="" class=" callback_form" >
+                        <form action="" class=" callback_form"  data-toggle="validator">
                             <div class="form-group">
                                 <label for="inputName" class="control-label">Ваше имя</label>
                                 <div class=" ">
