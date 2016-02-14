@@ -816,7 +816,7 @@
 
     $('.offer-send-btn').on('click', function(ev){
         var $lang = $('html').attr('lang'),
-            $url = '../send_email.php',
+            $url = '/send_email.php',
             $form = $('.callback_form1'),
             $fl = true; // флаг = true если заполнены все обязательные поля форма
 
@@ -908,7 +908,7 @@
         //console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
             $str = '',
-            $url = '../send_email.php';
+            $url = '/send_email.php';
 
         //console.log(location.href.search('/en'));
 
@@ -918,7 +918,7 @@
             $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
-            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
+            //var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
 
             if( telInput_cb.intlTelInput("isValidNumber") ) {
 
