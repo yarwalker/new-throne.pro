@@ -1471,7 +1471,7 @@
 
     var telInput_cb = $("#inputPhoneCB"),
         telInput_demo = $("#inputPhoneDemo")
-    errorMsg = $(".error-msg"),
+        errorMsg = $(".error-msg"),
         validMsg = $(".valid-msg");
 
     telInput_cb.intlTelInput({
