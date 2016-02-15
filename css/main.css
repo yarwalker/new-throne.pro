@@ -138,7 +138,7 @@ a.inner_anchor.security { color: #cf1834; }
 #cities .my_caret:before {
     content: '';
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 6px;
     border-top: 7px solid #fefefe;
     border-left: 7px solid transparent;

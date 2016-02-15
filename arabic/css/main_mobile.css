@@ -7174,3 +7174,15 @@ only screen and (min-resolution: 144dpi) {
     width: 320px !important;
 }*/
 /* /LiveChat */
+
+.valid-msg { color: #00C900; }
+.error-msg { color: red; }
+.valid-msg, .error-msg { font-size: 0.8em; }
+
+/*#inputPhoneCB, #inputPhoneDemo { direction: ltr; }*/
+.intl-tel-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+}

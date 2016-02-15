@@ -126,7 +126,7 @@ a.inner_anchor.security { color: #cf1834; }
 #cities .my_caret:before {
     content: '';
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 6px;
     border-top: 7px solid #fefefe;
     border-left: 7px solid transparent;
@@ -5485,7 +5485,7 @@ only screen and (min-resolution: 144dpi) {
 
 
     #dev-slide-1.hidden-xs, #install-slide-1.hidden-xs,
-    #about-slide-1.visible-lg, #about-slide-1.visible-md { margin-top: 0; }
+    #about-slide-1.visible-lg, #about-slide-1.visible-md { margin-top: 30px; }
 
     #faq-slide-1 { padding-top: 0; }
 
