@@ -107,7 +107,7 @@
 
             console.log(location.pathname);
             if( location.pathname != '/ru/' && location.pathname != '/en/' && location.pathname != '/arabic/'
-                && location.pathname != '/ru/yaroslavl/' && location.pathname != '/ru/moscow/' ) {
+                && location.pathname != '/ru/yaroslavl/' && location.pathname != '/ru/moscow/' && location.pathname != '/ru/kirov/') {
                 $('#callback_wrapper').show();
             }
 
@@ -488,7 +488,7 @@
 
         // показываем заголовок формы обратного звонка
         if( location.pathname == '/ru/' || location.pathname == '/en/' || location.pathname == '/arabic/'
-            || location.pathname == '/ru/yaroslavl/' || location.pathname == '/ru/moscow/') {
+            || location.pathname == '/ru/yaroslavl/' || location.pathname == '/ru/moscow/' || location.pathname == '/ru/kirov/') {
             if( $(this).scrollTop() >= ( $('#slide-4').offset().top - 100 ) ) {
                 $('#callback_wrapper').fadeIn(350);
             } else {
@@ -635,7 +635,11 @@
     $('a.inner_anchor').on('click', function(ev){
         ev.preventDefault();
 
-        $('#tabs a, #fake_tabs a').removeClass('tabulous_active');
+        htmlbody.animate({
+            scrollTop: ( $( $(this).attr('href') ).offset().top  )
+        }, 1000);
+
+        /*$('#tabs a, #fake_tabs a').removeClass('tabulous_active');
 
         $('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
 
@@ -644,7 +648,7 @@
 
         if( $(this).closest('div').attr('id') == 'fake_tabs' ) {
             $('#tabs a[href=' + $(this).attr('href') + ']').click();
-        }
+        }*/
     });
 
     $('#fake_tabs ul li a, #slide-4 .visible-lg li a, #slide-4 .visible-md li a, #slide-4 .visible-sm li a, #slide-4 .visible-xs li a').on('click', function(ev){
@@ -771,7 +775,7 @@
     }
 
     // прячем сообщение об ошибке при изменениях полей формы
-    $('#inputPhone, #inputEmail').on('keypress', function(){
+    $('#inputPhone, #inputPhoneCB, #inputPhoneDemo, #inputEmail').on('keypress', function(){
         removeError();
     });
 
@@ -828,43 +832,55 @@
             }
         });
 
-        if( $fl )
-        {
-            // все обязательные поля формы заполнены, отправляем письмо
+        if( $fl ) {
+            if( telInput_demo.intlTelInput("isValidNumber") ) {
+                // все обязательные поля формы заполнены, отправляем письмо
 
-            $.post($url, $form.serialize(), function(data){
+                telInput_demo.val(telInput_demo.intlTelInput("getNumber"));
+                var form_ser_data = $form.serialize();
+                console.info('form data:', form_ser_data);
 
-                if( $lang != 'en' ) {
-                    var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
+                $.post($url, $form.serialize(), function(data){
 
-                    if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
-                    }
-                } else {
-                    var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
+                        if( $lang != 'en' ) {
+                            var $str = '<div class="result">Ошибка отправки письма. <br/>' + (data.msg) + '</div>';
 
-                    if( data.msg == 1 ) {
-                        $str = '<div class="result">&mdash; Thanks!<br> We\'ll call back in the specified time.</div>';
-                    }
-                }
+                            if( data.msg == 1 ) {
+                                $str = '<div class="result">&mdash; Спасибо!<br> Мы перезвоним в указанное время.</div>';
+                            }
+                        } else {
+                            var $str = '<div class="result">Email sending error. <br/>' + (data.msg) + '</div>';
 
-                $('#mySuccessModal .modal-body').html($str);
+                            if( data.msg == 1 ) {
+                                $str = '<div class="result">&mdash; Thanks!<br> We\'ll call back in the specified time.</div>';
+                            }
+                        }
+
+                        $('#mySuccessModal .modal-body').html($str);
+                        $('#mySuccessModal').modal();
+
+                        $form.find(':text').each(function(){
+                            $(this).val('');
+                        });
+
+                        $('#callback_title').click();
+                    }, 'json')
+                    .fail(function() {
+                        alert( "error" );
+                    });
+            } else {
+                $('#mySuccessModal .modal-body').html(( $lang == 'ru' ? '<p>Неверный формат телефона!</p>' : '<p>Invalid phone format!</p>'));
                 $('#mySuccessModal').modal();
-            }, 'json')
-            .fail(function() {
-                alert( "error" );
-            });
-        }
-        else
-        {
+            }
+
+        } else {
             $('#mySuccessModal .modal-body').html(( $lang == 'ru' ? '<p>Не все обязательные поля формы заполнены!</p>' : '<p>Some required fields are empty!</p>'));
             $('#mySuccessModal').modal();
         }
 
-        $form.find(':input').each(function(){
-            $(this).val('');
-        });
-        $('#callback_title').click();
+        // скроем сообщения IntlTellInput
+        $('.valid-msg').addClass('hide');
+        $('.error-msg').addClass('hide');
     });
 
 
@@ -880,11 +896,12 @@
         //console.log($(this).closest('.modal.fade').attr('id'));
         var $modalID = '#' + $(this).closest('.modal.fade').attr('id').toString(),
             $str = '',
-            $url = '/send_email.php';
+            $url = '/send_email.php',
+            $lang = $('html').attr('lang');
 
         //console.log(location.href.search('/en'));
 
-        if( $($modalID + ' #inputPhone').val() == '' ) {
+        if( $($modalID + ' #inputPhoneCB').val() == '' ) {
             if( location.href.search('/en') != -1 ) {
                 $str = 'The field "Cellphone Number" can\'t be empty';
             } else {
@@ -893,23 +910,14 @@
             $($modalID + ' #error').text($str);
             $($modalID + ' .alert').fadeIn(250);
         } else {
-            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,7}$/i;
 
-            if( $($modalID + ' #inputPhone').val() != '' ) {
+            if( telInput_cb.intlTelInput("isValidNumber") ) {
+                console.info('telInput', telInput_cb);
+                telInput_cb.val(telInput_cb.intlTelInput("getNumber"));
+                var form_ser_data = $($modalID + ' .callback_form').serialize();
+                console.info('form data:', form_ser_data);
 
-                //Верно
-                // $($modalID + ' #inputEmail').closest('div.form-group').removeClass('has-error').addClass('has-success');
-
-                // отправляем письмо
-                //$($modalID + ' #inputCheck').val($('body').data('check'));
-
-                //console.log($('.callback_form').serialize());
-
-                /*if( location.href.search('/en') ) {
-                    $url = '../' + $url;
-                }*/
-
-                $.post( $url, $($modalID + ' .callback_form').serialize(), function (data) {
+                $.post( $url, form_ser_data, function (data) {
 
                     //console.log(data);
                     if( location.href.search('/en') == -1 ) {
@@ -927,16 +935,17 @@
                     }
 
                     $($modalID).modal('hide');
+                    $($modalID + ' :text').val('');
                     $('#send_result').html($str);
                     $('#mySuccessModal').modal('show');
                 }, 'json');
             }
-            /*else {
+            else {
              //Не верно
-             $($modalID + ' #inputEmail').closest('div.form-group').addClass('has-error');
-             $($modalID + ' #error').text('Неверный e-mail адрес!');
-             $($modalID + ' .alert').fadeIn(250);
-             }*/
+                $str = ( $lang == 'ru' ? 'Неверный формат телефона!' : 'Invalid phone format!');
+                $($modalID + ' #error').text($str);
+                $($modalID + ' .alert').fadeIn(250);
+             }
 
         }
     });
@@ -1528,6 +1537,79 @@
             elem[0].fireEvent("onmousedown");
         }
     } */
+
+    var telInput_cb = $("#inputPhoneCB"),
+        telInput_demo = $("#inputPhoneDemo")
+        errorMsg = $(".error-msg"),
+        validMsg = $(".valid-msg");
+
+    telInput_cb.intlTelInput({
+        nationalMode: true,
+        initialCountry: "auto",
+        geoIpLookup: function(callback) {
+        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+        })
+        },
+        utilsScript: "/js/intl_phone_input/utils.js"
+    });
+
+    var reset = function() {
+        telInput_cb.removeClass("error");
+        errorMsg.addClass("hide");
+        validMsg.addClass("hide");
+    };
+
+    // on blur: validate
+    telInput_cb.on('blur',function() {
+        reset();
+        if ($.trim(telInput_cb.val())) {
+            if (telInput_cb.intlTelInput("isValidNumber")) {
+                validMsg.removeClass("hide");
+            } else {
+                telInput_cb.addClass("error");
+                errorMsg.removeClass("hide");
+            }
+        }
+    });
+
+    // on keyup / change flag: reset
+    telInput_cb.on("keyup change", reset);
+
+    telInput_demo.intlTelInput({
+        nationalMode: true,
+        initialCountry: "auto",
+        geoIpLookup: function(callback) {
+            $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            })
+        },
+        utilsScript: "/js/intl_phone_input/utils.js"
+    });
+
+    var reset = function() {
+        telInput_demo.removeClass("error");
+        errorMsg.addClass("hide");
+        validMsg.addClass("hide");
+    };
+
+    // on blur: validate
+    telInput_demo.on('blur',function() {
+        reset();
+        /*if ($.trim(telInput_demo.val())) {
+            if (telInput_demo.intlTelInput("isValidNumber")) {
+                validMsg.removeClass("hide");
+            } else {
+                telInput_demo.addClass("error");
+                errorMsg.removeClass("hide");
+            }
+        }*/
+    });
+
+    // on keyup / change flag: reset
+    telInput_demo.on("keyup change", reset);
 
 } )( jQuery );
 

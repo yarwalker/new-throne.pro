@@ -4963,3 +4963,7 @@ only screen and (min-resolution: 144dpi) {
     -o-transition: color 0.1s ease;
     color: #be0005;
 }
+
+.valid-msg { color: #00C900; }
+.error-msg { color: red; }
+.valid-msg, .error-msg { font-size: 0.8em; }

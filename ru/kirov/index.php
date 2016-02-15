@@ -41,6 +41,8 @@ $detect = new Mobile_Detect();
     <link rel="stylesheet" href="/js/flowplay/skin/functional.css">
     <link rel="stylesheet" href="/css/animate.css">
 
+    <link rel="stylesheet" href="/css/intlTelInput.css">
+
     <?php if ( !$detect->isMobile() ): ?>
         <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <?php else: ?>
@@ -1622,33 +1624,34 @@ $detect = new Mobile_Detect();
         <div class="footnote">Для обработки вашего запроса, пожалуйста, оставьте свои контактные данные и выберите удобное время звонка.</div>
 
         <div id="cb_form_body">
-            <form action="" class="callback_form1">
+            <form action="" class="callback_form1" data-toggle="validator" role="form">
                 <table>
                     <tbody>
-                        <tr>
-                            <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
-                            <td><input type="text" class="form-control" id="inputName" name="inputName" required="required"></td>
-                        </tr>
-                        <tr>
-                            <td align="right"><label for="inputPhone" class="control-label">Номер телефона</label></td>
-                            <td><input type="text" class="form-control" id="inputPhone" name="inputPhone" required="required"></td>
-                        </tr>
-                        <tr>
-                            <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
-                            <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
-                        </tr>
-                        <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn" onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Отправить</button></td></tr>
+                    <tr class="form-group">
+                        <td align="right"><label for="inputName" class="control-label">Ваше имя</label></td>
+                        <td><input type="text" class="form-control" id="inputName" name="inputName" required /></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td align="right"><label for="inputPhoneDemo" class="control-label">Номер телефона</label></td>
+                        <td>
+                            <input type="text" class="form-control phone" id="inputPhoneDemo" name="inputPhone" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="inputTime" class="control-label">Время звонка</label></td>
+                        <td><input type="text" class="form-control" id="inputTime" name="inputTime"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td><button type="button" class="offer-send-btn" onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Отправить</button></td></tr>
                     </tbody>
                 </table>
 
-                <input type="hidden" name="inputTheme" value="Обратный звонок">
+                <input type="hidden" name="inputTheme" value="Заказ 3D-Демо Киров">
             </form>
 
         </div>
 
     </div>
 </div>
-
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -1663,7 +1666,7 @@ $detect = new Mobile_Detect();
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-7 col-xs-7">
-                        <form action="" class=" callback_form">
+                        <form action="" class=" callback_form" >
                             <div class="form-group">
                                 <label for="inputName" class="control-label">Ваше имя</label>
                                 <div class=" ">
@@ -1671,10 +1674,10 @@ $detect = new Mobile_Detect();
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPhone" class="control-label">Номер телефона</label>
+                                <label for="inputPhoneCB" class="control-label">Номер телефона</label>
 
                                 <div class=" ">
-                                    <input type="text" class="form-control" id="inputPhone" name="inputPhone">
+                                    <input type="text" class="form-control phone" id="inputPhoneCB" name="inputPhone" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -1683,7 +1686,7 @@ $detect = new Mobile_Detect();
                                     <!--div class="footnote">Мы перезвоним<br>в течение часа</div-->
                                 </div>
                             </div>
-                            <input type="hidden" name="inputTheme" value="Обратный звонок"/>
+                            <input type="hidden" name="inputTheme" value="Обратный звонок Киров"/>
                         </form>
                         <div class="alert alert-danger" role="alert">
                             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -1799,6 +1802,10 @@ $detect = new Mobile_Detect();
 <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 
 <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+
+<script type="text/javascript" src="/js/validator.min.js" ></script>
+<script type="text/javascript" src="/js/intl_phone_input/intlTelInput.min.js"></script>
+<script type="text/javascript" src="/js/intl_phone_input/utils.js"></script>
 
 <?php if ( !$detect->isMobile() ): ?>
     <script type="text/javascript" src="/js/main.js"></script>
