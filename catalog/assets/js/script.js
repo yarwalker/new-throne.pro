@@ -22,6 +22,25 @@
         $('[data-toggle="tooltip"]').tooltip();
     }
 
+    $('#search-form').on('submit', function(ev){
+        ev.preventDefault();
+
+        console.info('click');
+        $.post('search', $('#search-form').serialize(), function(result){
+                if( result.code == 0 ) {
+                    $('#eq_table tbody').html(result.message);
+                } else {
+                    $('#myAdmModal .modal-body').html(result.message);
+                    $('#myAdmModal').modal();
+                }
+            }, 'json')
+            .error(function(response) {
+                alert('Error: ' + response.responseText);
+                console.log('Error: ' + response.responseText);
+                console.info('error', response);
+            });
+    });
+
     $('[data-toggle="tooltip"]').tooltip();
 
     $('#eq_tabs li a').on('click', function(e){
@@ -74,8 +93,6 @@
 
         $(this).tab('show');
     });
-
-
 
     // Сохранаяем новую запись
     $('#new_record_form').on('submit', function(e){
@@ -304,7 +321,6 @@
         $(this).find('.modal-body').text('');
         $('[data-toggle="tooltip"]').tooltip();
     });
-
 
     $('#myEditRecordModal').on('hidden.bs.modal', function (e) {
         $(this).find('#myRecordEditModalLabel').text('');

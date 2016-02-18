@@ -19,6 +19,33 @@ class Equipment extends MY_Controller {
     }
 
     /**
+     * Поиск товаров
+     */
+    public function search(){
+        $str = '';
+        $code = 0;
+
+        //var_dump($this->input->post());
+
+        if( $this->is_logged_in() ):
+            $list = $this->equipment_model->search_items();
+            foreach( $list as $item ):
+                $str .= '<tr id="tr' . $item->id . '"><td>' . $item->id . '</td><td><a href="#" class="edit_record" data-id="' . $item->id . '">' . $item->name_ru . '</a></td><td><span class="glyphicon glyphicon-pencil" data-id="' . $item->id . '" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Редактировать"></span><span class="glyphicon glyphicon-trash" data-id="' . $item->id . '" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Удалить" ></span></td></tr>';
+            endforeach;
+        else:
+            if( !$this->input->is_ajax_request() ):
+                header('Location: ' . base_url('/'));
+                exit();
+            else:
+                $str = 'Время сессии истекло, необходима повторная <a href="' . base_url('/') . '">авторизация</a>';
+                $code = 12;
+            endif;
+        endif;
+
+        echo json_encode(array( 'code' => $code, 'message' => $str ));
+    }
+
+    /**
      * Сохраняем запись в базу
      */
     public function save()
