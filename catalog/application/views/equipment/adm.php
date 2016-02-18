@@ -14,6 +14,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active in fade" id="list">
                 <h3>Список</h3>
+                <form class="form-inline" id="search-form">
+                    <fieldset>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <input id="textinput" name="search" type="text" placeholder="Поиск..." class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Поиск</button>
+
+                    </fieldset>
+                </form>
+
                 <?php
                 if( $eq_list ):
                     echo '<table id="eq_table" class="table table-hover table-striped table-condensed">

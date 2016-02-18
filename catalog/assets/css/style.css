@@ -1,5 +1,7 @@
 html,body { margin: 0; padding: 0; font-size: 16px; }
 
+
+
 #item_wrapper { margin-top: 50px; }
 #item_wrapper h1 { text-align: left; margin-top: 0;}
 #item_wrapper div.arabic { text-align: right; direction: rtl; }
@@ -55,5 +57,7 @@ html,body { margin: 0; padding: 0; font-size: 16px; }
 }
 
 #padlock .glyphicon { cursor: none; margin-right: 0px; }
+
+#search-form { margin: 20px 0; }
 
 footer { margin-top: 50px; }

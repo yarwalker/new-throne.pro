@@ -20,6 +20,23 @@ class Equipment_model extends CI_Model {
     }
 
     /**
+     * Поиск товаров
+     */
+    public function search_items(){
+        $search = $this->input->post('search');
+        $items = array();
+
+        $this->db->like('name_ru', $search, 'both');
+        $this->db->or_like('manufacturer', $search, 'both');
+        $this->db->or_like('sku', $search, 'both');
+        $this->db->or_like('descr_ru', $search, 'both');
+
+        $items = $this->db->get($this->_table_equipment)->result();
+
+        return $items;
+    }
+
+    /**
      * Сохраняет запись в базе
      */
     public function save_record($id = null)
