@@ -149,7 +149,7 @@ a.inner_anchor.security { color: #cf1834; }
 }
 
 #city_select + span { cursor: pointer; }
-#cities span.visible { display: inline-block; }
+#cities span.visible { display: inline-block; vertical-align: middle; }
 #cities span.hidden { display: none; }
 #cities span.callback_contacts a, #cities .callback_button { color: #efefef; }
 #cities span.callback_contacts a { border-bottom-color: #efefef; }
@@ -700,6 +700,8 @@ only screen and (min-resolution: 144dpi) {
     -moz-transition: none;
     -o-transition: none;
 }
+
+.more-info .order_button { margin-top: 10px; }
 
 
 #slogan {

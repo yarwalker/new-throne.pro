@@ -750,6 +750,8 @@ only screen and (min-resolution: 144dpi) {
     -o-transition: none;
 }
 
+.more-info .order_button { margin-top: 10px; }
+
 
 #slogan {
     padding-top: 60px;
