@@ -516,14 +516,23 @@
     }
 
     $('a.inner_anchor ').on('click', function(ev){
+        var link = '#';
         ev.preventDefault();
 
-        //$('#tabs a, #tabs2 a, #tabs3 a,#tabs4 a, #fake_tabs a').removeClass('tabulous_active');
+        // сформируем ссылку для скроллинга
+        if( window.outerWidth >= 992 && window.outerWidth < 1200 ) {
+            link += 'md-';
+        } else if( window.outerWidth >= 768 && window.outerWidth < 992 ) {
+            link += 'sm-';
+        } else if( window.outerWidth < 768 ) {
+            link += 'xs-';
+        }
 
-        //$('#fake_tabs a[href=' + $(this).attr('href') + '], #tabs a[href=' + $(this).attr('href') + ']').addClass('tabulous_active');
+        link += $(this).attr('href').substr(1);
 
-        dataslide = $(this).data('slide');
-        goToByScroll(dataslide);
+        htmlbody.animate({
+            scrollTop: ( $(link).offset().top - 30 )
+        }, 1000);
 
         if( $(this).closest('div').attr('id') == 'fake_tabs' ) {
             $('#tabs a[href=' + $(this).attr('href') + ']').click();

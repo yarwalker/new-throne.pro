@@ -499,8 +499,6 @@ $detect = new Mobile_Detect();
                 <source src="/uploads/videos/sequence02.mp4" type="video/mp4">
             </video>
         </div>
-        
-
 
     <?php endif; ?>
 
