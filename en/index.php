@@ -483,11 +483,7 @@ $detect = new Mobile_Detect();
     <div class="bottom_line"></div>
 </div>
 
-
-
 <div id="slide-3" data-slide="3" class=" frame">
-
-
     <div class="bcg" data-anchor-target="#slide-3" data-bottom-top="position: relative;  bottom: 0px;  " data--52-bottom="position: absolute;  bottom: 0px;">
 
         <div class="skrollr_el" id="floor" data-anchor-target="#slide-3" ></div>
@@ -628,6 +624,11 @@ $detect = new Mobile_Detect();
                             <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
                                 You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
                             </p>
+                            <p class="text-center more-info">
+                                Find out more about lighting automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -672,6 +673,11 @@ $detect = new Mobile_Detect();
                                 You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
                             </p>
                             <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
+                            <p class="text-center more-info">
+                                Find out more about climate automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -715,6 +721,11 @@ $detect = new Mobile_Detect();
                             </p>
                             <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
                             <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
+                            <p class="text-center more-info">
+                                Find out more about security automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -768,6 +779,11 @@ $detect = new Mobile_Detect();
                             <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
                                 You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
                             </p>
+                            <p class="text-center more-info">
+                                Find out more about lighting automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -812,6 +828,11 @@ $detect = new Mobile_Detect();
                                 You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
                             </p>
                             <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
+                            <p class="text-center more-info">
+                                Find out more about climate automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -855,6 +876,11 @@ $detect = new Mobile_Detect();
                             </p>
                             <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
                             <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
+                            <p class="text-center more-info">
+                                Find out more about security automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -907,6 +933,11 @@ $detect = new Mobile_Detect();
                             </p>
                             <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
                                 You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
+                            </p>
+                            <p class="text-center more-info">
+                                Find out more about lighting automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
                             </p>
                         </td>
                     </tr>
@@ -971,6 +1002,11 @@ $detect = new Mobile_Detect();
                                 You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
                             </p>
                             <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
+                            <p class="text-center more-info">
+                                Find out more about climate automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -1033,6 +1069,11 @@ $detect = new Mobile_Detect();
                             </p>
                             <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
                             <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
+                            <p class="text-center more-info">
+                                Find out more about security automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -1105,6 +1146,11 @@ $detect = new Mobile_Detect();
                         <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
                             You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
                         </p>
+                        <p class="text-center more-info">
+                            Find out more about lighting automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1167,6 +1213,11 @@ $detect = new Mobile_Detect();
                             You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
                         </p>
                         <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
+                        <p class="text-center more-info">
+                            Find out more about climate automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1230,6 +1281,11 @@ $detect = new Mobile_Detect();
                         </p>
                         <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
                         <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
+                        <p class="text-center more-info">
+                            Find out more about security automation from our consultants<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Require information</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1277,8 +1333,6 @@ $detect = new Mobile_Detect();
                     </td>
                 </tr>
             </table>
-
-
         </div>
 
     </div>

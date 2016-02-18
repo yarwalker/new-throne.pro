@@ -675,6 +675,11 @@ $detect = new Mobile_Detect();
                             <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
                                 Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
                                 "ТРОН".</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации освещения у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -717,6 +722,11 @@ $detect = new Mobile_Detect();
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
                                 вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
                             <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации климата у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -763,6 +773,11 @@ $detect = new Mobile_Detect();
                                 проникновении (взломе).</p>
                             <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
                                 с&nbsp;мобильного телефона или планшета.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации безопасности у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -816,6 +831,11 @@ $detect = new Mobile_Detect();
                             <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
                                 Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
                                 "ТРОН".</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации освещения у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -858,6 +878,11 @@ $detect = new Mobile_Detect();
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
                                 вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
                             <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации климата у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -903,6 +928,11 @@ $detect = new Mobile_Detect();
                                 проникновении (взломе).</p>
                             <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
                                 с&nbsp;мобильного телефона или планшета.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации безопасности у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -955,6 +985,11 @@ $detect = new Mobile_Detect();
                             <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
                                 Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
                                 "ТРОН".</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации освещения у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -1016,6 +1051,11 @@ $detect = new Mobile_Detect();
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
                                 вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
                             <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации климата у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -1080,6 +1120,11 @@ $detect = new Mobile_Detect();
                                 проникновении (взломе).</p>
                             <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
                                 с&nbsp;мобильного телефона или планшета.</p>
+                            <p class="text-center more-info">
+                                Узнайте больше о возможностях автоматизации безопасности у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                            </p>
                         </td>
                     </tr>
                     </tbody>
@@ -1151,6 +1196,11 @@ $detect = new Mobile_Detect();
                         <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
                             Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
                             "ТРОН".</p>
+                        <p class="text-center more-info">
+                            Узнайте больше о возможностях автоматизации освещения у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1236,6 +1286,11 @@ $detect = new Mobile_Detect();
                         <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
                             вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
                         <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        <p class="text-center more-info">
+                            Узнайте больше о возможностях автоматизации климата у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -1301,6 +1356,11 @@ $detect = new Mobile_Detect();
                             проникновении (взломе).</p>
                         <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
                             с&nbsp;мобильного телефона или планшета.</p>
+                        <p class="text-center more-info">
+                            Узнайте больше о возможностях автоматизации безопасности у наших специалистов<br>
+                                <span class="order_button" data-toggle="modal" data-target="#myModal"
+                                      onclick="goog_report_conversion(); fbq('track', 'Lead'); yaCounter30996876.reachGoal('CALLBACK'); return true;">Запросить информацию</span>
+                        </p>
                     </td>
                 </tr>
                 </tbody>
