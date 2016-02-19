@@ -615,7 +615,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
+                        <td width="60%" rowspan="2"><img src="/images/light_manage.jpg" alt="Lighting Control" title="Lighting Control" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -624,6 +624,10 @@ $detect = new Mobile_Detect();
                             <p>THRONE Smart Home allows you to control individual lights or groups of lights, and also to turn off all the lights with one touch of the screen.
                                 You can adjust the brightness and color in each room or zone, and then save light scene directly in the interface of THRONE.
                             </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Find out more about lighting automation from our consultants<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -664,7 +668,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%" rowspan="2"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Climate Сontrol (HVAC)" title="Climate Сontrol (HVAC)"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -673,6 +677,10 @@ $detect = new Mobile_Detect();
                                 You can switch on heating to warm up the room while you drive to the house; or to set the air conditioner for making the house cool in hot summer.
                             </p>
                             <p>You can see a heat map of the house and, of course, set up the target temperature that the system will keep automatically.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Find out more about climate automation from our consultants<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -713,7 +721,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Security System Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
+                        <td width="60%" rowspan="2"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img col-xs-12" alt="Security System Control" title="Security System Control"/></td>
                         <td>
                             <p>
                                 THRONE Smart Home allows to switch on or off the alarm in the entire building, on the floors or in separate premises.
@@ -721,6 +729,11 @@ $detect = new Mobile_Detect();
                             </p>
                             <p>Using THRONE you can watch the video from surveillance cameras, receive notifications of fire, water leakage, gas leakage, intrusion.</p>
                             <p>Also you can connect a video door phone with THRONE, and that will allow you to see your guests and open the door directly from your smartphone or tablet.</p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Find out more about security automation from our consultants<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -770,7 +783,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Lighting Control</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
+                        <td width="60%"><img src="/images/light_manage.jpg" alt="Lighting Control" title="Lighting Control" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
@@ -819,7 +832,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Climate Сontrol (HVAC)</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img col-xs-12" alt="Climate Сontrol (HVAC)" title="Climate Сontrol (HVAC)"/></td>
                         <td>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
@@ -926,7 +939,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Lighting Control</h2>
-                            <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                            <img src="/images/light_manage.jpg" alt="Lighting Control" title="Lighting Control" class="img-responsive tab_main_img"  />
                             <p class="">
                                 Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                                 leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -994,7 +1007,7 @@ $detect = new Mobile_Detect();
                     <tr>
                         <td>
                             <h2>Climate Сontrol (HVAC)</h2>
-                            <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                            <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Climate Сontrol (HVAC)" title="Climate Сontrol (HVAC)"/>
                             <p class="">
                                 Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                             </p>
@@ -1054,7 +1067,6 @@ $detect = new Mobile_Detect();
                         </td>
                     </tr>
                 </table>
-
             </div>
             <div id="sm-tabs-3">
                 <table>
@@ -1121,7 +1133,6 @@ $detect = new Mobile_Detect();
                         </td>
                     </tr>
                 </table>
-
             </div>
 
     </div>
@@ -1138,7 +1149,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Lighting Control</h2>
-                        <img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img"  />
+                        <img src="/images/light_manage.jpg" alt="Lighting Control" title="Lighting Control" class="img-responsive tab_main_img"  />
                         <p class="">
                             Think about it: your home will have a few dozen lamps. How to make sure that none of them left switched on? Before going to sleep or
                             leaving you will need to go around the house to check it out. It is a reliable, but somewhat outdated method for the 21st century.
@@ -1205,7 +1216,7 @@ $detect = new Mobile_Detect();
                 <tr>
                     <td>
                         <h2>Climate Сontrol (HVAC)</h2>
-                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Управление климатом" title="Управление климатом"/>
+                        <img src="/images/climate_management.jpg" class="img-responsive tab_main_img" alt="Climate Сontrol (HVAC)" title="Climate Сontrol (HVAC)"/>
                         <p class="">
                             Climate control has long ago became a standard option when buying a car. Why, then, to deprive yourself the same in home improvement?
                         </p>
@@ -1265,8 +1276,6 @@ $detect = new Mobile_Detect();
                     </td>
                 </tr>
             </table>
-
-
         </div>
         <div id="xs-tabs-3">
             <table>

@@ -697,7 +697,9 @@ only screen and (min-resolution: 144dpi) {
     -o-transition: none;
 }
 
-.more-info .order_button { margin-top: 10px; }
+.more-info { font-size: 14px !important; margin-bottom: 0 !important;  }
+.more-info .order_button { margin-top: 15px; font-size: 18px; }
+.text-bottom { vertical-align: bottom !important; }
 
 #slogan {
     padding-top: 60px;
@@ -5251,7 +5253,7 @@ only screen and (min-resolution: 144dpi) {
     #slide-4 .visible-sm .tab_main_img, #slide-4 .visible-xs .tab_main_img { margin-bottom: 24px; width: 100%; }
     #slide-4 .visible-sm div[id^=sm-tabs], #slide-4 .visible-xs div[id^=xs-tabs] { margin-bottom: 30px; }
 
-    #slide-4 .visible-sm .factoids, #slide-4 .visible-xs .factoids { width: 80%; margin: 0 auto; }
+    #slide-4 .visible-sm .factoids, #slide-4 .visible-xs .factoids { width: 80%; margin: 30px auto 0; }
     #slide-4 .visible-sm .factoids td, #slide-4 .visible-xs .factoids td { width: 50%; padding: 15px 0; border-bottom: solid 1px #aaa; }
     #slide-4 .visible-sm .factoids td img, #slide-4 .visible-xs .factoids td img {
         width: auto;

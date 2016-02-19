@@ -750,8 +750,9 @@ only screen and (min-resolution: 144dpi) {
     -o-transition: none;
 }
 
-.more-info .order_button { margin-top: 10px; }
-
+.more-info { font-size: 14px !important; margin-bottom: 0 !important;  }
+.more-info .order_button { margin-top: 15px; font-size: 18px; }
+.text-bottom { vertical-align: bottom !important; }
 
 #slogan {
     padding-top: 60px;
