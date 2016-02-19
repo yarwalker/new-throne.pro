@@ -666,7 +666,7 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление освещением</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
+                        <td width="60%" rowspan="2"><img src="/images/light_manage.jpg" alt="Управление освещением" title="Управление освещением" class="img-responsive tab_main_img col-xs-12"  /></td>
                         <td width="40%">
 
                             <p class="">
@@ -675,6 +675,10 @@ $detect = new Mobile_Detect();
                             <p>"Умный дом ТРОН" позволяет управлять отдельными светильниками либо группами освещения, а&nbsp;также отключать весь свет одним нажатием на&nbsp;экран.
                                 Вы можете настраивать яркость и&nbsp;цвет в&nbsp;каждой комнате или зоне, а&nbsp;потом сохранять световую сцену самостоятельно прямо в&nbsp;интерфейсе
                                 "ТРОН".</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Узнайте больше о возможностях автоматизации освещения у наших специалистов<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -715,13 +719,17 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление климатом</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
-                        <td>
+                        <td width="60%" rowspan="2"><img src="/images/climate_management.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление климатом" title="Управление климатом"/></td>
+                        <td >
                             <p class="">
                                 Климат-контроль давно стал стандартной опцией при&nbsp;покупке автомобиля. Почему же тогда отказывать себе в&nbsp;том же самом при&nbsp;обустройстве дома?</p>
                             <p>С помощью "умного дома ТРОН" вы сможете управлять климатическим оборудованием дома в&nbsp;любое время из&nbsp;любого места. Можно заранее, пока
                                 вы едете к&nbsp;дому, включить теплые полы, чтобы помещения прогрелись; или настроить работу кондиционеров - чтобы жарким летом в&nbsp;доме ждала прохлада.</p>
                             <p>Можно посмотреть тепловую карту дома и, конечно, задать целевую температуру, которую система будет поддерживать автоматически.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Узнайте больше о возможностях автоматизации климата у наших специалистов<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
@@ -762,9 +770,8 @@ $detect = new Mobile_Detect();
                     <tbody>
                     <tr><td colspan="2"><h2>Управление системой безопасности</h2></td></tr>
                     <tr>
-                        <td width="60%"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
+                        <td width="60%" rowspan="2"><img src="/images/slide4_bg.jpg" class="img-responsive tab_main_img  col-xs-12" alt="Управление системой безопасности" title="Управление системой безопасности"/></td>
                         <td>
-
                             <p>
                                 "Умный дом ТРОН" позволяет поставить на&nbsp;охрану или отключить сигнализацию сразу во&nbsp;всем здании, по&nbsp;этажам или по&nbsp;отдельным помещениям.
                                 Уведомления о&nbsp;событиях приходят с&nbsp;указанием места происшествия <nobr>на 3D-модели</nobr>.
@@ -773,6 +780,10 @@ $detect = new Mobile_Detect();
                                 проникновении (взломе).</p>
                             <p>А еще к&nbsp;"ТРОН" можно подключить домофон, и&nbsp;тогда вы сможете видеть своих гостей и&nbsp;открывать им дверь прямо
                                 с&nbsp;мобильного телефона или планшета.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-bottom">
                             <p class="text-center more-info">
                                 Узнайте больше о возможностях автоматизации безопасности у наших специалистов<br>
                                 <span class="order_button" data-toggle="modal" data-target="#myModal"
