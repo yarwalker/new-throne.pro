@@ -131,7 +131,7 @@ $detect = new Mobile_Detect();
 
             <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
 
-                <span id="city_doha" class="visible">+974 44980308<br>Fereej Bin Mahmoud, Street No 830, Office No 26</span>
+                <span id="city_doha" class="visible">+974 5525 8978<br>Fereej Bin Mahmoud, Street No 830, Office No 26</span>
                 <div class="btn-group">
 
                     <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -153,7 +153,7 @@ $detect = new Mobile_Detect();
         <div class="row">
             <div class="city_wrapper col-lg-8 col-md-7 col-sm-5 col-xs-12">
 
-                <span id="city_doha" class="visible">+974 44980308<br>Fereej Bin Mahmoud, Street No 830, Office No 26</span>
+                <span id="city_doha" class="visible">+974 5525 8978<br>Fereej Bin Mahmoud, Street No 830, Office No 26</span>
                 <div class="btn-group">
 
                     <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
