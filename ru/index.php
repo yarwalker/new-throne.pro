@@ -210,7 +210,7 @@ $detect = new Mobile_Detect();
         </nav>
     </div>
 </div>
-
+ 
 <div id="slide-1" data-slide="1" class="frame animation" >
     <?php if(!$detect->isMobile()): ?>
 
